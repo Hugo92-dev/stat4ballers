@@ -1,16 +1,9 @@
+```tsx
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Stat4Ballers - Statistiques Ligue 1',
@@ -18,7 +11,7 @@ export const metadata: Metadata = {
   keywords: ['Statistiques Ligue 1', 'Stats joueurs football', 'xG', 'xA', 'Data football'],
   openGraph: {
     title: 'Stat4Ballers - Stats Ligue 1',
-    description: 'Visualisez toutes les stats des joueurs de Ligue 1 en un coup d’œil.',
+    description: 'Visualisez toutes les stats des joueurs de Ligue 1 en un coup d\'œil.',
     url: 'https://stat4ballers.vercel.app',
     siteName: 'Stat4Ballers',
     type: 'website',
@@ -35,12 +28,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="fr">
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
+```
