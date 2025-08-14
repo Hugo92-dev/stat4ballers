@@ -18,40 +18,40 @@ const getShortLabel = (stat: string): string => {
   const labels: { [key: string]: string } = {
     // Statistiques générales
     'Buts': 'Buts',
-    'Passes décisives': 'Assists',
+    'Passes décisives': 'Passes décisives',
     'Points gagnés par match (quand le joueur joue)': 'PPM',
-    'Minutes jouées': 'Minutes',
-    'Nombre de titularisation': 'Titu.',
+    'Minutes jouées': 'Minutes jouées',
+    'Nombre de titularisation': 'Nombre de titularisation',
     'Nombre de jours absents/suspendus/blessés': 'Absences',
-    'Valeur marchande': 'Valeur M€',
+    'Valeur marchande': 'Valeur marchande',
     'Cartons (jaune + rouge)': 'Cartons',
     
     // Carte offensive
     'xG (expected goals)': 'xG',
     'xA (expected assists)': 'xA',
-    'Total tirs': 'Tirs',
-    'Tirs cadrés (%)': 'Cadrés %',
-    'Ratio penalty marqué': 'Pen. %',
-    'Courses vers l\'avant': 'Courses',
+    'Total tirs': 'Total tirs',
+    'Tirs cadrés (%)': 'Tirs cadrés (%)',
+    'Ratio penalty marqué': 'Ratio penalty',
+    'Courses vers l\'avant': 'Courses vers l\'avant',
     
     // Carte défensive
-    'Interceptions': 'Intercept.',
-    'Tacles réussis': 'Tacles',
-    'Duels aériens gagnés': 'Aériens',
+    'Interceptions': 'Interceptions',
+    'Tacles réussis': 'Tacles réussis',
+    'Duels aériens gagnés': 'Duels aériens',
     'Pressings réussis': 'Pressings',
-    'Fautes subies': 'F.subies',
-    'Fautes commises': 'F.comm.',
-    'Cartons jaunes': 'C.jaunes',
-    'Cartons rouges': 'C.rouges',
+    'Fautes subies': 'Fautes subies',
+    'Fautes commises': 'Fautes commises',
+    'Cartons jaunes': 'Cartons jaunes',
+    'Cartons rouges': 'Cartons rouges',
     
     // Carte créative
-    'Nombre de fois que le joueur touche la balle': 'Touches',
-    'Dribbles réussis': 'Dribbles',
-    'Total passes': 'Passes',
-    'Passes clés': 'P.clés',
-    'Passes vers l\'avant': 'P.avant',
-    'Passes courtes réussies (%)': 'P.court%',
-    'Passes longues réussies (%)': 'P.long%',
+    'Nombre de fois que le joueur touche la balle': 'Activité du joueur',
+    'Dribbles réussis': 'Dribbles réussis',
+    'Total passes': 'Total passes',
+    'Passes clés': 'Passes clés',
+    'Passes vers l\'avant': 'Passes vers l\'avant',
+    'Passes courtes réussies (%)': 'Passes courtes (%)',
+    'Passes longues réussies (%)': 'Passes longues (%)',
     'Centres réussis': 'Centres'
   };
   

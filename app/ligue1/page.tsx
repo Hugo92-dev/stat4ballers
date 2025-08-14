@@ -1,14 +1,24 @@
 import Link from 'next/link';
 
 const clubs = [
-  { id: 'psg', name: 'Paris Saint-Germain', ville: 'Paris' },
-  { id: 'om', name: 'Olympique de Marseille', ville: 'Marseille' },
-  { id: 'monaco', name: 'AS Monaco', ville: 'Monaco' },
-  { id: 'lille', name: 'LOSC Lille', ville: 'Lille' },
-  { id: 'lyon', name: 'Olympique Lyonnais', ville: 'Lyon' },
-  { id: 'nice', name: 'OGC Nice', ville: 'Nice' },
-  { id: 'lens', name: 'RC Lens', ville: 'Lens' },
-  { id: 'rennes', name: 'Stade Rennais', ville: 'Rennes' },
+  { id: 'angers', name: 'Angers', ville: 'Angers' },
+  { id: 'auxerre', name: 'Auxerre', ville: 'Auxerre' },
+  { id: 'brest', name: 'Brest', ville: 'Brest' },
+  { id: 'le-havre', name: 'Le Havre', ville: 'Le Havre' },
+  { id: 'lens', name: 'Lens', ville: 'Lens' },
+  { id: 'lille', name: 'Lille', ville: 'Lille' },
+  { id: 'lorient', name: 'Lorient', ville: 'Lorient' },
+  { id: 'lyon', name: 'Lyon', ville: 'Lyon' },
+  { id: 'marseille', name: 'Marseille', ville: 'Marseille' },
+  { id: 'metz', name: 'Metz', ville: 'Metz' },
+  { id: 'monaco', name: 'Monaco', ville: 'Monaco' },
+  { id: 'nantes', name: 'Nantes', ville: 'Nantes' },
+  { id: 'nice', name: 'Nice', ville: 'Nice' },
+  { id: 'paris-saint-germain', name: 'Paris-Saint-Germain', ville: 'Paris' },
+  { id: 'paris-fc', name: 'Paris FC', ville: 'Paris' },
+  { id: 'rennes', name: 'Rennes', ville: 'Rennes' },
+  { id: 'strasbourg', name: 'Strasbourg', ville: 'Strasbourg' },
+  { id: 'toulouse', name: 'Toulouse', ville: 'Toulouse' }
 ];
 
 export default function Ligue1Page() {
@@ -18,7 +28,7 @@ export default function Ligue1Page() {
         <Link href="/" className="text-blue-900 hover:underline mb-4 inline-block">
           ← Retour à l'accueil
         </Link>
-        <h1 className="text-4xl font-bold text-blue-900 mb-8">Ligue 1 - Saison 2024/25</h1>
+        <h1 className="text-4xl font-bold text-blue-900 mb-8">Ligue 1 - Saison 2025/26</h1>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {clubs.map(club => (

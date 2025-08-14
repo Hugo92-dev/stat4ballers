@@ -9,14 +9,40 @@ export default function Home() {
             Stat4Ballers
           </h1>
           <p className="text-xl mb-8 opacity-90">
-            Toutes les statistiques des joueurs de Ligue 1
+            Toutes les statistiques des joueurs des 5 grands championnats européens
           </p>
-          <Link 
-            href="/ligue1" 
-            className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition inline-block"
-          >
-            Explorer la Ligue 1
-          </Link>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link 
+              href="/ligue1" 
+              className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block"
+            >
+              Ligue 1
+            </Link>
+            <Link 
+              href="/premier-league" 
+              className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block"
+            >
+              Premier League
+            </Link>
+            <Link 
+              href="/liga" 
+              className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block"
+            >
+              Liga
+            </Link>
+            <Link 
+              href="/serie-a" 
+              className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block"
+            >
+              Serie A
+            </Link>
+            <Link 
+              href="/bundesliga" 
+              className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block"
+            >
+              Bundesliga
+            </Link>
+          </div>
         </div>
       </section>
 
