@@ -39,7 +39,7 @@ export default function Ligue1Page() {
             >
               <h2 className="text-2xl font-semibold text-blue-900">{club.name}</h2>
               <p className="text-gray-600 mt-2">📍 {club.ville}</p>
-              <p className="text-blue-600 mt-4">Voir l'effectif →</p>
+              <p className="text-blue-600 mt-4">Voir l&apos;effectif →</p>
             </Link>
           ))}
         </div>
