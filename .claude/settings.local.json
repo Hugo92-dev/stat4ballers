@@ -3,8 +3,14 @@
     "allow": [
       "Bash(npm install)",
       "Bash(npm install:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Bash(mkdir:*)",
+      "Bash(find:*)",
+      "Bash(npm run dev:*)",
+      "Bash(dir C:Usershugostat4ballersapppremier-leaguepage.tsx)",
+      "Bash(git add:*)"
     ],
-    "deny": []
+    "deny": [],
+    "defaultMode": "acceptEdits"
   }
 }

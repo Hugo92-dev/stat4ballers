@@ -4,6 +4,14 @@ const nextConfig = {
     forceSwcTransforms: false,
   },
   swcMinify: false,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
+  },
   webpack: (config, { dev, isServer }) => {
     if (dev && !isServer) {
       config.cache = false;
