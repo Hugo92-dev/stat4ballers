@@ -1,8 +1,8 @@
-import ClubPage from '@/components/ClubPage';
+import ClubPageNew from '@/components/ClubPageNew';
 
 export default function PSGPage() {
   return (
-    <ClubPage
+    <ClubPageNew
       clubId="psg"
       clubName="Paris Saint-Germain"
       leagueId="ligue1"

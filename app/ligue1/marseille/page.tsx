@@ -1,8 +1,8 @@
-import ClubPage from '@/components/ClubPage';
+import ClubPageNew from '@/components/ClubPageNew';
 
 export default function MarseillePage() {
   return (
-    <ClubPage
+    <ClubPageNew
       clubId="marseille"
       clubName="Olympique de Marseille"
       leagueId="ligue1"

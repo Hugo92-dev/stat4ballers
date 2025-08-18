@@ -1,0 +1,105 @@
+{
+  "ligue1": {
+    "league_id": 301,
+    "league_name": "Ligue 1",
+    "country": "France",
+    "teams": [
+      {
+        "id": 591,
+        "name": "Paris Saint-Germain"
+      },
+      {
+        "id": 44,
+        "name": "Olympique de Marseille"
+      },
+      {
+        "id": 79,
+        "name": "Olympique Lyonnais"
+      },
+      {
+        "id": 6789,
+        "name": "AS Monaco"
+      },
+      {
+        "id": 65,
+        "name": "Lille OSC"
+      },
+      {
+        "id": 85,
+        "name": "Nice"
+      },
+      {
+        "id": 77,
+        "name": "RC Lens"
+      },
+      {
+        "id": 69,
+        "name": "Stade Rennais"
+      },
+      {
+        "id": 1020,
+        "name": "Stade de Reims"
+      },
+      {
+        "id": 82,
+        "name": "Toulouse FC"
+      },
+      {
+        "id": 88,
+        "name": "FC Nantes"
+      },
+      {
+        "id": 57,
+        "name": "Montpellier HSC"
+      },
+      {
+        "id": 106,
+        "name": "RC Strasbourg"
+      },
+      {
+        "id": 66,
+        "name": "Stade Brestois"
+      },
+      {
+        "id": 334,
+        "name": "AJ Auxerre"
+      },
+      {
+        "id": 75,
+        "name": "Le Havre AC"
+      },
+      {
+        "id": 674,
+        "name": "Angers SCO"
+      },
+      {
+        "id": 58,
+        "name": "AS Saint-Étienne"
+      }
+    ]
+  },
+  "premier-league": {
+    "league_id": 8,
+    "league_name": "Premier League",
+    "country": "England",
+    "teams": []
+  },
+  "laliga": {
+    "league_id": 564,
+    "league_name": "La Liga",
+    "country": "Spain",
+    "teams": []
+  },
+  "serie-a": {
+    "league_id": 384,
+    "league_name": "Serie A",
+    "country": "Italy",
+    "teams": []
+  },
+  "bundesliga": {
+    "league_id": 82,
+    "league_name": "Bundesliga",
+    "country": "Germany",
+    "teams": []
+  }
+}

@@ -34,7 +34,7 @@ interface LeaguePageProps {
 
 export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gradient }: LeaguePageProps) {
   const [searchTerm, setSearchTerm] = useState('');
-  const [sortBy, setSortBy] = useState<'name' | 'position'>('name');
+  const [sortBy, setSortBy] = useState<'name' | 'position'>('position');
 
   const filteredTeams = teams
     .filter(team => team.name.toLowerCase().includes(searchTerm.toLowerCase()))

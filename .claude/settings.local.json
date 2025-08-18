@@ -8,9 +8,21 @@
       "Bash(find:*)",
       "Bash(npm run dev:*)",
       "Bash(dir C:Usershugostat4ballersapppremier-leaguepage.tsx)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(python:*)",
+      "Bash(rm:*)",
+      "Bash(del:*)",
+      "Bash(cp:*)",
+      "Bash(grep:*)",
+      "Bash(node:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
-    "defaultMode": "acceptEdits"
+    "defaultMode": "acceptEdits",
+    "additionalDirectories": [
+      "C:\\c\\Users\\hugo\\stat4ballers"
+    ]
   }
 }
