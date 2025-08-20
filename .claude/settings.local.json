@@ -19,7 +19,9 @@
       "Bash(node:*)",
       "Bash(curl:*)",
       "Bash(dir scripts*.py)",
-      "Bash(dir scripts)"
+      "Bash(dir scripts)",
+      "Bash(npm run lint)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",
