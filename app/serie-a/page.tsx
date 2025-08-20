@@ -1,5 +1,5 @@
 import LeaguePage from '@/components/LeaguePage';
-import { serieATeams } from '@/data/leagues';
+import { serieATeams } from '@/data/serieATeams';
 
 export default function SerieAPage() {
   return (

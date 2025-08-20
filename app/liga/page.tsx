@@ -1,14 +1,14 @@
 import LeaguePage from '@/components/LeaguePage';
-import { ligaTeams } from '@/data/leagues';
+import { ligaTeams } from '@/data/ligaTeams';
 
 export default function LigaPage() {
   return (
     <LeaguePage
       leagueId="liga"
-      leagueName="Liga"
+      leagueName="La Liga"
       leagueFlag="🇪🇸"
       teams={ligaTeams}
-      gradient="from-red-500 to-orange-600"
+      gradient="from-orange-600 to-orange-800"
     />
   );
 }

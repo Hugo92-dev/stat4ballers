@@ -1,17 +1,17 @@
-import ClubPageLigue1 from '@/components/ClubPageLigue1';
-import { ligue1Teams } from '@/data/ligue1Teams';
+import ClubPageSerieA from '@/components/ClubPageSerieA';
+import { serieATeams } from '@/data/serieATeams';
 
 export default function ClubPage({ params }: { params: { club: string } }) {
   // Trouver le club dans les données
-  const club = ligue1Teams.find(c => c.slug === params.club);
+  const club = serieATeams.find(c => c.slug === params.club);
   
   if (!club) {
     return (
       <main className="min-h-screen bg-gray-900 flex items-center justify-center">
         <div className="text-center text-white">
           <h1 className="text-3xl font-bold mb-4">Club non trouvé</h1>
-          <a href="/ligue1" className="text-blue-400 hover:underline">
-            Retour à la Ligue 1
+          <a href="/serie-a" className="text-blue-400 hover:underline">
+            Retour à la Serie A
           </a>
         </div>
       </main>
@@ -19,12 +19,12 @@ export default function ClubPage({ params }: { params: { club: string } }) {
   }
 
   return (
-    <ClubPageLigue1
+    <ClubPageSerieA
       clubId={params.club}
       clubName={club.name}
-      leagueId="ligue1"
-      leagueName="Ligue 1"
-      primaryColor="#1e3a8a"
+      leagueId="serie-a"
+      leagueName="Serie A"
+      primaryColor="#00844A"
       secondaryColor="#ffffff"
     />
   );

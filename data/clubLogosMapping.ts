@@ -46,7 +46,7 @@ export const clubLogoFiles: Record<string, Record<string, string>> = {
   },
   'liga': {
     'real-madrid': 'Real Madrid.png',
-    'barcelone': 'FC Barcelona.png',
+    'barcelona': 'FC Barcelona.png',
     'atletico-madrid': 'Atlético de Madrid.png',
     'sevilla': 'Sevilla FC.png',
     'real-sociedad': 'Real Sociedad.png',
@@ -66,7 +66,7 @@ export const clubLogoFiles: Record<string, Record<string, string>> = {
     'valladolid': 'Real Valladolid.png', // À vérifier
     'almeria': 'UD Almería.png', // À vérifier
     'levante': 'Levante UD.png',
-    'deportivo-alaves': 'Deportivo Alavés.png',
+    'alaves': 'Deportivo Alavés.png',
     'real-oviedo': 'Real Oviedo.png',
   },
   'serie-a': {

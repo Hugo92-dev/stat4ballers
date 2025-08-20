@@ -17,7 +17,9 @@
       "Bash(cp:*)",
       "Bash(grep:*)",
       "Bash(node:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(dir scripts*.py)",
+      "Bash(dir scripts)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",

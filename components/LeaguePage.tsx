@@ -8,12 +8,13 @@ import { leagueLogos } from '@/data/logos';
 import { getClubLogoPath } from '@/data/clubLogosMapping';
 
 interface Team {
-  id: string;
+  id: string | number;
   name: string;
+  slug?: string;
   logo?: string;
-  stadium: string;
-  founded: number;
-  colors: string[];
+  stadium?: string;
+  founded?: number;
+  colors?: string[];
   stats?: {
     position: number;
     points: number;
@@ -36,10 +37,167 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState<'name' | 'position'>('position');
 
+  // Classement Premier League 2024/2025
+  const premierLeagueRanking: Record<string, number> = {
+    'liverpool': 1,
+    'arsenal': 2,
+    'manchester-city': 3,
+    'chelsea': 4,
+    'newcastle': 5,
+    'aston-villa': 6,
+    'nottingham-forest': 7,
+    'brighton': 8,
+    'bournemouth': 9,
+    'brentford': 10,
+    'fulham': 11,
+    'crystal-palace': 12,
+    'everton': 13,
+    'west-ham': 14,
+    'manchester-united': 15,
+    'wolves': 16,
+    'tottenham': 17,
+    // Clubs promus (n'étaient pas en Premier League 2024/2025)
+    'burnley': 18,
+    'sunderland': 19,
+    'leeds': 20
+  };
+
+  // Classement Ligue 1 2024/2025
+  const ligue1Ranking: Record<string, number> = {
+    'psg': 1,
+    'marseille': 2,
+    'monaco': 3,
+    'nice': 4,
+    'lille': 5,
+    'lyon': 6,
+    'strasbourg': 7,
+    'lens': 8,
+    'brest': 9,
+    'toulouse': 10,
+    'auxerre': 11,
+    'rennes': 12,
+    'nantes': 13,
+    'angers': 14,
+    'le-havre': 15,
+    // Clubs promus (Reims, Saint-Étienne, Montpellier ont été relégués)
+    'paris-fc': 16,
+    'metz': 17,
+    'lorient': 18
+  };
+
+  // Classement Liga 2024/2025
+  const ligaRanking: Record<string, number> = {
+    'barcelona': 1,
+    'real-madrid': 2,
+    'atletico-madrid': 3,
+    'athletic-bilbao': 4,
+    'villarreal': 5,
+    'real-betis': 6,
+    'celta-vigo': 7,
+    'rayo-vallecano': 8,
+    'osasuna': 9,
+    'mallorca': 10,
+    'real-sociedad': 11,
+    'valencia': 12,
+    'getafe': 13,
+    'espanyol': 14,
+    'alaves': 15,
+    'girona': 16,
+    'sevilla': 17,
+    // Clubs promus (Leganés, Las Palmas, Valladolid ne sont pas dans nos données)
+    'levante': 18,
+    'elche': 19,
+    'real-oviedo': 20
+  };
+
+  // Classement Serie A 2024/2025
+  const serieARanking: Record<string, number> = {
+    'napoli': 1,
+    'inter': 2,
+    'atalanta': 3,
+    'juventus': 4,
+    'roma': 5,
+    'fiorentina': 6,
+    'lazio': 7,
+    'milan': 8,
+    'bologna': 9,
+    'como': 10,
+    'torino': 11,
+    'udinese': 12,
+    'genoa': 13,
+    'verona': 14,
+    'cagliari': 15,
+    'parme': 16,
+    'lecce': 17,
+    // Clubs promus (Empoli, Venezia, Monza relégués)
+    'sassuolo': 18,
+    'cremonese': 19,
+    'pise': 20
+  };
+
+  // Classement Bundesliga 2024/2025
+  const bundesligaRanking: Record<string, number> = {
+    'bayern': 1,
+    'bayer-leverkusen': 2,
+    'eintracht-frankfurt': 3,
+    'borussia-dortmund': 4,
+    'freiburg': 5,
+    'mainz': 6,
+    'leipzig': 7,
+    'werder': 8,
+    'stuttgart': 9,
+    'borussia-monchengladbach': 10,
+    'wolfsburg': 11,
+    'augsburg': 12,
+    'union-berlin': 13,
+    'sankt-pauli': 14,
+    'hoffenheim': 15,
+    'heidenheim': 16,
+    // Clubs promus (Holstein Kiel et VfL Bochum relégués)
+    'koln': 17,
+    'hambourg': 18
+  };
+
   const filteredTeams = teams
     .filter(team => team.name.toLowerCase().includes(searchTerm.toLowerCase()))
     .sort((a, b) => {
       if (sortBy === 'name') return a.name.localeCompare(b.name);
+      
+      // Pour la Premier League, utiliser le classement personnalisé
+      if (leagueId === 'premier-league') {
+        const posA = premierLeagueRanking[String(a.id)] || 999;
+        const posB = premierLeagueRanking[String(b.id)] || 999;
+        return posA - posB;
+      }
+      
+      // Pour la Ligue 1, utiliser le classement personnalisé
+      if (leagueId === 'ligue1') {
+        const posA = ligue1Ranking[String(a.id)] || 999;
+        const posB = ligue1Ranking[String(b.id)] || 999;
+        return posA - posB;
+      }
+      
+      // Pour La Liga, utiliser le classement personnalisé
+      if (leagueId === 'liga') {
+        const posA = ligaRanking[a.slug] || 999;
+        const posB = ligaRanking[b.slug] || 999;
+        return posA - posB;
+      }
+      
+      // Pour la Serie A, utiliser le classement personnalisé
+      if (leagueId === 'serie-a') {
+        const posA = serieARanking[a.slug] || 999;
+        const posB = serieARanking[b.slug] || 999;
+        return posA - posB;
+      }
+      
+      // Pour la Bundesliga, utiliser le classement personnalisé
+      if (leagueId === 'bundesliga') {
+        const posA = bundesligaRanking[a.slug] || 999;
+        const posB = bundesligaRanking[b.slug] || 999;
+        return posA - posB;
+      }
+      
       return (a.stats?.position || 999) - (b.stats?.position || 999);
     });
 
@@ -114,7 +272,7 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
-                Par classement
+                Par classement (de la saison dernière)
               </button>
             </div>
           </div>
@@ -127,14 +285,14 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredTeams.map((team) => (
               <Link
-                key={team.id}
-                href={`/${leagueId}/${team.id}`}
+                key={String(team.id)}
+                href={`/${leagueId}/${team.slug || String(team.id)}`}
                 className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1"
               >
                 <div className="relative h-32 bg-gradient-to-br from-gray-50 via-white to-gray-100">
                   <div className="absolute inset-0 flex items-center justify-center p-4">
                     <Image
-                      src={getClubLogoPath(leagueId, team.id)}
+                      src={getClubLogoPath(leagueId, team.slug || team.id)}
                       alt={team.name}
                       width={80}
                       height={80}
@@ -162,7 +320,7 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
                   <h3 className="text-xl font-bold mb-2 text-gray-900 group-hover:text-blue-600 transition-colors">
                     {team.name}
                   </h3>
-                  <p className="text-sm text-gray-600 mb-3">{team.stadium}</p>
+                  {team.stadium && <p className="text-sm text-gray-600 mb-3">{team.stadium}</p>}
                   {team.stats && (
                     <div className="grid grid-cols-3 gap-2 text-center">
                       <div className="bg-gray-50 rounded-lg p-2">
@@ -181,7 +339,7 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
                   )}
                   <div className="mt-4 flex items-center justify-between">
                     <div className="flex gap-1">
-                      {team.colors.map((color, index) => (
+                      {team.colors && team.colors.map((color, index) => (
                         <div
                           key={index}
                           className="w-6 h-6 rounded-full border border-gray-300"

@@ -1,5 +1,5 @@
 import LeaguePage from '@/components/LeaguePage';
-import { bundesligaTeams } from '@/data/leagues';
+import { bundesligaTeams } from '@/data/bundesligaTeams';
 
 export default function BundesligaPage() {
   return (
