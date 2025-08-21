@@ -166,7 +166,7 @@ export default function ClubPageBundesliga({
                             </div>
                           )}
                           <div>
-                            <h3 className="text-white font-semibold text-lg">{player.name}</h3>
+                            <h3 className="text-white font-semibold text-lg">{player.displayName || player.fullName || player.name}</h3>
                             <p className="text-gray-400 text-sm">{player.position}</p>
                           </div>
                         </div>

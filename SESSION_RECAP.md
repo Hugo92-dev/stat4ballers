@@ -81,28 +81,34 @@ stat4ballers/
 - **Node** : v20+
 - **Package Manager** : npm
 
-## 🎯 PROCHAINE ÉTAPE : Statistiques des joueurs
+## 🎯 PROCHAINE ÉTAPE : Finaliser les display_name
 
-### Phase 1 : Ajout des statistiques via API
-Le projet est **prêt** pour intégrer les statistiques détaillées :
+### ⚠️ EN COURS : Mise à jour des display_name
+**État actuel (21-08-2025)** :
+- ✅ **Ligue 1** : 493/493 joueurs avec display_name correct
+- ⚠️ **Premier League** : 184/608 joueurs avec display_name (424 restants)
+- ❌ **La Liga** : 0/517 joueurs (API en pause)
+- ❌ **Serie A** : 0/616 joueurs (API en pause)
+- ❌ **Bundesliga** : 0/526 joueurs (API en pause)
 
-1. **Statistiques à récupérer** (SportMonks API)
-   - Stats générales : Buts, passes, minutes jouées
-   - Performance offensive : xG, xA, tirs cadrés
-   - Impact défensif : Tacles, interceptions, duels
-   - Créativité : Passes clés, dribbles réussis
+**Scripts créés** :
+- `scripts/update_all_display_names.py` : Met à jour tous les display_name depuis l'API
+- `scripts/update_remaining_leagues.py` : Pour les championnats restants
 
-2. **Implémentation suggérée**
-   ```python
-   # Script pour récupérer les stats de la saison
-   GET /v3/football/players/{player_id}/statistics
-   ?filters[seasons]={season_id}
-   ```
+**À faire quand l'API fonctionnera** :
+1. Relancer le script pour récupérer les 2083 display_name manquants
+2. Vérifier que tous les joueurs affichent leur display_name correct
+3. Les composants utilisent déjà `player.displayName || player.fullName || player.name`
 
-3. **Affichage dans l'interface**
-   - Ajouter onglet "Statistiques" sur chaque page joueur
-   - Créer radar charts pour visualisation
-   - Comparaison entre joueurs
+### Phase 2 : Ajout des statistiques via API
+**Note** : Le plan gratuit SportMonks limite les statistiques disponibles :
+- ✅ Disponible : Buts via topscorers endpoint
+- ❌ Non disponible : Passes, xG, tacles, etc. (plan payant requis)
+
+Options possibles :
+1. Se limiter aux stats de base disponibles
+2. Chercher une API alternative
+3. Upgrader le plan SportMonks
 
 ### Phase 2 : Pages joueurs individuelles
 - Route : `/[league]/[club]/[player]`
@@ -161,5 +167,5 @@ Le projet est **prêt** pour intégrer les statistiques détaillées :
 
 ---
 
-**Dernière mise à jour** : 20-08-2025 à 14:20
-**État** : ✅ Projet fonctionnel - Prêt pour les statistiques
+**Dernière mise à jour** : 21-08-2025 à 10:55
+**État** : ✅ Projet fonctionnel - ⚠️ Display_name partiellement implémentés (API en pause)

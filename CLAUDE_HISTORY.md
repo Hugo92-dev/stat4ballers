@@ -274,3 +274,64 @@ public/data/
 4. Système de mise à jour automatique
 
 ---
+
+## Session du 2025-08-21 - Display Name et Statistiques
+
+### Contexte
+- User demande d'explorer les statistiques disponibles via SportMonks API
+- User veut afficher les `display_name` pour tous les joueurs
+
+### Travaux réalisés
+
+#### 1. Exploration des statistiques SportMonks
+- Créé `scripts/explore_player_statistics.py` pour tester les endpoints
+- Créé `scripts/test_sportmonks_stats.py` et `scripts/check_available_stats.py`
+- **Résultat** : Plan gratuit très limité
+  - ❌ Pas d'accès aux statistiques détaillées (passes, xG, tacles, etc.)
+  - ✅ Seulement les buts via topscorers endpoint
+  - Besoin d'un plan payant pour les stats complètes
+
+#### 2. Mise à jour des display_name
+**Problème identifié** : Les noms affichés n'étaient pas corrects
+- Ex: "Leonardo Julián Balerdi Rossa" au lieu de "Leonardo Balerdi"
+- Ex: "Randal Muani" au lieu de "Randal Kolo Muani"
+
+**Solution implémentée** :
+1. Créé `scripts/update_display_names.py` avec solution rapide (sans API)
+2. Créé `scripts/fix_display_names.py` avec algorithme intelligent
+3. Créé `scripts/fetch_real_display_names.py` pour récupérer depuis l'API
+4. Créé `scripts/update_all_display_names.py` pour traiter tous les championnats
+5. Créé `scripts/update_remaining_leagues.py` pour les championnats restants
+
+**Scripts exécutés** :
+- ✅ Ligue 1 : 493/493 joueurs mis à jour avec display_name correct
+- ⚠️ Premier League : 184/608 joueurs (API timeout pour les autres)
+- ❌ La Liga, Serie A, Bundesliga : 0 joueurs (API en pause/erreurs)
+
+**Modifications des composants** :
+- Tous les 5 ClubPage modifiés pour utiliser : `player.displayName || player.fullName || player.name`
+- Interface Player mise à jour avec `displayName?: string`
+
+### État final
+- **Ligue 1** : Tous les joueurs affichent le bon display_name (ex: "Randal Kolo Muani")
+- **Autres championnats** : Partiellement implémentés, API en pause
+- **Total restant** : 2083 joueurs à mettre à jour quand l'API fonctionnera
+
+### Fichiers clés créés/modifiés
+- `scripts/update_all_display_names.py` - Script principal pour display_name
+- `scripts/update_remaining_leagues.py` - Pour finir les championnats
+- `components/ClubPage*.tsx` - Tous modifiés pour utiliser displayName
+- `data/*Teams.ts` - Tous avec interface Player incluant displayName
+
+### 🚨 À FAIRE PROCHAINE SESSION
+1. **Quand l'API SportMonks fonctionnera** :
+   - Relancer `python scripts/update_remaining_leagues.py`
+   - Vérifier les 2083 joueurs restants
+   - S'assurer que tous affichent leur display_name correct
+
+2. **Pour les statistiques** :
+   - Décider si on reste sur le plan gratuit (limité)
+   - Ou chercher une alternative (FBref, Transfermarkt)
+   - Ou upgrader le plan SportMonks
+
+---
