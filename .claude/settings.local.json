@@ -21,7 +21,8 @@
       "Bash(dir scripts*.py)",
       "Bash(dir scripts)",
       "Bash(npm run lint)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(git restore:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",

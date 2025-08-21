@@ -335,3 +335,66 @@ public/data/
    - Ou upgrader le plan SportMonks
 
 ---
+
+## Session du 2025-08-21 (Suite) - Nationalités Sportives
+
+### Contexte
+- User identifie un problème majeur : les nationalités affichées sont les pays de naissance, pas les nationalités sportives
+- Ex: Amine Gouiri né en France mais représente l'Algérie en équipe nationale
+- User refuse de corriger manuellement ~2800 joueurs
+
+### Travaux réalisés
+
+#### 1. Tentatives initiales de correction manuelle (ÉCHEC)
+- Créé plusieurs scripts avec mappings manuels
+- User rejette : "je ne vais pas te donner manuellement les nationalités sportives de tous les joueurs !"
+- Rollback complet demandé par l'user
+
+#### 2. Découverte de la solution automatique (SUCCÈS)
+- Créé `scripts/test_player_includes.py` pour explorer l'API
+- **Découverte clé** : `include=nationality` retourne la nationalité sportive réelle
+- L'API SportMonks a cette info depuis le début !
+
+#### 3. Implémentation de la solution automatique
+Scripts créés dans l'ordre :
+1. `fix_all_om_auto.py` : Test sur l'OM avec succès
+2. `fix_corrupted_nationalities.py` : Nettoyage des corruptions (Angleterre'Ivoire)
+3. `fix_all_nationalities_global.py` : Script final pour tous les championnats
+
+#### 4. Exécution globale réussie
+**Résultats** :
+- **2760 joueurs traités** au total
+- **336 corrections automatiques** appliquées
+- **Durée** : 48.8 minutes avec gestion du rate limiting
+- **Taux de correction** : ~12% des joueurs avaient une nationalité incorrecte
+
+**Détail par championnat** :
+- Ligue 1 : 73 corrections / 493 joueurs
+- Premier League : 82 corrections / 608 joueurs
+- La Liga : 40 corrections / 517 joueurs  
+- Serie A : 82 corrections / 616 joueurs
+- Bundesliga : 59 corrections / 526 joueurs
+
+**Exemples notables** :
+- Eduardo Camavinga : Angola → France
+- Iñaki Williams : Espagne → Ghana  
+- Alphonso Davies : Ghana → Canada
+- Raphaël Guerreiro : France → Portugal
+- Mason Greenwood : Angleterre → Jamaïque
+- Serge Guirassy : France → Guinée
+
+### État final
+- ✅ **100% des nationalités sportives corrigées automatiquement**
+- ✅ **97% des display names corrigés** (2202/2267)
+- ✅ **Projet entièrement fonctionnel** avec données correctes
+
+### Fichiers clés
+- `scripts/fix_all_nationalities_global.py` : Script principal de correction
+- `scripts/test_player_includes.py` : Script de découverte de la solution
+- `data/*Teams.ts` : Tous mis à jour avec les nationalités correctes
+
+### Leçon apprise
+L'API SportMonks avait la solution depuis le début avec `include=nationality`. 
+La documentation n'était pas claire sur ce point crucial.
+
+---

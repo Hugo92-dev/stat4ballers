@@ -102,7 +102,7 @@ export const ligue1Teams: Team[] = [
         jersey: 7,
         position: "FW",
         dateOfBirth: "2001-02-12",
-        nationality: "Géorgie",
+        nationality: "Georgia",
         height: 183,
         weight: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/1479337.png"
@@ -388,7 +388,7 @@ export const ligue1Teams: Team[] = [
         jersey: null,
         position: "GK",
         dateOfBirth: "2006-07-10",
-        nationality: "Brésil",
+        nationality: "Italie",
         height: 193,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/37714950.png"
@@ -460,7 +460,7 @@ export const ligue1Teams: Team[] = [
         jersey: 6,
         position: "DF",
         dateOfBirth: "1996-01-11",
-        nationality: "Portugal",
+        nationality: "Suisse",
         height: 182,
         weight: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/32390.png"
@@ -499,7 +499,7 @@ export const ligue1Teams: Team[] = [
         jersey: 9,
         position: "FW",
         dateOfBirth: "2000-02-16",
-        nationality: "France",
+        nationality: "Algérie",
         height: 181,
         weight: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/433458.png"
@@ -525,7 +525,7 @@ export const ligue1Teams: Team[] = [
         jersey: 11,
         position: "MF",
         dateOfBirth: "1997-06-18",
-        nationality: "France",
+        nationality: "Maroc",
         height: 180,
         weight: 67,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/96691.png"
@@ -603,7 +603,7 @@ export const ligue1Teams: Team[] = [
         jersey: 19,
         position: "MF",
         dateOfBirth: "1993-02-15",
-        nationality: "France",
+        nationality: "République centrafricaine",
         height: 188,
         weight: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/95696.png"
@@ -759,7 +759,7 @@ export const ligue1Teams: Team[] = [
         jersey: 97,
         position: "FW",
         dateOfBirth: "1989-06-18",
-        nationality: "France",
+        nationality: "Gabon",
         height: 187,
         weight: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/31739.png"
@@ -818,7 +818,7 @@ export const ligue1Teams: Team[] = [
         jersey: 4,
         position: "MF",
         dateOfBirth: "1997-12-20",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 181,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/93900.png"
@@ -935,7 +935,7 @@ export const ligue1Teams: Team[] = [
         jersey: 19,
         position: "DF",
         dateOfBirth: "1996-03-08",
-        nationality: "France",
+        nationality: "Sénégal",
         height: 190,
         weight: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/98874.png"
@@ -974,7 +974,7 @@ export const ligue1Teams: Team[] = [
         jersey: 22,
         position: "DF",
         dateOfBirth: "1992-11-07",
-        nationality: "Belgique",
+        nationality: "Angola",
         height: 180,
         weight: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/62374.png"
@@ -1078,7 +1078,7 @@ export const ligue1Teams: Team[] = [
         jersey: 69,
         position: "FW",
         dateOfBirth: "2000-10-31",
-        nationality: "France",
+        nationality: "Georgia",
         height: 176,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/13963088.png"
@@ -1241,7 +1241,7 @@ export const ligue1Teams: Team[] = [
         jersey: 7,
         position: "FW",
         dateOfBirth: "2005-02-16",
-        nationality: "France",
+        nationality: "Maroc",
         height: 178,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/37601342.png"
@@ -1332,7 +1332,7 @@ export const ligue1Teams: Team[] = [
         jersey: 14,
         position: "FW",
         dateOfBirth: "2003-02-08",
-        nationality: "Angleterre",
+        nationality: "Danemark",
         height: 187,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/28912753.png"
@@ -1358,7 +1358,7 @@ export const ligue1Teams: Team[] = [
         jersey: 16,
         position: "GK",
         dateOfBirth: "1998-04-02",
-        nationality: "Allemagne",
+        nationality: "Suisse",
         height: 190,
         weight: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/1030177.png"
@@ -1371,7 +1371,7 @@ export const ligue1Teams: Team[] = [
         jersey: 17,
         position: "DF",
         dateOfBirth: "2000-12-25",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 190,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/31640130.png"
@@ -1410,7 +1410,7 @@ export const ligue1Teams: Team[] = [
         jersey: 21,
         position: "FW",
         dateOfBirth: "2006-08-16",
-        nationality: "Nigéria",
+        nationality: "France",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/37667455.png"
@@ -1449,7 +1449,7 @@ export const ligue1Teams: Team[] = [
         jersey: 31,
         position: "FW",
         dateOfBirth: "2002-10-31",
-        nationality: "Guinea-Bissau",
+        nationality: "Espagne",
         height: 178,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/23269740.png"
@@ -1462,7 +1462,7 @@ export const ligue1Teams: Team[] = [
         jersey: 36,
         position: "FW",
         dateOfBirth: "1997-02-14",
-        nationality: "Cameroun",
+        nationality: "Suisse",
         height: 187,
         weight: 86,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/32538.png"
@@ -1527,7 +1527,7 @@ export const ligue1Teams: Team[] = [
         jersey: null,
         position: "Unknown",
         dateOfBirth: "1989-11-24",
-        nationality: "Slovaquie",
+        nationality: "Finlande",
         height: 192,
         weight: 85,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/32539.png"
@@ -1599,7 +1599,7 @@ export const ligue1Teams: Team[] = [
         jersey: 6,
         position: "MF",
         dateOfBirth: "1994-11-24",
-        nationality: "France",
+        nationality: "Algérie",
         height: 187,
         weight: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/937.png"
@@ -1742,7 +1742,7 @@ export const ligue1Teams: Team[] = [
         jersey: 23,
         position: "FW",
         dateOfBirth: "1999-03-31",
-        nationality: "Allemagne",
+        nationality: "Kosovo",
         height: 180,
         weight: 66,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/2158213.png"
@@ -1872,7 +1872,7 @@ export const ligue1Teams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "1998-06-04",
-        nationality: "France",
+        nationality: "Guinée",
         height: 187,
         weight: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/785058.png"
@@ -1983,7 +1983,7 @@ export const ligue1Teams: Team[] = [
         jersey: 7,
         position: "FW",
         dateOfBirth: "1997-01-03",
-        nationality: "France",
+        nationality: "Côte d'Ivoire",
         height: 172,
         weight: 68,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/4637.png"
@@ -2009,7 +2009,7 @@ export const ligue1Teams: Team[] = [
         jersey: 9,
         position: "FW",
         dateOfBirth: "1999-05-25",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 188,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/3187862.png"
@@ -2022,7 +2022,7 @@ export const ligue1Teams: Team[] = [
         jersey: 10,
         position: "FW",
         dateOfBirth: "2000-06-09",
-        nationality: "France",
+        nationality: "Maroc",
         height: 175,
         weight: 50,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/10990739.png"
@@ -2048,7 +2048,7 @@ export const ligue1Teams: Team[] = [
         jersey: 14,
         position: "FW",
         dateOfBirth: "2000-03-14",
-        nationality: "France",
+        nationality: "Algérie",
         height: 183,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/11298787.png"
@@ -2282,7 +2282,7 @@ export const ligue1Teams: Team[] = [
         jersey: 77,
         position: "GK",
         dateOfBirth: "2001-04-09",
-        nationality: "France",
+        nationality: "Algérie",
         height: 185,
         weight: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/7026746.png"
@@ -2380,7 +2380,7 @@ export const ligue1Teams: Team[] = [
         jersey: 8,
         position: "MF",
         dateOfBirth: "1995-05-07",
-        nationality: "France",
+        nationality: "Côte d'Ivoire",
         height: 185,
         weight: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/6301.png"
@@ -2406,7 +2406,7 @@ export const ligue1Teams: Team[] = [
         jersey: 11,
         position: "FW",
         dateOfBirth: "1997-06-10",
-        nationality: "Jordan",
+        nationality: "Jordanie",
         height: 178,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/474354.png"
@@ -2666,7 +2666,7 @@ export const ligue1Teams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "2001-08-30",
-        nationality: "Belgique",
+        nationality: "Maroc",
         height: 186,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/37613533.png"
@@ -2881,7 +2881,7 @@ export const ligue1Teams: Team[] = [
         jersey: 15,
         position: "MF",
         dateOfBirth: "2003-11-14",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 180,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/37342981.png"
@@ -2972,7 +2972,7 @@ export const ligue1Teams: Team[] = [
         jersey: 29,
         position: "FW",
         dateOfBirth: "1998-03-10",
-        nationality: "France",
+        nationality: "Guinée",
         height: 189,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/530843.png"
@@ -2998,7 +2998,7 @@ export const ligue1Teams: Team[] = [
         jersey: 36,
         position: "FW",
         dateOfBirth: "2003-03-03",
-        nationality: "Guadeloupe",
+        nationality: "France",
         height: 184,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/37579970.png"
@@ -3037,7 +3037,7 @@ export const ligue1Teams: Team[] = [
         jersey: null,
         position: "DF",
         dateOfBirth: "1999-07-18",
-        nationality: "Saudi Arabia",
+        nationality: "Arabie saoudite",
         height: 175,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/24445509.png"
@@ -3083,7 +3083,7 @@ export const ligue1Teams: Team[] = [
         jersey: 2,
         position: "DF",
         dateOfBirth: "2002-06-23",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 188,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/24830085.png"
@@ -3109,7 +3109,7 @@ export const ligue1Teams: Team[] = [
         jersey: 5,
         position: "DF",
         dateOfBirth: "2002-12-25",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 188,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/37630141.png"
@@ -3148,7 +3148,7 @@ export const ligue1Teams: Team[] = [
         jersey: 8,
         position: "MF",
         dateOfBirth: "2004-11-07",
-        nationality: "Angleterre",
+        nationality: "Pologne",
         height: 183,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/37560480.png"
@@ -3506,7 +3506,7 @@ export const ligue1Teams: Team[] = [
         jersey: 2,
         position: "DF",
         dateOfBirth: "1997-07-12",
-        nationality: "France",
+        nationality: "Haiti",
         height: 186,
         weight: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/99173.png"
@@ -3545,7 +3545,7 @@ export const ligue1Teams: Team[] = [
         jersey: 6,
         position: "DF",
         dateOfBirth: "1997-01-01",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 189,
         weight: 64,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/161320.png"
@@ -3649,7 +3649,7 @@ export const ligue1Teams: Team[] = [
         jersey: 16,
         position: "GK",
         dateOfBirth: "1990-10-01",
-        nationality: "France",
+        nationality: "Portugal",
         height: 184,
         weight: 81,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/95617.png"
@@ -3688,7 +3688,7 @@ export const ligue1Teams: Team[] = [
         jersey: 19,
         position: "FW",
         dateOfBirth: "1987-02-03",
-        nationality: "France",
+        nationality: "Maroc",
         height: 183,
         weight: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/95134.png"
@@ -3903,7 +3903,7 @@ export const ligue1Teams: Team[] = [
         jersey: 9,
         position: "FW",
         dateOfBirth: "1999-09-04",
-        nationality: "France",
+        nationality: "Cameroun",
         height: 178,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/529581.png"
@@ -4020,7 +4020,7 @@ export const ligue1Teams: Team[] = [
         jersey: 22,
         position: "MF",
         dateOfBirth: "2003-04-28",
-        nationality: "France",
+        nationality: "Algérie",
         height: 177,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/37592240.png"
@@ -4235,7 +4235,7 @@ export const ligue1Teams: Team[] = [
         jersey: 12,
         position: "DF",
         dateOfBirth: "2005-03-24",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 178,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/37699791.png"
@@ -4248,7 +4248,7 @@ export const ligue1Teams: Team[] = [
         jersey: 14,
         position: "FW",
         dateOfBirth: "1995-11-06",
-        nationality: "Guinea-Bissau",
+        nationality: "Guinée-Bissau",
         height: 176,
         weight: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/162141.png"
@@ -4274,7 +4274,7 @@ export const ligue1Teams: Team[] = [
         jersey: 19,
         position: "FW",
         dateOfBirth: "1994-02-25",
-        nationality: "Réunion",
+        nationality: "France",
         height: 196,
         weight: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/98457.png"
@@ -4515,7 +4515,7 @@ export const ligue1Teams: Team[] = [
         jersey: 16,
         position: "GK",
         dateOfBirth: "1992-11-03",
-        nationality: "Guyane française",
+        nationality: "French Guiana",
         height: 187,
         weight: 88,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/95346.png"
@@ -4554,7 +4554,7 @@ export const ligue1Teams: Team[] = [
         jersey: 20,
         position: "DF",
         dateOfBirth: "2001-04-09",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 184,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/37316428.png"
@@ -4658,7 +4658,7 @@ export const ligue1Teams: Team[] = [
         jersey: 40,
         position: "GK",
         dateOfBirth: "2001-02-02",
-        nationality: "France",
+        nationality: "Martinique",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/8043787.png"
@@ -4671,7 +4671,7 @@ export const ligue1Teams: Team[] = [
         jersey: 42,
         position: "MF",
         dateOfBirth: "1997-11-07",
-        nationality: "France",
+        nationality: "Ghana",
         height: 182,
         weight: 62,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/433075.png"
@@ -4736,7 +4736,7 @@ export const ligue1Teams: Team[] = [
         jersey: null,
         position: "MF",
         dateOfBirth: "2001-05-29",
-        nationality: "Pays-Bas",
+        nationality: "Maroc",
         height: 189,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/3219641.png"
@@ -4821,7 +4821,7 @@ export const ligue1Teams: Team[] = [
         jersey: 10,
         position: "MF",
         dateOfBirth: "1999-11-17",
-        nationality: "France",
+        nationality: "Algérie",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/524849.png"
@@ -4834,7 +4834,7 @@ export const ligue1Teams: Team[] = [
         jersey: 11,
         position: "FW",
         dateOfBirth: "2006-12-15",
-        nationality: "Guinée",
+        nationality: "France",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/37699171.png"
@@ -4860,7 +4860,7 @@ export const ligue1Teams: Team[] = [
         jersey: 14,
         position: "MF",
         dateOfBirth: "2002-02-14",
-        nationality: "France",
+        nationality: "Maroc",
         height: 175,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/37316421.png"
@@ -4977,7 +4977,7 @@ export const ligue1Teams: Team[] = [
         jersey: 25,
         position: "DF",
         dateOfBirth: "1990-04-25",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 182,
         weight: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/95411.png"
@@ -5042,7 +5042,7 @@ export const ligue1Teams: Team[] = [
         jersey: 93,
         position: "MF",
         dateOfBirth: "1994-01-28",
-        nationality: "France",
+        nationality: "Algérie",
         height: 177,
         weight: 68,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/98739.png"
@@ -5127,7 +5127,7 @@ export const ligue1Teams: Team[] = [
         jersey: 8,
         position: "MF",
         dateOfBirth: "2002-02-25",
-        nationality: "France",
+        nationality: "Maroc",
         height: 174,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/29313334.png"
@@ -5179,7 +5179,7 @@ export const ligue1Teams: Team[] = [
         jersey: 17,
         position: "DF",
         dateOfBirth: "1991-02-19",
-        nationality: "France",
+        nationality: "Maroc",
         height: 181,
         weight: 73,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/99134.png"
@@ -5205,7 +5205,7 @@ export const ligue1Teams: Team[] = [
         jersey: 19,
         position: "MF",
         dateOfBirth: "2001-12-11",
-        nationality: "France",
+        nationality: "Sénégal",
         height: 179,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/22168918.png"
@@ -5244,7 +5244,7 @@ export const ligue1Teams: Team[] = [
         jersey: 26,
         position: "MF",
         dateOfBirth: "2004-08-16",
-        nationality: "Cameroun",
+        nationality: "France",
         height: 180,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/37629335.png"
@@ -5348,7 +5348,7 @@ export const ligue1Teams: Team[] = [
         jersey: 94,
         position: "MF",
         dateOfBirth: "1994-03-03",
-        nationality: "France",
+        nationality: "Guinée",
         height: 188,
         weight: 77,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/96128.png"
@@ -5361,7 +5361,7 @@ export const ligue1Teams: Team[] = [
         jersey: 99,
         position: "GK",
         dateOfBirth: "1993-06-22",
-        nationality: "France",
+        nationality: "Sénégal",
         height: 197,
         weight: 88,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/162164.png"
@@ -5387,7 +5387,7 @@ export const ligue1Teams: Team[] = [
         jersey: null,
         position: "DF",
         dateOfBirth: "1991-01-15",
-        nationality: "France",
+        nationality: "Hongrie",
         height: 181,
         weight: 64,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/6170.png"
@@ -5400,7 +5400,7 @@ export const ligue1Teams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "1992-12-23",
-        nationality: "Tanzania",
+        nationality: "Tanzanie",
         height: 183,
         weight: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/62600.png"
@@ -5550,7 +5550,7 @@ export const ligue1Teams: Team[] = [
         jersey: 10,
         position: "MF",
         dateOfBirth: "1998-07-10",
-        nationality: "France",
+        nationality: "Algérie",
         height: 169,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/529896.png"
@@ -5563,7 +5563,7 @@ export const ligue1Teams: Team[] = [
         jersey: 11,
         position: "FW",
         dateOfBirth: "1997-07-17",
-        nationality: "Allemagne",
+        nationality: "Côte d'Ivoire",
         height: 187,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/432800.png"
@@ -5641,7 +5641,7 @@ export const ligue1Teams: Team[] = [
         jersey: 20,
         position: "FW",
         dateOfBirth: "1992-03-01",
-        nationality: "France",
+        nationality: "Algérie",
         height: 173,
         weight: 63,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/101467.png"
@@ -5667,7 +5667,7 @@ export const ligue1Teams: Team[] = [
         jersey: 22,
         position: "DF",
         dateOfBirth: "1998-07-29",
-        nationality: "France",
+        nationality: "Maroc",
         height: 175,
         weight: 66,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/100035.png"
@@ -5706,7 +5706,7 @@ export const ligue1Teams: Team[] = [
         jersey: 27,
         position: "FW",
         dateOfBirth: "1995-07-12",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 168,
         weight: 66,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/62400.png"
@@ -5869,7 +5869,7 @@ export const ligue1Teams: Team[] = [
         jersey: 5,
         position: "MF",
         dateOfBirth: "1995-09-25",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 186,
         weight: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/32421.png"
@@ -5908,7 +5908,7 @@ export const ligue1Teams: Team[] = [
         jersey: 8,
         position: "FW",
         dateOfBirth: "2000-11-18",
-        nationality: "Israël",
+        nationality: "Georgia",
         height: 171,
         weight: 63,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/537257.png"
@@ -6025,7 +6025,7 @@ export const ligue1Teams: Team[] = [
         jersey: 22,
         position: "DF",
         dateOfBirth: "1996-03-14",
-        nationality: "France",
+        nationality: "Algérie",
         height: 190,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/361906.png"
@@ -6090,7 +6090,7 @@ export const ligue1Teams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "2003-02-08",
-        nationality: "Géorgie",
+        nationality: "Georgia",
         height: 175,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/24818168.png"
@@ -6227,7 +6227,7 @@ export const ligue1Teams: Team[] = [
         jersey: 3,
         position: "DF",
         dateOfBirth: "1998-05-26",
-        nationality: "France",
+        nationality: "Tunisie",
         height: 190,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/430355.png"
@@ -6279,7 +6279,7 @@ export const ligue1Teams: Team[] = [
         jersey: 9,
         position: "FW",
         dateOfBirth: "2001-12-10",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/37416875.png"
@@ -6318,7 +6318,7 @@ export const ligue1Teams: Team[] = [
         jersey: 27,
         position: "FW",
         dateOfBirth: "1998-06-26",
-        nationality: "Nigéria",
+        nationality: "Benin",
         height: 179,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/430249.png"
@@ -6474,7 +6474,7 @@ export const ligue1Teams: Team[] = [
         jersey: null,
         position: "DF",
         dateOfBirth: "2002-11-10",
-        nationality: "France",
+        nationality: "Guinée",
         height: 175,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/37308191.png"
@@ -6552,7 +6552,7 @@ export const ligue1Teams: Team[] = [
         jersey: null,
         position: "GK",
         dateOfBirth: "1996-10-21",
-        nationality: "France",
+        nationality: "Sénégal",
         height: 195,
         weight: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/98788.png"

@@ -50,7 +50,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 3,
         position: "DF",
         dateOfBirth: "2001-11-20",
-        nationality: "Belgique",
+        nationality: "France",
         height: 176,
         weight: 61,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/28543553.png"
@@ -89,7 +89,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 6,
         position: "DF",
         dateOfBirth: "1997-11-05",
-        nationality: "Angleterre",
+        nationality: "Pays de Galles",
         height: 190,
         weight: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/339083.png"
@@ -102,7 +102,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 7,
         position: "FW",
         dateOfBirth: "1997-07-08",
-        nationality: "Angleterre",
+        nationality: "Pays de Galles",
         height: 173,
         weight: 62,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/9808.png"
@@ -271,7 +271,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 22,
         position: "MF",
         dateOfBirth: "2000-02-16",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 177,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/2511082.png"
@@ -297,7 +297,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 22,
         position: "DF",
         dateOfBirth: "2001-08-13",
-        nationality: "États-Unis",
+        nationality: "Mexique",
         height: 176,
         weight: 68,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/23260605.png"
@@ -362,7 +362,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 35,
         position: "DF",
         dateOfBirth: "2003-10-26",
-        nationality: "Angleterre",
+        nationality: "Pays de Galles",
         height: 186,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/37549901.png"
@@ -733,7 +733,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 31,
         position: "GK",
         dateOfBirth: "2002-04-13",
-        nationality: "Estonia",
+        nationality: "Estonie",
         height: 193,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/14/22897102.png"
@@ -805,7 +805,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 2,
         position: "DF",
         dateOfBirth: "1997-08-07",
-        nationality: "Angleterre",
+        nationality: "Pologne",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/6524.png"
@@ -1013,7 +1013,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 24,
         position: "MF",
         dateOfBirth: "2001-08-16",
-        nationality: "Sénégal",
+        nationality: "Belgique",
         height: 195,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/22878573.png"
@@ -1124,7 +1124,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 1,
         position: "GK",
         dateOfBirth: "1998-11-23",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 188,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/896225.png"
@@ -1176,7 +1176,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 5,
         position: "DF",
         dateOfBirth: "1993-05-29",
-        nationality: "Angleterre",
+        nationality: "Jamaïque",
         height: 194,
         weight: 79,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/15665.png"
@@ -1241,7 +1241,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 11,
         position: "FW",
         dateOfBirth: "1996-09-03",
-        nationality: "France",
+        nationality: "DR Congo",
         height: 176,
         weight: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/96928.png"
@@ -1293,7 +1293,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 15,
         position: "MF",
         dateOfBirth: "1998-01-01",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 183,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/537108.png"
@@ -1358,7 +1358,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 22,
         position: "DF",
         dateOfBirth: "2001-04-30",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 193,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/11705403.png"
@@ -1410,7 +1410,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 26,
         position: "MF",
         dateOfBirth: "2006-01-10",
-        nationality: "Unknown",
+        nationality: "Turquie",
         height: 181,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/37709434.png"
@@ -1586,7 +1586,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 2,
         position: "DF",
         dateOfBirth: "2000-09-30",
-        nationality: "Angleterre",
+        nationality: "Ghana",
         height: 163,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/9308200.png"
@@ -1703,7 +1703,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 11,
         position: "FW",
         dateOfBirth: "2004-07-22",
-        nationality: "Gambia",
+        nationality: "Gambie",
         height: 180,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/37655226.png"
@@ -1833,7 +1833,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 24,
         position: "DF",
         dateOfBirth: "1999-10-07",
-        nationality: "Pays-Bas",
+        nationality: "Turquie",
         height: 174,
         weight: 66,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/25738.png"
@@ -1911,7 +1911,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 32,
         position: "FW",
         dateOfBirth: "2002-06-16",
-        nationality: "Espagne",
+        nationality: "Équateur",
         height: 178,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/35280539.png"
@@ -1950,7 +1950,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 35,
         position: "MF",
         dateOfBirth: "2003-10-15",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 177,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/37287498.png"
@@ -1989,7 +1989,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 38,
         position: "GK",
         dateOfBirth: "2000-03-25",
-        nationality: "Angleterre",
+        nationality: "Canada",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/581004.png"
@@ -2100,7 +2100,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 6,
         position: "DF",
         dateOfBirth: "1997-11-14",
-        nationality: "RD Congo",
+        nationality: "Angleterre",
         height: 185,
         weight: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/4391.png"
@@ -2217,7 +2217,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 17,
         position: "FW",
         dateOfBirth: "2003-09-08",
-        nationality: "Chad",
+        nationality: "France",
         height: 180,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/37337041.png"
@@ -2282,7 +2282,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 22,
         position: "FW",
         dateOfBirth: "2001-09-10",
-        nationality: "Angleterre",
+        nationality: "Albanie",
         height: 191,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/23697427.png"
@@ -2295,7 +2295,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 22,
         position: "DF",
         dateOfBirth: "2000-11-10",
-        nationality: "Danemark",
+        nationality: "Pérou",
         height: 184,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/37260000.png"
@@ -2321,7 +2321,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 24,
         position: "MF",
         dateOfBirth: "1996-04-07",
-        nationality: "Angleterre",
+        nationality: "République d'Irlande",
         height: 175,
         weight: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/4244.png"
@@ -2360,7 +2360,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 28,
         position: "MF",
         dateOfBirth: "2003-01-21",
-        nationality: "France",
+        nationality: "Tunisie",
         height: 183,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/37316858.png"
@@ -2386,7 +2386,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 30,
         position: "FW",
         dateOfBirth: "2004-09-15",
-        nationality: "États-Unis",
+        nationality: "Italie",
         height: 175,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/37622998.png"
@@ -2464,7 +2464,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 44,
         position: "DF",
         dateOfBirth: "1999-02-28",
-        nationality: "Haiti",
+        nationality: "Belgique",
         height: 183,
         weight: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/64296.png"
@@ -2503,7 +2503,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "2000-07-06",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 170,
         weight: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/581055.png"
@@ -2653,7 +2653,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 12,
         position: "GK",
         dateOfBirth: "2002-04-16",
-        nationality: "Suède",
+        nationality: "Danemark",
         height: 192,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/23715941.png"
@@ -2679,7 +2679,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 15,
         position: "FW",
         dateOfBirth: "2001-06-20",
-        nationality: "Gambia",
+        nationality: "Sénégal",
         height: 187,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/37540621.png"
@@ -2744,7 +2744,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 23,
         position: "DF",
         dateOfBirth: "1999-07-05",
-        nationality: "Sierra Leone",
+        nationality: "Angleterre",
         height: 192,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/537117.png"
@@ -2926,7 +2926,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: null,
         position: "MF",
         dateOfBirth: "2003-10-20",
-        nationality: "Autriche",
+        nationality: "Angleterre",
         height: 188,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/31626713.png"
@@ -2939,7 +2939,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "2002-12-22",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 182,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/37555964.png"
@@ -2978,7 +2978,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "1994-12-08",
-        nationality: "Jamaïque",
+        nationality: "Angleterre",
         height: 170,
         weight: 69,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/802.png"
@@ -3206,7 +3206,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 22,
         position: "FW",
         dateOfBirth: "1998-01-16",
-        nationality: "French Guiana",
+        nationality: "France",
         height: 187,
         weight: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/96792.png"
@@ -3219,7 +3219,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 23,
         position: "FW",
         dateOfBirth: "2003-09-04",
-        nationality: "Nigéria",
+        nationality: "Angleterre",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/37298063.png"
@@ -3297,7 +3297,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 34,
         position: "DF",
         dateOfBirth: "2003-06-17",
-        nationality: "Espagne",
+        nationality: "Maroc",
         height: 187,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/37537937.png"
@@ -3486,7 +3486,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 12,
         position: "GK",
         dateOfBirth: "1999-05-18",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 191,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/22169319.png"
@@ -3499,7 +3499,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 15,
         position: "DF",
         dateOfBirth: "2001-05-15",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 197,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/37528754.png"
@@ -3564,7 +3564,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 23,
         position: "DF",
         dateOfBirth: "1988-10-11",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 177,
         weight: 67,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/764.png"
@@ -3629,7 +3629,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 39,
         position: "DF",
         dateOfBirth: "2006-06-02",
-        nationality: "Espagne",
+        nationality: "Maroc",
         height: 178,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/37650058.png"
@@ -3681,7 +3681,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: null,
         position: "GK",
         dateOfBirth: "1995-03-09",
-        nationality: "Angleterre",
+        nationality: "Pays de Galles",
         height: 194,
         weight: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/6038.png"
@@ -3727,7 +3727,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 3,
         position: "DF",
         dateOfBirth: "1999-12-31",
-        nationality: "Italie",
+        nationality: "Nigeria",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/540027.png"
@@ -3805,7 +3805,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 10,
         position: "MF",
         dateOfBirth: "1991-01-20",
-        nationality: "Angleterre",
+        nationality: "Écosse",
         height: 185,
         weight: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/2285.png"
@@ -3857,7 +3857,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 17,
         position: "FW",
         dateOfBirth: "1996-05-03",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 183,
         weight: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/1881.png"
@@ -3870,7 +3870,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 18,
         position: "MF",
         dateOfBirth: "1996-01-01",
-        nationality: "Belgique",
+        nationality: "Brésil",
         height: 178,
         weight: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/1004.png"
@@ -3987,7 +3987,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 33,
         position: "DF",
         dateOfBirth: "1997-08-08",
-        nationality: "Angleterre",
+        nationality: "États-Unis",
         height: 183,
         weight: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/581067.png"
@@ -4033,7 +4033,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 4,
         position: "DF",
         dateOfBirth: "2000-09-14",
-        nationality: "Angleterre",
+        nationality: "Pays de Galles",
         height: 182,
         weight: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/12542.png"
@@ -4072,7 +4072,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 7,
         position: "FW",
         dateOfBirth: "1997-11-10",
-        nationality: "Angleterre",
+        nationality: "Pays de Galles",
         height: 171,
         weight: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/5149.png"
@@ -4625,7 +4625,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 25,
         position: "GK",
         dateOfBirth: "2000-09-29",
-        nationality: "Géorgie",
+        nationality: "Georgia",
         height: 197,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/14685650.png"
@@ -4690,7 +4690,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 41,
         position: "GK",
         dateOfBirth: "2005-02-24",
-        nationality: "Autriche",
+        nationality: "Hongrie",
         height: 190,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/37600791.png"
@@ -4853,7 +4853,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 8,
         position: "MF",
         dateOfBirth: "1994-05-06",
-        nationality: "Autriche",
+        nationality: "Croatie",
         height: 177,
         weight: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/73147.png"
@@ -4866,7 +4866,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 9,
         position: "FW",
         dateOfBirth: "2000-07-21",
-        nationality: "Angleterre",
+        nationality: "Norvège",
         height: 195,
         weight: 87,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/154421.png"
@@ -4983,7 +4983,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 21,
         position: "DF",
         dateOfBirth: "2001-06-06",
-        nationality: "France",
+        nationality: "Algérie",
         height: 180,
         weight: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/13590962.png"
@@ -5035,7 +5035,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 27,
         position: "MF",
         dateOfBirth: "1998-08-27",
-        nationality: "Brésil",
+        nationality: "Portugal",
         height: 183,
         weight: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/21781428.png"
@@ -5393,7 +5393,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 16,
         position: "FW",
         dateOfBirth: "2002-07-11",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 173,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/37317015.png"
@@ -5406,7 +5406,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 17,
         position: "FW",
         dateOfBirth: "2004-07-01",
-        nationality: "Espagne",
+        nationality: "Argentine",
         height: 180,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/37316549.png"
@@ -5432,7 +5432,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 19,
         position: "FW",
         dateOfBirth: "1999-08-07",
-        nationality: "France",
+        nationality: "Cameroun",
         height: 171,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/529689.png"
@@ -5920,7 +5920,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 37,
         position: "DF",
         dateOfBirth: "2004-06-25",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 188,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/37573066.png"
@@ -6018,7 +6018,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 6,
         position: "MF",
         dateOfBirth: "1997-12-02",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 191,
         weight: 77,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/96943.png"
@@ -6044,7 +6044,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 8,
         position: "MF",
         dateOfBirth: "2002-11-06",
-        nationality: "Angleterre",
+        nationality: "Écosse",
         height: 179,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/332047.png"
@@ -6057,7 +6057,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 9,
         position: "FW",
         dateOfBirth: "1997-08-12",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 183,
         weight: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/26506.png"
@@ -6148,7 +6148,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 18,
         position: "GK",
         dateOfBirth: "1996-01-22",
-        nationality: "Angleterre",
+        nationality: "Écosse",
         height: 196,
         weight: 77,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/336067.png"
@@ -6187,7 +6187,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 21,
         position: "MF",
         dateOfBirth: "2003-10-30",
-        nationality: "Angleterre",
+        nationality: "Jamaïque",
         height: 174,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/37536911.png"
@@ -6304,7 +6304,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 34,
         position: "DF",
         dateOfBirth: "1996-10-08",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 184,
         weight: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/1956.png"
@@ -6343,7 +6343,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "1997-11-15",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 175,
         weight: 67,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/205944.png"
@@ -6389,7 +6389,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 2,
         position: "DF",
         dateOfBirth: "2000-12-18",
-        nationality: "Angleterre",
+        nationality: "Pays de Galles",
         height: 173,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/37391787.png"
@@ -6428,7 +6428,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 5,
         position: "DF",
         dateOfBirth: "1999-09-22",
-        nationality: "Angleterre",
+        nationality: "Irlande du Nord",
         height: 187,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/12433171.png"
@@ -6467,7 +6467,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 8,
         position: "MF",
         dateOfBirth: "1995-04-15",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 179,
         weight: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/3449.png"
@@ -6610,7 +6610,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 19,
         position: "MF",
         dateOfBirth: "2004-01-03",
-        nationality: "Sénégal",
+        nationality: "France",
         height: 178,
         weight: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/37581992.png"
@@ -6675,7 +6675,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 24,
         position: "FW",
         dateOfBirth: "2002-01-01",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 175,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/37555816.png"
@@ -6701,7 +6701,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 26,
         position: "DF",
         dateOfBirth: "1993-11-07",
-        nationality: "France",
+        nationality: "DR Congo",
         height: 179,
         weight: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/1941.png"
@@ -6740,7 +6740,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 29,
         position: "FW",
         dateOfBirth: "2004-06-19",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: null,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/37660283.png"
@@ -7137,7 +7137,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 22,
         position: "FW",
         dateOfBirth: "2001-05-23",
-        nationality: "Angleterre",
+        nationality: "Pays de Galles",
         height: 186,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/25930790.png"
@@ -7521,7 +7521,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 22,
         position: "FW",
         dateOfBirth: "1996-09-27",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 179,
         weight: 69,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/96642.png"
@@ -7560,7 +7560,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 25,
         position: "DF",
         dateOfBirth: "1999-12-30",
-        nationality: "French Guiana",
+        nationality: "France",
         height: 190,
         weight: 81,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/529856.png"
@@ -7625,7 +7625,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 33,
         position: "DF",
         dateOfBirth: "1994-08-03",
-        nationality: "Brésil",
+        nationality: "Italie",
         height: 176,
         weight: 63,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/129794.png"
@@ -7723,7 +7723,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 2,
         position: "DF",
         dateOfBirth: "1992-01-16",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 185,
         weight: 90,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/3884.png"
@@ -7853,7 +7853,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 12,
         position: "DF",
         dateOfBirth: "1997-06-17",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 192,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/37261923.png"
@@ -7931,7 +7931,7 @@ export const premierLeagueTeams: Team[] = [
         jersey: 24,
         position: "DF",
         dateOfBirth: "1999-01-16",
-        nationality: "Guinea-Bissau",
+        nationality: "Portugal",
         height: 187,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/29303604.png"

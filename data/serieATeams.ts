@@ -93,7 +93,7 @@ export const serieATeams: Team[] = [
         jersey: 7,
         position: "FW",
         dateOfBirth: "2001-04-18",
-        nationality: "Argentine",
+        nationality: "Mexique",
         height: 183,
         weight: 60,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/2503729.png"
@@ -158,7 +158,7 @@ export const serieATeams: Team[] = [
         jersey: 16,
         position: "GK",
         dateOfBirth: "1995-07-03",
-        nationality: "French Guiana",
+        nationality: "France",
         height: 191,
         weight: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/96227.png"
@@ -210,7 +210,7 @@ export const serieATeams: Team[] = [
         jersey: 21,
         position: "FW",
         dateOfBirth: "1999-05-22",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 172,
         weight: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/15434627.png"
@@ -223,7 +223,7 @@ export const serieATeams: Team[] = [
         jersey: 23,
         position: "DF",
         dateOfBirth: "1997-12-19",
-        nationality: "Canada",
+        nationality: "Angleterre",
         height: 185,
         weight: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/4655.png"
@@ -340,7 +340,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "MF",
         dateOfBirth: "1997-12-01",
-        nationality: "France",
+        nationality: "Algérie",
         height: 175,
         weight: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/100190.png"
@@ -466,7 +466,7 @@ export const serieATeams: Team[] = [
         jersey: 11,
         position: "FW",
         dateOfBirth: "2004-10-19",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 188,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/37253456.png"
@@ -557,7 +557,7 @@ export const serieATeams: Team[] = [
         jersey: 24,
         position: "DF",
         dateOfBirth: "2000-02-08",
-        nationality: "Italie",
+        nationality: "Albanie",
         height: 191,
         weight: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/3156875.png"
@@ -622,7 +622,7 @@ export const serieATeams: Team[] = [
         jersey: 55,
         position: "MF",
         dateOfBirth: "2001-06-06",
-        nationality: "Gambia",
+        nationality: "Gambie",
         height: 179,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/30866039.png"
@@ -726,7 +726,7 @@ export const serieATeams: Team[] = [
         jersey: 99,
         position: "GK",
         dateOfBirth: "1999-08-27",
-        nationality: "Belgique",
+        nationality: "Serbie",
         height: 189,
         weight: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/62962.png"
@@ -761,7 +761,7 @@ export const serieATeams: Team[] = [
         jersey: 3,
         position: "DF",
         dateOfBirth: "2001-01-04",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 191,
         weight: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/28931733.png"
@@ -813,7 +813,7 @@ export const serieATeams: Team[] = [
         jersey: 8,
         position: "MF",
         dateOfBirth: "1995-02-09",
-        nationality: "Allemagne",
+        nationality: "Croatie",
         height: 188,
         weight: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/73603.png"
@@ -852,7 +852,7 @@ export const serieATeams: Team[] = [
         jersey: 11,
         position: "FW",
         dateOfBirth: "1997-10-20",
-        nationality: "Angleterre",
+        nationality: "Nigeria",
         height: 174,
         weight: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/5321.png"
@@ -917,7 +917,7 @@ export const serieATeams: Team[] = [
         jersey: 19,
         position: "DF",
         dateOfBirth: "1993-02-19",
-        nationality: "Suisse",
+        nationality: "Albanie",
         height: 190,
         weight: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/132671.png"
@@ -1034,7 +1034,7 @@ export const serieATeams: Team[] = [
         jersey: 59,
         position: "MF",
         dateOfBirth: "2002-01-23",
-        nationality: "Italie",
+        nationality: "Pologne",
         height: 175,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/23288607.png"
@@ -1047,7 +1047,7 @@ export const serieATeams: Team[] = [
         jersey: 69,
         position: "DF",
         dateOfBirth: "2008-02-23",
-        nationality: "Italie",
+        nationality: "Nigeria",
         height: 184,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/37735899.png"
@@ -1459,7 +1459,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "1998-01-19",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 180,
         weight: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/133837.png"
@@ -2218,7 +2218,7 @@ export const serieATeams: Team[] = [
         jersey: 42,
         position: "FW",
         dateOfBirth: "2005-08-26",
-        nationality: "Ghana",
+        nationality: "Pays-Bas",
         height: 177,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/37612037.png"
@@ -2231,7 +2231,7 @@ export const serieATeams: Team[] = [
         jersey: 44,
         position: "MF",
         dateOfBirth: "2006-10-28",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 175,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/37658085.png"
@@ -2270,7 +2270,7 @@ export const serieATeams: Team[] = [
         jersey: 79,
         position: "MF",
         dateOfBirth: "2004-09-08",
-        nationality: "Espagne",
+        nationality: "Argentine",
         height: 186,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/37596384.png"
@@ -2335,7 +2335,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "2000-05-09",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 171,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/13633366.png"
@@ -2400,7 +2400,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "MF",
         dateOfBirth: "2000-03-14",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 172,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/9636624.png"
@@ -2439,7 +2439,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "2004-01-20",
-        nationality: "Iraq",
+        nationality: "Irak",
         height: 178,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/37684630.png"
@@ -2461,7 +2461,7 @@ export const serieATeams: Team[] = [
         jersey: 1,
         position: "GK",
         dateOfBirth: "1997-01-18",
-        nationality: "Indonésie",
+        nationality: "Italie",
         height: 192,
         weight: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/129855.png"
@@ -2773,7 +2773,7 @@ export const serieATeams: Team[] = [
         jersey: 48,
         position: "MF",
         dateOfBirth: "2005-03-08",
-        nationality: "Géorgie",
+        nationality: "Georgia",
         height: 186,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/37624151.png"
@@ -2825,7 +2825,7 @@ export const serieATeams: Team[] = [
         jersey: 77,
         position: "FW",
         dateOfBirth: "1997-08-29",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 181,
         weight: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/131814.png"
@@ -2886,7 +2886,7 @@ export const serieATeams: Team[] = [
         jersey: 5,
         position: "DF",
         dateOfBirth: "1997-09-11",
-        nationality: "Allemagne",
+        nationality: "Croatie",
         height: 193,
         weight: 95,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/36681.png"
@@ -3237,7 +3237,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "1997-12-06",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 185,
         weight: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/131955.png"
@@ -3389,7 +3389,7 @@ export const serieATeams: Team[] = [
         jersey: 18,
         position: "FW",
         dateOfBirth: "1994-03-23",
-        nationality: "Italie",
+        nationality: "Ghana",
         height: 182,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/133599.png"
@@ -3415,7 +3415,7 @@ export const serieATeams: Team[] = [
         jersey: 21,
         position: "FW",
         dateOfBirth: "2006-11-11",
-        nationality: "Italie",
+        nationality: "Nigeria",
         height: 188,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/37732903.png"
@@ -3584,7 +3584,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "MF",
         dateOfBirth: "1999-03-12",
-        nationality: "Angleterre",
+        nationality: "Norvège",
         height: 189,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/152755.png"
@@ -3610,7 +3610,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "2002-05-22",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 191,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/37565662.png"
@@ -3762,7 +3762,7 @@ export const serieATeams: Team[] = [
         jersey: 18,
         position: "MF",
         dateOfBirth: "1998-01-13",
-        nationality: "Pays-Bas",
+        nationality: "Maroc",
         height: 182,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/29239.png"
@@ -3905,7 +3905,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "DF",
         dateOfBirth: "1999-03-11",
-        nationality: "France",
+        nationality: "Cameroun",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/362741.png"
@@ -3944,7 +3944,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "DF",
         dateOfBirth: "2002-06-07",
-        nationality: "Belgique",
+        nationality: "Algérie",
         height: 180,
         weight: 73,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/37560881.png"
@@ -4122,7 +4122,7 @@ export const serieATeams: Team[] = [
         jersey: 9,
         position: "FW",
         dateOfBirth: "1997-08-06",
-        nationality: "Italie",
+        nationality: "France",
         height: 192,
         weight: 79,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/99000.png"
@@ -4226,7 +4226,7 @@ export const serieATeams: Team[] = [
         jersey: 20,
         position: "MF",
         dateOfBirth: "1994-02-08",
-        nationality: "Allemagne",
+        nationality: "Turquie",
         height: 178,
         weight: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/31825.png"
@@ -4252,7 +4252,7 @@ export const serieATeams: Team[] = [
         jersey: 22,
         position: "MF",
         dateOfBirth: "1989-01-21",
-        nationality: "Arménie",
+        nationality: "Armenia",
         height: 177,
         weight: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/1835.png"
@@ -4586,7 +4586,7 @@ export const serieATeams: Team[] = [
         jersey: 17,
         position: "MF",
         dateOfBirth: "2006-05-12",
-        nationality: "Serbie",
+        nationality: "Monténégro",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/37598836.png"
@@ -4829,7 +4829,7 @@ export const serieATeams: Team[] = [
         jersey: 5,
         position: "MF",
         dateOfBirth: "2003-10-21",
-        nationality: "Suisse",
+        nationality: "Albanie",
         height: 186,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/37592696.png"
@@ -4881,7 +4881,7 @@ export const serieATeams: Team[] = [
         jersey: 10,
         position: "FW",
         dateOfBirth: "2000-10-27",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 174,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/30841465.png"
@@ -4946,7 +4946,7 @@ export const serieATeams: Team[] = [
         jersey: 20,
         position: "MF",
         dateOfBirth: "1996-04-12",
-        nationality: "Kosovo",
+        nationality: "Albanie",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/50828.png"
@@ -5115,7 +5115,7 @@ export const serieATeams: Team[] = [
         jersey: 93,
         position: "MF",
         dateOfBirth: "1998-08-22",
-        nationality: "Italie",
+        nationality: "Maroc",
         height: 179,
         weight: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/132249.png"
@@ -5128,7 +5128,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "MF",
         dateOfBirth: "2005-04-08",
-        nationality: "Allemagne",
+        nationality: "Bosnie-Herzégovine",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/37598968.png"
@@ -5180,7 +5180,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "DF",
         dateOfBirth: "1999-12-25",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 188,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/32796802.png"
@@ -5436,7 +5436,7 @@ export const serieATeams: Team[] = [
         jersey: 32,
         position: "FW",
         dateOfBirth: "2001-10-22",
-        nationality: "Espagne",
+        nationality: "Argentine",
         height: 192,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/37553010.png"
@@ -5449,7 +5449,7 @@ export const serieATeams: Team[] = [
         jersey: 39,
         position: "DF",
         dateOfBirth: "2003-10-10",
-        nationality: "Italie",
+        nationality: "Australie",
         height: 190,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/37361402.png"
@@ -5579,7 +5579,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "2004-02-04",
-        nationality: "Latvia",
+        nationality: "Lettonie",
         height: 187,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/37621777.png"
@@ -5848,7 +5848,7 @@ export const serieATeams: Team[] = [
         jersey: 37,
         position: "FW",
         dateOfBirth: "1998-05-23",
-        nationality: "France",
+        nationality: "Algérie",
         height: 186,
         weight: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/537837.png"
@@ -5913,7 +5913,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "MF",
         dateOfBirth: "2004-11-25",
-        nationality: "Nigéria",
+        nationality: "Nigeria",
         height: 184,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/37684319.png"
@@ -5991,7 +5991,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "FW",
         dateOfBirth: "1998-07-09",
-        nationality: "Lithuania",
+        nationality: "Lituanie",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/139069.png"
@@ -6195,7 +6195,7 @@ export const serieATeams: Team[] = [
         jersey: 7,
         position: "MF",
         dateOfBirth: "2001-02-06",
-        nationality: "Allemagne",
+        nationality: "Nigeria",
         height: 186,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/23278674.png"
@@ -6312,7 +6312,7 @@ export const serieATeams: Team[] = [
         jersey: 19,
         position: "FW",
         dateOfBirth: "1996-11-16",
-        nationality: "France",
+        nationality: "Sénégal",
         height: 180,
         weight: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/2206688.png"
@@ -6403,7 +6403,7 @@ export const serieATeams: Team[] = [
         jersey: 31,
         position: "FW",
         dateOfBirth: "2006-03-10",
-        nationality: "Guinea-Bissau",
+        nationality: "Portugal",
         height: 165,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/37714313.png"
@@ -6468,7 +6468,7 @@ export const serieATeams: Team[] = [
         jersey: 77,
         position: "DF",
         dateOfBirth: "1992-10-17",
-        nationality: "Serbie",
+        nationality: "Monténégro",
         height: 185,
         weight: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/62427.png"
@@ -6494,7 +6494,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "DF",
         dateOfBirth: "1996-02-15",
-        nationality: "France",
+        nationality: "Algérie",
         height: 183,
         weight: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/130165.png"
@@ -6620,7 +6620,7 @@ export const serieATeams: Team[] = [
         jersey: 8,
         position: "MF",
         dateOfBirth: "1996-12-08",
-        nationality: "Angleterre",
+        nationality: "Écosse",
         height: 191,
         weight: 88,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/455376.png"
@@ -6776,7 +6776,7 @@ export const serieATeams: Team[] = [
         jersey: 32,
         position: "GK",
         dateOfBirth: "1997-02-20",
-        nationality: "Espagne",
+        nationality: "Serbie",
         height: 202,
         weight: 92,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/155896.png"
@@ -6880,7 +6880,7 @@ export const serieATeams: Team[] = [
         jersey: 77,
         position: "FW",
         dateOfBirth: "1998-01-22",
-        nationality: "Italie",
+        nationality: "Maroc",
         height: 187,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/37260212.png"
@@ -6893,7 +6893,7 @@ export const serieATeams: Team[] = [
         jersey: 94,
         position: "MF",
         dateOfBirth: "2002-05-15",
-        nationality: "France",
+        nationality: "Mali",
         height: 197,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/37601792.png"
@@ -6993,7 +6993,7 @@ export const serieATeams: Team[] = [
         jersey: 7,
         position: "MF",
         dateOfBirth: "2003-11-15",
-        nationality: "Australie",
+        nationality: "Italie",
         height: 187,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/37599458.png"
@@ -7045,7 +7045,7 @@ export const serieATeams: Team[] = [
         jersey: 11,
         position: "MF",
         dateOfBirth: "1998-12-22",
-        nationality: "Italie",
+        nationality: "Roumanie",
         height: 185,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/741626.png"
@@ -7149,7 +7149,7 @@ export const serieATeams: Team[] = [
         jersey: 20,
         position: "FW",
         dateOfBirth: "2001-11-03",
-        nationality: "Gambia",
+        nationality: "Gambie",
         height: 182,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/37512304.png"
@@ -7266,7 +7266,7 @@ export const serieATeams: Team[] = [
         jersey: 49,
         position: "GK",
         dateOfBirth: "1998-11-07",
-        nationality: "Suisse",
+        nationality: "Kosovo",
         height: 198,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/538038.png"
@@ -7292,7 +7292,7 @@ export const serieATeams: Team[] = [
         jersey: 80,
         position: "DF",
         dateOfBirth: "2003-02-28",
-        nationality: "Slovénie",
+        nationality: "Bosnie-Herzégovine",
         height: 187,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/37529525.png"
@@ -7305,7 +7305,7 @@ export const serieATeams: Team[] = [
         jersey: 90,
         position: "MF",
         dateOfBirth: "2002-06-16",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Canada'Ivoire",
         height: 188,
         weight: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/37582178.png"
@@ -7418,7 +7418,7 @@ export const serieATeams: Team[] = [
         jersey: 7,
         position: "FW",
         dateOfBirth: "2000-02-18",
-        nationality: "Pays-Bas",
+        nationality: "Maroc",
         height: 179,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/13981031.png"
@@ -7496,7 +7496,7 @@ export const serieATeams: Team[] = [
         jersey: 15,
         position: "DF",
         dateOfBirth: "2002-02-01",
-        nationality: "Russie",
+        nationality: "Georgia",
         height: 194,
         weight: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/37291195.png"
@@ -7522,7 +7522,7 @@ export const serieATeams: Team[] = [
         jersey: 18,
         position: "FW",
         dateOfBirth: "1995-07-05",
-        nationality: "Espagne",
+        nationality: "Argentine",
         height: 180,
         weight: 81,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/130032.png"
@@ -7535,7 +7535,7 @@ export const serieATeams: Team[] = [
         jersey: 19,
         position: "FW",
         dateOfBirth: "1996-07-13",
-        nationality: "Angleterre",
+        nationality: "Écosse",
         height: 179,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/3596.png"
@@ -7587,7 +7587,7 @@ export const serieATeams: Team[] = [
         jersey: 23,
         position: "DF",
         dateOfBirth: "1999-02-09",
-        nationality: "Espagne",
+        nationality: "Equatorial Guinea",
         height: 187,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/17536862.png"
@@ -7626,7 +7626,7 @@ export const serieATeams: Team[] = [
         jersey: 44,
         position: "DF",
         dateOfBirth: "1996-09-30",
-        nationality: "Kosovo",
+        nationality: "Albanie",
         height: 187,
         weight: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/74095.png"
@@ -7652,7 +7652,7 @@ export const serieATeams: Team[] = [
         jersey: 66,
         position: "MF",
         dateOfBirth: "2004-04-15",
-        nationality: "Lithuania",
+        nationality: "Lituanie",
         height: 191,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/37598896.png"
@@ -7769,7 +7769,7 @@ export const serieATeams: Team[] = [
         jersey: 99,
         position: "DF",
         dateOfBirth: "2005-02-28",
-        nationality: "Republic of Ireland",
+        nationality: "République d'Irlande",
         height: 191,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/37624141.png"
@@ -7817,7 +7817,7 @@ export const serieATeams: Team[] = [
         jersey: 4,
         position: "MF",
         dateOfBirth: "1998-03-28",
-        nationality: "Autriche",
+        nationality: "Slovénie",
         height: 180,
         weight: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/52500.png"
@@ -7895,7 +7895,7 @@ export const serieATeams: Team[] = [
         jersey: 11,
         position: "DF",
         dateOfBirth: "1994-03-05",
-        nationality: "France",
+        nationality: "Gambie",
         height: 170,
         weight: 67,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/97608.png"
@@ -7934,7 +7934,7 @@ export const serieATeams: Team[] = [
         jersey: 15,
         position: "FW",
         dateOfBirth: "1997-01-10",
-        nationality: "Côte d\'Ivoire",
+        nationality: "Côte d'Ivoire'Ivoire",
         height: 184,
         weight: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/14011916.png"
@@ -7947,7 +7947,7 @@ export const serieATeams: Team[] = [
         jersey: 16,
         position: "DF",
         dateOfBirth: "2008-03-13",
-        nationality: "Allemagne",
+        nationality: "Italie",
         height: 194,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/37699427.png"
@@ -7986,7 +7986,7 @@ export const serieATeams: Team[] = [
         jersey: 19,
         position: "DF",
         dateOfBirth: "1995-05-25",
-        nationality: "Allemagne",
+        nationality: "Pays-Bas",
         height: 189,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/25187.png"
@@ -8090,7 +8090,7 @@ export const serieATeams: Team[] = [
         jersey: 33,
         position: "DF",
         dateOfBirth: "1999-11-14",
-        nationality: "Angleterre",
+        nationality: "Zimbabwe",
         height: 173,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/25591503.png"
@@ -8103,7 +8103,7 @@ export const serieATeams: Team[] = [
         jersey: 40,
         position: "GK",
         dateOfBirth: "1999-08-28",
-        nationality: "Allemagne",
+        nationality: "Nigeria",
         height: 198,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/540585.png"
@@ -8116,7 +8116,7 @@ export const serieATeams: Team[] = [
         jersey: 77,
         position: "MF",
         dateOfBirth: "1999-10-07",
-        nationality: "Portugal",
+        nationality: "Angola",
         height: 181,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/2823056.png"
@@ -8207,7 +8207,7 @@ export const serieATeams: Team[] = [
         jersey: null,
         position: "DF",
         dateOfBirth: "2004-06-25",
-        nationality: "Géorgie",
+        nationality: "Georgia",
         height: 192,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/37573971.png"

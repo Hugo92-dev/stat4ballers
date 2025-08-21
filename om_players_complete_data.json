@@ -1,0 +1,292 @@
+[
+  {
+    "player_id": 186418,
+    "name": "G. Rulli",
+    "api_name": "Gerónimo Rulli",
+    "display_name": "Gerónimo Rulli",
+    "common_name": "G. Rulli",
+    "nationality_id": 44,
+    "country_id": 44,
+    "current_nationality": "Argentine"
+  },
+  {
+    "player_id": 28575687,
+    "name": "C. Egan Riley",
+    "api_name": "Conrad Jonathan Egan Riley",
+    "display_name": "CJ Egan-Riley",
+    "common_name": "C. Egan Riley",
+    "nationality_id": 462,
+    "country_id": 462,
+    "current_nationality": "Angleterre"
+  },
+  {
+    "player_id": 13171199,
+    "name": "L. Balerdi Rossa",
+    "api_name": "Leonardo Julián Balerdi Rossa",
+    "display_name": "Leonardo Balerdi ",
+    "common_name": "L. Balerdi Rossa",
+    "nationality_id": 44,
+    "country_id": 44,
+    "current_nationality": "Argentine"
+  },
+  {
+    "player_id": 32390,
+    "name": "U. Garcia Lopes",
+    "api_name": "Ulisses Alexandre Garcia Lopes",
+    "display_name": "Ulisses Garcia",
+    "common_name": "U. Garcia Lopes",
+    "nationality_id": 62,
+    "country_id": 20,
+    "current_nationality": "Portugal"
+  },
+  {
+    "player_id": 95776,
+    "name": "N. Maupay",
+    "api_name": "Neal Maupay",
+    "display_name": "Neal Maupay",
+    "common_name": "N. Maupay",
+    "nationality_id": 17,
+    "country_id": 17,
+    "current_nationality": "France"
+  },
+  {
+    "player_id": 608285,
+    "name": "A. Gomes",
+    "api_name": "Angel Gomes",
+    "display_name": "Angel Gomes",
+    "common_name": "A. Gomes",
+    "nationality_id": 462,
+    "country_id": 462,
+    "current_nationality": "Angleterre"
+  },
+  {
+    "player_id": 433458,
+    "name": "A. Gouiri",
+    "api_name": "Amine Gouiri",
+    "display_name": "Amine Gouiri",
+    "common_name": "A. Gouiri",
+    "nationality_id": 614,
+    "country_id": 17,
+    "current_nationality": "Algérie"
+  },
+  {
+    "player_id": 20333643,
+    "name": "M. Greenwood",
+    "api_name": "Mason Greenwood",
+    "display_name": "Mason Greenwood",
+    "common_name": "M. Greenwood",
+    "nationality_id": 462,
+    "country_id": 462,
+    "current_nationality": "Angleterre"
+  },
+  {
+    "player_id": 96691,
+    "name": "A. Harit",
+    "api_name": "Amine Harit",
+    "display_name": "Amine Harit",
+    "common_name": "A. Harit",
+    "nationality_id": 1424,
+    "country_id": 17,
+    "current_nationality": "Maroc"
+  },
+  {
+    "player_id": 29186,
+    "name": "J. de Lange",
+    "api_name": "Jeffrey de Lange",
+    "display_name": "Jeffrey de Lange",
+    "common_name": "J. de Lange",
+    "nationality_id": 38,
+    "country_id": 38,
+    "current_nationality": "Pays-Bas"
+  },
+  {
+    "player_id": 586846,
+    "name": "D. Cornelius",
+    "api_name": "Derek Cornelius",
+    "display_name": "Derek Cornelius",
+    "common_name": "D. Cornelius",
+    "nationality_id": 1004,
+    "country_id": 1004,
+    "current_nationality": "Sénégal"
+  },
+  {
+    "player_id": 29328428,
+    "name": "I. Barbosa da Paixão",
+    "api_name": "Igor Guilherme Barbosa da Paixão",
+    "display_name": "Igor Paixão ",
+    "common_name": "I. Barbosa da Paixão",
+    "nationality_id": 5,
+    "country_id": 5,
+    "current_nationality": "Brésil"
+  },
+  {
+    "player_id": 34455209,
+    "name": "J. Rowe",
+    "api_name": "Jon Rowe",
+    "display_name": "Jonathan Rowe",
+    "common_name": "J. Rowe",
+    "nationality_id": 462,
+    "country_id": 462,
+    "current_nationality": "Angleterre"
+  },
+  {
+    "player_id": 37369302,
+    "name": "A. Meité",
+    "api_name": "Abdoul Bamo Meité",
+    "display_name": "Bamo Meïté",
+    "common_name": "A. Meité",
+    "nationality_id": 17,
+    "country_id": 17,
+    "current_nationality": "France"
+  },
+  {
+    "player_id": 95696,
+    "name": "G. Kondogbia",
+    "api_name": "Geoffrey Kondogbia",
+    "display_name": "Geoffrey Kondogbia",
+    "common_name": "G. Kondogbia",
+    "nationality_id": 1247,
+    "country_id": 17,
+    "current_nationality": "République centrafricaine"
+  },
+  {
+    "player_id": 537332,
+    "name": "T. Weah",
+    "api_name": "Timothy Weah",
+    "display_name": "Timothy Weah",
+    "common_name": "T. Weah",
+    "nationality_id": 3483,
+    "country_id": 3483,
+    "current_nationality": "États-Unis"
+  },
+  {
+    "player_id": 1744,
+    "name": "P. Højbjerg",
+    "api_name": "Pierre-Emile Højbjerg",
+    "display_name": "Pierre-Emile Højbjerg",
+    "common_name": "P. Højbjerg",
+    "nationality_id": 320,
+    "country_id": 320,
+    "current_nationality": "Maroc"
+  },
+  {
+    "player_id": 37657133,
+    "name": "F. Mughe",
+    "api_name": "François Régis Mughe",
+    "display_name": "François Mughe",
+    "common_name": "F. Mughe",
+    "nationality_id": 593,
+    "country_id": 593,
+    "current_nationality": "Cameroun"
+  },
+  {
+    "player_id": 95694,
+    "name": "A. Rabiot",
+    "api_name": "Adrien Rabiot",
+    "display_name": "Adrien Rabiot",
+    "common_name": "A. Rabiot",
+    "nationality_id": 17,
+    "country_id": 17,
+    "current_nationality": "France"
+  },
+  {
+    "player_id": 37541144,
+    "name": "B. Nadir",
+    "api_name": "Bilal Nadir",
+    "display_name": "Bilal Nadir",
+    "common_name": "B. Nadir",
+    "nationality_id": 17,
+    "country_id": 17,
+    "current_nationality": "France"
+  },
+  {
+    "player_id": 130063,
+    "name": "P. Lirola Kosok",
+    "api_name": "Pol Mikel Lirola Kosok",
+    "display_name": "Pol Lirola",
+    "common_name": "P. Lirola Kosok",
+    "nationality_id": 32,
+    "country_id": 32,
+    "current_nationality": "Espagne"
+  },
+  {
+    "player_id": 335521,
+    "name": "F. Medina",
+    "api_name": "Facundo Axel Medina",
+    "display_name": "Facundo Medina",
+    "common_name": "F. Medina",
+    "nationality_id": 44,
+    "country_id": 44,
+    "current_nationality": "Argentine"
+  },
+  {
+    "player_id": 186456,
+    "name": "R. Blanco Veiga",
+    "api_name": "Rubén Blanco Veiga",
+    "display_name": "Rubén Blanco",
+    "common_name": "R. Blanco Veiga",
+    "nationality_id": 32,
+    "country_id": 32,
+    "current_nationality": "Espagne"
+  },
+  {
+    "player_id": 37593233,
+    "name": "J. Van Neck",
+    "api_name": "Jelle Van Neck",
+    "display_name": "Jelle Van Neck",
+    "common_name": "J. Van Neck",
+    "nationality_id": 556,
+    "country_id": 556,
+    "current_nationality": "Belgique"
+  },
+  {
+    "player_id": 37737405,
+    "name": "D. Bakola",
+    "api_name": "Darryl Bakola",
+    "display_name": "Darryl Bakola",
+    "common_name": "D. Bakola",
+    "nationality_id": null,
+    "country_id": 17,
+    "current_nationality": "France"
+  },
+  {
+    "player_id": 512560,
+    "name": "M. Murillo Bermudez",
+    "api_name": "Michael Amir Murillo Bermudez",
+    "display_name": "Amir Murillo",
+    "common_name": "M. Murillo Bermudez",
+    "nationality_id": 65437,
+    "country_id": 65437,
+    "current_nationality": "Panama"
+  },
+  {
+    "player_id": 31739,
+    "name": "P. Aubameyang",
+    "api_name": "Pierre-Emerick Aubameyang",
+    "display_name": "Pierre-Emerick Aubameyang",
+    "common_name": "P. Aubameyang",
+    "nationality_id": 3662,
+    "country_id": 17,
+    "current_nationality": "Gabon"
+  },
+  {
+    "player_id": 21803033,
+    "name": "A. Ounahi",
+    "api_name": "Azzedine Ounahi",
+    "display_name": "Azzedine Ounahi",
+    "common_name": "A. Ounahi",
+    "nationality_id": 1424,
+    "country_id": 1424,
+    "current_nationality": "Maroc"
+  },
+  {
+    "player_id": 20315925,
+    "name": "F. Pemi Moumbagna",
+    "api_name": "Faris Pemi Moumbagna",
+    "display_name": "Faris Moumbagna",
+    "common_name": "F. Pemi Moumbagna",
+    "nationality_id": 593,
+    "country_id": 593,
+    "current_nationality": "Cameroun"
+  }
+]

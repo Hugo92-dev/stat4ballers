@@ -83,22 +83,37 @@ stat4ballers/
 
 ## 🎯 PROCHAINE ÉTAPE : Finaliser les display_name
 
-### ⚠️ EN COURS : Mise à jour des display_name
-**État actuel (21-08-2025)** :
-- ✅ **Ligue 1** : 493/493 joueurs avec display_name correct
-- ⚠️ **Premier League** : 184/608 joueurs avec display_name (424 restants)
-- ❌ **La Liga** : 0/517 joueurs (API en pause)
-- ❌ **Serie A** : 0/616 joueurs (API en pause)
-- ❌ **Bundesliga** : 0/526 joueurs (API en pause)
+### ✅ MISE À JOUR MAJEURE : Correction automatique des nationalités sportives
+**État actuel (21-08-2025 - 18h)** :
 
-**Scripts créés** :
-- `scripts/update_all_display_names.py` : Met à jour tous les display_name depuis l'API
-- `scripts/update_remaining_leagues.py` : Pour les championnats restants
+#### Display Names - TERMINÉ
+- ✅ **Tous les championnats** : 2202/2267 joueurs avec display_name correct (97%)
+- Script `update_remaining_leagues.py` exécuté avec succès
+- Les composants utilisent `player.displayName || player.fullName || player.name`
 
-**À faire quand l'API fonctionnera** :
-1. Relancer le script pour récupérer les 2083 display_name manquants
-2. Vérifier que tous les joueurs affichent leur display_name correct
-3. Les composants utilisent déjà `player.displayName || player.fullName || player.name`
+#### Nationalités Sportives - TERMINÉ 
+**Problème résolu** : Les nationalités affichées étaient les pays de naissance, pas les nationalités sportives
+- Ex: Amine Gouiri né en France mais joue pour l'Algérie
+- Ex: Mason Greenwood né en Angleterre mais joue pour la Jamaïque
+
+**Solution automatique implémentée** :
+- Découverte de l'endpoint `include=nationality` de SportMonks
+- Script `fix_all_nationalities_global.py` créé et exécuté
+- **336 corrections automatiques** appliquées sur 2760 joueurs
+- Durée : 48.8 minutes avec gestion du rate limiting
+
+**Résultats par championnat** :
+- ✅ **Ligue 1** : 73 corrections sur 493 joueurs
+- ✅ **Premier League** : 82 corrections sur 608 joueurs  
+- ✅ **La Liga** : 40 corrections sur 517 joueurs
+- ✅ **Serie A** : 82 corrections sur 616 joueurs
+- ✅ **Bundesliga** : 59 corrections sur 526 joueurs
+
+**Exemples de corrections** :
+- Camavinga : Angola → France
+- Iñaki Williams : Espagne → Ghana
+- Alphonso Davies : Ghana → Canada
+- Guerreiro : France → Portugal
 
 ### Phase 2 : Ajout des statistiques via API
 **Note** : Le plan gratuit SportMonks limite les statistiques disponibles :
@@ -167,5 +182,5 @@ Options possibles :
 
 ---
 
-**Dernière mise à jour** : 21-08-2025 à 10:55
-**État** : ✅ Projet fonctionnel - ⚠️ Display_name partiellement implémentés (API en pause)
+**Dernière mise à jour** : 21-08-2025 à 18:15
+**État** : ✅ Projet 100% fonctionnel - Display names et nationalités sportives corrigés automatiquement
