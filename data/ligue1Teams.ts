@@ -590,7 +590,7 @@ export const ligue1Teams: Team[] = [
         jersey: 18,
         position: "DF",
         dateOfBirth: "2001-12-03",
-        nationality: "France",
+        nationality: "Côte d'Ivoire",
         height: 184,
         weight: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/37369302.png"

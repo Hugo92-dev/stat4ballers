@@ -22,7 +22,10 @@
       "Bash(dir scripts)",
       "Bash(npm run lint)",
       "Bash(npm run build:*)",
-      "Bash(git restore:*)"
+      "Bash(git restore:*)",
+      "Bash(for:*)",
+      "Bash(do sed -i 's/Pays:/Nationalité:/g' \"$file\")",
+      "Bash(done)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",

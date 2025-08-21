@@ -180,7 +180,7 @@ export default function ClubPageLiga({
                         )}
                         {player.nationality && player.nationality !== 'Unknown' && (
                           <div className="text-gray-400">
-                            <span className="text-gray-500">Pays:</span> {player.nationality}
+                            <span className="text-gray-500">Nationalité:</span> {player.nationality}
                           </div>
                         )}
                         {player.height && (
