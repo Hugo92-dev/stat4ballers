@@ -25,7 +25,8 @@
       "Bash(git restore:*)",
       "Bash(for:*)",
       "Bash(do sed -i 's/Pays:/Nationalité:/g' \"$file\")",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(taskkill:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",

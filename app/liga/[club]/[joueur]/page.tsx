@@ -1,5 +1,5 @@
 import PlayerPage from '@/components/PlayerPage';
-import { ligue1Teams } from '@/data/ligue1Teams';
+import { ligaTeams } from '@/data/ligaTeams';
 import { notFound } from 'next/navigation';
 import { slugifyPlayer } from '@/utils/slugify';
 
@@ -9,7 +9,7 @@ export default function JoueurPage({
   params: { club: string; joueur: string } 
 }) {
   // Trouver le club
-  const club = ligue1Teams.find(t => t.slug === params.club);
+  const club = ligaTeams.find(t => t.slug === params.club);
   
   if (!club) {
     notFound();
@@ -33,8 +33,8 @@ export default function JoueurPage({
       player={player}
       clubName={club.name}
       clubSlug={params.club}
-      leagueSlug="ligue1"
-      leagueColor="from-blue-600 to-blue-800"
+      leagueSlug="liga"
+      leagueColor="from-orange-600 to-orange-800"
     />
   );
 }

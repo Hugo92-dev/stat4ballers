@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getClubLogoPath } from '@/data/clubLogosMapping';
 import { bundesligaTeams } from '@/data/bundesligaTeams';
+import { slugifyPlayer } from '@/utils/slugify';
 
 interface ClubPageProps {
   clubId: string;
@@ -153,10 +154,14 @@ export default function ClubPageBundesliga({
               
               <div className="bg-gray-800 rounded-b-xl overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6">
-                  {players.map((player) => (
-                    <div
-                      key={player.id}
-                      className="bg-gray-700 rounded-xl p-4 hover:bg-gray-600 transition-all hover:scale-105 cursor-pointer"
+                  {players.map((player) => {
+                    const playerDisplayName = player.displayName || player.fullName || player.name;
+                    const playerSlug = slugifyPlayer(playerDisplayName);
+                    return (
+                      <Link
+                        key={player.id}
+                        href={`/bundesliga/${clubId}/${playerSlug}`}
+                        className="bg-gray-700 rounded-xl p-4 hover:bg-gray-600 transition-all hover:scale-105 cursor-pointer block"
                     >
                       <div className="flex items-start justify-between mb-2">
                         <div className="flex items-center gap-3">
@@ -166,7 +171,7 @@ export default function ClubPageBundesliga({
                             </div>
                           )}
                           <div>
-                            <h3 className="text-white font-semibold text-lg">{player.displayName || player.fullName || player.name}</h3>
+                            <h3 className="text-white font-semibold text-lg">{playerDisplayName}</h3>
                             <p className="text-gray-400 text-sm">{player.position}</p>
                           </div>
                         </div>
@@ -194,8 +199,9 @@ export default function ClubPageBundesliga({
                           </div>
                         )}
                       </div>
-                    </div>
-                  ))}
+                      </Link>
+                    );
+                  })}
                 </div>
               </div>
             </div>

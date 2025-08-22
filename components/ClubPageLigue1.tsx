@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getClubLogoPath } from '@/data/clubLogosMapping';
 import { ligue1Teams } from '@/data/ligue1Teams';
+import { slugifyPlayer } from '@/utils/slugify';
 
 interface ClubPageProps {
   clubId: string;
@@ -153,49 +154,54 @@ export default function ClubPageLigue1({
               
               <div className="bg-gray-800 rounded-b-xl overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6">
-                  {players.map((player) => (
-                    <div
-                      key={player.id}
-                      className="bg-gray-700 rounded-xl p-4 hover:bg-gray-600 transition-all hover:scale-105 cursor-pointer"
-                    >
-                      <div className="flex items-start justify-between mb-2">
-                        <div className="flex items-center gap-3">
-                          {player.jersey && (
-                            <div className="w-10 h-10 bg-gradient-to-br from-gray-600 to-gray-800 rounded-full flex items-center justify-center text-white font-bold">
-                              {player.jersey}
+                  {players.map((player) => {
+                    const playerDisplayName = player.displayName || player.fullName || player.name;
+                    const playerSlug = slugifyPlayer(playerDisplayName);
+                    return (
+                      <Link
+                        key={player.id}
+                        href={`/ligue1/${clubId}/${playerSlug}`}
+                        className="bg-gray-700 rounded-xl p-4 hover:bg-gray-600 transition-all hover:scale-105 cursor-pointer block"
+                      >
+                        <div className="flex items-start justify-between mb-2">
+                          <div className="flex items-center gap-3">
+                            {player.jersey && (
+                              <div className="w-10 h-10 bg-gradient-to-br from-gray-600 to-gray-800 rounded-full flex items-center justify-center text-white font-bold">
+                                {player.jersey}
+                              </div>
+                            )}
+                            <div>
+                              <h3 className="text-white font-semibold text-lg">{playerDisplayName}</h3>
+                              <p className="text-gray-400 text-sm">{player.position}</p>
                             </div>
-                          )}
-                          <div>
-                            <h3 className="text-white font-semibold text-lg">{player.displayName || player.fullName || player.name}</h3>
-                            <p className="text-gray-400 text-sm">{player.position}</p>
                           </div>
                         </div>
-                      </div>
-                      
-                      <div className="grid grid-cols-2 gap-2 mt-3 text-sm">
-                        {player.dateOfBirth && (
-                          <div className="text-gray-400">
-                            <span className="text-gray-500">Âge:</span> {calculateAge(player.dateOfBirth)} ans
-                          </div>
-                        )}
-                        {player.nationality && player.nationality !== 'Unknown' && (
-                          <div className="text-gray-400">
-                            <span className="text-gray-500">Nationalité:</span> {player.nationality}
-                          </div>
-                        )}
-                        {player.height && (
-                          <div className="text-gray-400">
-                            <span className="text-gray-500">Taille:</span> {player.height} cm
-                          </div>
-                        )}
-                        {player.weight && (
-                          <div className="text-gray-400">
-                            <span className="text-gray-500">Poids:</span> {player.weight} kg
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  ))}
+                        
+                        <div className="grid grid-cols-2 gap-2 mt-3 text-sm">
+                          {player.dateOfBirth && (
+                            <div className="text-gray-400">
+                              <span className="text-gray-500">Âge:</span> {calculateAge(player.dateOfBirth)} ans
+                            </div>
+                          )}
+                          {player.nationality && player.nationality !== 'Unknown' && (
+                            <div className="text-gray-400">
+                              <span className="text-gray-500">Nationalité:</span> {player.nationality}
+                            </div>
+                          )}
+                          {player.height && (
+                            <div className="text-gray-400">
+                              <span className="text-gray-500">Taille:</span> {player.height} cm
+                            </div>
+                          )}
+                          {player.weight && (
+                            <div className="text-gray-400">
+                              <span className="text-gray-500">Poids:</span> {player.weight} kg
+                            </div>
+                          )}
+                        </div>
+                      </Link>
+                    );
+                  })}
                 </div>
               </div>
             </div>

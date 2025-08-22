@@ -1488,9 +1488,9 @@ export const bundesligaTeams: Team[] = [
       },
       {
         id: 37598755,
-        name: "O. Højlund",
-        fullName: "Oscar Højlund",
-        displayName: "Oscar Højlund",
+        name: "O. Hojlund",
+        fullName: "Oscar Hojlund",
+        displayName: "Oscar Hojlund",
         jersey: 6,
         position: "MF",
         dateOfBirth: "2005-01-04",
@@ -2495,7 +2495,7 @@ export const bundesligaTeams: Team[] = [
       {
         id: 33980252,
         name: "S. Sebulonsen",
-        fullName: "Sebastian Søraas Sebulonsen",
+        fullName: "Sebastian Soraas Sebulonsen",
         displayName: "Sebastian Sebulonsen",
         jersey: 26,
         position: "DF",
@@ -2984,9 +2984,9 @@ export const bundesligaTeams: Team[] = [
       },
       {
         id: 37755719,
-        name: "A. Røssing-Lelesiit",
-        fullName: "Alexander Røssing-Lelesiit",
-        displayName: "Alexander Røssing-Lelesiit",
+        name: "A. Rossing-Lelesiit",
+        fullName: "Alexander Rossing-Lelesiit",
+        displayName: "Alexander Rossing-Lelesiit",
         jersey: 38,
         position: "FW",
         dateOfBirth: "2007-01-20",
@@ -5504,8 +5504,8 @@ export const bundesligaTeams: Team[] = [
     players: [
       {
         id: 83795,
-        name: "F. Rønnow",
-        fullName: "Frederik Rønnow",
+        name: "F. Ronnow",
+        fullName: "Frederik Ronnow",
         displayName: "Frederik Rönnow",
         jersey: 1,
         position: "GK",
@@ -6471,9 +6471,9 @@ export const bundesligaTeams: Team[] = [
       },
       {
         id: 84604,
-        name: "J. Mæhle",
-        fullName: "Joakim Mæhle",
-        displayName: "Joakim Mæhle",
+        name: "J. Maehle",
+        fullName: "Joakim Maehle",
+        displayName: "Joakim Maehle",
         jersey: 21,
         position: "DF",
         dateOfBirth: "1997-05-20",
