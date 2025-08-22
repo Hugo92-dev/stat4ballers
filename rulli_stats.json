@@ -1,0 +1,6668 @@
+{
+  "data": {
+    "id": 186418,
+    "sport_id": 1,
+    "country_id": 44,
+    "nationality_id": 44,
+    "city_id": 47275,
+    "position_id": 24,
+    "detailed_position_id": 24,
+    "type_id": 24,
+    "common_name": "G. Rulli",
+    "firstname": "Gerónimo",
+    "lastname": "Rulli",
+    "name": "Gerónimo Rulli",
+    "display_name": "Gerónimo Rulli",
+    "image_path": "https://cdn.sportmonks.com/images/soccer/players/18/186418.png",
+    "height": 189,
+    "weight": 84,
+    "date_of_birth": "1992-05-20",
+    "gender": "male",
+    "statistics": [
+      {
+        "id": 1696310627,
+        "player_id": 186418,
+        "team_id": 44,
+        "season_id": 21638,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1479467967,
+        "player_id": 186418,
+        "team_id": 44,
+        "season_id": 22824,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1479417485,
+        "player_id": 186418,
+        "team_id": 44,
+        "season_id": 23026,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1479417484,
+        "player_id": 186418,
+        "team_id": 44,
+        "season_id": 23643,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 37885005,
+            "player_statistic_id": 1479417484,
+            "type_id": 47,
+            "value": {
+              "total": 0,
+              "won": 0,
+              "scored": 0,
+              "committed": 2,
+              "saved": 3,
+              "missed": 0
+            }
+          },
+          {
+            "id": 44837203,
+            "player_statistic_id": 1479417484,
+            "type_id": 56,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 37885042,
+            "player_statistic_id": 1479417484,
+            "type_id": 57,
+            "value": {
+              "total": 93
+            }
+          },
+          {
+            "id": 38165213,
+            "player_statistic_id": 1479417484,
+            "type_id": 78,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 37884968,
+            "player_statistic_id": 1479417484,
+            "type_id": 80,
+            "value": {
+              "total": 1069
+            }
+          },
+          {
+            "id": 44837209,
+            "player_statistic_id": 1479417484,
+            "type_id": 84,
+            "value": {
+              "total": 1,
+              "home": 0,
+              "away": 1
+            }
+          },
+          {
+            "id": 37884846,
+            "player_statistic_id": 1479417484,
+            "type_id": 88,
+            "value": {
+              "total": 47
+            }
+          },
+          {
+            "id": 38079184,
+            "player_statistic_id": 1479417484,
+            "type_id": 96,
+            "value": {
+              "total": 11
+            }
+          },
+          {
+            "id": 45683596,
+            "player_statistic_id": 1479417484,
+            "type_id": 100,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 37884705,
+            "player_statistic_id": 1479417484,
+            "type_id": 101,
+            "value": {
+              "total": 33
+            }
+          },
+          {
+            "id": 37885052,
+            "player_statistic_id": 1479417484,
+            "type_id": 104,
+            "value": {
+              "total": 64
+            }
+          },
+          {
+            "id": 38079165,
+            "player_statistic_id": 1479417484,
+            "type_id": 105,
+            "value": {
+              "total": 29
+            }
+          },
+          {
+            "id": 38079172,
+            "player_statistic_id": 1479417484,
+            "type_id": 106,
+            "value": {
+              "total": 23
+            }
+          },
+          {
+            "id": 38079139,
+            "player_statistic_id": 1479417484,
+            "type_id": 107,
+            "value": {
+              "total": 10
+            }
+          },
+          {
+            "id": 38523428,
+            "player_statistic_id": 1479417484,
+            "type_id": 110,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 37884637,
+            "player_statistic_id": 1479417484,
+            "type_id": 116,
+            "value": {
+              "total": 929
+            }
+          },
+          {
+            "id": 38871758,
+            "player_statistic_id": 1479417484,
+            "type_id": 117,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 37885028,
+            "player_statistic_id": 1479417484,
+            "type_id": 118,
+            "value": {
+              "average": 7.02,
+              "highest": 8.67,
+              "lowest": 5.87
+            }
+          },
+          {
+            "id": 37884931,
+            "player_statistic_id": 1479417484,
+            "type_id": 119,
+            "value": {
+              "total": 3060
+            }
+          },
+          {
+            "id": 37884893,
+            "player_statistic_id": 1479417484,
+            "type_id": 122,
+            "value": {
+              "total": 270
+            }
+          },
+          {
+            "id": 37884908,
+            "player_statistic_id": 1479417484,
+            "type_id": 123,
+            "value": {
+              "total": 140
+            }
+          },
+          {
+            "id": 38378542,
+            "player_statistic_id": 1479417484,
+            "type_id": 194,
+            "value": {
+              "total": 5,
+              "home": 2,
+              "away": 3
+            }
+          },
+          {
+            "id": 39255688,
+            "player_statistic_id": 1479417484,
+            "type_id": 214,
+            "value": {
+              "total": 20
+            }
+          },
+          {
+            "id": 39255529,
+            "player_statistic_id": 1479417484,
+            "type_id": 215,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 39255611,
+            "player_statistic_id": 1479417484,
+            "type_id": 216,
+            "value": {
+              "total": 9
+            }
+          },
+          {
+            "id": 37884649,
+            "player_statistic_id": 1479417484,
+            "type_id": 321,
+            "value": {
+              "total": 34
+            }
+          },
+          {
+            "id": 37884883,
+            "player_statistic_id": 1479417484,
+            "type_id": 322,
+            "value": {
+              "total": 34
+            }
+          },
+          {
+            "id": 38165182,
+            "player_statistic_id": 1479417484,
+            "type_id": 571,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 38871753,
+            "player_statistic_id": 1479417484,
+            "type_id": 580,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 37884632,
+            "player_statistic_id": 1479417484,
+            "type_id": 1584,
+            "value": {
+              "total": 86.9
+            }
+          }
+        ]
+      },
+      {
+        "id": 1675331341,
+        "player_id": 186418,
+        "team_id": 44,
+        "season_id": 24721,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 44038853,
+            "player_statistic_id": 1675331341,
+            "type_id": 323,
+            "value": {
+              "total": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": 1808148820,
+        "player_id": 186418,
+        "team_id": 44,
+        "season_id": 24893,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 46881489,
+            "player_statistic_id": 1808148820,
+            "type_id": 59,
+            "value": {
+              "in": 0,
+              "out": 1
+            }
+          },
+          {
+            "id": 46784611,
+            "player_statistic_id": 1808148820,
+            "type_id": 88,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 46881485,
+            "player_statistic_id": 1808148820,
+            "type_id": 118,
+            "value": {
+              "average": 6.12,
+              "highest": 6.12,
+              "lowest": 6.12
+            }
+          },
+          {
+            "id": 46784619,
+            "player_statistic_id": 1808148820,
+            "type_id": 119,
+            "value": {
+              "total": 242
+            }
+          },
+          {
+            "id": 47043077,
+            "player_statistic_id": 1808148820,
+            "type_id": 214,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 46784604,
+            "player_statistic_id": 1808148820,
+            "type_id": 215,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 46784601,
+            "player_statistic_id": 1808148820,
+            "type_id": 321,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 46784617,
+            "player_statistic_id": 1808148820,
+            "type_id": 322,
+            "value": {
+              "total": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 1802743371,
+        "player_id": 186418,
+        "team_id": 44,
+        "season_id": 25651,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 47201597,
+            "player_statistic_id": 1802743371,
+            "type_id": 57,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 47201569,
+            "player_statistic_id": 1802743371,
+            "type_id": 80,
+            "value": {
+              "total": 28
+            }
+          },
+          {
+            "id": 47201520,
+            "player_statistic_id": 1802743371,
+            "type_id": 88,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 47201496,
+            "player_statistic_id": 1802743371,
+            "type_id": 101,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 47201600,
+            "player_statistic_id": 1802743371,
+            "type_id": 104,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 47201478,
+            "player_statistic_id": 1802743371,
+            "type_id": 116,
+            "value": {
+              "total": 25
+            }
+          },
+          {
+            "id": 47201590,
+            "player_statistic_id": 1802743371,
+            "type_id": 118,
+            "value": {
+              "average": 7.6,
+              "highest": 7.6,
+              "lowest": 7.6
+            }
+          },
+          {
+            "id": 47201564,
+            "player_statistic_id": 1802743371,
+            "type_id": 119,
+            "value": {
+              "total": 90
+            }
+          },
+          {
+            "id": 47201545,
+            "player_statistic_id": 1802743371,
+            "type_id": 122,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 47201548,
+            "player_statistic_id": 1802743371,
+            "type_id": 123,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 47201554,
+            "player_statistic_id": 1802743371,
+            "type_id": 216,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 47201484,
+            "player_statistic_id": 1802743371,
+            "type_id": 321,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 47201541,
+            "player_statistic_id": 1802743371,
+            "type_id": 322,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 47201473,
+            "player_statistic_id": 1802743371,
+            "type_id": 1584,
+            "value": {
+              "total": 89.29
+            }
+          }
+        ]
+      },
+      {
+        "id": 1802765950,
+        "player_id": 186418,
+        "team_id": 44,
+        "season_id": 25655,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 16,
+        "details": []
+      },
+      {
+        "id": 28264375,
+        "player_id": 186418,
+        "team_id": 581,
+        "season_id": 16043,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 35074015,
+            "player_statistic_id": 28264375,
+            "type_id": 47,
+            "value": {
+              "total": 0,
+              "won": 0,
+              "scored": 0,
+              "committed": 2,
+              "saved": 2,
+              "missed": 0
+            }
+          },
+          {
+            "id": 27700773,
+            "player_statistic_id": 28264375,
+            "type_id": 56,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 12680635,
+            "player_statistic_id": 28264375,
+            "type_id": 57,
+            "value": {
+              "total": 94
+            }
+          },
+          {
+            "id": 27700881,
+            "player_statistic_id": 28264375,
+            "type_id": 78,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 12680543,
+            "player_statistic_id": 28264375,
+            "type_id": 80,
+            "value": {
+              "total": 730
+            }
+          },
+          {
+            "id": 27700795,
+            "player_statistic_id": 28264375,
+            "type_id": 88,
+            "value": {
+              "total": 27
+            }
+          },
+          {
+            "id": 27700779,
+            "player_statistic_id": 28264375,
+            "type_id": 96,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 27700808,
+            "player_statistic_id": 28264375,
+            "type_id": 100,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 12680358,
+            "player_statistic_id": 28264375,
+            "type_id": 101,
+            "value": {
+              "total": 18
+            }
+          },
+          {
+            "id": 12680668,
+            "player_statistic_id": 28264375,
+            "type_id": 104,
+            "value": {
+              "total": 42
+            }
+          },
+          {
+            "id": 30642756,
+            "player_statistic_id": 28264375,
+            "type_id": 105,
+            "value": {
+              "total": 19
+            }
+          },
+          {
+            "id": 30642758,
+            "player_statistic_id": 28264375,
+            "type_id": 106,
+            "value": {
+              "total": 15
+            }
+          },
+          {
+            "id": 30642751,
+            "player_statistic_id": 28264375,
+            "type_id": 107,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 30642755,
+            "player_statistic_id": 28264375,
+            "type_id": 108,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 32390355,
+            "player_statistic_id": 28264375,
+            "type_id": 109,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 27700758,
+            "player_statistic_id": 28264375,
+            "type_id": 110,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 27700720,
+            "player_statistic_id": 28264375,
+            "type_id": 116,
+            "value": {
+              "total": 541
+            }
+          },
+          {
+            "id": 12680567,
+            "player_statistic_id": 28264375,
+            "type_id": 118,
+            "value": {
+              "average": 7.37,
+              "highest": 9.28,
+              "lowest": 5.81
+            }
+          },
+          {
+            "id": 12680483,
+            "player_statistic_id": 28264375,
+            "type_id": 119,
+            "value": {
+              "total": 2250
+            }
+          },
+          {
+            "id": 35074008,
+            "player_statistic_id": 28264375,
+            "type_id": 122,
+            "value": {
+              "total": 312
+            }
+          },
+          {
+            "id": 35074010,
+            "player_statistic_id": 28264375,
+            "type_id": 123,
+            "value": {
+              "total": 171
+            }
+          },
+          {
+            "id": 41484686,
+            "player_statistic_id": 28264375,
+            "type_id": 194,
+            "value": {
+              "total": 8,
+              "home": 7,
+              "away": 1
+            }
+          },
+          {
+            "id": 41484721,
+            "player_statistic_id": 28264375,
+            "type_id": 214,
+            "value": {
+              "total": 11
+            }
+          },
+          {
+            "id": 41484693,
+            "player_statistic_id": 28264375,
+            "type_id": 215,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 41484701,
+            "player_statistic_id": 28264375,
+            "type_id": 216,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 12680253,
+            "player_statistic_id": 28264375,
+            "type_id": 321,
+            "value": {
+              "total": 25
+            }
+          },
+          {
+            "id": 12680451,
+            "player_statistic_id": 28264375,
+            "type_id": 322,
+            "value": {
+              "total": 25
+            }
+          },
+          {
+            "id": 27700715,
+            "player_statistic_id": 28264375,
+            "type_id": 1584,
+            "value": {
+              "total": 74.11
+            }
+          }
+        ]
+      },
+      {
+        "id": 643502843,
+        "player_id": 186418,
+        "team_id": 581,
+        "season_id": 16701,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 32458231,
+            "player_statistic_id": 643502843,
+            "type_id": 83,
+            "value": {
+              "total": 1,
+              "home": 0,
+              "away": 1
+            }
+          },
+          {
+            "id": 35130800,
+            "player_statistic_id": 643502843,
+            "type_id": 119,
+            "value": {
+              "total": 90
+            }
+          },
+          {
+            "id": 41736856,
+            "player_statistic_id": 643502843,
+            "type_id": 194,
+            "value": {
+              "total": 1,
+              "home": 0,
+              "away": 1
+            }
+          },
+          {
+            "id": 41736857,
+            "player_statistic_id": 643502843,
+            "type_id": 215,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 32458192,
+            "player_statistic_id": 643502843,
+            "type_id": 321,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 32458214,
+            "player_statistic_id": 643502843,
+            "type_id": 322,
+            "value": {
+              "total": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": 476598525,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 846,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 34599128,
+            "player_statistic_id": 476598525,
+            "type_id": 47,
+            "value": {
+              "total": 0,
+              "won": 0,
+              "scored": 0,
+              "committed": 1,
+              "saved": 0,
+              "missed": 0
+            }
+          },
+          {
+            "id": 32033374,
+            "player_statistic_id": 476598525,
+            "type_id": 56,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 32033380,
+            "player_statistic_id": 476598525,
+            "type_id": 57,
+            "value": {
+              "total": 12
+            }
+          },
+          {
+            "id": 32033382,
+            "player_statistic_id": 476598525,
+            "type_id": 78,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 32033377,
+            "player_statistic_id": 476598525,
+            "type_id": 80,
+            "value": {
+              "total": 215
+            }
+          },
+          {
+            "id": 32033384,
+            "player_statistic_id": 476598525,
+            "type_id": 84,
+            "value": {
+              "total": 1,
+              "home": 0,
+              "away": 1
+            }
+          },
+          {
+            "id": 34599117,
+            "player_statistic_id": 476598525,
+            "type_id": 88,
+            "value": {
+              "total": 10
+            }
+          },
+          {
+            "id": 32033375,
+            "player_statistic_id": 476598525,
+            "type_id": 100,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 32033371,
+            "player_statistic_id": 476598525,
+            "type_id": 101,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 32033381,
+            "player_statistic_id": 476598525,
+            "type_id": 104,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 32033372,
+            "player_statistic_id": 476598525,
+            "type_id": 105,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 32033373,
+            "player_statistic_id": 476598525,
+            "type_id": 106,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 32033370,
+            "player_statistic_id": 476598525,
+            "type_id": 116,
+            "value": {
+              "total": 165
+            }
+          },
+          {
+            "id": 32033378,
+            "player_statistic_id": 476598525,
+            "type_id": 118,
+            "value": {
+              "average": 6.53,
+              "highest": 7.24,
+              "lowest": 5.61
+            }
+          },
+          {
+            "id": 32033376,
+            "player_statistic_id": 476598525,
+            "type_id": 119,
+            "value": {
+              "total": 540
+            }
+          },
+          {
+            "id": 34599119,
+            "player_statistic_id": 476598525,
+            "type_id": 122,
+            "value": {
+              "total": 105
+            }
+          },
+          {
+            "id": 34599121,
+            "player_statistic_id": 476598525,
+            "type_id": 123,
+            "value": {
+              "total": 56
+            }
+          },
+          {
+            "id": 39568558,
+            "player_statistic_id": 476598525,
+            "type_id": 214,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 39568532,
+            "player_statistic_id": 476598525,
+            "type_id": 215,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 39568545,
+            "player_statistic_id": 476598525,
+            "type_id": 216,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 29246018,
+            "player_statistic_id": 476598525,
+            "type_id": 321,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 29246033,
+            "player_statistic_id": 476598525,
+            "type_id": 322,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 32033369,
+            "player_statistic_id": 476598525,
+            "type_id": 1584,
+            "value": {
+              "total": 76.74
+            }
+          }
+        ]
+      },
+      {
+        "id": 27329499,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 853,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 43652559,
+            "player_statistic_id": 27329499,
+            "type_id": 47,
+            "value": {
+              "total": 0,
+              "won": 0,
+              "scored": 0,
+              "committed": 1,
+              "saved": 1,
+              "missed": 0
+            }
+          },
+          {
+            "id": 29587177,
+            "player_statistic_id": 27329499,
+            "type_id": 51,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 29587169,
+            "player_statistic_id": 27329499,
+            "type_id": 56,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 29587180,
+            "player_statistic_id": 27329499,
+            "type_id": 57,
+            "value": {
+              "total": 111
+            }
+          },
+          {
+            "id": 29587182,
+            "player_statistic_id": 27329499,
+            "type_id": 78,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 29587178,
+            "player_statistic_id": 27329499,
+            "type_id": 80,
+            "value": {
+              "total": 1399
+            }
+          },
+          {
+            "id": 3024579,
+            "player_statistic_id": 27329499,
+            "type_id": 84,
+            "value": {
+              "total": 4,
+              "home": 0,
+              "away": 4
+            }
+          },
+          {
+            "id": 23807153,
+            "player_statistic_id": 27329499,
+            "type_id": 88,
+            "value": {
+              "total": 53
+            }
+          },
+          {
+            "id": 29587170,
+            "player_statistic_id": 27329499,
+            "type_id": 96,
+            "value": {
+              "total": 8
+            }
+          },
+          {
+            "id": 29587175,
+            "player_statistic_id": 27329499,
+            "type_id": 100,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 29587164,
+            "player_statistic_id": 27329499,
+            "type_id": 101,
+            "value": {
+              "total": 16
+            }
+          },
+          {
+            "id": 29587181,
+            "player_statistic_id": 27329499,
+            "type_id": 104,
+            "value": {
+              "total": 68
+            }
+          },
+          {
+            "id": 29587166,
+            "player_statistic_id": 27329499,
+            "type_id": 105,
+            "value": {
+              "total": 21
+            }
+          },
+          {
+            "id": 29587167,
+            "player_statistic_id": 27329499,
+            "type_id": 106,
+            "value": {
+              "total": 15
+            }
+          },
+          {
+            "id": 29587161,
+            "player_statistic_id": 27329499,
+            "type_id": 107,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 29587160,
+            "player_statistic_id": 27329499,
+            "type_id": 116,
+            "value": {
+              "total": 1019
+            }
+          },
+          {
+            "id": 29587176,
+            "player_statistic_id": 27329499,
+            "type_id": 117,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 29587179,
+            "player_statistic_id": 27329499,
+            "type_id": 118,
+            "value": {
+              "average": 6.92,
+              "highest": 8.57,
+              "lowest": 5.71
+            }
+          },
+          {
+            "id": 3024005,
+            "player_statistic_id": 27329499,
+            "type_id": 119,
+            "value": {
+              "total": 3420
+            }
+          },
+          {
+            "id": 43652548,
+            "player_statistic_id": 27329499,
+            "type_id": 122,
+            "value": {
+              "total": 492
+            }
+          },
+          {
+            "id": 43652549,
+            "player_statistic_id": 27329499,
+            "type_id": 123,
+            "value": {
+              "total": 266
+            }
+          },
+          {
+            "id": 43652532,
+            "player_statistic_id": 27329499,
+            "type_id": 194,
+            "value": {
+              "total": 10,
+              "home": 5,
+              "away": 5
+            }
+          },
+          {
+            "id": 43652575,
+            "player_statistic_id": 27329499,
+            "type_id": 214,
+            "value": {
+              "total": 19
+            }
+          },
+          {
+            "id": 43652535,
+            "player_statistic_id": 27329499,
+            "type_id": 215,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 43652551,
+            "player_statistic_id": 27329499,
+            "type_id": 216,
+            "value": {
+              "total": 12
+            }
+          },
+          {
+            "id": 3023746,
+            "player_statistic_id": 27329499,
+            "type_id": 321,
+            "value": {
+              "total": 38
+            }
+          },
+          {
+            "id": 3023978,
+            "player_statistic_id": 27329499,
+            "type_id": 322,
+            "value": {
+              "total": 38
+            }
+          },
+          {
+            "id": 29587168,
+            "player_statistic_id": 27329499,
+            "type_id": 571,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 29587162,
+            "player_statistic_id": 27329499,
+            "type_id": 580,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 29587158,
+            "player_statistic_id": 27329499,
+            "type_id": 1584,
+            "value": {
+              "total": 72.84
+            }
+          }
+        ]
+      },
+      {
+        "id": 483217450,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 1029,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 34686235,
+            "player_statistic_id": 483217450,
+            "type_id": 119,
+            "value": {
+              "total": 90
+            }
+          },
+          {
+            "id": 39753511,
+            "player_statistic_id": 483217450,
+            "type_id": 194,
+            "value": {
+              "total": 1,
+              "home": 0,
+              "away": 1
+            }
+          },
+          {
+            "id": 39753516,
+            "player_statistic_id": 483217450,
+            "type_id": 215,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 29732599,
+            "player_statistic_id": 483217450,
+            "type_id": 321,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 29732600,
+            "player_statistic_id": 483217450,
+            "type_id": 322,
+            "value": {
+              "total": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": 27406611,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 2061,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 4637946,
+            "player_statistic_id": 27406611,
+            "type_id": 84,
+            "value": {
+              "total": 5,
+              "home": 1,
+              "away": 4
+            }
+          },
+          {
+            "id": 26986908,
+            "player_statistic_id": 27406611,
+            "type_id": 88,
+            "value": {
+              "total": 34
+            }
+          },
+          {
+            "id": 4637456,
+            "player_statistic_id": 27406611,
+            "type_id": 119,
+            "value": {
+              "total": 1980
+            }
+          },
+          {
+            "id": 43640791,
+            "player_statistic_id": 27406611,
+            "type_id": 194,
+            "value": {
+              "total": 6,
+              "home": 5,
+              "away": 1
+            }
+          },
+          {
+            "id": 43640835,
+            "player_statistic_id": 27406611,
+            "type_id": 214,
+            "value": {
+              "total": 8
+            }
+          },
+          {
+            "id": 43640797,
+            "player_statistic_id": 27406611,
+            "type_id": 215,
+            "value": {
+              "total": 8
+            }
+          },
+          {
+            "id": 43640817,
+            "player_statistic_id": 27406611,
+            "type_id": 216,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 4637294,
+            "player_statistic_id": 27406611,
+            "type_id": 321,
+            "value": {
+              "total": 22
+            }
+          },
+          {
+            "id": 4637435,
+            "player_statistic_id": 27406611,
+            "type_id": 322,
+            "value": {
+              "total": 22
+            }
+          },
+          {
+            "id": 4637321,
+            "player_statistic_id": 27406611,
+            "type_id": 323,
+            "value": {
+              "total": 6
+            }
+          }
+        ]
+      },
+      {
+        "id": 27407400,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 2063,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 39986339,
+            "player_statistic_id": 27407400,
+            "type_id": 47,
+            "value": {
+              "total": 0,
+              "won": 0,
+              "scored": 0,
+              "committed": 1,
+              "saved": 1,
+              "missed": 0
+            }
+          },
+          {
+            "id": 29805297,
+            "player_statistic_id": 27407400,
+            "type_id": 56,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 29805305,
+            "player_statistic_id": 27407400,
+            "type_id": 57,
+            "value": {
+              "total": 106
+            }
+          },
+          {
+            "id": 29805307,
+            "player_statistic_id": 27407400,
+            "type_id": 78,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 29805302,
+            "player_statistic_id": 27407400,
+            "type_id": 80,
+            "value": {
+              "total": 1080
+            }
+          },
+          {
+            "id": 4654101,
+            "player_statistic_id": 27407400,
+            "type_id": 83,
+            "value": {
+              "total": 1,
+              "home": 1,
+              "away": 0
+            }
+          },
+          {
+            "id": 4654409,
+            "player_statistic_id": 27407400,
+            "type_id": 84,
+            "value": {
+              "total": 5,
+              "home": 2,
+              "away": 3
+            }
+          },
+          {
+            "id": 26988918,
+            "player_statistic_id": 27407400,
+            "type_id": 88,
+            "value": {
+              "total": 46
+            }
+          },
+          {
+            "id": 29805298,
+            "player_statistic_id": 27407400,
+            "type_id": 96,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 29805299,
+            "player_statistic_id": 27407400,
+            "type_id": 100,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 29805293,
+            "player_statistic_id": 27407400,
+            "type_id": 101,
+            "value": {
+              "total": 26
+            }
+          },
+          {
+            "id": 29805306,
+            "player_statistic_id": 27407400,
+            "type_id": 104,
+            "value": {
+              "total": 67
+            }
+          },
+          {
+            "id": 29805294,
+            "player_statistic_id": 27407400,
+            "type_id": 105,
+            "value": {
+              "total": 24
+            }
+          },
+          {
+            "id": 29805295,
+            "player_statistic_id": 27407400,
+            "type_id": 106,
+            "value": {
+              "total": 18
+            }
+          },
+          {
+            "id": 29805292,
+            "player_statistic_id": 27407400,
+            "type_id": 107,
+            "value": {
+              "total": 8
+            }
+          },
+          {
+            "id": 29805291,
+            "player_statistic_id": 27407400,
+            "type_id": 116,
+            "value": {
+              "total": 632
+            }
+          },
+          {
+            "id": 29805300,
+            "player_statistic_id": 27407400,
+            "type_id": 117,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 29805303,
+            "player_statistic_id": 27407400,
+            "type_id": 118,
+            "value": {
+              "average": 7.03,
+              "highest": 8.57,
+              "lowest": 4.9
+            }
+          },
+          {
+            "id": 4653935,
+            "player_statistic_id": 27407400,
+            "type_id": 119,
+            "value": {
+              "total": 3192
+            }
+          },
+          {
+            "id": 39986322,
+            "player_statistic_id": 27407400,
+            "type_id": 122,
+            "value": {
+              "total": 475
+            }
+          },
+          {
+            "id": 39986324,
+            "player_statistic_id": 27407400,
+            "type_id": 123,
+            "value": {
+              "total": 212
+            }
+          },
+          {
+            "id": 39986289,
+            "player_statistic_id": 27407400,
+            "type_id": 194,
+            "value": {
+              "total": 12,
+              "home": 6,
+              "away": 6
+            }
+          },
+          {
+            "id": 39986377,
+            "player_statistic_id": 27407400,
+            "type_id": 214,
+            "value": {
+              "total": 12
+            }
+          },
+          {
+            "id": 39986293,
+            "player_statistic_id": 27407400,
+            "type_id": 215,
+            "value": {
+              "total": 9
+            }
+          },
+          {
+            "id": 39986328,
+            "player_statistic_id": 27407400,
+            "type_id": 216,
+            "value": {
+              "total": 15
+            }
+          },
+          {
+            "id": 4653707,
+            "player_statistic_id": 27407400,
+            "type_id": 321,
+            "value": {
+              "total": 36
+            }
+          },
+          {
+            "id": 4653908,
+            "player_statistic_id": 27407400,
+            "type_id": 322,
+            "value": {
+              "total": 36
+            }
+          },
+          {
+            "id": 29805296,
+            "player_statistic_id": 27407400,
+            "type_id": 571,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 29805290,
+            "player_statistic_id": 27407400,
+            "type_id": 1584,
+            "value": {
+              "total": 58.52
+            }
+          }
+        ]
+      },
+      {
+        "id": 27475856,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 5335,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 6092829,
+            "player_statistic_id": 27475856,
+            "type_id": 59,
+            "value": {
+              "in": 0,
+              "out": 1
+            }
+          },
+          {
+            "id": 23860906,
+            "player_statistic_id": 27475856,
+            "type_id": 88,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 23860916,
+            "player_statistic_id": 27475856,
+            "type_id": 119,
+            "value": {
+              "total": 85
+            }
+          },
+          {
+            "id": 40379615,
+            "player_statistic_id": 27475856,
+            "type_id": 216,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 6092584,
+            "player_statistic_id": 27475856,
+            "type_id": 323,
+            "value": {
+              "total": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 485024262,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 5682,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 30022011,
+            "player_statistic_id": 485024262,
+            "type_id": 321,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 30022013,
+            "player_statistic_id": 485024262,
+            "type_id": 322,
+            "value": {
+              "total": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": 642963538,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 5683,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 32248904,
+            "player_statistic_id": 642963538,
+            "type_id": 59,
+            "value": {
+              "in": 1,
+              "out": 0
+            }
+          },
+          {
+            "id": 32248912,
+            "player_statistic_id": 642963538,
+            "type_id": 84,
+            "value": {
+              "total": 1,
+              "home": 1,
+              "away": 0
+            }
+          },
+          {
+            "id": 32248875,
+            "player_statistic_id": 642963538,
+            "type_id": 321,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 32248877,
+            "player_statistic_id": 642963538,
+            "type_id": 323,
+            "value": {
+              "total": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": 27509931,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 7908,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 34883449,
+            "player_statistic_id": 27509931,
+            "type_id": 47,
+            "value": {
+              "total": 0,
+              "won": 0,
+              "scored": 0,
+              "committed": 1,
+              "saved": 0,
+              "missed": 0
+            }
+          },
+          {
+            "id": 27075155,
+            "player_statistic_id": 27509931,
+            "type_id": 56,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 27075297,
+            "player_statistic_id": 27509931,
+            "type_id": 57,
+            "value": {
+              "total": 15
+            }
+          },
+          {
+            "id": 6808710,
+            "player_statistic_id": 27509931,
+            "type_id": 59,
+            "value": {
+              "in": 0,
+              "out": 1
+            }
+          },
+          {
+            "id": 27075254,
+            "player_statistic_id": 27509931,
+            "type_id": 80,
+            "value": {
+              "total": 225
+            }
+          },
+          {
+            "id": 6808958,
+            "player_statistic_id": 27509931,
+            "type_id": 84,
+            "value": {
+              "total": 1,
+              "home": 1,
+              "away": 0
+            }
+          },
+          {
+            "id": 32285357,
+            "player_statistic_id": 27509931,
+            "type_id": 87,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 23971052,
+            "player_statistic_id": 27509931,
+            "type_id": 88,
+            "value": {
+              "total": 10
+            }
+          },
+          {
+            "id": 27075167,
+            "player_statistic_id": 27509931,
+            "type_id": 96,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 27075113,
+            "player_statistic_id": 27509931,
+            "type_id": 101,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 27075311,
+            "player_statistic_id": 27509931,
+            "type_id": 104,
+            "value": {
+              "total": 9
+            }
+          },
+          {
+            "id": 27075128,
+            "player_statistic_id": 27509931,
+            "type_id": 105,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 27075135,
+            "player_statistic_id": 27509931,
+            "type_id": 106,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 27075059,
+            "player_statistic_id": 27509931,
+            "type_id": 116,
+            "value": {
+              "total": 188
+            }
+          },
+          {
+            "id": 6808506,
+            "player_statistic_id": 27509931,
+            "type_id": 118,
+            "value": {
+              "average": 6.75,
+              "highest": 7.75,
+              "lowest": 5.61
+            }
+          },
+          {
+            "id": 23971058,
+            "player_statistic_id": 27509931,
+            "type_id": 119,
+            "value": {
+              "total": 707
+            }
+          },
+          {
+            "id": 34883446,
+            "player_statistic_id": 27509931,
+            "type_id": 122,
+            "value": {
+              "total": 33
+            }
+          },
+          {
+            "id": 34883447,
+            "player_statistic_id": 27509931,
+            "type_id": 123,
+            "value": {
+              "total": 10
+            }
+          },
+          {
+            "id": 40654509,
+            "player_statistic_id": 27509931,
+            "type_id": 194,
+            "value": {
+              "total": 4,
+              "home": 2,
+              "away": 2
+            }
+          },
+          {
+            "id": 40654516,
+            "player_statistic_id": 27509931,
+            "type_id": 214,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 40654510,
+            "player_statistic_id": 27509931,
+            "type_id": 215,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 40654514,
+            "player_statistic_id": 27509931,
+            "type_id": 216,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 6808143,
+            "player_statistic_id": 27509931,
+            "type_id": 321,
+            "value": {
+              "total": 8
+            }
+          },
+          {
+            "id": 6808377,
+            "player_statistic_id": 27509931,
+            "type_id": 322,
+            "value": {
+              "total": 8
+            }
+          },
+          {
+            "id": 27075050,
+            "player_statistic_id": 27509931,
+            "type_id": 1584,
+            "value": {
+              "total": 83.56
+            }
+          }
+        ]
+      },
+      {
+        "id": 27538587,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 8442,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 34909623,
+            "player_statistic_id": 27538587,
+            "type_id": 47,
+            "value": {
+              "total": 0,
+              "won": 0,
+              "scored": 0,
+              "committed": 1,
+              "saved": 1,
+              "missed": 0
+            }
+          },
+          {
+            "id": 30257168,
+            "player_statistic_id": 27538587,
+            "type_id": 56,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 30257175,
+            "player_statistic_id": 27538587,
+            "type_id": 57,
+            "value": {
+              "total": 62
+            }
+          },
+          {
+            "id": 30257177,
+            "player_statistic_id": 27538587,
+            "type_id": 78,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 30257172,
+            "player_statistic_id": 27538587,
+            "type_id": 80,
+            "value": {
+              "total": 996
+            }
+          },
+          {
+            "id": 7410782,
+            "player_statistic_id": 27538587,
+            "type_id": 84,
+            "value": {
+              "total": 3,
+              "home": 1,
+              "away": 2
+            }
+          },
+          {
+            "id": 24011543,
+            "player_statistic_id": 27538587,
+            "type_id": 88,
+            "value": {
+              "total": 52
+            }
+          },
+          {
+            "id": 30257164,
+            "player_statistic_id": 27538587,
+            "type_id": 94,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 30257169,
+            "player_statistic_id": 27538587,
+            "type_id": 96,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 30257163,
+            "player_statistic_id": 27538587,
+            "type_id": 101,
+            "value": {
+              "total": 17
+            }
+          },
+          {
+            "id": 30257176,
+            "player_statistic_id": 27538587,
+            "type_id": 104,
+            "value": {
+              "total": 41
+            }
+          },
+          {
+            "id": 30257165,
+            "player_statistic_id": 27538587,
+            "type_id": 105,
+            "value": {
+              "total": 11
+            }
+          },
+          {
+            "id": 30257166,
+            "player_statistic_id": 27538587,
+            "type_id": 106,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 30257162,
+            "player_statistic_id": 27538587,
+            "type_id": 107,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 30257161,
+            "player_statistic_id": 27538587,
+            "type_id": 116,
+            "value": {
+              "total": 737
+            }
+          },
+          {
+            "id": 30257170,
+            "player_statistic_id": 27538587,
+            "type_id": 117,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 30257173,
+            "player_statistic_id": 27538587,
+            "type_id": 118,
+            "value": {
+              "average": 6.75,
+              "highest": 7.65,
+              "lowest": 5.1
+            }
+          },
+          {
+            "id": 7410227,
+            "player_statistic_id": 27538587,
+            "type_id": 119,
+            "value": {
+              "total": 2340
+            }
+          },
+          {
+            "id": 34909615,
+            "player_statistic_id": 27538587,
+            "type_id": 122,
+            "value": {
+              "total": 451
+            }
+          },
+          {
+            "id": 34909616,
+            "player_statistic_id": 27538587,
+            "type_id": 123,
+            "value": {
+              "total": 206
+            }
+          },
+          {
+            "id": 40725538,
+            "player_statistic_id": 27538587,
+            "type_id": 194,
+            "value": {
+              "total": 6,
+              "home": 4,
+              "away": 2
+            }
+          },
+          {
+            "id": 40725543,
+            "player_statistic_id": 27538587,
+            "type_id": 214,
+            "value": {
+              "total": 10
+            }
+          },
+          {
+            "id": 40725539,
+            "player_statistic_id": 27538587,
+            "type_id": 215,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 40725540,
+            "player_statistic_id": 27538587,
+            "type_id": 216,
+            "value": {
+              "total": 11
+            }
+          },
+          {
+            "id": 7409868,
+            "player_statistic_id": 27538587,
+            "type_id": 321,
+            "value": {
+              "total": 26
+            }
+          },
+          {
+            "id": 7410194,
+            "player_statistic_id": 27538587,
+            "type_id": 322,
+            "value": {
+              "total": 26
+            }
+          },
+          {
+            "id": 7409941,
+            "player_statistic_id": 27538587,
+            "type_id": 323,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 30257167,
+            "player_statistic_id": 27538587,
+            "type_id": 571,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 30257160,
+            "player_statistic_id": 27538587,
+            "type_id": 1584,
+            "value": {
+              "total": 74
+            }
+          }
+        ]
+      },
+      {
+        "id": 27546352,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 8706,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 27091339,
+            "player_statistic_id": 27546352,
+            "type_id": 88,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 7573261,
+            "player_statistic_id": 27546352,
+            "type_id": 323,
+            "value": {
+              "total": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": 487282219,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 11986,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 30403327,
+            "player_statistic_id": 487282219,
+            "type_id": 323,
+            "value": {
+              "total": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": 28147261,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 13133,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 35001488,
+            "player_statistic_id": 28147261,
+            "type_id": 47,
+            "value": {
+              "total": 0,
+              "won": 0,
+              "scored": 0,
+              "committed": 1,
+              "saved": 1,
+              "missed": 0
+            }
+          },
+          {
+            "id": 27414068,
+            "player_statistic_id": 28147261,
+            "type_id": 56,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 10113775,
+            "player_statistic_id": 28147261,
+            "type_id": 57,
+            "value": {
+              "total": 77
+            }
+          },
+          {
+            "id": 27414218,
+            "player_statistic_id": 28147261,
+            "type_id": 78,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 10113640,
+            "player_statistic_id": 28147261,
+            "type_id": 80,
+            "value": {
+              "total": 983
+            }
+          },
+          {
+            "id": 10114046,
+            "player_statistic_id": 28147261,
+            "type_id": 84,
+            "value": {
+              "total": 3,
+              "home": 2,
+              "away": 1
+            }
+          },
+          {
+            "id": 27414115,
+            "player_statistic_id": 28147261,
+            "type_id": 88,
+            "value": {
+              "total": 46
+            }
+          },
+          {
+            "id": 27414084,
+            "player_statistic_id": 28147261,
+            "type_id": 96,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 27414126,
+            "player_statistic_id": 28147261,
+            "type_id": 100,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 10113384,
+            "player_statistic_id": 28147261,
+            "type_id": 101,
+            "value": {
+              "total": 17
+            }
+          },
+          {
+            "id": 10113799,
+            "player_statistic_id": 28147261,
+            "type_id": 104,
+            "value": {
+              "total": 50
+            }
+          },
+          {
+            "id": 27414052,
+            "player_statistic_id": 28147261,
+            "type_id": 105,
+            "value": {
+              "total": 22
+            }
+          },
+          {
+            "id": 27414058,
+            "player_statistic_id": 28147261,
+            "type_id": 106,
+            "value": {
+              "total": 17
+            }
+          },
+          {
+            "id": 30490840,
+            "player_statistic_id": 28147261,
+            "type_id": 107,
+            "value": {
+              "total": 12
+            }
+          },
+          {
+            "id": 27414045,
+            "player_statistic_id": 28147261,
+            "type_id": 110,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 27413988,
+            "player_statistic_id": 28147261,
+            "type_id": 116,
+            "value": {
+              "total": 677
+            }
+          },
+          {
+            "id": 30490844,
+            "player_statistic_id": 28147261,
+            "type_id": 117,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 10113671,
+            "player_statistic_id": 28147261,
+            "type_id": 118,
+            "value": {
+              "average": 6.92,
+              "highest": 9.28,
+              "lowest": 4.69
+            }
+          },
+          {
+            "id": 10113556,
+            "player_statistic_id": 28147261,
+            "type_id": 119,
+            "value": {
+              "total": 2430
+            }
+          },
+          {
+            "id": 35001478,
+            "player_statistic_id": 28147261,
+            "type_id": 122,
+            "value": {
+              "total": 461
+            }
+          },
+          {
+            "id": 35001480,
+            "player_statistic_id": 28147261,
+            "type_id": 123,
+            "value": {
+              "total": 185
+            }
+          },
+          {
+            "id": 41165365,
+            "player_statistic_id": 28147261,
+            "type_id": 194,
+            "value": {
+              "total": 7,
+              "home": 2,
+              "away": 5
+            }
+          },
+          {
+            "id": 41165410,
+            "player_statistic_id": 28147261,
+            "type_id": 214,
+            "value": {
+              "total": 10
+            }
+          },
+          {
+            "id": 41165371,
+            "player_statistic_id": 28147261,
+            "type_id": 215,
+            "value": {
+              "total": 9
+            }
+          },
+          {
+            "id": 41165388,
+            "player_statistic_id": 28147261,
+            "type_id": 216,
+            "value": {
+              "total": 8
+            }
+          },
+          {
+            "id": 10113212,
+            "player_statistic_id": 28147261,
+            "type_id": 321,
+            "value": {
+              "total": 27
+            }
+          },
+          {
+            "id": 10113511,
+            "player_statistic_id": 28147261,
+            "type_id": 322,
+            "value": {
+              "total": 27
+            }
+          },
+          {
+            "id": 10113284,
+            "player_statistic_id": 28147261,
+            "type_id": 323,
+            "value": {
+              "total": 11
+            }
+          },
+          {
+            "id": 30490843,
+            "player_statistic_id": 28147261,
+            "type_id": 571,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 27413977,
+            "player_statistic_id": 28147261,
+            "type_id": 1584,
+            "value": {
+              "total": 68.87
+            }
+          }
+        ]
+      },
+      {
+        "id": 28164229,
+        "player_id": 186418,
+        "team_id": 594,
+        "season_id": 13198,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 10469971,
+            "player_statistic_id": 28164229,
+            "type_id": 57,
+            "value": {
+              "total": 9
+            }
+          },
+          {
+            "id": 10469876,
+            "player_statistic_id": 28164229,
+            "type_id": 80,
+            "value": {
+              "total": 60
+            }
+          },
+          {
+            "id": 27463347,
+            "player_statistic_id": 28164229,
+            "type_id": 88,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 27463322,
+            "player_statistic_id": 28164229,
+            "type_id": 96,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 27463357,
+            "player_statistic_id": 28164229,
+            "type_id": 100,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 10469995,
+            "player_statistic_id": 28164229,
+            "type_id": 104,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 27463289,
+            "player_statistic_id": 28164229,
+            "type_id": 105,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 27463298,
+            "player_statistic_id": 28164229,
+            "type_id": 106,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 30515914,
+            "player_statistic_id": 28164229,
+            "type_id": 107,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 27463242,
+            "player_statistic_id": 28164229,
+            "type_id": 116,
+            "value": {
+              "total": 45
+            }
+          },
+          {
+            "id": 10469913,
+            "player_statistic_id": 28164229,
+            "type_id": 118,
+            "value": {
+              "average": 7.91,
+              "highest": 8.87,
+              "lowest": 6.94
+            }
+          },
+          {
+            "id": 10469813,
+            "player_statistic_id": 28164229,
+            "type_id": 119,
+            "value": {
+              "total": 180
+            }
+          },
+          {
+            "id": 35007667,
+            "player_statistic_id": 28164229,
+            "type_id": 122,
+            "value": {
+              "total": 10
+            }
+          },
+          {
+            "id": 35007668,
+            "player_statistic_id": 28164229,
+            "type_id": 123,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 41213432,
+            "player_statistic_id": 28164229,
+            "type_id": 194,
+            "value": {
+              "total": 1,
+              "home": 0,
+              "away": 1
+            }
+          },
+          {
+            "id": 41213438,
+            "player_statistic_id": 28164229,
+            "type_id": 215,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 10469557,
+            "player_statistic_id": 28164229,
+            "type_id": 321,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 10469799,
+            "player_statistic_id": 28164229,
+            "type_id": 322,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 10469621,
+            "player_statistic_id": 28164229,
+            "type_id": 323,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 27463234,
+            "player_statistic_id": 28164229,
+            "type_id": 1584,
+            "value": {
+              "total": 75
+            }
+          }
+        ]
+      },
+      {
+        "id": 941709943,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 176,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1471662553,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 5312,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1471665549,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 5313,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1471760777,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 5328,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1474929260,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 7908,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 223424141,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 16029,
+        "has_values": false,
+        "position_id": null,
+        "jersey_number": 12,
+        "details": []
+      },
+      {
+        "id": 1471673633,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 18346,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 185234640,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 19699,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 185234638,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 19725,
+        "has_values": false,
+        "position_id": null,
+        "jersey_number": 12,
+        "details": []
+      },
+      {
+        "id": 185234639,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 19726,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 12,
+        "details": [
+          {
+            "id": 33845710,
+            "player_statistic_id": 185234639,
+            "type_id": 47,
+            "value": {
+              "total": 0,
+              "won": 0,
+              "scored": 0,
+              "committed": 1,
+              "saved": 0,
+              "missed": 0
+            }
+          },
+          {
+            "id": 28960631,
+            "player_statistic_id": 185234639,
+            "type_id": 56,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25764598,
+            "player_statistic_id": 185234639,
+            "type_id": 57,
+            "value": {
+              "total": 45
+            }
+          },
+          {
+            "id": 28870060,
+            "player_statistic_id": 185234639,
+            "type_id": 78,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25764596,
+            "player_statistic_id": 185234639,
+            "type_id": 80,
+            "value": {
+              "total": 765
+            }
+          },
+          {
+            "id": 28960636,
+            "player_statistic_id": 185234639,
+            "type_id": 84,
+            "value": {
+              "total": 1,
+              "home": 0,
+              "away": 1
+            }
+          },
+          {
+            "id": 25830612,
+            "player_statistic_id": 185234639,
+            "type_id": 88,
+            "value": {
+              "total": 20
+            }
+          },
+          {
+            "id": 28960632,
+            "player_statistic_id": 185234639,
+            "type_id": 96,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25764583,
+            "player_statistic_id": 185234639,
+            "type_id": 100,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25830609,
+            "player_statistic_id": 185234639,
+            "type_id": 101,
+            "value": {
+              "total": 15
+            }
+          },
+          {
+            "id": 25764600,
+            "player_statistic_id": 185234639,
+            "type_id": 104,
+            "value": {
+              "total": 24
+            }
+          },
+          {
+            "id": 25764571,
+            "player_statistic_id": 185234639,
+            "type_id": 105,
+            "value": {
+              "total": 21
+            }
+          },
+          {
+            "id": 25764573,
+            "player_statistic_id": 185234639,
+            "type_id": 106,
+            "value": {
+              "total": 17
+            }
+          },
+          {
+            "id": 25764563,
+            "player_statistic_id": 185234639,
+            "type_id": 107,
+            "value": {
+              "total": 13
+            }
+          },
+          {
+            "id": 29026005,
+            "player_statistic_id": 185234639,
+            "type_id": 108,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 32960346,
+            "player_statistic_id": 185234639,
+            "type_id": 109,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 28960630,
+            "player_statistic_id": 185234639,
+            "type_id": 110,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 25764561,
+            "player_statistic_id": 185234639,
+            "type_id": 116,
+            "value": {
+              "total": 646
+            }
+          },
+          {
+            "id": 28670100,
+            "player_statistic_id": 185234639,
+            "type_id": 117,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25764597,
+            "player_statistic_id": 185234639,
+            "type_id": 118,
+            "value": {
+              "average": 7.11,
+              "highest": 8.67,
+              "lowest": 5.81
+            }
+          },
+          {
+            "id": 25764593,
+            "player_statistic_id": 185234639,
+            "type_id": 119,
+            "value": {
+              "total": 1710
+            }
+          },
+          {
+            "id": 25764587,
+            "player_statistic_id": 185234639,
+            "type_id": 122,
+            "value": {
+              "total": 219
+            }
+          },
+          {
+            "id": 25764589,
+            "player_statistic_id": 185234639,
+            "type_id": 123,
+            "value": {
+              "total": 112
+            }
+          },
+          {
+            "id": 36808529,
+            "player_statistic_id": 185234639,
+            "type_id": 194,
+            "value": {
+              "total": 7,
+              "home": 5,
+              "away": 2
+            }
+          },
+          {
+            "id": 42775372,
+            "player_statistic_id": 185234639,
+            "type_id": 214,
+            "value": {
+              "total": 11
+            }
+          },
+          {
+            "id": 42775331,
+            "player_statistic_id": 185234639,
+            "type_id": 215,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 42775351,
+            "player_statistic_id": 185234639,
+            "type_id": 216,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 25764565,
+            "player_statistic_id": 185234639,
+            "type_id": 321,
+            "value": {
+              "total": 19
+            }
+          },
+          {
+            "id": 25764585,
+            "player_statistic_id": 185234639,
+            "type_id": 322,
+            "value": {
+              "total": 19
+            }
+          },
+          {
+            "id": 28670098,
+            "player_statistic_id": 185234639,
+            "type_id": 580,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25764559,
+            "player_statistic_id": 185234639,
+            "type_id": 1584,
+            "value": {
+              "total": 84.44
+            }
+          }
+        ]
+      },
+      {
+        "id": 185234642,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 20090,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 12,
+        "details": [
+          {
+            "id": 28430960,
+            "player_statistic_id": 185234642,
+            "type_id": 57,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 28430958,
+            "player_statistic_id": 185234642,
+            "type_id": 80,
+            "value": {
+              "total": 48
+            }
+          },
+          {
+            "id": 28430952,
+            "player_statistic_id": 185234642,
+            "type_id": 88,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 28430953,
+            "player_statistic_id": 185234642,
+            "type_id": 100,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 28430949,
+            "player_statistic_id": 185234642,
+            "type_id": 101,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 28430961,
+            "player_statistic_id": 185234642,
+            "type_id": 104,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 28430950,
+            "player_statistic_id": 185234642,
+            "type_id": 105,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 28430951,
+            "player_statistic_id": 185234642,
+            "type_id": 106,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 28430947,
+            "player_statistic_id": 185234642,
+            "type_id": 107,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 28430946,
+            "player_statistic_id": 185234642,
+            "type_id": 116,
+            "value": {
+              "total": 38
+            }
+          },
+          {
+            "id": 28430959,
+            "player_statistic_id": 185234642,
+            "type_id": 118,
+            "value": {
+              "average": 6.83,
+              "highest": 7.85,
+              "lowest": 5.81
+            }
+          },
+          {
+            "id": 28430957,
+            "player_statistic_id": 185234642,
+            "type_id": 119,
+            "value": {
+              "total": 180
+            }
+          },
+          {
+            "id": 28430955,
+            "player_statistic_id": 185234642,
+            "type_id": 122,
+            "value": {
+              "total": 16
+            }
+          },
+          {
+            "id": 28430956,
+            "player_statistic_id": 185234642,
+            "type_id": 123,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 42979214,
+            "player_statistic_id": 185234642,
+            "type_id": 194,
+            "value": {
+              "total": 1,
+              "home": 1,
+              "away": 0
+            }
+          },
+          {
+            "id": 42979216,
+            "player_statistic_id": 185234642,
+            "type_id": 215,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 42979220,
+            "player_statistic_id": 185234642,
+            "type_id": 216,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 28430948,
+            "player_statistic_id": 185234642,
+            "type_id": 321,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 28430954,
+            "player_statistic_id": 185234642,
+            "type_id": 322,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 28506935,
+            "player_statistic_id": 185234642,
+            "type_id": 571,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 28430945,
+            "player_statistic_id": 185234642,
+            "type_id": 1584,
+            "value": {
+              "total": 79.17
+            }
+          }
+        ]
+      },
+      {
+        "id": 185234641,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 20135,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 12,
+        "details": [
+          {
+            "id": 25646273,
+            "player_statistic_id": 185234641,
+            "type_id": 57,
+            "value": {
+              "total": 10
+            }
+          },
+          {
+            "id": 25646262,
+            "player_statistic_id": 185234641,
+            "type_id": 80,
+            "value": {
+              "total": 211
+            }
+          },
+          {
+            "id": 28838394,
+            "player_statistic_id": 185234641,
+            "type_id": 84,
+            "value": {
+              "total": 1,
+              "home": 0,
+              "away": 1
+            }
+          },
+          {
+            "id": 28838262,
+            "player_statistic_id": 185234641,
+            "type_id": 88,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 25967472,
+            "player_statistic_id": 185234641,
+            "type_id": 96,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 28838263,
+            "player_statistic_id": 185234641,
+            "type_id": 100,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25967462,
+            "player_statistic_id": 185234641,
+            "type_id": 101,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 25646279,
+            "player_statistic_id": 185234641,
+            "type_id": 104,
+            "value": {
+              "total": 9
+            }
+          },
+          {
+            "id": 25967466,
+            "player_statistic_id": 185234641,
+            "type_id": 105,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25967468,
+            "player_statistic_id": 185234641,
+            "type_id": 106,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25646192,
+            "player_statistic_id": 185234641,
+            "type_id": 116,
+            "value": {
+              "total": 164
+            }
+          },
+          {
+            "id": 25646265,
+            "player_statistic_id": 185234641,
+            "type_id": 118,
+            "value": {
+              "average": 7.37,
+              "highest": 7.96,
+              "lowest": 6.73
+            }
+          },
+          {
+            "id": 25646254,
+            "player_statistic_id": 185234641,
+            "type_id": 119,
+            "value": {
+              "total": 390
+            }
+          },
+          {
+            "id": 25646244,
+            "player_statistic_id": 185234641,
+            "type_id": 122,
+            "value": {
+              "total": 96
+            }
+          },
+          {
+            "id": 25646249,
+            "player_statistic_id": 185234641,
+            "type_id": 123,
+            "value": {
+              "total": 49
+            }
+          },
+          {
+            "id": 36872003,
+            "player_statistic_id": 185234641,
+            "type_id": 194,
+            "value": {
+              "total": 2,
+              "home": 0,
+              "away": 2
+            }
+          },
+          {
+            "id": 25646196,
+            "player_statistic_id": 185234641,
+            "type_id": 321,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 25646240,
+            "player_statistic_id": 185234641,
+            "type_id": 322,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 28567417,
+            "player_statistic_id": 185234641,
+            "type_id": 323,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25646189,
+            "player_statistic_id": 185234641,
+            "type_id": 1584,
+            "value": {
+              "total": 77.73
+            }
+          }
+        ]
+      },
+      {
+        "id": 486375866,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 20860,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 33862150,
+            "player_statistic_id": 486375866,
+            "type_id": 47,
+            "value": {
+              "total": 0,
+              "won": 0,
+              "scored": 0,
+              "committed": 1,
+              "saved": 0,
+              "missed": 0
+            }
+          },
+          {
+            "id": 31367002,
+            "player_statistic_id": 486375866,
+            "type_id": 56,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 31263392,
+            "player_statistic_id": 486375866,
+            "type_id": 57,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 31263403,
+            "player_statistic_id": 486375866,
+            "type_id": 59,
+            "value": {
+              "in": 1,
+              "out": 2
+            }
+          },
+          {
+            "id": 31263384,
+            "player_statistic_id": 486375866,
+            "type_id": 80,
+            "value": {
+              "total": 103
+            }
+          },
+          {
+            "id": 31263378,
+            "player_statistic_id": 486375866,
+            "type_id": 88,
+            "value": {
+              "total": 8
+            }
+          },
+          {
+            "id": 31263376,
+            "player_statistic_id": 486375866,
+            "type_id": 101,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 31263395,
+            "player_statistic_id": 486375866,
+            "type_id": 104,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 31366995,
+            "player_statistic_id": 486375866,
+            "type_id": 105,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 31263374,
+            "player_statistic_id": 486375866,
+            "type_id": 116,
+            "value": {
+              "total": 86
+            }
+          },
+          {
+            "id": 31263389,
+            "player_statistic_id": 486375866,
+            "type_id": 118,
+            "value": {
+              "average": 6.19,
+              "highest": 7.04,
+              "lowest": 4.69
+            }
+          },
+          {
+            "id": 31263381,
+            "player_statistic_id": 486375866,
+            "type_id": 119,
+            "value": {
+              "total": 265
+            }
+          },
+          {
+            "id": 35411207,
+            "player_statistic_id": 486375866,
+            "type_id": 122,
+            "value": {
+              "total": 31
+            }
+          },
+          {
+            "id": 35411209,
+            "player_statistic_id": 486375866,
+            "type_id": 123,
+            "value": {
+              "total": 15
+            }
+          },
+          {
+            "id": 43069352,
+            "player_statistic_id": 486375866,
+            "type_id": 214,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 43069335,
+            "player_statistic_id": 486375866,
+            "type_id": 216,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 31263375,
+            "player_statistic_id": 486375866,
+            "type_id": 321,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 31263379,
+            "player_statistic_id": 486375866,
+            "type_id": 322,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 31311922,
+            "player_statistic_id": 486375866,
+            "type_id": 323,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 33862149,
+            "player_statistic_id": 486375866,
+            "type_id": 324,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 31367000,
+            "player_statistic_id": 486375866,
+            "type_id": 571,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 31263373,
+            "player_statistic_id": 486375866,
+            "type_id": 1584,
+            "value": {
+              "total": 83.5
+            }
+          }
+        ]
+      },
+      {
+        "id": 837834643,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 21669,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 35695206,
+            "player_statistic_id": 837834643,
+            "type_id": 323,
+            "value": {
+              "total": 4
+            }
+          }
+        ]
+      },
+      {
+        "id": 508046961,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 21730,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 36185982,
+            "player_statistic_id": 508046961,
+            "type_id": 57,
+            "value": {
+              "total": 18
+            }
+          },
+          {
+            "id": 31591404,
+            "player_statistic_id": 508046961,
+            "type_id": 59,
+            "value": {
+              "in": 0,
+              "out": 1
+            }
+          },
+          {
+            "id": 36185984,
+            "player_statistic_id": 508046961,
+            "type_id": 78,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 31591328,
+            "player_statistic_id": 508046961,
+            "type_id": 80,
+            "value": {
+              "total": 298
+            }
+          },
+          {
+            "id": 33046182,
+            "player_statistic_id": 508046961,
+            "type_id": 87,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 36185981,
+            "player_statistic_id": 508046961,
+            "type_id": 88,
+            "value": {
+              "total": 12
+            }
+          },
+          {
+            "id": 36497857,
+            "player_statistic_id": 508046961,
+            "type_id": 94,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 31591243,
+            "player_statistic_id": 508046961,
+            "type_id": 96,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 36242692,
+            "player_statistic_id": 508046961,
+            "type_id": 101,
+            "value": {
+              "total": 9
+            }
+          },
+          {
+            "id": 36185983,
+            "player_statistic_id": 508046961,
+            "type_id": 104,
+            "value": {
+              "total": 15
+            }
+          },
+          {
+            "id": 31591212,
+            "player_statistic_id": 508046961,
+            "type_id": 105,
+            "value": {
+              "total": 9
+            }
+          },
+          {
+            "id": 31591226,
+            "player_statistic_id": 508046961,
+            "type_id": 106,
+            "value": {
+              "total": 8
+            }
+          },
+          {
+            "id": 36242691,
+            "player_statistic_id": 508046961,
+            "type_id": 107,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 36497858,
+            "player_statistic_id": 508046961,
+            "type_id": 108,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 36497859,
+            "player_statistic_id": 508046961,
+            "type_id": 109,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 31591144,
+            "player_statistic_id": 508046961,
+            "type_id": 116,
+            "value": {
+              "total": 222
+            }
+          },
+          {
+            "id": 31591366,
+            "player_statistic_id": 508046961,
+            "type_id": 118,
+            "value": {
+              "average": 7.09,
+              "highest": 7.45,
+              "lowest": 6.83
+            }
+          },
+          {
+            "id": 31591308,
+            "player_statistic_id": 508046961,
+            "type_id": 119,
+            "value": {
+              "total": 572
+            }
+          },
+          {
+            "id": 31591288,
+            "player_statistic_id": 508046961,
+            "type_id": 122,
+            "value": {
+              "total": 135
+            }
+          },
+          {
+            "id": 31591299,
+            "player_statistic_id": 508046961,
+            "type_id": 123,
+            "value": {
+              "total": 66
+            }
+          },
+          {
+            "id": 37043120,
+            "player_statistic_id": 508046961,
+            "type_id": 194,
+            "value": {
+              "total": 1,
+              "home": 1,
+              "away": 0
+            }
+          },
+          {
+            "id": 43283243,
+            "player_statistic_id": 508046961,
+            "type_id": 214,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 43283223,
+            "player_statistic_id": 508046961,
+            "type_id": 215,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 43283235,
+            "player_statistic_id": 508046961,
+            "type_id": 216,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 31591153,
+            "player_statistic_id": 508046961,
+            "type_id": 321,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 31591278,
+            "player_statistic_id": 508046961,
+            "type_id": 322,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 33960070,
+            "player_statistic_id": 508046961,
+            "type_id": 323,
+            "value": {
+              "total": 17
+            }
+          },
+          {
+            "id": 31591138,
+            "player_statistic_id": 508046961,
+            "type_id": 1584,
+            "value": {
+              "total": 74.5
+            }
+          }
+        ]
+      },
+      {
+        "id": 749450578,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 21817,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 580228566,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 22130,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 33984917,
+            "player_statistic_id": 580228566,
+            "type_id": 323,
+            "value": {
+              "total": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": 867296361,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 23031,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 34168306,
+            "player_statistic_id": 867296361,
+            "type_id": 40,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 34168345,
+            "player_statistic_id": 867296361,
+            "type_id": 57,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 34168330,
+            "player_statistic_id": 867296361,
+            "type_id": 80,
+            "value": {
+              "total": 26
+            }
+          },
+          {
+            "id": 34168316,
+            "player_statistic_id": 867296361,
+            "type_id": 88,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 34168350,
+            "player_statistic_id": 867296361,
+            "type_id": 104,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 34168301,
+            "player_statistic_id": 867296361,
+            "type_id": 116,
+            "value": {
+              "total": 21
+            }
+          },
+          {
+            "id": 34168339,
+            "player_statistic_id": 867296361,
+            "type_id": 118,
+            "value": {
+              "average": 7.04,
+              "highest": 7.04,
+              "lowest": 7.04
+            }
+          },
+          {
+            "id": 34168328,
+            "player_statistic_id": 867296361,
+            "type_id": 119,
+            "value": {
+              "total": 90
+            }
+          },
+          {
+            "id": 34168322,
+            "player_statistic_id": 867296361,
+            "type_id": 122,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 34168325,
+            "player_statistic_id": 867296361,
+            "type_id": 123,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 43575538,
+            "player_statistic_id": 867296361,
+            "type_id": 216,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 34168303,
+            "player_statistic_id": 867296361,
+            "type_id": 321,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 34168321,
+            "player_statistic_id": 867296361,
+            "type_id": 322,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 34187378,
+            "player_statistic_id": 867296361,
+            "type_id": 323,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 34168299,
+            "player_statistic_id": 867296361,
+            "type_id": 1584,
+            "value": {
+              "total": 80.77
+            }
+          }
+        ]
+      },
+      {
+        "id": 1219847746,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 23499,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1220104260,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 23506,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1468680493,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 24214,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1468683018,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 24215,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1468827711,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 24216,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1468981488,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 24217,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1474962944,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 24250,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1474976600,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 24253,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1474980950,
+        "player_id": 186418,
+        "team_id": 629,
+        "season_id": 24254,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 936827428,
+        "player_id": 186418,
+        "team_id": 2783,
+        "season_id": 21734,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 34440202,
+            "player_statistic_id": 936827428,
+            "type_id": 57,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 34440196,
+            "player_statistic_id": 936827428,
+            "type_id": 80,
+            "value": {
+              "total": 57
+            }
+          },
+          {
+            "id": 34440204,
+            "player_statistic_id": 936827428,
+            "type_id": 104,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 34440187,
+            "player_statistic_id": 936827428,
+            "type_id": 105,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 34440188,
+            "player_statistic_id": 936827428,
+            "type_id": 106,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 34440182,
+            "player_statistic_id": 936827428,
+            "type_id": 107,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 34440181,
+            "player_statistic_id": 936827428,
+            "type_id": 116,
+            "value": {
+              "total": 43
+            }
+          },
+          {
+            "id": 34440201,
+            "player_statistic_id": 936827428,
+            "type_id": 118,
+            "value": {
+              "average": 8.36,
+              "highest": 8.36,
+              "lowest": 8.36
+            }
+          },
+          {
+            "id": 34440195,
+            "player_statistic_id": 936827428,
+            "type_id": 119,
+            "value": {
+              "total": 90
+            }
+          },
+          {
+            "id": 34440193,
+            "player_statistic_id": 936827428,
+            "type_id": 122,
+            "value": {
+              "total": 19
+            }
+          },
+          {
+            "id": 34440194,
+            "player_statistic_id": 936827428,
+            "type_id": 123,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 37049011,
+            "player_statistic_id": 936827428,
+            "type_id": 194,
+            "value": {
+              "total": 1,
+              "home": 0,
+              "away": 1
+            }
+          },
+          {
+            "id": 43323673,
+            "player_statistic_id": 936827428,
+            "type_id": 214,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 34440183,
+            "player_statistic_id": 936827428,
+            "type_id": 321,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 34440191,
+            "player_statistic_id": 936827428,
+            "type_id": 322,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 34440180,
+            "player_statistic_id": 936827428,
+            "type_id": 1584,
+            "value": {
+              "total": 75.44
+            }
+          }
+        ]
+      },
+      {
+        "id": 28895843,
+        "player_id": 186418,
+        "team_id": 3477,
+        "season_id": 17367,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 13,
+        "details": [
+          {
+            "id": 16206876,
+            "player_statistic_id": 28895843,
+            "type_id": 57,
+            "value": {
+              "total": 19
+            }
+          },
+          {
+            "id": 16206744,
+            "player_statistic_id": 28895843,
+            "type_id": 80,
+            "value": {
+              "total": 498
+            }
+          },
+          {
+            "id": 25006004,
+            "player_statistic_id": 28895843,
+            "type_id": 88,
+            "value": {
+              "total": 9
+            }
+          },
+          {
+            "id": 25006013,
+            "player_statistic_id": 28895843,
+            "type_id": 100,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 16206534,
+            "player_statistic_id": 28895843,
+            "type_id": 101,
+            "value": {
+              "total": 15
+            }
+          },
+          {
+            "id": 16206900,
+            "player_statistic_id": 28895843,
+            "type_id": 104,
+            "value": {
+              "total": 11
+            }
+          },
+          {
+            "id": 16206566,
+            "player_statistic_id": 28895843,
+            "type_id": 105,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 25005984,
+            "player_statistic_id": 28895843,
+            "type_id": 106,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 25005945,
+            "player_statistic_id": 28895843,
+            "type_id": 107,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 25005940,
+            "player_statistic_id": 28895843,
+            "type_id": 116,
+            "value": {
+              "total": 392
+            }
+          },
+          {
+            "id": 16206780,
+            "player_statistic_id": 28895843,
+            "type_id": 118,
+            "value": {
+              "average": 7.13,
+              "highest": 8.16,
+              "lowest": 6.32
+            }
+          },
+          {
+            "id": 16206671,
+            "player_statistic_id": 28895843,
+            "type_id": 119,
+            "value": {
+              "total": 1200
+            }
+          },
+          {
+            "id": 16206359,
+            "player_statistic_id": 28895843,
+            "type_id": 321,
+            "value": {
+              "total": 13
+            }
+          },
+          {
+            "id": 16206632,
+            "player_statistic_id": 28895843,
+            "type_id": 322,
+            "value": {
+              "total": 13
+            }
+          },
+          {
+            "id": 32596621,
+            "player_statistic_id": 28895843,
+            "type_id": 571,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 28097904,
+            "player_statistic_id": 28895843,
+            "type_id": 1584,
+            "value": {
+              "total": 78.71
+            }
+          }
+        ]
+      },
+      {
+        "id": 28916327,
+        "player_id": 186418,
+        "team_id": 3477,
+        "season_id": 17480,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 13,
+        "details": [
+          {
+            "id": 16641149,
+            "player_statistic_id": 28916327,
+            "type_id": 57,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 16641032,
+            "player_statistic_id": 28916327,
+            "type_id": 80,
+            "value": {
+              "total": 79
+            }
+          },
+          {
+            "id": 16641130,
+            "player_statistic_id": 28916327,
+            "type_id": 83,
+            "value": {
+              "total": 1,
+              "home": 1,
+              "away": 0
+            }
+          },
+          {
+            "id": 25121989,
+            "player_statistic_id": 28916327,
+            "type_id": 88,
+            "value": {
+              "total": 39
+            }
+          },
+          {
+            "id": 16641172,
+            "player_statistic_id": 28916327,
+            "type_id": 104,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 25121947,
+            "player_statistic_id": 28916327,
+            "type_id": 116,
+            "value": {
+              "total": 61
+            }
+          },
+          {
+            "id": 16641069,
+            "player_statistic_id": 28916327,
+            "type_id": 118,
+            "value": {
+              "average": 6.38,
+              "highest": 6.43,
+              "lowest": 6.32
+            }
+          },
+          {
+            "id": 16640984,
+            "player_statistic_id": 28916327,
+            "type_id": 119,
+            "value": {
+              "total": 225
+            }
+          },
+          {
+            "id": 42010314,
+            "player_statistic_id": 28916327,
+            "type_id": 216,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 16640729,
+            "player_statistic_id": 28916327,
+            "type_id": 321,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 16640967,
+            "player_statistic_id": 28916327,
+            "type_id": 322,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 16640793,
+            "player_statistic_id": 28916327,
+            "type_id": 323,
+            "value": {
+              "total": 33
+            }
+          },
+          {
+            "id": 28148880,
+            "player_statistic_id": 28916327,
+            "type_id": 1584,
+            "value": {
+              "total": 77.22
+            }
+          }
+        ]
+      },
+      {
+        "id": 28943326,
+        "player_id": 186418,
+        "team_id": 3477,
+        "season_id": 17729,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 13,
+        "details": [
+          {
+            "id": 17203059,
+            "player_statistic_id": 28943326,
+            "type_id": 57,
+            "value": {
+              "total": 16
+            }
+          },
+          {
+            "id": 17202935,
+            "player_statistic_id": 28943326,
+            "type_id": 80,
+            "value": {
+              "total": 192
+            }
+          },
+          {
+            "id": 25181073,
+            "player_statistic_id": 28943326,
+            "type_id": 88,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 17202678,
+            "player_statistic_id": 28943326,
+            "type_id": 101,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 17203103,
+            "player_statistic_id": 28943326,
+            "type_id": 104,
+            "value": {
+              "total": 8
+            }
+          },
+          {
+            "id": 17202723,
+            "player_statistic_id": 28943326,
+            "type_id": 105,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25181059,
+            "player_statistic_id": 28943326,
+            "type_id": 106,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25181042,
+            "player_statistic_id": 28943326,
+            "type_id": 107,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25181039,
+            "player_statistic_id": 28943326,
+            "type_id": 116,
+            "value": {
+              "total": 168
+            }
+          },
+          {
+            "id": 17202972,
+            "player_statistic_id": 28943326,
+            "type_id": 118,
+            "value": {
+              "average": 7.53,
+              "highest": 8.36,
+              "lowest": 6.83
+            }
+          },
+          {
+            "id": 17202866,
+            "player_statistic_id": 28943326,
+            "type_id": 119,
+            "value": {
+              "total": 480
+            }
+          },
+          {
+            "id": 42110767,
+            "player_statistic_id": 28943326,
+            "type_id": 194,
+            "value": {
+              "total": 3,
+              "home": 0,
+              "away": 3
+            }
+          },
+          {
+            "id": 42110789,
+            "player_statistic_id": 28943326,
+            "type_id": 214,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 42110777,
+            "player_statistic_id": 28943326,
+            "type_id": 216,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 17202508,
+            "player_statistic_id": 28943326,
+            "type_id": 321,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 17202806,
+            "player_statistic_id": 28943326,
+            "type_id": 322,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 28174399,
+            "player_statistic_id": 28943326,
+            "type_id": 1584,
+            "value": {
+              "total": 87.5
+            }
+          }
+        ]
+      },
+      {
+        "id": 468661,
+        "player_id": 186418,
+        "team_id": 3477,
+        "season_id": 18324,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 13,
+        "details": [
+          {
+            "id": 24510794,
+            "player_statistic_id": 468661,
+            "type_id": 88,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 1149257,
+            "player_statistic_id": 468661,
+            "type_id": 323,
+            "value": {
+              "total": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": 443193,
+        "player_id": 186418,
+        "team_id": 3477,
+        "season_id": 18346,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 13,
+        "details": [
+          {
+            "id": 460858,
+            "player_statistic_id": 443193,
+            "type_id": 57,
+            "value": {
+              "total": 41
+            }
+          },
+          {
+            "id": 460855,
+            "player_statistic_id": 443193,
+            "type_id": 80,
+            "value": {
+              "total": 457
+            }
+          },
+          {
+            "id": 18624452,
+            "player_statistic_id": 443193,
+            "type_id": 84,
+            "value": {
+              "total": 2,
+              "home": 1,
+              "away": 1
+            }
+          },
+          {
+            "id": 24544931,
+            "player_statistic_id": 443193,
+            "type_id": 88,
+            "value": {
+              "total": 16
+            }
+          },
+          {
+            "id": 26658700,
+            "player_statistic_id": 443193,
+            "type_id": 96,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 460835,
+            "player_statistic_id": 443193,
+            "type_id": 101,
+            "value": {
+              "total": 20
+            }
+          },
+          {
+            "id": 460860,
+            "player_statistic_id": 443193,
+            "type_id": 104,
+            "value": {
+              "total": 24
+            }
+          },
+          {
+            "id": 460839,
+            "player_statistic_id": 443193,
+            "type_id": 105,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 24544898,
+            "player_statistic_id": 443193,
+            "type_id": 106,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 24544841,
+            "player_statistic_id": 443193,
+            "type_id": 107,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 24544886,
+            "player_statistic_id": 443193,
+            "type_id": 110,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 24544829,
+            "player_statistic_id": 443193,
+            "type_id": 116,
+            "value": {
+              "total": 284
+            }
+          },
+          {
+            "id": 460856,
+            "player_statistic_id": 443193,
+            "type_id": 118,
+            "value": {
+              "average": 7,
+              "highest": 8.36,
+              "lowest": 4.79
+            }
+          },
+          {
+            "id": 460848,
+            "player_statistic_id": 443193,
+            "type_id": 119,
+            "value": {
+              "total": 1080
+            }
+          },
+          {
+            "id": 42317687,
+            "player_statistic_id": 443193,
+            "type_id": 194,
+            "value": {
+              "total": 3,
+              "home": 2,
+              "away": 1
+            }
+          },
+          {
+            "id": 42317701,
+            "player_statistic_id": 443193,
+            "type_id": 214,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 42317688,
+            "player_statistic_id": 443193,
+            "type_id": 215,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 42317693,
+            "player_statistic_id": 443193,
+            "type_id": 216,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 460811,
+            "player_statistic_id": 443193,
+            "type_id": 321,
+            "value": {
+              "total": 12
+            }
+          },
+          {
+            "id": 460844,
+            "player_statistic_id": 443193,
+            "type_id": 322,
+            "value": {
+              "total": 12
+            }
+          },
+          {
+            "id": 24544906,
+            "player_statistic_id": 443193,
+            "type_id": 571,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 26658663,
+            "player_statistic_id": 443193,
+            "type_id": 1584,
+            "value": {
+              "total": 62.14
+            }
+          }
+        ]
+      },
+      {
+        "id": 425851,
+        "player_id": 186418,
+        "team_id": 3477,
+        "season_id": 18462,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 13,
+        "details": [
+          {
+            "id": 33819161,
+            "player_statistic_id": 425851,
+            "type_id": 47,
+            "value": {
+              "total": 0,
+              "won": 0,
+              "scored": 0,
+              "committed": 0,
+              "saved": 1,
+              "missed": 0
+            }
+          },
+          {
+            "id": 38420,
+            "player_statistic_id": 425851,
+            "type_id": 57,
+            "value": {
+              "total": 75
+            }
+          },
+          {
+            "id": 38406,
+            "player_statistic_id": 425851,
+            "type_id": 80,
+            "value": {
+              "total": 1126
+            }
+          },
+          {
+            "id": 18995660,
+            "player_statistic_id": 425851,
+            "type_id": 84,
+            "value": {
+              "total": 2,
+              "home": 0,
+              "away": 2
+            }
+          },
+          {
+            "id": 24684160,
+            "player_statistic_id": 425851,
+            "type_id": 88,
+            "value": {
+              "total": 37
+            }
+          },
+          {
+            "id": 24684072,
+            "player_statistic_id": 425851,
+            "type_id": 94,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 26623203,
+            "player_statistic_id": 425851,
+            "type_id": 96,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 24684180,
+            "player_statistic_id": 425851,
+            "type_id": 100,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 38370,
+            "player_statistic_id": 425851,
+            "type_id": 101,
+            "value": {
+              "total": 31
+            }
+          },
+          {
+            "id": 38426,
+            "player_statistic_id": 425851,
+            "type_id": 104,
+            "value": {
+              "total": 51
+            }
+          },
+          {
+            "id": 38376,
+            "player_statistic_id": 425851,
+            "type_id": 105,
+            "value": {
+              "total": 19
+            }
+          },
+          {
+            "id": 24684103,
+            "player_statistic_id": 425851,
+            "type_id": 106,
+            "value": {
+              "total": 14
+            }
+          },
+          {
+            "id": 24684010,
+            "player_statistic_id": 425851,
+            "type_id": 107,
+            "value": {
+              "total": 12
+            }
+          },
+          {
+            "id": 32784384,
+            "player_statistic_id": 425851,
+            "type_id": 108,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 32784385,
+            "player_statistic_id": 425851,
+            "type_id": 109,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 24684083,
+            "player_statistic_id": 425851,
+            "type_id": 110,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 24683993,
+            "player_statistic_id": 425851,
+            "type_id": 116,
+            "value": {
+              "total": 892
+            }
+          },
+          {
+            "id": 38412,
+            "player_statistic_id": 425851,
+            "type_id": 118,
+            "value": {
+              "average": 7.11,
+              "highest": 8.77,
+              "lowest": 5.81
+            }
+          },
+          {
+            "id": 38393,
+            "player_statistic_id": 425851,
+            "type_id": 119,
+            "value": {
+              "total": 2880
+            }
+          },
+          {
+            "id": 24684209,
+            "player_statistic_id": 425851,
+            "type_id": 122,
+            "value": {
+              "total": 100
+            }
+          },
+          {
+            "id": 24684219,
+            "player_statistic_id": 425851,
+            "type_id": 123,
+            "value": {
+              "total": 36
+            }
+          },
+          {
+            "id": 42386364,
+            "player_statistic_id": 425851,
+            "type_id": 194,
+            "value": {
+              "total": 14,
+              "home": 9,
+              "away": 5
+            }
+          },
+          {
+            "id": 42386394,
+            "player_statistic_id": 425851,
+            "type_id": 214,
+            "value": {
+              "total": 14
+            }
+          },
+          {
+            "id": 42386365,
+            "player_statistic_id": 425851,
+            "type_id": 215,
+            "value": {
+              "total": 9
+            }
+          },
+          {
+            "id": 42386376,
+            "player_statistic_id": 425851,
+            "type_id": 216,
+            "value": {
+              "total": 9
+            }
+          },
+          {
+            "id": 38339,
+            "player_statistic_id": 425851,
+            "type_id": 321,
+            "value": {
+              "total": 32
+            }
+          },
+          {
+            "id": 38384,
+            "player_statistic_id": 425851,
+            "type_id": 322,
+            "value": {
+              "total": 32
+            }
+          },
+          {
+            "id": 38354,
+            "player_statistic_id": 425851,
+            "type_id": 323,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 24684119,
+            "player_statistic_id": 425851,
+            "type_id": 571,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 26623136,
+            "player_statistic_id": 425851,
+            "type_id": 1584,
+            "value": {
+              "total": 79.22
+            }
+          }
+        ]
+      },
+      {
+        "id": 508026,
+        "player_id": 186418,
+        "team_id": 3477,
+        "season_id": 19088,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 13,
+        "details": [
+          {
+            "id": 26715301,
+            "player_statistic_id": 508026,
+            "type_id": 88,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 26715303,
+            "player_statistic_id": 508026,
+            "type_id": 119,
+            "value": {
+              "total": 270
+            }
+          },
+          {
+            "id": 36725354,
+            "player_statistic_id": 508026,
+            "type_id": 194,
+            "value": {
+              "total": 1,
+              "home": 0,
+              "away": 1
+            }
+          },
+          {
+            "id": 42584780,
+            "player_statistic_id": 508026,
+            "type_id": 214,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 19725819,
+            "player_statistic_id": 508026,
+            "type_id": 321,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 19725869,
+            "player_statistic_id": 508026,
+            "type_id": 322,
+            "value": {
+              "total": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 654852,
+        "player_id": 186418,
+        "team_id": 3477,
+        "season_id": 19089,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 13,
+        "details": [
+          {
+            "id": 21983741,
+            "player_statistic_id": 654852,
+            "type_id": 57,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 21983762,
+            "player_statistic_id": 654852,
+            "type_id": 59,
+            "value": {
+              "in": 0,
+              "out": 1
+            }
+          },
+          {
+            "id": 21983709,
+            "player_statistic_id": 654852,
+            "type_id": 80,
+            "value": {
+              "total": 67
+            }
+          },
+          {
+            "id": 24091220,
+            "player_statistic_id": 654852,
+            "type_id": 88,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 24091212,
+            "player_statistic_id": 654852,
+            "type_id": 116,
+            "value": {
+              "total": 64
+            }
+          },
+          {
+            "id": 21983718,
+            "player_statistic_id": 654852,
+            "type_id": 118,
+            "value": {
+              "average": 6.22,
+              "highest": 6.83,
+              "lowest": 5.61
+            }
+          },
+          {
+            "id": 21983688,
+            "player_statistic_id": 654852,
+            "type_id": 119,
+            "value": {
+              "total": 149
+            }
+          },
+          {
+            "id": 21983606,
+            "player_statistic_id": 654852,
+            "type_id": 321,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 21983675,
+            "player_statistic_id": 654852,
+            "type_id": 322,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 21983620,
+            "player_statistic_id": 654852,
+            "type_id": 323,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 32863114,
+            "player_statistic_id": 654852,
+            "type_id": 571,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 26732986,
+            "player_statistic_id": 654852,
+            "type_id": 1584,
+            "value": {
+              "total": 95.52
+            }
+          }
+        ]
+      },
+      {
+        "id": 15194519,
+        "player_id": 186418,
+        "team_id": 3477,
+        "season_id": 19259,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 13,
+        "details": [
+          {
+            "id": 24149096,
+            "player_statistic_id": 15194519,
+            "type_id": 88,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 24149106,
+            "player_statistic_id": 15194519,
+            "type_id": 119,
+            "value": {
+              "total": 90
+            }
+          },
+          {
+            "id": 42702750,
+            "player_statistic_id": 15194519,
+            "type_id": 215,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 24149069,
+            "player_statistic_id": 15194519,
+            "type_id": 321,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 24149100,
+            "player_statistic_id": 15194519,
+            "type_id": 322,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 24149076,
+            "player_statistic_id": 15194519,
+            "type_id": 323,
+            "value": {
+              "total": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 48646021,
+        "player_id": 186418,
+        "team_id": 3477,
+        "season_id": 19724,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 13,
+        "details": [
+          {
+            "id": 24413105,
+            "player_statistic_id": 48646021,
+            "type_id": 88,
+            "value": {
+              "total": 11
+            }
+          },
+          {
+            "id": 20378632,
+            "player_statistic_id": 48646021,
+            "type_id": 323,
+            "value": {
+              "total": 8
+            }
+          }
+        ]
+      },
+      {
+        "id": 8519797,
+        "player_id": 186418,
+        "team_id": 3477,
+        "season_id": 19799,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 13,
+        "details": [
+          {
+            "id": 20276801,
+            "player_statistic_id": 8519797,
+            "type_id": 57,
+            "value": {
+              "total": 46
+            }
+          },
+          {
+            "id": 20276766,
+            "player_statistic_id": 8519797,
+            "type_id": 80,
+            "value": {
+              "total": 473
+            }
+          },
+          {
+            "id": 20276874,
+            "player_statistic_id": 8519797,
+            "type_id": 84,
+            "value": {
+              "total": 1,
+              "home": 0,
+              "away": 1
+            }
+          },
+          {
+            "id": 23550944,
+            "player_statistic_id": 8519797,
+            "type_id": 88,
+            "value": {
+              "total": 11
+            }
+          },
+          {
+            "id": 26776412,
+            "player_statistic_id": 8519797,
+            "type_id": 96,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 23550952,
+            "player_statistic_id": 8519797,
+            "type_id": 100,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 20276704,
+            "player_statistic_id": 8519797,
+            "type_id": 101,
+            "value": {
+              "total": 10
+            }
+          },
+          {
+            "id": 20276810,
+            "player_statistic_id": 8519797,
+            "type_id": 104,
+            "value": {
+              "total": 36
+            }
+          },
+          {
+            "id": 26776409,
+            "player_statistic_id": 8519797,
+            "type_id": 105,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 23550907,
+            "player_statistic_id": 8519797,
+            "type_id": 106,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 23550843,
+            "player_statistic_id": 8519797,
+            "type_id": 107,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 23550836,
+            "player_statistic_id": 8519797,
+            "type_id": 116,
+            "value": {
+              "total": 396
+            }
+          },
+          {
+            "id": 20276778,
+            "player_statistic_id": 8519797,
+            "type_id": 118,
+            "value": {
+              "average": 7.48,
+              "highest": 8.87,
+              "lowest": 6.02
+            }
+          },
+          {
+            "id": 20276744,
+            "player_statistic_id": 8519797,
+            "type_id": 119,
+            "value": {
+              "total": 1260
+            }
+          },
+          {
+            "id": 36840495,
+            "player_statistic_id": 8519797,
+            "type_id": 194,
+            "value": {
+              "total": 7,
+              "home": 2,
+              "away": 5
+            }
+          },
+          {
+            "id": 42872052,
+            "player_statistic_id": 8519797,
+            "type_id": 214,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 42872040,
+            "player_statistic_id": 8519797,
+            "type_id": 215,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 42872047,
+            "player_statistic_id": 8519797,
+            "type_id": 216,
+            "value": {
+              "total": 5
+            }
+          },
+          {
+            "id": 20276657,
+            "player_statistic_id": 8519797,
+            "type_id": 321,
+            "value": {
+              "total": 14
+            }
+          },
+          {
+            "id": 20276730,
+            "player_statistic_id": 8519797,
+            "type_id": 322,
+            "value": {
+              "total": 14
+            }
+          },
+          {
+            "id": 25434256,
+            "player_statistic_id": 8519797,
+            "type_id": 323,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 26776408,
+            "player_statistic_id": 8519797,
+            "type_id": 1584,
+            "value": {
+              "total": 83.72
+            }
+          }
+        ]
+      },
+      {
+        "id": 114194556,
+        "player_id": 186418,
+        "team_id": 3477,
+        "season_id": 20777,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 13,
+        "details": [
+          {
+            "id": 25444205,
+            "player_statistic_id": 114194556,
+            "type_id": 88,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 25444161,
+            "player_statistic_id": 114194556,
+            "type_id": 323,
+            "value": {
+              "total": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": 94649679,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 892,
+        "has_values": false,
+        "position_id": null,
+        "jersey_number": 12,
+        "details": []
+      },
+      {
+        "id": 27333967,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 894,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 23,
+        "details": [
+          {
+            "id": 26893679,
+            "player_statistic_id": 27333967,
+            "type_id": 88,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 3117652,
+            "player_statistic_id": 27333967,
+            "type_id": 323,
+            "value": {
+              "total": 5
+            }
+          }
+        ]
+      },
+      {
+        "id": 117523047,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 5796,
+        "has_values": false,
+        "position_id": null,
+        "jersey_number": 12,
+        "details": []
+      },
+      {
+        "id": 27497930,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 6305,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 23,
+        "details": [
+          {
+            "id": 6556202,
+            "player_statistic_id": 27497930,
+            "type_id": 323,
+            "value": {
+              "total": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": 486158124,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 6309,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 12,
+        "details": [
+          {
+            "id": 30181345,
+            "player_statistic_id": 486158124,
+            "type_id": 323,
+            "value": {
+              "total": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": 220662961,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 6314,
+        "has_values": false,
+        "position_id": null,
+        "jersey_number": 12,
+        "details": []
+      },
+      {
+        "id": 27580755,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 11985,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 23,
+        "details": [
+          {
+            "id": 8290894,
+            "player_statistic_id": 27580755,
+            "type_id": 59,
+            "value": {
+              "in": 0,
+              "out": 1
+            }
+          },
+          {
+            "id": 27143077,
+            "player_statistic_id": 27580755,
+            "type_id": 88,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 27143082,
+            "player_statistic_id": 27580755,
+            "type_id": 119,
+            "value": {
+              "total": 149
+            }
+          },
+          {
+            "id": 41111864,
+            "player_statistic_id": 27580755,
+            "type_id": 194,
+            "value": {
+              "total": 2,
+              "home": 2,
+              "away": 0
+            }
+          },
+          {
+            "id": 41111905,
+            "player_statistic_id": 27580755,
+            "type_id": 214,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 8290565,
+            "player_statistic_id": 27580755,
+            "type_id": 321,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 8290753,
+            "player_statistic_id": 27580755,
+            "type_id": 322,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 8290606,
+            "player_statistic_id": 27580755,
+            "type_id": 323,
+            "value": {
+              "total": 4
+            }
+          }
+        ]
+      },
+      {
+        "id": 744663,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 16761,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 12,
+        "details": []
+      },
+      {
+        "id": 386786,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 16793,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 23,
+        "details": [
+          {
+            "id": 14728403,
+            "player_statistic_id": 386786,
+            "type_id": 57,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 14728357,
+            "player_statistic_id": 386786,
+            "type_id": 80,
+            "value": {
+              "total": 19
+            }
+          },
+          {
+            "id": 26610753,
+            "player_statistic_id": 386786,
+            "type_id": 88,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 14728249,
+            "player_statistic_id": 386786,
+            "type_id": 101,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 14728421,
+            "player_statistic_id": 386786,
+            "type_id": 104,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 26610738,
+            "player_statistic_id": 386786,
+            "type_id": 105,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 26610740,
+            "player_statistic_id": 386786,
+            "type_id": 106,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 26610729,
+            "player_statistic_id": 386786,
+            "type_id": 107,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 26610724,
+            "player_statistic_id": 386786,
+            "type_id": 116,
+            "value": {
+              "total": 13
+            }
+          },
+          {
+            "id": 14728375,
+            "player_statistic_id": 386786,
+            "type_id": 118,
+            "value": {
+              "average": 7.45,
+              "highest": 7.45,
+              "lowest": 7.45
+            }
+          },
+          {
+            "id": 14728312,
+            "player_statistic_id": 386786,
+            "type_id": 119,
+            "value": {
+              "total": 90
+            }
+          },
+          {
+            "id": 41753625,
+            "player_statistic_id": 386786,
+            "type_id": 215,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 14728171,
+            "player_statistic_id": 386786,
+            "type_id": 321,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 14728289,
+            "player_statistic_id": 386786,
+            "type_id": 322,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 14728201,
+            "player_statistic_id": 386786,
+            "type_id": 323,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 26610722,
+            "player_statistic_id": 386786,
+            "type_id": 1584,
+            "value": {
+              "total": 68.42
+            }
+          }
+        ]
+      },
+      {
+        "id": 684484,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 18017,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 12,
+        "details": [
+          {
+            "id": 23419553,
+            "player_statistic_id": 684484,
+            "type_id": 88,
+            "value": {
+              "total": 8
+            }
+          },
+          {
+            "id": 23403814,
+            "player_statistic_id": 684484,
+            "type_id": 323,
+            "value": {
+              "total": 7
+            }
+          }
+        ]
+      },
+      {
+        "id": 386787,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 19164,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 12,
+        "details": [
+          {
+            "id": 24137058,
+            "player_statistic_id": 386787,
+            "type_id": 119,
+            "value": {
+              "total": 90
+            }
+          },
+          {
+            "id": 36756491,
+            "player_statistic_id": 386787,
+            "type_id": 194,
+            "value": {
+              "total": 1,
+              "home": 1,
+              "away": 0
+            }
+          },
+          {
+            "id": 1264193,
+            "player_statistic_id": 386787,
+            "type_id": 321,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 1264219,
+            "player_statistic_id": 386787,
+            "type_id": 322,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 1264199,
+            "player_statistic_id": 386787,
+            "type_id": 323,
+            "value": {
+              "total": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 240546058,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 21053,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 12,
+        "details": [
+          {
+            "id": 28738636,
+            "player_statistic_id": 240546058,
+            "type_id": 323,
+            "value": {
+              "total": 4
+            }
+          }
+        ]
+      },
+      {
+        "id": 1313882274,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 22305,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 12,
+        "details": [
+          {
+            "id": 38722039,
+            "player_statistic_id": 1313882274,
+            "type_id": 57,
+            "value": {
+              "total": 6
+            }
+          },
+          {
+            "id": 38722031,
+            "player_statistic_id": 1313882274,
+            "type_id": 80,
+            "value": {
+              "total": 39
+            }
+          },
+          {
+            "id": 38722019,
+            "player_statistic_id": 1313882274,
+            "type_id": 88,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 38722015,
+            "player_statistic_id": 1313882274,
+            "type_id": 96,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 38722006,
+            "player_statistic_id": 1313882274,
+            "type_id": 101,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 38722041,
+            "player_statistic_id": 1313882274,
+            "type_id": 104,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 38722009,
+            "player_statistic_id": 1313882274,
+            "type_id": 105,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 38722013,
+            "player_statistic_id": 1313882274,
+            "type_id": 106,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 38722000,
+            "player_statistic_id": 1313882274,
+            "type_id": 107,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 38721999,
+            "player_statistic_id": 1313882274,
+            "type_id": 116,
+            "value": {
+              "total": 23
+            }
+          },
+          {
+            "id": 38722037,
+            "player_statistic_id": 1313882274,
+            "type_id": 118,
+            "value": {
+              "average": 7.4,
+              "highest": 7.75,
+              "lowest": 7.04
+            }
+          },
+          {
+            "id": 38722029,
+            "player_statistic_id": 1313882274,
+            "type_id": 119,
+            "value": {
+              "total": 180
+            }
+          },
+          {
+            "id": 38722026,
+            "player_statistic_id": 1313882274,
+            "type_id": 122,
+            "value": {
+              "total": 23
+            }
+          },
+          {
+            "id": 38722027,
+            "player_statistic_id": 1313882274,
+            "type_id": 123,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 38764514,
+            "player_statistic_id": 1313882274,
+            "type_id": 194,
+            "value": {
+              "total": 1,
+              "home": 1,
+              "away": 0
+            }
+          },
+          {
+            "id": 39075194,
+            "player_statistic_id": 1313882274,
+            "type_id": 214,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 39075169,
+            "player_statistic_id": 1313882274,
+            "type_id": 215,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 38722003,
+            "player_statistic_id": 1313882274,
+            "type_id": 321,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 38722023,
+            "player_statistic_id": 1313882274,
+            "type_id": 322,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 38262970,
+            "player_statistic_id": 1313882274,
+            "type_id": 323,
+            "value": {
+              "total": 8
+            }
+          },
+          {
+            "id": 38721998,
+            "player_statistic_id": 1313882274,
+            "type_id": 1584,
+            "value": {
+              "total": 58.97
+            }
+          }
+        ]
+      },
+      {
+        "id": 1313882275,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 22871,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 12,
+        "details": [
+          {
+            "id": 37206576,
+            "player_statistic_id": 1313882275,
+            "type_id": 323,
+            "value": {
+              "total": 6
+            }
+          }
+        ]
+      },
+      {
+        "id": 1298104156,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 23032,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 12,
+        "details": [
+          {
+            "id": 36702139,
+            "player_statistic_id": 1298104156,
+            "type_id": 323,
+            "value": {
+              "total": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": 1462086326,
+        "player_id": 186418,
+        "team_id": 18644,
+        "season_id": 24198,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 12,
+        "details": []
+      },
+      {
+        "id": 134841465,
+        "player_id": 186418,
+        "team_id": 63365,
+        "season_id": 1049,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 21612988,
+            "player_statistic_id": 134841465,
+            "type_id": 84,
+            "value": {
+              "total": 1,
+              "home": 1,
+              "away": 0
+            }
+          },
+          {
+            "id": 28366678,
+            "player_statistic_id": 134841465,
+            "type_id": 88,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 21612920,
+            "player_statistic_id": 134841465,
+            "type_id": 119,
+            "value": {
+              "total": 270
+            }
+          },
+          {
+            "id": 39674179,
+            "player_statistic_id": 134841465,
+            "type_id": 214,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 39674161,
+            "player_statistic_id": 134841465,
+            "type_id": 215,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 39674168,
+            "player_statistic_id": 134841465,
+            "type_id": 216,
+            "value": {
+              "total": 1
+            }
+          },
+          {
+            "id": 21612871,
+            "player_statistic_id": 134841465,
+            "type_id": 321,
+            "value": {
+              "total": 3
+            }
+          },
+          {
+            "id": 21612913,
+            "player_statistic_id": 134841465,
+            "type_id": 322,
+            "value": {
+              "total": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": 1367682054,
+        "player_id": 186418,
+        "team_id": 63365,
+        "season_id": 16947,
+        "has_values": false,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": []
+      },
+      {
+        "id": 1367604333,
+        "player_id": 186418,
+        "team_id": 63365,
+        "season_id": 23282,
+        "has_values": true,
+        "position_id": 24,
+        "jersey_number": 1,
+        "details": [
+          {
+            "id": 37451561,
+            "player_statistic_id": 1367604333,
+            "type_id": 57,
+            "value": {
+              "total": 7
+            }
+          },
+          {
+            "id": 37451548,
+            "player_statistic_id": 1367604333,
+            "type_id": 80,
+            "value": {
+              "total": 128
+            }
+          },
+          {
+            "id": 37451532,
+            "player_statistic_id": 1367604333,
+            "type_id": 88,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 37451523,
+            "player_statistic_id": 1367604333,
+            "type_id": 101,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 37451566,
+            "player_statistic_id": 1367604333,
+            "type_id": 104,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 37451516,
+            "player_statistic_id": 1367604333,
+            "type_id": 116,
+            "value": {
+              "total": 99
+            }
+          },
+          {
+            "id": 37451557,
+            "player_statistic_id": 1367604333,
+            "type_id": 118,
+            "value": {
+              "average": 7.11,
+              "highest": 7.55,
+              "lowest": 6.73
+            }
+          },
+          {
+            "id": 37451546,
+            "player_statistic_id": 1367604333,
+            "type_id": 119,
+            "value": {
+              "total": 360
+            }
+          },
+          {
+            "id": 37451540,
+            "player_statistic_id": 1367604333,
+            "type_id": 122,
+            "value": {
+              "total": 56
+            }
+          },
+          {
+            "id": 37451543,
+            "player_statistic_id": 1367604333,
+            "type_id": 123,
+            "value": {
+              "total": 27
+            }
+          },
+          {
+            "id": 37549215,
+            "player_statistic_id": 1367604333,
+            "type_id": 194,
+            "value": {
+              "total": 1,
+              "home": 0,
+              "away": 1
+            }
+          },
+          {
+            "id": 43600389,
+            "player_statistic_id": 1367604333,
+            "type_id": 214,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 43600388,
+            "player_statistic_id": 1367604333,
+            "type_id": 216,
+            "value": {
+              "total": 2
+            }
+          },
+          {
+            "id": 37451517,
+            "player_statistic_id": 1367604333,
+            "type_id": 321,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 37451536,
+            "player_statistic_id": 1367604333,
+            "type_id": 322,
+            "value": {
+              "total": 4
+            }
+          },
+          {
+            "id": 37451514,
+            "player_statistic_id": 1367604333,
+            "type_id": 1584,
+            "value": {
+              "total": 77.34
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "subscription": [
+    {
+      "meta": {
+        "trial_ends_at": "2020-01-20 17:42:41",
+        "ends_at": "2025-08-19 21:28:43",
+        "current_timestamp": 1755864386
+      },
+      "plans": [
+        {
+          "plan": "SportsMole custom plan 2",
+          "sport": "Football",
+          "category": "Custom"
+        }
+      ],
+      "add_ons": [
+        {
+          "add_on": "SportsMole custom plan Predictions",
+          "sport": "Football",
+          "category": "Predictions"
+        },
+        {
+          "add_on": "Widgets Free",
+          "sport": "Football",
+          "category": "Widgets"
+        }
+      ],
+      "widgets": []
+    }
+  ],
+  "rate_limit": {
+    "resets_in_seconds": 3490,
+    "remaining": 2997,
+    "requested_entity": "Player"
+  },
+  "timezone": "UTC"
+}

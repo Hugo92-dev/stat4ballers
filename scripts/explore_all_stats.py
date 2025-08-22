@@ -13,7 +13,8 @@ if sys.platform == 'win32':
 # Charger les variables d'environnement
 load_dotenv('.env.local')
 
-API_TOKEN = os.getenv('SPORTMONKS_API_TOKEN')
+# Utiliser le token fourni directement
+API_TOKEN = 'leBzDfKbRE5k9zEg3FuZE3Hh7XbukODNarOXLoVtPAiAtliDZ19wLu1Wnzi2'
 BASE_URL = 'https://api.sportmonks.com/v3/football'
 
 def explore_player_statistics():

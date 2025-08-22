@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import SearchBar from '@/components/SearchBar';
+import PlayerComparison from '@/components/PlayerComparison';
 import { leagueLogos } from '@/data/logos';
 
 const leagues = [
@@ -124,8 +125,13 @@ export default function Home() {
             </p>
             
             {/* Search Bar */}
-            <div className="mb-16">
+            <div className="mb-8">
               <SearchBar />
+            </div>
+            
+            {/* Player Comparison Section */}
+            <div className="max-w-4xl mx-auto">
+              <PlayerComparison />
             </div>
             
             {/* Stats Pills */}

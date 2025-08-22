@@ -1,9 +1,13 @@
 export interface SearchItem {
   type: 'league' | 'club' | 'player';
+  id?: number;
   name: string;
+  fullName?: string;
+  displayName?: string;
   path: string;
   league?: string;
   club?: string;
+  position?: string;
   searchTerms: string[];
 }
 
@@ -56,28 +60,10 @@ export const searchDatabase: SearchItem[] = [
   { type: 'club', name: 'Borussia Dortmund', path: '/bundesliga/borussia-dortmund', league: 'Bundesliga', searchTerms: ['dortmund', 'borussia dortmund', 'bvb'] },
   { type: 'club', name: 'RB Leipzig', path: '/bundesliga/leipzig', league: 'Bundesliga', searchTerms: ['leipzig', 'rb leipzig', 'red bull leipzig'] },
   { type: 'club', name: 'Bayer Leverkusen', path: '/bundesliga/bayer-leverkusen', league: 'Bundesliga', searchTerms: ['leverkusen', 'bayer leverkusen', 'bayer'] },
-  
-  // Sample Players - PSG
-  { type: 'player', name: 'Kylian Mbappé', path: '/ligue1/psg/mbappe', league: 'Ligue 1', club: 'PSG', searchTerms: ['mbappe', 'kylian mbappe', 'mbappé'] },
-  { type: 'player', name: 'Marco Verratti', path: '/ligue1/psg/verratti', league: 'Ligue 1', club: 'PSG', searchTerms: ['verratti', 'marco verratti'] },
-  { type: 'player', name: 'Ousmane Dembélé', path: '/ligue1/psg/dembele', league: 'Ligue 1', club: 'PSG', searchTerms: ['dembele', 'ousmane dembele', 'dembélé'] },
-  { type: 'player', name: 'Gianluigi Donnarumma', path: '/ligue1/psg/donnarumma', league: 'Ligue 1', club: 'PSG', searchTerms: ['donnarumma', 'gianluigi donnarumma'] },
-  { type: 'player', name: 'Marquinhos', path: '/ligue1/psg/marquinhos', league: 'Ligue 1', club: 'PSG', searchTerms: ['marquinhos'] },
-  
-  // Sample Players - Real Madrid
-  { type: 'player', name: 'Jude Bellingham', path: '/liga/real-madrid/bellingham', league: 'La Liga', club: 'Real Madrid', searchTerms: ['bellingham', 'jude bellingham'] },
-  { type: 'player', name: 'Vinicius Junior', path: '/liga/real-madrid/vinicius', league: 'La Liga', club: 'Real Madrid', searchTerms: ['vinicius', 'vinicius jr', 'vinicius junior'] },
-  { type: 'player', name: 'Luka Modric', path: '/liga/real-madrid/modric', league: 'La Liga', club: 'Real Madrid', searchTerms: ['modric', 'luka modric'] },
-  
-  // Sample Players - Manchester City
-  { type: 'player', name: 'Erling Haaland', path: '/premier-league/manchester-city/haaland', league: 'Premier League', club: 'Manchester City', searchTerms: ['haaland', 'erling haaland'] },
-  { type: 'player', name: 'Kevin De Bruyne', path: '/premier-league/manchester-city/de-bruyne', league: 'Premier League', club: 'Manchester City', searchTerms: ['de bruyne', 'kevin de bruyne', 'kdb'] },
-  
-  // Sample Players - Bayern Munich
-  { type: 'player', name: 'Harry Kane', path: '/bundesliga/bayern/kane', league: 'Bundesliga', club: 'Bayern Munich', searchTerms: ['kane', 'harry kane'] },
-  { type: 'player', name: 'Jamal Musiala', path: '/bundesliga/bayern/musiala', league: 'Bundesliga', club: 'Bayern Munich', searchTerms: ['musiala', 'jamal musiala'] },
-  
-  // Sample Players - Inter Milan
-  { type: 'player', name: 'Lautaro Martinez', path: '/serie-a/inter/lautaro', league: 'Serie A', club: 'Inter Milan', searchTerms: ['lautaro', 'lautaro martinez', 'martinez'] },
-  { type: 'player', name: 'Nicolo Barella', path: '/serie-a/inter/barella', league: 'Serie A', club: 'Inter Milan', searchTerms: ['barella', 'nicolo barella'] },
 ];
+
+// Import player data dynamically generated from team rosters
+import { playerSearchData } from './playerSearchData';
+
+// Combine all search data
+export const fullSearchDatabase = [...searchDatabase, ...playerSearchData];

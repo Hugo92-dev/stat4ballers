@@ -1,4 +1,7 @@
 // Service pour l'API SportMonks
+import { LIGUE1_PLAYER_IDS } from './allPlayerIds';
+import { LIGUE1_PLAYER_POSITIONS } from './playerPositions';
+
 const API_TOKEN = 'leBzDfKbRE5k9zEg3FuZE3Hh7XbukODNarOXLoVtPAiAtliDZ19wLu1Wnzi2';
 const BASE_URL = 'https://api.sportmonks.com/v3/football';
 
@@ -103,23 +106,20 @@ export async function getPlayerStatistics(
   playerId: number,
   league: keyof typeof CURRENT_SEASONS
 ): Promise<PlayerStatsResponse> {
-  // Utiliser des données mock pour tous les joueurs de l'OM
-  const omPlayerIds = getOMPlayerIds();
-  const isOMPlayer = Object.values(omPlayerIds).includes(playerId);
+  // TODO: Phase 2 - Intégrer l'API réelle SportMonks
+  // Pour l'instant, on utilise des données mock pour tous les joueurs
   
-  if (isOMPlayer) {
-    // Générer des données mock réalistes pour les joueurs de l'OM
-    const mockStats = generateMockStats(playerId);
-    return mockStats;
+  // Vérifier si on devrait utiliser l'API (à implémenter plus tard)
+  const USE_REAL_API = false; // Sera mis à true quand l'API sera prête
+  
+  if (USE_REAL_API) {
+    // Future intégration API
+    // return await fetchRealPlayerStats(playerId, league);
   }
   
-  // Pour les autres joueurs, retourner des stats vides
-  return {
-    current: null,
-    previous: [],
-    cumulative: null,
-    error: 'Statistiques non disponibles'
-  };
+  // Pour l'instant: données mock pour tous les joueurs
+  const mockStats = generateMockStats(playerId);
+  return mockStats;
 }
 
 /**
@@ -386,15 +386,42 @@ async function fetchSeasonStats(
  * Génère des statistiques mock réalistes pour un joueur
  */
 function generateMockStats(playerId: number): PlayerStatsResponse {
-  // Déterminer la position du joueur en fonction de son ID
-  const goalkeepers = [186418, 29186, 186456, 37593233];
-  const defenders = [28575687, 13171199, 32390, 586846, 37369302, 130063, 335521, 512560];
-  const midfielders = [608285, 96691, 95696, 1744, 95694, 37541144, 21803033, 37737405];
-  const forwards = [95776, 433458, 20333643, 29328428, 34455209, 537332, 37657133, 31739, 20315925];
+  // Déterminer la position du joueur
+  // D'abord vérifier dans les positions connues (Ligue 1 pour l'instant)
+  const knownGoalkeepers = LIGUE1_PLAYER_POSITIONS.goalkeepers;
+  const knownDefenders = LIGUE1_PLAYER_POSITIONS.defenders;
+  const knownMidfielders = LIGUE1_PLAYER_POSITIONS.midfielders;
+  const knownForwards = LIGUE1_PLAYER_POSITIONS.forwards;
+  
+  let position: 'goalkeeper' | 'defender' | 'midfielder' | 'forward';
+  
+  // Vérifier si on connaît la position
+  if (knownGoalkeepers.includes(playerId)) {
+    position = 'goalkeeper';
+  } else if (knownDefenders.includes(playerId)) {
+    position = 'defender';
+  } else if (knownMidfielders.includes(playerId)) {
+    position = 'midfielder';
+  } else if (knownForwards.includes(playerId)) {
+    position = 'forward';
+  } else {
+    // Pour les joueurs dont on ne connaît pas la position (autres ligues)
+    // Utiliser un hash de l'ID pour déterminer une position cohérente
+    const hash = playerId % 100;
+    if (hash < 10) {
+      position = 'goalkeeper'; // 10% des joueurs
+    } else if (hash < 45) {
+      position = 'defender'; // 35% des joueurs
+    } else if (hash < 75) {
+      position = 'midfielder'; // 30% des joueurs
+    } else {
+      position = 'forward'; // 25% des joueurs
+    }
+  }
   
   let baseStats: Partial<PlayerStatistics>;
   
-  if (goalkeepers.includes(playerId)) {
+  if (position === 'goalkeeper') {
     // Stats pour gardiens
     baseStats = {
       minutes: 2700 + Math.floor(Math.random() * 900),
@@ -415,7 +442,7 @@ function generateMockStats(playerId: number): PlayerStatsResponse {
       passes_total: 800 + Math.floor(Math.random() * 250),
       passes_accuracy: 75 + Math.floor(Math.random() * 15)
     };
-  } else if (defenders.includes(playerId)) {
+  } else if (position === 'defender') {
     // Stats pour défenseurs
     baseStats = {
       minutes: 2200 + Math.floor(Math.random() * 1000),
@@ -452,7 +479,7 @@ function generateMockStats(playerId: number): PlayerStatsResponse {
       penalties_committed: Math.floor(Math.random() * 2),
       mistakes_leading_to_goals: Math.floor(Math.random() * 2)
     };
-  } else if (midfielders.includes(playerId)) {
+  } else if (position === 'midfielder') {
     // Stats pour milieux
     baseStats = {
       minutes: 2000 + Math.floor(Math.random() * 1200),
@@ -495,7 +522,7 @@ function generateMockStats(playerId: number): PlayerStatsResponse {
       penalties_committed: Math.floor(Math.random() * 2),
       mistakes_leading_to_goals: Math.floor(Math.random() * 2)
     };
-  } else {
+  } else { // position === 'forward'
     // Stats pour attaquants
     baseStats = {
       minutes: 1800 + Math.floor(Math.random() * 1200),

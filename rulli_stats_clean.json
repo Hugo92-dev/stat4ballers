@@ -1,0 +1,20 @@
+{
+  "2025/2026": {
+    "minutes": 0,
+    "appearences": 0,
+    "lineups": 0,
+    "captain": 0,
+    "saves": 0,
+    "inside_box_saves": 0,
+    "clean_sheets": 0,
+    "goals_conceded": 0,
+    "penalties_saved": 0,
+    "penalties_committed": 0,
+    "mistakes_leading_to_goals": 0,
+    "rating": 0,
+    "yellow_cards": 0,
+    "red_cards": 0,
+    "passes": 0,
+    "passes_accuracy": 0
+  }
+}

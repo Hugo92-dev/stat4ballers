@@ -1,4 +1,4 @@
-import PlayerPage from '@/components/PlayerPage';
+import PlayerPageWithStats from '@/components/PlayerPageWithStats';
 import { bundesligaTeams } from '@/data/bundesligaTeams';
 import { notFound } from 'next/navigation';
 import { slugifyPlayer } from '@/utils/slugify';
@@ -29,7 +29,7 @@ export default function JoueurPage({
   }
 
   return (
-    <PlayerPage
+    <PlayerPageWithStats
       player={player}
       clubName={club.name}
       clubSlug={params.club}

@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { searchDatabase } from '@/data/searchDatabase';
+import { fullSearchDatabase as searchDatabase } from '@/data/searchDatabase';
 import { getClubLogoPath } from '@/data/clubLogosMapping';
 import { leagueLogos } from '@/data/logos';
 import Image from 'next/image';
