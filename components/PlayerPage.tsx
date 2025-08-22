@@ -19,6 +19,21 @@ export default function PlayerPage({
   leagueSlug,
   leagueColor 
 }: PlayerPageProps) {
+  // Calculer l'âge à partir de la date de naissance
+  const calculateAge = (birthDate: string | undefined): number => {
+    if (!birthDate) return 0;
+    const today = new Date();
+    const birth = new Date(birthDate);
+    let age = today.getFullYear() - birth.getFullYear();
+    const monthDiff = today.getMonth() - birth.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+      age--;
+    }
+    return age;
+  };
+
+  const age = calculateAge(player.dateOfBirth);
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -34,7 +49,7 @@ export default function PlayerPage({
           
           <div className="flex items-center gap-4">
             <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-              <span className="text-3xl font-bold">{player.number || '?'}</span>
+              <span className="text-3xl font-bold">{player.jersey || player.number || '?'}</span>
             </div>
             <div>
               <h1 className="text-3xl font-bold">
@@ -64,7 +79,7 @@ export default function PlayerPage({
             
             <div>
               <p className="text-gray-600 text-sm">Âge</p>
-              <p className="text-lg font-semibold">{player.age} ans</p>
+              <p className="text-lg font-semibold">{age > 0 ? `${age} ans` : 'N/A'}</p>
             </div>
             
             {player.height && (
