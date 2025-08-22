@@ -59,20 +59,9 @@ export default function PlayerPageWithStats({
         const playerDisplayName = player.displayName || player.fullName || player.name;
         const playerSlug = slugifyPlayer(playerDisplayName);
         
-        // Obtenir l'ID SportMonks du joueur (pour l'instant seulement pour l'OM)
-        let playerId: number | undefined;
-        
-        if (clubSlug === 'marseille') {
-          const omPlayerIds = getOMPlayerIds();
-          playerId = omPlayerIds[playerSlug];
-        }
-        
-        if (!playerId) {
-          // Si on n'a pas l'ID du joueur, on ne peut pas récupérer les stats
-          setError('ID du joueur non trouvé');
-          setLoading(false);
-          return;
-        }
+        // Utiliser l'ID du joueur directement depuis les données
+        // Tous les joueurs ont maintenant des stats mock
+        const playerId = player.id;
         
         // Déterminer la ligue
         const leagueKey = leagueSlug.replace('-', '') as 'ligue1' | 'premierLeague' | 'liga' | 'serieA' | 'bundesliga';
@@ -122,12 +111,8 @@ export default function PlayerPageWithStats({
       }
     }
     
-    // Charger les stats seulement pour l'OM pour l'instant
-    if (clubSlug === 'marseille') {
-      loadStats();
-    } else {
-      setLoading(false);
-    }
+    // Charger les stats pour tous les joueurs
+    loadStats();
   }, [player, clubSlug, leagueSlug]);
 
   // Obtenir les statistiques de la saison sélectionnée
