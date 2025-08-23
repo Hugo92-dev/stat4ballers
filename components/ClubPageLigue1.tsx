@@ -165,11 +165,31 @@ export default function ClubPageLigue1({
                       >
                         <div className="flex items-start justify-between mb-2">
                           <div className="flex items-center gap-3">
-                            {player.jersey && (
-                              <div className="w-10 h-10 bg-gradient-to-br from-gray-600 to-gray-800 rounded-full flex items-center justify-center text-white font-bold">
-                                {player.jersey}
+                            <div className="relative w-12 h-12">
+                              {player.image ? (
+                                <img
+                                  src={player.image}
+                                  alt={playerDisplayName}
+                                  className="w-12 h-12 rounded-full object-cover border-2 border-gray-600"
+                                  onError={(e) => {
+                                    e.currentTarget.style.display = 'none';
+                                    const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                                    if (fallback) fallback.style.display = 'flex';
+                                  }}
+                                />
+                              ) : null}
+                              <div 
+                                className={`w-12 h-12 bg-gradient-to-br from-gray-600 to-gray-800 rounded-full flex items-center justify-center text-white font-bold ${player.image ? 'hidden' : ''}`}
+                                style={player.image ? { display: 'none' } : {}}
+                              >
+                                {player.jersey || player.name.charAt(0)}
                               </div>
-                            )}
+                              {player.jersey && (
+                                <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-black rounded-full flex items-center justify-center text-white text-xs font-bold border border-gray-600">
+                                  {player.jersey}
+                                </div>
+                              )}
+                            </div>
                             <div>
                               <h3 className="text-white font-semibold text-lg">{playerDisplayName}</h3>
                               <p className="text-gray-400 text-sm">{player.position}</p>

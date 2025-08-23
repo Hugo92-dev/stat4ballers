@@ -22,6 +22,7 @@ interface Player {
   clubSlug: string;
   leagueSlug: string;
   playerSlug: string;
+  image?: string;
 }
 
 interface PlayerWithStats extends Player {
@@ -67,6 +68,26 @@ export default function ComparePage() {
           const clubSlug = pathParts[2];
           const playerSlug = pathParts[3];
 
+          // Récupérer l'image du joueur depuis les données des équipes
+          let playerImage: string | undefined;
+          try {
+            // Importer dynamiquement les données de l'équipe
+            const leagueDataFile = leagueSlug.replace('-', '') + 'Teams';
+            const teamData = await import(`@/data/${leagueDataFile === 'ligaTeams' ? 'ligaTeams' : leagueDataFile === 'serieaTeams' ? 'serieATeams' : leagueDataFile}`);
+            const teams = teamData[leagueDataFile] || teamData.default;
+            
+            // Trouver l'équipe et le joueur
+            const team = teams.find((t: any) => t.slug === clubSlug);
+            if (team) {
+              const playerData = team.players.find((p: any) => p.id === playerId);
+              if (playerData) {
+                playerImage = playerData.image;
+              }
+            }
+          } catch (err) {
+            console.warn(`Impossible de charger l'image pour le joueur ${playerId}`);
+          }
+
           const player: Player = {
             id: playerId,
             name: playerResult.name,
@@ -77,7 +98,8 @@ export default function ComparePage() {
             league: playerResult.league || 'Unknown League',
             clubSlug,
             leagueSlug,
-            playerSlug
+            playerSlug,
+            image: playerImage
           };
 
           // Charger les statistiques du joueur
@@ -189,8 +211,28 @@ export default function ComparePage() {
           <div className="flex flex-wrap gap-4">
             {players.map((player, index) => (
               <div key={player.id} className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3">
-                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-sm font-bold">
-                  {index + 1}
+                <div className="relative">
+                  {player.image ? (
+                    <img
+                      src={player.image}
+                      alt={player.displayName || player.fullName || player.name}
+                      className="w-12 h-12 rounded-full object-cover border-2 border-white/30"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                        const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                        if (fallback) fallback.style.display = 'flex';
+                      }}
+                    />
+                  ) : null}
+                  <div 
+                    className={`w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-lg font-bold ${player.image ? 'hidden' : ''}`}
+                    style={player.image ? { display: 'none' } : {}}
+                  >
+                    {index + 1}
+                  </div>
+                  <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-white rounded-full flex items-center justify-center text-xs font-bold text-gray-800">
+                    {index + 1}
+                  </div>
                 </div>
                 <div>
                   <Link 

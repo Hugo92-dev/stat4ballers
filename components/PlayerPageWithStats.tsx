@@ -147,8 +147,30 @@ export default function PlayerPageWithStats({
           </Link>
           
           <div className="flex items-center gap-4">
-            <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-              <span className="text-3xl font-bold">{player.jersey || player.number || '?'}</span>
+            <div className="relative">
+              {player.image ? (
+                <img
+                  src={player.image}
+                  alt={player.displayName || player.fullName || player.name}
+                  className="w-24 h-24 rounded-full object-cover border-4 border-white/30"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (fallback) fallback.style.display = 'flex';
+                  }}
+                />
+              ) : null}
+              <div 
+                className={`w-24 h-24 bg-white/20 rounded-full flex items-center justify-center ${player.image ? 'hidden' : ''}`}
+                style={player.image ? { display: 'none' } : {}}
+              >
+                <span className="text-3xl font-bold">{player.jersey || player.number || '?'}</span>
+              </div>
+              {(player.jersey || player.number) && (
+                <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg">
+                  <span className="text-lg font-bold text-gray-800">{player.jersey || player.number}</span>
+                </div>
+              )}
             </div>
             <div>
               <h1 className="text-3xl font-bold">

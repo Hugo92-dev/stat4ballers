@@ -15,6 +15,7 @@ interface Player {
   clubSlug: string;
   leagueSlug: string;
   playerSlug: string;
+  image?: string;
 }
 
 interface PlayerWithStats extends Player {
@@ -104,12 +105,24 @@ export default function PlayerComparisonList({ players }: PlayerComparisonListPr
                 <th className="text-left py-3 px-4 font-medium text-gray-700 border-b">Statistique</th>
                 {players.map((player) => (
                   <th key={player.id} className="text-center py-3 px-4 font-medium text-gray-900 border-b">
-                    <Link 
-                      href={`/${player.leagueSlug}/${player.clubSlug}/${player.playerSlug}`}
-                      className="hover:text-blue-600 hover:underline"
-                    >
-                      {player.displayName || player.fullName || player.name}
-                    </Link>
+                    <div className="flex flex-col items-center gap-2">
+                      {player.image ? (
+                        <img
+                          src={player.image}
+                          alt={player.displayName || player.fullName || player.name}
+                          className="w-10 h-10 rounded-full object-cover border-2 border-gray-300"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none';
+                          }}
+                        />
+                      ) : null}
+                      <Link 
+                        href={`/${player.leagueSlug}/${player.clubSlug}/${player.playerSlug}`}
+                        className="hover:text-blue-600 hover:underline text-sm"
+                      >
+                        {player.displayName || player.fullName || player.name}
+                      </Link>
+                    </div>
                   </th>
                 ))}
               </tr>
@@ -158,12 +171,24 @@ export default function PlayerComparisonList({ players }: PlayerComparisonListPr
                 <th className="text-left py-3 px-4 font-medium text-gray-700 border-b">Statistique</th>
                 {players.map((player) => (
                   <th key={player.id} className="text-center py-3 px-4 font-medium text-gray-900 border-b">
-                    <Link 
-                      href={`/${player.leagueSlug}/${player.clubSlug}/${player.playerSlug}`}
-                      className="hover:text-blue-600 hover:underline"
-                    >
-                      {player.displayName || player.fullName || player.name}
-                    </Link>
+                    <div className="flex flex-col items-center gap-2">
+                      {player.image ? (
+                        <img
+                          src={player.image}
+                          alt={player.displayName || player.fullName || player.name}
+                          className="w-10 h-10 rounded-full object-cover border-2 border-gray-300"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none';
+                          }}
+                        />
+                      ) : null}
+                      <Link 
+                        href={`/${player.leagueSlug}/${player.clubSlug}/${player.playerSlug}`}
+                        className="hover:text-blue-600 hover:underline text-sm"
+                      >
+                        {player.displayName || player.fullName || player.name}
+                      </Link>
+                    </div>
                   </th>
                 ))}
               </tr>
@@ -204,12 +229,24 @@ export default function PlayerComparisonList({ players }: PlayerComparisonListPr
                 <th className="text-left py-3 px-4 font-medium text-gray-700 border-b">Statistique</th>
                 {players.map((player) => (
                   <th key={player.id} className="text-center py-3 px-4 font-medium text-gray-900 border-b">
-                    <Link 
-                      href={`/${player.leagueSlug}/${player.clubSlug}/${player.playerSlug}`}
-                      className="hover:text-blue-600 hover:underline"
-                    >
-                      {player.displayName || player.fullName || player.name}
-                    </Link>
+                    <div className="flex flex-col items-center gap-2">
+                      {player.image ? (
+                        <img
+                          src={player.image}
+                          alt={player.displayName || player.fullName || player.name}
+                          className="w-10 h-10 rounded-full object-cover border-2 border-gray-300"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none';
+                          }}
+                        />
+                      ) : null}
+                      <Link 
+                        href={`/${player.leagueSlug}/${player.clubSlug}/${player.playerSlug}`}
+                        className="hover:text-blue-600 hover:underline text-sm"
+                      >
+                        {player.displayName || player.fullName || player.name}
+                      </Link>
+                    </div>
                   </th>
                 ))}
               </tr>
@@ -240,12 +277,24 @@ export default function PlayerComparisonList({ players }: PlayerComparisonListPr
                 <th className="text-left py-3 px-4 font-medium text-gray-700 border-b">Statistique</th>
                 {players.map((player) => (
                   <th key={player.id} className="text-center py-3 px-4 font-medium text-gray-900 border-b">
-                    <Link 
-                      href={`/${player.leagueSlug}/${player.clubSlug}/${player.playerSlug}`}
-                      className="hover:text-blue-600 hover:underline"
-                    >
-                      {player.displayName || player.fullName || player.name}
-                    </Link>
+                    <div className="flex flex-col items-center gap-2">
+                      {player.image ? (
+                        <img
+                          src={player.image}
+                          alt={player.displayName || player.fullName || player.name}
+                          className="w-10 h-10 rounded-full object-cover border-2 border-gray-300"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none';
+                          }}
+                        />
+                      ) : null}
+                      <Link 
+                        href={`/${player.leagueSlug}/${player.clubSlug}/${player.playerSlug}`}
+                        className="hover:text-blue-600 hover:underline text-sm"
+                      >
+                        {player.displayName || player.fullName || player.name}
+                      </Link>
+                    </div>
                   </th>
                 ))}
               </tr>
@@ -283,12 +332,24 @@ export default function PlayerComparisonList({ players }: PlayerComparisonListPr
                 <th className="text-left py-3 px-4 font-medium text-gray-700 border-b">Statistique</th>
                 {players.map((player) => (
                   <th key={player.id} className="text-center py-3 px-4 font-medium text-gray-900 border-b">
-                    <Link 
-                      href={`/${player.leagueSlug}/${player.clubSlug}/${player.playerSlug}`}
-                      className="hover:text-blue-600 hover:underline"
-                    >
-                      {player.displayName || player.fullName || player.name}
-                    </Link>
+                    <div className="flex flex-col items-center gap-2">
+                      {player.image ? (
+                        <img
+                          src={player.image}
+                          alt={player.displayName || player.fullName || player.name}
+                          className="w-10 h-10 rounded-full object-cover border-2 border-gray-300"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none';
+                          }}
+                        />
+                      ) : null}
+                      <Link 
+                        href={`/${player.leagueSlug}/${player.clubSlug}/${player.playerSlug}`}
+                        className="hover:text-blue-600 hover:underline text-sm"
+                      >
+                        {player.displayName || player.fullName || player.name}
+                      </Link>
+                    </div>
                   </th>
                 ))}
               </tr>
