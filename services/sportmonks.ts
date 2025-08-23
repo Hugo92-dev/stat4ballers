@@ -1,6 +1,7 @@
 // Service pour l'API SportMonks
 import { LIGUE1_PLAYER_IDS } from './allPlayerIds';
 import { LIGUE1_PLAYER_POSITIONS } from './playerPositions';
+import { omPlayersRealStats } from '@/data/omPlayersRealStatsFixed';
 
 const API_TOKEN = 'leBzDfKbRE5k9zEg3FuZE3Hh7XbukODNarOXLoVtPAiAtliDZ19wLu1Wnzi2';
 const BASE_URL = 'https://api.sportmonks.com/v3/football';
@@ -106,18 +107,184 @@ export async function getPlayerStatistics(
   playerId: number,
   league: keyof typeof CURRENT_SEASONS
 ): Promise<PlayerStatsResponse> {
-  // TODO: Phase 2 - Intégrer l'API réelle SportMonks
-  // Pour l'instant, on utilise des données mock pour tous les joueurs
-  
-  // Vérifier si on devrait utiliser l'API (à implémenter plus tard)
-  const USE_REAL_API = false; // Sera mis à true quand l'API sera prête
-  
-  if (USE_REAL_API) {
-    // Future intégration API
-    // return await fetchRealPlayerStats(playerId, league);
+  // Vérifier si c'est un joueur de l'OM avec des vraies stats
+  if (omPlayersRealStats[playerId]) {
+    const playerRealStats = omPlayersRealStats[playerId];
+    
+    // Convertir les stats réelles au format attendu
+    const current = playerRealStats.stats['2025/2026'];
+    const prev1 = playerRealStats.stats['2024/2025'];
+    const prev2 = playerRealStats.stats['2023/2024'];
+    
+    // Créer les objets de stats avec le bon format
+    const currentStats: PlayerStatistics | null = current ? {
+      season_name: 'Saison 2025/2026',
+      minutes: current.minutes,
+      appearences: current.appearences,
+      lineups: current.lineups,
+      captain: current.captain,
+      rating: current.rating,
+      touches: current.touches,
+      
+      goals: current.goals,
+      assists: current.assists,
+      expected_goals: current.xg,
+      expected_assists: current.xa,
+      shots: current.shots,
+      shots_on_target: current.shots_on_target,
+      penalties: current.penalties,
+      penalties_scored: current.penalties_scored,
+      penalties_missed: current.penalties_missed,
+      hit_woodwork: current.hit_woodwork,
+      offsides: current.offsides,
+      
+      passes: current.passes_completed,
+      passes_total: current.passes,
+      passes_accuracy: current.passes_accuracy,
+      key_passes: current.key_passes,
+      crosses: current.crosses_accurate,
+      crosses_total: current.crosses,
+      dribbles: current.dribbles_successful,
+      dribbles_succeeded: current.dribbles_successful,
+      dribbles_failed: current.dribbles - current.dribbles_successful,
+      
+      tackles: current.tackles,
+      interceptions: current.interceptions,
+      blocks: current.blocks,
+      clearances: current.clearances,
+      duels: current.ground_duels + current.aerial_duels,
+      duels_won: current.ground_duels_won + current.aerial_duels_won,
+      aerial_duels: current.aerial_duels,
+      aerial_duels_won: current.aerial_duels_won,
+      fouls: current.fouls,
+      fouls_drawn: current.fouls_drawn,
+      yellow_cards: current.yellow_cards,
+      red_cards: current.red_cards,
+      
+      saves: current.saves,
+      clean_sheets: current.clean_sheets,
+      goals_conceded: current.goals_conceded,
+      penalties_saved: current.punches,
+    } : null;
+    
+    const previousStats: (PlayerStatistics | null)[] = [];
+    
+    if (prev1) {
+      previousStats.push({
+        season_name: 'Saison 2024/2025',
+        minutes: prev1.minutes,
+        appearences: prev1.appearences,
+        lineups: prev1.lineups,
+        captain: prev1.captain,
+        rating: prev1.rating,
+        touches: prev1.touches,
+        
+        goals: prev1.goals,
+        assists: prev1.assists,
+        expected_goals: prev1.xg,
+        expected_assists: prev1.xa,
+        shots: prev1.shots,
+        shots_on_target: prev1.shots_on_target,
+        penalties: prev1.penalties,
+        penalties_scored: prev1.penalties_scored,
+        penalties_missed: prev1.penalties_missed,
+        hit_woodwork: prev1.hit_woodwork,
+        offsides: prev1.offsides,
+        
+        passes: prev1.passes_completed,
+        passes_total: prev1.passes,
+        passes_accuracy: prev1.passes_accuracy,
+        key_passes: prev1.key_passes,
+        crosses: prev1.crosses_accurate,
+        crosses_total: prev1.crosses,
+        dribbles: prev1.dribbles_successful,
+        dribbles_succeeded: prev1.dribbles_successful,
+        dribbles_failed: prev1.dribbles - prev1.dribbles_successful,
+        
+        tackles: prev1.tackles,
+        interceptions: prev1.interceptions,
+        blocks: prev1.blocks,
+        clearances: prev1.clearances,
+        duels: prev1.ground_duels + prev1.aerial_duels,
+        duels_won: prev1.ground_duels_won + prev1.aerial_duels_won,
+        aerial_duels: prev1.aerial_duels,
+        aerial_duels_won: prev1.aerial_duels_won,
+        fouls: prev1.fouls,
+        fouls_drawn: prev1.fouls_drawn,
+        yellow_cards: prev1.yellow_cards,
+        red_cards: prev1.red_cards,
+        
+        saves: prev1.saves,
+        clean_sheets: prev1.clean_sheets,
+        goals_conceded: prev1.goals_conceded,
+        penalties_saved: prev1.punches,
+      });
+    }
+    
+    if (prev2) {
+      previousStats.push({
+        season_name: 'Saison 2023/2024',
+        minutes: prev2.minutes,
+        appearences: prev2.appearences,
+        lineups: prev2.lineups,
+        captain: prev2.captain,
+        rating: prev2.rating,
+        touches: prev2.touches,
+        
+        goals: prev2.goals,
+        assists: prev2.assists,
+        expected_goals: prev2.xg,
+        expected_assists: prev2.xa,
+        shots: prev2.shots,
+        shots_on_target: prev2.shots_on_target,
+        penalties: prev2.penalties,
+        penalties_scored: prev2.penalties_scored,
+        penalties_missed: prev2.penalties_missed,
+        hit_woodwork: prev2.hit_woodwork,
+        offsides: prev2.offsides,
+        
+        passes: prev2.passes_completed,
+        passes_total: prev2.passes,
+        passes_accuracy: prev2.passes_accuracy,
+        key_passes: prev2.key_passes,
+        crosses: prev2.crosses_accurate,
+        crosses_total: prev2.crosses,
+        dribbles: prev2.dribbles_successful,
+        dribbles_succeeded: prev2.dribbles_successful,
+        dribbles_failed: prev2.dribbles - prev2.dribbles_successful,
+        
+        tackles: prev2.tackles,
+        interceptions: prev2.interceptions,
+        blocks: prev2.blocks,
+        clearances: prev2.clearances,
+        duels: prev2.ground_duels + prev2.aerial_duels,
+        duels_won: prev2.ground_duels_won + prev2.aerial_duels_won,
+        aerial_duels: prev2.aerial_duels,
+        aerial_duels_won: prev2.aerial_duels_won,
+        fouls: prev2.fouls,
+        fouls_drawn: prev2.fouls_drawn,
+        yellow_cards: prev2.yellow_cards,
+        red_cards: prev2.red_cards,
+        
+        saves: prev2.saves,
+        clean_sheets: prev2.clean_sheets,
+        goals_conceded: prev2.goals_conceded,
+        penalties_saved: prev2.punches,
+      });
+    }
+    
+    // Calculer les stats cumulées
+    const allStats = [currentStats, ...previousStats].filter(s => s !== null) as PlayerStatistics[];
+    const cumulative = allStats.length > 0 ? calculateCumulativeStats(allStats) : null;
+    
+    return {
+      current: currentStats,
+      previous: previousStats,
+      cumulative
+    };
   }
   
-  // Pour l'instant: données mock pour tous les joueurs
+  // Pour les autres joueurs, utiliser les données mock
   const mockStats = generateMockStats(playerId);
   return mockStats;
 }
