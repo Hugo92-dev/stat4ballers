@@ -28,12 +28,21 @@
       "Bash(done)",
       "Bash(taskkill:*)",
       "WebFetch(domain:localhost)",
-      "Bash(npx tsx:*)"
+      "Bash(npx tsx:*)",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(timeout 120 python fetch_om_stats_correct.py)",
+      "Bash(timeout 180 python fetch_om_complete_stats_v2.py)",
+      "Bash(/dev/null)",
+      "Bash(timeout 30 python scripts/verify_om_players_stats.py)",
+      "Bash(timeout 30 python:*)",
+      "Bash(timeout:*)",
+      "Bash(sed:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",
     "additionalDirectories": [
-      "C:\\c\\Users\\hugo\\stat4ballers"
+      "C:\\c\\Users\\hugo\\stat4ballers",
+      "C:\\Users\\hugo\\data"
     ]
   }
 }

@@ -31,20 +31,22 @@ export default function SeasonSelector({
   }
   
   // Saison actuelle
-  seasons.push({
-    id: 'current',
-    name: '2025/2026',
-    hasData: current !== null && (current.minutes > 0 || current.appearences > 0)
-  });
+  if (current !== null) {
+    seasons.push({
+      id: 'current',
+      name: '2025/2026',
+      hasData: true  // On affiche même si 0 match (c'est une info valide)
+    });
+  }
   
   // Saisons précédentes
   const previousSeasonNames = ['2024/2025', '2023/2024'];
   previous.forEach((season, index) => {
-    if (season) {
+    if (season !== null) {
       seasons.push({
         id: `previous-${index}`,
         name: season.season_name || previousSeasonNames[index] || `Saison ${index + 1}`,
-        hasData: season.minutes > 0 || season.appearences > 0
+        hasData: true  // Toujours afficher les saisons précédentes même avec 0 match
       });
     }
   });
@@ -72,7 +74,7 @@ export default function SeasonSelector({
             disabled={!season.hasData}
           >
             {season.name}
-            {!season.hasData && !season.isCumulative && ' (N/A)'}
+            {!season.hasData && !season.isCumulative && ' (Pas de données)'}
           </button>
         ))}
       </div>

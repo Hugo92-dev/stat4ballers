@@ -8,14 +8,19 @@ interface StatsCardsProps {
 }
 
 // Composant pour afficher une statistique individuelle
-function StatItem({ label, value, suffix = '' }: { label: string; value: number | string | undefined; suffix?: string }) {
-  if (value === undefined || value === null) return null;
+function StatItem({ label, value, suffix = '' }: { label: string; value: number | string | undefined | null; suffix?: string }) {
+  // Afficher "N/A" pour les valeurs null ou undefined
+  const displayValue = value === undefined || value === null 
+    ? 'N/A' 
+    : typeof value === 'number' 
+      ? value.toFixed(value % 1 === 0 ? 0 : 1) 
+      : value;
   
   return (
     <div className="flex justify-between items-center py-2 border-b border-gray-100 last:border-0">
       <span className="text-gray-600 text-sm">{label}</span>
-      <span className="font-semibold text-gray-900">
-        {typeof value === 'number' ? value.toFixed(value % 1 === 0 ? 0 : 1) : value}{suffix}
+      <span className={`font-semibold ${value === null || value === undefined ? 'text-gray-400' : 'text-gray-900'}`}>
+        {displayValue}{value !== null && value !== undefined ? suffix : ''}
       </span>
     </div>
   );
@@ -24,9 +29,9 @@ function StatItem({ label, value, suffix = '' }: { label: string; value: number 
 // Carte Générale pour joueurs de champ
 function GeneralCard({ stats }: { stats: PlayerStatistics }) {
   // Calculer la précision des tirs
-  const shotsAccuracy = stats.shots && stats.shots > 0 
+  const shotsAccuracy = stats.shots && stats.shots > 0 && stats.shots_on_target !== null && stats.shots_on_target !== undefined
     ? ((stats.shots_on_target || 0) / stats.shots * 100) 
-    : 0;
+    : null;
     
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
@@ -66,9 +71,9 @@ function GeneralCardGoalkeeper({ stats }: { stats: PlayerStatistics }) {
 
 // Carte Offensive
 function OffensiveCard({ stats }: { stats: PlayerStatistics }) {
-  const penaltyAccuracy = stats.penalties && stats.penalties > 0 
+  const penaltyAccuracy = stats.penalties && stats.penalties > 0 && stats.penalties_scored !== null && stats.penalties_scored !== undefined
     ? ((stats.penalties_scored || 0) / stats.penalties * 100) 
-    : 0;
+    : null;
     
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
@@ -91,17 +96,17 @@ function OffensiveCard({ stats }: { stats: PlayerStatistics }) {
 
 // Carte Créative (passes & dribbles)
 function CreativeCard({ stats }: { stats: PlayerStatistics }) {
-  const dribbleAccuracy = stats.dribbles && stats.dribbles > 0
+  const dribbleAccuracy = stats.dribbles && stats.dribbles > 0 && stats.dribbles_succeeded !== null && stats.dribbles_succeeded !== undefined
     ? ((stats.dribbles_succeeded || 0) / stats.dribbles * 100)
-    : 0;
+    : null;
     
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
       <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">🎯 Créatif</h3>
       <div className="space-y-1">
-        <StatItem label="Total passes" value={stats.passes_total} />
+        <StatItem label="Total passes" value={stats.passes_total || stats.passes} />
         <StatItem label="Passes clés" value={stats.key_passes} />
-        <StatItem label="Total centres" value={stats.crosses_total} />
+        <StatItem label="Total centres" value={stats.crosses_total || stats.crosses} />
         <StatItem label="Précision des centres" value={stats.crosses_accuracy} suffix="%" />
         <StatItem label="Total dribbles" value={stats.dribbles} />
         <StatItem label="Précision des dribbles" value={dribbleAccuracy} suffix="%" />
@@ -163,7 +168,7 @@ export default function StatsCards({ stats, position }: StatsCardsProps) {
   if (!stats || (!stats.minutes && !stats.appearences)) {
     return (
       <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 text-center">
-        <p className="text-yellow-800">Aucune statistique disponible pour cette saison</p>
+        <p className="text-yellow-800">Aucune statistique disponible pour cette saison car le joueur n'a pas encore joué de match officiel</p>
       </div>
     );
   }

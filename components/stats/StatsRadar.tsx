@@ -20,7 +20,7 @@ export default function StatsRadar({ stats, position }: StatsRadarProps) {
   if (!stats || (!stats.minutes && !stats.appearences)) {
     return (
       <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 text-center">
-        <p className="text-yellow-800">Aucune statistique disponible pour cette saison</p>
+        <p className="text-yellow-800">Aucune statistique disponible pour cette saison car le joueur n'a pas encore joué de match officiel</p>
       </div>
     );
   }

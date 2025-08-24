@@ -1,0 +1,73 @@
+name: Update Player Data
+
+on:
+  schedule:
+    # Lundi soir à 21h (heure française = 20h UTC en hiver, 19h UTC en été)
+    - cron: '0 20 * * 1'
+    # Vendredi soir à 21h (heure française)
+    - cron: '0 20 * * 5'
+  workflow_dispatch: # Permet de déclencher manuellement
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install Node dependencies
+      run: npm ci
+    
+    - name: Run update script
+      env:
+        SPORTMONKS_API_KEY: ${{ secrets.SPORTMONKS_API_KEY }}
+      run: |
+        cd scripts
+        python update_all_data.py
+    
+    - name: Check for changes
+      id: check_changes
+      run: |
+        git diff --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+    
+    - name: Commit and push if changed
+      if: steps.check_changes.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git commit -m "🔄 Mise à jour automatique des données [$(date +'%Y-%m-%d %H:%M')]"
+        git push
+    
+    - name: Send notification on failure
+      if: failure()
+      uses: actions/github-script@v6
+      with:
+        script: |
+          github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: '❌ Échec de la mise à jour automatique des données',
+            body: `La mise à jour automatique a échoué le ${new Date().toLocaleDateString('fr-FR')}.
+            
+            [Voir les logs](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`
+          })

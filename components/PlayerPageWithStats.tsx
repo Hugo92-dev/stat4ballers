@@ -70,7 +70,8 @@ export default function PlayerPageWithStats({
         let stats = await getPlayerStatistics(playerId, leagueKey);
         
         // Si pas de données réelles, utiliser des données simulées pour tester
-        if (!stats.current || (stats.current.minutes === 0 && stats.current.appearences === 0)) {
+        // Note: 0 est une vraie valeur (joueur n'a pas joué), null/undefined = pas de données
+        if (!stats.current) {
           // Importer les données simulées
           const { generateMockStatsForPlayer } = await import('@/services/mockData');
           const mockStats = generateMockStatsForPlayer(player);
@@ -90,11 +91,12 @@ export default function PlayerPageWithStats({
         setStatsData(stats);
         
         // Sélectionner la meilleure vue par défaut
-        if (stats.cumulative && (stats.cumulative.minutes > 0 || stats.cumulative.appearences > 0)) {
+        // On affiche toujours les saisons même avec 0 match (c'est une info valide)
+        if (stats.cumulative && stats.cumulative.appearences !== null && stats.cumulative.appearences !== undefined) {
           // Si on a des données cumulées, les afficher par défaut
           setSelectedSeason('cumulative');
-        } else if (stats.current && (stats.current.minutes > 0 || stats.current.appearences > 0)) {
-          // Sinon, afficher la saison actuelle si elle a des données
+        } else if (stats.current) {
+          // Sinon, afficher la saison actuelle si elle existe
           setSelectedSeason('current');
         } else {
           // Sinon, chercher la première saison avec des données
@@ -176,7 +178,12 @@ export default function PlayerPageWithStats({
               <h1 className="text-3xl font-bold">
                 {player.displayName || player.fullName || player.name}
               </h1>
-              <p className="text-xl text-white/80">{clubName}</p>
+              <Link 
+                href={`/${leagueSlug}/${clubSlug}`}
+                className="text-xl text-white/80 hover:text-white transition-colors inline-block"
+              >
+                {clubName}
+              </Link>
             </div>
           </div>
         </div>

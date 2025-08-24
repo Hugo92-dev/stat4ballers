@@ -10,6 +10,7 @@ import { generateMockStatsForPlayer } from '@/services/mockData';
 import PlayerComparisonRadar from '@/components/PlayerComparisonRadar';
 import PlayerComparisonList from '@/components/PlayerComparisonList';
 import ViewSelector from '@/components/stats/ViewSelector';
+import SeasonSelector from '@/components/stats/SeasonSelector';
 
 interface Player {
   id: number;
@@ -27,6 +28,11 @@ interface Player {
 
 interface PlayerWithStats extends Player {
   stats: PlayerStatistics;
+  allStats: {
+    current: PlayerStatistics | null;
+    previous: PlayerStatistics[];
+    cumulative: PlayerStatistics | null;
+  };
 }
 
 export default function ComparePage() {
@@ -35,6 +41,7 @@ export default function ComparePage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [currentView, setCurrentView] = useState<'list' | 'radar'>('radar');
+  const [selectedSeason, setSelectedSeason] = useState<string>('cumulative');
 
   useEffect(() => {
     const loadPlayersData = async () => {
@@ -118,13 +125,18 @@ export default function ComparePage() {
               };
             }
 
-            // Utiliser les stats cumulatives pour la comparaison, sinon current
-            const playerStats = stats.cumulative || stats.current;
+            // Utiliser les stats cumulatives par défaut pour la comparaison
+            const defaultStats = stats.cumulative || stats.current;
             
-            if (playerStats) {
+            if (defaultStats) {
               playersData.push({
                 ...player,
-                stats: playerStats
+                stats: defaultStats,
+                allStats: {
+                  current: stats.current,
+                  previous: stats.previous || [],
+                  cumulative: stats.cumulative
+                }
               });
             }
           } catch (err) {
@@ -133,7 +145,12 @@ export default function ComparePage() {
             const mockStatsData = generateMockStatsForPlayer(player);
             playersData.push({
               ...player,
-              stats: mockStatsData.current
+              stats: mockStatsData.current,
+              allStats: {
+                current: mockStatsData.current,
+                previous: mockStatsData.previous || [],
+                cumulative: mockStatsData.current
+              }
             });
           }
         }
@@ -154,6 +171,28 @@ export default function ComparePage() {
 
     loadPlayersData();
   }, [searchParams]);
+
+  // Fonction pour récupérer les stats en fonction de la saison sélectionnée
+  const getStatsForSeason = (player: PlayerWithStats): PlayerStatistics => {
+    if (!player.allStats) return player.stats;
+    
+    if (selectedSeason === 'cumulative') {
+      return player.allStats.cumulative || player.stats;
+    } else if (selectedSeason === 'current') {
+      return player.allStats.current || player.stats;
+    } else if (selectedSeason.startsWith('previous-')) {
+      const index = parseInt(selectedSeason.split('-')[1]);
+      return player.allStats.previous[index] || player.stats;
+    }
+    
+    return player.stats;
+  };
+
+  // Préparer les joueurs avec les stats de la saison sélectionnée
+  const playersWithSelectedStats = players.map(player => ({
+    ...player,
+    stats: getStatsForSeason(player)
+  }));
 
   if (loading) {
     return (
@@ -260,6 +299,17 @@ export default function ComparePage() {
       {/* Contenu principal */}
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="bg-white rounded-lg shadow-lg p-8">
+          {/* Sélecteur de saison - utiliser les stats du premier joueur comme référence */}
+          {players.length > 0 && players[0].allStats && (
+            <SeasonSelector
+              current={players[0].allStats.current}
+              previous={players[0].allStats.previous}
+              cumulative={players[0].allStats.cumulative}
+              selectedSeason={selectedSeason}
+              onSeasonChange={setSelectedSeason}
+            />
+          )}
+          
           {/* Sélecteur de vue */}
           <div className="mb-8">
             <ViewSelector
@@ -270,9 +320,9 @@ export default function ComparePage() {
 
           {/* Affichage selon la vue sélectionnée */}
           {currentView === 'radar' ? (
-            <PlayerComparisonRadar players={players} />
+            <PlayerComparisonRadar players={playersWithSelectedStats} />
           ) : (
-            <PlayerComparisonList players={players} />
+            <PlayerComparisonList players={playersWithSelectedStats} />
           )}
         </div>
       </div>
