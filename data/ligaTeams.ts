@@ -1,4 +1,6 @@
-export const ligaTeams = [
+import { Team } from './types';
+
+export const ligaTeams: Team[] = [
   {
     id: 3477,
     name: "Villarreal",
@@ -1430,7 +1432,7 @@ export const ligaTeams = [
   {
     id: 36,
     name: "Celta de Vigo",
-    slug: "celta-de-vigo",
+    slug: "celta-vigo",
     players: [
       {
         id: 189286,
@@ -3754,7 +3756,7 @@ export const ligaTeams = [
   {
     id: 83,
     name: "FC Barcelona",
-    slug: "fc-barcelona",
+    slug: "barcelona",
     players: [
       {
         id: 37584217,
@@ -4125,7 +4127,7 @@ export const ligaTeams = [
   {
     id: 2975,
     name: "Deportivo Alavés",
-    slug: "deportivo-alaves",
+    slug: "alaves",
     players: [
       {
         id: 10692,
@@ -5910,7 +5912,7 @@ export const ligaTeams = [
   {
     id: 13258,
     name: "Athletic Club",
-    slug: "athletic-club",
+    slug: "athletic-bilbao",
     players: [
       {
         id: 22158926,

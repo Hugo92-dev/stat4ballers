@@ -1,8 +1,10 @@
-export const premierLeagueTeams = [
+import { Team } from './types';
+
+export const premierLeagueTeams: Team[] = [
   {
     id: 78,
     name: "Brighton & Hove Albion",
-    slug: "brighton-hove-albion",
+    slug: "brighton",
     players: [
       {
         id: 54191,
@@ -1612,7 +1614,7 @@ export const premierLeagueTeams = [
   {
     id: 29,
     name: "Wolverhampton Wanderers",
-    slug: "wolverhampton-wanderers",
+    slug: "wolves",
     players: [
       {
         id: 159483,
@@ -2011,7 +2013,7 @@ export const premierLeagueTeams = [
   {
     id: 71,
     name: "Leeds United",
-    slug: "leeds-united",
+    slug: "leeds",
     players: [
       {
         id: 460159,
@@ -4300,7 +4302,7 @@ export const premierLeagueTeams = [
   {
     id: 52,
     name: "AFC Bournemouth",
-    slug: "afc-bournemouth",
+    slug: "bournemouth",
     players: [
       {
         id: 37602125,
@@ -4755,7 +4757,7 @@ export const premierLeagueTeams = [
   {
     id: 20,
     name: "Newcastle United",
-    slug: "newcastle-united",
+    slug: "newcastle",
     players: [
       {
         id: 11705406,
@@ -6351,7 +6353,7 @@ export const premierLeagueTeams = [
   {
     id: 1,
     name: "West Ham United",
-    slug: "west-ham-united",
+    slug: "west-ham",
     players: [
       {
         id: 37685630,
@@ -7534,7 +7536,7 @@ export const premierLeagueTeams = [
   {
     id: 6,
     name: "Tottenham Hotspur",
-    slug: "tottenham-hotspur",
+    slug: "tottenham",
     players: [
       {
         id: 7026573,

@@ -1,8 +1,10 @@
-export const bundesligaTeams = [
+import { Team } from './types';
+
+export const bundesligaTeams: Team[] = [
   {
     id: 1079,
     name: "FC Union Berlin",
-    slug: "fc-union-berlin",
+    slug: "union-berlin",
     players: [
       {
         id: 83795,
@@ -429,7 +431,7 @@ export const bundesligaTeams = [
   {
     id: 510,
     name: "VfL Wolfsburg",
-    slug: "vfl-wolfsburg",
+    slug: "wolfsburg",
     players: [
       {
         id: 37315658,
@@ -597,7 +599,7 @@ export const bundesligaTeams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/22146099.png",
-        playerSlug: "jesper-lindstrm"
+        playerSlug: "jesper-lindstrom"
       },
       {
         id: 37259482,
@@ -814,7 +816,7 @@ export const bundesligaTeams = [
   {
     id: 3321,
     name: "Bayer 04 Leverkusen",
-    slug: "bayer-04-leverkusen",
+    slug: "leverkusen",
     players: [
       {
         id: 37639087,
@@ -1185,7 +1187,7 @@ export const bundesligaTeams = [
   {
     id: 3543,
     name: "SC Freiburg",
-    slug: "sc-freiburg",
+    slug: "freiburg",
     players: [
       {
         id: 32058,
@@ -1297,7 +1299,7 @@ export const bundesligaTeams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/27067064.png",
-        playerSlug: "noah-weihaupt"
+        playerSlug: "noah-weishaupt"
       },
       {
         id: 31712,
@@ -1598,7 +1600,7 @@ export const bundesligaTeams = [
   {
     id: 68,
     name: "Borussia Dortmund",
-    slug: "borussia-dortmund",
+    slug: "dortmund",
     players: [
       {
         id: 32106,
@@ -1808,7 +1810,7 @@ export const bundesligaTeams = [
         taille: 181,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/31504.png",
-        playerSlug: "pascal-gro"
+        playerSlug: "pascal-gros"
       },
       {
         id: 32695,
@@ -1955,7 +1957,7 @@ export const bundesligaTeams = [
   {
     id: 82,
     name: "Werder Bremen",
-    slug: "werder-bremen",
+    slug: "bremen",
     players: [
       {
         id: 37695942,
@@ -2179,7 +2181,7 @@ export const bundesligaTeams = [
         taille: 173,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/37417046.png",
-        playerSlug: "isak-hansen-aaren"
+        playerSlug: "isak-hansen-aaroen"
       },
       {
         id: 37538006,
@@ -2368,7 +2370,7 @@ export const bundesligaTeams = [
   {
     id: 3320,
     name: "FC Köln",
-    slug: "fc-koln",
+    slug: "koln",
     players: [
       {
         id: 32513,
@@ -2578,7 +2580,7 @@ export const bundesligaTeams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/6983809.png",
-        playerSlug: "tom-krau"
+        playerSlug: "tom-kraus"
       },
       {
         id: 37544409,
@@ -2823,7 +2825,7 @@ export const bundesligaTeams = [
   {
     id: 277,
     name: "RB Leipzig",
-    slug: "rb-leipzig",
+    slug: "leipzig",
     players: [
       {
         id: 37570379,
@@ -3306,7 +3308,7 @@ export const bundesligaTeams = [
   {
     id: 90,
     name: "FC Augsburg",
-    slug: "fc-augsburg",
+    slug: "augsburg",
     players: [
       {
         id: 3862572,
@@ -3733,7 +3735,7 @@ export const bundesligaTeams = [
   {
     id: 683,
     name: "Borussia Mönchengladbach",
-    slug: "borussia-monchengladbach",
+    slug: "monchengladbach",
     players: [
       {
         id: 34432365,
@@ -4132,7 +4134,7 @@ export const bundesligaTeams = [
   {
     id: 3319,
     name: "VfB Stuttgart",
-    slug: "vfb-stuttgart",
+    slug: "stuttgart",
     players: [
       {
         id: 37656783,
@@ -5371,7 +5373,7 @@ export const bundesligaTeams = [
   {
     id: 2726,
     name: "TSG Hoffenheim",
-    slug: "tsg-hoffenheim",
+    slug: "hoffenheim",
     players: [
       {
         id: 37538104,
@@ -5826,7 +5828,7 @@ export const bundesligaTeams = [
   {
     id: 366,
     name: "Eintracht Frankfurt",
-    slug: "eintracht-frankfurt",
+    slug: "frankfurt",
     players: [
       {
         id: 32347,
@@ -5994,7 +5996,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/37598755.png",
-        playerSlug: "oscar-hjlund"
+        playerSlug: "oscar-hojlund"
       },
       {
         id: 3861788,
@@ -6267,7 +6269,7 @@ export const bundesligaTeams = [
   {
     id: 794,
     name: "FSV Mainz 05",
-    slug: "fsv-mainz-05",
+    slug: "mainz",
     players: [
       {
         id: 37429228,
@@ -6295,7 +6297,7 @@ export const bundesligaTeams = [
         taille: 192,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/3862693.png",
-        playerSlug: "lasse-rie"
+        playerSlug: "lasse-ries"
       },
       {
         id: 27066718,
@@ -6666,7 +6668,7 @@ export const bundesligaTeams = [
   {
     id: 503,
     name: "FC Bayern München",
-    slug: "fc-bayern-munchen",
+    slug: "bayern-munich",
     players: [
       {
         id: 33186829,
@@ -7023,7 +7025,7 @@ export const bundesligaTeams = [
   {
     id: 2708,
     name: "Hamburger SV",
-    slug: "hamburger-sv",
+    slug: "hamburg",
     players: [
       {
         id: 198106,
@@ -7051,7 +7053,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/37755719.png",
-        playerSlug: "alexander-rssing-lelesiit"
+        playerSlug: "alexander-rossing-lelesiit"
       },
       {
         id: 12066348,

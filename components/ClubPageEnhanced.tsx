@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getClubLogoPath } from '@/data/clubLogosMapping';
 import { slugifyPlayer } from '@/utils/slugify';
-import { teamDetails } from '@/data/teamDetails';
+import { teamDetails } from '@/data/teamDetailsFromAPI';
 
 interface Player {
   id: string | number;
@@ -57,6 +57,16 @@ export default function ClubPageEnhanced({
   // Trouver l'équipe dans les données
   const team = teams.find(t => t.slug === clubId);
   const details = teamDetails[clubId];
+  
+  // Debug
+  if (typeof window !== 'undefined') {
+    console.log('ClubPageEnhanced debug:', {
+      clubId,
+      hasDetails: !!details,
+      details: details,
+      teamDetailsKeys: Object.keys(teamDetails).filter(k => k.includes('paris'))
+    });
+  }
   
   if (!team) {
     return (
@@ -154,55 +164,25 @@ export default function ClubPageEnhanced({
             <h1 className="text-5xl font-bold text-white mb-2">{team.name}</h1>
             <p className="text-gray-300 text-lg">Effectif complet • Saison 2025/2026</p>
             <div className="flex flex-wrap gap-6 mt-4">
-              <p className="text-gray-400">
+              <span className="text-gray-400">
                 <span className="text-gray-500">Effectif:</span> {team.players.length} joueurs
-              </p>
-              {details?.stadium && (
-                <p className="text-gray-400">
+              </span>
+              {details && details.stadium && (
+                <span className="text-gray-400">
                   <span className="text-gray-500">Stade:</span> {details.stadium}
-                  {details.capacity && ` (${details.capacity.toLocaleString()} places)`}
-                </p>
+                  {details.capacity && ` (${new Intl.NumberFormat('fr-FR').format(details.capacity)} places)`}
+                </span>
               )}
-              {details?.coach && (
-                <p className="text-gray-400">
-                  <span className="text-gray-500">Entraîneur:</span> {details.coach}
-                </p>
-              )}
-              {details?.founded && (
-                <p className="text-gray-400">
+              {details && details.founded && (
+                <span className="text-gray-400">
                   <span className="text-gray-500">Fondé en:</span> {details.founded}
-                </p>
+                </span>
               )}
             </div>
           </div>
         </div>
       </div>
 
-      {/* Infos du club et Palmarès */}
-      {details?.trophies && Object.keys(details.trophies).length > 0 && (
-        <div className="max-w-7xl mx-auto px-8 py-6">
-          <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-xl p-6 border border-gray-700">
-            <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
-              <span className="text-3xl mr-3">🏆</span> Palmarès
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {Object.entries(details.trophies).map(([trophy, count]) => (
-                <div key={trophy} className="flex items-center justify-between bg-gray-800 rounded-lg px-4 py-2">
-                  <span className="text-gray-300 text-sm">{trophy}</span>
-                  <span className="text-yellow-400 font-bold text-lg">{count}x</span>
-                </div>
-              ))}
-            </div>
-            <div className="mt-4 pt-4 border-t border-gray-700">
-              <p className="text-gray-400">
-                Total: <span className="text-yellow-400 font-bold">
-                  {Object.values(details.trophies).reduce((a, b) => a + b, 0)}
-                </span> trophées
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Barre de recherche */}
       <div className="max-w-7xl mx-auto px-8 py-6">

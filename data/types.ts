@@ -12,6 +12,13 @@ export interface Player {
   image?: string;
   age?: number;
   number?: number;
+  playerSlug?: string;
+  nom?: string;
+  position_id?: number;
+  numero?: number;
+  nationalite?: string;
+  taille?: number;
+  poids?: number;
 }
 
 export interface Team {

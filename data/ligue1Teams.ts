@@ -1,8 +1,10 @@
-export const ligue1Teams = [
+import { Team } from './types';
+
+export const ligue1Teams: Team[] = [
   {
     id: 44,
     name: "Olympique Marseille",
-    slug: "olympique-marseille",
+    slug: "marseille",
     players: [
       {
         id: 537332,
@@ -429,7 +431,7 @@ export const ligue1Teams = [
   {
     id: 690,
     name: "LOSC Lille",
-    slug: "losc-lille",
+    slug: "lille",
     players: [
       {
         id: 798,
@@ -2053,7 +2055,7 @@ export const ligue1Teams = [
   {
     id: 776,
     name: "Angers SCO",
-    slug: "angers-sco",
+    slug: "angers",
     players: [
       {
         id: 37531184,
@@ -2935,7 +2937,7 @@ export const ligue1Teams = [
   {
     id: 591,
     name: "Paris Saint Germain",
-    slug: "paris-saint-germain",
+    slug: "psg",
     players: [
       {
         id: 186797,
@@ -6357,8 +6359,8 @@ export const ligue1Teams = [
   },
   {
     id: 4508,
-    name: "Paris",
-    slug: "paris",
+    name: "Paris FC",
+    slug: "paris-fc",
     players: [
       {
         id: 37691694,
@@ -6771,7 +6773,7 @@ export const ligue1Teams = [
   {
     id: 79,
     name: "Olympique Lyonnais",
-    slug: "olympique-lyonnais",
+    slug: "lyon",
     players: [
       {
         id: 37614052,

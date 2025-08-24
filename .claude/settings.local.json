@@ -36,13 +36,17 @@
       "Bash(timeout 30 python scripts/verify_om_players_stats.py)",
       "Bash(timeout 30 python:*)",
       "Bash(timeout:*)",
-      "Bash(sed:*)"
+      "Bash(sed:*)",
+      "Bash(dir:*)",
+      "Bash(do echo -n \"$url: \")",
+      "mcp__ide__getDiagnostics"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",
     "additionalDirectories": [
       "C:\\c\\Users\\hugo\\stat4ballers",
-      "C:\\Users\\hugo\\data"
+      "C:\\Users\\hugo\\data",
+      "C:\\"
     ]
   }
 }

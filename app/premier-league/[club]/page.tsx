@@ -2,8 +2,15 @@ import ClubPageEnhanced from '@/components/ClubPageEnhanced';
 import { premierLeagueTeams } from '@/data/premierLeagueTeams';
 
 export default function ClubPage({ params }: { params: { club: string } }) {
+  // Gérer les alias d'URLs
+  const slugAliases: Record<string, string> = {
+    'west-ham': 'west-ham-united',
+  };
+  
+  const actualSlug = slugAliases[params.club] || params.club;
+  
   // Trouver le club dans les données
-  const club = premierLeagueTeams.find(c => c.slug === params.club);
+  const club = premierLeagueTeams.find(c => c.slug === actualSlug);
   
   if (!club) {
     return (
@@ -20,7 +27,7 @@ export default function ClubPage({ params }: { params: { club: string } }) {
 
   return (
     <ClubPageEnhanced
-      clubId={params.club}
+      clubId={actualSlug}
       clubName={club.name}
       leagueId="premier-league"
       leagueName="Premier League"

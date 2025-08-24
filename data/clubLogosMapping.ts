@@ -122,7 +122,13 @@ export const clubLogoFiles: Record<string, Record<string, string>> = {
 
 // Fonction pour obtenir le logo d'un club
 export const getClubLogoPath = (leagueId: string, clubId: string): string => {
-  const fileName = clubLogoFiles[leagueId]?.[clubId];
+  // Gérer les alias de slugs
+  let mappingId = clubId;
+  if (clubId === 'west-ham-united') {
+    mappingId = 'west-ham';
+  }
+  
+  const fileName = clubLogoFiles[leagueId]?.[mappingId];
   if (fileName) {
     return `/logos/clubs/${leagueId}/${encodeURIComponent(fileName)}`;
   }

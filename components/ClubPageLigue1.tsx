@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { getClubLogoPath } from '@/data/clubLogosMapping';
 import { ligue1Teams } from '@/data/ligue1Teams';
 import { slugifyPlayer } from '@/utils/slugify';
-import { teamDetails } from '@/data/teamDetails';
+import { teamDetails } from '@/data/teamDetailsFromAPI';
 
 interface ClubPageProps {
   clubId: string;

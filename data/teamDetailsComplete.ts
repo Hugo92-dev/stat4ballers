@@ -195,7 +195,7 @@ export const teamDetails: Record<string, {
     trophies: {}
   },
   'fulham': {
-    stadium: 'St. James' Park',
+    stadium: "St. James' Park",
     capacity: 52409,
     founded: 1892,
     trophies: {}

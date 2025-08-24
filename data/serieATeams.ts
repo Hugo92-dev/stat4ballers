@@ -1,4 +1,6 @@
-export const serieATeams = [
+import { Team } from './types';
+
+export const serieATeams: Team[] = [
   {
     id: 708,
     name: "Atalanta",
@@ -7401,7 +7403,7 @@ export const serieATeams = [
   {
     id: 1123,
     name: "Hellas Verona",
-    slug: "hellas-verona",
+    slug: "verona",
     players: [
       {
         id: 37400393,

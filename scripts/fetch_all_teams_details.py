@@ -1,263 +1,312 @@
 #!/usr/bin/env python3
 """
-Récupérer les détails de TOUS les clubs (stade, coach, palmarès)
+Récupérer automatiquement les détails de TOUTES les équipes depuis l'API SportMonks
+Inclut: stade, capacité, année de fondation
 """
 
-import sys
 import requests
 import json
 import time
 from pathlib import Path
 
-# Fix encodage Windows
-if sys.platform == 'win32':
-    sys.stdout.reconfigure(encoding='utf-8')
-
+# Configuration API
 API_KEY = "leBzDfKbRE5k9zEg3FuZE3Hh7XbukODNarOXLoVtPAiAtliDZ19wLu1Wnzi2"
 BASE_URL = "https://api.sportmonks.com/v3/football"
 
+# Headers pour les requêtes
 headers = {
-    "Accept": "application/json",
     "Authorization": API_KEY,
+    "Accept": "application/json"
 }
 
-# Configuration des championnats et équipes
-LEAGUES_CONFIG = {
-    'ligue1': {
-        'season_id': 25651,
-        'teams': {
-            'marseille': 44,
-            'psg': 85,
-            'lyon': 80,
-            'monaco': 91,
-            'lille': 79,
-            'nice': 72,
-            'lens': 78,
-            'rennes': 77,
-            'strasbourg': 1020,
-            'nantes': 92,
-            'brest': 83,
-            'toulouse': 74,
-            'auxerre': 631,
-            'angers': 234,
-            'le-havre': 73,
-            'montpellier': 89,
-            'reims': 75,
-            'saint-etienne': 82
-        }
-    },
-    'premier-league': {
-        'season_id': 25583,
-        'teams': {
-            'manchester-united': 14,
-            'manchester-city': 11,
-            'liverpool': 8,
-            'chelsea': 18,
-            'arsenal': 42,
-            'tottenham': 6,
-            'newcastle': 13,
-            'west-ham': 5,
-            'everton': 7,
-            'brighton': 397,
-            'aston-villa': 9,
-            'nottingham-forest': 17,
-            'crystal-palace': 3,
-            'fulham': 20,
-            'brentford': 338,
-            'wolves': 22,
-            'bournemouth': 43,
-            'leicester': 10,
-            'southampton': 19,
-            'ipswich': 343
-        }
-    },
-    'la-liga': {
-        'season_id': 25659,
-        'teams': {
-            'real-madrid': 3468,
-            'barcelona': 83,
-            'atletico-madrid': 78,
-            'sevilla': 95,
-            'valencia': 100,
-            'villarreal': 102,
-            'athletic-bilbao': 77,
-            'real-sociedad': 86,
-            'real-betis': 90,
-            'osasuna': 93,
-            'celta-vigo': 80,
-            'rayo-vallecano': 87,
-            'getafe': 82,
-            'mallorca': 91,
-            'alaves': 76,
-            'espanyol': 81,
-            'las-palmas': 6785,
-            'girona': 2394,
-            'valladolid': 716,
-            'leganes': 719
-        }
-    },
-    'serie-a': {
-        'season_id': 25533,
-        'teams': {
-            'juventus': 496,
-            'milan': 113,
-            'inter': 108,
-            'napoli': 118,
-            'roma': 121,
-            'lazio': 110,
-            'fiorentina': 99,
-            'atalanta': 102,
-            'bologna': 103,
-            'torino': 122,
-            'udinese': 492,
-            'genoa': 107,
-            'como': 117,
-            'verona': 504,
-            'parma': 119,
-            'cagliari': 605,
-            'empoli': 98,
-            'lecce': 2249,
-            'monza': 1189,
-            'venezia': 1005
-        }
-    },
-    'bundesliga': {
-        'season_id': 25646,
-        'teams': {
-            'bayern': 21,
-            'borussia-dortmund': 25,
-            'bayer-leverkusen': 23,
-            'leipzig': 173,
-            'eintracht-frankfurt': 32,
-            'stuttgart': 28,
-            'wolfsburg': 30,
-            'freiburg': 26,
-            'mainz': 37,
-            'werder': 38,
-            'hoffenheim': 36,
-            'augsburg': 31,
-            'borussia-monchengladbach': 24,
-            'union-berlin': 34,
-            'bochum': 40,
-            'heidenheim': 14263,
-            'holstein-kiel': 658,
-            'st-pauli': 656
-        }
-    }
+# IDs des saisons 2025/2026 pour chaque championnat
+SEASON_IDS = {
+    'ligue1': 25651,
+    'premier-league': 25583,
+    'la-liga': 25659,
+    'serie-a': 25533,
+    'bundesliga': 25646
 }
 
-def get_team_details(team_id: int, team_slug: str) -> dict:
-    """Récupérer les détails d'une équipe"""
-    
-    print(f"  Récupération des infos pour {team_slug}...")
-    
-    # 1. Infos de base avec stade
-    url = f"{BASE_URL}/teams/{team_id}"
-    params = {'include': 'venue'}
-    response = requests.get(url, headers=headers, params=params)
-    
-    details = {
-        'slug': team_slug,
-        'id': team_id
+def get_teams_by_season(season_id, league_name):
+    """Récupérer toutes les équipes d'une saison"""
+    url = f"{BASE_URL}/teams/seasons/{season_id}"
+    params = {
+        "api_token": API_KEY,
+        "include": "venue",  # Inclure les infos du stade
+        "per_page": 50
     }
     
-    if response.status_code == 200:
-        data = response.json()['data']
-        details['name'] = data.get('name')
-        details['founded'] = data.get('founded')
-        
-        venue = data.get('venue')
-        if venue:
-            details['stadium'] = venue.get('name')
-            details['capacity'] = venue.get('capacity')
+    all_teams = []
     
-    time.sleep(0.5)  # Éviter le rate limiting
-    
-    # 2. Coach actuel
-    url = f"{BASE_URL}/coaches/teams/{team_id}/current"
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, params=params)
     
     if response.status_code == 200:
         data = response.json()
-        coaches = data.get('data', [])
-        if coaches:
-            coach = coaches[0] if isinstance(coaches, list) else coaches
-            details['coach'] = coach.get('display_name') or coach.get('name')
+        teams = data.get('data', [])
+        
+        print(f"\n{league_name.upper()}: {len(teams)} équipes trouvées")
+        
+        for team in teams:
+            all_teams.append(team)
+            venue = team.get('venue', {})
+            try:
+                if venue:
+                    print(f"  {team.get('name')}: {venue.get('name')} ({venue.get('capacity')} places)")
+                else:
+                    print(f"  {team.get('name')}: Pas de stade")
+            except:
+                # Ignorer les erreurs d'encodage
+                pass
+    else:
+        print(f"Erreur pour la saison {season_id}: {response.status_code}")
+        if response.text:
+            print(f"Message: {response.text[:200]}")
+    
+    return all_teams
+
+def extract_team_details(team_data):
+    """Extraire les détails d'une équipe"""
+    details = {
+        'id': team_data.get('id'),
+        'name': team_data.get('name'),
+        'founded': team_data.get('founded'),
+        'stadium': None,
+        'capacity': None
+    }
+    
+    # Récupérer les infos du stade si disponibles
+    venue = team_data.get('venue')
+    if venue:
+        details['stadium'] = venue.get('name')
+        details['capacity'] = venue.get('capacity')
     
     return details
 
-def main():
-    """Récupérer tous les détails pour tous les clubs"""
+def generate_typescript_file(all_teams_details):
+    """Générer le fichier TypeScript avec les détails des équipes"""
     
-    all_teams_data = {}
-    
-    for league_slug, league_config in LEAGUES_CONFIG.items():
-        print(f"\n=== {league_slug.upper()} ===")
-        league_data = {}
-        
-        for team_slug, team_id in league_config['teams'].items():
-            try:
-                team_data = get_team_details(team_id, team_slug)
-                league_data[team_slug] = team_data
-                print(f"    ✓ {team_data.get('name', team_slug)}")
-                time.sleep(0.3)
-            except Exception as e:
-                print(f"    ✗ Erreur pour {team_slug}: {e}")
-        
-        all_teams_data[league_slug] = league_data
-    
-    # Sauvegarder les données
-    with open('all_teams_details.json', 'w', encoding='utf-8') as f:
-        json.dump(all_teams_data, f, ensure_ascii=False, indent=2)
-    
-    print(f"\n✅ Données sauvegardées dans all_teams_details.json")
-    
-    # Générer le fichier TypeScript
-    generate_typescript(all_teams_data)
-
-def generate_typescript(data: dict):
-    """Générer le fichier TypeScript avec toutes les données"""
-    
-    ts_content = """// Détails complets de toutes les équipes
-// Généré automatiquement - NE PAS MODIFIER MANUELLEMENT
+    # Début du fichier TypeScript
+    ts_content = """// Détails complets de toutes les équipes des 5 grands championnats
+// Généré automatiquement depuis l'API SportMonks
+// NE PAS MODIFIER MANUELLEMENT - Utiliser fetch_all_teams_details.py
 
 export const teamDetails: Record<string, {
   stadium?: string;
   capacity?: number;
-  coach?: string;
   founded?: number;
-  trophies?: Record<string, number>;
 }> = {
 """
     
-    for league_slug, teams in data.items():
-        ts_content += f"\n  // {league_slug.upper()}\n"
+    # Ajouter chaque équipe
+    for slug, details in sorted(all_teams_details.items()):
+        ts_content += f"  '{slug}': {{\n"
         
-        for team_slug, team_data in teams.items():
-            ts_content += f"  '{team_slug}': {{\n"
+        if details.get('stadium'):
+            # Échapper les apostrophes dans les noms de stades
+            stadium = details['stadium'].replace("'", "\\'")
+            ts_content += f"    stadium: '{stadium}',\n"
+        
+        if details.get('capacity'):
+            ts_content += f"    capacity: {details['capacity']},\n"
             
-            if team_data.get('stadium'):
-                ts_content += f"    stadium: '{team_data['stadium']}',\n"
-            
-            if team_data.get('capacity'):
-                ts_content += f"    capacity: {team_data['capacity']},\n"
-            
-            if team_data.get('coach'):
-                ts_content += f"    coach: '{team_data['coach']}',\n"
-            
-            if team_data.get('founded'):
-                ts_content += f"    founded: {team_data['founded']},\n"
-            
-            # Pour l'instant, on laisse les trophées vides (à remplir manuellement)
-            ts_content += "    trophies: {}\n"
-            ts_content += "  },\n"
+        if details.get('founded'):
+            ts_content += f"    founded: {details['founded']},\n"
+        
+        ts_content += "  },\n"
     
     ts_content += "};\n"
     
-    output_path = Path(__file__).parent.parent / 'data' / 'teamDetailsComplete.ts'
-    output_path.write_text(ts_content, encoding='utf-8')
+    return ts_content
+
+def main():
+    print("="*50)
+    print("RÉCUPÉRATION DES DÉTAILS DES ÉQUIPES")
+    print("="*50)
     
-    print(f"✅ Fichier TypeScript généré: {output_path}")
+    all_teams_details = {}
+    all_teams = []
+    
+    # Récupérer les équipes pour chaque championnat
+    for league_name, season_id in SEASON_IDS.items():
+        teams = get_teams_by_season(season_id, league_name)
+        all_teams.extend(teams)
+        time.sleep(1)  # Pause entre les requêtes
+    
+    print(f"\nTotal global: {len(all_teams)} équipes récupérées")
+    
+    # Traiter chaque équipe
+    for team_data in all_teams:
+        details = extract_team_details(team_data)
+        
+        # Créer le slug (simplification du nom)
+        name = details['name']
+        slug = name.lower()
+        slug = slug.replace(' ', '-')
+        slug = slug.replace('é', 'e').replace('è', 'e')
+        slug = slug.replace('à', 'a').replace('â', 'a')
+        slug = slug.replace('ç', 'c')
+        slug = slug.replace('ô', 'o')
+        slug = slug.replace('&', 'and')
+        slug = slug.replace('.', '')
+        slug = slug.replace("'", '')
+        
+        # Corrections pour harmoniser avec les slugs des fichiers Teams.ts
+        slug_corrections = {
+                # Ligue 1
+                'olympique-de-marseille': 'marseille',
+                'olympique-marseille': 'marseille',
+                'paris-saint-germain-fc': 'psg',
+                'paris-saint-germain': 'psg',
+                'olympique-lyonnais': 'lyon',
+                'losc-lille': 'lille',
+                'ogc-nice': 'nice',
+                'rc-lens': 'lens',
+                'stade-rennais-fc': 'rennes',
+                'rc-strasbourg-alsace': 'strasbourg',
+                'fc-nantes': 'nantes',
+                'aj-auxerre': 'auxerre',
+                'stade-brestois-29': 'brest',
+                'angers-sco': 'angers',
+                'le-havre-ac': 'le-havre',
+                'toulouse-fc': 'toulouse',
+                'fc-metz': 'metz',
+                'metz': 'metz',
+                'fc-lorient': 'lorient',
+                'lorient': 'lorient',
+                'paris-fc': 'paris-fc',
+                'as-monaco': 'monaco',
+                'monaco': 'monaco',
+                'montpellier-hsc': 'montpellier',
+                'stade-de-reims': 'reims',
+                'as-saint-etienne': 'saint-etienne',
+                # Premier League
+                'manchester-united-fc': 'manchester-united',
+                'manchester-city-fc': 'manchester-city',
+                'liverpool-fc': 'liverpool',
+                'chelsea-fc': 'chelsea',
+                'arsenal-fc': 'arsenal',
+                'tottenham-hotspur-fc': 'tottenham',
+                'west-ham-united-fc': 'west-ham',
+                'newcastle-united-fc': 'newcastle',
+                'aston-villa-fc': 'aston-villa',
+                'brighton-and-hove-albion-fc': 'brighton',
+                'brighton-hove-albion': 'brighton',
+                'wolverhampton-wanderers-fc': 'wolves',
+                'crystal-palace-fc': 'crystal-palace',
+                'nottingham-forest-fc': 'nottingham-forest',
+                'everton-fc': 'everton',
+                'fulham-fc': 'fulham',
+                'afc-bournemouth': 'bournemouth',
+                'brentford-fc': 'brentford',
+                'burnley-fc': 'burnley',
+                'leeds-united-fc': 'leeds',
+                'sunderland-afc': 'sunderland',
+                'leicester-city-fc': 'leicester',
+                'southampton-fc': 'southampton',
+                'ipswich-town-fc': 'ipswich',
+                # La Liga
+                'real-madrid-cf': 'real-madrid',
+                'fc-barcelona': 'barcelona',
+                'atletico-de-madrid': 'atletico-madrid',
+                'sevilla-fc': 'sevilla',
+                'real-betis-balompie': 'real-betis',
+                'real-sociedad': 'real-sociedad',
+                'athletic-club': 'athletic-bilbao',
+                'valencia-cf': 'valencia',
+                'villarreal-cf': 'villarreal',
+                'getafe-cf': 'getafe',
+                'rcd-espanyol': 'espanyol',
+                'ca-osasuna': 'osasuna',
+                'rayo-vallecano': 'rayo-vallecano',
+                'rcd-mallorca': 'mallorca',
+                'rc-celta': 'celta-vigo',
+                'deportivo-alaves': 'alaves',
+                'elche-cf': 'elche',
+                'levante-ud': 'levante',
+                'girona-fc': 'girona',
+                'real-oviedo': 'real-oviedo',
+                'real-valladolid-cf': 'valladolid',
+                # Serie A
+                'juventus-fc': 'juventus',
+                'ac-milan': 'milan',
+                'inter-milan': 'inter',
+                'ssc-napoli': 'napoli',
+                'as-roma': 'roma',
+                'ss-lazio': 'lazio',
+                'atalanta-bc': 'atalanta',
+                'acf-fiorentina': 'fiorentina',
+                'torino-fc': 'torino',
+                'bologna-fc-1909': 'bologna',
+                'udinese-calcio': 'udinese',
+                'us-sassuolo': 'sassuolo',
+                'genoa-cfc': 'genoa',
+                'hellas-verona-fc': 'verona',
+                'cagliari-calcio': 'cagliari',
+                'parma-calcio-1913': 'parma',
+                'us-lecce': 'lecce',
+                'us-cremonese': 'cremonese',
+                'pisa-sc': 'pisa',
+                'como-1907': 'como',
+                'empoli-fc': 'empoli',
+                # Bundesliga
+                'fc-bayern-munchen': 'bayern-munich',
+                'borussia-dortmund': 'dortmund',
+                'rb-leipzig': 'leipzig',
+                'bayer-04-leverkusen': 'leverkusen',
+                'borussia-monchengladbach': 'monchengladbach',
+                'eintracht-frankfurt': 'frankfurt',
+                'vfl-wolfsburg': 'wolfsburg',
+                'sc-freiburg': 'freiburg',
+                'tsg-1899-hoffenheim': 'hoffenheim',
+                'vfb-stuttgart': 'stuttgart',
+                '1-fc-koln': 'koln',
+                '1-fc-union-berlin': 'union-berlin',
+                'fc-augsburg': 'augsburg',
+                'sv-werder-bremen': 'bremen',
+                '1-fsv-mainz-05': 'mainz',
+                '1-fc-heidenheim-1846': 'heidenheim',
+                'fc-st-pauli': 'st-pauli',
+                'hamburger-sv': 'hamburg',
+                'holstein-kiel': 'holstein-kiel',
+        }
+        
+        # Appliquer les corrections
+        if slug in slug_corrections:
+            slug = slug_corrections[slug]
+        
+        # Stocker les détails
+        all_teams_details[slug] = {
+            'stadium': details['stadium'],
+            'capacity': details['capacity'],
+            'founded': details['founded']
+        }
+    
+    # Sauvegarder les données JSON pour backup
+    json_path = Path(__file__).parent / 'teams_details_api.json'
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(all_teams_details, f, ensure_ascii=False, indent=2)
+    print(f"\nDonnees sauvegardees: {json_path}")
+    
+    # Générer le fichier TypeScript
+    ts_content = generate_typescript_file(all_teams_details)
+    ts_path = Path(__file__).parent.parent / 'data' / 'teamDetailsFromAPI.ts'
+    
+    with open(ts_path, 'w', encoding='utf-8') as f:
+        f.write(ts_content)
+    
+    print(f"Fichier TypeScript genere: {ts_path}")
+    print(f"\nTotal: {len(all_teams_details)} équipes avec leurs détails")
+    
+    # Statistiques
+    with_stadium = sum(1 for d in all_teams_details.values() if d.get('stadium'))
+    with_capacity = sum(1 for d in all_teams_details.values() if d.get('capacity'))
+    with_founded = sum(1 for d in all_teams_details.values() if d.get('founded'))
+    
+    print(f"\nStatistiques:")
+    print(f"  - {with_stadium} équipes avec stade")
+    print(f"  - {with_capacity} équipes avec capacité")
+    print(f"  - {with_founded} équipes avec année de fondation")
 
 if __name__ == "__main__":
     main()
