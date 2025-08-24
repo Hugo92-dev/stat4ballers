@@ -37,7 +37,7 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState<'name' | 'position'>('position');
 
-  // Classement Premier League 2024/2025
+  // Classement Premier League 2025/2026
   const premierLeagueRanking: Record<string, number> = {
     'liverpool': 1,
     'arsenal': 2,
@@ -56,13 +56,13 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
     'manchester-united': 15,
     'wolves': 16,
     'tottenham': 17,
-    // Clubs promus (n'étaient pas en Premier League 2024/2025)
+    // Clubs promus (n'étaient pas en Premier League 2025/2026)
     'burnley': 18,
     'sunderland': 19,
     'leeds': 20
   };
 
-  // Classement Ligue 1 2024/2025
+  // Classement Ligue 1 2025/2026
   const ligue1Ranking: Record<string, number> = {
     'psg': 1,
     'marseille': 2,
@@ -85,7 +85,7 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
     'lorient': 18
   };
 
-  // Classement Liga 2024/2025
+  // Classement Liga 2025/2026
   const ligaRanking: Record<string, number> = {
     'barcelona': 1,
     'real-madrid': 2,
@@ -110,7 +110,7 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
     'real-oviedo': 20
   };
 
-  // Classement Serie A 2024/2025
+  // Classement Serie A 2025/2026
   const serieARanking: Record<string, number> = {
     'napoli': 1,
     'inter': 2,
@@ -135,7 +135,7 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
     'pise': 20
   };
 
-  // Classement Bundesliga 2024/2025
+  // Classement Bundesliga 2025/2026
   const bundesligaRanking: Record<string, number> = {
     'bayern': 1,
     'bayer-leverkusen': 2,

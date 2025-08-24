@@ -1,4 +1,4 @@
-import ClubPageLigue1 from '@/components/ClubPageLigue1';
+import ClubPageEnhanced from '@/components/ClubPageEnhanced';
 import { ligue1Teams } from '@/data/ligue1Teams';
 
 export default function ClubPage({ params }: { params: { club: string } }) {
@@ -19,11 +19,12 @@ export default function ClubPage({ params }: { params: { club: string } }) {
   }
 
   return (
-    <ClubPageLigue1
+    <ClubPageEnhanced
       clubId={params.club}
       clubName={club.name}
       leagueId="ligue1"
       leagueName="Ligue 1"
+      teams={ligue1Teams}
       primaryColor="#1e3a8a"
       secondaryColor="#ffffff"
     />

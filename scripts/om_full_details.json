@@ -1,0 +1,20 @@
+{
+  "name": "Olympique Marseille",
+  "short_code": "OM",
+  "founded": 1899,
+  "stadium": {
+    "name": "Stade Vélodrome",
+    "capacity": 67000,
+    "address": "3, boulevard Michelet",
+    "surface": "grass",
+    "image": "https://cdn.sportmonks.com/images/soccer/venues/15/6159.png"
+  },
+  "trophies": {
+    "Ligue 1": 9,
+    "Coupe de France": 10,
+    "Coupe de la Ligue": 3,
+    "Trophée des Champions": 3,
+    "Ligue des Champions": 1,
+    "Coupe Intertoto": 1
+  }
+}

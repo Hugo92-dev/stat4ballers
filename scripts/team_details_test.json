@@ -1,0 +1,882 @@
+{
+  "data": {
+    "id": 44,
+    "sport_id": 1,
+    "country_id": 17,
+    "venue_id": 6159,
+    "gender": "male",
+    "name": "Olympique Marseille",
+    "short_code": "OM",
+    "image_path": "https://cdn.sportmonks.com/images/soccer/teams/12/44.png",
+    "founded": 1899,
+    "type": "domestic",
+    "placeholder": false,
+    "last_played_at": "2025-08-23 15:00:00",
+    "coaches": [
+      {
+        "id": 27,
+        "team_id": 44,
+        "coach_id": 456014,
+        "position_id": 221,
+        "active": false,
+        "start": "2021-03-08",
+        "end": "2022-07-03",
+        "temporary": false
+      },
+      {
+        "id": 2300134,
+        "team_id": 44,
+        "coach_id": 33525,
+        "position_id": 560,
+        "active": false,
+        "start": "2023-09-20",
+        "end": "2023-09-26",
+        "temporary": false
+      },
+      {
+        "id": 2327881,
+        "team_id": 44,
+        "coach_id": 127965,
+        "position_id": 221,
+        "active": false,
+        "start": "2023-09-27",
+        "end": "2024-02-19",
+        "temporary": false
+      },
+      {
+        "id": 2327882,
+        "team_id": 44,
+        "coach_id": 33525,
+        "position_id": 221,
+        "active": false,
+        "start": "2023-07-01",
+        "end": "2023-09-26",
+        "temporary": false
+      },
+      {
+        "id": 2090592,
+        "team_id": 44,
+        "coach_id": 1467953,
+        "position_id": 221,
+        "active": false,
+        "start": "2023-07-01",
+        "end": "2023-09-19",
+        "temporary": false
+      },
+      {
+        "id": 3431899,
+        "team_id": 44,
+        "coach_id": 455928,
+        "position_id": 221,
+        "active": false,
+        "start": "2024-02-20",
+        "end": "2024-06-30",
+        "temporary": false
+      },
+      {
+        "id": 75080,
+        "team_id": 44,
+        "coach_id": 407845,
+        "position_id": 221,
+        "active": false,
+        "start": "2022-07-04",
+        "end": "2024-06-30",
+        "temporary": false
+      },
+      {
+        "id": 4369498,
+        "team_id": 44,
+        "coach_id": 127889,
+        "position_id": 221,
+        "active": false,
+        "start": "2024-07-01",
+        "end": "2025-08-13",
+        "temporary": false
+      },
+      {
+        "id": 8286473,
+        "team_id": 44,
+        "coach_id": 127889,
+        "position_id": 221,
+        "active": true,
+        "start": null,
+        "end": "2027-06-30",
+        "temporary": false
+      }
+    ],
+    "venue": {
+      "id": 6159,
+      "country_id": 17,
+      "city_id": 54981,
+      "name": "Stade Vélodrome",
+      "address": "3, boulevard Michelet",
+      "zipcode": null,
+      "latitude": "43.269722",
+      "longitude": "5.395833",
+      "capacity": 67000,
+      "image_path": "https://cdn.sportmonks.com/images/soccer/venues/15/6159.png",
+      "city_name": "Marseille",
+      "surface": "grass",
+      "national_team": false
+    },
+    "statistics": [
+      {
+        "id": 40184,
+        "team_id": 44,
+        "season_id": 758,
+        "has_values": true
+      },
+      {
+        "id": 40382,
+        "team_id": 44,
+        "season_id": 760,
+        "has_values": true
+      },
+      {
+        "id": 40628,
+        "team_id": 44,
+        "season_id": 765,
+        "has_values": true
+      },
+      {
+        "id": 47029,
+        "team_id": 44,
+        "season_id": 1029,
+        "has_values": true
+      },
+      {
+        "id": 54380,
+        "team_id": 44,
+        "season_id": 1380,
+        "has_values": true
+      },
+      {
+        "id": 54400,
+        "team_id": 44,
+        "season_id": 1381,
+        "has_values": true
+      },
+      {
+        "id": 54420,
+        "team_id": 44,
+        "season_id": 1382,
+        "has_values": true
+      },
+      {
+        "id": 54440,
+        "team_id": 44,
+        "season_id": 1383,
+        "has_values": true
+      },
+      {
+        "id": 54459,
+        "team_id": 44,
+        "season_id": 1384,
+        "has_values": true
+      },
+      {
+        "id": 54478,
+        "team_id": 44,
+        "season_id": 1385,
+        "has_values": true
+      },
+      {
+        "id": 54497,
+        "team_id": 44,
+        "season_id": 1386,
+        "has_values": true
+      },
+      {
+        "id": 54520,
+        "team_id": 44,
+        "season_id": 1387,
+        "has_values": true
+      },
+      {
+        "id": 54541,
+        "team_id": 44,
+        "season_id": 1388,
+        "has_values": true
+      },
+      {
+        "id": 54557,
+        "team_id": 44,
+        "season_id": 1389,
+        "has_values": true
+      },
+      {
+        "id": 54580,
+        "team_id": 44,
+        "season_id": 1390,
+        "has_values": true
+      },
+      {
+        "id": 105468,
+        "team_id": 44,
+        "season_id": 5309,
+        "has_values": true
+      },
+      {
+        "id": 105536,
+        "team_id": 44,
+        "season_id": 5310,
+        "has_values": true
+      },
+      {
+        "id": 105619,
+        "team_id": 44,
+        "season_id": 5311,
+        "has_values": true
+      },
+      {
+        "id": 105681,
+        "team_id": 44,
+        "season_id": 5312,
+        "has_values": true
+      },
+      {
+        "id": 105780,
+        "team_id": 44,
+        "season_id": 5313,
+        "has_values": true
+      },
+      {
+        "id": 105826,
+        "team_id": 44,
+        "season_id": 5315,
+        "has_values": true
+      },
+      {
+        "id": 106139,
+        "team_id": 44,
+        "season_id": 5326,
+        "has_values": true
+      },
+      {
+        "id": 106311,
+        "team_id": 44,
+        "season_id": 5327,
+        "has_values": true
+      },
+      {
+        "id": 106422,
+        "team_id": 44,
+        "season_id": 5328,
+        "has_values": true
+      },
+      {
+        "id": 15158,
+        "team_id": 44,
+        "season_id": 5329,
+        "has_values": true
+      },
+      {
+        "id": 106725,
+        "team_id": 44,
+        "season_id": 5330,
+        "has_values": true
+      },
+      {
+        "id": 107301,
+        "team_id": 44,
+        "season_id": 5333,
+        "has_values": true
+      },
+      {
+        "id": 107861,
+        "team_id": 44,
+        "season_id": 5337,
+        "has_values": true
+      },
+      {
+        "id": 120137,
+        "team_id": 44,
+        "season_id": 5460,
+        "has_values": true
+      },
+      {
+        "id": 120203,
+        "team_id": 44,
+        "season_id": 5461,
+        "has_values": true
+      },
+      {
+        "id": 120260,
+        "team_id": 44,
+        "season_id": 5462,
+        "has_values": true
+      },
+      {
+        "id": 120292,
+        "team_id": 44,
+        "season_id": 5463,
+        "has_values": true
+      },
+      {
+        "id": 120400,
+        "team_id": 44,
+        "season_id": 5464,
+        "has_values": true
+      },
+      {
+        "id": 120507,
+        "team_id": 44,
+        "season_id": 5465,
+        "has_values": true
+      },
+      {
+        "id": 120714,
+        "team_id": 44,
+        "season_id": 5466,
+        "has_values": true
+      },
+      {
+        "id": 120898,
+        "team_id": 44,
+        "season_id": 5467,
+        "has_values": true
+      },
+      {
+        "id": 121097,
+        "team_id": 44,
+        "season_id": 5468,
+        "has_values": true
+      },
+      {
+        "id": 121290,
+        "team_id": 44,
+        "season_id": 5469,
+        "has_values": true
+      },
+      {
+        "id": 121486,
+        "team_id": 44,
+        "season_id": 5472,
+        "has_values": true
+      },
+      {
+        "id": 121677,
+        "team_id": 44,
+        "season_id": 5474,
+        "has_values": true
+      },
+      {
+        "id": 121724,
+        "team_id": 44,
+        "season_id": 5475,
+        "has_values": true
+      },
+      {
+        "id": 121767,
+        "team_id": 44,
+        "season_id": 5476,
+        "has_values": true
+      },
+      {
+        "id": 121803,
+        "team_id": 44,
+        "season_id": 5477,
+        "has_values": true
+      },
+      {
+        "id": 121850,
+        "team_id": 44,
+        "season_id": 5478,
+        "has_values": true
+      },
+      {
+        "id": 121899,
+        "team_id": 44,
+        "season_id": 5479,
+        "has_values": true
+      },
+      {
+        "id": 121943,
+        "team_id": 44,
+        "season_id": 5480,
+        "has_values": true
+      },
+      {
+        "id": 121978,
+        "team_id": 44,
+        "season_id": 5481,
+        "has_values": true
+      },
+      {
+        "id": 122032,
+        "team_id": 44,
+        "season_id": 5482,
+        "has_values": true
+      },
+      {
+        "id": 122074,
+        "team_id": 44,
+        "season_id": 5483,
+        "has_values": true
+      },
+      {
+        "id": 122110,
+        "team_id": 44,
+        "season_id": 5484,
+        "has_values": true
+      },
+      {
+        "id": 142284,
+        "team_id": 44,
+        "season_id": 5929,
+        "has_values": true
+      },
+      {
+        "id": 142292,
+        "team_id": 44,
+        "season_id": 5930,
+        "has_values": true
+      },
+      {
+        "id": 147279,
+        "team_id": 44,
+        "season_id": 6405,
+        "has_values": true
+      },
+      {
+        "id": 147819,
+        "team_id": 44,
+        "season_id": 7899,
+        "has_values": true
+      },
+      {
+        "id": 148907,
+        "team_id": 44,
+        "season_id": 7903,
+        "has_values": true
+      },
+      {
+        "id": 151410,
+        "team_id": 44,
+        "season_id": 7908,
+        "has_values": true
+      },
+      {
+        "id": 20758,
+        "team_id": 44,
+        "season_id": 8403,
+        "has_values": true
+      },
+      {
+        "id": 161397,
+        "team_id": 44,
+        "season_id": 10680,
+        "has_values": true
+      },
+      {
+        "id": 164357,
+        "team_id": 44,
+        "season_id": 11986,
+        "has_values": true
+      },
+      {
+        "id": 171799,
+        "team_id": 44,
+        "season_id": 12935,
+        "has_values": true
+      },
+      {
+        "id": 172055,
+        "team_id": 44,
+        "season_id": 12945,
+        "has_values": true
+      },
+      {
+        "id": 175093,
+        "team_id": 44,
+        "season_id": 13109,
+        "has_values": true
+      },
+      {
+        "id": 181703,
+        "team_id": 44,
+        "season_id": 15293,
+        "has_values": true
+      },
+      {
+        "id": 183967,
+        "team_id": 44,
+        "season_id": 15587,
+        "has_values": true
+      },
+      {
+        "id": 194598,
+        "team_id": 44,
+        "season_id": 16043,
+        "has_values": true
+      },
+      {
+        "id": 195720,
+        "team_id": 44,
+        "season_id": 16238,
+        "has_values": true
+      },
+      {
+        "id": 206827,
+        "team_id": 44,
+        "season_id": 16701,
+        "has_values": true
+      },
+      {
+        "id": 208428,
+        "team_id": 44,
+        "season_id": 16783,
+        "has_values": true
+      },
+      {
+        "id": 215841,
+        "team_id": 44,
+        "season_id": 17160,
+        "has_values": true
+      },
+      {
+        "id": 218258,
+        "team_id": 44,
+        "season_id": 17299,
+        "has_values": true
+      },
+      {
+        "id": 229707,
+        "team_id": 44,
+        "season_id": 17805,
+        "has_values": true
+      },
+      {
+        "id": 229895,
+        "team_id": 44,
+        "season_id": 17807,
+        "has_values": true
+      },
+      {
+        "id": 9891,
+        "team_id": 44,
+        "season_id": 18283,
+        "has_values": true
+      },
+      {
+        "id": 2629,
+        "team_id": 44,
+        "season_id": 18441,
+        "has_values": true
+      },
+      {
+        "id": 239564,
+        "team_id": 44,
+        "season_id": 18629,
+        "has_values": true
+      },
+      {
+        "id": 245265,
+        "team_id": 44,
+        "season_id": 19088,
+        "has_values": true
+      },
+      {
+        "id": 6127,
+        "team_id": 44,
+        "season_id": 19105,
+        "has_values": true
+      },
+      {
+        "id": 246285,
+        "team_id": 44,
+        "season_id": 19189,
+        "has_values": true
+      },
+      {
+        "id": 249830,
+        "team_id": 44,
+        "season_id": 19259,
+        "has_values": true
+      },
+      {
+        "id": 256771,
+        "team_id": 44,
+        "season_id": 19699,
+        "has_values": true
+      },
+      {
+        "id": 257523,
+        "team_id": 44,
+        "season_id": 19745,
+        "has_values": true
+      },
+      {
+        "id": 288243,
+        "team_id": 44,
+        "season_id": 20829,
+        "has_values": true
+      },
+      {
+        "id": 302226,
+        "team_id": 44,
+        "season_id": 20861,
+        "has_values": true
+      },
+      {
+        "id": 310118,
+        "team_id": 44,
+        "season_id": 21638,
+        "has_values": true
+      },
+      {
+        "id": 296516,
+        "team_id": 44,
+        "season_id": 21779,
+        "has_values": true
+      },
+      {
+        "id": 317165,
+        "team_id": 44,
+        "season_id": 22130,
+        "has_values": true
+      },
+      {
+        "id": 330464,
+        "team_id": 44,
+        "season_id": 22824,
+        "has_values": true
+      },
+      {
+        "id": 349182,
+        "team_id": 44,
+        "season_id": 23026,
+        "has_values": true
+      },
+      {
+        "id": 343402,
+        "team_id": 44,
+        "season_id": 23499,
+        "has_values": false
+      },
+      {
+        "id": 347682,
+        "team_id": 44,
+        "season_id": 23643,
+        "has_values": true
+      },
+      {
+        "id": 362312,
+        "team_id": 44,
+        "season_id": 24215,
+        "has_values": false
+      },
+      {
+        "id": 363569,
+        "team_id": 44,
+        "season_id": 24251,
+        "has_values": true
+      },
+      {
+        "id": 377967,
+        "team_id": 44,
+        "season_id": 24721,
+        "has_values": true
+      },
+      {
+        "id": 406175,
+        "team_id": 44,
+        "season_id": 24893,
+        "has_values": true
+      },
+      {
+        "id": 395771,
+        "team_id": 44,
+        "season_id": 25651,
+        "has_values": true
+      },
+      {
+        "id": 400201,
+        "team_id": 44,
+        "season_id": 25655,
+        "has_values": false
+      }
+    ],
+    "trophies": [
+      {
+        "id": 12252505,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 5,
+        "season_id": 24251,
+        "trophy_id": 2
+      },
+      {
+        "id": 12272870,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 301,
+        "season_id": 23643,
+        "trophy_id": 2
+      },
+      {
+        "id": 88981,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 301,
+        "season_id": 1385,
+        "trophy_id": 2
+      },
+      {
+        "id": 88980,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 301,
+        "season_id": 1381,
+        "trophy_id": 2
+      },
+      {
+        "id": 3260,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 307,
+        "season_id": 5460,
+        "trophy_id": 2
+      },
+      {
+        "id": 3286,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 307,
+        "season_id": 5472,
+        "trophy_id": 2
+      },
+      {
+        "id": 89071,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 301,
+        "season_id": 1387,
+        "trophy_id": 2
+      },
+      {
+        "id": 88750,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 301,
+        "season_id": 1383,
+        "trophy_id": 2
+      },
+      {
+        "id": 88966,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 301,
+        "season_id": 1384,
+        "trophy_id": 1
+      },
+      {
+        "id": 124424,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 301,
+        "season_id": 16043,
+        "trophy_id": 2
+      },
+      {
+        "id": 152388,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 301,
+        "season_id": 18441,
+        "trophy_id": 2
+      },
+      {
+        "id": 11107,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 1176,
+        "season_id": 15573,
+        "trophy_id": 2
+      },
+      {
+        "id": 7127,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 5,
+        "season_id": 7908,
+        "trophy_id": 2
+      },
+      {
+        "id": 5120,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 310,
+        "season_id": 5480,
+        "trophy_id": 2
+      },
+      {
+        "id": 4595,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 1176,
+        "season_id": 5930,
+        "trophy_id": 1
+      },
+      {
+        "id": 3279,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 310,
+        "season_id": 5478,
+        "trophy_id": 1
+      },
+      {
+        "id": 3262,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 307,
+        "season_id": 5461,
+        "trophy_id": 2
+      },
+      {
+        "id": 3284,
+        "participant_id": 44,
+        "team_id": null,
+        "league_id": 310,
+        "season_id": 5479,
+        "trophy_id": 1
+      }
+    ]
+  },
+  "subscription": [
+    {
+      "meta": {
+        "trial_ends_at": "2020-01-20 17:42:41",
+        "ends_at": "2025-08-19 21:28:43",
+        "current_timestamp": 1756042756
+      },
+      "plans": [
+        {
+          "plan": "SportsMole custom plan 2",
+          "sport": "Football",
+          "category": "Custom"
+        }
+      ],
+      "add_ons": [
+        {
+          "add_on": "SportsMole custom plan Predictions",
+          "sport": "Football",
+          "category": "Predictions"
+        },
+        {
+          "add_on": "Widgets Free",
+          "sport": "Football",
+          "category": "Widgets"
+        }
+      ],
+      "widgets": []
+    }
+  ],
+  "rate_limit": {
+    "resets_in_seconds": 2694,
+    "remaining": 2993,
+    "requested_entity": "Team"
+  },
+  "timezone": "UTC"
+}
