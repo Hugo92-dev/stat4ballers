@@ -9,14 +9,21 @@ import { teamDetails } from '@/data/teamDetails';
 
 interface Player {
   id: string | number;
-  name: string;
+  name?: string;
+  nom?: string;
+  displayName?: string;
   position: string;
   nationality?: string;
+  nationalite?: string;
   jersey_number?: number | null;
+  numero?: number | null;
   age?: string;
   height?: number | null;
+  taille?: number | null;
   weight?: number | null;
+  poids?: number | null;
   image?: string;
+  playerSlug?: string;
 }
 
 interface Team {
@@ -78,19 +85,23 @@ export default function ClubPageEnhanced({
   };
   
   // Filtrer les joueurs selon la recherche
-  const filteredPlayers = team.players.filter(player =>
-    player.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    player.position.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    (player.nationality && player.nationality.toLowerCase().includes(searchTerm.toLowerCase()))
-  );
+  const filteredPlayers = team.players.filter(player => {
+    const name = player.nom || player.name || '';
+    const position = player.position || '';
+    const nationality = player.nationalite || player.nationality || '';
+    
+    return name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+           position.toLowerCase().includes(searchTerm.toLowerCase()) ||
+           nationality.toLowerCase().includes(searchTerm.toLowerCase());
+  });
   
   // Grouper les joueurs par position
   const playersByPosition = {
-    GK: filteredPlayers.filter(p => p.position === 'GK'),
-    DF: filteredPlayers.filter(p => ['DF', 'CB', 'LB', 'RB'].includes(p.position)),
-    MF: filteredPlayers.filter(p => ['MF', 'DM', 'CM', 'AM', 'LM', 'RM'].includes(p.position)),
-    FW: filteredPlayers.filter(p => ['FW', 'ST', 'CF', 'LW', 'RW'].includes(p.position)),
-    Unknown: filteredPlayers.filter(p => p.position === 'Unknown')
+    GK: filteredPlayers.filter(p => p.position === 'GK' || p.position === 'Goalkeeper'),
+    DF: filteredPlayers.filter(p => ['DF', 'CB', 'LB', 'RB', 'Defender'].includes(p.position)),
+    MF: filteredPlayers.filter(p => ['MF', 'DM', 'CM', 'AM', 'LM', 'RM', 'Midfielder'].includes(p.position)),
+    FW: filteredPlayers.filter(p => ['FW', 'ST', 'CF', 'LW', 'RW', 'Attacker'].includes(p.position)),
+    Unknown: filteredPlayers.filter(p => p.position === 'Unknown' || !p.position)
   };
   
   const getPositionLabel = (key: string) => {
@@ -222,7 +233,12 @@ export default function ClubPageEnhanced({
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {players.map((player) => {
-                  const playerSlug = slugifyPlayer(player.name);
+                  const playerName = player.displayName || player.nom || player.name || 'Unknown';
+                  const playerSlug = player.playerSlug || slugifyPlayer(playerName);
+                  const jerseyNumber = player.numero ?? player.jersey_number;
+                  const nationality = player.nationalite || player.nationality;
+                  const height = player.taille ?? player.height;
+                  const weight = player.poids ?? player.weight;
                   
                   return (
                     <Link
@@ -235,7 +251,7 @@ export default function ClubPageEnhanced({
                           {player.image ? (
                             <Image
                               src={player.image}
-                              alt={player.name}
+                              alt={playerName}
                               fill
                               className="object-cover"
                             />
@@ -246,32 +262,32 @@ export default function ClubPageEnhanced({
                               </svg>
                             </div>
                           )}
-                          {player.jersey_number && (
+                          {jerseyNumber && (
                             <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                              {player.jersey_number}
+                              {jerseyNumber}
                             </div>
                           )}
                         </div>
                         
                         <div className="flex-1 min-w-0">
                           <h3 className="font-semibold text-white group-hover:text-blue-400 transition-colors truncate">
-                            {player.name}
+                            {playerName}
                           </h3>
                           <div className="flex items-center gap-3 text-sm text-gray-400 mt-1">
                             <span>{player.position}</span>
-                            {player.nationality && (
+                            {nationality && (
                               <>
                                 <span className="text-gray-600">•</span>
-                                <span className="truncate">{player.nationality}</span>
+                                <span className="truncate">{nationality}</span>
                               </>
                             )}
                           </div>
                           <div className="flex items-center gap-3 text-xs text-gray-500 mt-1">
                             {player.age && <span>{player.age} ans</span>}
-                            {player.height && (
+                            {height && (
                               <>
                                 {player.age && <span className="text-gray-600">•</span>}
-                                <span>{player.height} cm</span>
+                                <span>{height} cm</span>
                               </>
                             )}
                           </div>

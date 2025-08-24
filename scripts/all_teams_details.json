@@ -1,0 +1,688 @@
+{
+  "ligue1": {
+    "marseille": {
+      "slug": "marseille",
+      "id": 44,
+      "name": "Olympique Marseille",
+      "founded": 1899,
+      "stadium": "Stade Vélodrome",
+      "capacity": 67000
+    },
+    "psg": {
+      "slug": "psg",
+      "id": 85,
+      "name": "FC København",
+      "founded": 1992,
+      "stadium": "Parken",
+      "capacity": 38190
+    },
+    "lyon": {
+      "slug": "lyon",
+      "id": 80,
+      "name": "AFC Eskilstuna",
+      "founded": 2005,
+      "stadium": "Tunavallen",
+      "capacity": 7800
+    },
+    "monaco": {
+      "slug": "monaco",
+      "id": 91,
+      "name": "Shabab Al Ahli Dubai",
+      "founded": 1970,
+      "stadium": "Al-Rashid Stadium",
+      "capacity": 10000
+    },
+    "lille": {
+      "slug": "lille",
+      "id": 79,
+      "name": "Olympique Lyonnais",
+      "founded": 1950,
+      "stadium": "Groupama Stadium",
+      "capacity": 59186
+    },
+    "nice": {
+      "slug": "nice",
+      "id": 72,
+      "name": "Newport County",
+      "founded": 1912,
+      "stadium": "Rodney Parade",
+      "capacity": 7850
+    },
+    "lens": {
+      "slug": "lens",
+      "id": 78,
+      "name": "Brighton & Hove Albion",
+      "founded": 1901,
+      "stadium": "The American Express Community Stadium",
+      "capacity": 31876
+    },
+    "rennes": {
+      "slug": "rennes",
+      "id": 77,
+      "name": "Leicester City U23",
+      "founded": null,
+      "stadium": "Holmes Park",
+      "capacity": 32312
+    },
+    "strasbourg": {
+      "slug": "strasbourg",
+      "id": 1020,
+      "name": "Aalborg BK",
+      "founded": 1885,
+      "stadium": "Aalborg Portland Park",
+      "capacity": 13310
+    },
+    "nantes": {
+      "slug": "nantes",
+      "id": 92,
+      "name": "York City",
+      "founded": 1922,
+      "stadium": "LNER Community Stadium",
+      "capacity": 2300
+    },
+    "brest": {
+      "slug": "brest",
+      "id": 83,
+      "name": "FC Barcelona",
+      "founded": 1899,
+      "stadium": "Estadi Olímpic Lluís Companys",
+      "capacity": 57619
+    },
+    "toulouse": {
+      "slug": "toulouse",
+      "id": 74,
+      "name": "Colchester United",
+      "founded": 1937,
+      "stadium": "JobServe Community Stadium",
+      "capacity": 10105
+    },
+    "auxerre": {
+      "slug": "auxerre",
+      "id": 631,
+      "name": "Swansea City U23",
+      "founded": 0
+    },
+    "angers": {
+      "slug": "angers",
+      "id": 234,
+      "name": "Slovácko",
+      "founded": 1927,
+      "stadium": "Městský fotbalový stadion Miroslava Valenty",
+      "capacity": 8000
+    },
+    "le-havre": {
+      "slug": "le-havre",
+      "id": 73,
+      "name": "Feyenoord",
+      "founded": 1908,
+      "stadium": "Stadion Feijenoord",
+      "capacity": 51177
+    },
+    "montpellier": {
+      "slug": "montpellier",
+      "id": 89,
+      "name": "Crotone",
+      "founded": 1923,
+      "stadium": "Stadio Ezio Scida",
+      "capacity": 16640
+    },
+    "reims": {
+      "slug": "reims",
+      "id": 75,
+      "name": "Chicago Fire",
+      "founded": 1997,
+      "stadium": "Toyota Park",
+      "capacity": 20000
+    },
+    "saint-etienne": {
+      "slug": "saint-etienne",
+      "id": 82,
+      "name": "Werder Bremen",
+      "founded": 1899,
+      "stadium": "Weserstadion",
+      "capacity": 5500
+    }
+  },
+  "premier-league": {
+    "manchester-united": {
+      "slug": "manchester-united",
+      "id": 14,
+      "name": "Manchester United",
+      "founded": 1878,
+      "stadium": "Old Trafford",
+      "capacity": 74879
+    },
+    "manchester-city": {
+      "slug": "manchester-city",
+      "id": 11,
+      "name": "Fulham",
+      "founded": 1879,
+      "stadium": "Craven Cottage",
+      "capacity": 25700
+    },
+    "liverpool": {
+      "slug": "liverpool",
+      "id": 8,
+      "name": "Liverpool",
+      "founded": 1892,
+      "stadium": "Anfield",
+      "capacity": 61276
+    },
+    "chelsea": {
+      "slug": "chelsea",
+      "id": 18,
+      "name": "Chelsea",
+      "founded": 1905,
+      "stadium": "Stamford Bridge",
+      "capacity": 40341
+    },
+    "arsenal": {
+      "slug": "arsenal",
+      "id": 42,
+      "name": "Leicester City",
+      "founded": 1884,
+      "stadium": "King Power Stadium",
+      "capacity": 32312
+    },
+    "tottenham": {
+      "slug": "tottenham",
+      "id": 6,
+      "name": "Tottenham Hotspur",
+      "founded": 1882,
+      "stadium": "Tottenham Hotspur Stadium",
+      "capacity": 62850
+    },
+    "newcastle": {
+      "slug": "newcastle",
+      "id": 13,
+      "name": "Everton",
+      "founded": 1878,
+      "stadium": "Hill Dickinson Stadium",
+      "capacity": 52769
+    },
+    "west-ham": {
+      "slug": "west-ham",
+      "id": 5,
+      "name": "Portsmouth",
+      "founded": 1898,
+      "stadium": "Fratton Park",
+      "capacity": 20899
+    },
+    "everton": {
+      "slug": "everton",
+      "id": 7,
+      "name": "Middlesbrough",
+      "founded": 1876,
+      "stadium": "Riverside Stadium",
+      "capacity": 34988
+    },
+    "brighton": {
+      "slug": "brighton",
+      "id": 397,
+      "name": "Empoli",
+      "founded": 1920,
+      "stadium": "Stadio Carlo Castellani",
+      "capacity": 16284
+    },
+    "aston-villa": {
+      "slug": "aston-villa",
+      "id": 9,
+      "name": "Manchester City",
+      "founded": 1880,
+      "stadium": "Etihad Stadium",
+      "capacity": 53400
+    },
+    "nottingham-forest": {
+      "slug": "nottingham-forest",
+      "id": 17,
+      "name": "Wigan Athletic",
+      "founded": 1932,
+      "stadium": "The DW Stadium",
+      "capacity": 25138
+    },
+    "crystal-palace": {
+      "slug": "crystal-palace",
+      "id": 3,
+      "name": "Sunderland",
+      "founded": 1879,
+      "stadium": "Stadium of Light",
+      "capacity": 48707
+    },
+    "fulham": {
+      "slug": "fulham",
+      "id": 20,
+      "name": "Newcastle United",
+      "founded": 1892,
+      "stadium": "St. James' Park",
+      "capacity": 52409
+    },
+    "brentford": {
+      "slug": "brentford",
+      "id": 338,
+      "name": "Hamilton Academical",
+      "founded": 1874,
+      "stadium": "The Hope CBD Stadium",
+      "capacity": 5510
+    },
+    "wolves": {
+      "slug": "wolves",
+      "id": 22,
+      "name": "Hull City",
+      "founded": 1904,
+      "stadium": "KCOM Stadium",
+      "capacity": 25586
+    },
+    "bournemouth": {
+      "slug": "bournemouth",
+      "id": 43,
+      "name": "Lazio",
+      "founded": 1900,
+      "stadium": "Stadio Olimpico",
+      "capacity": 16310
+    },
+    "leicester": {
+      "slug": "leicester",
+      "id": 10,
+      "name": "West Bromwich Albion",
+      "founded": 1878,
+      "stadium": "The Hawthorns",
+      "capacity": 26688
+    },
+    "southampton": {
+      "slug": "southampton",
+      "id": 19,
+      "name": "Arsenal",
+      "founded": 1886,
+      "stadium": "Emirates Stadium",
+      "capacity": 60704
+    },
+    "ipswich": {
+      "slug": "ipswich",
+      "id": 343,
+      "name": "Fylde",
+      "founded": 1988,
+      "stadium": "Mill Farm Stadium",
+      "capacity": 1500
+    }
+  },
+  "la-liga": {
+    "real-madrid": {
+      "slug": "real-madrid",
+      "id": 3468,
+      "name": "Real Madrid",
+      "founded": 1902,
+      "stadium": "Estadio Santiago Bernabéu",
+      "capacity": 84744
+    },
+    "barcelona": {
+      "slug": "barcelona",
+      "id": 83,
+      "name": "FC Barcelona",
+      "founded": 1899,
+      "stadium": "Estadi Olímpic Lluís Companys",
+      "capacity": 57619
+    },
+    "atletico-madrid": {
+      "slug": "atletico-madrid",
+      "id": 78,
+      "name": "Brighton & Hove Albion",
+      "founded": 1901,
+      "stadium": "The American Express Community Stadium",
+      "capacity": 31876
+    },
+    "sevilla": {
+      "slug": "sevilla",
+      "id": 95,
+      "name": "Global",
+      "founded": null
+    },
+    "valencia": {
+      "slug": "valencia",
+      "id": 100,
+      "name": "Ebbsfleet United",
+      "founded": 1946,
+      "stadium": "Stonebridge Road",
+      "capacity": 5011
+    },
+    "villarreal": {
+      "slug": "villarreal",
+      "id": 102,
+      "name": "Genoa",
+      "founded": 1893,
+      "stadium": "Stadio Comunale Luigi Ferraris",
+      "capacity": 33205
+    },
+    "athletic-bilbao": {
+      "slug": "athletic-bilbao",
+      "id": 77,
+      "name": "Leicester City U23",
+      "founded": null,
+      "stadium": "Holmes Park",
+      "capacity": 32312
+    },
+    "real-sociedad": {
+      "slug": "real-sociedad",
+      "id": 86,
+      "name": "Silkeborg IF",
+      "founded": 1917,
+      "stadium": "JYSK park",
+      "capacity": 10000
+    },
+    "real-betis": {
+      "slug": "real-betis",
+      "id": 90,
+      "name": "FC Augsburg",
+      "founded": 1907,
+      "stadium": "WWK Arena",
+      "capacity": 30660
+    },
+    "osasuna": {
+      "slug": "osasuna",
+      "id": 93,
+      "name": "Real Oviedo",
+      "founded": 1926,
+      "stadium": "Estadio Nuevo Carlos Tartiere",
+      "capacity": 5000
+    },
+    "celta-vigo": {
+      "slug": "celta-vigo",
+      "id": 80,
+      "name": "AFC Eskilstuna",
+      "founded": 2005,
+      "stadium": "Tunavallen",
+      "capacity": 7800
+    },
+    "rayo-vallecano": {
+      "slug": "rayo-vallecano",
+      "id": 87,
+      "name": "Crewe Alexandra",
+      "founded": 1877,
+      "stadium": "Alexandra Stadium",
+      "capacity": 10153
+    },
+    "getafe": {
+      "slug": "getafe",
+      "id": 82,
+      "name": "Werder Bremen",
+      "founded": 1899,
+      "stadium": "Weserstadion",
+      "capacity": 5500
+    },
+    "mallorca": {
+      "slug": "mallorca",
+      "id": 91,
+      "name": "Shabab Al Ahli Dubai",
+      "founded": 1970,
+      "stadium": "Al-Rashid Stadium",
+      "capacity": 10000
+    },
+    "alaves": {
+      "slug": "alaves",
+      "id": 76,
+      "name": "Walsall",
+      "founded": 1888,
+      "stadium": "Poundland Bescot Stadium",
+      "capacity": 11300
+    },
+    "espanyol": {
+      "slug": "espanyol",
+      "id": 81,
+      "name": "Antalyaspor",
+      "founded": 1966,
+      "stadium": "Antalya Stadyumu",
+      "capacity": 32537
+    },
+    "girona": {
+      "slug": "girona",
+      "id": 2394,
+      "name": "Nordsjælland",
+      "founded": 2003,
+      "stadium": "Right to Dream Park",
+      "capacity": 10100
+    },
+    "valladolid": {
+      "slug": "valladolid",
+      "id": 716,
+      "name": "Chelsea U23",
+      "founded": 0,
+      "stadium": "The EBB Stadium.",
+      "capacity": 7100
+    }
+  },
+  "serie-a": {
+    "juventus": {
+      "slug": "juventus",
+      "id": 496,
+      "name": "St. Mirren",
+      "founded": 1877,
+      "stadium": "The Smisa Stadium",
+      "capacity": 7937
+    },
+    "milan": {
+      "slug": "milan",
+      "id": 113,
+      "name": "Milan",
+      "founded": 1899,
+      "stadium": "Stadio Giuseppe Meazza",
+      "capacity": 75817
+    },
+    "inter": {
+      "slug": "inter",
+      "id": 108,
+      "name": "Saint-Étienne",
+      "founded": 1920,
+      "stadium": "Stade Geoffroy-Guichard",
+      "capacity": 41965
+    },
+    "napoli": {
+      "slug": "napoli",
+      "id": 118,
+      "name": "OFI",
+      "founded": 1925,
+      "stadium": "Stadio Thódoros Vardinoyánnis",
+      "capacity": 9088
+    },
+    "lazio": {
+      "slug": "lazio",
+      "id": 110,
+      "name": "Plymouth Argyle",
+      "founded": 1886,
+      "stadium": "Home Park",
+      "capacity": 17150
+    },
+    "fiorentina": {
+      "slug": "fiorentina",
+      "id": 99,
+      "name": "Preston North End",
+      "founded": 1863,
+      "stadium": "Deepdale",
+      "capacity": 23408
+    },
+    "atalanta": {
+      "slug": "atalanta",
+      "id": 102,
+      "name": "Genoa",
+      "founded": 1893,
+      "stadium": "Stadio Comunale Luigi Ferraris",
+      "capacity": 33205
+    },
+    "bologna": {
+      "slug": "bologna",
+      "id": 103,
+      "name": "Granada",
+      "founded": 1931,
+      "stadium": "Estadio Nuevo Los Cármenes",
+      "capacity": 22524
+    },
+    "torino": {
+      "slug": "torino",
+      "id": 122,
+      "name": "Bristol City",
+      "founded": 1894,
+      "stadium": "Ashton Gate Stadium",
+      "capacity": 1500
+    },
+    "udinese": {
+      "slug": "udinese",
+      "id": 492,
+      "name": "Bengaluru",
+      "founded": 2013,
+      "stadium": "Jawaharlal Nehru Stadium",
+      "capacity": 19000
+    },
+    "genoa": {
+      "slug": "genoa",
+      "id": 107,
+      "name": "Atlético Baleares",
+      "founded": 1942,
+      "stadium": "Campo de Son Malferit",
+      "capacity": 6000
+    },
+    "como": {
+      "slug": "como",
+      "id": 117,
+      "name": "Coventry City",
+      "founded": 1883,
+      "stadium": "The Coventry Building Society Arena",
+      "capacity": 32609
+    },
+    "cagliari": {
+      "slug": "cagliari",
+      "id": 605,
+      "name": "Benfica",
+      "founded": 1904,
+      "stadium": "Estádio do Sport Lisboa e Benfica",
+      "capacity": 64642
+    },
+    "empoli": {
+      "slug": "empoli",
+      "id": 98,
+      "name": "Notts County",
+      "founded": 1862,
+      "stadium": "Meadow Lane Stadium",
+      "capacity": 19588
+    }
+  },
+  "bundesliga": {
+    "bayern": {
+      "slug": "bayern",
+      "id": 21,
+      "name": "Sheffield United",
+      "founded": 1889,
+      "stadium": "Bramall Lane",
+      "capacity": 29409
+    },
+    "borussia-dortmund": {
+      "slug": "borussia-dortmund",
+      "id": 25,
+      "name": "Watford",
+      "founded": 1881,
+      "stadium": "Vicarage Road",
+      "capacity": 21400
+    },
+    "bayer-leverkusen": {
+      "slug": "bayer-leverkusen",
+      "id": 23,
+      "name": "Reading",
+      "founded": 1871,
+      "stadium": "Select Car Leasing Stadium",
+      "capacity": 24161
+    },
+    "leipzig": {
+      "slug": "leipzig",
+      "id": 173,
+      "name": "Extremadura UD",
+      "founded": 2007,
+      "stadium": "Estadio Francisco de la Hera",
+      "capacity": 11580
+    },
+    "eintracht-frankfurt": {
+      "slug": "eintracht-frankfurt",
+      "id": 32,
+      "name": "Newell's Old Boys",
+      "founded": 1903,
+      "stadium": "Estadio Marcelo Alberto Bielsa",
+      "capacity": 38095
+    },
+    "stuttgart": {
+      "slug": "stuttgart",
+      "id": 28,
+      "name": "Blackpool",
+      "founded": 1887,
+      "stadium": "Bloomfield Road",
+      "capacity": 16200
+    },
+    "wolfsburg": {
+      "slug": "wolfsburg",
+      "id": 30,
+      "name": "Swansea City",
+      "founded": 1912,
+      "stadium": "Swansea.com Stadium",
+      "capacity": 20827
+    },
+    "freiburg": {
+      "slug": "freiburg",
+      "id": 26,
+      "name": "Stoke City",
+      "founded": 1868,
+      "stadium": "Bet365 Stadium",
+      "capacity": 30089
+    },
+    "mainz": {
+      "slug": "mainz",
+      "id": 37,
+      "name": "Roma",
+      "founded": 1927,
+      "stadium": "Stadio Olimpico",
+      "capacity": 16310
+    },
+    "werder": {
+      "slug": "werder",
+      "id": 38,
+      "name": "Mattersburg",
+      "founded": 1922,
+      "stadium": "Pappelstadion",
+      "capacity": 15700
+    },
+    "hoffenheim": {
+      "slug": "hoffenheim",
+      "id": 36,
+      "name": "Celta de Vigo",
+      "founded": 1923,
+      "stadium": "Estadio de Balaídos",
+      "capacity": 25000
+    },
+    "borussia-monchengladbach": {
+      "slug": "borussia-monchengladbach",
+      "id": 24,
+      "name": "Derby County",
+      "founded": 1884,
+      "stadium": "Pride Park Stadium",
+      "capacity": 33597
+    },
+    "union-berlin": {
+      "slug": "union-berlin",
+      "id": 34,
+      "name": "Galatasaray",
+      "founded": 1905,
+      "stadium": "RAMS Park",
+      "capacity": 53978
+    },
+    "holstein-kiel": {
+      "slug": "holstein-kiel",
+      "id": 658,
+      "name": "Vicenza",
+      "founded": 1902,
+      "stadium": "Stadio Romeo Menti",
+      "capacity": 13173
+    },
+    "st-pauli": {
+      "slug": "st-pauli",
+      "id": 656,
+      "name": "Southampton U23",
+      "founded": null,
+      "stadium": "Staplewood Training Ground",
+      "capacity": 32505
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import ClubPageSerieA from '@/components/ClubPageSerieA';
+import ClubPageEnhanced from '@/components/ClubPageEnhanced';
 import { serieATeams } from '@/data/serieATeams';
 
 export default function ClubPage({ params }: { params: { club: string } }) {
@@ -19,11 +19,12 @@ export default function ClubPage({ params }: { params: { club: string } }) {
   }
 
   return (
-    <ClubPageSerieA
+    <ClubPageEnhanced
       clubId={params.club}
       clubName={club.name}
       leagueId="serie-a"
       leagueName="Serie A"
+      teams={serieATeams}
       primaryColor="#00844A"
       secondaryColor="#ffffff"
     />

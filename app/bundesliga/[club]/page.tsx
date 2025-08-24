@@ -1,4 +1,4 @@
-import ClubPageBundesliga from '@/components/ClubPageBundesliga';
+import ClubPageEnhanced from '@/components/ClubPageEnhanced';
 import { bundesligaTeams } from '@/data/bundesligaTeams';
 
 export default function ClubPage({ params }: { params: { club: string } }) {
@@ -19,11 +19,12 @@ export default function ClubPage({ params }: { params: { club: string } }) {
   }
 
   return (
-    <ClubPageBundesliga
+    <ClubPageEnhanced
       clubId={params.club}
       clubName={club.name}
       leagueId="bundesliga"
       leagueName="Bundesliga"
+      teams={bundesligaTeams}
       primaryColor="#000000"
       secondaryColor="#ffffff"
     />

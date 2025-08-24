@@ -1,4 +1,4 @@
-import ClubPageLiga from '@/components/ClubPageLiga';
+import ClubPageEnhanced from '@/components/ClubPageEnhanced';
 import { ligaTeams } from '@/data/ligaTeams';
 
 export default function ClubPage({ params }: { params: { club: string } }) {
@@ -19,11 +19,12 @@ export default function ClubPage({ params }: { params: { club: string } }) {
   }
 
   return (
-    <ClubPageLiga
+    <ClubPageEnhanced
       clubId={params.club}
       clubName={club.name}
       leagueId="liga"
       leagueName="La Liga"
+      teams={ligaTeams}
       primaryColor="#ee8707"
       secondaryColor="#ffffff"
     />
