@@ -1,0 +1,136 @@
+2025-08-24 11:29:14,989 - INFO - ============================================================
+2025-08-24 11:29:14,989 - INFO - [START] DÉBUT DE LA MISE À JOUR SÉCURISÉE DES DONNÉES
+2025-08-24 11:29:14,990 - INFO - ============================================================
+2025-08-24 11:29:14,990 - INFO - [BACKUP] Création du backup dans C:\Users\hugo\stat4ballers\scripts\backups\backup_20250824_112914
+2025-08-24 11:29:15,051 - INFO - [OK] Backup créé avec succès: C:\Users\hugo\stat4ballers\scripts\backups\backup_20250824_112914
+2025-08-24 11:29:15,051 - INFO - 
+--- Traitement de Ligue 1 ---
+2025-08-24 11:29:15,052 - INFO - [UPDATE] Récupération des effectifs pour Ligue 1, saison 25651
+2025-08-24 11:29:15,054 - INFO - [INFO] 511 équipes existantes trouvées dans ligue1Teams.ts
+2025-08-24 11:29:15,329 - INFO -   [OK] Olympique Marseille: 30 joueurs
+2025-08-24 11:29:15,453 - INFO -   [OK] LOSC Lille: 28 joueurs
+2025-08-24 11:29:15,582 - INFO -   [OK] Rennes: 27 joueurs
+2025-08-24 11:29:15,709 - INFO -   [OK] Monaco: 31 joueurs
+2025-08-24 11:29:15,841 - INFO -   [OK] Le Havre: 27 joueurs
+2025-08-24 11:29:15,996 - INFO -   [OK] Angers SCO: 28 joueurs
+2025-08-24 11:29:16,119 - INFO -   [OK] Strasbourg: 34 joueurs
+2025-08-24 11:29:16,256 - INFO -   [OK] Paris Saint Germain: 30 joueurs
+2025-08-24 11:29:16,400 - INFO -   [OK] Lens: 30 joueurs
+2025-08-24 11:29:16,526 - INFO -   [OK] Nantes: 25 joueurs
+2025-08-24 11:29:16,664 - INFO -   [OK] Metz: 25 joueurs
+2025-08-24 11:29:16,803 - INFO -   [OK] Toulouse: 26 joueurs
+2025-08-24 11:29:16,921 - INFO -   [OK] Brest: 21 joueurs
+2025-08-24 11:29:17,113 - INFO -   [OK] Lorient: 25 joueurs
+2025-08-24 11:29:17,229 - INFO -   [OK] Nice: 32 joueurs
+2025-08-24 11:29:17,353 - INFO -   [OK] Auxerre: 27 joueurs
+2025-08-24 11:29:17,471 - INFO -   [OK] Paris: 29 joueurs
+2025-08-24 11:29:17,628 - INFO -   [OK] Olympique Lyonnais: 28 joueurs
+2025-08-24 11:29:17,702 - INFO - [OK] Fichier généré et validé: ligue1Teams.ts
+2025-08-24 11:29:17,703 - INFO - 
+--- Traitement de Premier League ---
+2025-08-24 11:29:17,703 - INFO - [UPDATE] Récupération des effectifs pour Premier League, saison 25583
+2025-08-24 11:29:17,779 - INFO - [INFO] 628 équipes existantes trouvées dans premierLeagueTeams.ts
+2025-08-24 11:29:18,054 - INFO -   [OK] Brighton & Hove Albion: 33 joueurs
+2025-08-24 11:29:18,198 - INFO -   [OK] Fulham: 23 joueurs
+2025-08-24 11:29:18,346 - INFO -   [OK] Liverpool: 29 joueurs
+2025-08-24 11:29:18,464 - INFO -   [OK] Arsenal: 28 joueurs
+2025-08-24 11:29:18,607 - INFO -   [OK] Wolverhampton Wanderers: 28 joueurs
+2025-08-24 11:29:18,721 - INFO -   [OK] Leeds United: 30 joueurs
+2025-08-24 11:29:18,866 - INFO -   [OK] Crystal Palace: 29 joueurs
+2025-08-24 11:29:19,043 - INFO -   [OK] Manchester United: 31 joueurs
+2025-08-24 11:29:19,213 - INFO -   [OK] Brentford: 31 joueurs
+2025-08-24 11:29:19,351 - INFO -   [OK] Sunderland: 40 joueurs
+2025-08-24 11:29:19,521 - INFO -   [OK] AFC Bournemouth: 32 joueurs
+2025-08-24 11:29:19,742 - INFO -   [OK] Newcastle United: 28 joueurs
+2025-08-24 11:29:19,879 - INFO -   [OK] Nottingham Forest: 30 joueurs
+2025-08-24 11:29:20,029 - INFO -   [OK] Everton: 24 joueurs
+2025-08-24 11:29:20,156 - INFO -   [OK] Manchester City: 30 joueurs
+2025-08-24 11:29:20,302 - INFO -   [OK] West Ham United: 27 joueurs
+2025-08-24 11:29:20,429 - INFO -   [OK] Chelsea: 35 joueurs
+2025-08-24 11:29:20,596 - INFO -   [OK] Aston Villa: 21 joueurs
+2025-08-24 11:29:20,809 - INFO -   [OK] Tottenham Hotspur: 30 joueurs
+2025-08-24 11:29:20,915 - INFO -   [OK] Burnley: 36 joueurs
+2025-08-24 11:29:20,956 - INFO - [OK] Fichier généré et validé: premierLeagueTeams.ts
+2025-08-24 11:29:20,957 - INFO - 
+--- Traitement de La Liga ---
+2025-08-24 11:29:20,957 - INFO - [UPDATE] Récupération des effectifs pour La Liga, saison 25659
+2025-08-24 11:29:21,017 - INFO - [INFO] 536 équipes existantes trouvées dans ligaTeams.ts
+2025-08-24 11:29:21,315 - INFO -   [OK] Villarreal: 26 joueurs
+2025-08-24 11:29:21,455 - INFO -   [OK] Real Madrid: 25 joueurs
+2025-08-24 11:29:21,577 - INFO -   [OK] Real Betis: 24 joueurs
+2025-08-24 11:29:21,728 - INFO -   [OK] Real Oviedo: 25 joueurs
+2025-08-24 11:29:21,854 - INFO -   [OK] Celta de Vigo: 30 joueurs
+2025-08-24 11:29:22,013 - INFO -   [OK] Levante: 23 joueurs
+2025-08-24 11:29:22,193 - INFO -   [OK] Elche: 25 joueurs
+2025-08-24 11:29:22,305 - INFO -   [OK] Mallorca: 26 joueurs
+2025-08-24 11:29:22,427 - INFO -   [OK] Girona: 25 joueurs
+2025-08-24 11:29:22,607 - INFO -   [OK] Sevilla: 34 joueurs
+2025-08-24 11:29:22,730 - INFO -   [OK] FC Barcelona: 26 joueurs
+2025-08-24 11:29:22,870 - INFO -   [OK] Deportivo Alavés: 22 joueurs
+2025-08-24 11:29:22,992 - INFO -   [OK] Real Sociedad: 30 joueurs
+2025-08-24 11:29:23,140 - INFO -   [OK] Valencia: 24 joueurs
+2025-08-24 11:29:23,290 - INFO -   [OK] Atlético Madrid: 23 joueurs
+2025-08-24 11:29:23,495 - INFO -   [OK] Getafe: 26 joueurs
+2025-08-24 11:29:23,642 - INFO -   [OK] Athletic Club: 30 joueurs
+2025-08-24 11:29:23,785 - INFO -   [OK] Espanyol: 24 joueurs
+2025-08-24 11:29:23,945 - INFO -   [OK] Osasuna: 25 joueurs
+2025-08-24 11:29:24,085 - INFO -   [OK] Rayo Vallecano: 28 joueurs
+2025-08-24 11:29:24,116 - INFO - [OK] Fichier généré et validé: ligaTeams.ts
+2025-08-24 11:29:24,116 - INFO - 
+--- Traitement de Serie A ---
+2025-08-24 11:29:24,117 - INFO - [UPDATE] Récupération des effectifs pour Serie A, saison 25533
+2025-08-24 11:29:24,157 - INFO - [INFO] 635 équipes existantes trouvées dans serieATeams.ts
+2025-08-24 11:29:24,389 - INFO -   [OK] Atalanta: 28 joueurs
+2025-08-24 11:29:24,525 - INFO -   [OK] Udinese: 29 joueurs
+2025-08-24 11:29:24,676 - INFO -   [OK] Milan: 24 joueurs
+2025-08-24 11:29:24,836 - INFO -   [OK] Genoa: 30 joueurs
+2025-08-24 11:29:24,985 - INFO -   [OK] Fiorentina: 30 joueurs
+2025-08-24 11:29:25,128 - INFO -   [OK] Lazio: 29 joueurs
+2025-08-24 11:29:25,270 - INFO -   [OK] Roma: 28 joueurs
+2025-08-24 11:29:25,384 - INFO -   [OK] Torino: 31 joueurs
+2025-08-24 11:29:25,534 - INFO -   [OK] Como: 38 joueurs
+2025-08-24 11:29:25,650 - INFO -   [OK] Lecce: 33 joueurs
+2025-08-24 11:29:25,757 - INFO -   [OK] Bologna: 32 joueurs
+2025-08-24 11:29:25,887 - INFO -   [OK] Pisa: 34 joueurs
+2025-08-24 11:29:26,009 - INFO -   [OK] Sassuolo: 34 joueurs
+2025-08-24 11:29:26,115 - INFO -   [OK] Napoli: 29 joueurs
+2025-08-24 11:29:26,281 - INFO -   [OK] Parma: 31 joueurs
+2025-08-24 11:29:26,431 - INFO -   [OK] Cremonese: 32 joueurs
+2025-08-24 11:29:26,577 - INFO -   [OK] Inter: 27 joueurs
+2025-08-24 11:29:26,685 - INFO -   [OK] Hellas Verona: 29 joueurs
+2025-08-24 11:29:26,804 - INFO -   [OK] Juventus: 29 joueurs
+2025-08-24 11:29:26,948 - INFO -   [OK] Cagliari: 27 joueurs
+2025-08-24 11:29:26,986 - INFO - [OK] Fichier généré et validé: serieATeams.ts
+2025-08-24 11:29:26,987 - INFO - 
+--- Traitement de Bundesliga ---
+2025-08-24 11:29:26,987 - INFO - [UPDATE] Récupération des effectifs pour Bundesliga, saison 25646
+2025-08-24 11:29:27,018 - INFO - [INFO] 544 équipes existantes trouvées dans bundesligaTeams.ts
+2025-08-24 11:29:27,274 - INFO -   [OK] FC Union Berlin: 30 joueurs
+2025-08-24 11:29:27,378 - INFO -   [OK] VfL Wolfsburg: 27 joueurs
+2025-08-24 11:29:27,524 - INFO -   [OK] Bayer 04 Leverkusen: 26 joueurs
+2025-08-24 11:29:27,655 - INFO -   [OK] SC Freiburg: 29 joueurs
+2025-08-24 11:29:27,790 - INFO -   [OK] Borussia Dortmund: 25 joueurs
+2025-08-24 11:29:27,906 - INFO -   [OK] Werder Bremen: 29 joueurs
+2025-08-24 11:29:28,053 - INFO -   [OK] FC Köln: 32 joueurs
+2025-08-24 11:29:28,204 - INFO -   [OK] RB Leipzig: 34 joueurs
+2025-08-24 11:29:28,342 - INFO -   [OK] FC Augsburg: 30 joueurs
+2025-08-24 11:29:28,461 - INFO -   [OK] Borussia Mönchengladbach: 28 joueurs
+2025-08-24 11:29:28,601 - INFO -   [OK] VfB Stuttgart: 31 joueurs
+2025-08-24 11:29:28,741 - INFO -   [OK] Heidenheim: 28 joueurs
+2025-08-24 11:29:28,883 - INFO -   [OK] St. Pauli: 28 joueurs
+2025-08-24 11:29:28,995 - INFO -   [OK] TSG Hoffenheim: 32 joueurs
+2025-08-24 11:29:29,114 - INFO -   [OK] Eintracht Frankfurt: 31 joueurs
+2025-08-24 11:29:29,219 - INFO -   [OK] FSV Mainz 05: 28 joueurs
+2025-08-24 11:29:29,340 - INFO -   [OK] FC Bayern München: 25 joueurs
+2025-08-24 11:29:29,441 - INFO -   [OK] Hamburger SV: 29 joueurs
+2025-08-24 11:29:29,472 - INFO - [OK] Fichier généré et validé: bundesligaTeams.ts
+2025-08-24 11:29:29,473 - INFO - [TEST] Test de compilation TypeScript...
+2025-08-24 11:29:29,475 - ERROR - [ERREUR] Erreur lors de la compilation: [WinError 2] Le fichier spécifié est introuvable
+2025-08-24 11:29:29,475 - ERROR - [ERREUR] La compilation a échoué, restauration du backup...
+2025-08-24 11:29:29,475 - WARNING - [ATTENTION] Restauration du backup C:\Users\hugo\stat4ballers\scripts\backups\backup_20250824_112914
+2025-08-24 11:29:29,553 - INFO - [OK] Backup restauré avec succès
+2025-08-24 11:29:29,553 - ERROR - [ATTENTION] Mise à jour annulée, backup restauré
+2025-08-24 11:29:29,553 - INFO - 
+============================================================
+2025-08-24 11:29:29,553 - INFO - [FAIL] MISE À JOUR ÉCHOUÉE APRÈS 14.56 SECONDES
+2025-08-24 11:29:29,554 - INFO - ============================================================

@@ -1,0 +1,55 @@
+2025-08-24 11:22:15,935 - INFO - ============================================================
+2025-08-24 11:22:15,935 - INFO - [START] DÉBUT DE LA MISE À JOUR SÉCURISÉE DES DONNÉES
+2025-08-24 11:22:15,936 - INFO - ============================================================
+2025-08-24 11:22:15,936 - INFO - [BACKUP] Création du backup dans C:\Users\hugo\stat4ballers\scripts\backups\backup_20250824_112215
+2025-08-24 11:22:15,985 - INFO - [OK] Backup créé avec succès: C:\Users\hugo\stat4ballers\scripts\backups\backup_20250824_112215
+2025-08-24 11:22:15,985 - INFO - 
+--- Traitement de Ligue 1 ---
+2025-08-24 11:22:15,986 - INFO - [UPDATE] Récupération des effectifs pour Ligue 1, saison 25651
+2025-08-24 11:22:15,989 - INFO - [INFO] 0 équipes existantes trouvées dans ligue1Teams.ts
+2025-08-24 11:22:16,191 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:16,191 - WARNING -   [ATTENTION] Pas de données pour Olympique Marseille
+2025-08-24 11:22:16,291 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:16,291 - WARNING -   [ATTENTION] Pas de données pour LOSC Lille
+2025-08-24 11:22:16,391 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:16,392 - WARNING -   [ATTENTION] Pas de données pour Rennes
+2025-08-24 11:22:16,473 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:16,474 - WARNING -   [ATTENTION] Pas de données pour Monaco
+2025-08-24 11:22:16,575 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:16,575 - WARNING -   [ATTENTION] Pas de données pour Le Havre
+2025-08-24 11:22:16,651 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:16,652 - WARNING -   [ATTENTION] Pas de données pour Angers SCO
+2025-08-24 11:22:16,746 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:16,746 - WARNING -   [ATTENTION] Pas de données pour Strasbourg
+2025-08-24 11:22:16,828 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:16,829 - WARNING -   [ATTENTION] Pas de données pour Paris Saint Germain
+2025-08-24 11:22:16,904 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:16,904 - WARNING -   [ATTENTION] Pas de données pour Lens
+2025-08-24 11:22:16,984 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:16,984 - WARNING -   [ATTENTION] Pas de données pour Nantes
+2025-08-24 11:22:17,080 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:17,081 - WARNING -   [ATTENTION] Pas de données pour Metz
+2025-08-24 11:22:17,162 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:17,162 - WARNING -   [ATTENTION] Pas de données pour Toulouse
+2025-08-24 11:22:17,238 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:17,238 - WARNING -   [ATTENTION] Pas de données pour Brest
+2025-08-24 11:22:17,326 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:17,327 - WARNING -   [ATTENTION] Pas de données pour Lorient
+2025-08-24 11:22:17,426 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:17,427 - WARNING -   [ATTENTION] Pas de données pour Nice
+2025-08-24 11:22:17,515 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:17,515 - WARNING -   [ATTENTION] Pas de données pour Auxerre
+2025-08-24 11:22:17,604 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:17,605 - WARNING -   [ATTENTION] Pas de données pour Paris
+2025-08-24 11:22:17,692 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:22:17,693 - WARNING -   [ATTENTION] Pas de données pour Olympique Lyonnais
+2025-08-24 11:22:17,696 - ERROR - [ERREUR] Fichier trop court: C:\Users\hugo\stat4ballers\data\ligue1Teams.ts
+2025-08-24 11:22:17,696 - ERROR - [ERREUR] Validation échouée pour C:\Users\hugo\stat4ballers\data\ligue1Teams.ts
+2025-08-24 11:22:17,696 - ERROR - [ERREUR] Génération échouée pour Ligue 1
+2025-08-24 11:22:17,696 - WARNING - [ATTENTION] Restauration du backup C:\Users\hugo\stat4ballers\scripts\backups\backup_20250824_112215
+2025-08-24 11:22:17,746 - INFO - [OK] Backup restauré avec succès
+2025-08-24 11:22:17,746 - ERROR - [ATTENTION] Mise à jour annulée, backup restauré
+2025-08-24 11:22:17,747 - INFO - 
+============================================================
+2025-08-24 11:22:17,747 - INFO - [FAIL] MISE À JOUR ÉCHOUÉE APRÈS 1.81 SECONDES
+2025-08-24 11:22:17,747 - INFO - ============================================================

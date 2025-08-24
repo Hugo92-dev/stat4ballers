@@ -42,7 +42,7 @@ jobs:
         SPORTMONKS_API_KEY: ${{ secrets.SPORTMONKS_API_KEY }}
       run: |
         cd scripts
-        python update_all_data.py
+        python update_now.py
     
     - name: Check for changes
       id: check_changes

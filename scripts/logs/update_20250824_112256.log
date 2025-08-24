@@ -1,0 +1,55 @@
+2025-08-24 11:22:56,152 - INFO - ============================================================
+2025-08-24 11:22:56,152 - INFO - [START] DÉBUT DE LA MISE À JOUR SÉCURISÉE DES DONNÉES
+2025-08-24 11:22:56,153 - INFO - ============================================================
+2025-08-24 11:22:56,153 - INFO - [BACKUP] Création du backup dans C:\Users\hugo\stat4ballers\scripts\backups\backup_20250824_112256
+2025-08-24 11:22:56,198 - INFO - [OK] Backup créé avec succès: C:\Users\hugo\stat4ballers\scripts\backups\backup_20250824_112256
+2025-08-24 11:22:56,198 - INFO - 
+--- Traitement de Ligue 1 ---
+2025-08-24 11:22:56,199 - INFO - [UPDATE] Récupération des effectifs pour Ligue 1, saison 25651
+2025-08-24 11:22:56,201 - INFO - [INFO] 0 équipes existantes trouvées dans ligue1Teams.ts
+2025-08-24 11:22:56,427 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:56,428 - WARNING -   [ATTENTION] Pas de données pour Olympique Marseille
+2025-08-24 11:22:56,567 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:56,568 - WARNING -   [ATTENTION] Pas de données pour LOSC Lille
+2025-08-24 11:22:56,654 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:56,654 - WARNING -   [ATTENTION] Pas de données pour Rennes
+2025-08-24 11:22:56,764 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:56,764 - WARNING -   [ATTENTION] Pas de données pour Monaco
+2025-08-24 11:22:56,898 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:56,898 - WARNING -   [ATTENTION] Pas de données pour Le Havre
+2025-08-24 11:22:57,012 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:57,013 - WARNING -   [ATTENTION] Pas de données pour Angers SCO
+2025-08-24 11:22:57,138 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:57,139 - WARNING -   [ATTENTION] Pas de données pour Strasbourg
+2025-08-24 11:22:57,238 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:57,239 - WARNING -   [ATTENTION] Pas de données pour Paris Saint Germain
+2025-08-24 11:22:57,362 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:57,363 - WARNING -   [ATTENTION] Pas de données pour Lens
+2025-08-24 11:22:57,506 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:57,507 - WARNING -   [ATTENTION] Pas de données pour Nantes
+2025-08-24 11:22:57,605 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:57,605 - WARNING -   [ATTENTION] Pas de données pour Metz
+2025-08-24 11:22:57,723 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:57,724 - WARNING -   [ATTENTION] Pas de données pour Toulouse
+2025-08-24 11:22:57,827 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:57,827 - WARNING -   [ATTENTION] Pas de données pour Brest
+2025-08-24 11:22:57,944 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:57,945 - WARNING -   [ATTENTION] Pas de données pour Lorient
+2025-08-24 11:22:58,041 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:58,041 - WARNING -   [ATTENTION] Pas de données pour Nice
+2025-08-24 11:22:58,154 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:58,154 - WARNING -   [ATTENTION] Pas de données pour Auxerre
+2025-08-24 11:22:58,287 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:58,288 - WARNING -   [ATTENTION] Pas de données pour Paris
+2025-08-24 11:22:58,405 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:22:58,405 - WARNING -   [ATTENTION] Pas de données pour Olympique Lyonnais
+2025-08-24 11:22:58,408 - ERROR - [ERREUR] Fichier trop court: C:\Users\hugo\stat4ballers\data\ligue1Teams.ts
+2025-08-24 11:22:58,408 - ERROR - [ERREUR] Validation échouée pour C:\Users\hugo\stat4ballers\data\ligue1Teams.ts
+2025-08-24 11:22:58,408 - ERROR - [ERREUR] Génération échouée pour Ligue 1
+2025-08-24 11:22:58,408 - WARNING - [ATTENTION] Restauration du backup C:\Users\hugo\stat4ballers\scripts\backups\backup_20250824_112256
+2025-08-24 11:22:58,456 - INFO - [OK] Backup restauré avec succès
+2025-08-24 11:22:58,457 - ERROR - [ATTENTION] Mise à jour annulée, backup restauré
+2025-08-24 11:22:58,457 - INFO - 
+============================================================
+2025-08-24 11:22:58,457 - INFO - [FAIL] MISE À JOUR ÉCHOUÉE APRÈS 2.30 SECONDES
+2025-08-24 11:22:58,457 - INFO - ============================================================

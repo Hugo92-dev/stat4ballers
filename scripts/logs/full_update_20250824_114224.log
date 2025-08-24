@@ -1,0 +1,110 @@
+2025-08-24 11:42:24,146 - INFO - 
+============================================================
+2025-08-24 11:42:24,146 - INFO - MISE A JOUR AUTOMATIQUE COMPLETE
+2025-08-24 11:42:24,147 - INFO - ============================================================
+
+2025-08-24 11:42:24,147 - INFO - [BACKUP] Creation backup: C:\Users\hugo\stat4ballers\scripts\backups\backup_20250824_114224
+2025-08-24 11:42:24,217 - INFO - [OK] Backup cree
+2025-08-24 11:42:24,217 - INFO - 
+============================================================
+2025-08-24 11:42:24,217 - INFO - [LEAGUE] Ligue 1
+2025-08-24 11:42:24,218 - INFO - ============================================================
+2025-08-24 11:42:24,344 - INFO - [INFO] 18 equipes trouvees
+2025-08-24 11:42:24,345 - INFO -   Recuperation effectif Olympique Marseille...
+2025-08-24 11:42:24,448 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:24,676 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:24,775 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:24,776 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:24,776 - INFO -   Recuperation effectif LOSC Lille...
+2025-08-24 11:42:24,880 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:25,081 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:25,175 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:25,176 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:25,176 - INFO -   Recuperation effectif Rennes...
+2025-08-24 11:42:25,275 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:25,523 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:25,623 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:25,624 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:25,624 - INFO -   Recuperation effectif Monaco...
+2025-08-24 11:42:25,758 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:26,025 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:26,130 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:26,131 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:26,131 - INFO -   Recuperation effectif Le Havre...
+2025-08-24 11:42:26,248 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:26,502 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:26,599 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:26,599 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:26,600 - INFO -   Recuperation effectif Angers SCO...
+2025-08-24 11:42:26,722 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:26,934 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:27,023 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:27,024 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:27,024 - INFO -   Recuperation effectif Strasbourg...
+2025-08-24 11:42:27,125 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:27,342 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:27,441 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:27,441 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:27,442 - INFO -   Recuperation effectif Paris Saint Germain...
+2025-08-24 11:42:27,557 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:27,763 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:27,843 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:27,843 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:27,844 - INFO -   Recuperation effectif Lens...
+2025-08-24 11:42:27,957 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:28,196 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:28,318 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:28,319 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:28,319 - INFO -   Recuperation effectif Nantes...
+2025-08-24 11:42:28,444 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:28,676 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:28,844 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:28,845 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:28,845 - INFO -   Recuperation effectif Metz...
+2025-08-24 11:42:28,968 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:29,178 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:29,265 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:29,266 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:29,266 - INFO -   Recuperation effectif Toulouse...
+2025-08-24 11:42:29,394 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:29,627 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:29,725 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:29,726 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:29,726 - INFO -   Recuperation effectif Brest...
+2025-08-24 11:42:29,845 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:30,081 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:30,177 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:30,178 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:30,178 - INFO -   Recuperation effectif Lorient...
+2025-08-24 11:42:30,279 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:30,527 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:30,630 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:30,631 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:30,631 - INFO -   Recuperation effectif Nice...
+2025-08-24 11:42:30,793 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:31,055 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:31,171 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:31,172 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:31,172 - INFO -   Recuperation effectif Auxerre...
+2025-08-24 11:42:31,289 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:31,526 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:31,638 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:31,638 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:31,638 - INFO -   Recuperation effectif Paris...
+2025-08-24 11:42:31,743 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:31,953 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:32,039 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:32,040 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:32,040 - INFO -   Recuperation effectif Olympique Lyonnais...
+2025-08-24 11:42:32,153 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:42:32,371 - ERROR - API Error 400:     {"message":"You requested filters do not exist. Visit the documentation to see all the available filters and how to apply them."}
+2025-08-24 11:42:32,460 - ERROR - API Error 404:     {"message":"The requested endpoint does not exist"}
+2025-08-24 11:42:32,460 - INFO -     -> 0 joueurs trouves au total
+2025-08-24 11:42:32,462 - INFO - [OK] Fichier genere: ligue1Teams.ts
+2025-08-24 11:42:34,463 - INFO - 
+============================================================
+2025-08-24 11:42:34,463 - INFO - [LEAGUE] Premier League
+2025-08-24 11:42:34,463 - INFO - ============================================================
+2025-08-24 11:42:34,580 - INFO - [INFO] 20 equipes trouvees
+2025-08-24 11:42:34,581 - INFO -   Recuperation effectif Brighton & Hove Albion...
+2025-08-24 11:42:34,696 - ERROR - API Error 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}

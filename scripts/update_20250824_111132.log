@@ -1,0 +1,122 @@
+2025-08-24 11:11:32,113 - INFO - === DÉBUT DE LA MISE À JOUR COMPLÈTE DES DONNÉES ===
+2025-08-24 11:11:32,114 - INFO - 
+--- Traitement de Ligue 1 ---
+2025-08-24 11:11:32,114 - INFO - Récupération des effectifs pour la ligue 301, saison 25651
+2025-08-24 11:11:32,340 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:32,417 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:32,521 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:32,611 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:32,717 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:32,805 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:32,904 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:32,985 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:33,060 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:33,140 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:33,238 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:33,325 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:33,413 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:33,510 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:33,589 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:33,673 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:33,773 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:33,859 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:33,860 - INFO - Récupération des statistiques pour 0 joueurs...
+2025-08-24 11:11:33,916 - INFO - 
+--- Traitement de Premier League ---
+2025-08-24 11:11:33,916 - INFO - Récupération des effectifs pour la ligue 8, saison 25583
+2025-08-24 11:11:34,131 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:34,211 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:34,295 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:34,365 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:34,437 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:34,519 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:34,617 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:34,693 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:34,771 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:34,850 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:34,931 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:35,010 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:35,090 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:35,183 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:35,282 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:35,372 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:35,462 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:35,528 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:35,604 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:35,684 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:35,686 - INFO - Récupération des statistiques pour 0 joueurs...
+2025-08-24 11:11:35,698 - INFO - 
+--- Traitement de La Liga ---
+2025-08-24 11:11:35,698 - INFO - Récupération des effectifs pour la ligue 564, saison 25659
+2025-08-24 11:11:35,909 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:35,986 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:36,067 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:36,144 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:36,230 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:36,303 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:36,387 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:36,466 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:36,548 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:36,630 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:36,706 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:36,808 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:36,889 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:36,968 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:37,058 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:37,138 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:37,221 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:37,300 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:37,391 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:37,475 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:37,476 - INFO - Récupération des statistiques pour 0 joueurs...
+2025-08-24 11:11:37,485 - INFO - 
+--- Traitement de Serie A ---
+2025-08-24 11:11:37,485 - INFO - Récupération des effectifs pour la ligue 384, saison 25533
+2025-08-24 11:11:37,737 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:37,822 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:37,916 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:37,996 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:38,081 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:38,158 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:38,249 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:38,341 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:38,413 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:38,492 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:38,571 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:38,658 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:38,736 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:38,836 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:38,911 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:38,994 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:39,091 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:39,186 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:39,257 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:39,345 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:39,346 - INFO - Récupération des statistiques pour 0 joueurs...
+2025-08-24 11:11:39,357 - INFO - 
+--- Traitement de Bundesliga ---
+2025-08-24 11:11:39,357 - INFO - Récupération des effectifs pour la ligue 82, saison 25646
+2025-08-24 11:11:39,566 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:39,670 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:39,740 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:39,840 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:39,910 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:39,982 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:40,067 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:40,144 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:40,236 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:40,332 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:40,437 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:40,531 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:40,618 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:40,734 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:40,805 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:40,900 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:40,983 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:41,078 - ERROR - Erreur API 400:     {"message":"Filters should be passed as a string","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/filtering-and-complexity-exceptions","code":5010}
+2025-08-24 11:11:41,079 - INFO - Récupération des statistiques pour 0 joueurs...
+2025-08-24 11:11:41,096 - INFO - 
+--- Vérification de la compilation TypeScript ---
+2025-08-24 11:11:41,103 - ERROR - Erreur lors de la compilation: [WinError 2] Le fichier spécifié est introuvable
+2025-08-24 11:11:41,104 - INFO - 
+=== MISE À JOUR TERMINÉE EN 8.99 SECONDES ===

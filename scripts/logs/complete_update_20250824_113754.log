@@ -1,0 +1,2 @@
+2025-08-24 11:37:54,557 - ERROR - Erreur API 404:     {"message":"The requested include 'position,player' does not exist","link":"https:\/\/docs.sportmonks.com\/football\/api\/response-codes\/include-exceptions","code":5001}
+2025-08-24 11:37:54,717 - ERROR - Erreur API 404:     {"message":"The requested endpoint does not exist"}
