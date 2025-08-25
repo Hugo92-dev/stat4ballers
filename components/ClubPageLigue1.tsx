@@ -119,7 +119,7 @@ export default function ClubPageLigue1({
           </div>
           
           <div className="flex-1">
-            <h1 className="text-5xl font-bold text-white mb-2">{team.name}</h1>
+            <h1 className="text-5xl font-bold text-white mb-2">{team.nom}</h1>
             <p className="text-gray-300 text-lg">Effectif complet • Saison 2025/2026</p>
             <div className="flex flex-wrap gap-6 mt-4">
               <p className="text-gray-400">

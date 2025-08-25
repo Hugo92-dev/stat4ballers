@@ -1,5 +1,5 @@
 import LeaguePage from '@/components/LeaguePage';
-import { premierLeagueTeams } from '@/data/leagues';
+import { premierLeagueTeams } from '@/data/premierLeagueTeams';
 
 export default function PremierLeaguePage() {
   return (

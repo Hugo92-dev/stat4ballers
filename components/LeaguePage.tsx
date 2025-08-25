@@ -159,9 +159,9 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
   };
 
   const filteredTeams = teams
-    .filter(team => team.name.toLowerCase().includes(searchTerm.toLowerCase()))
+    .filter(team => team.nom.toLowerCase().includes(searchTerm.toLowerCase()))
     .sort((a, b) => {
-      if (sortBy === 'name') return a.name.localeCompare(b.name);
+      if (sortBy === 'name') return a.nom.localeCompare(b.nom);
       
       // Pour la Premier League, utiliser le classement personnalisé
       if (leagueId === 'premier-league') {
@@ -293,7 +293,7 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
                   <div className="absolute inset-0 flex items-center justify-center p-4">
                     <Image
                       src={getClubLogoPath(leagueId, team.slug || team.id)}
-                      alt={team.name}
+                      alt={team.nom}
                       width={80}
                       height={80}
                       className="object-contain drop-shadow-lg"
@@ -306,7 +306,7 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
                     />
                     <div className="w-20 h-20 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full items-center justify-center hidden">
                       <span className="text-2xl font-bold text-gray-600">
-                        {team.name.substring(0, 2).toUpperCase()}
+                        {team.nom.substring(0, 2).toUpperCase()}
                       </span>
                     </div>
                   </div>
@@ -318,7 +318,7 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-gray-900 group-hover:text-blue-600 transition-colors">
-                    {team.name}
+                    {team.nom}
                   </h3>
                   {team.stadium && <p className="text-sm text-gray-600 mb-3">{team.stadium}</p>}
                   {team.stats && (

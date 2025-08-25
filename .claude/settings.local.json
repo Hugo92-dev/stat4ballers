@@ -39,7 +39,12 @@
       "Bash(sed:*)",
       "Bash(dir:*)",
       "Bash(do echo -n \"$url: \")",
-      "mcp__ide__getDiagnostics"
+      "mcp__ide__getDiagnostics",
+      "Bash(do)",
+      "Bash(if [ -f \"$file\" ])",
+      "Bash(then)",
+      "Bash(echo:*)",
+      "Bash(fi)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",

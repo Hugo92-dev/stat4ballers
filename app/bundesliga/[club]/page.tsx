@@ -21,7 +21,7 @@ export default function ClubPage({ params }: { params: { club: string } }) {
   return (
     <ClubPageEnhanced
       clubId={params.club}
-      clubName={club.name}
+      clubName={club.nom}
       leagueId="bundesliga"
       leagueName="Bundesliga"
       teams={bundesligaTeams}

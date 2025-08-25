@@ -1,0 +1,30 @@
+{
+  "team_id": 44,
+  "team_name": "Olympique Marseille",
+  "season_id": 25651,
+  "season_name": "2025/2026",
+  "league_id": 301,
+  "league_name": "Ligue 1",
+  "fetched_at": "2025-08-25T12:46:58.587522",
+  "players_count": 1,
+  "players": [
+    {
+      "id": 95696,
+      "display_name": "Geoffrey Kondogbia",
+      "common_name": "G. Kondogbia",
+      "name": "Geoffrey Kondogbia",
+      "firstname": "Geoffrey",
+      "lastname": "Kondogbia",
+      "image_path": "https://cdn.sportmonks.com/images/soccer/players/16/95696.png",
+      "age": 32,
+      "birth_date": "1993-02-15",
+      "height": 188,
+      "weight": 80,
+      "nationality": "Central African Republic",
+      "position": "Midfielder",
+      "detailed_position": null,
+      "jersey_number": null,
+      "slug": "geoffrey-kondogbia"
+    }
+  ]
+}

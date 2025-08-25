@@ -1,0 +1,27 @@
+      {
+        id: 37713942,
+        nom: "Robinio Vaz",
+        displayName: "Robinio Vaz",
+        position: "FW",
+        position_id: 27,
+        numero: 34,
+        age: "18",
+        nationalite: "France",
+        taille: 185,
+        poids: null,
+        image: "https://cdn.sportmonks.com/images/soccer/players/22/37713942.png",
+        playerSlug: "robinio-vaz"
+      },\n      {
+        id: 37729567,
+        nom: "Keyliane Abdallah",
+        displayName: "Keyliane Abdallah",
+        position: "FW",
+        position_id: 27,
+        numero: 48,
+        age: "19",
+        nationalite: "France",
+        taille: null,
+        poids: null,
+        image: "https://cdn.sportmonks.com/images/soccer/players/31/37729567.png",
+        playerSlug: "keyliane-abdallah"
+      }

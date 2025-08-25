@@ -1,4 +1,4 @@
-export const premierleagueTeams = [
+export const premierLeagueTeams = [
   {
     id: 19,
     nom: "Arsenal",
