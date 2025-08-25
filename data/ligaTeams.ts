@@ -48,8 +48,8 @@ export const ligaTeams = [
       },
       {
         id: 12394069,
-        nom: "Logan Costa ",
-        displayName: "Logan Costa ",
+        nom: "Logan Costa",
+        displayName: "Logan Costa",
         position: "DF",
         position_id: 25,
         numero: 2,
@@ -58,7 +58,7 @@ export const ligaTeams = [
         taille: 190,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/12394069.png",
-        playerSlug: "logan-costa "
+        playerSlug: "logan-costa"
       },
       {
         id: 32819198,
@@ -76,8 +76,8 @@ export const ligaTeams = [
       },
       {
         id: 37544311,
-        nom: "Willy Kambwala ",
-        displayName: "Willy Kambwala ",
+        nom: "Willy Kambwala",
+        displayName: "Willy Kambwala",
         position: "DF",
         position_id: 25,
         numero: 5,
@@ -86,7 +86,7 @@ export const ligaTeams = [
         taille: 192,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/37544311.png",
-        playerSlug: "willy-kambwala "
+        playerSlug: "willy-kambwala"
       },
       {
         id: 335705,
@@ -286,8 +286,8 @@ export const ligaTeams = [
       },
       {
         id: 186552,
-        nom: "Gerard Moreno ",
-        displayName: "Gerard Moreno ",
+        nom: "Gerard Moreno",
+        displayName: "Gerard Moreno",
         position: "FW",
         position_id: 27,
         numero: 7,
@@ -296,7 +296,7 @@ export const ligaTeams = [
         taille: 180,
         poids: 77,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/186552.png",
-        playerSlug: "gerard-moreno "
+        playerSlug: "gerard-moreno"
       },
       {
         id: 37459024,
@@ -559,8 +559,8 @@ export const ligaTeams = [
       },
       {
         id: 37779253,
-        nom: "Jofre Torrents ",
-        displayName: "Jofre Torrents ",
+        nom: "Jofre Torrents",
+        displayName: "Jofre Torrents",
         position: "DF",
         position_id: 25,
         numero: 26,
@@ -569,7 +569,7 @@ export const ligaTeams = [
         taille: null,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-        playerSlug: "jofre-torrents "
+        playerSlug: "jofre-torrents"
       },
       {
         id: 37656169,
@@ -888,8 +888,8 @@ export const ligaTeams = [
       },
       {
         id: 31647,
-        nom: "Daniel Carvajal ",
-        displayName: "Daniel Carvajal ",
+        nom: "Daniel Carvajal",
+        displayName: "Daniel Carvajal",
         position: "DF",
         position_id: 25,
         numero: 2,
@@ -898,7 +898,7 @@ export const ligaTeams = [
         taille: 173,
         poids: 73,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/31647.png",
-        playerSlug: "daniel-carvajal "
+        playerSlug: "daniel-carvajal"
       },
       {
         id: 460160,
@@ -986,8 +986,8 @@ export const ligaTeams = [
       },
       {
         id: 31837,
-        nom: "Antonio Rüdiger ",
-        displayName: "Antonio Rüdiger ",
+        nom: "Antonio Rüdiger",
+        displayName: "Antonio Rüdiger",
         position: "DF",
         position_id: 25,
         numero: 22,
@@ -996,7 +996,7 @@ export const ligaTeams = [
         taille: 190,
         poids: 85,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/31837.png",
-        playerSlug: "antonio-rudiger "
+        playerSlug: "antonio-rudiger"
       },
       {
         id: 98903,
@@ -1028,8 +1028,8 @@ export const ligaTeams = [
       },
       {
         id: 37255840,
-        nom: "Jude Bellingham ",
-        displayName: "Jude Bellingham ",
+        nom: "Jude Bellingham",
+        displayName: "Jude Bellingham",
         position: "MF",
         position_id: 26,
         numero: 5,
@@ -1038,12 +1038,12 @@ export const ligaTeams = [
         taille: 186,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/37255840.png",
-        playerSlug: "jude-bellingham "
+        playerSlug: "jude-bellingham"
       },
       {
         id: 23688922,
-        nom: "Eduardo Camavinga ",
-        displayName: "Eduardo Camavinga ",
+        nom: "Eduardo Camavinga",
+        displayName: "Eduardo Camavinga",
         position: "MF",
         position_id: 26,
         numero: 6,
@@ -1052,7 +1052,7 @@ export const ligaTeams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/23688922.png",
-        playerSlug: "eduardo-camavinga "
+        playerSlug: "eduardo-camavinga"
       },
       {
         id: 260862,
@@ -1469,8 +1469,8 @@ export const ligaTeams = [
       },
       {
         id: 448290,
-        nom: "Javi Puado ",
-        displayName: "Javi Puado ",
+        nom: "Javi Puado",
+        displayName: "Javi Puado",
         position: "FW",
         position_id: 27,
         numero: 7,
@@ -1479,7 +1479,7 @@ export const ligaTeams = [
         taille: 177,
         poids: 69,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/448290.png",
-        playerSlug: "javi-puado "
+        playerSlug: "javi-puado"
       },
       {
         id: 37568657,
@@ -1826,8 +1826,8 @@ export const ligaTeams = [
       },
       {
         id: 97664,
-        nom: "Giovani Lo Celso ",
-        displayName: "Giovani Lo Celso ",
+        nom: "Giovani Lo Celso",
+        displayName: "Giovani Lo Celso",
         position: "MF",
         position_id: 26,
         numero: 20,
@@ -1836,12 +1836,12 @@ export const ligaTeams = [
         taille: 177,
         poids: 68,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/97664.png",
-        playerSlug: "giovani-lo-celso "
+        playerSlug: "giovani-lo-celso"
       },
       {
         id: 186922,
-        nom: "Marc Roca ",
-        displayName: "Marc Roca ",
+        nom: "Marc Roca",
+        displayName: "Marc Roca",
         position: "MF",
         position_id: 26,
         numero: 21,
@@ -1850,12 +1850,12 @@ export const ligaTeams = [
         taille: 184,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/186922.png",
-        playerSlug: "marc-roca "
+        playerSlug: "marc-roca"
       },
       {
         id: 185972,
-        nom: "Isco  ",
-        displayName: "Isco  ",
+        nom: "Isco ",
+        displayName: "Isco ",
         position: "MF",
         position_id: 26,
         numero: 22,
@@ -1864,7 +1864,7 @@ export const ligaTeams = [
         taille: 176,
         poids: 79,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/185972.png",
-        playerSlug: "isco  "
+        playerSlug: "isco "
       },
       {
         id: 37618483,
@@ -1924,8 +1924,8 @@ export const ligaTeams = [
       },
       {
         id: 37297124,
-        nom: "Abde Ezzalzouli ",
-        displayName: "Abde Ezzalzouli ",
+        nom: "Abde Ezzalzouli",
+        displayName: "Abde Ezzalzouli",
         position: "FW",
         position_id: 27,
         numero: 10,
@@ -1934,7 +1934,7 @@ export const ligaTeams = [
         taille: 177,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/37297124.png",
-        playerSlug: "abde-ezzalzouli "
+        playerSlug: "abde-ezzalzouli"
       },
       {
         id: 95269,
@@ -2323,8 +2323,8 @@ export const ligaTeams = [
       },
       {
         id: 2510817,
-        nom: "Óscar Valentín ",
-        displayName: "Óscar Valentín ",
+        nom: "Óscar Valentín",
+        displayName: "Óscar Valentín",
         position: "MF",
         position_id: 26,
         numero: 23,
@@ -2333,7 +2333,7 @@ export const ligaTeams = [
         taille: 177,
         poids: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/2510817.png",
-        playerSlug: "oscar-valentin "
+        playerSlug: "oscar-valentin"
       },
       {
         id: 37717975,
@@ -2428,8 +2428,8 @@ export const ligaTeams = [
       },
       {
         id: 63020,
-        nom: "Djené ",
-        displayName: "Djené ",
+        nom: "Djené",
+        displayName: "Djené",
         position: "DF",
         position_id: 25,
         numero: 2,
@@ -2438,7 +2438,7 @@ export const ligaTeams = [
         taille: 178,
         poids: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/63020.png",
-        playerSlug: "djene "
+        playerSlug: "djene"
       },
       {
         id: 21781710,
@@ -2610,8 +2610,8 @@ export const ligaTeams = [
       },
       {
         id: 530758,
-        nom: "Álex Sola ",
-        displayName: "Álex Sola ",
+        nom: "Álex Sola",
+        displayName: "Álex Sola",
         position: "MF",
         position_id: 26,
         numero: 7,
@@ -2620,7 +2620,7 @@ export const ligaTeams = [
         taille: 178,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/530758.png",
-        playerSlug: "alex-sola "
+        playerSlug: "alex-sola"
       },
       {
         id: 96874,
@@ -2869,8 +2869,8 @@ export const ligaTeams = [
       },
       {
         id: 187035,
-        nom: "Yeray Álvarez ",
-        displayName: "Yeray Álvarez ",
+        nom: "Yeray Álvarez",
+        displayName: "Yeray Álvarez",
         position: "DF",
         position_id: 25,
         numero: 5,
@@ -2879,7 +2879,7 @@ export const ligaTeams = [
         taille: 182,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/187035.png",
-        playerSlug: "yeray-alvarez "
+        playerSlug: "yeray-alvarez"
       },
       {
         id: 2510665,
@@ -3093,8 +3093,8 @@ export const ligaTeams = [
       },
       {
         id: 186801,
-        nom: "Iñaki Williams ",
-        displayName: "Iñaki Williams ",
+        nom: "Iñaki Williams",
+        displayName: "Iñaki Williams",
         position: "FW",
         position_id: 27,
         numero: 9,
@@ -3103,7 +3103,7 @@ export const ligaTeams = [
         taille: 186,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/186801.png",
-        playerSlug: "inaki-williams "
+        playerSlug: "inaki-williams"
       },
       {
         id: 37544434,
@@ -3198,8 +3198,8 @@ export const ligaTeams = [
     players: [
       {
         id: 187158,
-        nom: "Antonio Sivera ",
-        displayName: "Antonio Sivera ",
+        nom: "Antonio Sivera",
+        displayName: "Antonio Sivera",
         position: "GK",
         position_id: 24,
         numero: 1,
@@ -3208,7 +3208,7 @@ export const ligaTeams = [
         taille: 185,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/187158.png",
-        playerSlug: "antonio-sivera "
+        playerSlug: "antonio-sivera"
       },
       {
         id: 185595,
@@ -4206,8 +4206,8 @@ export const ligaTeams = [
       },
       {
         id: 186932,
-        nom: "Mikel Oyarzabal ",
-        displayName: "Mikel Oyarzabal ",
+        nom: "Mikel Oyarzabal",
+        displayName: "Mikel Oyarzabal",
         position: "FW",
         position_id: 27,
         numero: 10,
@@ -4216,7 +4216,7 @@ export const ligaTeams = [
         taille: 181,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/186932.png",
-        playerSlug: "mikel-oyarzabal "
+        playerSlug: "mikel-oyarzabal"
       },
       {
         id: 97692,
@@ -4381,8 +4381,8 @@ export const ligaTeams = [
       },
       {
         id: 185961,
-        nom: "Pedro Bigas ",
-        displayName: "Pedro Bigas ",
+        nom: "Pedro Bigas",
+        displayName: "Pedro Bigas",
         position: "DF",
         position_id: 25,
         numero: 6,
@@ -4391,7 +4391,7 @@ export const ligaTeams = [
         taille: 181,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/185961.png",
-        playerSlug: "pedro-bigas "
+        playerSlug: "pedro-bigas"
       },
       {
         id: 25922180,
@@ -4549,8 +4549,8 @@ export const ligaTeams = [
       },
       {
         id: 37316864,
-        nom: "Yago Santiago ",
-        displayName: "Yago Santiago ",
+        nom: "Yago Santiago",
+        displayName: "Yago Santiago",
         position: "FW",
         position_id: 27,
         numero: 7,
@@ -4559,7 +4559,7 @@ export const ligaTeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/37316864.png",
-        playerSlug: "yago-santiago "
+        playerSlug: "yago-santiago"
       },
       {
         id: 160120,
@@ -4878,8 +4878,8 @@ export const ligaTeams = [
       },
       {
         id: 185571,
-        nom: "Koke ",
-        displayName: "Koke ",
+        nom: "Koke",
+        displayName: "Koke",
         position: "MF",
         position_id: 26,
         numero: 6,
@@ -4888,7 +4888,7 @@ export const ligaTeams = [
         taille: 176,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/185571.png",
-        playerSlug: "koke "
+        playerSlug: "koke"
       },
       {
         id: 37423008,
@@ -5137,8 +5137,8 @@ export const ligaTeams = [
       },
       {
         id: 186337,
-        nom: "José Gayà ",
-        displayName: "José Gayà ",
+        nom: "José Gayà",
+        displayName: "José Gayà",
         position: "DF",
         position_id: 25,
         numero: 14,
@@ -5147,7 +5147,7 @@ export const ligaTeams = [
         taille: 172,
         poids: 66,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/186337.png",
-        playerSlug: "jose-gaya "
+        playerSlug: "jose-gaya"
       },
       {
         id: 95680,
@@ -5788,8 +5788,8 @@ export const ligaTeams = [
       },
       {
         id: 800,
-        nom: "Iago Aspas ",
-        displayName: "Iago Aspas ",
+        nom: "Iago Aspas",
+        displayName: "Iago Aspas",
         position: "FW",
         position_id: 27,
         numero: 10,
@@ -5798,7 +5798,7 @@ export const ligaTeams = [
         taille: 176,
         poids: 67,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/800.png",
-        playerSlug: "iago-aspas "
+        playerSlug: "iago-aspas"
       },
       {
         id: 37585284,
@@ -5949,8 +5949,8 @@ export const ligaTeams = [
       },
       {
         id: 186662,
-        nom: "Antonio Raíllo ",
-        displayName: "Antonio Raíllo ",
+        nom: "Antonio Raíllo",
+        displayName: "Antonio Raíllo",
         position: "DF",
         position_id: 25,
         numero: 21,
@@ -5959,7 +5959,7 @@ export const ligaTeams = [
         taille: 187,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/186662.png",
-        playerSlug: "antonio-raillo "
+        playerSlug: "antonio-raillo"
       },
       {
         id: 186437,
@@ -6404,8 +6404,8 @@ export const ligaTeams = [
       },
       {
         id: 10279739,
-        nom: "Loïc Badé ",
-        displayName: "Loïc Badé ",
+        nom: "Loïc Badé",
+        displayName: "Loïc Badé",
         position: "DF",
         position_id: 25,
         numero: 22,
@@ -6414,7 +6414,7 @@ export const ligaTeams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/10279739.png",
-        playerSlug: "loic-bade "
+        playerSlug: "loic-bade"
       },
       {
         id: 219730,
@@ -6432,8 +6432,8 @@ export const ligaTeams = [
       },
       {
         id: 23269646,
-        nom: "Tanguy Nianzou ",
-        displayName: "Tanguy Nianzou ",
+        nom: "Tanguy Nianzou",
+        displayName: "Tanguy Nianzou",
         position: "DF",
         position_id: 25,
         numero: 23,
@@ -6442,12 +6442,12 @@ export const ligaTeams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/14/23269646.png",
-        playerSlug: "tanguy-nianzou "
+        playerSlug: "tanguy-nianzou"
       },
       {
         id: 37262701,
-        nom: "Ramón Martínez ",
-        displayName: "Ramón Martínez ",
+        nom: "Ramón Martínez",
+        displayName: "Ramón Martínez",
         position: "DF",
         position_id: 25,
         numero: 35,
@@ -6456,7 +6456,7 @@ export const ligaTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/37262701.png",
-        playerSlug: "ramon-martinez "
+        playerSlug: "ramon-martinez"
       },
       {
         id: 37595913,
@@ -6474,8 +6474,8 @@ export const ligaTeams = [
       },
       {
         id: 24071,
-        nom: "Nemanja Gudelj ",
-        displayName: "Nemanja Gudelj ",
+        nom: "Nemanja Gudelj",
+        displayName: "Nemanja Gudelj",
         position: "MF",
         position_id: 26,
         numero: 6,
@@ -6484,7 +6484,7 @@ export const ligaTeams = [
         taille: 187,
         poids: 81,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/24071.png",
-        playerSlug: "nemanja-gudelj "
+        playerSlug: "nemanja-gudelj"
       },
       {
         id: 1478864,
@@ -6530,8 +6530,8 @@ export const ligaTeams = [
       },
       {
         id: 821,
-        nom: "Adnan Januzaj ",
-        displayName: "Adnan Januzaj ",
+        nom: "Adnan Januzaj",
+        displayName: "Adnan Januzaj",
         position: "MF",
         position_id: 26,
         numero: 24,
@@ -6540,12 +6540,12 @@ export const ligaTeams = [
         taille: 186,
         poids: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/821.png",
-        playerSlug: "adnan-januzaj "
+        playerSlug: "adnan-januzaj"
       },
       {
         id: 186391,
-        nom: "Joan Jordán ",
-        displayName: "Joan Jordán ",
+        nom: "Joan Jordán",
+        displayName: "Joan Jordán",
         position: "MF",
         position_id: 26,
         numero: 24,
@@ -6554,7 +6554,7 @@ export const ligaTeams = [
         taille: 185,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/186391.png",
-        playerSlug: "joan-jordan "
+        playerSlug: "joan-jordan"
       },
       {
         id: 37296353,
@@ -6572,8 +6572,8 @@ export const ligaTeams = [
       },
       {
         id: 37590629,
-        nom: "Stanis Idumbo ",
-        displayName: "Stanis Idumbo ",
+        nom: "Stanis Idumbo",
+        displayName: "Stanis Idumbo",
         position: "MF",
         position_id: 26,
         numero: 27,
@@ -6582,7 +6582,7 @@ export const ligaTeams = [
         taille: 171,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/37590629.png",
-        playerSlug: "stanis-idumbo "
+        playerSlug: "stanis-idumbo"
       },
       {
         id: 37590292,
@@ -6929,8 +6929,8 @@ export const ligaTeams = [
       },
       {
         id: 12394118,
-        nom: "Pablo Martínez ",
-        displayName: "Pablo Martínez ",
+        nom: "Pablo Martínez",
+        displayName: "Pablo Martínez",
         position: "MF",
         position_id: 26,
         numero: 10,
@@ -6939,7 +6939,7 @@ export const ligaTeams = [
         taille: 182,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/12394118.png",
-        playerSlug: "pablo-martinez "
+        playerSlug: "pablo-martinez"
       },
       {
         id: 537591,
@@ -7342,8 +7342,8 @@ export const ligaTeams = [
       },
       {
         id: 809,
-        nom: "Santi Cazorla ",
-        displayName: "Santi Cazorla ",
+        nom: "Santi Cazorla",
+        displayName: "Santi Cazorla",
         position: "MF",
         position_id: 26,
         numero: 8,
@@ -7352,7 +7352,7 @@ export const ligaTeams = [
         taille: 168,
         poids: 65,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/809.png",
-        playerSlug: "santi-cazorla "
+        playerSlug: "santi-cazorla"
       },
       {
         id: 132604,
@@ -7811,8 +7811,8 @@ export const ligaTeams = [
       },
       {
         id: 1737,
-        nom: "Cristhian Stuani ",
-        displayName: "Cristhian Stuani ",
+        nom: "Cristhian Stuani",
+        displayName: "Cristhian Stuani",
         position: "FW",
         position_id: 27,
         numero: 7,
@@ -7821,7 +7821,7 @@ export const ligaTeams = [
         taille: 184,
         poids: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/1737.png",
-        playerSlug: "cristhian-stuani "
+        playerSlug: "cristhian-stuani"
       },
       {
         id: 185941,

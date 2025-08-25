@@ -44,7 +44,7 @@
     },
     {
       "id": 31647,
-      "display_name": "Daniel Carvajal ",
+      "display_name": "Daniel Carvajal",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/31/31647.png",
       "age": 33,
       "height": 173,
@@ -53,7 +53,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 2,
-      "slug": "daniel-carvajal "
+      "slug": "daniel-carvajal"
     },
     {
       "id": 460160,
@@ -135,7 +135,7 @@
     },
     {
       "id": 31837,
-      "display_name": "Antonio Rüdiger ",
+      "display_name": "Antonio Rüdiger",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/29/31837.png",
       "age": 32,
       "height": 190,
@@ -144,7 +144,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 22,
-      "slug": "antonio-rüdiger "
+      "slug": "antonio-rüdiger"
     },
     {
       "id": 98903,
@@ -174,7 +174,7 @@
     },
     {
       "id": 37255840,
-      "display_name": "Jude Bellingham ",
+      "display_name": "Jude Bellingham",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/0/37255840.png",
       "age": 22,
       "height": 186,
@@ -183,11 +183,11 @@
       "position": "MF",
       "position_id": 26,
       "jersey_number": 5,
-      "slug": "jude-bellingham "
+      "slug": "jude-bellingham"
     },
     {
       "id": 23688922,
-      "display_name": "Eduardo Camavinga ",
+      "display_name": "Eduardo Camavinga",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/26/23688922.png",
       "age": 22,
       "height": 182,
@@ -196,7 +196,7 @@
       "position": "MF",
       "position_id": 26,
       "jersey_number": 6,
-      "slug": "eduardo-camavinga "
+      "slug": "eduardo-camavinga"
     },
     {
       "id": 260862,

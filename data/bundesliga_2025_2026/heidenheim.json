@@ -31,7 +31,7 @@
     },
     {
       "id": 37558980,
-      "display_name": "Frank Feller ",
+      "display_name": "Frank Feller",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/4/37558980.png",
       "age": 21,
       "height": 183,
@@ -40,7 +40,7 @@
       "position": "GK",
       "position_id": 24,
       "jersey_number": 40,
-      "slug": "frank-feller "
+      "slug": "frank-feller"
     },
     {
       "id": 27067136,
@@ -83,7 +83,7 @@
     },
     {
       "id": 36436,
-      "display_name": "Benedikt Gimber ",
+      "display_name": "Benedikt Gimber",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/20/36436.png",
       "age": 28,
       "height": 187,
@@ -92,11 +92,11 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 5,
-      "slug": "benedikt-gimber "
+      "slug": "benedikt-gimber"
     },
     {
       "id": 34699,
-      "display_name": "Patrick Mainka ",
+      "display_name": "Patrick Mainka",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/11/34699.png",
       "age": 30,
       "height": 194,
@@ -105,7 +105,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 6,
-      "slug": "patrick-mainka "
+      "slug": "patrick-mainka"
     },
     {
       "id": 32756,
@@ -330,7 +330,7 @@
     },
     {
       "id": 20691939,
-      "display_name": "Marvin Pieringer ",
+      "display_name": "Marvin Pieringer",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/3/20691939.png",
       "age": 25,
       "height": 191,
@@ -339,7 +339,7 @@
       "position": "FW",
       "position_id": 27,
       "jersey_number": 18,
-      "slug": "marvin-pieringer "
+      "slug": "marvin-pieringer"
     },
     {
       "id": 21072742,

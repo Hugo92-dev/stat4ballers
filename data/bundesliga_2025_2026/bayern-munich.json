@@ -5,7 +5,7 @@
   "players": [
     {
       "id": 30642,
-      "display_name": "Manuel Neuer ",
+      "display_name": "Manuel Neuer",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/18/30642.png",
       "age": 39,
       "height": 193,
@@ -14,7 +14,7 @@
       "position": "GK",
       "position_id": 24,
       "jersey_number": 1,
-      "slug": "manuel-neuer "
+      "slug": "manuel-neuer"
     },
     {
       "id": 31140,
@@ -96,7 +96,7 @@
     },
     {
       "id": 262644,
-      "display_name": "Alphonso Davies ",
+      "display_name": "Alphonso Davies",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/20/262644.png",
       "age": 24,
       "height": 183,
@@ -105,11 +105,11 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 19,
-      "slug": "alphonso-davies "
+      "slug": "alphonso-davies"
     },
     {
       "id": 465580,
-      "display_name": "Hiroki Ito ",
+      "display_name": "Hiroki Ito",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/12/465580.png",
       "age": 26,
       "height": 188,
@@ -118,7 +118,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 21,
-      "slug": "hiroki-ito "
+      "slug": "hiroki-ito"
     },
     {
       "id": 32397,
@@ -187,7 +187,7 @@
     },
     {
       "id": 33186829,
-      "display_name": "Jamal Musiala ",
+      "display_name": "Jamal Musiala",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/13/33186829.png",
       "age": 22,
       "height": 184,
@@ -196,7 +196,7 @@
       "position": "MF",
       "position_id": 26,
       "jersey_number": 10,
-      "slug": "jamal-musiala "
+      "slug": "jamal-musiala"
     },
     {
       "id": 24799984,

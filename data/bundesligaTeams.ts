@@ -6,8 +6,8 @@ export const bundesligaTeams = [
     players: [
       {
         id: 30642,
-        nom: "Manuel Neuer ",
-        displayName: "Manuel Neuer ",
+        nom: "Manuel Neuer",
+        displayName: "Manuel Neuer",
         position: "GK",
         position_id: 24,
         numero: 1,
@@ -16,7 +16,7 @@ export const bundesligaTeams = [
         taille: 193,
         poids: 92,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/30642.png",
-        playerSlug: "manuel-neuer "
+        playerSlug: "manuel-neuer"
       },
       {
         id: 31140,
@@ -104,8 +104,8 @@ export const bundesligaTeams = [
       },
       {
         id: 262644,
-        nom: "Alphonso Davies ",
-        displayName: "Alphonso Davies ",
+        nom: "Alphonso Davies",
+        displayName: "Alphonso Davies",
         position: "DF",
         position_id: 25,
         numero: 19,
@@ -114,12 +114,12 @@ export const bundesligaTeams = [
         taille: 183,
         poids: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/262644.png",
-        playerSlug: "alphonso-davies "
+        playerSlug: "alphonso-davies"
       },
       {
         id: 465580,
-        nom: "Hiroki Ito ",
-        displayName: "Hiroki Ito ",
+        nom: "Hiroki Ito",
+        displayName: "Hiroki Ito",
         position: "DF",
         position_id: 25,
         numero: 21,
@@ -128,7 +128,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/465580.png",
-        playerSlug: "hiroki-ito "
+        playerSlug: "hiroki-ito"
       },
       {
         id: 32397,
@@ -202,8 +202,8 @@ export const bundesligaTeams = [
       },
       {
         id: 33186829,
-        nom: "Jamal Musiala ",
-        displayName: "Jamal Musiala ",
+        nom: "Jamal Musiala",
+        displayName: "Jamal Musiala",
         position: "MF",
         position_id: 26,
         numero: 10,
@@ -212,7 +212,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/33186829.png",
-        playerSlug: "jamal-musiala "
+        playerSlug: "jamal-musiala"
       },
       {
         id: 24799984,
@@ -405,8 +405,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37625681,
-        nom: "Kauã Santos ",
-        displayName: "Kauã Santos ",
+        nom: "Kauã Santos",
+        displayName: "Kauã Santos",
         position: "GK",
         position_id: 24,
         numero: 40,
@@ -415,7 +415,7 @@ export const bundesligaTeams = [
         taille: 197,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/37625681.png",
-        playerSlug: "kaua-santos "
+        playerSlug: "kaua-santos"
       },
       {
         id: 37645238,
@@ -433,8 +433,8 @@ export const bundesligaTeams = [
       },
       {
         id: 25922235,
-        nom: "Arthur Theate ",
-        displayName: "Arthur Theate ",
+        nom: "Arthur Theate",
+        displayName: "Arthur Theate",
         position: "DF",
         position_id: 25,
         numero: 3,
@@ -443,7 +443,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/25922235.png",
-        playerSlug: "arthur-theate "
+        playerSlug: "arthur-theate"
       },
       {
         id: 35364,
@@ -489,8 +489,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37538035,
-        nom: "Nathaniel Brown ",
-        displayName: "Nathaniel Brown ",
+        nom: "Nathaniel Brown",
+        displayName: "Nathaniel Brown",
         position: "DF",
         position_id: 25,
         numero: 21,
@@ -499,7 +499,7 @@ export const bundesligaTeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/37538035.png",
-        playerSlug: "nathaniel-brown "
+        playerSlug: "nathaniel-brown"
       },
       {
         id: 31254,
@@ -601,8 +601,8 @@ export const bundesligaTeams = [
       },
       {
         id: 96364,
-        nom: "Ellyes Skhiri ",
-        displayName: "Ellyes Skhiri ",
+        nom: "Ellyes Skhiri",
+        displayName: "Ellyes Skhiri",
         position: "MF",
         position_id: 26,
         numero: 15,
@@ -611,7 +611,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: 69,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/96364.png",
-        playerSlug: "ellyes-skhiri "
+        playerSlug: "ellyes-skhiri"
       },
       {
         id: 37592738,
@@ -783,8 +783,8 @@ export const bundesligaTeams = [
       },
       {
         id: 3861788,
-        nom: "Jessic Ngankam ",
-        displayName: "Jessic Ngankam ",
+        nom: "Jessic Ngankam",
+        displayName: "Jessic Ngankam",
         position: "FW",
         position_id: 27,
         numero: 32,
@@ -793,7 +793,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/3861788.png",
-        playerSlug: "jessic-ngankam "
+        playerSlug: "jessic-ngankam"
       }
     ]
   },
@@ -860,8 +860,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37259482,
-        nom: "Kilian Fischer ",
-        displayName: "Kilian Fischer ",
+        nom: "Kilian Fischer",
+        displayName: "Kilian Fischer",
         position: "DF",
         position_id: 25,
         numero: 2,
@@ -870,7 +870,7 @@ export const bundesligaTeams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/37259482.png",
-        playerSlug: "kilian-fischer "
+        playerSlug: "kilian-fischer"
       },
       {
         id: 180894,
@@ -902,8 +902,8 @@ export const bundesligaTeams = [
       },
       {
         id: 540217,
-        nom: "Rogério ",
-        displayName: "Rogério ",
+        nom: "Rogério",
+        displayName: "Rogério",
         position: "DF",
         position_id: 25,
         numero: 13,
@@ -912,7 +912,7 @@ export const bundesligaTeams = [
         taille: 178,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/540217.png",
-        playerSlug: "rogerio "
+        playerSlug: "rogerio"
       },
       {
         id: 1494701,
@@ -1056,8 +1056,8 @@ export const bundesligaTeams = [
       },
       {
         id: 31730,
-        nom: "Maximilian Arnold ",
-        displayName: "Maximilian Arnold ",
+        nom: "Maximilian Arnold",
+        displayName: "Maximilian Arnold",
         position: "MF",
         position_id: 26,
         numero: 27,
@@ -1066,7 +1066,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/31730.png",
-        playerSlug: "maximilian-arnold "
+        playerSlug: "maximilian-arnold"
       },
       {
         id: 32155,
@@ -1259,8 +1259,8 @@ export const bundesligaTeams = [
       },
       {
         id: 24284,
-        nom: "Jeffrey Gouweleeuw ",
-        displayName: "Jeffrey Gouweleeuw ",
+        nom: "Jeffrey Gouweleeuw",
+        displayName: "Jeffrey Gouweleeuw",
         position: "DF",
         position_id: 25,
         numero: 6,
@@ -1269,7 +1269,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/24284.png",
-        playerSlug: "jeffrey-gouweleeuw "
+        playerSlug: "jeffrey-gouweleeuw"
       },
       {
         id: 78282,
@@ -1525,8 +1525,8 @@ export const bundesligaTeams = [
       },
       {
         id: 432832,
-        nom: "Samuel Essende ",
-        displayName: "Samuel Essende ",
+        nom: "Samuel Essende",
+        displayName: "Samuel Essende",
         position: "FW",
         position_id: 27,
         numero: 9,
@@ -1535,7 +1535,7 @@ export const bundesligaTeams = [
         taille: 193,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/432832.png",
-        playerSlug: "samuel-essende "
+        playerSlug: "samuel-essende"
       },
       {
         id: 96201,
@@ -1567,8 +1567,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37579757,
-        nom: "Elias Saad ",
-        displayName: "Elias Saad ",
+        nom: "Elias Saad",
+        displayName: "Elias Saad",
         position: "FW",
         position_id: 27,
         numero: 26,
@@ -1577,7 +1577,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/37579757.png",
-        playerSlug: "elias-saad "
+        playerSlug: "elias-saad"
       },
       {
         id: 37645949,
@@ -1616,8 +1616,8 @@ export const bundesligaTeams = [
     players: [
       {
         id: 31146,
-        nom: "Oliver Baumann ",
-        displayName: "Oliver Baumann ",
+        nom: "Oliver Baumann",
+        displayName: "Oliver Baumann",
         position: "GK",
         position_id: 24,
         numero: 1,
@@ -1626,7 +1626,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/31146.png",
-        playerSlug: "oliver-baumann "
+        playerSlug: "oliver-baumann"
       },
       {
         id: 37344040,
@@ -1686,8 +1686,8 @@ export const bundesligaTeams = [
       },
       {
         id: 5640817,
-        nom: "Ozan Kabak ",
-        displayName: "Ozan Kabak ",
+        nom: "Ozan Kabak",
+        displayName: "Ozan Kabak",
         position: "DF",
         position_id: 25,
         numero: 5,
@@ -1696,7 +1696,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/5640817.png",
-        playerSlug: "ozan-kabak "
+        playerSlug: "ozan-kabak"
       },
       {
         id: 32666,
@@ -1714,8 +1714,8 @@ export const bundesligaTeams = [
       },
       {
         id: 8415421,
-        nom: "Valentin Gendrey ",
-        displayName: "Valentin Gendrey ",
+        nom: "Valentin Gendrey",
+        displayName: "Valentin Gendrey",
         position: "DF",
         position_id: 25,
         numero: 15,
@@ -1724,7 +1724,7 @@ export const bundesligaTeams = [
         taille: 179,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/8415421.png",
-        playerSlug: "valentin-gendrey "
+        playerSlug: "valentin-gendrey"
       },
       {
         id: 31626002,
@@ -2197,8 +2197,8 @@ export const bundesligaTeams = [
       },
       {
         id: 34668,
-        nom: "Christopher Trimmel ",
-        displayName: "Christopher Trimmel ",
+        nom: "Christopher Trimmel",
+        displayName: "Christopher Trimmel",
         position: "DF",
         position_id: 25,
         numero: 28,
@@ -2207,7 +2207,7 @@ export const bundesligaTeams = [
         taille: 189,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/34668.png",
-        playerSlug: "christopher-trimmel "
+        playerSlug: "christopher-trimmel"
       },
       {
         id: 540548,
@@ -2253,8 +2253,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37581984,
-        nom: "Aljoscha Kemlein ",
-        displayName: "Aljoscha Kemlein ",
+        nom: "Aljoscha Kemlein",
+        displayName: "Aljoscha Kemlein",
         position: "MF",
         position_id: 26,
         numero: 6,
@@ -2263,7 +2263,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/37581984.png",
-        playerSlug: "aljoscha-kemlein "
+        playerSlug: "aljoscha-kemlein"
       },
       {
         id: 31907,
@@ -2337,8 +2337,8 @@ export const bundesligaTeams = [
       },
       {
         id: 84342,
-        nom: "Robert Skov ",
-        displayName: "Robert Skov ",
+        nom: "Robert Skov",
+        displayName: "Robert Skov",
         position: "MF",
         position_id: 26,
         numero: 24,
@@ -2347,7 +2347,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/84342.png",
-        playerSlug: "robert-skov "
+        playerSlug: "robert-skov"
       },
       {
         id: 96886,
@@ -2568,8 +2568,8 @@ export const bundesligaTeams = [
       },
       {
         id: 418281,
-        nom: "Timo Hübers ",
-        displayName: "Timo Hübers ",
+        nom: "Timo Hübers",
+        displayName: "Timo Hübers",
         position: "DF",
         position_id: 25,
         numero: 4,
@@ -2578,12 +2578,12 @@ export const bundesligaTeams = [
         taille: 190,
         poids: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/418281.png",
-        playerSlug: "timo-hubers "
+        playerSlug: "timo-hubers"
       },
       {
         id: 537592,
-        nom: "Luca Kilian ",
-        displayName: "Luca Kilian ",
+        nom: "Luca Kilian",
+        displayName: "Luca Kilian",
         position: "DF",
         position_id: 25,
         numero: 15,
@@ -2592,7 +2592,7 @@ export const bundesligaTeams = [
         taille: 192,
         poids: 90,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/537592.png",
-        playerSlug: "luca-kilian "
+        playerSlug: "luca-kilian"
       },
       {
         id: 34650,
@@ -3037,8 +3037,8 @@ export const bundesligaTeams = [
       },
       {
         id: 3862352,
-        nom: "Nico Schlotterbeck ",
-        displayName: "Nico Schlotterbeck ",
+        nom: "Nico Schlotterbeck",
+        displayName: "Nico Schlotterbeck",
         position: "DF",
         position_id: 25,
         numero: 4,
@@ -3047,7 +3047,7 @@ export const bundesligaTeams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/3862352.png",
-        playerSlug: "nico-schlotterbeck "
+        playerSlug: "nico-schlotterbeck"
       },
       {
         id: 62502,
@@ -3149,8 +3149,8 @@ export const bundesligaTeams = [
       },
       {
         id: 32622,
-        nom: "Salih Özcan ",
-        displayName: "Salih Özcan ",
+        nom: "Salih Özcan",
+        displayName: "Salih Özcan",
         position: "MF",
         position_id: 26,
         numero: 6,
@@ -3159,7 +3159,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/14/32622.png",
-        playerSlug: "salih-ozcan "
+        playerSlug: "salih-ozcan"
       },
       {
         id: 37581777,
@@ -3233,8 +3233,8 @@ export const bundesligaTeams = [
       },
       {
         id: 1388,
-        nom: "Emre Can  ",
-        displayName: "Emre Can  ",
+        nom: "Emre Can ",
+        displayName: "Emre Can ",
         position: "MF",
         position_id: 26,
         numero: 23,
@@ -3243,7 +3243,7 @@ export const bundesligaTeams = [
         taille: 186,
         poids: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/1388.png",
-        playerSlug: "emre-can  "
+        playerSlug: "emre-can "
       },
       {
         id: 32695,
@@ -3275,8 +3275,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37632313,
-        nom: "Julien Duranville ",
-        displayName: "Julien Duranville ",
+        nom: "Julien Duranville",
+        displayName: "Julien Duranville",
         position: "FW",
         position_id: 27,
         numero: 16,
@@ -3285,7 +3285,7 @@ export const bundesligaTeams = [
         taille: 173,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/37632313.png",
-        playerSlug: "julien-duranville "
+        playerSlug: "julien-duranville"
       },
       {
         id: 15040126,
@@ -3380,8 +3380,8 @@ export const bundesligaTeams = [
       },
       {
         id: 88119,
-        nom: "Karol Mets ",
-        displayName: "Karol Mets ",
+        nom: "Karol Mets",
+        displayName: "Karol Mets",
         position: "DF",
         position_id: 25,
         numero: 3,
@@ -3390,7 +3390,7 @@ export const bundesligaTeams = [
         taille: 191,
         poids: 91,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/88119.png",
-        playerSlug: "karol-mets "
+        playerSlug: "karol-mets"
       },
       {
         id: 21036726,
@@ -3534,8 +3534,8 @@ export const bundesligaTeams = [
       },
       {
         id: 6605,
-        nom: "Jackson Irvine  ",
-        displayName: "Jackson Irvine  ",
+        nom: "Jackson Irvine ",
+        displayName: "Jackson Irvine ",
         position: "MF",
         position_id: 26,
         numero: 7,
@@ -3544,7 +3544,7 @@ export const bundesligaTeams = [
         taille: 189,
         poids: 77,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/6605.png",
-        playerSlug: "jackson-irvine  "
+        playerSlug: "jackson-irvine "
       },
       {
         id: 141099,
@@ -3660,8 +3660,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37304039,
-        nom: "Ricky-Jade Jones ",
-        displayName: "Ricky-Jade Jones ",
+        nom: "Ricky-Jade Jones",
+        displayName: "Ricky-Jade Jones",
         position: "FW",
         position_id: 27,
         numero: 26,
@@ -3670,7 +3670,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/37304039.png",
-        playerSlug: "ricky-jade-jones "
+        playerSlug: "ricky-jade-jones"
       },
       {
         id: 37291444,
@@ -3933,8 +3933,8 @@ export const bundesligaTeams = [
       },
       {
         id: 741528,
-        nom: "Immanuel Pherai ",
-        displayName: "Immanuel Pherai ",
+        nom: "Immanuel Pherai",
+        displayName: "Immanuel Pherai",
         position: "MF",
         position_id: 26,
         numero: 10,
@@ -3943,7 +3943,7 @@ export const bundesligaTeams = [
         taille: 175,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/741528.png",
-        playerSlug: "immanuel-pherai "
+        playerSlug: "immanuel-pherai"
       },
       {
         id: 21762194,
@@ -3989,8 +3989,8 @@ export const bundesligaTeams = [
       },
       {
         id: 62734,
-        nom: "Jean-Luc Dompé ",
-        displayName: "Jean-Luc Dompé ",
+        nom: "Jean-Luc Dompé",
+        displayName: "Jean-Luc Dompé",
         position: "FW",
         position_id: 27,
         numero: 7,
@@ -3999,7 +3999,7 @@ export const bundesligaTeams = [
         taille: 170,
         poids: 65,
         image: "https://cdn.sportmonks.com/images/soccer/players/14/62734.png",
-        playerSlug: "jean-luc-dompe "
+        playerSlug: "jean-luc-dompe"
       },
       {
         id: 35801,
@@ -4045,8 +4045,8 @@ export const bundesligaTeams = [
       },
       {
         id: 32587,
-        nom: "Yussuf Poulsen  ",
-        displayName: "Yussuf Poulsen  ",
+        nom: "Yussuf Poulsen ",
+        displayName: "Yussuf Poulsen ",
         position: "FW",
         position_id: 27,
         numero: 15,
@@ -4055,7 +4055,7 @@ export const bundesligaTeams = [
         taille: 192,
         poids: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/32587.png",
-        playerSlug: "yussuf-poulsen  "
+        playerSlug: "yussuf-poulsen "
       },
       {
         id: 32803,
@@ -4136,8 +4136,8 @@ export const bundesligaTeams = [
     players: [
       {
         id: 198086,
-        nom: "Jonas Omlin ",
-        displayName: "Jonas Omlin ",
+        nom: "Jonas Omlin",
+        displayName: "Jonas Omlin",
         position: "GK",
         position_id: 24,
         numero: 1,
@@ -4146,7 +4146,7 @@ export const bundesligaTeams = [
         taille: 190,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/198086.png",
-        playerSlug: "jonas-omlin "
+        playerSlug: "jonas-omlin"
       },
       {
         id: 31073,
@@ -4206,8 +4206,8 @@ export const bundesligaTeams = [
       },
       {
         id: 25106,
-        nom: "Kevin Diks ",
-        displayName: "Kevin Diks ",
+        nom: "Kevin Diks",
+        displayName: "Kevin Diks",
         position: "DF",
         position_id: 25,
         numero: 4,
@@ -4216,7 +4216,7 @@ export const bundesligaTeams = [
         taille: 186,
         poids: 73,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/25106.png",
-        playerSlug: "kevin-diks "
+        playerSlug: "kevin-diks"
       },
       {
         id: 32258,
@@ -4318,8 +4318,8 @@ export const bundesligaTeams = [
       },
       {
         id: 35815,
-        nom: "Florian Neuhaus ",
-        displayName: "Florian Neuhaus ",
+        nom: "Florian Neuhaus",
+        displayName: "Florian Neuhaus",
         position: "MF",
         position_id: 26,
         numero: 10,
@@ -4328,7 +4328,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/35815.png",
-        playerSlug: "florian-neuhaus "
+        playerSlug: "florian-neuhaus"
       },
       {
         id: 34432365,
@@ -4402,8 +4402,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37650070,
-        nom: "Charles Herrmann ",
-        displayName: "Charles Herrmann ",
+        nom: "Charles Herrmann",
+        displayName: "Charles Herrmann",
         position: "MF",
         position_id: 26,
         numero: 34,
@@ -4412,7 +4412,7 @@ export const bundesligaTeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/37650070.png",
-        playerSlug: "charles-herrmann "
+        playerSlug: "charles-herrmann"
       },
       {
         id: 37650032,
@@ -4444,8 +4444,8 @@ export const bundesligaTeams = [
       },
       {
         id: 34987,
-        nom: "Tim Kleindienst ",
-        displayName: "Tim Kleindienst ",
+        nom: "Tim Kleindienst",
+        displayName: "Tim Kleindienst",
         position: "FW",
         position_id: 27,
         numero: 11,
@@ -4454,7 +4454,7 @@ export const bundesligaTeams = [
         taille: 194,
         poids: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/34987.png",
-        playerSlug: "tim-kleindienst "
+        playerSlug: "tim-kleindienst"
       },
       {
         id: 197836,
@@ -4486,8 +4486,8 @@ export const bundesligaTeams = [
       },
       {
         id: 16496676,
-        nom: "Nathan Ngoumou ",
-        displayName: "Nathan Ngoumou ",
+        nom: "Nathan Ngoumou",
+        displayName: "Nathan Ngoumou",
         position: "FW",
         position_id: 27,
         numero: 19,
@@ -4496,7 +4496,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/16496676.png",
-        playerSlug: "nathan-ngoumou "
+        playerSlug: "nathan-ngoumou"
       },
       {
         id: 1452396,
@@ -4605,8 +4605,8 @@ export const bundesligaTeams = [
       },
       {
         id: 10279739,
-        nom: "Loïc Badé ",
-        displayName: "Loïc Badé ",
+        nom: "Loïc Badé",
+        displayName: "Loïc Badé",
         position: "DF",
         position_id: 25,
         numero: 5,
@@ -4615,7 +4615,7 @@ export const bundesligaTeams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/10279739.png",
-        playerSlug: "loic-bade "
+        playerSlug: "loic-bade"
       },
       {
         id: 766659,
@@ -4689,8 +4689,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37590934,
-        nom: "Jeanuël Belocian ",
-        displayName: "Jeanuël Belocian ",
+        nom: "Jeanuël Belocian",
+        displayName: "Jeanuël Belocian",
         position: "DF",
         position_id: 25,
         numero: 44,
@@ -4699,12 +4699,12 @@ export const bundesligaTeams = [
         taille: 186,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/37590934.png",
-        playerSlug: "jeanuel-belocian "
+        playerSlug: "jeanuel-belocian"
       },
       {
         id: 31745,
-        nom: "Jonas Hofmann ",
-        displayName: "Jonas Hofmann ",
+        nom: "Jonas Hofmann",
+        displayName: "Jonas Hofmann",
         position: "MF",
         position_id: 26,
         numero: 7,
@@ -4713,12 +4713,12 @@ export const bundesligaTeams = [
         taille: 176,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/31745.png",
-        playerSlug: "jonas-hofmann "
+        playerSlug: "jonas-hofmann"
       },
       {
         id: 34880,
-        nom: "Robert Andrich ",
-        displayName: "Robert Andrich ",
+        nom: "Robert Andrich",
+        displayName: "Robert Andrich",
         position: "MF",
         position_id: 26,
         numero: 8,
@@ -4727,12 +4727,12 @@ export const bundesligaTeams = [
         taille: 187,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/34880.png",
-        playerSlug: "robert-andrich "
+        playerSlug: "robert-andrich"
       },
       {
         id: 37639080,
-        nom: "Claudio Echeverri ",
-        displayName: "Claudio Echeverri ",
+        nom: "Claudio Echeverri",
+        displayName: "Claudio Echeverri",
         position: "MF",
         position_id: 26,
         numero: 9,
@@ -4741,12 +4741,12 @@ export const bundesligaTeams = [
         taille: 170,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/37639080.png",
-        playerSlug: "claudio-echeverri "
+        playerSlug: "claudio-echeverri"
       },
       {
         id: 23277869,
-        nom: "Malik Tillman ",
-        displayName: "Malik Tillman ",
+        nom: "Malik Tillman",
+        displayName: "Malik Tillman",
         position: "MF",
         position_id: 26,
         numero: 10,
@@ -4755,7 +4755,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/23277869.png",
-        playerSlug: "malik-tillman "
+        playerSlug: "malik-tillman"
       },
       {
         id: 4574,
@@ -4773,8 +4773,8 @@ export const bundesligaTeams = [
       },
       {
         id: 335673,
-        nom: "Exequiel Palacios ",
-        displayName: "Exequiel Palacios ",
+        nom: "Exequiel Palacios",
+        displayName: "Exequiel Palacios",
         position: "MF",
         position_id: 26,
         numero: 25,
@@ -4783,7 +4783,7 @@ export const bundesligaTeams = [
         taille: 178,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/335673.png",
-        playerSlug: "exequiel-palacios "
+        playerSlug: "exequiel-palacios"
       },
       {
         id: 37706061,
@@ -4815,8 +4815,8 @@ export const bundesligaTeams = [
       },
       {
         id: 97292,
-        nom: "Martin Terrier ",
-        displayName: "Martin Terrier ",
+        nom: "Martin Terrier",
+        displayName: "Martin Terrier",
         position: "FW",
         position_id: 27,
         numero: 11,
@@ -4825,7 +4825,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/97292.png",
-        playerSlug: "martin-terrier "
+        playerSlug: "martin-terrier"
       },
       {
         id: 80675,
@@ -5074,8 +5074,8 @@ export const bundesligaTeams = [
       },
       {
         id: 24817462,
-        nom: "Leonidas Stergiou ",
-        displayName: "Leonidas Stergiou ",
+        nom: "Leonidas Stergiou",
+        displayName: "Leonidas Stergiou",
         position: "DF",
         position_id: 25,
         numero: 20,
@@ -5084,7 +5084,7 @@ export const bundesligaTeams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/24817462.png",
-        playerSlug: "leonidas-stergiou "
+        playerSlug: "leonidas-stergiou"
       },
       {
         id: 35281182,
@@ -5130,8 +5130,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37650664,
-        nom: "Finn Jeltsch ",
-        displayName: "Finn Jeltsch ",
+        nom: "Finn Jeltsch",
+        displayName: "Finn Jeltsch",
         position: "DF",
         position_id: 25,
         numero: 29,
@@ -5140,7 +5140,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/37650664.png",
-        playerSlug: "finn-jeltsch "
+        playerSlug: "finn-jeltsch"
       },
       {
         id: 3862360,
@@ -5186,8 +5186,8 @@ export const bundesligaTeams = [
       },
       {
         id: 418197,
-        nom: "Atakan Karazor ",
-        displayName: "Atakan Karazor ",
+        nom: "Atakan Karazor",
+        displayName: "Atakan Karazor",
         position: "MF",
         position_id: 26,
         numero: 16,
@@ -5196,7 +5196,7 @@ export const bundesligaTeams = [
         taille: 191,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/418197.png",
-        playerSlug: "atakan-karazor "
+        playerSlug: "atakan-karazor"
       },
       {
         id: 37650324,
@@ -5298,8 +5298,8 @@ export const bundesligaTeams = [
       },
       {
         id: 14350739,
-        nom: "Silas ",
-        displayName: "Silas ",
+        nom: "Silas",
+        displayName: "Silas",
         position: "FW",
         position_id: 27,
         numero: 13,
@@ -5308,7 +5308,7 @@ export const bundesligaTeams = [
         taille: 189,
         poids: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/14350739.png",
-        playerSlug: "silas "
+        playerSlug: "silas"
       },
       {
         id: 37544947,
@@ -5529,8 +5529,8 @@ export const bundesligaTeams = [
       },
       {
         id: 129609,
-        nom: "Silvan Widmer ",
-        displayName: "Silvan Widmer ",
+        nom: "Silvan Widmer",
+        displayName: "Silvan Widmer",
         position: "DF",
         position_id: 25,
         numero: 30,
@@ -5539,12 +5539,12 @@ export const bundesligaTeams = [
         taille: 183,
         poids: 79,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/129609.png",
-        playerSlug: "silvan-widmer "
+        playerSlug: "silvan-widmer"
       },
       {
         id: 31982,
-        nom: "Dominik Kohr ",
-        displayName: "Dominik Kohr ",
+        nom: "Dominik Kohr",
+        displayName: "Dominik Kohr",
         position: "DF",
         position_id: 25,
         numero: 31,
@@ -5553,12 +5553,12 @@ export const bundesligaTeams = [
         taille: 183,
         poids: 81,
         image: "https://cdn.sportmonks.com/images/soccer/players/14/31982.png",
-        playerSlug: "dominik-kohr "
+        playerSlug: "dominik-kohr"
       },
       {
         id: 37650612,
-        nom: "Maxim Dal ",
-        displayName: "Maxim Dal ",
+        nom: "Maxim Dal",
+        displayName: "Maxim Dal",
         position: "DF",
         position_id: 25,
         numero: 47,
@@ -5567,7 +5567,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/37650612.png",
-        playerSlug: "maxim-dal "
+        playerSlug: "maxim-dal"
       },
       {
         id: 31238688,
@@ -5802,8 +5802,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37558980,
-        nom: "Frank Feller ",
-        displayName: "Frank Feller ",
+        nom: "Frank Feller",
+        displayName: "Frank Feller",
         position: "GK",
         position_id: 24,
         numero: 40,
@@ -5812,7 +5812,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/37558980.png",
-        playerSlug: "frank-feller "
+        playerSlug: "frank-feller"
       },
       {
         id: 27067136,
@@ -5858,8 +5858,8 @@ export const bundesligaTeams = [
       },
       {
         id: 36436,
-        nom: "Benedikt Gimber ",
-        displayName: "Benedikt Gimber ",
+        nom: "Benedikt Gimber",
+        displayName: "Benedikt Gimber",
         position: "DF",
         position_id: 25,
         numero: 5,
@@ -5868,12 +5868,12 @@ export const bundesligaTeams = [
         taille: 187,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/36436.png",
-        playerSlug: "benedikt-gimber "
+        playerSlug: "benedikt-gimber"
       },
       {
         id: 34699,
-        nom: "Patrick Mainka ",
-        displayName: "Patrick Mainka ",
+        nom: "Patrick Mainka",
+        displayName: "Patrick Mainka",
         position: "DF",
         position_id: 25,
         numero: 6,
@@ -5882,7 +5882,7 @@ export const bundesligaTeams = [
         taille: 194,
         poids: 90,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/34699.png",
-        playerSlug: "patrick-mainka "
+        playerSlug: "patrick-mainka"
       },
       {
         id: 32756,
@@ -6124,8 +6124,8 @@ export const bundesligaTeams = [
       },
       {
         id: 20691939,
-        nom: "Marvin Pieringer ",
-        displayName: "Marvin Pieringer ",
+        nom: "Marvin Pieringer",
+        displayName: "Marvin Pieringer",
         position: "FW",
         position_id: 27,
         numero: 18,
@@ -6134,7 +6134,7 @@ export const bundesligaTeams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/20691939.png",
-        playerSlug: "marvin-pieringer "
+        playerSlug: "marvin-pieringer"
       },
       {
         id: 21072742,
@@ -6285,8 +6285,8 @@ export const bundesligaTeams = [
       },
       {
         id: 31712,
-        nom: "Christian Günter ",
-        displayName: "Christian Günter ",
+        nom: "Christian Günter",
+        displayName: "Christian Günter",
         position: "DF",
         position_id: 25,
         numero: 30,
@@ -6295,7 +6295,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/31712.png",
-        playerSlug: "christian-gunter "
+        playerSlug: "christian-gunter"
       },
       {
         id: 37308225,
@@ -6313,8 +6313,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37316562,
-        nom: "Max Rosenfelder ",
-        displayName: "Max Rosenfelder ",
+        nom: "Max Rosenfelder",
+        displayName: "Max Rosenfelder",
         position: "DF",
         position_id: 25,
         numero: 37,
@@ -6323,7 +6323,7 @@ export const bundesligaTeams = [
         taille: 186,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/37316562.png",
-        playerSlug: "max-rosenfelder "
+        playerSlug: "max-rosenfelder"
       },
       {
         id: 37624009,
@@ -6537,8 +6537,8 @@ export const bundesligaTeams = [
       },
       {
         id: 32137,
-        nom: "Maximilian Philipp ",
-        displayName: "Maximilian Philipp ",
+        nom: "Maximilian Philipp",
+        displayName: "Maximilian Philipp",
         position: "FW",
         position_id: 27,
         numero: 26,
@@ -6547,7 +6547,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: 79,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/32137.png",
-        playerSlug: "maximilian-philipp "
+        playerSlug: "maximilian-philipp"
       },
       {
         id: 37417027,
@@ -6642,8 +6642,8 @@ export const bundesligaTeams = [
       },
       {
         id: 23660720,
-        nom: "Olivier Deman ",
-        displayName: "Olivier Deman ",
+        nom: "Olivier Deman",
+        displayName: "Olivier Deman",
         position: "DF",
         position_id: 25,
         numero: 2,
@@ -6652,7 +6652,7 @@ export const bundesligaTeams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/23660720.png",
-        playerSlug: "olivier-deman "
+        playerSlug: "olivier-deman"
       },
       {
         id: 31772,
@@ -6684,8 +6684,8 @@ export const bundesligaTeams = [
       },
       {
         id: 31636,
-        nom: "Mitchell Weiser ",
-        displayName: "Mitchell Weiser ",
+        nom: "Mitchell Weiser",
+        displayName: "Mitchell Weiser",
         position: "DF",
         position_id: 25,
         numero: 8,
@@ -6694,7 +6694,7 @@ export const bundesligaTeams = [
         taille: 177,
         poids: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/31636.png",
-        playerSlug: "mitchell-weiser "
+        playerSlug: "mitchell-weiser"
       },
       {
         id: 37547066,
@@ -6740,8 +6740,8 @@ export const bundesligaTeams = [
       },
       {
         id: 33701,
-        nom: "Marco Friedl ",
-        displayName: "Marco Friedl ",
+        nom: "Marco Friedl",
+        displayName: "Marco Friedl",
         position: "DF",
         position_id: 25,
         numero: 32,
@@ -6750,7 +6750,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/33701.png",
-        playerSlug: "marco-friedl "
+        playerSlug: "marco-friedl"
       },
       {
         id: 37652849,
@@ -6782,8 +6782,8 @@ export const bundesligaTeams = [
       },
       {
         id: 84658,
-        nom: "Jens Stage ",
-        displayName: "Jens Stage ",
+        nom: "Jens Stage",
+        displayName: "Jens Stage",
         position: "MF",
         position_id: 26,
         numero: 6,
@@ -6792,7 +6792,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/84658.png",
-        playerSlug: "jens-stage "
+        playerSlug: "jens-stage"
       },
       {
         id: 31729,
@@ -6950,8 +6950,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37259284,
-        nom: "Justin Njinmah ",
-        displayName: "Justin Njinmah ",
+        nom: "Justin Njinmah",
+        displayName: "Justin Njinmah",
         position: "FW",
         position_id: 27,
         numero: 11,
@@ -6960,7 +6960,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/37259284.png",
-        playerSlug: "justin-njinmah "
+        playerSlug: "justin-njinmah"
       },
       {
         id: 349061,
@@ -7055,8 +7055,8 @@ export const bundesligaTeams = [
       },
       {
         id: 31077,
-        nom: "Willi Orbán ",
-        displayName: "Willi Orbán ",
+        nom: "Willi Orbán",
+        displayName: "Willi Orbán",
         position: "DF",
         position_id: 25,
         numero: 4,
@@ -7065,7 +7065,7 @@ export const bundesligaTeams = [
         taille: 186,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/31077.png",
-        playerSlug: "willi-orban "
+        playerSlug: "willi-orban"
       },
       {
         id: 37528548,
@@ -7391,8 +7391,8 @@ export const bundesligaTeams = [
       },
       {
         id: 37651943,
-        nom: "Tidiam Gomis ",
-        displayName: "Tidiam Gomis ",
+        nom: "Tidiam Gomis",
+        displayName: "Tidiam Gomis",
         position: "FW",
         position_id: 27,
         numero: 27,
@@ -7401,7 +7401,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/37651943.png",
-        playerSlug: "tidiam-gomis "
+        playerSlug: "tidiam-gomis"
       },
       {
         id: 31823,

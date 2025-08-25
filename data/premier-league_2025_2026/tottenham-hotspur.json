@@ -5,7 +5,7 @@
   "players": [
     {
       "id": 133779,
-      "display_name": "Guglielmo Vicario ",
+      "display_name": "Guglielmo Vicario",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/19/133779.png",
       "age": 28,
       "height": 194,
@@ -14,7 +14,7 @@
       "position": "GK",
       "position_id": 24,
       "jersey_number": 1,
-      "slug": "guglielmo-vicario "
+      "slug": "guglielmo-vicario"
     },
     {
       "id": 37430162,
@@ -44,7 +44,7 @@
     },
     {
       "id": 23715982,
-      "display_name": "Radu Drăgușin ",
+      "display_name": "Radu Drăgușin",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/14/23715982.png",
       "age": 23,
       "height": 191,
@@ -53,11 +53,11 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 3,
-      "slug": "radu-drăgușin "
+      "slug": "radu-drăgușin"
     },
     {
       "id": 33079,
-      "display_name": "Kevin Danso ",
+      "display_name": "Kevin Danso",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/23/33079.png",
       "age": 26,
       "height": 190,
@@ -66,7 +66,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 4,
-      "slug": "kevin-danso "
+      "slug": "kevin-danso"
     },
     {
       "id": 32777506,

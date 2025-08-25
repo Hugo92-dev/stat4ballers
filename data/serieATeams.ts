@@ -76,8 +76,8 @@ export const serieATeams = [
       },
       {
         id: 537285,
-        nom: "Mitchel Bakker ",
-        displayName: "Mitchel Bakker ",
+        nom: "Mitchel Bakker",
+        displayName: "Mitchel Bakker",
         position: "DF",
         position_id: 25,
         numero: 5,
@@ -86,7 +86,7 @@ export const serieATeams = [
         taille: 189,
         poids: 81,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/537285.png",
-        playerSlug: "mitchel-bakker "
+        playerSlug: "mitchel-bakker"
       },
       {
         id: 132671,
@@ -104,8 +104,8 @@ export const serieATeams = [
       },
       {
         id: 31661,
-        nom: "Sead Kolasinac ",
-        displayName: "Sead Kolasinac ",
+        nom: "Sead Kolasinac",
+        displayName: "Sead Kolasinac",
         position: "DF",
         position_id: 25,
         numero: 23,
@@ -114,7 +114,7 @@ export const serieATeams = [
         taille: 183,
         poids: 85,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/31661.png",
-        playerSlug: "sead-kolasinac "
+        playerSlug: "sead-kolasinac"
       },
       {
         id: 37343966,
@@ -216,8 +216,8 @@ export const serieATeams = [
       },
       {
         id: 1717,
-        nom: "Marten de Roon ",
-        displayName: "Marten de Roon ",
+        nom: "Marten de Roon",
+        displayName: "Marten de Roon",
         position: "MF",
         position_id: 26,
         numero: 15,
@@ -226,7 +226,7 @@ export const serieATeams = [
         taille: 185,
         poids: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/1717.png",
-        playerSlug: "marten-de-roon "
+        playerSlug: "marten-de-roon"
       },
       {
         id: 8417828,
@@ -356,8 +356,8 @@ export const serieATeams = [
       },
       {
         id: 5321,
-        nom: "Ademola Lookman ",
-        displayName: "Ademola Lookman ",
+        nom: "Ademola Lookman",
+        displayName: "Ademola Lookman",
         position: "FW",
         position_id: 27,
         numero: 11,
@@ -366,7 +366,7 @@ export const serieATeams = [
         taille: 174,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/5321.png",
-        playerSlug: "ademola-lookman "
+        playerSlug: "ademola-lookman"
       },
       {
         id: 23269660,
@@ -559,8 +559,8 @@ export const serieATeams = [
       },
       {
         id: 127629,
-        nom: "Lorenzo De Silvestri ",
-        displayName: "Lorenzo De Silvestri ",
+        nom: "Lorenzo De Silvestri",
+        displayName: "Lorenzo De Silvestri",
         position: "DF",
         position_id: 25,
         numero: 29,
@@ -569,7 +569,7 @@ export const serieATeams = [
         taille: 187,
         poids: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/127629.png",
-        playerSlug: "lorenzo-de-silvestri "
+        playerSlug: "lorenzo-de-silvestri"
       },
       {
         id: 37599315,
@@ -671,8 +671,8 @@ export const serieATeams = [
       },
       {
         id: 6648042,
-        nom: "Lewis Ferguson ",
-        displayName: "Lewis Ferguson ",
+        nom: "Lewis Ferguson",
+        displayName: "Lewis Ferguson",
         position: "MF",
         position_id: 26,
         numero: 19,
@@ -681,7 +681,7 @@ export const serieATeams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/6648042.png",
-        playerSlug: "lewis-ferguson "
+        playerSlug: "lewis-ferguson"
       },
       {
         id: 37257793,
@@ -1210,8 +1210,8 @@ export const serieATeams = [
       },
       {
         id: 129576,
-        nom: "Leonardo Pavoletti ",
-        displayName: "Leonardo Pavoletti ",
+        nom: "Leonardo Pavoletti",
+        displayName: "Leonardo Pavoletti",
         position: "FW",
         position_id: 27,
         numero: 30,
@@ -1220,7 +1220,7 @@ export const serieATeams = [
         taille: 188,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/129576.png",
-        playerSlug: "leonardo-pavoletti "
+        playerSlug: "leonardo-pavoletti"
       },
       {
         id: 37341868,
@@ -1343,8 +1343,8 @@ export const serieATeams = [
       },
       {
         id: 133218,
-        nom: "Alberto Dossena ",
-        displayName: "Alberto Dossena ",
+        nom: "Alberto Dossena",
+        displayName: "Alberto Dossena",
         position: "DF",
         position_id: 25,
         numero: 4,
@@ -1353,7 +1353,7 @@ export const serieATeams = [
         taille: 195,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/133218.png",
-        playerSlug: "alberto-dossena "
+        playerSlug: "alberto-dossena"
       },
       {
         id: 129860,
@@ -1637,8 +1637,8 @@ export const serieATeams = [
       },
       {
         id: 504866,
-        nom: "Alessandro Gabrielloni ",
-        displayName: "Alessandro Gabrielloni ",
+        nom: "Alessandro Gabrielloni",
+        displayName: "Alessandro Gabrielloni",
         position: "FW",
         position_id: 27,
         numero: 9,
@@ -1647,7 +1647,7 @@ export const serieATeams = [
         taille: 178,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/504866.png",
-        playerSlug: "alessandro-gabrielloni "
+        playerSlug: "alessandro-gabrielloni"
       },
       {
         id: 3188026,
@@ -1910,8 +1910,8 @@ export const serieATeams = [
       },
       {
         id: 128993,
-        nom: "Matteo Bianchetti ",
-        displayName: "Matteo Bianchetti ",
+        nom: "Matteo Bianchetti",
+        displayName: "Matteo Bianchetti",
         position: "DF",
         position_id: 25,
         numero: 15,
@@ -1920,7 +1920,7 @@ export const serieATeams = [
         taille: 189,
         poids: 81,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/128993.png",
-        playerSlug: "matteo-bianchetti "
+        playerSlug: "matteo-bianchetti"
       },
       {
         id: 132303,
@@ -2337,8 +2337,8 @@ export const serieATeams = [
       },
       {
         id: 3181368,
-        nom: "Luca Ranieri ",
-        displayName: "Luca Ranieri ",
+        nom: "Luca Ranieri",
+        displayName: "Luca Ranieri",
         position: "DF",
         position_id: 25,
         numero: 6,
@@ -2347,7 +2347,7 @@ export const serieATeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/3181368.png",
-        playerSlug: "luca-ranieri "
+        playerSlug: "luca-ranieri"
       },
       {
         id: 37669686,
@@ -2673,8 +2673,8 @@ export const serieATeams = [
       },
       {
         id: 131955,
-        nom: "Christian Kouamé ",
-        displayName: "Christian Kouamé ",
+        nom: "Christian Kouamé",
+        displayName: "Christian Kouamé",
         position: "FW",
         position_id: 27,
         numero: 99,
@@ -2683,7 +2683,7 @@ export const serieATeams = [
         taille: 185,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/131955.png",
-        playerSlug: "christian-kouame "
+        playerSlug: "christian-kouame"
       },
       {
         id: 96608,
@@ -2820,8 +2820,8 @@ export const serieATeams = [
       },
       {
         id: 1525399,
-        nom: "Johan Vásquez ",
-        displayName: "Johan Vásquez ",
+        nom: "Johan Vásquez",
+        displayName: "Johan Vásquez",
         position: "DF",
         position_id: 25,
         numero: 22,
@@ -2830,7 +2830,7 @@ export const serieATeams = [
         taille: 185,
         poids: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/1525399.png",
-        playerSlug: "johan-vasquez "
+        playerSlug: "johan-vasquez"
       },
       {
         id: 37539460,
@@ -2848,8 +2848,8 @@ export const serieATeams = [
       },
       {
         id: 37657515,
-        nom: "Sebastian Otoa ",
-        displayName: "Sebastian Otoa ",
+        nom: "Sebastian Otoa",
+        displayName: "Sebastian Otoa",
         position: "DF",
         position_id: 25,
         numero: 34,
@@ -2858,7 +2858,7 @@ export const serieATeams = [
         taille: 198,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/37657515.png",
-        playerSlug: "sebastian-otoa "
+        playerSlug: "sebastian-otoa"
       },
       {
         id: 25120,
@@ -3044,8 +3044,8 @@ export const serieATeams = [
       },
       {
         id: 133599,
-        nom: "Caleb Ekuban ",
-        displayName: "Caleb Ekuban ",
+        nom: "Caleb Ekuban",
+        displayName: "Caleb Ekuban",
         position: "FW",
         position_id: 27,
         numero: 18,
@@ -3054,7 +3054,7 @@ export const serieATeams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/133599.png",
-        playerSlug: "caleb-ekuban "
+        playerSlug: "caleb-ekuban"
       },
       {
         id: 37732903,
@@ -3135,8 +3135,8 @@ export const serieATeams = [
     players: [
       {
         id: 131615,
-        nom: "Lorenzo Montipò ",
-        displayName: "Lorenzo Montipò ",
+        nom: "Lorenzo Montipò",
+        displayName: "Lorenzo Montipò",
         position: "GK",
         position_id: 24,
         numero: 1,
@@ -3145,7 +3145,7 @@ export const serieATeams = [
         taille: 191,
         poids: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/131615.png",
-        playerSlug: "lorenzo-montipo "
+        playerSlug: "lorenzo-montipo"
       },
       {
         id: 133528,
@@ -3331,8 +3331,8 @@ export const serieATeams = [
       },
       {
         id: 32392,
-        nom: "Suat Serdar ",
-        displayName: "Suat Serdar ",
+        nom: "Suat Serdar",
+        displayName: "Suat Serdar",
         position: "MF",
         position_id: 26,
         numero: 8,
@@ -3341,7 +3341,7 @@ export const serieATeams = [
         taille: 184,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/32392.png",
-        playerSlug: "suat-serdar "
+        playerSlug: "suat-serdar"
       },
       {
         id: 24816762,
@@ -3429,8 +3429,8 @@ export const serieATeams = [
       },
       {
         id: 37483225,
-        nom: "Amin Sarr ",
-        displayName: "Amin Sarr ",
+        nom: "Amin Sarr",
+        displayName: "Amin Sarr",
         position: "FW",
         position_id: 27,
         numero: 9,
@@ -3439,7 +3439,7 @@ export const serieATeams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/37483225.png",
-        playerSlug: "amin-sarr "
+        playerSlug: "amin-sarr"
       },
       {
         id: 37400393,
@@ -3772,8 +3772,8 @@ export const serieATeams = [
       },
       {
         id: 134015,
-        nom: "Davide Frattesi ",
-        displayName: "Davide Frattesi ",
+        nom: "Davide Frattesi",
+        displayName: "Davide Frattesi",
         position: "MF",
         position_id: 26,
         numero: 16,
@@ -3782,7 +3782,7 @@ export const serieATeams = [
         taille: 178,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/134015.png",
-        playerSlug: "davide-frattesi "
+        playerSlug: "davide-frattesi"
       },
       {
         id: 37423138,
@@ -3870,8 +3870,8 @@ export const serieATeams = [
       },
       {
         id: 333594,
-        nom: "Lautaro Martínez ",
-        displayName: "Lautaro Martínez ",
+        nom: "Lautaro Martínez",
+        displayName: "Lautaro Martínez",
         position: "FW",
         position_id: 27,
         numero: 10,
@@ -3880,7 +3880,7 @@ export const serieATeams = [
         taille: 174,
         poids: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/333594.png",
-        playerSlug: "lautaro-martinez "
+        playerSlug: "lautaro-martinez"
       },
       {
         id: 37533560,
@@ -4115,8 +4115,8 @@ export const serieATeams = [
       },
       {
         id: 37376834,
-        nom: "Nicolò Savona ",
-        displayName: "Nicolò Savona ",
+        nom: "Nicolò Savona",
+        displayName: "Nicolò Savona",
         position: "DF",
         position_id: 25,
         numero: 37,
@@ -4125,7 +4125,7 @@ export const serieATeams = [
         taille: 192,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/37376834.png",
-        playerSlug: "nicolo-savona "
+        playerSlug: "nicolo-savona"
       },
       {
         id: 37592743,
@@ -4157,8 +4157,8 @@ export const serieATeams = [
       },
       {
         id: 129890,
-        nom: "Manuel Locatelli ",
-        displayName: "Manuel Locatelli ",
+        nom: "Manuel Locatelli",
+        displayName: "Manuel Locatelli",
         position: "MF",
         position_id: 26,
         numero: 5,
@@ -4167,7 +4167,7 @@ export const serieATeams = [
         taille: 185,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/129890.png",
-        playerSlug: "manuel-locatelli "
+        playerSlug: "manuel-locatelli"
       },
       {
         id: 29184,
@@ -4325,8 +4325,8 @@ export const serieATeams = [
       },
       {
         id: 25355,
-        nom: "Arkadiusz Milik ",
-        displayName: "Arkadiusz Milik ",
+        nom: "Arkadiusz Milik",
+        displayName: "Arkadiusz Milik",
         position: "FW",
         position_id: 27,
         numero: 14,
@@ -4335,7 +4335,7 @@ export const serieATeams = [
         taille: 186,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/25355.png",
-        playerSlug: "arkadiusz-milik "
+        playerSlug: "arkadiusz-milik"
       },
       {
         id: 16827175,
@@ -4430,8 +4430,8 @@ export const serieATeams = [
       },
       {
         id: 129706,
-        nom: "Patric ",
-        displayName: "Patric ",
+        nom: "Patric",
+        displayName: "Patric",
         position: "DF",
         position_id: 25,
         numero: 4,
@@ -4440,12 +4440,12 @@ export const serieATeams = [
         taille: 184,
         poids: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/129706.png",
-        playerSlug: "patric "
+        playerSlug: "patric"
       },
       {
         id: 129202,
-        nom: "Alessio Romagnoli ",
-        displayName: "Alessio Romagnoli ",
+        nom: "Alessio Romagnoli",
+        displayName: "Alessio Romagnoli",
         position: "DF",
         position_id: 25,
         numero: 13,
@@ -4454,7 +4454,7 @@ export const serieATeams = [
         taille: 185,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/129202.png",
-        playerSlug: "alessio-romagnoli "
+        playerSlug: "alessio-romagnoli"
       },
       {
         id: 9308193,
@@ -4696,8 +4696,8 @@ export const serieATeams = [
       },
       {
         id: 129677,
-        nom: "Mattia Zaccagni ",
-        displayName: "Mattia Zaccagni ",
+        nom: "Mattia Zaccagni",
+        displayName: "Mattia Zaccagni",
         position: "FW",
         position_id: 27,
         numero: 10,
@@ -4706,7 +4706,7 @@ export const serieATeams = [
         taille: 177,
         poids: 63,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/129677.png",
-        playerSlug: "mattia-zaccagni "
+        playerSlug: "mattia-zaccagni"
       },
       {
         id: 524055,
@@ -4738,8 +4738,8 @@ export const serieATeams = [
       },
       {
         id: 23698077,
-        nom: "Gustav Isaksen ",
-        displayName: "Gustav Isaksen ",
+        nom: "Gustav Isaksen",
+        displayName: "Gustav Isaksen",
         position: "FW",
         position_id: 27,
         numero: 18,
@@ -4748,7 +4748,7 @@ export const serieATeams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/23698077.png",
-        playerSlug: "gustav-isaksen "
+        playerSlug: "gustav-isaksen"
       },
       {
         id: 2206688,
@@ -4815,8 +4815,8 @@ export const serieATeams = [
       },
       {
         id: 129272,
-        nom: "Wladimiro Falcone ",
-        displayName: "Wladimiro Falcone ",
+        nom: "Wladimiro Falcone",
+        displayName: "Wladimiro Falcone",
         position: "GK",
         position_id: 24,
         numero: 30,
@@ -4825,7 +4825,7 @@ export const serieATeams = [
         taille: 195,
         poids: 85,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/129272.png",
-        playerSlug: "wladimiro-falcone "
+        playerSlug: "wladimiro-falcone"
       },
       {
         id: 37327606,
@@ -4913,8 +4913,8 @@ export const serieATeams = [
       },
       {
         id: 21803015,
-        nom: "Gaby Jean ",
-        displayName: "Gaby Jean ",
+        nom: "Gaby Jean",
+        displayName: "Gaby Jean",
         position: "DF",
         position_id: 25,
         numero: 18,
@@ -4923,7 +4923,7 @@ export const serieATeams = [
         taille: 191,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/21803015.png",
-        playerSlug: "gaby-jean "
+        playerSlug: "gaby-jean"
       },
       {
         id: 37769563,
@@ -5095,8 +5095,8 @@ export const serieATeams = [
       },
       {
         id: 23698133,
-        nom: "Filip Marchwinski ",
-        displayName: "Filip Marchwinski ",
+        nom: "Filip Marchwinski",
+        displayName: "Filip Marchwinski",
         position: "MF",
         position_id: 26,
         numero: 36,
@@ -5105,7 +5105,7 @@ export const serieATeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/23698133.png",
-        playerSlug: "filip-marchwinski "
+        playerSlug: "filip-marchwinski"
       },
       {
         id: 35503835,
@@ -5284,8 +5284,8 @@ export const serieATeams = [
       },
       {
         id: 96227,
-        nom: "Mike Maignan ",
-        displayName: "Mike Maignan ",
+        nom: "Mike Maignan",
+        displayName: "Mike Maignan",
         position: "GK",
         position_id: 24,
         numero: 16,
@@ -5294,7 +5294,7 @@ export const serieATeams = [
         taille: 191,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/96227.png",
-        playerSlug: "mike-maignan "
+        playerSlug: "mike-maignan"
       },
       {
         id: 37770206,
@@ -5669,8 +5669,8 @@ export const serieATeams = [
       },
       {
         id: 7698423,
-        nom: "Miguel Gutiérrez ",
-        displayName: "Miguel Gutiérrez ",
+        nom: "Miguel Gutiérrez",
+        displayName: "Miguel Gutiérrez",
         position: "DF",
         position_id: 25,
         numero: 3,
@@ -5679,7 +5679,7 @@ export const serieATeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/7698423.png",
-        playerSlug: "miguel-gutierrez "
+        playerSlug: "miguel-gutierrez"
       },
       {
         id: 134056,
@@ -5739,8 +5739,8 @@ export const serieATeams = [
       },
       {
         id: 132721,
-        nom: "Giovanni Di Lorenzo ",
-        displayName: "Giovanni Di Lorenzo ",
+        nom: "Giovanni Di Lorenzo",
+        displayName: "Giovanni Di Lorenzo",
         position: "DF",
         position_id: 25,
         numero: 22,
@@ -5749,7 +5749,7 @@ export const serieATeams = [
         taille: 183,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/132721.png",
-        playerSlug: "giovanni-di-lorenzo "
+        playerSlug: "giovanni-di-lorenzo"
       },
       {
         id: 430097,
@@ -5949,8 +5949,8 @@ export const serieATeams = [
       },
       {
         id: 995,
-        nom: "Romelu Lukaku ",
-        displayName: "Romelu Lukaku ",
+        nom: "Romelu Lukaku",
+        displayName: "Romelu Lukaku",
         position: "FW",
         position_id: 27,
         numero: 9,
@@ -5959,7 +5959,7 @@ export const serieATeams = [
         taille: 191,
         poids: 94,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/995.png",
-        playerSlug: "romelu-lukaku "
+        playerSlug: "romelu-lukaku"
       },
       {
         id: 129926,
@@ -6138,8 +6138,8 @@ export const serieATeams = [
       },
       {
         id: 14337998,
-        nom: "Enrico Delprato ",
-        displayName: "Enrico Delprato ",
+        nom: "Enrico Delprato",
+        displayName: "Enrico Delprato",
         position: "DF",
         position_id: 25,
         numero: 15,
@@ -6148,7 +6148,7 @@ export const serieATeams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/14/14337998.png",
-        playerSlug: "enrico-delprato "
+        playerSlug: "enrico-delprato"
       },
       {
         id: 37336215,
@@ -6208,8 +6208,8 @@ export const serieATeams = [
       },
       {
         id: 37753941,
-        nom: "Nicolas Trabucchi ",
-        displayName: "Nicolas Trabucchi ",
+        nom: "Nicolas Trabucchi",
+        displayName: "Nicolas Trabucchi",
         position: "DF",
         position_id: 25,
         numero: 63,
@@ -6218,7 +6218,7 @@ export const serieATeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/37753941.png",
-        playerSlug: "nicolas-trabucchi "
+        playerSlug: "nicolas-trabucchi"
       },
       {
         id: 394319,
@@ -6278,8 +6278,8 @@ export const serieATeams = [
       },
       {
         id: 172232,
-        nom: "Hernani ",
-        displayName: "Hernani ",
+        nom: "Hernani",
+        displayName: "Hernani",
         position: "MF",
         position_id: 26,
         numero: 23,
@@ -6288,7 +6288,7 @@ export const serieATeams = [
         taille: 188,
         poids: 77,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/172232.png",
-        playerSlug: "hernani "
+        playerSlug: "hernani"
       },
       {
         id: 37625756,
@@ -6362,8 +6362,8 @@ export const serieATeams = [
       },
       {
         id: 33187492,
-        nom: "Jacob Ondrejka ",
-        displayName: "Jacob Ondrejka ",
+        nom: "Jacob Ondrejka",
+        displayName: "Jacob Ondrejka",
         position: "FW",
         position_id: 27,
         numero: 17,
@@ -6372,7 +6372,7 @@ export const serieATeams = [
         taille: 179,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/33187492.png",
-        playerSlug: "jacob-ondrejka "
+        playerSlug: "jacob-ondrejka"
       },
       {
         id: 37331665,
@@ -6390,8 +6390,8 @@ export const serieATeams = [
       },
       {
         id: 37548503,
-        nom: "Matija Frigan ",
-        displayName: "Matija Frigan ",
+        nom: "Matija Frigan",
+        displayName: "Matija Frigan",
         position: "FW",
         position_id: 27,
         numero: 20,
@@ -6400,7 +6400,7 @@ export const serieATeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/37548503.png",
-        playerSlug: "matija-frigan "
+        playerSlug: "matija-frigan"
       },
       {
         id: 37545161,
@@ -6551,8 +6551,8 @@ export const serieATeams = [
       },
       {
         id: 131271,
-        nom: "Antonio Caracciolo ",
-        displayName: "Antonio Caracciolo ",
+        nom: "Antonio Caracciolo",
+        displayName: "Antonio Caracciolo",
         position: "DF",
         position_id: 25,
         numero: 4,
@@ -6561,7 +6561,7 @@ export const serieATeams = [
         taille: 185,
         poids: 73,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/131271.png",
-        playerSlug: "antonio-caracciolo "
+        playerSlug: "antonio-caracciolo"
       },
       {
         id: 7714813,
@@ -6579,8 +6579,8 @@ export const serieATeams = [
       },
       {
         id: 23269677,
-        nom: "Tomás Esteves ",
-        displayName: "Tomás Esteves ",
+        nom: "Tomás Esteves",
+        displayName: "Tomás Esteves",
         position: "DF",
         position_id: 25,
         numero: 19,
@@ -6589,12 +6589,12 @@ export const serieATeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/23269677.png",
-        playerSlug: "tomas-esteves "
+        playerSlug: "tomas-esteves"
       },
       {
         id: 37697554,
-        nom: "Francesco Coppola ",
-        displayName: "Francesco Coppola ",
+        nom: "Francesco Coppola",
+        displayName: "Francesco Coppola",
         position: "DF",
         position_id: 25,
         numero: 26,
@@ -6603,7 +6603,7 @@ export const serieATeams = [
         taille: 195,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/37697554.png",
-        playerSlug: "francesco-coppola "
+        playerSlug: "francesco-coppola"
       },
       {
         id: 129944,
@@ -6663,8 +6663,8 @@ export const serieATeams = [
       },
       {
         id: 540219,
-        nom: "Pietro Beruatto ",
-        displayName: "Pietro Beruatto ",
+        nom: "Pietro Beruatto",
+        displayName: "Pietro Beruatto",
         position: "DF",
         position_id: 25,
         numero: null,
@@ -6673,7 +6673,7 @@ export const serieATeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/540219.png",
-        playerSlug: "pietro-beruatto "
+        playerSlug: "pietro-beruatto"
       },
       {
         id: 133835,
@@ -6775,8 +6775,8 @@ export const serieATeams = [
       },
       {
         id: 37623697,
-        nom: "İsak Vural ",
-        displayName: "İsak Vural ",
+        nom: "İsak Vural",
+        displayName: "İsak Vural",
         position: "MF",
         position_id: 26,
         numero: 21,
@@ -6785,7 +6785,7 @@ export const serieATeams = [
         taille: 189,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/37623697.png",
-        playerSlug: "isak-vural "
+        playerSlug: "isak-vural"
       },
       {
         id: 131904,
@@ -7090,8 +7090,8 @@ export const serieATeams = [
       },
       {
         id: 450031,
-        nom: "Zeki Çelik ",
-        displayName: "Zeki Çelik ",
+        nom: "Zeki Çelik",
+        displayName: "Zeki Çelik",
         position: "DF",
         position_id: 25,
         numero: 19,
@@ -7100,7 +7100,7 @@ export const serieATeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/450031.png",
-        playerSlug: "zeki-celik "
+        playerSlug: "zeki-celik"
       },
       {
         id: 189124,
@@ -7202,8 +7202,8 @@ export const serieATeams = [
       },
       {
         id: 129946,
-        nom: "Lorenzo Pellegrini ",
-        displayName: "Lorenzo Pellegrini ",
+        nom: "Lorenzo Pellegrini",
+        displayName: "Lorenzo Pellegrini",
         position: "MF",
         position_id: 26,
         numero: 7,
@@ -7212,7 +7212,7 @@ export const serieATeams = [
         taille: 186,
         poids: 77,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/129946.png",
-        playerSlug: "lorenzo-pellegrini "
+        playerSlug: "lorenzo-pellegrini"
       },
       {
         id: 21803060,
@@ -7286,8 +7286,8 @@ export const serieATeams = [
       },
       {
         id: 37546379,
-        nom: "Edoardo Bove ",
-        displayName: "Edoardo Bove ",
+        nom: "Edoardo Bove",
+        displayName: "Edoardo Bove",
         position: "MF",
         position_id: 26,
         numero: null,
@@ -7296,7 +7296,7 @@ export const serieATeams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/37546379.png",
-        playerSlug: "edoardo-bove "
+        playerSlug: "edoardo-bove"
       },
       {
         id: 205978,
@@ -7370,8 +7370,8 @@ export const serieATeams = [
       },
       {
         id: 96514,
-        nom: "Stephan El Shaarawy ",
-        displayName: "Stephan El Shaarawy ",
+        nom: "Stephan El Shaarawy",
+        displayName: "Stephan El Shaarawy",
         position: "FW",
         position_id: 27,
         numero: 92,
@@ -7380,7 +7380,7 @@ export const serieATeams = [
         taille: 178,
         poids: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/96514.png",
-        playerSlug: "stephan-el-shaarawy "
+        playerSlug: "stephan-el-shaarawy"
       }
     ]
   },
@@ -7601,8 +7601,8 @@ export const serieATeams = [
       },
       {
         id: 9302763,
-        nom: "Ruan ",
-        displayName: "Ruan ",
+        nom: "Ruan",
+        displayName: "Ruan",
         position: "DF",
         position_id: 25,
         numero: null,
@@ -7611,7 +7611,7 @@ export const serieATeams = [
         taille: 187,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/9302763.png",
-        playerSlug: "ruan "
+        playerSlug: "ruan"
       },
       {
         id: 37599458,
@@ -7755,8 +7755,8 @@ export const serieATeams = [
       },
       {
         id: 129553,
-        nom: "Domenico Berardi ",
-        displayName: "Domenico Berardi ",
+        nom: "Domenico Berardi",
+        displayName: "Domenico Berardi",
         position: "FW",
         position_id: 27,
         numero: 10,
@@ -7765,7 +7765,7 @@ export const serieATeams = [
         taille: 183,
         poids: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/129553.png",
-        playerSlug: "domenico-berardi "
+        playerSlug: "domenico-berardi"
       },
       {
         id: 37522062,
@@ -7916,8 +7916,8 @@ export const serieATeams = [
       },
       {
         id: 28648,
-        nom: "Perr Schuurs ",
-        displayName: "Perr Schuurs ",
+        nom: "Perr Schuurs",
+        displayName: "Perr Schuurs",
         position: "DF",
         position_id: 25,
         numero: 3,
@@ -7926,7 +7926,7 @@ export const serieATeams = [
         taille: 191,
         poids: 87,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/28648.png",
-        playerSlug: "perr-schuurs "
+        playerSlug: "perr-schuurs"
       },
       {
         id: 129704,
@@ -7958,8 +7958,8 @@ export const serieATeams = [
       },
       {
         id: 37291195,
-        nom: "Saba Sazonov ",
-        displayName: "Saba Sazonov ",
+        nom: "Saba Sazonov",
+        displayName: "Saba Sazonov",
         position: "DF",
         position_id: 25,
         numero: 15,
@@ -7968,7 +7968,7 @@ export const serieATeams = [
         taille: 194,
         poids: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/37291195.png",
-        playerSlug: "saba-sazonov "
+        playerSlug: "saba-sazonov"
       },
       {
         id: 16546879,
@@ -8168,8 +8168,8 @@ export const serieATeams = [
       },
       {
         id: 37599461,
-        nom: "Aaron Ciammaglichella ",
-        displayName: "Aaron Ciammaglichella ",
+        nom: "Aaron Ciammaglichella",
+        displayName: "Aaron Ciammaglichella",
         position: "MF",
         position_id: 26,
         numero: 72,
@@ -8178,12 +8178,12 @@ export const serieATeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/37599461.png",
-        playerSlug: "aaron-ciammaglichella "
+        playerSlug: "aaron-ciammaglichella"
       },
       {
         id: 37730058,
-        nom: "Sergiu Perciun ",
-        displayName: "Sergiu Perciun ",
+        nom: "Sergiu Perciun",
+        displayName: "Sergiu Perciun",
         position: "MF",
         position_id: 26,
         numero: 83,
@@ -8192,7 +8192,7 @@ export const serieATeams = [
         taille: 176,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/37730058.png",
-        playerSlug: "sergiu-perciun "
+        playerSlug: "sergiu-perciun"
       },
       {
         id: 12066349,
@@ -8266,8 +8266,8 @@ export const serieATeams = [
       },
       {
         id: 37601728,
-        nom: "Zanos Savva ",
-        displayName: "Zanos Savva ",
+        nom: "Zanos Savva",
+        displayName: "Zanos Savva",
         position: "FW",
         position_id: 27,
         numero: 79,
@@ -8276,12 +8276,12 @@ export const serieATeams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/37601728.png",
-        playerSlug: "zanos-savva "
+        playerSlug: "zanos-savva"
       },
       {
         id: 129523,
-        nom: "Duván Zapata ",
-        displayName: "Duván Zapata ",
+        nom: "Duván Zapata",
+        displayName: "Duván Zapata",
         position: "FW",
         position_id: 27,
         numero: 91,
@@ -8290,12 +8290,12 @@ export const serieATeams = [
         taille: 188,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/129523.png",
-        playerSlug: "duvan-zapata "
+        playerSlug: "duvan-zapata"
       },
       {
         id: 37653223,
-        nom: "Alieu Njie ",
-        displayName: "Alieu Njie ",
+        nom: "Alieu Njie",
+        displayName: "Alieu Njie",
         position: "FW",
         position_id: 27,
         numero: 92,
@@ -8304,7 +8304,7 @@ export const serieATeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/37653223.png",
-        playerSlug: "alieu-njie "
+        playerSlug: "alieu-njie"
       }
     ]
   },
@@ -8525,8 +8525,8 @@ export const serieATeams = [
       },
       {
         id: 191011,
-        nom: "Jesper Karlström ",
-        displayName: "Jesper Karlström ",
+        nom: "Jesper Karlström",
+        displayName: "Jesper Karlström",
         position: "MF",
         position_id: 26,
         numero: 8,
@@ -8535,7 +8535,7 @@ export const serieATeams = [
         taille: 185,
         poids: 81,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/191011.png",
-        playerSlug: "jesper-karlstrom "
+        playerSlug: "jesper-karlstrom"
       },
       {
         id: 37607729,

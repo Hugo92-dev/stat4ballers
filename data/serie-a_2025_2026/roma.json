@@ -96,7 +96,7 @@
     },
     {
       "id": 450031,
-      "display_name": "Zeki Çelik ",
+      "display_name": "Zeki Çelik",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/15/450031.png",
       "age": 28,
       "height": 180,
@@ -105,7 +105,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 19,
-      "slug": "zeki-çelik "
+      "slug": "zeki-çelik"
     },
     {
       "id": 189124,
@@ -200,7 +200,7 @@
     },
     {
       "id": 129946,
-      "display_name": "Lorenzo Pellegrini ",
+      "display_name": "Lorenzo Pellegrini",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/26/129946.png",
       "age": 29,
       "height": 186,
@@ -209,7 +209,7 @@
       "position": "MF",
       "position_id": 26,
       "jersey_number": 7,
-      "slug": "lorenzo-pellegrini "
+      "slug": "lorenzo-pellegrini"
     },
     {
       "id": 21803060,
@@ -278,7 +278,7 @@
     },
     {
       "id": 37546379,
-      "display_name": "Edoardo Bove ",
+      "display_name": "Edoardo Bove",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/11/37546379.png",
       "age": 23,
       "height": 181,
@@ -287,7 +287,7 @@
       "position": "MF",
       "position_id": 26,
       "jersey_number": null,
-      "slug": "edoardo-bove "
+      "slug": "edoardo-bove"
     },
     {
       "id": 205978,
@@ -356,7 +356,7 @@
     },
     {
       "id": 96514,
-      "display_name": "Stephan El Shaarawy ",
+      "display_name": "Stephan El Shaarawy",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/2/96514.png",
       "age": 32,
       "height": 178,
@@ -365,7 +365,7 @@
       "position": "FW",
       "position_id": 27,
       "jersey_number": 92,
-      "slug": "stephan-el-shaarawy "
+      "slug": "stephan-el-shaarawy"
     }
   ]
 }

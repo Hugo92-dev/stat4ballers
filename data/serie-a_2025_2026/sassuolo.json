@@ -200,7 +200,7 @@
     },
     {
       "id": 9302763,
-      "display_name": "Ruan ",
+      "display_name": "Ruan",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/11/9302763.png",
       "age": 26,
       "height": 187,
@@ -209,7 +209,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": null,
-      "slug": "ruan "
+      "slug": "ruan"
     },
     {
       "id": 37599458,
@@ -343,7 +343,7 @@
     },
     {
       "id": 129553,
-      "display_name": "Domenico Berardi ",
+      "display_name": "Domenico Berardi",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/17/129553.png",
       "age": 31,
       "height": 183,
@@ -352,7 +352,7 @@
       "position": "FW",
       "position_id": 27,
       "jersey_number": 10,
-      "slug": "domenico-berardi "
+      "slug": "domenico-berardi"
     },
     {
       "id": 37522062,

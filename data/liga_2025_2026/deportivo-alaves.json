@@ -5,7 +5,7 @@
   "players": [
     {
       "id": 187158,
-      "display_name": "Antonio Sivera ",
+      "display_name": "Antonio Sivera",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/22/187158.png",
       "age": 29,
       "height": 185,
@@ -14,7 +14,7 @@
       "position": "GK",
       "position_id": 24,
       "jersey_number": 1,
-      "slug": "antonio-sivera "
+      "slug": "antonio-sivera"
     },
     {
       "id": 185595,

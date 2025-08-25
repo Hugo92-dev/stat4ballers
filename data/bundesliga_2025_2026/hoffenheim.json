@@ -5,7 +5,7 @@
   "players": [
     {
       "id": 31146,
-      "display_name": "Oliver Baumann ",
+      "display_name": "Oliver Baumann",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/10/31146.png",
       "age": 35,
       "height": 187,
@@ -14,7 +14,7 @@
       "position": "GK",
       "position_id": 24,
       "jersey_number": 1,
-      "slug": "oliver-baumann "
+      "slug": "oliver-baumann"
     },
     {
       "id": 37344040,
@@ -70,7 +70,7 @@
     },
     {
       "id": 5640817,
-      "display_name": "Ozan Kabak ",
+      "display_name": "Ozan Kabak",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/17/5640817.png",
       "age": 25,
       "height": 187,
@@ -79,7 +79,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 5,
-      "slug": "ozan-kabak "
+      "slug": "ozan-kabak"
     },
     {
       "id": 32666,
@@ -96,7 +96,7 @@
     },
     {
       "id": 8415421,
-      "display_name": "Valentin Gendrey ",
+      "display_name": "Valentin Gendrey",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/29/8415421.png",
       "age": 25,
       "height": 179,
@@ -105,7 +105,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 15,
-      "slug": "valentin-gendrey "
+      "slug": "valentin-gendrey"
     },
     {
       "id": 31626002,

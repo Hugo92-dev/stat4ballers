@@ -44,7 +44,7 @@
     },
     {
       "id": 37625681,
-      "display_name": "Kauã Santos ",
+      "display_name": "Kauã Santos",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/17/37625681.png",
       "age": 22,
       "height": 197,
@@ -53,7 +53,7 @@
       "position": "GK",
       "position_id": 24,
       "jersey_number": 40,
-      "slug": "kauã-santos "
+      "slug": "kauã-santos"
     },
     {
       "id": 37645238,
@@ -70,7 +70,7 @@
     },
     {
       "id": 25922235,
-      "display_name": "Arthur Theate ",
+      "display_name": "Arthur Theate",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/27/25922235.png",
       "age": 25,
       "height": 185,
@@ -79,7 +79,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 3,
-      "slug": "arthur-theate "
+      "slug": "arthur-theate"
     },
     {
       "id": 35364,
@@ -122,7 +122,7 @@
     },
     {
       "id": 37538035,
-      "display_name": "Nathaniel Brown ",
+      "display_name": "Nathaniel Brown",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/19/37538035.png",
       "age": 22,
       "height": 180,
@@ -131,7 +131,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 21,
-      "slug": "nathaniel-brown "
+      "slug": "nathaniel-brown"
     },
     {
       "id": 31254,
@@ -226,7 +226,7 @@
     },
     {
       "id": 96364,
-      "display_name": "Ellyes Skhiri ",
+      "display_name": "Ellyes Skhiri",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/12/96364.png",
       "age": 30,
       "height": 185,
@@ -235,7 +235,7 @@
       "position": "MF",
       "position_id": 26,
       "jersey_number": 15,
-      "slug": "ellyes-skhiri "
+      "slug": "ellyes-skhiri"
     },
     {
       "id": 37592738,
@@ -395,7 +395,7 @@
     },
     {
       "id": 3861788,
-      "display_name": "Jessic Ngankam ",
+      "display_name": "Jessic Ngankam",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/28/3861788.png",
       "age": 25,
       "height": 184,
@@ -404,7 +404,7 @@
       "position": "FW",
       "position_id": 27,
       "jersey_number": 32,
-      "slug": "jessic-ngankam "
+      "slug": "jessic-ngankam"
     }
   ]
 }

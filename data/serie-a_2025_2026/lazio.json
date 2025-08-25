@@ -70,7 +70,7 @@
     },
     {
       "id": 129706,
-      "display_name": "Patric ",
+      "display_name": "Patric",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/10/129706.png",
       "age": 32,
       "height": 184,
@@ -79,11 +79,11 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 4,
-      "slug": "patric "
+      "slug": "patric"
     },
     {
       "id": 129202,
-      "display_name": "Alessio Romagnoli ",
+      "display_name": "Alessio Romagnoli",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/18/129202.png",
       "age": 30,
       "height": 185,
@@ -92,7 +92,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 13,
-      "slug": "alessio-romagnoli "
+      "slug": "alessio-romagnoli"
     },
     {
       "id": 9308193,
@@ -317,7 +317,7 @@
     },
     {
       "id": 129677,
-      "display_name": "Mattia Zaccagni ",
+      "display_name": "Mattia Zaccagni",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/13/129677.png",
       "age": 30,
       "height": 177,
@@ -326,7 +326,7 @@
       "position": "FW",
       "position_id": 27,
       "jersey_number": 10,
-      "slug": "mattia-zaccagni "
+      "slug": "mattia-zaccagni"
     },
     {
       "id": 524055,
@@ -356,7 +356,7 @@
     },
     {
       "id": 23698077,
-      "display_name": "Gustav Isaksen ",
+      "display_name": "Gustav Isaksen",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/29/23698077.png",
       "age": 24,
       "height": 181,
@@ -365,7 +365,7 @@
       "position": "FW",
       "position_id": 27,
       "jersey_number": 18,
-      "slug": "gustav-isaksen "
+      "slug": "gustav-isaksen"
     },
     {
       "id": 2206688,

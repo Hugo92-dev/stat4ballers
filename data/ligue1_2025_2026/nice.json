@@ -57,7 +57,7 @@
     },
     {
       "id": 30920,
-      "display_name": "Dante ",
+      "display_name": "Dante",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/8/30920.png",
       "age": 41,
       "height": 188,
@@ -66,11 +66,11 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 4,
-      "slug": "dante "
+      "slug": "dante"
     },
     {
       "id": 37412415,
-      "display_name": "Mohamed Abdelmonem ",
+      "display_name": "Mohamed Abdelmonem",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/31/37412415.png",
       "age": 26,
       "height": 183,
@@ -79,7 +79,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 5,
-      "slug": "mohamed-abdelmonem "
+      "slug": "mohamed-abdelmonem"
     },
     {
       "id": 2206980,
@@ -161,7 +161,7 @@
     },
     {
       "id": 766594,
-      "display_name": "Youssouf Ndayishimiye ",
+      "display_name": "Youssouf Ndayishimiye",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/2/766594.png",
       "age": 26,
       "height": 183,
@@ -170,7 +170,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 55,
-      "slug": "youssouf-ndayishimiye "
+      "slug": "youssouf-ndayishimiye"
     },
     {
       "id": 37682671,
@@ -252,7 +252,7 @@
     },
     {
       "id": 99148,
-      "display_name": "Tanguy Ndombélé ",
+      "display_name": "Tanguy Ndombélé",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/12/99148.png",
       "age": 28,
       "height": 181,
@@ -261,7 +261,7 @@
       "position": "MF",
       "position_id": 26,
       "jersey_number": 22,
-      "slug": "tanguy-ndombélé "
+      "slug": "tanguy-ndombélé"
     },
     {
       "id": 37769789,

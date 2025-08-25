@@ -5,7 +5,7 @@
   "players": [
     {
       "id": 198086,
-      "display_name": "Jonas Omlin ",
+      "display_name": "Jonas Omlin",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/6/198086.png",
       "age": 31,
       "height": 190,
@@ -14,7 +14,7 @@
       "position": "GK",
       "position_id": 24,
       "jersey_number": 1,
-      "slug": "jonas-omlin "
+      "slug": "jonas-omlin"
     },
     {
       "id": 31073,
@@ -70,7 +70,7 @@
     },
     {
       "id": 25106,
-      "display_name": "Kevin Diks ",
+      "display_name": "Kevin Diks",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/18/25106.png",
       "age": 28,
       "height": 186,
@@ -79,7 +79,7 @@
       "position": "DF",
       "position_id": 25,
       "jersey_number": 4,
-      "slug": "kevin-diks "
+      "slug": "kevin-diks"
     },
     {
       "id": 32258,
@@ -174,7 +174,7 @@
     },
     {
       "id": 35815,
-      "display_name": "Florian Neuhaus ",
+      "display_name": "Florian Neuhaus",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/7/35815.png",
       "age": 28,
       "height": 185,
@@ -183,7 +183,7 @@
       "position": "MF",
       "position_id": 26,
       "jersey_number": 10,
-      "slug": "florian-neuhaus "
+      "slug": "florian-neuhaus"
     },
     {
       "id": 34432365,
@@ -252,7 +252,7 @@
     },
     {
       "id": 37650070,
-      "display_name": "Charles Herrmann ",
+      "display_name": "Charles Herrmann",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/22/37650070.png",
       "age": 19,
       "height": 180,
@@ -261,7 +261,7 @@
       "position": "MF",
       "position_id": 26,
       "jersey_number": 34,
-      "slug": "charles-herrmann "
+      "slug": "charles-herrmann"
     },
     {
       "id": 37650032,
@@ -291,7 +291,7 @@
     },
     {
       "id": 34987,
-      "display_name": "Tim Kleindienst ",
+      "display_name": "Tim Kleindienst",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/11/34987.png",
       "age": 29,
       "height": 194,
@@ -300,7 +300,7 @@
       "position": "FW",
       "position_id": 27,
       "jersey_number": 11,
-      "slug": "tim-kleindienst "
+      "slug": "tim-kleindienst"
     },
     {
       "id": 197836,
@@ -330,7 +330,7 @@
     },
     {
       "id": 16496676,
-      "display_name": "Nathan Ngoumou ",
+      "display_name": "Nathan Ngoumou",
       "image_path": "https://cdn.sportmonks.com/images/soccer/players/4/16496676.png",
       "age": 25,
       "height": 185,
@@ -339,7 +339,7 @@
       "position": "FW",
       "position_id": 27,
       "jersey_number": 19,
-      "slug": "nathan-ngoumou "
+      "slug": "nathan-ngoumou"
     },
     {
       "id": 1452396,
