@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Script pour récupérer TOUS les effectifs des 4 autres grands championnats
-Basé sur le script robuste validé pour la Ligue 1
+Script pour récupérer les 2 championnats restants (Serie A et Bundesliga)
 """
 
 import requests
@@ -10,15 +9,12 @@ from datetime import datetime, date
 from typing import Dict, List, Optional
 import time
 import os
-import sys
 
 API_TOKEN = "leBzDfKbRE5k9zEg3FuZE3Hh7XbukODNarOXLoVtPAiAtliDZ19wLu1Wnzi2"
 BASE_URL = "https://api.sportmonks.com/v3/football"
 
-# IDs des saisons 2025/2026
+# IDs des saisons 2025/2026 restantes
 SEASONS = {
-    'premier-league': 25583,
-    'liga': 25659,
     'serie-a': 25533,
     'bundesliga': 25646
 }
@@ -89,12 +85,13 @@ def get_league_teams(league_name: str, season_id: int) -> Dict:
                 team_id = participant.get('id')
                 team_name = participant.get('name')
                 if team_id and team_name:
-                    slug = team_name.lower().replace(' ', '-').replace('.', '').replace("'", '')
-                    
+                    # Create slug
+                    slug = team_name.lower()
                     # Clean up slug for all leagues
                     slug = slug.replace(' fc', '').replace(' cf', '').replace(' ac', '')
                     slug = slug.replace(' united', '-united').replace(' city', '-city')
                     slug = slug.replace(' de ', '-').replace(' ', '-')
+                    slug = slug.replace('.', '').replace("'", '')
                     
                     teams[team_id] = {
                         'name': team_name,
@@ -196,7 +193,6 @@ def save_team_data(team_id: int, team_info: dict, output_dir: str):
             'slug': team_info['slug'],
             'players': team_info['players']
         }, f, indent=2, ensure_ascii=False, default=str)
-    print(f"    Saved to: {team_file}")
 
 def generate_typescript_file(league_name: str, teams_data: Dict) -> str:
     """Génère le fichier TypeScript pour un championnat"""
@@ -251,7 +247,7 @@ def process_league(league_name: str, season_id: int):
     teams = get_league_teams(league_name, season_id)
     
     if not teams:
-        print("ERROR: No teams found")
+        print(f"ERROR: No teams found for {league_name}")
         return
     
     print(f"\nFound {len(teams)} teams")
@@ -301,7 +297,7 @@ def process_league(league_name: str, season_id: int):
     return len(all_teams_data)
 
 def main():
-    print("=== ALL LEAGUES SQUADS FETCHER 2025/2026 ===")
+    print("=== REMAINING LEAGUES SQUADS FETCHER 2025/2026 ===")
     
     total_teams = 0
     
@@ -320,7 +316,7 @@ def main():
             continue
     
     print("\n" + "="*60)
-    print("=== ALL LEAGUES COMPLETED ===")
+    print("=== REMAINING LEAGUES COMPLETED ===")
     print(f"Total teams processed: {total_teams}")
     print("="*60)
 

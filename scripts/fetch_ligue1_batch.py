@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Script pour récupérer TOUS les effectifs des 4 autres grands championnats
-Basé sur le script robuste validé pour la Ligue 1
+Script optimisé pour récupérer les effectifs de Ligue 1 par batch
+Saison 2025/2026 (ID: 25651)
 """
 
 import requests
@@ -14,14 +14,7 @@ import sys
 
 API_TOKEN = "leBzDfKbRE5k9zEg3FuZE3Hh7XbukODNarOXLoVtPAiAtliDZ19wLu1Wnzi2"
 BASE_URL = "https://api.sportmonks.com/v3/football"
-
-# IDs des saisons 2025/2026
-SEASONS = {
-    'premier-league': 25583,
-    'liga': 25659,
-    'serie-a': 25533,
-    'bundesliga': 25646
-}
+LIGUE1_SEASON_ID = 25651
 
 def make_api_call(endpoint: str, params: dict = None) -> Optional[Dict]:
     """Fait un appel API avec gestion des erreurs et rate limiting"""
@@ -71,14 +64,14 @@ def get_nationality_smart(player_data: dict) -> Optional[str]:
     
     return "Unknown"
 
-def get_league_teams(league_name: str, season_id: int) -> Dict:
-    """Récupère tous les clubs d'un championnat"""
-    print(f"\n=== Getting {league_name} teams ===")
+def get_ligue1_teams() -> Dict:
+    """Récupère tous les clubs de Ligue 1"""
+    print("\n=== Getting Ligue 1 teams ===")
     
     teams = {}
     
     standings_response = make_api_call(
-        f"standings/seasons/{season_id}",
+        f"standings/seasons/{LIGUE1_SEASON_ID}",
         {'include': 'participant'}
     )
     
@@ -91,10 +84,32 @@ def get_league_teams(league_name: str, season_id: int) -> Dict:
                 if team_id and team_name:
                     slug = team_name.lower().replace(' ', '-').replace('.', '').replace("'", '')
                     
-                    # Clean up slug for all leagues
-                    slug = slug.replace(' fc', '').replace(' cf', '').replace(' ac', '')
-                    slug = slug.replace(' united', '-united').replace(' city', '-city')
-                    slug = slug.replace(' de ', '-').replace(' ', '-')
+                    # Fix specific slugs
+                    slug_mapping = {
+                        "olympique marseille": "marseille",
+                        "paris saint germain": "paris-saint-germain",
+                        "olympique lyonnais": "lyon",
+                        "losc lille": "lille",
+                        "as monaco": "monaco",
+                        "rc lens": "lens",
+                        "stade rennais": "rennes",
+                        "ogc nice": "nice",
+                        "rc strasbourg": "strasbourg",
+                        "stade brestois": "brest",
+                        "stade de reims": "reims",
+                        "fc nantes": "nantes",
+                        "montpellier hsc": "montpellier",
+                        "toulouse fc": "toulouse",
+                        "aj auxerre": "auxerre",
+                        "angers sco": "angers",
+                        "as saint-etienne": "saint-etienne",
+                        "le havre ac": "le-havre"
+                    }
+                    
+                    for key, value in slug_mapping.items():
+                        if key in team_name.lower():
+                            slug = value
+                            break
                     
                     teams[team_id] = {
                         'name': team_name,
@@ -155,7 +170,7 @@ def fetch_player_details_batch(player_ids: List[int], jersey_numbers: Dict[int, 
     
     return players_data
 
-def fetch_team_squad_fast(team_id: int, team_name: str, season_id: int) -> List[Dict]:
+def fetch_team_squad_fast(team_id: int, team_name: str) -> List[Dict]:
     """Version rapide pour récupérer l'effectif d'une équipe"""
     print(f"  Processing {team_name}...")
     
@@ -164,7 +179,7 @@ def fetch_team_squad_fast(team_id: int, team_name: str, season_id: int) -> List[
     
     # Get squad with jersey numbers
     squads_response = make_api_call(
-        f"squads/seasons/{season_id}/teams/{team_id}"
+        f"squads/seasons/{LIGUE1_SEASON_ID}/teams/{team_id}"
     )
     
     if squads_response and 'data' in squads_response:
@@ -198,14 +213,76 @@ def save_team_data(team_id: int, team_info: dict, output_dir: str):
         }, f, indent=2, ensure_ascii=False, default=str)
     print(f"    Saved to: {team_file}")
 
-def generate_typescript_file(league_name: str, teams_data: Dict) -> str:
-    """Génère le fichier TypeScript pour un championnat"""
+def main():
+    print("=== LIGUE 1 SQUADS FETCHER 2025/2026 ===")
     
-    # Convert league name for export
-    export_name = league_name.replace('-', '')
-    ts_content = f"export const {export_name}Teams = [\n"
+    # Create output directory
+    output_dir = 'data/ligue1_2025_2026'
+    os.makedirs(output_dir, exist_ok=True)
     
-    for team_id, team_info in teams_data.items():
+    # Get all Ligue 1 teams
+    teams = get_ligue1_teams()
+    
+    if not teams:
+        print("ERROR: No teams found")
+        return
+    
+    print(f"\nFound {len(teams)} teams")
+    
+    # Check if we already have OM data
+    om_id = None
+    for team_id, team_info in teams.items():
+        if "marseille" in team_info['name'].lower():
+            om_id = team_id
+            om_file = os.path.join(output_dir, "marseille.json")
+            if os.path.exists(om_file):
+                print(f"\n[SKIP] OM already processed")
+                del teams[team_id]
+                break
+    
+    all_teams_data = {}
+    
+    # Process each team
+    for i, (team_id, team_info) in enumerate(teams.items(), 1):
+        print(f"\n[{i}/{len(teams)}] {team_info['name']}")
+        
+        players = fetch_team_squad_fast(team_id, team_info['name'])
+        
+        team_data = {
+            'name': team_info['name'],
+            'slug': team_info['slug'],
+            'players': sorted(players, key=lambda x: (
+                x['position_id'],
+                x['jersey_number'] if x['jersey_number'] else 999,
+                x['display_name']
+            ))
+        }
+        
+        # Save individual team file
+        save_team_data(team_id, team_data, output_dir)
+        
+        all_teams_data[team_id] = team_data
+        
+        # Small pause between teams
+        time.sleep(0.5)
+    
+    # Load OM data if it exists
+    if om_id:
+        om_file = os.path.join(output_dir, "marseille.json")
+        if os.path.exists(om_file):
+            with open(om_file, 'r', encoding='utf-8') as f:
+                om_data = json.load(f)
+                all_teams_data[om_id] = {
+                    'name': om_data['name'],
+                    'slug': om_data['slug'],
+                    'players': om_data['players']
+                }
+    
+    # Generate TypeScript file
+    print("\n=== Generating TypeScript file ===")
+    ts_content = "export const ligue1Teams = [\n"
+    
+    for team_id, team_info in all_teams_data.items():
         ts_content += f"""  {{
     id: {team_id},
     nom: "{team_info['name']}",
@@ -236,93 +313,17 @@ def generate_typescript_file(league_name: str, teams_data: Dict) -> str:
     
     ts_content = ts_content.rstrip(',\n') + "\n];\n"
     
-    return ts_content
-
-def process_league(league_name: str, season_id: int):
-    print(f"\n{'='*60}")
-    print(f"PROCESSING: {league_name.upper()}")
-    print(f"{'='*60}")
-    
-    # Create output directory
-    output_dir = f'data/{league_name}_2025_2026'
-    os.makedirs(output_dir, exist_ok=True)
-    
-    # Get all teams
-    teams = get_league_teams(league_name, season_id)
-    
-    if not teams:
-        print("ERROR: No teams found")
-        return
-    
-    print(f"\nFound {len(teams)} teams")
-    
-    all_teams_data = {}
-    
-    # Process each team
-    for i, (team_id, team_info) in enumerate(teams.items(), 1):
-        print(f"\n[{i}/{len(teams)}] {team_info['name']}")
-        
-        players = fetch_team_squad_fast(team_id, team_info['name'], season_id)
-        
-        team_data = {
-            'name': team_info['name'],
-            'slug': team_info['slug'],
-            'players': sorted(players, key=lambda x: (
-                x['position_id'],
-                x['jersey_number'] if x['jersey_number'] else 999,
-                x['display_name']
-            ))
-        }
-        
-        # Save individual team file
-        save_team_data(team_id, team_data, output_dir)
-        
-        all_teams_data[team_id] = team_data
-        
-        # Small pause between teams
-        time.sleep(0.5)
-    
-    # Generate TypeScript file
-    print(f"\n=== Generating TypeScript file for {league_name} ===")
-    ts_content = generate_typescript_file(league_name, all_teams_data)
-    
-    ts_file = f"data/{league_name.replace('-', '')}Teams.ts"
+    ts_file = "data/ligue1Teams.ts"
     with open(ts_file, 'w', encoding='utf-8') as f:
         f.write(ts_content)
     
     print(f"TypeScript file saved: {ts_file}")
     
-    print(f"\n=== {league_name.upper()} COMPLETED ===")
+    print("\n=== COMPLETED ===")
     print(f"Processed {len(all_teams_data)} teams")
     
     for team_id, team_info in all_teams_data.items():
         print(f"  - {team_info['name']}: {len(team_info['players'])} players")
-    
-    return len(all_teams_data)
-
-def main():
-    print("=== ALL LEAGUES SQUADS FETCHER 2025/2026 ===")
-    
-    total_teams = 0
-    
-    for league_name, season_id in SEASONS.items():
-        try:
-            teams_count = process_league(league_name, season_id)
-            if teams_count:
-                total_teams += teams_count
-            
-            # Pause between leagues
-            print(f"\nPausing before next league...")
-            time.sleep(2)
-            
-        except Exception as e:
-            print(f"\nERROR processing {league_name}: {e}")
-            continue
-    
-    print("\n" + "="*60)
-    print("=== ALL LEAGUES COMPLETED ===")
-    print(f"Total teams processed: {total_teams}")
-    print("="*60)
 
 if __name__ == "__main__":
     main()
