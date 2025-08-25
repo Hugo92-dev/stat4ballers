@@ -7373,7 +7373,7 @@ export const premierLeagueTeams = [
   {
     id: 78,
     nom: "Brighton & Hove Albion",
-    slug: "brighton-&-hove-albion",
+    slug: "brighton-hove-albion",
     players: [
       {
         id: 37257596,
