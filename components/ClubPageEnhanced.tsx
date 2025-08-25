@@ -227,6 +227,14 @@ export default function ClubPageEnhanced({
                       className="group bg-gradient-to-r from-gray-800 to-gray-900 rounded-xl p-4 hover:from-gray-700 hover:to-gray-800 transition-all duration-300 transform hover:scale-[1.02] border border-gray-700 hover:border-blue-500"
                     >
                       <div className="flex items-center gap-4">
+                        {/* Numéro du joueur dans un carré */}
+                        {jerseyNumber && (
+                          <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-lg flex-shrink-0">
+                            {jerseyNumber}
+                          </div>
+                        )}
+                        
+                        {/* Photo du joueur */}
                         <div className="relative w-16 h-16 bg-gray-700 rounded-full overflow-hidden flex-shrink-0">
                           {player.image ? (
                             <Image
@@ -240,11 +248,6 @@ export default function ClubPageEnhanced({
                               <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                               </svg>
-                            </div>
-                          )}
-                          {jerseyNumber && (
-                            <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
-                              {jerseyNumber}
                             </div>
                           )}
                         </div>
