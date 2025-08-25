@@ -2,8 +2,19 @@ import ClubPageEnhanced from '@/components/ClubPageEnhanced';
 import { ligaTeams } from '@/data/ligaTeams';
 
 export default function ClubPage({ params }: { params: { club: string } }) {
+  // Gérer les alias d'URLs
+  const slugAliases: Record<string, string> = {
+    'fc-barcelona': 'barcelona',
+    'barca': 'barcelona',
+    'atletico': 'atletico-madrid',
+    'atleti': 'atletico-madrid',
+    'alaves': 'deportivo-alaves',
+  };
+  
+  const actualSlug = slugAliases[params.club] || params.club;
+  
   // Trouver le club dans les données
-  const club = ligaTeams.find(c => c.slug === params.club);
+  const club = ligaTeams.find(c => c.slug === actualSlug);
   
   if (!club) {
     return (
@@ -20,7 +31,7 @@ export default function ClubPage({ params }: { params: { club: string } }) {
 
   return (
     <ClubPageEnhanced
-      clubId={params.club}
+      clubId={actualSlug}
       clubName={club.nom}
       leagueId="liga"
       leagueName="La Liga"

@@ -1,5 +1,5 @@
 import ClubPageEnhanced from '@/components/ClubPageEnhanced';
-import { ligue1Teams } from '@/data/ligue1Teams_updated_om';
+import { ligue1Teams } from '@/data/ligue1Teams';
 
 export default function ClubPage({ params }: { params: { club: string } }) {
   // Trouver le club dans les données
@@ -21,7 +21,7 @@ export default function ClubPage({ params }: { params: { club: string } }) {
   return (
     <ClubPageEnhanced
       clubId={params.club}
-      clubName={club.name}
+      clubName={club.nom}
       leagueId="ligue1"
       leagueName="Ligue 1"
       teams={ligue1Teams}

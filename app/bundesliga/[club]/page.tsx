@@ -2,8 +2,19 @@ import ClubPageEnhanced from '@/components/ClubPageEnhanced';
 import { bundesligaTeams } from '@/data/bundesligaTeams';
 
 export default function ClubPage({ params }: { params: { club: string } }) {
+  // Gérer les alias d'URLs
+  const slugAliases: Record<string, string> = {
+    'bayern-munchen': 'bayern-munich',
+    'bayern': 'bayern-munich',
+    'fcb': 'bayern-munich',
+    'dortmund': 'borussia-dortmund',
+    'bvb': 'borussia-dortmund',
+  };
+  
+  const actualSlug = slugAliases[params.club] || params.club;
+  
   // Trouver le club dans les données
-  const club = bundesligaTeams.find(c => c.slug === params.club);
+  const club = bundesligaTeams.find(c => c.slug === actualSlug);
   
   if (!club) {
     return (
@@ -20,7 +31,7 @@ export default function ClubPage({ params }: { params: { club: string } }) {
 
   return (
     <ClubPageEnhanced
-      clubId={params.club}
+      clubId={actualSlug}
       clubName={club.nom}
       leagueId="bundesliga"
       leagueName="Bundesliga"

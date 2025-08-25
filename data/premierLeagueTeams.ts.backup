@@ -86,7 +86,7 @@ export const premierLeagueTeams = [
         taille: 190,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/97811.png",
-        playerSlug: "gabriel-magalhaes"
+        playerSlug: "gabriel-magalhães"
       },
       {
         id: 5270466,
@@ -142,7 +142,7 @@ export const premierLeagueTeams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/23278684.png",
-        playerSlug: "riccardo-calafiori "
+        playerSlug: "riccardo-calafiori "
       },
       {
         id: 37568815,
@@ -170,7 +170,7 @@ export const premierLeagueTeams = [
         taille: 178,
         poids: 68,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/26823.png",
-        playerSlug: "martin-odegaard "
+        playerSlug: "martin-ødegaard "
       },
       {
         id: 7643,
@@ -198,7 +198,7 @@ export const premierLeagueTeams = [
         taille: 187,
         poids: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/31609.png",
-        playerSlug: "christian-norgaard"
+        playerSlug: "christian-nørgaard"
       },
       {
         id: 5270497,
@@ -212,7 +212,7 @@ export const premierLeagueTeams = [
         taille: 170,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/5270497.png",
-        playerSlug: "fabio-vieira"
+        playerSlug: "fábio-vieira"
       },
       {
         id: 37568808,
@@ -268,7 +268,7 @@ export const premierLeagueTeams = [
         taille: 181,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/530762.png",
-        playerSlug: "martin-zubimendi"
+        playerSlug: "martín-zubimendi"
       },
       {
         id: 5273,
@@ -324,7 +324,7 @@ export const premierLeagueTeams = [
         taille: 175,
         poids: 73,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/5329.png",
-        playerSlug: "gabriel-jesus "
+        playerSlug: "gabriel-jesus "
       },
       {
         id: 10959356,
@@ -352,7 +352,7 @@ export const premierLeagueTeams = [
         taille: 187,
         poids: 86,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/194167.png",
-        playerSlug: "viktor-gyokeres"
+        playerSlug: "viktor-gyökeres"
       },
       {
         id: 61780,
@@ -429,7 +429,7 @@ export const premierLeagueTeams = [
         taille: 194,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/133779.png",
-        playerSlug: "guglielmo-vicario "
+        playerSlug: "guglielmo-vicario "
       },
       {
         id: 37430162,
@@ -443,7 +443,7 @@ export const premierLeagueTeams = [
         taille: 190,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/37430162.png",
-        playerSlug: "antonin-kinsky"
+        playerSlug: "antonín-kinský"
       },
       {
         id: 540476,
@@ -471,7 +471,7 @@ export const premierLeagueTeams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/14/23715982.png",
-        playerSlug: "radu-dragusin "
+        playerSlug: "radu-drăgușin "
       },
       {
         id: 33079,
@@ -485,7 +485,7 @@ export const premierLeagueTeams = [
         taille: 190,
         poids: 89,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/33079.png",
-        playerSlug: "kevin-danso "
+        playerSlug: "kevin-danso "
       },
       {
         id: 32777506,
@@ -611,7 +611,7 @@ export const premierLeagueTeams = [
         taille: 190,
         poids: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/160072.png",
-        playerSlug: "joao-palhinha"
+        playerSlug: "joão-palhinha"
       },
       {
         id: 96870,
@@ -856,7 +856,7 @@ export const premierLeagueTeams = [
         taille: 197,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/581000.png",
-        playerSlug: "robert-sanchez"
+        playerSlug: "robert-sánchez"
       },
       {
         id: 23715941,
@@ -870,7 +870,7 @@ export const premierLeagueTeams = [
         taille: 192,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/23715941.png",
-        playerSlug: "filip-jorgensen"
+        playerSlug: "filip-jørgensen"
       },
       {
         id: 35659570,
@@ -940,7 +940,7 @@ export const premierLeagueTeams = [
         taille: 194,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/4545394.png",
-        playerSlug: "benoit-badiashile "
+        playerSlug: "benoît-badiashile "
       },
       {
         id: 37259180,
@@ -954,7 +954,7 @@ export const premierLeagueTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/37259180.png",
-        playerSlug: "levi-colwill "
+        playerSlug: "levi-colwill "
       },
       {
         id: 37600243,
@@ -996,7 +996,7 @@ export const premierLeagueTeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/581220.png",
-        playerSlug: "reece-james "
+        playerSlug: "reece-james "
       },
       {
         id: 37317367,
@@ -1038,7 +1038,7 @@ export const premierLeagueTeams = [
         taille: 186,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/37700784.png",
-        playerSlug: "aaron-anselmino"
+        playerSlug: "aarón-anselmino"
       },
       {
         id: 37631362,
@@ -1094,7 +1094,7 @@ export const premierLeagueTeams = [
         taille: 178,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/29709995.png",
-        playerSlug: "enzo-fernandez"
+        playerSlug: "enzo-fernández"
       },
       {
         id: 28912747,
@@ -1122,7 +1122,7 @@ export const premierLeagueTeams = [
         taille: 178,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/37564315.png",
-        playerSlug: "dario-essugo"
+        playerSlug: "dário-essugo"
       },
       {
         id: 37562129,
@@ -1150,7 +1150,7 @@ export const premierLeagueTeams = [
         taille: 178,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/37261500.png",
-        playerSlug: "moises-caicedo"
+        playerSlug: "moisés-caicedo"
       },
       {
         id: 37536874,
@@ -1164,7 +1164,7 @@ export const premierLeagueTeams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/37536874.png",
-        playerSlug: "romeo-lavia"
+        playerSlug: "roméo-lavia"
       },
       {
         id: 31626713,
@@ -1192,7 +1192,7 @@ export const premierLeagueTeams = [
         taille: 175,
         poids: 61,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/9938919.png",
-        playerSlug: "mykhaylo-mudryk "
+        playerSlug: "mykhaylo-mudryk "
       },
       {
         id: 496775,
@@ -1248,7 +1248,7 @@ export const premierLeagueTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/37540621.png",
-        playerSlug: "nicolas-jackson "
+        playerSlug: "nicolas-jackson "
       },
       {
         id: 96884,
@@ -1276,7 +1276,7 @@ export const premierLeagueTeams = [
         taille: 182,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/28931574.png",
-        playerSlug: "joao-pedro"
+        playerSlug: "joão-pedro"
       },
       {
         id: 37592037,
@@ -1304,7 +1304,7 @@ export const premierLeagueTeams = [
         taille: 176,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/37701999.png",
-        playerSlug: "estevao"
+        playerSlug: "estêvão"
       },
       {
         id: 37555964,
@@ -1465,7 +1465,7 @@ export const premierLeagueTeams = [
         taille: 195,
         poids: 90,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/178032.png",
-        playerSlug: "nikola-milenkovic"
+        playerSlug: "nikola-milenković"
       },
       {
         id: 1956,
@@ -1521,7 +1521,7 @@ export const premierLeagueTeams = [
         taille: 191,
         poids: 77,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/96943.png",
-        playerSlug: "ibrahim-sangare"
+        playerSlug: "ibrahim-sangaré"
       },
       {
         id: 332047,
@@ -1577,7 +1577,7 @@ export const premierLeagueTeams = [
         taille: 179,
         poids: 73,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/335653.png",
-        playerSlug: "nicolas-dominguez "
+        playerSlug: "nicolás-domínguez "
       },
       {
         id: 37536911,
@@ -1605,7 +1605,7 @@ export const premierLeagueTeams = [
         taille: 190,
         poids: 77,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/10831.png",
-        playerSlug: "ryan-yates "
+        playerSlug: "ryan-yates "
       },
       {
         id: 28575676,
@@ -1808,7 +1808,7 @@ export const premierLeagueTeams = [
         taille: 188,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/4357.png",
-        playerSlug: "freddie-woodman "
+        playerSlug: "freddie-woodman "
       },
       {
         id: 37600791,
@@ -1822,7 +1822,7 @@ export const premierLeagueTeams = [
         taille: 190,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/37600791.png",
-        playerSlug: "armin-pecsi"
+        playerSlug: "ármin-pécsi"
       },
       {
         id: 1453,
@@ -1850,7 +1850,7 @@ export const premierLeagueTeams = [
         taille: 195,
         poids: 92,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/1743.png",
-        playerSlug: "virgil-van-dijk "
+        playerSlug: "virgil-van-dijk "
       },
       {
         id: 100556,
@@ -1864,7 +1864,7 @@ export const premierLeagueTeams = [
         taille: 194,
         poids: 93,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/100556.png",
-        playerSlug: "ibrahima-konate"
+        playerSlug: "ibrahima-konaté"
       },
       {
         id: 37381778,
@@ -1892,7 +1892,7 @@ export const premierLeagueTeams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/37316835.png",
-        playerSlug: "conor-bradley "
+        playerSlug: "conor-bradley "
       },
       {
         id: 37685025,
@@ -1962,7 +1962,7 @@ export const premierLeagueTeams = [
         taille: 195,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/4545525.png",
-        playerSlug: "rhys-williams "
+        playerSlug: "rhys-williams "
       },
       {
         id: 37260590,
@@ -2102,7 +2102,7 @@ export const premierLeagueTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/37565677.png",
-        playerSlug: "stefan-bajcetic "
+        playerSlug: "stefan-bajcetic "
       },
       {
         id: 4125,
@@ -2158,7 +2158,7 @@ export const premierLeagueTeams = [
         taille: 190,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/37288979.png",
-        playerSlug: "hugo-ekitike"
+        playerSlug: "hugo-ekitiké"
       },
       {
         id: 37721333,
@@ -2249,7 +2249,7 @@ export const premierLeagueTeams = [
         taille: 187,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/162536.png",
-        playerSlug: "ruben-dias"
+        playerSlug: "rúben-dias"
       },
       {
         id: 982,
@@ -2277,7 +2277,7 @@ export const premierLeagueTeams = [
         taille: 180,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/1869.png",
-        playerSlug: "nathan-ake"
+        playerSlug: "nathan-aké"
       },
       {
         id: 13590962,
@@ -2291,7 +2291,7 @@ export const premierLeagueTeams = [
         taille: 180,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/13590962.png",
-        playerSlug: "rayan-ait-nouri"
+        playerSlug: "rayan-aït-nouri"
       },
       {
         id: 24838191,
@@ -2347,7 +2347,7 @@ export const premierLeagueTeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/30446925.png",
-        playerSlug: "issa-kabore"
+        playerSlug: "issa-kaboré"
       },
       {
         id: 37459073,
@@ -2375,7 +2375,7 @@ export const premierLeagueTeams = [
         taille: 176,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/24838234.png",
-        playerSlug: "josh-wilson-esbrand "
+        playerSlug: "josh-wilson-esbrand "
       },
       {
         id: 3156873,
@@ -2403,7 +2403,7 @@ export const premierLeagueTeams = [
         taille: 177,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/73147.png",
-        playerSlug: "mateo-kovacic "
+        playerSlug: "mateo-kovacic "
       },
       {
         id: 21072805,
@@ -2431,7 +2431,7 @@ export const premierLeagueTeams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/23269737.png",
-        playerSlug: "nico-gonzalez"
+        playerSlug: "nico-gonzález"
       },
       {
         id: 186910,
@@ -2459,7 +2459,7 @@ export const premierLeagueTeams = [
         taille: 180,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/4842.png",
-        playerSlug: "ilkay-gundogan"
+        playerSlug: "i̇lkay-gündoğan"
       },
       {
         id: 96353,
@@ -2473,7 +2473,7 @@ export const premierLeagueTeams = [
         taille: 173,
         poids: 64,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/96353.png",
-        playerSlug: "bernardo-silva "
+        playerSlug: "bernardo-silva "
       },
       {
         id: 21781428,
@@ -2491,8 +2491,8 @@ export const premierLeagueTeams = [
       },
       {
         id: 37562487,
-        nom: "Nico O\'Reilly",
-        displayName: "Nico O\'Reilly",
+        nom: "Nico O'Reilly",
+        displayName: "Nico O'Reilly",
         position: "MF",
         position_id: 26,
         numero: 33,
@@ -2585,7 +2585,7 @@ export const premierLeagueTeams = [
         taille: 173,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/23697990.png",
-        playerSlug: "jeremy-doku"
+        playerSlug: "jérémy-doku"
       },
       {
         id: 37527169,
@@ -2676,7 +2676,7 @@ export const premierLeagueTeams = [
         taille: 173,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/37391787.png",
-        playerSlug: "niall-huggins "
+        playerSlug: "niall-huggins "
       },
       {
         id: 23697537,
@@ -2704,7 +2704,7 @@ export const premierLeagueTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/12433171.png",
-        playerSlug: "daniel-ballard "
+        playerSlug: "daniel-ballard "
       },
       {
         id: 23269647,
@@ -2718,12 +2718,12 @@ export const premierLeagueTeams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/23269647.png",
-        playerSlug: "timothee-pembele"
+        playerSlug: "timothée-pembélé"
       },
       {
         id: 5999,
-        nom: "Luke O\'Nien",
-        displayName: "Luke O\'Nien",
+        nom: "Luke O'Nien",
+        displayName: "Luke O'Nien",
         position: "DF",
         position_id: 25,
         numero: 13,
@@ -2774,7 +2774,7 @@ export const premierLeagueTeams = [
         taille: 187,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/97669.png",
-        playerSlug: "nordi-mukiele "
+        playerSlug: "nordi-mukiele "
       },
       {
         id: 37546753,
@@ -2872,7 +2872,7 @@ export const premierLeagueTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/23680764.png",
-        playerSlug: "dan-neil "
+        playerSlug: "dan-neil "
       },
       {
         id: 3449,
@@ -2942,7 +2942,7 @@ export const premierLeagueTeams = [
         taille: 173,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/7026744.png",
-        playerSlug: "enzo-le-fee"
+        playerSlug: "enzo-le-fée"
       },
       {
         id: 1887,
@@ -3152,7 +3152,7 @@ export const premierLeagueTeams = [
         taille: 192,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/37592732.png",
-        playerSlug: "luis-semedo"
+        playerSlug: "luís-semedo"
       },
       {
         id: 537305,
@@ -3275,8 +3275,8 @@ export const premierLeagueTeams = [
       },
       {
         id: 37528754,
-        nom: "Jake O\'Brien",
-        displayName: "Jake O\'Brien",
+        nom: "Jake O'Brien",
+        displayName: "Jake O'Brien",
         position: "DF",
         position_id: 25,
         numero: 15,
@@ -3313,7 +3313,7 @@ export const premierLeagueTeams = [
         taille: 177,
         poids: 67,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/764.png",
-        playerSlug: "seamus-coleman  "
+        playerSlug: "séamus-coleman  "
       },
       {
         id: 32404895,
@@ -3614,7 +3614,7 @@ export const premierLeagueTeams = [
         taille: 176,
         poids: 68,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/23260605.png",
-        playerSlug: "julian-araujo"
+        playerSlug: "julián-araujo"
       },
       {
         id: 28543553,
@@ -3684,7 +3684,7 @@ export const premierLeagueTeams = [
         taille: 184,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/22536030.png",
-        playerSlug: "bafode-diakite"
+        playerSlug: "bafodé-diakité"
       },
       {
         id: 37627749,
@@ -3866,7 +3866,7 @@ export const premierLeagueTeams = [
         taille: 177,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/2511082.png",
-        playerSlug: "hamed-junior-traore"
+        playerSlug: "hamed-junior-traoré"
       },
       {
         id: 6087,
@@ -3964,7 +3964,7 @@ export const premierLeagueTeams = [
         taille: 187,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/26354.png",
-        playerSlug: "enes-unal "
+        playerSlug: "enes-ünal "
       },
       {
         id: 14004542,
@@ -4013,7 +4013,7 @@ export const premierLeagueTeams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/896225.png",
-        playerSlug: "caoimhin-kelleher"
+        playerSlug: "caoimhín-kelleher"
       },
       {
         id: 531971,
@@ -4027,7 +4027,7 @@ export const premierLeagueTeams = [
         taille: 195,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/531971.png",
-        playerSlug: "hakon-rafn-valdimarsson"
+        playerSlug: "hákon-rafn-valdimarsson"
       },
       {
         id: 37391634,
@@ -4251,7 +4251,7 @@ export const premierLeagueTeams = [
         taille: 170,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/21412957.png",
-        playerSlug: "fabio-carvalho"
+        playerSlug: "fábio-carvalho"
       },
       {
         id: 537108,
@@ -4321,7 +4321,7 @@ export const premierLeagueTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/31238191.png",
-        playerSlug: "myles-peart-harris "
+        playerSlug: "myles-peart-harris "
       },
       {
         id: 37709434,
@@ -4349,7 +4349,7 @@ export const premierLeagueTeams = [
         taille: 184,
         poids: 79,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/36633.png",
-        playerSlug: "vitaly-janelt "
+        playerSlug: "vitaly-janelt "
       },
       {
         id: 8403173,
@@ -4468,7 +4468,7 @@ export const premierLeagueTeams = [
         taille: 191,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/80889.png",
-        playerSlug: "martin-dubravka"
+        playerSlug: "martin-dúbravka"
       },
       {
         id: 37582278,
@@ -4482,7 +4482,7 @@ export const premierLeagueTeams = [
         taille: 190,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/37582278.png",
-        playerSlug: "max-weiss"
+        playerSlug: "max-weiß"
       },
       {
         id: 7346461,
@@ -4510,7 +4510,7 @@ export const premierLeagueTeams = [
         taille: 192,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/79752.png",
-        playerSlug: "vaclav-hladky"
+        playerSlug: "václav-hladký"
       },
       {
         id: 911,
@@ -4566,7 +4566,7 @@ export const premierLeagueTeams = [
         taille: 193,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/37351292.png",
-        playerSlug: "maxime-esteve"
+        playerSlug: "maxime-estève"
       },
       {
         id: 4391,
@@ -4594,7 +4594,7 @@ export const premierLeagueTeams = [
         taille: 186,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/37259181.png",
-        playerSlug: "bashir-humphreys "
+        playerSlug: "bashir-humphreys "
       },
       {
         id: 5410,
@@ -4720,7 +4720,7 @@ export const premierLeagueTeams = [
         taille: 175,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/4244.png",
-        playerSlug: "josh-cullen "
+        playerSlug: "josh-cullen "
       },
       {
         id: 37316858,
@@ -4846,7 +4846,7 @@ export const premierLeagueTeams = [
         taille: 185,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/37261110.png",
-        playerSlug: "zeki-amdouni "
+        playerSlug: "zeki-amdouni "
       },
       {
         id: 23697427,
@@ -4874,7 +4874,7 @@ export const premierLeagueTeams = [
         taille: 166,
         poids: 68,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/62279.png",
-        playerSlug: "benson-manuel "
+        playerSlug: "benson-manuel "
       },
       {
         id: 538850,
@@ -5077,7 +5077,7 @@ export const premierLeagueTeams = [
         taille: 190,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/29478.png",
-        playerSlug: "pascal-struijk "
+        playerSlug: "pascal-struijk "
       },
       {
         id: 339112,
@@ -5273,7 +5273,7 @@ export const premierLeagueTeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/28912710.png",
-        playerSlug: "sam-greenwood "
+        playerSlug: "sam-greenwood "
       },
       {
         id: 5141,
@@ -5301,7 +5301,7 @@ export const premierLeagueTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/29382.png",
-        playerSlug: "joel-piroe"
+        playerSlug: "joël-piroe"
       },
       {
         id: 537217,
@@ -5420,7 +5420,7 @@ export const premierLeagueTeams = [
         taille: 186,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/95093.png",
-        playerSlug: "benjamin-lecomte "
+        playerSlug: "benjamin-lecomte "
       },
       {
         id: 25400,
@@ -5560,7 +5560,7 @@ export const premierLeagueTeams = [
         taille: 185,
         poids: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/2285.png",
-        playerSlug: "tom-cairney "
+        playerSlug: "tom-cairney "
       },
       {
         id: 64193,
@@ -5602,7 +5602,7 @@ export const premierLeagueTeams = [
         taille: 182,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/130248.png",
-        playerSlug: "sasa-lukic"
+        playerSlug: "saša-lukić"
       },
       {
         id: 37656924,
@@ -5644,7 +5644,7 @@ export const premierLeagueTeams = [
         taille: 187,
         poids: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/160217.png",
-        playerSlug: "raul-jimenez"
+        playerSlug: "raúl-jiménez"
       },
       {
         id: 5403,
@@ -5686,7 +5686,7 @@ export const premierLeagueTeams = [
         taille: 178,
         poids: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/4241.png",
-        playerSlug: "adama-traore"
+        playerSlug: "adama-traoré"
       },
       {
         id: 1881,
@@ -5763,7 +5763,7 @@ export const premierLeagueTeams = [
         taille: 191,
         poids: 91,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/97383.png",
-        playerSlug: "walter-benitez"
+        playerSlug: "walter-benítez"
       },
       {
         id: 524045,
@@ -5777,7 +5777,7 @@ export const premierLeagueTeams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/524045.png",
-        playerSlug: "daniel-munoz"
+        playerSlug: "daniel-muñoz"
       },
       {
         id: 4598710,
@@ -5819,7 +5819,7 @@ export const premierLeagueTeams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/4536500.png",
-        playerSlug: "marc-guehi"
+        playerSlug: "marc-guéhi"
       },
       {
         id: 1202,
@@ -5875,7 +5875,7 @@ export const premierLeagueTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/37537937.png",
-        playerSlug: "chadi-riad "
+        playerSlug: "chadi-riad "
       },
       {
         id: 37651069,
@@ -5945,7 +5945,7 @@ export const premierLeagueTeams = [
         taille: 184,
         poids: 67,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/37567285.png",
-        playerSlug: "matheus-franca"
+        playerSlug: "matheus-frança"
       },
       {
         id: 310131,
@@ -6001,7 +6001,7 @@ export const premierLeagueTeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/5640926.png",
-        playerSlug: "cheick-doucoure"
+        playerSlug: "cheick-doucouré"
       },
       {
         id: 37316940,
@@ -6085,7 +6085,7 @@ export const premierLeagueTeams = [
         taille: 185,
         poids: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/96722.png",
-        playerSlug: "ismaila-sarr"
+        playerSlug: "ismaïla-sarr"
       },
       {
         id: 539961,
@@ -6260,7 +6260,7 @@ export const premierLeagueTeams = [
         taille: 186,
         poids: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/32372.png",
-        playerSlug: "fabian-schar"
+        playerSlug: "fabian-schär"
       },
       {
         id: 2985,
@@ -6274,7 +6274,7 @@ export const premierLeagueTeams = [
         taille: 188,
         poids: 89,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/2985.png",
-        playerSlug: "jamaal-lascelles "
+        playerSlug: "jamaal-lascelles "
       },
       {
         id: 21762216,
@@ -6428,7 +6428,7 @@ export const premierLeagueTeams = [
         taille: 182,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/459145.png",
-        playerSlug: "bruno-guimaraes"
+        playerSlug: "bruno-guimarães"
       },
       {
         id: 11705406,
@@ -6575,7 +6575,7 @@ export const premierLeagueTeams = [
         taille: 198,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/438751.png",
-        playerSlug: "altay-bayindir"
+        playerSlug: "altay-bayındır"
       },
       {
         id: 1454,
@@ -6603,7 +6603,7 @@ export const premierLeagueTeams = [
         taille: 190,
         poids: 93,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/26393.png",
-        playerSlug: "andre-onana "
+        playerSlug: "andré-onana "
       },
       {
         id: 164061,
@@ -6673,7 +6673,7 @@ export const premierLeagueTeams = [
         taille: 175,
         poids: 77,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/2206665.png",
-        playerSlug: "lisandro-martinez "
+        playerSlug: "lisandro-martínez "
       },
       {
         id: 2158417,
@@ -6771,7 +6771,7 @@ export const premierLeagueTeams = [
         taille: 177,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/37761073.png",
-        playerSlug: "diego-leon"
+        playerSlug: "diego-león"
       },
       {
         id: 37675777,
@@ -6813,7 +6813,7 @@ export const premierLeagueTeams = [
         taille: 179,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/129602.png",
-        playerSlug: "bruno-fernandes "
+        playerSlug: "bruno-fernandes "
       },
       {
         id: 159700,
@@ -6869,7 +6869,7 @@ export const premierLeagueTeams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/37325012.png",
-        playerSlug: "rasmus-hojlund"
+        playerSlug: "rasmus-højlund"
       },
       {
         id: 1846739,
@@ -7016,7 +7016,7 @@ export const premierLeagueTeams = [
         taille: 195,
         poids: 88,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/1343.png",
-        playerSlug: "emiliano-martinez"
+        playerSlug: "emiliano-martínez"
       },
       {
         id: 24238,
@@ -7142,7 +7142,7 @@ export const premierLeagueTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/37656468.png",
-        playerSlug: "andres-garcia-robledo"
+        playerSlug: "andrés-garcía-robledo"
       },
       {
         id: 23311159,
@@ -7212,7 +7212,7 @@ export const premierLeagueTeams = [
         taille: 178,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/172611.png",
-        playerSlug: "john-mcginn "
+        playerSlug: "john-mcginn "
       },
       {
         id: 62342,
@@ -7240,7 +7240,7 @@ export const premierLeagueTeams = [
         taille: 172,
         poids: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/186660.png",
-        playerSlug: "emiliano-buendia"
+        playerSlug: "emiliano-buendía"
       },
       {
         id: 37623462,
@@ -7471,7 +7471,7 @@ export const premierLeagueTeams = [
         taille: 192,
         poids: 88,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/2461.png",
-        playerSlug: "lewis-dunk "
+        playerSlug: "lewis-dunk "
       },
       {
         id: 24818803,
@@ -7513,7 +7513,7 @@ export const premierLeagueTeams = [
         taille: 174,
         poids: 66,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/25738.png",
-        playerSlug: "ferdi-kadioglu"
+        playerSlug: "ferdi-kadıoğlu"
       },
       {
         id: 23269659,
@@ -7541,7 +7541,7 @@ export const premierLeagueTeams = [
         taille: 184,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/24655.png",
-        playerSlug: "joel-veltman"
+        playerSlug: "joël-veltman"
       },
       {
         id: 37590697,
@@ -7611,7 +7611,7 @@ export const premierLeagueTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/37563876.png",
-        playerSlug: "diego-gomez"
+        playerSlug: "diego-gómez"
       },
       {
         id: 37526157,
@@ -7657,8 +7657,8 @@ export const premierLeagueTeams = [
       },
       {
         id: 1494712,
-        nom: "Matt O\'Riley",
-        displayName: "Matt O\'Riley",
+        nom: "Matt O'Riley",
+        displayName: "Matt O'Riley",
         position: "MF",
         position_id: 26,
         numero: 33,
@@ -7723,7 +7723,7 @@ export const premierLeagueTeams = [
         taille: 186,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/37601748.png",
-        playerSlug: "stefanos-tzimas "
+        playerSlug: "stefanos-tzimas "
       },
       {
         id: 21782390,
@@ -7856,7 +7856,7 @@ export const premierLeagueTeams = [
         taille: 192,
         poids: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/159483.png",
-        playerSlug: "jose-sa"
+        playerSlug: "josé-sá"
       },
       {
         id: 3301,
@@ -7884,7 +7884,7 @@ export const premierLeagueTeams = [
         taille: 193,
         poids: 85,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/1008.png",
-        playerSlug: "sam-johnstone "
+        playerSlug: "sam-johnstone "
       },
       {
         id: 3884,
@@ -7940,7 +7940,7 @@ export const premierLeagueTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/33166012.png",
-        playerSlug: "david-moller-wolfe"
+        playerSlug: "david-møller-wolfe"
       },
       {
         id: 37261923,
@@ -8066,7 +8066,7 @@ export const premierLeagueTeams = [
         taille: 176,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/37526007.png",
-        playerSlug: "andre"
+        playerSlug: "andré"
       },
       {
         id: 37402348,
@@ -8080,7 +8080,7 @@ export const premierLeagueTeams = [
         taille: 176,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/37402348.png",
-        playerSlug: "joao-gomes"
+        playerSlug: "joão-gomes"
       },
       {
         id: 37357499,
@@ -8122,7 +8122,7 @@ export const premierLeagueTeams = [
         taille: 193,
         poids: 79,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/458682.png",
-        playerSlug: "jorgen-strand-larsen"
+        playerSlug: "jørgen-strand-larsen"
       },
       {
         id: 785373,
@@ -8178,7 +8178,7 @@ export const premierLeagueTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/23269679.png",
-        playerSlug: "fabio-silva"
+        playerSlug: "fábio-silva"
       },
       {
         id: 37663391,
@@ -8192,7 +8192,7 @@ export const premierLeagueTeams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/37663391.png",
-        playerSlug: "fer-lopez"
+        playerSlug: "fer-lópez"
       },
       {
         id: 37655932,
@@ -8206,7 +8206,7 @@ export const premierLeagueTeams = [
         taille: 169,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/37655932.png",
-        playerSlug: "enso-gonzalez"
+        playerSlug: "enso-gonzález"
       },
       {
         id: 37738333,
@@ -8220,7 +8220,7 @@ export const premierLeagueTeams = [
         taille: null,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-        playerSlug: "mateus-mane"
+        playerSlug: "mateus-mané"
       },
       {
         id: 37560477,
@@ -8423,7 +8423,7 @@ export const premierLeagueTeams = [
         taille: 180,
         poids: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/220052.png",
-        playerSlug: "lucas-paqueta"
+        playerSlug: "lucas-paquetá"
       },
       {
         id: 37685630,
@@ -8465,7 +8465,7 @@ export const premierLeagueTeams = [
         taille: 190,
         poids: 73,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/254052.png",
-        playerSlug: "edson-alvarez"
+        playerSlug: "edson-álvarez"
       },
       {
         id: 254081,
@@ -8479,7 +8479,7 @@ export const premierLeagueTeams = [
         taille: 185,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/254081.png",
-        playerSlug: "guido-rodriguez"
+        playerSlug: "guido-rodríguez"
       },
       {
         id: 80655,
@@ -8591,7 +8591,7 @@ export const premierLeagueTeams = [
         taille: 189,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/31532.png",
-        playerSlug: "niclas-fullkrug"
+        playerSlug: "niclas-füllkrug"
       },
       {
         id: 1592,
@@ -8605,7 +8605,7 @@ export const premierLeagueTeams = [
         taille: 176,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/1592.png",
-        playerSlug: "jarrod-bowen "
+        playerSlug: "jarrod-bowen "
       },
       {
         id: 96642,

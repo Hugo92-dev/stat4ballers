@@ -44,7 +44,13 @@
       "Bash(if [ -f \"$file\" ])",
       "Bash(then)",
       "Bash(echo:*)",
-      "Bash(fi)"
+      "Bash(fi)",
+      "Bash(if [ -f \"data/bundesliga_2025_2026/bayern-munchen.json\" ])",
+      "Bash(else)",
+      "Bash(__NEW_LINE__ echo)",
+      "Bash(if [ -f \"data/liga_2025_2026/real-madrid.json\" ])",
+      "Bash(if [ -f \"data/serie-a_2025_2026/milan.json\" ])",
+      "Bash(pip install:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",

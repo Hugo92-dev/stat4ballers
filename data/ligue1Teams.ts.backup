@@ -44,7 +44,7 @@ export const ligue1Teams = [
         taille: 196,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/97438.png",
-        playerSlug: "remy-descamps"
+        playerSlug: "rémy-descamps"
       },
       {
         id: 37665354,
@@ -72,7 +72,7 @@ export const ligue1Teams = [
         taille: 171,
         poids: 65,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/188444.png",
-        playerSlug: "nicolas-tagliafico"
+        playerSlug: "nicolás-tagliafico"
       },
       {
         id: 29313248,
@@ -100,7 +100,7 @@ export const ligue1Teams = [
         taille: 190,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/98874.png",
-        playerSlug: "moussa-niakhate"
+        playerSlug: "moussa-niakhaté"
       },
       {
         id: 37591826,
@@ -114,7 +114,7 @@ export const ligue1Teams = [
         taille: 175,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/37591826.png",
-        playerSlug: "sael-kumbedi"
+        playerSlug: "saël-kumbedi"
       },
       {
         id: 37395347,
@@ -170,7 +170,7 @@ export const ligue1Teams = [
         taille: 177,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/37634183.png",
-        playerSlug: "achraf-laaziri"
+        playerSlug: "achraf-laâziri"
       },
       {
         id: 93900,
@@ -198,7 +198,7 @@ export const ligue1Teams = [
         taille: 178,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/523939.png",
-        playerSlug: "orel-mangala "
+        playerSlug: "orel-mangala "
       },
       {
         id: 27081112,
@@ -366,7 +366,7 @@ export const ligue1Teams = [
         taille: 176,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/37681302.png",
-        playerSlug: "alejandro-gomes-rodriguez"
+        playerSlug: "alejandro-gomes-rodríguez"
       },
       {
         id: 37614052,
@@ -380,7 +380,7 @@ export const ligue1Teams = [
         taille: 178,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/37614052.png",
-        playerSlug: "ernest-nuamah "
+        playerSlug: "ernest-nuamah "
       },
       {
         id: 13963088,
@@ -443,7 +443,7 @@ export const ligue1Teams = [
         taille: 187,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/12066417.png",
-        playerSlug: "alex-dominguez"
+        playerSlug: "álex-domínguez"
       },
       {
         id: 84535,
@@ -513,7 +513,7 @@ export const ligue1Teams = [
         taille: 183,
         poids: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/95699.png",
-        playerSlug: "djibril-sidibe"
+        playerSlug: "djibril-sidibé"
       },
       {
         id: 37734644,
@@ -597,7 +597,7 @@ export const ligue1Teams = [
         taille: 178,
         poids: 73,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/455796.png",
-        playerSlug: "aron-donnum"
+        playerSlug: "aron-dønnum"
       },
       {
         id: 37259993,
@@ -625,7 +625,7 @@ export const ligue1Teams = [
         taille: 184,
         poids: 90,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/32725.png",
-        playerSlug: "niklas-schmidt "
+        playerSlug: "niklas-schmidt "
       },
       {
         id: 37592240,
@@ -653,7 +653,7 @@ export const ligue1Teams = [
         taille: 176,
         poids: 68,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/466425.png",
-        playerSlug: "cristian-casseres-jr"
+        playerSlug: "cristian-cásseres-jr"
       },
       {
         id: 37655284,
@@ -723,7 +723,7 @@ export const ligue1Teams = [
         taille: null,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-        playerSlug: "julian--vignolo"
+        playerSlug: "julián--vignolo"
       },
       {
         id: 529581,
@@ -842,7 +842,7 @@ export const ligue1Teams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/17187782.png",
-        playerSlug: "stefan-bajic"
+        playerSlug: "stefan-bajić"
       },
       {
         id: 24830085,
@@ -870,7 +870,7 @@ export const ligue1Teams = [
         taille: null,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/37581743.png",
-        playerSlug: "ishe-samuels-smith"
+        playerSlug: "ishé-samuels-smith"
       },
       {
         id: 37533509,
@@ -884,7 +884,7 @@ export const ligue1Teams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/37533509.png",
-        playerSlug: "saidou-sow "
+        playerSlug: "saïdou-sow "
       },
       {
         id: 37630141,
@@ -912,7 +912,7 @@ export const ligue1Teams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/37529619.png",
-        playerSlug: "ismael-doukoure"
+        playerSlug: "ismaël-doukouré"
       },
       {
         id: 37316600,
@@ -926,7 +926,7 @@ export const ligue1Teams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/37316600.png",
-        playerSlug: "guela-doue"
+        playerSlug: "guéla-doué"
       },
       {
         id: 37532344,
@@ -954,7 +954,7 @@ export const ligue1Teams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/37668633.png",
-        playerSlug: "lucas-hogsberg"
+        playerSlug: "lucas-høgsberg"
       },
       {
         id: 37336993,
@@ -968,7 +968,7 @@ export const ligue1Teams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/37336993.png",
-        playerSlug: "soumaila-coulibaly"
+        playerSlug: "soumaïla-coulibaly"
       },
       {
         id: 205450,
@@ -1024,7 +1024,7 @@ export const ligue1Teams = [
         taille: 178,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/37682244.png",
-        playerSlug: "kendry-paez"
+        playerSlug: "kendry-páez"
       },
       {
         id: 37668618,
@@ -1094,7 +1094,7 @@ export const ligue1Teams = [
         taille: 170,
         poids: 64,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/37577727.png",
-        playerSlug: "valentin-barco"
+        playerSlug: "valentín-barco"
       },
       {
         id: 37696229,
@@ -1150,7 +1150,7 @@ export const ligue1Teams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/37579360.png",
-        playerSlug: "felix-lemarechal"
+        playerSlug: "félix-lemaréchal"
       },
       {
         id: 37597764,
@@ -1164,7 +1164,7 @@ export const ligue1Teams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-        playerSlug: "rafael-filipe-goncalves-soares-luis"
+        playerSlug: "rafael-filipe-gonçalves-soares-luís"
       },
       {
         id: 37592734,
@@ -1192,7 +1192,7 @@ export const ligue1Teams = [
         taille: 186,
         poids: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/37663291.png",
-        playerSlug: "joaquin-panichelli"
+        playerSlug: "joaquín-panichelli"
       },
       {
         id: 37400423,
@@ -1220,7 +1220,7 @@ export const ligue1Teams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/37289022.png",
-        playerSlug: "sekou-mara"
+        playerSlug: "sékou-mara"
       },
       {
         id: 37625728,
@@ -1234,7 +1234,7 @@ export const ligue1Teams = [
         taille: 174,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/37625728.png",
-        playerSlug: "oscar-perea"
+        playerSlug: "óscar-perea"
       },
       {
         id: 5270372,
@@ -1409,7 +1409,7 @@ export const ligue1Teams = [
         taille: 183,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/96208.png",
-        playerSlug: "marquinhos "
+        playerSlug: "marquinhos "
       },
       {
         id: 24065255,
@@ -1437,7 +1437,7 @@ export const ligue1Teams = [
         taille: 184,
         poids: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/186797.png",
-        playerSlug: "lucas-hernandez"
+        playerSlug: "lucas-hernández"
       },
       {
         id: 37262099,
@@ -1493,7 +1493,7 @@ export const ligue1Teams = [
         taille: 189,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/186735.png",
-        playerSlug: "fabian-ruiz"
+        playerSlug: "fabián-ruiz"
       },
       {
         id: 186668,
@@ -1563,7 +1563,7 @@ export const ligue1Teams = [
         taille: 178,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/37593237.png",
-        playerSlug: "warren-zaire-emery"
+        playerSlug: "warren-zaïre-emery"
       },
       {
         id: 37592729,
@@ -1577,7 +1577,7 @@ export const ligue1Teams = [
         taille: 174,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/37592729.png",
-        playerSlug: "joao-neves"
+        playerSlug: "joão-neves"
       },
       {
         id: 1479337,
@@ -1605,7 +1605,7 @@ export const ligue1Teams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/23278610.png",
-        playerSlug: "goncalo-ramos"
+        playerSlug: "gonçalo-ramos"
       },
       {
         id: 32403,
@@ -1619,7 +1619,7 @@ export const ligue1Teams = [
         taille: 178,
         poids: 67,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/32403.png",
-        playerSlug: "ousmane-dembele"
+        playerSlug: "ousmane-dembélé"
       },
       {
         id: 37590938,
@@ -1633,7 +1633,7 @@ export const ligue1Teams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/37590938.png",
-        playerSlug: "desire-doue"
+        playerSlug: "désiré-doué"
       },
       {
         id: 9967153,
@@ -1710,7 +1710,7 @@ export const ligue1Teams = [
         taille: 191,
         poids: 73,
         image: "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-        playerSlug: "berke-ozer"
+        playerSlug: "berke-özer"
       },
       {
         id: 608100,
@@ -1738,7 +1738,7 @@ export const ligue1Teams = [
         taille: 192,
         poids: 86,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/96104.png",
-        playerSlug: "marc-aurele-caillard"
+        playerSlug: "marc-aurèle-caillard"
       },
       {
         id: 95635,
@@ -1752,7 +1752,7 @@ export const ligue1Teams = [
         taille: 186,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/95635.png",
-        playerSlug: "aissa-mandi"
+        playerSlug: "aïssa-mandi"
       },
       {
         id: 37459056,
@@ -1822,7 +1822,7 @@ export const ligue1Teams = [
         taille: 175,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/37646962.png",
-        playerSlug: "tiago-santos "
+        playerSlug: "tiago-santos "
       },
       {
         id: 37599084,
@@ -1850,7 +1850,7 @@ export const ligue1Teams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/37611996.png",
-        playerSlug: "ousmane-toure"
+        playerSlug: "ousmane-touré"
       },
       {
         id: 37778715,
@@ -1920,7 +1920,7 @@ export const ligue1Teams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/37656061.png",
-        playerSlug: "ethan-mbappe"
+        playerSlug: "ethan-mbappé"
       },
       {
         id: 32777470,
@@ -1934,12 +1934,12 @@ export const ligue1Teams = [
         taille: 178,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/32777470.png",
-        playerSlug: "hakon-arnar-haraldsson"
+        playerSlug: "hákon-arnar-haraldsson"
       },
       {
         id: 37676891,
-        nom: "Ngal\'ayel Mukau",
-        displayName: "Ngal\'ayel Mukau",
+        nom: "Ngal'ayel Mukau",
+        displayName: "Ngal'ayel Mukau",
         position: "MF",
         position_id: 26,
         numero: 17,
@@ -1962,7 +1962,7 @@ export const ligue1Teams = [
         taille: 180,
         poids: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/95168.png",
-        playerSlug: "benjamin-andre "
+        playerSlug: "benjamin-andré "
       },
       {
         id: 159372,
@@ -1976,7 +1976,7 @@ export const ligue1Teams = [
         taille: 190,
         poids: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/159372.png",
-        playerSlug: "andre-gomes"
+        playerSlug: "andré-gomes"
       },
       {
         id: 37423033,
@@ -2018,7 +2018,7 @@ export const ligue1Teams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/14/37652750.png",
-        playerSlug: "matias-fernandez-pardo"
+        playerSlug: "matías-fernández-pardo"
       },
       {
         id: 798,
@@ -2074,7 +2074,7 @@ export const ligue1Teams = [
         taille: 180,
         poids: 66,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/2158213.png",
-        playerSlug: "edon-zhegrova "
+        playerSlug: "edon-zhegrova "
       },
       {
         id: 32796138,
@@ -2088,7 +2088,7 @@ export const ligue1Teams = [
         taille: 178,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/32796138.png",
-        playerSlug: "felix-correia"
+        playerSlug: "félix-correia"
       },
       {
         id: 37776313,
@@ -2221,7 +2221,7 @@ export const ligue1Teams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/30446966.png",
-        playerSlug: "nathaniel-adjei "
+        playerSlug: "nathaniel-adjei "
       },
       {
         id: 37676603,
@@ -2235,7 +2235,7 @@ export const ligue1Teams = [
         taille: null,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/37676603.png",
-        playerSlug: "arsene-kouassi"
+        playerSlug: "arsène-kouassi"
       },
       {
         id: 35271244,
@@ -2263,7 +2263,7 @@ export const ligue1Teams = [
         taille: 206,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/37342614.png",
-        playerSlug: "isaak-toure "
+        playerSlug: "isaak-touré "
       },
       {
         id: 96082,
@@ -2277,7 +2277,7 @@ export const ligue1Teams = [
         taille: 170,
         poids: 65,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/96082.png",
-        playerSlug: "laurent-abergel "
+        playerSlug: "laurent-abergel "
       },
       {
         id: 22897157,
@@ -2319,7 +2319,7 @@ export const ligue1Teams = [
         taille: 170,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/37303791.png",
-        playerSlug: "theo-le-bris"
+        playerSlug: "théo-le-bris"
       },
       {
         id: 96915,
@@ -2375,7 +2375,7 @@ export const ligue1Teams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/37653529.png",
-        playerSlug: "panos-katseris "
+        playerSlug: "panos-katseris "
       },
       {
         id: 37416875,
@@ -2473,7 +2473,7 @@ export const ligue1Teams = [
         taille: 195,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/37384323.png",
-        playerSlug: "sirine-doucoure"
+        playerSlug: "siriné-doucouré"
       }
     ]
   },
@@ -2494,7 +2494,7 @@ export const ligue1Teams = [
         taille: 189,
         poids: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/186418.png",
-        playerSlug: "geronimo-rulli"
+        playerSlug: "gerónimo-rulli"
       },
       {
         id: 29186,
@@ -2522,7 +2522,7 @@ export const ligue1Teams = [
         taille: 188,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/186456.png",
-        playerSlug: "ruben-blanco"
+        playerSlug: "rubén-blanco"
       },
       {
         id: 37593233,
@@ -2550,7 +2550,7 @@ export const ligue1Teams = [
         taille: null,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-        playerSlug: "theo-vermot"
+        playerSlug: "théo-vermot"
       },
       {
         id: 28575687,
@@ -2578,7 +2578,7 @@ export const ligue1Teams = [
         taille: 187,
         poids: 85,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/13171199.png",
-        playerSlug: "leonardo-balerdi "
+        playerSlug: "leonardo-balerdi "
       },
       {
         id: 32390,
@@ -2620,7 +2620,7 @@ export const ligue1Teams = [
         taille: 184,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/37369302.png",
-        playerSlug: "bamo-meite"
+        playerSlug: "bamo-meïté"
       },
       {
         id: 130063,
@@ -2718,7 +2718,7 @@ export const ligue1Teams = [
         taille: 185,
         poids: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/1744.png",
-        playerSlug: "pierre-emile-hojbjerg"
+        playerSlug: "pierre-emile-højbjerg"
       },
       {
         id: 95694,
@@ -2830,7 +2830,7 @@ export const ligue1Teams = [
         taille: 168,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/29328428.png",
-        playerSlug: "igor-paixao "
+        playerSlug: "igor-paixão "
       },
       {
         id: 34455209,
@@ -2872,7 +2872,7 @@ export const ligue1Teams = [
         taille: 173,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/37657133.png",
-        playerSlug: "francois-mughe"
+        playerSlug: "françois-mughe"
       },
       {
         id: 37713942,
@@ -2963,7 +2963,7 @@ export const ligue1Teams = [
         taille: 188,
         poids: 87,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/96289.png",
-        playerSlug: "maxime-dupe"
+        playerSlug: "maxime-dupé"
       },
       {
         id: 99157,
@@ -3005,7 +3005,7 @@ export const ligue1Teams = [
         taille: 188,
         poids: 87,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/30920.png",
-        playerSlug: "dante "
+        playerSlug: "dante "
       },
       {
         id: 37412415,
@@ -3019,7 +3019,7 @@ export const ligue1Teams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/37412415.png",
-        playerSlug: "mohamed-abdelmonem "
+        playerSlug: "mohamed-abdelmonem "
       },
       {
         id: 2206980,
@@ -3117,7 +3117,7 @@ export const ligue1Teams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/766594.png",
-        playerSlug: "youssouf-ndayishimiye "
+        playerSlug: "youssouf-ndayishimiye "
       },
       {
         id: 37682671,
@@ -3131,7 +3131,7 @@ export const ligue1Teams = [
         taille: 190,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/37682671.png",
-        playerSlug: "moise-bombito"
+        playerSlug: "moïse-bombito"
       },
       {
         id: 102002,
@@ -3215,7 +3215,7 @@ export const ligue1Teams = [
         taille: 181,
         poids: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/99148.png",
-        playerSlug: "tanguy-ndombele "
+        playerSlug: "tanguy-ndombélé "
       },
       {
         id: 37769789,
@@ -3271,7 +3271,7 @@ export const ligue1Teams = [
         taille: 172,
         poids: 68,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/4637.png",
-        playerSlug: "jeremie-boga"
+        playerSlug: "jérémie-boga"
       },
       {
         id: 3187862,
@@ -3432,7 +3432,7 @@ export const ligue1Teams = [
         taille: 190,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/1030177.png",
-        playerSlug: "philipp-kohn"
+        playerSlug: "philipp-köhn"
       },
       {
         id: 37718198,
@@ -3600,7 +3600,7 @@ export const ligue1Teams = [
         taille: 190,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/198051.png",
-        playerSlug: "denis-zakaria "
+        playerSlug: "denis-zakaria "
       },
       {
         id: 1992,
@@ -3796,7 +3796,7 @@ export const ligue1Teams = [
         taille: 175,
         poids: 68,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/430403.png",
-        playerSlug: "krepin-diatta"
+        playerSlug: "krépin-diatta"
       },
       {
         id: 37650068,
@@ -3873,7 +3873,7 @@ export const ligue1Teams = [
         taille: 182,
         poids: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/98146.png",
-        playerSlug: "regis-gurtner"
+        playerSlug: "régis-gurtner"
       },
       {
         id: 37608935,
@@ -3957,7 +3957,7 @@ export const ligue1Teams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/37341896.png",
-        playerSlug: "jhoanner-chavez"
+        playerSlug: "jhoanner-chávez"
       },
       {
         id: 65528,
@@ -4041,7 +4041,7 @@ export const ligue1Teams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/37633394.png",
-        playerSlug: "ismaelo-ganiou"
+        playerSlug: "ismaëlo-ganiou"
       },
       {
         id: 37714946,
@@ -4083,7 +4083,7 @@ export const ligue1Teams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/37536953.png",
-        playerSlug: "mamadou-sangare "
+        playerSlug: "mamadou-sangaré "
       },
       {
         id: 98868,
@@ -4167,7 +4167,7 @@ export const ligue1Teams = [
         taille: null,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/37668621.png",
-        playerSlug: "fode-sylla"
+        playerSlug: "fodé-sylla"
       },
       {
         id: 96972,
@@ -4181,7 +4181,7 @@ export const ligue1Teams = [
         taille: 187,
         poids: 81,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/96972.png",
-        playerSlug: "florian-sotoca "
+        playerSlug: "florian-sotoca "
       },
       {
         id: 37396571,
@@ -4195,7 +4195,7 @@ export const ligue1Teams = [
         taille: 187,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/37396571.png",
-        playerSlug: "martin-satriano"
+        playerSlug: "martín-satriano"
       },
       {
         id: 4237,
@@ -4209,7 +4209,7 @@ export const ligue1Teams = [
         taille: 181,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/4237.png",
-        playerSlug: "florian-thauvin "
+        playerSlug: "florian-thauvin "
       },
       {
         id: 96222,
@@ -4223,7 +4223,7 @@ export const ligue1Teams = [
         taille: 171,
         poids: 65,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/96222.png",
-        playerSlug: "wesley-said"
+        playerSlug: "wesley-saïd"
       },
       {
         id: 37656206,
@@ -4279,7 +4279,7 @@ export const ligue1Teams = [
         taille: 184,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/37579970.png",
-        playerSlug: "remy-labeau-lascary"
+        playerSlug: "rémy-labeau-lascary"
       },
       {
         id: 37719366,
@@ -4314,7 +4314,7 @@ export const ligue1Teams = [
         taille: 186,
         poids: 81,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/474517.png",
-        playerSlug: "herve-koffi"
+        playerSlug: "hervé-koffi"
       },
       {
         id: 24817371,
@@ -4384,7 +4384,7 @@ export const ligue1Teams = [
         taille: 179,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/37591971.png",
-        playerSlug: "jacques-ekomie"
+        playerSlug: "jacques-ekomié"
       },
       {
         id: 37531184,
@@ -4426,7 +4426,7 @@ export const ligue1Teams = [
         taille: null,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/357918.png",
-        playerSlug: "marius-louer"
+        playerSlug: "marius-louër"
       },
       {
         id: 99138,
@@ -4524,7 +4524,7 @@ export const ligue1Teams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/524849.png",
-        playerSlug: "himad-abdelli "
+        playerSlug: "himad-abdelli "
       },
       {
         id: 37316421,
@@ -4566,7 +4566,7 @@ export const ligue1Teams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/37696228.png",
-        playerSlug: "dan-sinate"
+        playerSlug: "dan-sinaté"
       },
       {
         id: 37737424,
@@ -4608,7 +4608,7 @@ export const ligue1Teams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/37699171.png",
-        playerSlug: "sidiki-cherif"
+        playerSlug: "sidiki-chérif"
       },
       {
         id: 37680082,
@@ -4650,7 +4650,7 @@ export const ligue1Teams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/13187047.png",
-        playerSlug: "esteban-lepaul"
+        playerSlug: "estéban-lepaul"
       },
       {
         id: 37739884,
@@ -4692,7 +4692,7 @@ export const ligue1Teams = [
         taille: 184,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/37583577.png",
-        playerSlug: "guede-nadje"
+        playerSlug: "guédé-nadje"
       }
     ]
   },
@@ -4713,7 +4713,7 @@ export const ligue1Teams = [
         taille: 187,
         poids: 88,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/95346.png",
-        playerSlug: "donovan-leon"
+        playerSlug: "donovan-léon"
       },
       {
         id: 37533565,
@@ -4741,7 +4741,7 @@ export const ligue1Teams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/8043787.png",
-        playerSlug: "theo-de-percin"
+        playerSlug: "théo-de-percin"
       },
       {
         id: 581142,
@@ -4811,7 +4811,7 @@ export const ligue1Teams = [
         taille: 184,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/37316428.png",
-        playerSlug: "sinaly-diomande"
+        playerSlug: "sinaly-diomandé"
       },
       {
         id: 24816995,
@@ -4825,7 +4825,7 @@ export const ligue1Teams = [
         taille: 175,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/24816995.png",
-        playerSlug: "fredrik-oppegard"
+        playerSlug: "fredrik-oppegård"
       },
       {
         id: 26715311,
@@ -4881,7 +4881,7 @@ export const ligue1Teams = [
         taille: 181,
         poids: 68,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/37289235.png",
-        playerSlug: "clement-akpa"
+        playerSlug: "clément-akpa"
       },
       {
         id: 37579899,
@@ -4895,7 +4895,7 @@ export const ligue1Teams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/37579899.png",
-        playerSlug: "kevin-danois"
+        playerSlug: "kévin-danois"
       },
       {
         id: 37592707,
@@ -4909,7 +4909,7 @@ export const ligue1Teams = [
         taille: 177,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/37592707.png",
-        playerSlug: "nathan-buayi-kiala "
+        playerSlug: "nathan-buayi-kiala "
       },
       {
         id: 3219641,
@@ -4937,7 +4937,7 @@ export const ligue1Teams = [
         taille: 175,
         poids: 68,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/129735.png",
-        playerSlug: "assane-diousse"
+        playerSlug: "assane-dioussé"
       },
       {
         id: 37787315,
@@ -4979,7 +4979,7 @@ export const ligue1Teams = [
         taille: 178,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/13225178.png",
-        playerSlug: "josue-casimir"
+        playerSlug: "josué-casimir"
       },
       {
         id: 785924,
@@ -5098,7 +5098,7 @@ export const ligue1Teams = [
         taille: 192,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/20673391.png",
-        playerSlug: "dogan-alemdar"
+        playerSlug: "doğan-alemdar"
       },
       {
         id: 98502,
@@ -5238,7 +5238,7 @@ export const ligue1Teams = [
         taille: 173,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/37407284.png",
-        playerSlug: "alidu-seidu "
+        playerSlug: "alidu-seidu "
       },
       {
         id: 37694961,
@@ -5266,7 +5266,7 @@ export const ligue1Teams = [
         taille: 190,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/37631909.png",
-        playerSlug: "jeremy-jacquet"
+        playerSlug: "jérémy-jacquet"
       },
       {
         id: 37590937,
@@ -5280,7 +5280,7 @@ export const ligue1Teams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/37590937.png",
-        playerSlug: "djaoui-cisse"
+        playerSlug: "djaoui-cissé"
       },
       {
         id: 6301,
@@ -5448,7 +5448,7 @@ export const ligue1Teams = [
         taille: 192,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/37729871.png",
-        playerSlug: "mohamed-kader-meite"
+        playerSlug: "mohamed-kader-meïté"
       },
       {
         id: 37672537,
@@ -5476,7 +5476,7 @@ export const ligue1Teams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/34873979.png",
-        playerSlug: "bertug-yildirim"
+        playerSlug: "bertuğ-yıldırım"
       }
     ]
   },
@@ -5511,7 +5511,7 @@ export const ligue1Teams = [
         taille: 192,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/434242.png",
-        playerSlug: "gregoire-coudert"
+        playerSlug: "grégoire-coudert"
       },
       {
         id: 37608769,
@@ -5567,7 +5567,7 @@ export const ligue1Teams = [
         taille: 181,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/96715.png",
-        playerSlug: "brendan-chardonnet "
+        playerSlug: "brendan-chardonnet "
       },
       {
         id: 37699791,
@@ -5581,7 +5581,7 @@ export const ligue1Teams = [
         taille: 178,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/37699791.png",
-        playerSlug: "luck-zogbe"
+        playerSlug: "luck-zogbé"
       },
       {
         id: 37633767,
@@ -5609,7 +5609,7 @@ export const ligue1Teams = [
         taille: 184,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/361090.png",
-        playerSlug: "julien-le-cardinal "
+        playerSlug: "julien-le-cardinal "
       },
       {
         id: 37789987,
@@ -5697,8 +5697,8 @@ export const ligue1Teams = [
       },
       {
         id: 529627,
-        nom: "Hianga\'a Mbock",
-        displayName: "Hianga\'a Mbock",
+        nom: "Hianga'a Mbock",
+        displayName: "Hianga'a Mbock",
         position: "MF",
         position_id: 26,
         numero: 28,
@@ -5763,7 +5763,7 @@ export const ligue1Teams = [
         taille: 176,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/162141.png",
-        playerSlug: "mama-balde "
+        playerSlug: "mama-baldé "
       },
       {
         id: 98457,
@@ -5910,7 +5910,7 @@ export const ligue1Teams = [
         taille: null,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/37611852.png",
-        playerSlug: "sekou-doucoure"
+        playerSlug: "sékou-doucoure"
       },
       {
         id: 37947728,
@@ -5938,7 +5938,7 @@ export const ligue1Teams = [
         taille: 186,
         poids: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/99173.png",
-        playerSlug: "jean-kevin-duverne"
+        playerSlug: "jean-kévin-duverne"
       },
       {
         id: 96801,
@@ -6253,7 +6253,7 @@ export const ligue1Teams = [
         taille: 196,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/32819181.png",
-        playerSlug: "etienne-youte-kinkoue"
+        playerSlug: "étienne-youté-kinkoué"
       },
       {
         id: 6170,
@@ -6267,7 +6267,7 @@ export const ligue1Teams = [
         taille: 181,
         poids: 64,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/6170.png",
-        playerSlug: "loic-nego"
+        playerSlug: "loïc-nego"
       },
       {
         id: 37288977,
@@ -6281,7 +6281,7 @@ export const ligue1Teams = [
         taille: 172,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/37288977.png",
-        playerSlug: "fode-doucoure"
+        playerSlug: "fodé-doucouré"
       },
       {
         id: 99134,
@@ -6351,7 +6351,7 @@ export const ligue1Teams = [
         taille: 197,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/37595217.png",
-        playerSlug: "aliou-thiare"
+        playerSlug: "aliou-thiaré"
       },
       {
         id: 21802856,
@@ -6365,7 +6365,7 @@ export const ligue1Teams = [
         taille: 189,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/21802856.png",
-        playerSlug: "arouna-sangante "
+        playerSlug: "arouna-sangante "
       },
       {
         id: 29313334,
@@ -6435,7 +6435,7 @@ export const ligue1Teams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/37668619.png",
-        playerSlug: "ismail-bouneb"
+        playerSlug: "ismaïl-bouneb"
       },
       {
         id: 37743311,
@@ -6463,7 +6463,7 @@ export const ligue1Teams = [
         taille: 188,
         poids: 77,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/96128.png",
-        playerSlug: "abdoulaye-toure"
+        playerSlug: "abdoulaye-touré"
       },
       {
         id: 23278709,
@@ -6505,7 +6505,7 @@ export const ligue1Teams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/37597649.png",
-        playerSlug: "elysee-logbo "
+        playerSlug: "elysée-logbo "
       },
       {
         id: 25123,
@@ -6533,7 +6533,7 @@ export const ligue1Teams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/37337715.png",
-        playerSlug: "issa-soumare"
+        playerSlug: "issa-soumaré"
       },
       {
         id: 62600,
@@ -6568,7 +6568,7 @@ export const ligue1Teams = [
         taille: 191,
         poids: 81,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/94761.png",
-        playerSlug: "remy-riou"
+        playerSlug: "rémy-riou"
       },
       {
         id: 37403963,
@@ -6596,7 +6596,7 @@ export const ligue1Teams = [
         taille: 189,
         poids: 88,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/31053.png",
-        playerSlug: "kevin-trapp "
+        playerSlug: "kevin-trapp "
       },
       {
         id: 528790,
@@ -6638,7 +6638,7 @@ export const ligue1Teams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/37421962.png",
-        playerSlug: "otavio"
+        playerSlug: "otávio"
       },
       {
         id: 433483,
@@ -6666,7 +6666,7 @@ export const ligue1Teams = [
         taille: 183,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/33683.png",
-        playerSlug: "timothee-kolodziejczak"
+        playerSlug: "timothée-kolodziejczak"
       },
       {
         id: 37662406,
@@ -6708,7 +6708,7 @@ export const ligue1Teams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/37578786.png",
-        playerSlug: "yoan-kore"
+        playerSlug: "yoan-koré"
       },
       {
         id: 64020,
@@ -6960,7 +6960,7 @@ export const ligue1Teams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/16135816.png",
-        playerSlug: "andy-pembele"
+        playerSlug: "andy-pembélé"
       }
     ]
   },
@@ -7065,7 +7065,7 @@ export const ligue1Teams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/37683588.png",
-        playerSlug: "sadibou-sane"
+        playerSlug: "sadibou-sané"
       },
       {
         id: 163764,
@@ -7121,7 +7121,7 @@ export const ligue1Teams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/27422468.png",
-        playerSlug: "boubacar-traore"
+        playerSlug: "boubacar-traoré"
       },
       {
         id: 37712527,
@@ -7135,7 +7135,7 @@ export const ligue1Teams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/37712527.png",
-        playerSlug: "alpha-toure"
+        playerSlug: "alpha-touré"
       },
       {
         id: 530526,
@@ -7177,7 +7177,7 @@ export const ligue1Teams = [
         taille: 178,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/37654443.png",
-        playerSlug: "ismael-guerti"
+        playerSlug: "ismaël-guerti"
       },
       {
         id: 537257,
@@ -7303,7 +7303,7 @@ export const ligue1Teams = [
         taille: 179,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/37683596.png",
-        playerSlug: "ibou-sane"
+        playerSlug: "ibou-sané"
       },
       {
         id: 37921359,

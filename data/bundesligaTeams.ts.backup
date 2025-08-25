@@ -16,7 +16,7 @@ export const bundesligaTeams = [
         taille: 193,
         poids: 92,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/30642.png",
-        playerSlug: "manuel-neuer "
+        playerSlug: "manuel-neuer "
       },
       {
         id: 31140,
@@ -114,7 +114,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/262644.png",
-        playerSlug: "alphonso-davies "
+        playerSlug: "alphonso-davies "
       },
       {
         id: 465580,
@@ -128,7 +128,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/465580.png",
-        playerSlug: "hiroki-ito "
+        playerSlug: "hiroki-ito "
       },
       {
         id: 32397,
@@ -142,7 +142,7 @@ export const bundesligaTeams = [
         taille: 170,
         poids: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/32397.png",
-        playerSlug: "raphael-guerreiro"
+        playerSlug: "raphaël-guerreiro"
       },
       {
         id: 12036864,
@@ -212,7 +212,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/33186829.png",
-        playerSlug: "jamal-musiala "
+        playerSlug: "jamal-musiala "
       },
       {
         id: 24799984,
@@ -324,7 +324,7 @@ export const bundesligaTeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/241036.png",
-        playerSlug: "luis-diaz"
+        playerSlug: "luis-díaz"
       },
       {
         id: 37739972,
@@ -415,7 +415,7 @@ export const bundesligaTeams = [
         taille: 197,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/37625681.png",
-        playerSlug: "kaua-santos "
+        playerSlug: "kauã-santos "
       },
       {
         id: 37645238,
@@ -443,7 +443,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/25922235.png",
-        playerSlug: "arthur-theate "
+        playerSlug: "arthur-theate "
       },
       {
         id: 35364,
@@ -471,7 +471,7 @@ export const bundesligaTeams = [
         taille: 197,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/37328095.png",
-        playerSlug: "aurele-amenda"
+        playerSlug: "aurèle-amenda"
       },
       {
         id: 84528,
@@ -499,7 +499,7 @@ export const bundesligaTeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/37538035.png",
-        playerSlug: "nathaniel-brown "
+        playerSlug: "nathaniel-brown "
       },
       {
         id: 31254,
@@ -527,7 +527,7 @@ export const bundesligaTeams = [
         taille: 172,
         poids: 66,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/162871.png",
-        playerSlug: "aurelio-buta"
+        playerSlug: "aurélio-buta"
       },
       {
         id: 10275430,
@@ -583,7 +583,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/37598755.png",
-        playerSlug: "oscar-hojlund"
+        playerSlug: "oscar-højlund"
       },
       {
         id: 37536482,
@@ -597,7 +597,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/37536482.png",
-        playerSlug: "fares-chaibi"
+        playerSlug: "farès-chaïbi"
       },
       {
         id: 96364,
@@ -611,7 +611,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: 69,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/96364.png",
-        playerSlug: "ellyes-skhiri "
+        playerSlug: "ellyes-skhiri "
       },
       {
         id: 37592738,
@@ -667,7 +667,7 @@ export const bundesligaTeams = [
         taille: 176,
         poids: 75,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/30999.png",
-        playerSlug: "mario-gotze"
+        playerSlug: "mario-götze"
       },
       {
         id: 37598726,
@@ -695,7 +695,7 @@ export const bundesligaTeams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/37650284.png",
-        playerSlug: "noah-fenyo"
+        playerSlug: "noah-fenyö"
       },
       {
         id: 37266013,
@@ -751,7 +751,7 @@ export const bundesligaTeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/37612045.png",
-        playerSlug: "jean-matteo-bahoya"
+        playerSlug: "jean-mattéo-bahoya"
       },
       {
         id: 310486,
@@ -793,7 +793,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/3861788.png",
-        playerSlug: "jessic-ngankam "
+        playerSlug: "jessic-ngankam "
       }
     ]
   },
@@ -842,7 +842,7 @@ export const bundesligaTeams = [
         taille: 192,
         poids: 89,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/32080.png",
-        playerSlug: "marius-muller"
+        playerSlug: "marius-müller"
       },
       {
         id: 37720935,
@@ -870,7 +870,7 @@ export const bundesligaTeams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/37259482.png",
-        playerSlug: "kilian-fischer "
+        playerSlug: "kilian-fischer "
       },
       {
         id: 180894,
@@ -912,7 +912,7 @@ export const bundesligaTeams = [
         taille: 178,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/540217.png",
-        playerSlug: "rogerio "
+        playerSlug: "rogério "
       },
       {
         id: 1494701,
@@ -954,7 +954,7 @@ export const bundesligaTeams = [
         taille: 190,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/37729863.png",
-        playerSlug: "mathys-angely"
+        playerSlug: "mathys-angély"
       },
       {
         id: 37650933,
@@ -996,7 +996,7 @@ export const bundesligaTeams = [
         taille: 189,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/37650509.png",
-        playerSlug: "bence-dardai"
+        playerSlug: "bence-dárdai"
       },
       {
         id: 74116,
@@ -1038,7 +1038,7 @@ export const bundesligaTeams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/22146099.png",
-        playerSlug: "jesper-lindstrom"
+        playerSlug: "jesper-lindstrøm"
       },
       {
         id: 37577470,
@@ -1066,7 +1066,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/31730.png",
-        playerSlug: "maximilian-arnold "
+        playerSlug: "maximilian-arnold "
       },
       {
         id: 32155,
@@ -1269,7 +1269,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/24284.png",
-        playerSlug: "jeffrey-gouweleeuw "
+        playerSlug: "jeffrey-gouweleeuw "
       },
       {
         id: 78282,
@@ -1297,7 +1297,7 @@ export const bundesligaTeams = [
         taille: 194,
         poids: 88,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/198230.png",
-        playerSlug: "cedric-zesiger"
+        playerSlug: "cédric-zesiger"
       },
       {
         id: 3862572,
@@ -1493,7 +1493,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/37613797.png",
-        playerSlug: "mert-komur"
+        playerSlug: "mert-kömür"
       },
       {
         id: 37582026,
@@ -1507,7 +1507,7 @@ export const bundesligaTeams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/37582026.png",
-        playerSlug: "mahmut-kucuksahin"
+        playerSlug: "mahmut-kücüksahin"
       },
       {
         id: 37316470,
@@ -1535,7 +1535,7 @@ export const bundesligaTeams = [
         taille: 193,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/432832.png",
-        playerSlug: "samuel-essende "
+        playerSlug: "samuel-essende "
       },
       {
         id: 96201,
@@ -1549,7 +1549,7 @@ export const bundesligaTeams = [
         taille: 189,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/96201.png",
-        playerSlug: "steve-mounie"
+        playerSlug: "steve-mounié"
       },
       {
         id: 35218,
@@ -1577,7 +1577,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/37579757.png",
-        playerSlug: "elias-saad "
+        playerSlug: "elias-saad "
       },
       {
         id: 37645949,
@@ -1626,7 +1626,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/10/31146.png",
-        playerSlug: "oliver-baumann "
+        playerSlug: "oliver-baumann "
       },
       {
         id: 37344040,
@@ -1640,7 +1640,7 @@ export const bundesligaTeams = [
         taille: 195,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/37344040.png",
-        playerSlug: "lukas-petersson"
+        playerSlug: "lúkas-petersson"
       },
       {
         id: 3862725,
@@ -1696,7 +1696,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/5640817.png",
-        playerSlug: "ozan-kabak "
+        playerSlug: "ozan-kabak "
       },
       {
         id: 32666,
@@ -1724,7 +1724,7 @@ export const bundesligaTeams = [
         taille: 179,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/8415421.png",
-        playerSlug: "valentin-gendrey "
+        playerSlug: "valentin-gendrey "
       },
       {
         id: 31626002,
@@ -1780,7 +1780,7 @@ export const bundesligaTeams = [
         taille: 174,
         poids: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/80304.png",
-        playerSlug: "vladimir-coufal"
+        playerSlug: "vladimír-coufal"
       },
       {
         id: 37563793,
@@ -1822,7 +1822,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/33784.png",
-        playerSlug: "grischa-promel"
+        playerSlug: "grischa-prömel"
       },
       {
         id: 37661898,
@@ -2032,7 +2032,7 @@ export const bundesligaTeams = [
         taille: null,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/37658280.png",
-        playerSlug: "bazoumana-toure"
+        playerSlug: "bazoumana-touré"
       },
       {
         id: 53581,
@@ -2081,7 +2081,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: 77,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/83795.png",
-        playerSlug: "frederik-ronnow"
+        playerSlug: "frederik-rönnow"
       },
       {
         id: 37543370,
@@ -2207,7 +2207,7 @@ export const bundesligaTeams = [
         taille: 189,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/34668.png",
-        playerSlug: "christopher-trimmel "
+        playerSlug: "christopher-trimmel "
       },
       {
         id: 540548,
@@ -2235,7 +2235,7 @@ export const bundesligaTeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/1525233.png",
-        playerSlug: "derrick-kohn"
+        playerSlug: "derrick-köhn"
       },
       {
         id: 37650842,
@@ -2263,7 +2263,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/37581984.png",
-        playerSlug: "aljoscha-kemlein "
+        playerSlug: "aljoscha-kemlein "
       },
       {
         id: 31907,
@@ -2305,7 +2305,7 @@ export const bundesligaTeams = [
         taille: 178,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/115485.png",
-        playerSlug: "andras-schafer"
+        playerSlug: "andrás-schäfer"
       },
       {
         id: 37558983,
@@ -2347,7 +2347,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/84342.png",
-        playerSlug: "robert-skov "
+        playerSlug: "robert-skov "
       },
       {
         id: 96886,
@@ -2375,7 +2375,7 @@ export const bundesligaTeams = [
         taille: 186,
         poids: 72,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/82032.png",
-        playerSlug: "alex-kral"
+        playerSlug: "alex-král"
       },
       {
         id: 6286,
@@ -2508,7 +2508,7 @@ export const bundesligaTeams = [
         taille: 190,
         poids: 90,
         image: "https://cdn.sportmonks.com/images/soccer/players/2/32642.png",
-        playerSlug: "marvin-schwabe"
+        playerSlug: "marvin-schwäbe"
       },
       {
         id: 1607,
@@ -2536,7 +2536,7 @@ export const bundesligaTeams = [
         taille: 196,
         poids: 87,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/47712.png",
-        playerSlug: "matthias-kobbing"
+        playerSlug: "matthias-köbbing"
       },
       {
         id: 23222415,
@@ -2550,7 +2550,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/23222415.png",
-        playerSlug: "joel-schmied"
+        playerSlug: "joël-schmied"
       },
       {
         id: 32138,
@@ -2578,7 +2578,7 @@ export const bundesligaTeams = [
         taille: 190,
         poids: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/418281.png",
-        playerSlug: "timo-hubers "
+        playerSlug: "timo-hübers "
       },
       {
         id: 537592,
@@ -2592,7 +2592,7 @@ export const bundesligaTeams = [
         taille: 192,
         poids: 90,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/537592.png",
-        playerSlug: "luca-kilian "
+        playerSlug: "luca-kilian "
       },
       {
         id: 34650,
@@ -2606,7 +2606,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: 76,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/34650.png",
-        playerSlug: "leart-pacarada"
+        playerSlug: "leart-paçarada"
       },
       {
         id: 37596225,
@@ -2690,7 +2690,7 @@ export const bundesligaTeams = [
         taille: 190,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/23223420.png",
-        playerSlug: "cenk-ozkacar"
+        playerSlug: "cenk-özkacar"
       },
       {
         id: 37596226,
@@ -2718,7 +2718,7 @@ export const bundesligaTeams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/6983809.png",
-        playerSlug: "tom-krauss"
+        playerSlug: "tom-krauß"
       },
       {
         id: 37262105,
@@ -2802,7 +2802,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/23310980.png",
-        playerSlug: "isak-johannesson"
+        playerSlug: "ísak-jóhannesson"
       },
       {
         id: 19624016,
@@ -2928,7 +2928,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/418101.png",
-        playerSlug: "marius-bulter"
+        playerSlug: "marius-bülter"
       },
       {
         id: 3861598,
@@ -3047,7 +3047,7 @@ export const bundesligaTeams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/3862352.png",
-        playerSlug: "nico-schlotterbeck "
+        playerSlug: "nico-schlotterbeck "
       },
       {
         id: 62502,
@@ -3089,7 +3089,7 @@ export const bundesligaTeams = [
         taille: 195,
         poids: 97,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/31775.png",
-        playerSlug: "niklas-sule"
+        playerSlug: "niklas-süle"
       },
       {
         id: 151628,
@@ -3117,7 +3117,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/29/37602269.png",
-        playerSlug: "filippo-mane"
+        playerSlug: "filippo-mané"
       },
       {
         id: 37650073,
@@ -3145,7 +3145,7 @@ export const bundesligaTeams = [
         taille: 190,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/37418760.png",
-        playerSlug: "yannik-luhrs"
+        playerSlug: "yannik-lührs"
       },
       {
         id: 32622,
@@ -3159,7 +3159,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/14/32622.png",
-        playerSlug: "salih-ozcan "
+        playerSlug: "salih-özcan "
       },
       {
         id: 37581777,
@@ -3215,7 +3215,7 @@ export const bundesligaTeams = [
         taille: 181,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/31504.png",
-        playerSlug: "pascal-gross"
+        playerSlug: "pascal-groß"
       },
       {
         id: 32582,
@@ -3243,7 +3243,7 @@ export const bundesligaTeams = [
         taille: 186,
         poids: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/1388.png",
-        playerSlug: "emre-can  "
+        playerSlug: "emre-can  "
       },
       {
         id: 32695,
@@ -3285,7 +3285,7 @@ export const bundesligaTeams = [
         taille: 173,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/37632313.png",
-        playerSlug: "julien-duranville "
+        playerSlug: "julien-duranville "
       },
       {
         id: 15040126,
@@ -3390,7 +3390,7 @@ export const bundesligaTeams = [
         taille: 191,
         poids: 91,
         image: "https://cdn.sportmonks.com/images/soccer/players/23/88119.png",
-        playerSlug: "karol-mets "
+        playerSlug: "karol-mets "
       },
       {
         id: 21036726,
@@ -3544,7 +3544,7 @@ export const bundesligaTeams = [
         taille: 189,
         poids: 77,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/6605.png",
-        playerSlug: "jackson-irvine  "
+        playerSlug: "jackson-irvine  "
       },
       {
         id: 141099,
@@ -3670,7 +3670,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/37304039.png",
-        playerSlug: "ricky-jade-jones "
+        playerSlug: "ricky-jade-jones "
       },
       {
         id: 37291444,
@@ -3684,7 +3684,7 @@ export const bundesligaTeams = [
         taille: 190,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/37291444.png",
-        playerSlug: "andreas-hountondji"
+        playerSlug: "andréas-hountondji"
       },
       {
         id: 99117,
@@ -3943,7 +3943,7 @@ export const bundesligaTeams = [
         taille: 175,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/741528.png",
-        playerSlug: "immanuel-pherai "
+        playerSlug: "immanuel-pherai "
       },
       {
         id: 21762194,
@@ -3985,7 +3985,7 @@ export const bundesligaTeams = [
         taille: 177,
         poids: 73,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/29294358.png",
-        playerSlug: "nicolas-capaldo"
+        playerSlug: "nicolás-capaldo"
       },
       {
         id: 62734,
@@ -3999,7 +3999,7 @@ export const bundesligaTeams = [
         taille: 170,
         poids: 65,
         image: "https://cdn.sportmonks.com/images/soccer/players/14/62734.png",
-        playerSlug: "jean-luc-dompe "
+        playerSlug: "jean-luc-dompé "
       },
       {
         id: 35801,
@@ -4027,7 +4027,7 @@ export const bundesligaTeams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/23707377.png",
-        playerSlug: "ransford-konigsdorffer"
+        playerSlug: "ransford-königsdörffer"
       },
       {
         id: 12066348,
@@ -4055,7 +4055,7 @@ export const bundesligaTeams = [
         taille: 192,
         poids: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/32587.png",
-        playerSlug: "yussuf-poulsen  "
+        playerSlug: "yussuf-poulsen  "
       },
       {
         id: 32803,
@@ -4097,7 +4097,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/37755719.png",
-        playerSlug: "alexander-rossing-lelesiit"
+        playerSlug: "alexander-røssing-lelesiit"
       },
       {
         id: 37645180,
@@ -4111,7 +4111,7 @@ export const bundesligaTeams = [
         taille: 182,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/28/37645180.png",
-        playerSlug: "fabio-balde"
+        playerSlug: "fabio-baldé"
       },
       {
         id: 37660397,
@@ -4146,7 +4146,7 @@ export const bundesligaTeams = [
         taille: 190,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/198086.png",
-        playerSlug: "jonas-omlin "
+        playerSlug: "jonas-omlin "
       },
       {
         id: 31073,
@@ -4216,7 +4216,7 @@ export const bundesligaTeams = [
         taille: 186,
         poids: 73,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/25106.png",
-        playerSlug: "kevin-diks "
+        playerSlug: "kevin-diks "
       },
       {
         id: 32258,
@@ -4300,7 +4300,7 @@ export const bundesligaTeams = [
         taille: 175,
         poids: 73,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/31864.png",
-        playerSlug: "kevin-stoger"
+        playerSlug: "kevin-stöger"
       },
       {
         id: 32394,
@@ -4328,7 +4328,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: 74,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/35815.png",
-        playerSlug: "florian-neuhaus "
+        playerSlug: "florian-neuhaus "
       },
       {
         id: 34432365,
@@ -4412,7 +4412,7 @@ export const bundesligaTeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/37650070.png",
-        playerSlug: "charles-herrmann "
+        playerSlug: "charles-herrmann "
       },
       {
         id: 37650032,
@@ -4454,7 +4454,7 @@ export const bundesligaTeams = [
         taille: 194,
         poids: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/34987.png",
-        playerSlug: "tim-kleindienst "
+        playerSlug: "tim-kleindienst "
       },
       {
         id: 197836,
@@ -4496,7 +4496,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/16496676.png",
-        playerSlug: "nathan-ngoumou "
+        playerSlug: "nathan-ngoumou "
       },
       {
         id: 1452396,
@@ -4587,7 +4587,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: 65,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/37261496.png",
-        playerSlug: "piero-hincapie"
+        playerSlug: "piero-hincapié"
       },
       {
         id: 37259163,
@@ -4615,7 +4615,7 @@ export const bundesligaTeams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/10279739.png",
-        playerSlug: "loic-bade "
+        playerSlug: "loïc-badé "
       },
       {
         id: 766659,
@@ -4699,7 +4699,7 @@ export const bundesligaTeams = [
         taille: 186,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/37590934.png",
-        playerSlug: "jeanuel-belocian "
+        playerSlug: "jeanuël-belocian "
       },
       {
         id: 31745,
@@ -4713,7 +4713,7 @@ export const bundesligaTeams = [
         taille: 176,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/1/31745.png",
-        playerSlug: "jonas-hofmann "
+        playerSlug: "jonas-hofmann "
       },
       {
         id: 34880,
@@ -4727,7 +4727,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/34880.png",
-        playerSlug: "robert-andrich "
+        playerSlug: "robert-andrich "
       },
       {
         id: 37639080,
@@ -4741,7 +4741,7 @@ export const bundesligaTeams = [
         taille: 170,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/37639080.png",
-        playerSlug: "claudio-echeverri "
+        playerSlug: "claudio-echeverri "
       },
       {
         id: 23277869,
@@ -4755,7 +4755,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/13/23277869.png",
-        playerSlug: "malik-tillman "
+        playerSlug: "malik-tillman "
       },
       {
         id: 4574,
@@ -4769,7 +4769,7 @@ export const bundesligaTeams = [
         taille: 173,
         poids: 68,
         image: "https://cdn.sportmonks.com/images/soccer/players/30/4574.png",
-        playerSlug: "aleix-garcia"
+        playerSlug: "aleix-garcía"
       },
       {
         id: 335673,
@@ -4783,7 +4783,7 @@ export const bundesligaTeams = [
         taille: 178,
         poids: 70,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/335673.png",
-        playerSlug: "exequiel-palacios "
+        playerSlug: "exequiel-palacios "
       },
       {
         id: 37706061,
@@ -4825,7 +4825,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/97292.png",
-        playerSlug: "martin-terrier "
+        playerSlug: "martin-terrier "
       },
       {
         id: 80675,
@@ -4972,7 +4972,7 @@ export const bundesligaTeams = [
         taille: 193,
         poids: 86,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/32550.png",
-        playerSlug: "alexander-nubel"
+        playerSlug: "alexander-nübel"
       },
       {
         id: 37650876,
@@ -5042,7 +5042,7 @@ export const bundesligaTeams = [
         taille: 180,
         poids: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/32384.png",
-        playerSlug: "maximilian-mittelstadt"
+        playerSlug: "maximilian-mittelstädt"
       },
       {
         id: 37609471,
@@ -5084,7 +5084,7 @@ export const bundesligaTeams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/24817462.png",
-        playerSlug: "leonidas-stergiou "
+        playerSlug: "leonidas-stergiou "
       },
       {
         id: 35281182,
@@ -5140,7 +5140,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/37650664.png",
-        playerSlug: "finn-jeltsch "
+        playerSlug: "finn-jeltsch "
       },
       {
         id: 3862360,
@@ -5182,7 +5182,7 @@ export const bundesligaTeams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/2158512.png",
-        playerSlug: "chris-fuhrich"
+        playerSlug: "chris-führich"
       },
       {
         id: 418197,
@@ -5196,7 +5196,7 @@ export const bundesligaTeams = [
         taille: 191,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/21/418197.png",
-        playerSlug: "atakan-karazor "
+        playerSlug: "atakan-karazor "
       },
       {
         id: 37650324,
@@ -5238,7 +5238,7 @@ export const bundesligaTeams = [
         taille: null,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/15/37656783.png",
-        playerSlug: "chema-andres"
+        playerSlug: "chema-andrés"
       },
       {
         id: 37693723,
@@ -5266,7 +5266,7 @@ export const bundesligaTeams = [
         taille: 180,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/12/24065388.png",
-        playerSlug: "tiago-tomas"
+        playerSlug: "tiago-tomás"
       },
       {
         id: 46092,
@@ -5308,7 +5308,7 @@ export const bundesligaTeams = [
         taille: 189,
         poids: 84,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/14350739.png",
-        playerSlug: "silas "
+        playerSlug: "silas "
       },
       {
         id: 37544947,
@@ -5385,7 +5385,7 @@ export const bundesligaTeams = [
         taille: 192,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/3862693.png",
-        playerSlug: "lasse-riess"
+        playerSlug: "lasse-rieß"
       },
       {
         id: 32338,
@@ -5539,7 +5539,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: 79,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/129609.png",
-        playerSlug: "silvan-widmer "
+        playerSlug: "silvan-widmer "
       },
       {
         id: 31982,
@@ -5553,7 +5553,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: 81,
         image: "https://cdn.sportmonks.com/images/soccer/players/14/31982.png",
-        playerSlug: "dominik-kohr "
+        playerSlug: "dominik-kohr "
       },
       {
         id: 37650612,
@@ -5567,7 +5567,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/37650612.png",
-        playerSlug: "maxim-dal "
+        playerSlug: "maxim-dal "
       },
       {
         id: 31238688,
@@ -5784,7 +5784,7 @@ export const bundesligaTeams = [
         taille: 190,
         poids: 90,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/31987.png",
-        playerSlug: "kevin-muller"
+        playerSlug: "kevin-müller"
       },
       {
         id: 32796795,
@@ -5812,7 +5812,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/4/37558980.png",
-        playerSlug: "frank-feller "
+        playerSlug: "frank-feller "
       },
       {
         id: 27067136,
@@ -5868,7 +5868,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/36436.png",
-        playerSlug: "benedikt-gimber "
+        playerSlug: "benedikt-gimber "
       },
       {
         id: 34699,
@@ -5882,7 +5882,7 @@ export const bundesligaTeams = [
         taille: 194,
         poids: 90,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/34699.png",
-        playerSlug: "patrick-mainka "
+        playerSlug: "patrick-mainka "
       },
       {
         id: 32756,
@@ -5896,7 +5896,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: 81,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/32756.png",
-        playerSlug: "jonas-fohrenbach"
+        playerSlug: "jonas-föhrenbach"
       },
       {
         id: 10309703,
@@ -5910,7 +5910,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/10309703.png",
-        playerSlug: "omar-traore"
+        playerSlug: "omar-traoré"
       },
       {
         id: 19979687,
@@ -5938,7 +5938,7 @@ export const bundesligaTeams = [
         taille: null,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/37645491.png",
-        playerSlug: "adam-kolle"
+        playerSlug: "adam-kölle"
       },
       {
         id: 16474783,
@@ -5952,7 +5952,7 @@ export const bundesligaTeams = [
         taille: 190,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/31/16474783.png",
-        playerSlug: "jan-schoppner"
+        playerSlug: "jan-schöppner"
       },
       {
         id: 6642415,
@@ -6134,7 +6134,7 @@ export const bundesligaTeams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/20691939.png",
-        playerSlug: "marvin-pieringer "
+        playerSlug: "marvin-pieringer "
       },
       {
         id: 21072742,
@@ -6197,7 +6197,7 @@ export const bundesligaTeams = [
         taille: 190,
         poids: 85,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/33731.png",
-        playerSlug: "florian-muller"
+        playerSlug: "florian-müller"
       },
       {
         id: 32446,
@@ -6253,7 +6253,7 @@ export const bundesligaTeams = [
         taille: 182,
         poids: 73,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/32058.png",
-        playerSlug: "lukas-kubler"
+        playerSlug: "lukas-kübler"
       },
       {
         id: 31561,
@@ -6295,7 +6295,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/0/31712.png",
-        playerSlug: "christian-gunter "
+        playerSlug: "christian-günter "
       },
       {
         id: 37308225,
@@ -6323,7 +6323,7 @@ export const bundesligaTeams = [
         taille: 186,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/37316562.png",
-        playerSlug: "max-rosenfelder "
+        playerSlug: "max-rosenfelder "
       },
       {
         id: 37624009,
@@ -6407,7 +6407,7 @@ export const bundesligaTeams = [
         taille: 181,
         poids: 78,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/31723.png",
-        playerSlug: "nicolas-hofler"
+        playerSlug: "nicolas-höfler"
       },
       {
         id: 37266009,
@@ -6421,7 +6421,7 @@ export const bundesligaTeams = [
         taille: 192,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/37266009.png",
-        playerSlug: "merlin-rohl"
+        playerSlug: "merlin-röhl"
       },
       {
         id: 37681576,
@@ -6463,7 +6463,7 @@ export const bundesligaTeams = [
         taille: 184,
         poids: 80,
         image: "https://cdn.sportmonks.com/images/soccer/players/17/35153.png",
-        playerSlug: "lucas-holer"
+        playerSlug: "lucas-höler"
       },
       {
         id: 27067064,
@@ -6477,7 +6477,7 @@ export const bundesligaTeams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/24/27067064.png",
-        playerSlug: "noah-weisshaupt"
+        playerSlug: "noah-weißhaupt"
       },
       {
         id: 37266184,
@@ -6491,7 +6491,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/8/37266184.png",
-        playerSlug: "eren-dinkci"
+        playerSlug: "eren-dinkçi"
       },
       {
         id: 537629,
@@ -6533,7 +6533,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/6/37709478.png",
-        playerSlug: "cyriaque-irie"
+        playerSlug: "cyriaque-irié"
       },
       {
         id: 32137,
@@ -6547,7 +6547,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: 79,
         image: "https://cdn.sportmonks.com/images/soccer/players/9/32137.png",
-        playerSlug: "maximilian-philipp "
+        playerSlug: "maximilian-philipp "
       },
       {
         id: 37417027,
@@ -6652,7 +6652,7 @@ export const bundesligaTeams = [
         taille: 181,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/16/23660720.png",
-        playerSlug: "olivier-deman "
+        playerSlug: "olivier-deman "
       },
       {
         id: 31772,
@@ -6694,7 +6694,7 @@ export const bundesligaTeams = [
         taille: 177,
         poids: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/31636.png",
-        playerSlug: "mitchell-weiser "
+        playerSlug: "mitchell-weiser "
       },
       {
         id: 37547066,
@@ -6708,7 +6708,7 @@ export const bundesligaTeams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/26/37547066.png",
-        playerSlug: "julian-malatini"
+        playerSlug: "julián-malatini"
       },
       {
         id: 3861479,
@@ -6750,7 +6750,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/33701.png",
-        playerSlug: "marco-friedl "
+        playerSlug: "marco-friedl "
       },
       {
         id: 37652849,
@@ -6778,7 +6778,7 @@ export const bundesligaTeams = [
         taille: 188,
         poids: 82,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/52850.png",
-        playerSlug: "maximilian-wober"
+        playerSlug: "maximilian-wöber"
       },
       {
         id: 84658,
@@ -6792,7 +6792,7 @@ export const bundesligaTeams = [
         taille: 187,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/18/84658.png",
-        playerSlug: "jens-stage "
+        playerSlug: "jens-stage "
       },
       {
         id: 31729,
@@ -6848,7 +6848,7 @@ export const bundesligaTeams = [
         taille: 173,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/22/37417046.png",
-        playerSlug: "isak-hansen-aaroen"
+        playerSlug: "isak-hansen-aarøen"
       },
       {
         id: 37695942,
@@ -6960,7 +6960,7 @@ export const bundesligaTeams = [
         taille: 185,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/37259284.png",
-        playerSlug: "justin-njinmah "
+        playerSlug: "justin-njinmah "
       },
       {
         id: 349061,
@@ -6974,7 +6974,7 @@ export const bundesligaTeams = [
         taille: 182,
         poids: 71,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/349061.png",
-        playerSlug: "marco-grull"
+        playerSlug: "marco-grüll"
       },
       {
         id: 37650873,
@@ -7009,7 +7009,7 @@ export const bundesligaTeams = [
         taille: 193,
         poids: 86,
         image: "https://cdn.sportmonks.com/images/soccer/players/11/2283.png",
-        playerSlug: "peter-gulacsi"
+        playerSlug: "péter-gulácsi"
       },
       {
         id: 32589,
@@ -7065,7 +7065,7 @@ export const bundesligaTeams = [
         taille: 186,
         poids: 83,
         image: "https://cdn.sportmonks.com/images/soccer/players/5/31077.png",
-        playerSlug: "willi-orban "
+        playerSlug: "willi-orbán "
       },
       {
         id: 37528548,
@@ -7163,7 +7163,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/27/37586651.png",
-        playerSlug: "max-finkgrafe"
+        playerSlug: "max-finkgräfe"
       },
       {
         id: 32566,
@@ -7275,7 +7275,7 @@ export const bundesligaTeams = [
         taille: 191,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/19/37645043.png",
-        playerSlug: "assan-ouedraogo"
+        playerSlug: "assan-ouédraogo"
       },
       {
         id: 52867,
@@ -7387,7 +7387,7 @@ export const bundesligaTeams = [
         taille: 177,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/25/539993.png",
-        playerSlug: "lois-openda"
+        playerSlug: "loïs-openda"
       },
       {
         id: 37651943,
@@ -7401,7 +7401,7 @@ export const bundesligaTeams = [
         taille: 183,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/7/37651943.png",
-        playerSlug: "tidiam-gomis "
+        playerSlug: "tidiam-gomis "
       },
       {
         id: 31823,
@@ -7429,7 +7429,7 @@ export const bundesligaTeams = [
         taille: 193,
         poids: null,
         image: "https://cdn.sportmonks.com/images/soccer/players/3/37586403.png",
-        playerSlug: "romulo"
+        playerSlug: "rômulo"
       },
       {
         id: 338180,

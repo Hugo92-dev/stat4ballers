@@ -5,6 +5,11 @@ export default function ClubPage({ params }: { params: { club: string } }) {
   // Gérer les alias d'URLs
   const slugAliases: Record<string, string> = {
     'west-ham': 'west-ham-united',
+    'brighton': 'brighton-hove-albion',
+    'brighton-&-hove-albion': 'brighton-hove-albion',
+    'man-city': 'manchester-city',
+    'man-united': 'manchester-united',
+    'newcastle': 'newcastle-united',
   };
   
   const actualSlug = slugAliases[params.club] || params.club;
