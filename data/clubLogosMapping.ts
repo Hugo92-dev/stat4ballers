@@ -16,6 +16,7 @@ export const clubLogoFiles: Record<string, Record<string, string>> = {
     'auxerre': 'AJ Auxerre.png',
     'angers': 'Angers SCO.png',
     'le-havre': 'Le Havre AC.png',
+    'paris': 'Paris FC.png',
     'paris-fc': 'Paris FC.png',
     'metz': 'FC Metz.png',
     'lorient': 'FC Lorient.png',
@@ -30,6 +31,7 @@ export const clubLogoFiles: Record<string, Record<string, string>> = {
     'newcastle': 'Newcastle United.png',
     'aston-villa': 'Aston Villa.png',
     'brighton': 'Brighton & Hove Albion.png',
+    'brighton-hove-albion': 'Brighton & Hove Albion.png',
     'west-ham': 'West Ham United.png',
     'fulham': 'Fulham FC.png',
     'bournemouth': 'AFC Bournemouth.png',
@@ -53,6 +55,7 @@ export const clubLogoFiles: Record<string, Record<string, string>> = {
     'real-betis': 'Real Betis Balompié.png',
     'villarreal': 'Villarreal CF.png',
     'athletic-bilbao': 'Athletic Bilbao.png',
+    'athletic-club': 'Athletic Bilbao.png',
     'valencia': 'Valencia CF.png',
     'osasuna': 'CA Osasuna.png',
     'rayo-vallecano': 'Rayo Vallecano.png',
@@ -67,6 +70,7 @@ export const clubLogoFiles: Record<string, Record<string, string>> = {
     'almeria': 'UD Almería.png', // À vérifier
     'levante': 'Levante UD.png',
     'alaves': 'Deportivo Alavés.png',
+    'deportivo-alaves': 'Deportivo Alavés.png',
     'real-oviedo': 'Real Oviedo.png',
   },
   'serie-a': {
@@ -94,7 +98,9 @@ export const clubLogoFiles: Record<string, Record<string, string>> = {
     'cremonese': 'US Cremonese.png',
     'lecce': 'US Lecce.png',
     'parme': 'Parma Calcio 1913.png',
+    'parma': 'Parma Calcio 1913.png',
     'pise': 'Pisa Sporting Club.png',
+    'pisa': 'Pisa Sporting Club.png',
   },
   'bundesliga': {
     'bayern': 'Bayern Munich.png',
@@ -113,9 +119,11 @@ export const clubLogoFiles: Record<string, Record<string, string>> = {
     'augsburg': 'FC Augsburg.png',
     'hertha-berlin': 'Hertha BSC.png', // À vérifier
     'werder': 'SV Werder Bremen.png',
+    'werder-bremen': 'SV Werder Bremen.png',
     'bochum': 'VfL Bochum.png', // À vérifier
     'hambourg': 'Hamburger SV.png',
     'sankt-pauli': 'FC St. Pauli.png',
+    'st-pauli': 'FC St. Pauli.png',
     'heidenheim': '1.FC Heidenheim 1846.png',
   }
 };
