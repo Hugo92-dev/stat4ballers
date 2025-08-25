@@ -6765,7 +6765,7 @@ export const laligaPlayersCompleteStats: { [playerId: string]: PlayerData } = {
     }
   },
   "31284": {
-    "displayName": "Douglas Jakobsen",
+    "displayName": "Marc-André ter Stegen",
     "position": "",
     "jersey": null,
     "nationality": "",

@@ -461,8 +461,8 @@ export const ligaTeams = [
       },
       {
         id: 31284,
-        nom: "Douglas Jakobsen",
-        displayName: "Douglas Jakobsen",
+        nom: "Marc-André ter Stegen",
+        displayName: "Marc-André ter Stegen",
         position: "GK",
         position_id: 24,
         numero: null,
@@ -471,7 +471,7 @@ export const ligaTeams = [
         taille: 187,
         poids: 85,
         image: "https://cdn.sportmonks.com/images/soccer/players/20/31284.png",
-        playerSlug: "douglas-jakobsen"
+        playerSlug: "marc-andre-ter-stegen"
       },
       {
         id: 37316480,

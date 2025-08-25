@@ -21885,10 +21885,10 @@ export const playerSearchData: SearchItem[] = [
   {
     "type": "player",
     "id": 31284,
-    "name": "Douglas Jakobsen",
+    "name": "Marc-André ter Stegen",
     "fullName": "Marc-André ter Stegen",
-    "displayName": "Douglas Jakobsen",
-    "path": "/liga/barcelona/DouglasJakobsen",
+    "displayName": "Marc-André ter Stegen",
+    "path": "/liga/barcelona/marc-andre-ter-stegen",
     "league": "La Liga",
     "club": "FC Barcelona",
     "position": "GK",
