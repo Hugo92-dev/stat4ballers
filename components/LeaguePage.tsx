@@ -159,7 +159,7 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
   };
 
   const filteredTeams = teams
-    .filter(team => team.nom.toLowerCase().includes(searchTerm.toLowerCase()))
+    .filter(team => team && team.nom && team.nom.toLowerCase().includes(searchTerm.toLowerCase()))
     .sort((a, b) => {
       if (sortBy === 'name') return a.nom.localeCompare(b.nom);
       
