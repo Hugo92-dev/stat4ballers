@@ -56,20 +56,19 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
     'manchester-united': 15,
     'wolverhampton-wanderers': 16,
     'tottenham-hotspur': 17,
-    // Clubs promus cette saison (remplacent Leicester, Ipswich, Southampton)
-    'burnley': 18,
-    'sunderland': 19,
-    'leeds-united': 20
+    'leicester-city': 18,
+    'ipswich-town': 19,
+    'southampton': 20
   };
 
   // Classement Ligue 1 2024/2025 (saison dernière)
   const ligue1Ranking: Record<string, number> = {
     'paris-saint-germain': 1,
-    'marseille': 2,
+    'olympique-marseille': 2,
     'monaco': 3,
     'nice': 4,
-    'lille': 5,
-    'lyon': 6,
+    'losc-lille': 5,
+    'olympique-lyonnais': 6,
     'strasbourg': 7,
     'lens': 8,
     'brest': 9,
@@ -77,17 +76,16 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
     'auxerre': 11,
     'rennes': 12,
     'nantes': 13,
-    'angers': 14,
+    'angers-sco': 14,
     'le-havre': 15,
-    // Clubs promus cette saison (remplacent Reims, Saint-Étienne, Montpellier)
-    'lorient': 16,
-    'metz': 17,
-    'paris': 18
+    'reims': 16,
+    'saint-etienne': 17,
+    'montpellier': 18
   };
 
   // Classement Liga 2024/2025 (saison dernière)
   const ligaRanking: Record<string, number> = {
-    'barcelona': 1,
+    'fc-barcelona': 1,
     'real-madrid': 2,
     'atletico-madrid': 3,
     'athletic-club': 4,
@@ -104,10 +102,9 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
     'deportivo-alaves': 15,
     'girona': 16,
     'sevilla': 17,
-    // Clubs promus cette saison (remplacent Leganes, Las Palmas, Valladolid)
-    'levante': 18,
-    'elche': 19,
-    'real-oviedo': 20
+    'leganes': 18,
+    'las-palmas': 19,
+    'valladolid': 20
   };
 
   // Classement Serie A 2024/2025 (saison dernière)
@@ -129,33 +126,31 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
     'cagliari': 15,
     'parma': 16,
     'lecce': 17,
-    // Clubs promus cette saison (remplacent Empoli, Venezia, Monza)
-    'sassuolo': 18,
-    'cremonese': 19,
-    'pisa': 20
+    'empoli': 18,
+    'venezia': 19,
+    'monza': 20
   };
 
   // Classement Bundesliga 2024/2025 (saison dernière)
   const bundesligaRanking: Record<string, number> = {
-    'bayern-munich': 1,
-    'bayer-leverkusen': 2,
+    'fc-bayern-munchen': 1,
+    'bayer-04-leverkusen': 2,
     'eintracht-frankfurt': 3,
     'borussia-dortmund': 4,
-    'freiburg': 5,
-    'mainz': 6,
+    'sc-freiburg': 5,
+    'fsv-mainz-05': 6,
     'rb-leipzig': 7,
     'werder-bremen': 8,
-    'stuttgart': 9,
+    'vfb-stuttgart': 9,
     'borussia-monchengladbach': 10,
-    'wolfsburg': 11,
-    'augsburg': 12,
-    'union-berlin': 13,
+    'vfl-wolfsburg': 11,
+    'fc-augsburg': 12,
+    'fc-union-berlin': 13,
     'st-pauli': 14,
-    'hoffenheim': 15,
+    'tsg-hoffenheim': 15,
     'heidenheim': 16,
-    // Clubs promus cette saison (remplacent Holstein Kiel, VfL Bochum)
-    'koln': 17,
-    'hamburger-sv': 18
+    'holstein-kiel': 17,
+    'vfl-bochum': 18
   };
 
   const filteredTeams = teams

@@ -20,6 +20,10 @@ export const clubLogoFiles: Record<string, Record<string, string>> = {
     'paris-fc': 'Paris FC.png',
     'metz': 'FC Metz.png',
     'lorient': 'FC Lorient.png',
+    'olympique-lyonnais': 'Olympique Lyon.png',
+    'olympique-marseille': 'Olympique Marseille.png',
+    'losc-lille': 'LOSC Lille.png',
+    'angers-sco': 'Angers SCO.png',
   },
   'premier-league': {
     'manchester-city': 'Manchester City.png',
@@ -72,6 +76,10 @@ export const clubLogoFiles: Record<string, Record<string, string>> = {
     'alaves': 'Deportivo Alavés.png',
     'deportivo-alaves': 'Deportivo Alavés.png',
     'real-oviedo': 'Real Oviedo.png',
+    'fc-barcelona': 'FC Barcelona.png',
+    'celta-de-vigo': 'Celta de Vigo.png',
+    'las-palmas': 'UD Las Palmas.png',
+    'leganes': 'CD Leganés.png',
   },
   'serie-a': {
     'juventus': 'Juventus FC.png',
@@ -125,6 +133,19 @@ export const clubLogoFiles: Record<string, Record<string, string>> = {
     'sankt-pauli': 'FC St. Pauli.png',
     'st-pauli': 'FC St. Pauli.png',
     'heidenheim': '1.FC Heidenheim 1846.png',
+    'fc-bayern-munchen': 'Bayern Munich.png',
+    'bayer-04-leverkusen': 'Bayer 04 Leverkusen.png',
+    'fc-union-berlin': '1.FC Union Berlin.png',
+    'sc-freiburg': 'SC Freiburg.png',
+    'fsv-mainz-05': '1.FSV Mainz 05.png',
+    'vfl-wolfsburg': 'VfL Wolfsburg.png',
+    'fc-koln': '1.FC Köln.png',
+    'tsg-hoffenheim': 'TSG 1899 Hoffenheim.png',
+    'vfb-stuttgart': 'VfB Stuttgart.png',
+    'fc-augsburg': 'FC Augsburg.png',
+    'rb-leipzig': 'RB Leipzig.png',
+    'vfl-bochum': 'VfL Bochum.png',
+    'holstein-kiel': 'Holstein Kiel.png',
   }
 };
 
