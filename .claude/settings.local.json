@@ -51,7 +51,8 @@
       "Bash(if [ -f \"data/liga_2025_2026/real-madrid.json\" ])",
       "Bash(if [ -f \"data/serie-a_2025_2026/milan.json\" ])",
       "Bash(pip install:*)",
-      "Bash(git clean:*)"
+      "Bash(git clean:*)",
+      "Bash(rg:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",

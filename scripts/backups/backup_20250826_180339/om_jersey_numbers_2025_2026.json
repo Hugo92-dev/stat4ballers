@@ -1,0 +1,47 @@
+{
+  "season": "2025/2026",
+  "team": "Olympique Marseille",
+  "last_updated": "2025-08-25",
+  "jersey_numbers": {
+    "186418": 1,     "Rulli": 1,
+    "29186": 36,     "de Lange": 36,
+    "186456": 16,    "Blanco": 16,
+    "37593233": 40,  "Van Neck": 40,
+    "527759": 30,    "Vermot": 30,
+    
+    "13171199": 5,   "Balerdi": 5,
+    "32390": 6,      "Garcia": 6,
+    "586846": 13,    "Cornelius": 13,
+    "37369302": 18,  "Meïté": 18,
+    "130063": 29,    "Lirola": 29,
+    "335521": 3,     "Medina": 3,
+    "28575687": 4,   "Egan-Riley": 4,
+    "512560": 62,    "Murillo": 62,
+    
+    "1744": 23,      "Højbjerg": 23,
+    "21803033": 8,   "Ounahi": 8,
+    "96691": 11,     "Harit": 11,
+    "95696": 19,     "Kondogbia": 19,
+    "95694": 25,     "Rabiot": 25,
+    "37541144": 77,  "Nadir": 77,
+    "608285": 47,    "Gomes": 47,
+    "37737405": 50,  "Bakola": 50,
+    
+    "433458": 21,    "Gouiri": 21,
+    "31739": 97,     "Aubameyang": 97,
+    "20333643": 10,  "Greenwood": 10,
+    "95776": 7,      "Maupay": 7,
+    "20315925": 14,  "Moumbagna": 14,
+    "29328428": 9,   "Paixão": 9,
+    "537332": 22,    "Weah": 22,
+    "37657133": 24,  "Mughe": 24,
+    "34455209": 27,  "Rowe": 27,
+    "37713942": 34,  "Robinio Vaz": 34,
+    "37729567": 48,  "Abdallah": 48
+  },
+  "notes": {
+    "Aubameyang": "Porte le numéro 97 cette saison",
+    "Greenwood": "Porte le numéro 10", 
+    "Harit": "Porte le numéro 11"
+  }
+}
