@@ -1,0 +1,247 @@
+2025-08-26 17:19:21,605 - 
+============================================================
+2025-08-26 17:19:21,606 - MISE A JOUR COMPLETE - TOUS LES CHAMPIONNATS
+2025-08-26 17:19:21,606 - ============================================================
+2025-08-26 17:19:21,606 - [BACKUP] Creation backup...
+2025-08-26 17:19:21,722 - [BACKUP] OK
+2025-08-26 17:19:21,722 - 
+==================================================
+2025-08-26 17:19:21,722 - [Ligue 1] Debut traitement
+2025-08-26 17:19:21,722 - ==================================================
+2025-08-26 17:19:22,443 - [Ligue 1] 18 equipes trouvees
+2025-08-26 17:19:22,446 - [Ligue 1] Equipe 1/18: Olympique Marseille
+2025-08-26 17:19:27,353 -   -> 31 joueurs
+2025-08-26 17:19:27,353 - [Ligue 1] Equipe 2/18: LOSC Lille
+2025-08-26 17:19:31,628 -   -> 28 joueurs
+2025-08-26 17:19:31,628 - [Ligue 1] Equipe 3/18: Rennes
+2025-08-26 17:19:35,743 -   -> 27 joueurs
+2025-08-26 17:19:35,743 - [Ligue 1] Equipe 4/18: Monaco
+2025-08-26 17:19:40,852 -   -> 32 joueurs
+2025-08-26 17:19:40,852 - [Ligue 1] Equipe 5/18: Le Havre
+2025-08-26 17:19:45,450 -   -> 27 joueurs
+2025-08-26 17:19:46,451 - [Ligue 1] Equipe 6/18: Angers SCO
+2025-08-26 17:19:51,374 -   -> 29 joueurs
+2025-08-26 17:19:51,374 - [Ligue 1] Equipe 7/18: Strasbourg
+2025-08-26 17:19:56,730 -   -> 34 joueurs
+2025-08-26 17:19:56,730 - [Ligue 1] Equipe 8/18: Paris Saint Germain
+2025-08-26 17:20:02,987 -   -> 29 joueurs
+2025-08-26 17:20:02,987 - [Ligue 1] Equipe 9/18: Lens
+2025-08-26 17:20:08,430 -   -> 28 joueurs
+2025-08-26 17:20:08,431 - [Ligue 1] Equipe 10/18: Nantes
+2025-08-26 17:20:13,008 -   -> 25 joueurs
+2025-08-26 17:20:14,008 - [Ligue 1] Equipe 11/18: Metz
+2025-08-26 17:20:18,308 -   -> 25 joueurs
+2025-08-26 17:20:18,308 - [Ligue 1] Equipe 12/18: Toulouse
+2025-08-26 17:20:22,711 -   -> 26 joueurs
+2025-08-26 17:20:22,711 - [Ligue 1] Equipe 13/18: Brest
+2025-08-26 17:20:25,934 -   -> 21 joueurs
+2025-08-26 17:20:25,934 - [Ligue 1] Equipe 14/18: Lorient
+2025-08-26 17:20:30,449 -   -> 25 joueurs
+2025-08-26 17:20:30,449 - [Ligue 1] Equipe 15/18: Nice
+2025-08-26 17:20:35,954 -   -> 32 joueurs
+2025-08-26 17:20:36,955 - [Ligue 1] Equipe 16/18: Auxerre
+2025-08-26 17:20:41,511 -   -> 27 joueurs
+2025-08-26 17:20:41,512 - [Ligue 1] Equipe 17/18: Paris
+2025-08-26 17:20:46,589 -   -> 29 joueurs
+2025-08-26 17:20:46,589 - [Ligue 1] Equipe 18/18: Olympique Lyonnais
+2025-08-26 17:20:50,718 -   -> 27 joueurs
+2025-08-26 17:20:50,718 - [Ligue 1] Traitement termine
+2025-08-26 17:20:50,724 - [FILE] ligue1Teams.ts genere avec succes
+2025-08-26 17:20:50,724 - [Ligue 1] Complete: 18 equipes, 502 joueurs
+2025-08-26 17:20:52,725 - 
+==================================================
+2025-08-26 17:20:52,725 - [Premier League] Debut traitement
+2025-08-26 17:20:52,726 - ==================================================
+2025-08-26 17:20:52,900 - [Premier League] 20 equipes trouvees
+2025-08-26 17:20:52,900 - [Premier League] Equipe 1/20: Brighton & Hove Albion
+2025-08-26 17:20:58,245 -   -> 33 joueurs
+2025-08-26 17:20:58,245 - [Premier League] Equipe 2/20: Fulham
+2025-08-26 17:21:02,847 -   -> 23 joueurs
+2025-08-26 17:21:02,847 - [Premier League] Equipe 3/20: Liverpool
+2025-08-26 17:21:07,959 -   -> 29 joueurs
+2025-08-26 17:21:07,959 - [Premier League] Equipe 4/20: Arsenal
+2025-08-26 17:21:12,689 -   -> 29 joueurs
+2025-08-26 17:21:12,690 - [Premier League] Equipe 5/20: Wolverhampton Wanderers
+2025-08-26 17:21:16,802 -   -> 28 joueurs
+2025-08-26 17:21:17,802 - [Premier League] Equipe 6/20: Leeds United
+2025-08-26 17:21:22,828 -   -> 31 joueurs
+2025-08-26 17:21:22,828 - [Premier League] Equipe 7/20: Crystal Palace
+2025-08-26 17:21:26,812 -   -> 28 joueurs
+2025-08-26 17:21:26,812 - [Premier League] Equipe 8/20: Manchester United
+2025-08-26 17:21:31,726 -   -> 31 joueurs
+2025-08-26 17:21:31,726 - [Premier League] Equipe 9/20: Brentford
+2025-08-26 17:21:36,702 -   -> 31 joueurs
+2025-08-26 17:21:36,702 - [Premier League] Equipe 10/20: Sunderland
+2025-08-26 17:21:43,864 -   -> 41 joueurs
+2025-08-26 17:21:44,865 - [Premier League] Equipe 11/20: AFC Bournemouth
+2025-08-26 17:21:49,757 -   -> 31 joueurs
+2025-08-26 17:21:49,757 - [Premier League] Equipe 12/20: Newcastle United
+2025-08-26 17:21:54,404 -   -> 28 joueurs
+2025-08-26 17:21:54,405 - [Premier League] Equipe 13/20: Nottingham Forest
+2025-08-26 17:22:00,750 -   -> 30 joueurs
+2025-08-26 17:22:00,750 - [Premier League] Equipe 14/20: Everton
+2025-08-26 17:22:05,788 -   -> 25 joueurs
+2025-08-26 17:22:05,788 - [Premier League] Equipe 15/20: Manchester City
+2025-08-26 17:22:10,898 -   -> 30 joueurs
+2025-08-26 17:22:11,899 - [Premier League] Equipe 16/20: West Ham United
+2025-08-26 17:22:16,539 -   -> 27 joueurs
+2025-08-26 17:22:16,539 - [Premier League] Equipe 17/20: Chelsea
+2025-08-26 17:22:22,623 -   -> 34 joueurs
+2025-08-26 17:22:22,623 - [Premier League] Equipe 18/20: Aston Villa
+2025-08-26 17:22:26,824 -   -> 21 joueurs
+2025-08-26 17:22:26,824 - [Premier League] Equipe 19/20: Tottenham Hotspur
+2025-08-26 17:22:31,982 -   -> 30 joueurs
+2025-08-26 17:22:31,982 - [Premier League] Equipe 20/20: Burnley
+2025-08-26 17:22:37,517 -   -> 36 joueurs
+2025-08-26 17:22:38,518 - [Premier League] Traitement termine
+2025-08-26 17:22:38,523 - [FILE] premierLeagueTeams.ts genere avec succes
+2025-08-26 17:22:38,524 - [Premier League] Complete: 20 equipes, 596 joueurs
+2025-08-26 17:22:40,524 - 
+==================================================
+2025-08-26 17:22:40,525 - [La Liga] Debut traitement
+2025-08-26 17:22:40,525 - ==================================================
+2025-08-26 17:22:40,669 - [La Liga] 20 equipes trouvees
+2025-08-26 17:22:40,669 - [La Liga] Equipe 1/20: Villarreal
+2025-08-26 17:22:45,101 -   -> 26 joueurs
+2025-08-26 17:22:45,101 - [La Liga] Equipe 2/20: Real Madrid
+2025-08-26 17:22:49,460 -   -> 25 joueurs
+2025-08-26 17:22:49,461 - [La Liga] Equipe 3/20: Real Betis
+2025-08-26 17:22:53,583 -   -> 24 joueurs
+2025-08-26 17:22:53,583 - [La Liga] Equipe 4/20: Real Oviedo
+2025-08-26 17:22:57,499 -   -> 25 joueurs
+2025-08-26 17:22:57,500 - [La Liga] Equipe 5/20: Celta de Vigo
+2025-08-26 17:23:01,715 -   -> 27 joueurs
+2025-08-26 17:23:02,717 - [La Liga] Equipe 6/20: Levante
+2025-08-26 17:23:07,275 -   -> 23 joueurs
+2025-08-26 17:23:07,275 - [La Liga] Equipe 7/20: Elche
+2025-08-26 17:23:11,092 -   -> 25 joueurs
+2025-08-26 17:23:11,092 - [La Liga] Equipe 8/20: Mallorca
+2025-08-26 17:23:14,922 -   -> 26 joueurs
+2025-08-26 17:23:14,922 - [La Liga] Equipe 9/20: Girona
+2025-08-26 17:23:18,750 -   -> 25 joueurs
+2025-08-26 17:23:18,750 - [La Liga] Equipe 10/20: Sevilla
+2025-08-26 17:23:23,092 -   -> 25 joueurs
+2025-08-26 17:23:24,093 - [La Liga] Equipe 11/20: FC Barcelona
+2025-08-26 17:23:28,629 -   -> 26 joueurs
+2025-08-26 17:23:28,629 - [La Liga] Equipe 12/20: Deportivo Alavés
+2025-08-26 17:23:32,521 -   -> 23 joueurs
+2025-08-26 17:23:32,521 - [La Liga] Equipe 13/20: Real Sociedad
+2025-08-26 17:23:37,465 -   -> 29 joueurs
+2025-08-26 17:23:37,466 - [La Liga] Equipe 14/20: Valencia
+2025-08-26 17:23:41,511 -   -> 24 joueurs
+2025-08-26 17:23:41,511 - [La Liga] Equipe 15/20: Atlético Madrid
+2025-08-26 17:23:45,467 -   -> 23 joueurs
+2025-08-26 17:23:46,467 - [La Liga] Equipe 16/20: Getafe
+2025-08-26 17:23:50,442 -   -> 23 joueurs
+2025-08-26 17:23:50,442 - [La Liga] Equipe 17/20: Athletic Club
+2025-08-26 17:23:54,418 -   -> 26 joueurs
+2025-08-26 17:23:54,419 - [La Liga] Equipe 18/20: Espanyol
+2025-08-26 17:23:58,216 -   -> 24 joueurs
+2025-08-26 17:23:58,216 - [La Liga] Equipe 19/20: Osasuna
+2025-08-26 17:24:01,811 -   -> 20 joueurs
+2025-08-26 17:24:01,811 - [La Liga] Equipe 20/20: Rayo Vallecano
+2025-08-26 17:24:06,026 -   -> 25 joueurs
+2025-08-26 17:24:07,027 - [La Liga] Traitement termine
+2025-08-26 17:24:07,032 - [FILE] ligaTeams.ts genere avec succes
+2025-08-26 17:24:07,032 - [La Liga] Complete: 20 equipes, 494 joueurs
+2025-08-26 17:24:09,033 - 
+==================================================
+2025-08-26 17:24:09,033 - [Serie A] Debut traitement
+2025-08-26 17:24:09,033 - ==================================================
+2025-08-26 17:24:09,149 - [Serie A] 20 equipes trouvees
+2025-08-26 17:24:09,149 - [Serie A] Equipe 1/20: Atalanta
+2025-08-26 17:24:13,566 -   -> 28 joueurs
+2025-08-26 17:24:13,567 - [Serie A] Equipe 2/20: Udinese
+2025-08-26 17:24:18,521 -   -> 30 joueurs
+2025-08-26 17:24:18,521 - [Serie A] Equipe 3/20: Milan
+2025-08-26 17:24:22,394 -   -> 24 joueurs
+2025-08-26 17:24:22,395 - [Serie A] Equipe 4/20: Genoa
+2025-08-26 17:24:27,659 -   -> 30 joueurs
+2025-08-26 17:24:27,660 - [Serie A] Equipe 5/20: Fiorentina
+2025-08-26 17:24:32,227 -   -> 31 joueurs
+2025-08-26 17:24:33,228 - [Serie A] Equipe 6/20: Lazio
+2025-08-26 17:24:38,292 -   -> 31 joueurs
+2025-08-26 17:24:38,293 - [Serie A] Equipe 7/20: Roma
+2025-08-26 17:24:42,646 -   -> 28 joueurs
+2025-08-26 17:24:42,646 - [Serie A] Equipe 8/20: Torino
+2025-08-26 17:24:47,409 -   -> 32 joueurs
+2025-08-26 17:24:47,409 - [Serie A] Equipe 9/20: Como
+2025-08-26 17:24:53,642 -   -> 38 joueurs
+2025-08-26 17:24:53,643 - [Serie A] Equipe 10/20: Lecce
+2025-08-26 17:24:58,995 -   -> 34 joueurs
+2025-08-26 17:24:59,996 - [Serie A] Equipe 11/20: Bologna
+2025-08-26 17:25:06,126 -   -> 33 joueurs
+2025-08-26 17:25:06,127 - [Serie A] Equipe 12/20: Pisa
+2025-08-26 17:25:12,228 -   -> 34 joueurs
+2025-08-26 17:25:12,228 - [Serie A] Equipe 13/20: Sassuolo
+2025-08-26 17:25:17,886 -   -> 34 joueurs
+2025-08-26 17:25:17,887 - [Serie A] Equipe 14/20: Napoli
+2025-08-26 17:25:22,703 -   -> 29 joueurs
+2025-08-26 17:25:22,703 - [Serie A] Equipe 15/20: Parma
+2025-08-26 17:25:27,494 -   -> 31 joueurs
+2025-08-26 17:25:28,494 - [Serie A] Equipe 16/20: Cremonese
+2025-08-26 17:25:33,526 -   -> 31 joueurs
+2025-08-26 17:25:33,527 - [Serie A] Equipe 17/20: Inter
+2025-08-26 17:25:37,916 -   -> 26 joueurs
+2025-08-26 17:25:37,916 - [Serie A] Equipe 18/20: Hellas Verona
+2025-08-26 17:25:42,875 -   -> 30 joueurs
+2025-08-26 17:25:42,876 - [Serie A] Equipe 19/20: Juventus
+2025-08-26 17:25:47,902 -   -> 29 joueurs
+2025-08-26 17:25:47,903 - [Serie A] Equipe 20/20: Cagliari
+2025-08-26 17:25:52,419 -   -> 26 joueurs
+2025-08-26 17:25:53,420 - [Serie A] Traitement termine
+2025-08-26 17:25:53,424 - [FILE] serieATeams.ts genere avec succes
+2025-08-26 17:25:53,425 - [Serie A] Complete: 20 equipes, 609 joueurs
+2025-08-26 17:25:55,425 - 
+==================================================
+2025-08-26 17:25:55,426 - [Bundesliga] Debut traitement
+2025-08-26 17:25:55,426 - ==================================================
+2025-08-26 17:25:55,581 - [Bundesliga] 18 equipes trouvees
+2025-08-26 17:25:55,581 - [Bundesliga] Equipe 1/18: FC Union Berlin
+2025-08-26 17:26:00,408 -   -> 30 joueurs
+2025-08-26 17:26:00,408 - [Bundesliga] Equipe 2/18: VfL Wolfsburg
+2025-08-26 17:26:06,291 -   -> 27 joueurs
+2025-08-26 17:26:06,291 - [Bundesliga] Equipe 3/18: Bayer 04 Leverkusen
+2025-08-26 17:26:10,763 -   -> 26 joueurs
+2025-08-26 17:26:10,763 - [Bundesliga] Equipe 4/18: SC Freiburg
+2025-08-26 17:26:15,707 -   -> 29 joueurs
+2025-08-26 17:26:15,707 - [Bundesliga] Equipe 5/18: Borussia Dortmund
+2025-08-26 17:26:20,474 -   -> 26 joueurs
+2025-08-26 17:26:21,474 - [Bundesliga] Equipe 6/18: Werder Bremen
+2025-08-26 17:26:26,753 -   -> 30 joueurs
+2025-08-26 17:26:26,754 - [Bundesliga] Equipe 7/18: FC Köln
+2025-08-26 17:26:32,375 -   -> 32 joueurs
+2025-08-26 17:26:32,375 - [Bundesliga] Equipe 8/18: RB Leipzig
+2025-08-26 17:26:38,273 -   -> 34 joueurs
+2025-08-26 17:26:38,274 - [Bundesliga] Equipe 9/18: FC Augsburg
+2025-08-26 17:26:43,297 -   -> 31 joueurs
+2025-08-26 17:26:43,297 - [Bundesliga] Equipe 10/18: Borussia Mönchengladbach
+2025-08-26 17:26:48,061 -   -> 28 joueurs
+2025-08-26 17:26:49,062 - [Bundesliga] Equipe 11/18: VfB Stuttgart
+2025-08-26 17:26:53,866 -   -> 31 joueurs
+2025-08-26 17:26:53,866 - [Bundesliga] Equipe 12/18: Heidenheim
+2025-08-26 17:26:58,189 -   -> 28 joueurs
+2025-08-26 17:26:58,189 - [Bundesliga] Equipe 13/18: St. Pauli
+2025-08-26 17:27:02,919 -   -> 28 joueurs
+2025-08-26 17:27:02,919 - [Bundesliga] Equipe 14/18: TSG Hoffenheim
+2025-08-26 17:27:08,290 -   -> 33 joueurs
+2025-08-26 17:27:08,290 - [Bundesliga] Equipe 15/18: Eintracht Frankfurt
+2025-08-26 17:27:13,692 -   -> 31 joueurs
+2025-08-26 17:27:14,693 - [Bundesliga] Equipe 16/18: FSV Mainz 05
+2025-08-26 17:27:19,637 -   -> 28 joueurs
+2025-08-26 17:27:19,638 - [Bundesliga] Equipe 17/18: FC Bayern München
+2025-08-26 17:27:23,953 -   -> 25 joueurs
+2025-08-26 17:27:23,953 - [Bundesliga] Equipe 18/18: Hamburger SV
+2025-08-26 17:27:28,985 -   -> 29 joueurs
+2025-08-26 17:27:28,985 - [Bundesliga] Traitement termine
+2025-08-26 17:27:28,989 - [FILE] bundesligaTeams.ts genere avec succes
+2025-08-26 17:27:28,989 - [Bundesliga] Complete: 18 equipes, 526 joueurs
+2025-08-26 17:27:30,990 - 
+============================================================
+2025-08-26 17:27:30,990 - RESUME FINAL
+2025-08-26 17:27:30,990 - - Championnats traites: 5
+2025-08-26 17:27:30,991 - - Total equipes: 96
+2025-08-26 17:27:30,991 - - Total joueurs: 2727
+2025-08-26 17:27:30,991 - - Duree: 489.38 secondes
+2025-08-26 17:27:30,991 - - Statut: SUCCESS
+2025-08-26 17:27:30,991 - ============================================================

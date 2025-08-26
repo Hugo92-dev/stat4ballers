@@ -1,5 +1,9 @@
 {
-  "timestamp": "2025-08-24T15:24:26.652246",
-  "duration": 15.799148559570312,
-  "success": true
+  "timestamp": "2025-08-26T17:27:30.991778",
+  "duration": 489.3854374885559,
+  "success": true,
+  "stats": {
+    "teams": 96,
+    "players": 2727
+  }
 }

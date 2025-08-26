@@ -50,7 +50,8 @@
       "Bash(__NEW_LINE__ echo)",
       "Bash(if [ -f \"data/liga_2025_2026/real-madrid.json\" ])",
       "Bash(if [ -f \"data/serie-a_2025_2026/milan.json\" ])",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(git clean:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",
