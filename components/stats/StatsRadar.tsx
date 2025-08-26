@@ -41,52 +41,34 @@ export default function StatsRadar({ stats, position }: StatsRadarProps) {
   // 1. CARTE GÉNÉRALE - Stats générales pour joueurs de champ
   const generalDataField = [
     { 
-      stat: displayMode === 'real' ? `Note moyenne (${stats.rating?.toFixed(2) || 0})` : 'Note moyenne', 
-      value: displayMode === 'real' ? parseFloat(stats.rating?.toFixed(2) || '0') * 10 : Math.min(100, ((stats.rating || 6) - 5) * 20), 
-      rawValue: stats.rating?.toFixed(2) || 0,
-      percentile: Math.min(100, ((stats.rating || 6) - 5) * 20)
-    },
-    { 
-      stat: displayMode === 'real' ? `Minutes (${stats.minutes || 0})` : 'Minutes', 
-      value: displayMode === 'real' ? Math.min(3000, stats.minutes || 0) : Math.min(100, (stats.minutes || 0) / 30), 
-      rawValue: stats.minutes || 0,
-      percentile: Math.min(100, (stats.minutes || 0) / 30)
-    },
-    { 
-      stat: displayMode === 'real' ? `Titularisations (${stats.lineups || 0})` : 'Titularisations', 
-      value: displayMode === 'real' ? stats.lineups || 0 : Math.min(100, (stats.lineups || 0) * 4), 
-      rawValue: stats.lineups || 0,
-      percentile: Math.min(100, (stats.lineups || 0) * 4)
-    },
-    { 
-      stat: displayMode === 'real' ? `Matchs (${stats.appearences || 0})` : 'Matchs', 
+      stat: displayMode === 'real' ? `Appearances (${stats.appearences || 0})` : 'Appearances', 
       value: displayMode === 'real' ? stats.appearences || 0 : Math.min(100, (stats.appearences || 0) * 3), 
       rawValue: stats.appearences || 0,
       percentile: Math.min(100, (stats.appearences || 0) * 3)
     },
     { 
-      stat: displayMode === 'real' ? `Capitaine (${stats.captain || 0})` : 'Capitaine', 
+      stat: displayMode === 'real' ? `Lineups (${stats.lineups || 0})` : 'Lineups', 
+      value: displayMode === 'real' ? stats.lineups || 0 : Math.min(100, (stats.lineups || 0) * 4), 
+      rawValue: stats.lineups || 0,
+      percentile: Math.min(100, (stats.lineups || 0) * 4)
+    },
+    { 
+      stat: displayMode === 'real' ? `MinutesPlayed (${stats.minutes || 0})` : 'MinutesPlayed', 
+      value: displayMode === 'real' ? Math.min(3000, stats.minutes || 0) : Math.min(100, (stats.minutes || 0) / 30), 
+      rawValue: stats.minutes || 0,
+      percentile: Math.min(100, (stats.minutes || 0) / 30)
+    },
+    { 
+      stat: displayMode === 'real' ? `Captain (${stats.captain || 0})` : 'Captain', 
       value: displayMode === 'real' ? stats.captain || 0 : Math.min(100, (stats.captain || 0) * 20), 
       rawValue: stats.captain || 0,
       percentile: Math.min(100, (stats.captain || 0) * 20)
     },
     { 
-      stat: displayMode === 'real' ? `Touches (${stats.touches || 0})` : 'Touches', 
-      value: displayMode === 'real' ? Math.min(2000, stats.touches || 0) : Math.min(100, (stats.touches || 0) / 20), 
-      rawValue: stats.touches || 0,
-      percentile: Math.min(100, (stats.touches || 0) / 20)
-    },
-    { 
-      stat: displayMode === 'real' ? `Précision tirs (${shotsAccuracy.toFixed(1)}%)` : 'Précision tirs', 
-      value: displayMode === 'real' ? shotsAccuracy : Math.min(100, shotsAccuracy), 
-      rawValue: `${shotsAccuracy.toFixed(1)}%`,
-      percentile: Math.min(100, shotsAccuracy)
-    },
-    { 
-      stat: displayMode === 'real' ? `Précision passes (${stats.passes_accuracy?.toFixed(1) || 0}%)` : 'Précision passes', 
-      value: displayMode === 'real' ? parseFloat(stats.passes_accuracy?.toFixed(1) || '0') : Math.min(100, stats.passes_accuracy || 0), 
-      rawValue: `${stats.passes_accuracy?.toFixed(1)}%`,
-      percentile: Math.min(100, stats.passes_accuracy || 0)
+      stat: displayMode === 'real' ? `Rating (${stats.rating?.toFixed(2) || 0})` : 'Rating', 
+      value: displayMode === 'real' ? parseFloat(stats.rating?.toFixed(2) || '0') * 10 : Math.min(100, ((stats.rating || 6) - 5) * 20), 
+      rawValue: stats.rating?.toFixed(2) || 0,
+      percentile: Math.min(100, ((stats.rating || 6) - 5) * 20)
     }
   ];
 
@@ -145,232 +127,203 @@ export default function StatsRadar({ stats, position }: StatsRadarProps) {
   // 2. CARTE OFFENSIVE
   const offensiveData = !isGoalkeeper ? [
     { 
-      stat: displayMode === 'real' ? `Buts (${stats.goals || 0})` : 'Buts', 
+      stat: displayMode === 'real' ? `Goals (${stats.goals || 0})` : 'Goals', 
       value: displayMode === 'real' ? stats.goals || 0 : Math.min(100, (stats.goals || 0) * 5), 
       rawValue: stats.goals || 0,
       percentile: Math.min(100, (stats.goals || 0) * 5)
     },
     { 
-      stat: displayMode === 'real' ? `xG (${stats.expected_goals?.toFixed(2) || 0})` : 'xG', 
-      value: displayMode === 'real' ? parseFloat(stats.expected_goals?.toFixed(2) || '0') * 20 : Math.min(100, (stats.expected_goals || 0) * 5), 
-      rawValue: stats.expected_goals?.toFixed(2) || 0,
-      percentile: Math.min(100, (stats.expected_goals || 0) * 5)
-    },
-    { 
-      stat: displayMode === 'real' ? `Passes déc. (${stats.assists || 0})` : 'Passes déc.', 
+      stat: displayMode === 'real' ? `Assists (${stats.assists || 0})` : 'Assists', 
       value: displayMode === 'real' ? stats.assists || 0 : Math.min(100, (stats.assists || 0) * 8), 
       rawValue: stats.assists || 0,
       percentile: Math.min(100, (stats.assists || 0) * 8)
     },
     { 
-      stat: displayMode === 'real' ? `xA (${stats.expected_assists?.toFixed(2) || 0})` : 'xA', 
-      value: displayMode === 'real' ? parseFloat(stats.expected_assists?.toFixed(2) || '0') * 20 : Math.min(100, (stats.expected_assists || 0) * 8), 
-      rawValue: stats.expected_assists?.toFixed(2) || 0,
-      percentile: Math.min(100, (stats.expected_assists || 0) * 8)
-    },
-    { 
-      stat: displayMode === 'real' ? `Total tirs (${stats.shots || 0})` : 'Total tirs', 
+      stat: displayMode === 'real' ? `ShotsTotal (${stats.shots || 0})` : 'ShotsTotal', 
       value: displayMode === 'real' ? stats.shots || 0 : Math.min(100, (stats.shots || 0) * 2), 
       rawValue: stats.shots || 0,
       percentile: Math.min(100, (stats.shots || 0) * 2)
     },
     { 
-      stat: displayMode === 'real' ? `Penalties (${stats.penalties || 0})` : 'Penalties', 
-      value: displayMode === 'real' ? stats.penalties || 0 : Math.min(100, (stats.penalties || 0) * 20), 
-      rawValue: stats.penalties || 0,
-      percentile: Math.min(100, (stats.penalties || 0) * 20)
+      stat: displayMode === 'real' ? `ShotsOnTarget (${stats.shots_on_target || 0})` : 'ShotsOnTarget', 
+      value: displayMode === 'real' ? stats.shots_on_target || 0 : Math.min(100, (stats.shots_on_target || 0) * 3), 
+      rawValue: stats.shots_on_target || 0,
+      percentile: Math.min(100, (stats.shots_on_target || 0) * 3)
     },
     { 
-      stat: displayMode === 'real' ? `Préc. pen. (${penaltyAccuracy.toFixed(1)}%)` : 'Préc. pen.', 
-      value: displayMode === 'real' ? penaltyAccuracy : Math.min(100, penaltyAccuracy), 
-      rawValue: `${penaltyAccuracy.toFixed(1)}%`,
-      percentile: Math.min(100, penaltyAccuracy)
-    },
-    { 
-      stat: displayMode === 'real' ? `Poteaux (${stats.hit_woodwork || 0})` : 'Poteaux', 
+      stat: displayMode === 'real' ? `HitWoodwork (${stats.hit_woodwork || 0})` : 'HitWoodwork', 
       value: displayMode === 'real' ? stats.hit_woodwork || 0 : Math.min(100, (stats.hit_woodwork || 0) * 33), 
       rawValue: stats.hit_woodwork || 0,
       percentile: Math.min(100, (stats.hit_woodwork || 0) * 33)
     },
     { 
-      stat: displayMode === 'real' ? `Hors-jeux (${stats.offsides || 0})` : 'Hors-jeux', 
+      stat: displayMode === 'real' ? `Offsides (${stats.offsides || 0})` : 'Offsides', 
       value: displayMode === 'real' ? stats.offsides || 0 : Math.min(100, 100 - ((stats.offsides || 0) * 4)), 
       rawValue: stats.offsides || 0,
       percentile: Math.min(100, 100 - ((stats.offsides || 0) * 4))
     },
     { 
-      stat: displayMode === 'real' ? `Pertes balle (${stats.ball_losses || 0})` : 'Pertes balle', 
-      value: displayMode === 'real' ? stats.ball_losses || 0 : Math.min(100, 100 - ((stats.ball_losses || 0) * 0.7)), 
-      rawValue: stats.ball_losses || 0,
-      percentile: Math.min(100, 100 - ((stats.ball_losses || 0) * 0.7))
+      stat: displayMode === 'real' ? `Hattricks (${stats.hattricks || 0})` : 'Hattricks', 
+      value: displayMode === 'real' ? stats.hattricks || 0 : Math.min(100, (stats.hattricks || 0) * 50), 
+      rawValue: stats.hattricks || 0,
+      percentile: Math.min(100, (stats.hattricks || 0) * 50)
+    },
+    { 
+      stat: displayMode === 'real' ? `BigChancesMissed (${stats.big_chances_missed || 0})` : 'BigChancesMissed', 
+      value: displayMode === 'real' ? stats.big_chances_missed || 0 : Math.min(100, 100 - ((stats.big_chances_missed || 0) * 10)), 
+      rawValue: stats.big_chances_missed || 0,
+      percentile: Math.min(100, 100 - ((stats.big_chances_missed || 0) * 10))
     }
   ] : [];
 
   // 3. CARTE CRÉATIVE - Passes et dribbles
   const creativeData = !isGoalkeeper ? [
     { 
-      stat: displayMode === 'real' ? `Total passes (${stats.passes_total || 0})` : 'Total passes', 
-      value: displayMode === 'real' ? Math.min(1200, stats.passes_total || 0) : Math.min(100, (stats.passes_total || 0) / 12), 
-      rawValue: stats.passes_total || 0,
-      percentile: Math.min(100, (stats.passes_total || 0) / 12)
+      stat: displayMode === 'real' ? `Passes (${stats.passes_total || stats.passes || 0})` : 'Passes', 
+      value: displayMode === 'real' ? Math.min(1200, stats.passes_total || stats.passes || 0) : Math.min(100, (stats.passes_total || stats.passes || 0) / 12), 
+      rawValue: stats.passes_total || stats.passes || 0,
+      percentile: Math.min(100, (stats.passes_total || stats.passes || 0) / 12)
     },
     { 
-      stat: displayMode === 'real' ? `Passes clés (${stats.key_passes || 0})` : 'Passes clés', 
+      stat: displayMode === 'real' ? `AccuratePassesPercentage (${stats.passes_accuracy?.toFixed(1) || 0}%)` : 'AccuratePassesPercentage', 
+      value: displayMode === 'real' ? parseFloat(stats.passes_accuracy?.toFixed(1) || '0') : Math.min(100, stats.passes_accuracy || 0), 
+      rawValue: `${stats.passes_accuracy?.toFixed(1)}%`,
+      percentile: Math.min(100, stats.passes_accuracy || 0)
+    },
+    { 
+      stat: displayMode === 'real' ? `KeyPasses (${stats.key_passes || 0})` : 'KeyPasses', 
       value: displayMode === 'real' ? stats.key_passes || 0 : Math.min(100, (stats.key_passes || 0) * 3), 
       rawValue: stats.key_passes || 0,
       percentile: Math.min(100, (stats.key_passes || 0) * 3)
     },
     { 
-      stat: displayMode === 'real' ? `Total centres (${stats.crosses_total || 0})` : 'Total centres', 
-      value: displayMode === 'real' ? stats.crosses_total || 0 : Math.min(100, (stats.crosses_total || 0) * 2), 
-      rawValue: stats.crosses_total || 0,
-      percentile: Math.min(100, (stats.crosses_total || 0) * 2)
+      stat: displayMode === 'real' ? `BigChancesCreated (${stats.big_chances_created || 0})` : 'BigChancesCreated', 
+      value: displayMode === 'real' ? stats.big_chances_created || 0 : Math.min(100, (stats.big_chances_created || 0) * 10), 
+      rawValue: stats.big_chances_created || 0,
+      percentile: Math.min(100, (stats.big_chances_created || 0) * 10)
     },
     { 
-      stat: displayMode === 'real' ? `Préc. centres (${stats.crosses_accuracy?.toFixed(1)}%)` : 'Préc. centres', 
-      value: displayMode === 'real' ? parseFloat(stats.crosses_accuracy?.toFixed(1) || '0') : Math.min(100, stats.crosses_accuracy || 0), 
-      rawValue: `${stats.crosses_accuracy?.toFixed(1)}%`,
-      percentile: Math.min(100, stats.crosses_accuracy || 0)
+      stat: displayMode === 'real' ? `ThroughBalls (${stats.through_balls || 0})` : 'ThroughBalls', 
+      value: displayMode === 'real' ? stats.through_balls || 0 : Math.min(100, (stats.through_balls || 0) * 5), 
+      rawValue: stats.through_balls || 0,
+      percentile: Math.min(100, (stats.through_balls || 0) * 5)
     },
     { 
-      stat: displayMode === 'real' ? `Total dribbles (${stats.dribbles || 0})` : 'Total dribbles', 
-      value: displayMode === 'real' ? stats.dribbles || 0 : Math.min(100, (stats.dribbles || 0) * 2), 
-      rawValue: stats.dribbles || 0,
-      percentile: Math.min(100, (stats.dribbles || 0) * 2)
+      stat: displayMode === 'real' ? `LongBalls (${stats.long_balls || 0})` : 'LongBalls', 
+      value: displayMode === 'real' ? stats.long_balls || 0 : Math.min(100, (stats.long_balls || 0) * 2), 
+      rawValue: stats.long_balls || 0,
+      percentile: Math.min(100, (stats.long_balls || 0) * 2)
     },
     { 
-      stat: displayMode === 'real' ? `Préc. dribbles (${dribbleAccuracy.toFixed(1)}%)` : 'Préc. dribbles', 
-      value: displayMode === 'real' ? dribbleAccuracy : Math.min(100, dribbleAccuracy), 
-      rawValue: `${dribbleAccuracy.toFixed(1)}%`,
-      percentile: Math.min(100, dribbleAccuracy)
+      stat: displayMode === 'real' ? `TotalCrosses (${stats.crosses_total || stats.crosses || 0})` : 'TotalCrosses', 
+      value: displayMode === 'real' ? stats.crosses_total || stats.crosses || 0 : Math.min(100, (stats.crosses_total || stats.crosses || 0) * 2), 
+      rawValue: stats.crosses_total || stats.crosses || 0,
+      percentile: Math.min(100, (stats.crosses_total || stats.crosses || 0) * 2)
+    },
+    { 
+      stat: displayMode === 'real' ? `AccurateCrosses (${stats.accurate_crosses || 0})` : 'AccurateCrosses', 
+      value: displayMode === 'real' ? stats.accurate_crosses || 0 : Math.min(100, (stats.accurate_crosses || 0) * 5), 
+      rawValue: stats.accurate_crosses || 0,
+      percentile: Math.min(100, (stats.accurate_crosses || 0) * 5)
     }
   ] : [];
 
   // 4. CARTE DÉFENSIVE & DISCIPLINE
+  const totalRedCards = (stats.red_cards || 0) + (stats.yellowred_cards || 0);
   const defensiveData = !isGoalkeeper ? [
     { 
-      stat: displayMode === 'real' ? `Récupérations (${stats.ball_recoveries || 0})` : 'Récupérations', 
-      value: displayMode === 'real' ? stats.ball_recoveries || 0 : Math.min(100, (stats.ball_recoveries || 0) * 1.5), 
-      rawValue: stats.ball_recoveries || 0,
-      percentile: Math.min(100, (stats.ball_recoveries || 0) * 1.5)
-    },
-    { 
-      stat: displayMode === 'real' ? `Tacles (${stats.tackles || 0})` : 'Tacles', 
-      value: displayMode === 'real' ? stats.tackles || 0 : Math.min(100, (stats.tackles || 0) * 1.5), 
-      rawValue: stats.tackles || 0,
-      percentile: Math.min(100, (stats.tackles || 0) * 1.5)
-    },
-    { 
-      stat: displayMode === 'real' ? `Interceptions (${stats.interceptions || 0})` : 'Interceptions', 
-      value: displayMode === 'real' ? stats.interceptions || 0 : Math.min(100, (stats.interceptions || 0) * 2), 
-      rawValue: stats.interceptions || 0,
-      percentile: Math.min(100, (stats.interceptions || 0) * 2)
-    },
-    { 
-      stat: displayMode === 'real' ? `Total duels (${stats.duels || 0})` : 'Total duels', 
+      stat: displayMode === 'real' ? `TotalDuels (${stats.duels || 0})` : 'TotalDuels', 
       value: displayMode === 'real' ? Math.min(200, stats.duels || 0) : Math.min(100, (stats.duels || 0) * 0.5), 
       rawValue: stats.duels || 0,
       percentile: Math.min(100, (stats.duels || 0) * 0.5)
     },
     { 
-      stat: displayMode === 'real' ? `Duels gagnés (${stats.duels_won || 0})` : 'Duels gagnés', 
+      stat: displayMode === 'real' ? `DuelsWon (${stats.duels_won || 0})` : 'DuelsWon', 
       value: displayMode === 'real' ? stats.duels_won || 0 : Math.min(100, (stats.duels_won || 0) * 0.8), 
       rawValue: stats.duels_won || 0,
       percentile: Math.min(100, (stats.duels_won || 0) * 0.8)
     },
     { 
-      stat: displayMode === 'real' ? `Duels aériens (${stats.aerial_duels || 0})` : 'Duels aériens', 
-      value: displayMode === 'real' ? stats.aerial_duels || 0 : Math.min(100, (stats.aerial_duels || 0) * 1), 
-      rawValue: stats.aerial_duels || 0,
-      percentile: Math.min(100, (stats.aerial_duels || 0) * 1)
-    },
-    { 
-      stat: displayMode === 'real' ? `Aériens gagnés (${stats.aerial_duels_won || 0})` : 'Aériens gagnés', 
+      stat: displayMode === 'real' ? `AerialsWon (${stats.aerial_duels_won || 0})` : 'AerialsWon', 
       value: displayMode === 'real' ? stats.aerial_duels_won || 0 : Math.min(100, (stats.aerial_duels_won || 0) * 2), 
       rawValue: stats.aerial_duels_won || 0,
       percentile: Math.min(100, (stats.aerial_duels_won || 0) * 2)
     },
     { 
-      stat: displayMode === 'real' ? `Fautes comm. (${stats.fouls || 0})` : 'Fautes comm.', 
+      stat: displayMode === 'real' ? `Tackles (${stats.tackles || 0})` : 'Tackles', 
+      value: displayMode === 'real' ? stats.tackles || 0 : Math.min(100, (stats.tackles || 0) * 1.5), 
+      rawValue: stats.tackles || 0,
+      percentile: Math.min(100, (stats.tackles || 0) * 1.5)
+    },
+    { 
+      stat: displayMode === 'real' ? `DribbledPast (${stats.dribbled_past || 0})` : 'DribbledPast', 
+      value: displayMode === 'real' ? stats.dribbled_past || 0 : Math.min(100, 100 - ((stats.dribbled_past || 0) * 3)), 
+      rawValue: stats.dribbled_past || 0,
+      percentile: Math.min(100, 100 - ((stats.dribbled_past || 0) * 3))
+    },
+    { 
+      stat: displayMode === 'real' ? `ErrorLeadToGoal (${stats.mistakes_leading_to_goals || 0})` : 'ErrorLeadToGoal', 
+      value: displayMode === 'real' ? stats.mistakes_leading_to_goals || 0 : Math.min(100, 100 - ((stats.mistakes_leading_to_goals || 0) * 50)), 
+      rawValue: stats.mistakes_leading_to_goals || 0,
+      percentile: Math.min(100, 100 - ((stats.mistakes_leading_to_goals || 0) * 50))
+    },
+    { 
+      stat: displayMode === 'real' ? `CrossesBlocked (${stats.crosses_blocked || 0})` : 'CrossesBlocked', 
+      value: displayMode === 'real' ? stats.crosses_blocked || 0 : Math.min(100, (stats.crosses_blocked || 0) * 10), 
+      rawValue: stats.crosses_blocked || 0,
+      percentile: Math.min(100, (stats.crosses_blocked || 0) * 10)
+    },
+    { 
+      stat: displayMode === 'real' ? `Fouls (${stats.fouls || 0})` : 'Fouls', 
       value: displayMode === 'real' ? stats.fouls || 0 : Math.min(100, 100 - ((stats.fouls || 0) * 2.5)), 
       rawValue: stats.fouls || 0,
       percentile: Math.min(100, 100 - ((stats.fouls || 0) * 2.5))
     },
     { 
-      stat: displayMode === 'real' ? `Fautes subies (${stats.fouls_drawn || 0})` : 'Fautes subies', 
+      stat: displayMode === 'real' ? `FoulsDrawn (${stats.fouls_drawn || 0})` : 'FoulsDrawn', 
       value: displayMode === 'real' ? stats.fouls_drawn || 0 : Math.min(100, (stats.fouls_drawn || 0) * 3), 
       rawValue: stats.fouls_drawn || 0,
       percentile: Math.min(100, (stats.fouls_drawn || 0) * 3)
     },
     { 
-      stat: displayMode === 'real' ? `C. jaunes (${stats.yellow_cards || 0})` : 'C. jaunes', 
+      stat: displayMode === 'real' ? `Yellowcards (${stats.yellow_cards || 0})` : 'Yellowcards', 
       value: displayMode === 'real' ? stats.yellow_cards || 0 : Math.min(100, 100 - ((stats.yellow_cards || 0) * 12)), 
       rawValue: stats.yellow_cards || 0,
       percentile: Math.min(100, 100 - ((stats.yellow_cards || 0) * 12))
     },
     { 
-      stat: displayMode === 'real' ? `C. rouges (${stats.red_cards || 0})` : 'C. rouges', 
-      value: displayMode === 'real' ? stats.red_cards || 0 : Math.min(100, 100 - ((stats.red_cards || 0) * 50)), 
-      rawValue: stats.red_cards || 0,
-      percentile: Math.min(100, 100 - ((stats.red_cards || 0) * 50))
+      stat: displayMode === 'real' ? `Redcards (${totalRedCards || 0})` : 'Redcards', 
+      value: displayMode === 'real' ? totalRedCards || 0 : Math.min(100, 100 - ((totalRedCards || 0) * 50)), 
+      rawValue: totalRedCards || 0,
+      percentile: Math.min(100, 100 - ((totalRedCards || 0) * 50))
     },
     { 
-      stat: displayMode === 'real' ? `Pen. conc. (${stats.penalties_committed || 0})` : 'Pen. conc.', 
-      value: displayMode === 'real' ? stats.penalties_committed || 0 : Math.min(100, 100 - ((stats.penalties_committed || 0) * 25)), 
-      rawValue: stats.penalties_committed || 0,
-      percentile: Math.min(100, 100 - ((stats.penalties_committed || 0) * 25))
-    },
-    { 
-      stat: displayMode === 'real' ? `Erreurs→but (${stats.mistakes_leading_to_goals || 0})` : 'Erreurs→but', 
-      value: displayMode === 'real' ? stats.mistakes_leading_to_goals || 0 : Math.min(100, 100 - ((stats.mistakes_leading_to_goals || 0) * 50)), 
-      rawValue: stats.mistakes_leading_to_goals || 0,
-      percentile: Math.min(100, 100 - ((stats.mistakes_leading_to_goals || 0) * 50))
+      stat: displayMode === 'real' ? `OwnGoals (${stats.own_goals || 0})` : 'OwnGoals', 
+      value: displayMode === 'real' ? stats.own_goals || 0 : Math.min(100, 100 - ((stats.own_goals || 0) * 25)), 
+      rawValue: stats.own_goals || 0,
+      percentile: Math.min(100, 100 - ((stats.own_goals || 0) * 25))
     }
   ] : [];
 
   // 5. CARTE GARDIEN - Stats spécifiques gardien
   const goalkeeperData = isGoalkeeper ? [
     { 
-      stat: displayMode === 'real' ? `Arrêts (${stats.saves || 0})` : 'Arrêts', 
-      value: displayMode === 'real' ? Math.min(150, stats.saves || 0) : Math.min(100, (stats.saves || 0) / 1.5), 
-      rawValue: stats.saves || 0,
-      percentile: Math.min(100, (stats.saves || 0) / 1.5)
-    },
-    { 
-      stat: displayMode === 'real' ? `Arrêts surface (${stats.inside_box_saves || 0})` : 'Arrêts surface', 
-      value: displayMode === 'real' ? Math.min(100, stats.inside_box_saves || 0) : Math.min(100, (stats.inside_box_saves || 0) / 1), 
-      rawValue: stats.inside_box_saves || 0,
-      percentile: Math.min(100, (stats.inside_box_saves || 0) / 1)
-    },
-    { 
-      stat: displayMode === 'real' ? `Pen. arrêtés (${stats.penalties_saved || 0})` : 'Pen. arrêtés', 
-      value: displayMode === 'real' ? stats.penalties_saved || 0 : Math.min(100, (stats.penalties_saved || 0) * 33), 
-      rawValue: stats.penalties_saved || 0,
-      percentile: Math.min(100, (stats.penalties_saved || 0) * 33)
-    },
-    { 
-      stat: displayMode === 'real' ? `Clean sheets (${stats.clean_sheets || 0})` : 'Clean sheets', 
-      value: displayMode === 'real' ? stats.clean_sheets || 0 : Math.min(100, (stats.clean_sheets || 0) * 10), 
-      rawValue: stats.clean_sheets || 0,
-      percentile: Math.min(100, (stats.clean_sheets || 0) * 10)
-    },
-    { 
-      stat: displayMode === 'real' ? `Buts encaissés (${stats.goals_conceded || 0})` : 'Buts encaissés', 
+      stat: displayMode === 'real' ? `GoalsConceded (${stats.goals_conceded || 0})` : 'GoalsConceded', 
       value: displayMode === 'real' ? stats.goals_conceded || 0 : Math.min(100, 100 - ((stats.goals_conceded || 0) * 2.5)), 
       rawValue: stats.goals_conceded || 0,
       percentile: Math.min(100, 100 - ((stats.goals_conceded || 0) * 2.5))
     },
     { 
-      stat: displayMode === 'real' ? `Pen. concédés (${stats.penalties_committed || 0})` : 'Pen. concédés', 
-      value: displayMode === 'real' ? stats.penalties_committed || 0 : Math.min(100, 100 - ((stats.penalties_committed || 0) * 25)), 
-      rawValue: stats.penalties_committed || 0,
-      percentile: Math.min(100, 100 - ((stats.penalties_committed || 0) * 25))
+      stat: displayMode === 'real' ? `Saves (${stats.saves || 0})` : 'Saves', 
+      value: displayMode === 'real' ? Math.min(150, stats.saves || 0) : Math.min(100, (stats.saves || 0) / 1.5), 
+      rawValue: stats.saves || 0,
+      percentile: Math.min(100, (stats.saves || 0) / 1.5)
     },
     { 
-      stat: displayMode === 'real' ? `Erreurs→but (${stats.mistakes_leading_to_goals || 0})` : 'Erreurs→but', 
-      value: displayMode === 'real' ? stats.mistakes_leading_to_goals || 0 : Math.min(100, 100 - ((stats.mistakes_leading_to_goals || 0) * 50)), 
-      rawValue: stats.mistakes_leading_to_goals || 0,
-      percentile: Math.min(100, 100 - ((stats.mistakes_leading_to_goals || 0) * 50))
+      stat: displayMode === 'real' ? `SavesInsidebox (${stats.inside_box_saves || 0})` : 'SavesInsidebox', 
+      value: displayMode === 'real' ? Math.min(100, stats.inside_box_saves || 0) : Math.min(100, (stats.inside_box_saves || 0) / 1), 
+      rawValue: stats.inside_box_saves || 0,
+      percentile: Math.min(100, (stats.inside_box_saves || 0) / 1)
     }
   ] : [];
 
@@ -467,12 +420,12 @@ export default function StatsRadar({ stats, position }: StatsRadarProps) {
           <RadarChartComponent 
             data={generalDataGoalkeeper} 
             color="#3B82F6" 
-            title="📊 Général"
+            title="🟦 Général"
           />
           <RadarChartComponent 
             data={goalkeeperData} 
             color="#10B981" 
-            title="🥅 Gardien"
+            title="🧤 Gardien"
           />
         </div>
       </div>
@@ -521,17 +474,17 @@ export default function StatsRadar({ stats, position }: StatsRadarProps) {
         <RadarChartComponent 
           data={generalDataField} 
           color="#3B82F6" 
-          title="📊 Général"
+          title="🟦 Général"
         />
         <RadarChartComponent 
           data={offensiveData} 
           color="#EF4444" 
-          title="⚽ Offensif"
+          title="🔴 Offensif"
         />
         <RadarChartComponent 
           data={creativeData} 
           color="#10B981" 
-          title="🎯 Créatif (passes & dribbles)"
+          title="🟢 Créatif"
         />
         <RadarChartComponent 
           data={defensiveData} 

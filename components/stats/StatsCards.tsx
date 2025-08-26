@@ -28,23 +28,15 @@ function StatItem({ label, value, suffix = '' }: { label: string; value: number 
 
 // Carte Générale pour joueurs de champ
 function GeneralCard({ stats }: { stats: PlayerStatistics }) {
-  // Calculer la précision des tirs
-  const shotsAccuracy = stats.shots && stats.shots > 0 && stats.shots_on_target !== null && stats.shots_on_target !== undefined
-    ? ((stats.shots_on_target || 0) / stats.shots * 100) 
-    : null;
-    
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
-      <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">📊 Général</h3>
+      <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">🟦 Général</h3>
       <div className="space-y-1">
-        <StatItem label="Note moyenne" value={stats.rating} />
-        <StatItem label="Minutes jouées" value={stats.minutes} />
-        <StatItem label="Titularisations" value={stats.lineups} />
-        <StatItem label="Matchs joués" value={stats.appearences} />
-        <StatItem label="Capitaine" value={stats.captain} />
-        <StatItem label="Touches de balle" value={stats.touches} />
-        <StatItem label="Précision des tirs" value={shotsAccuracy} suffix="%" />
-        <StatItem label="Précision des passes" value={stats.passes_accuracy} suffix="%" />
+        <StatItem label="Appearances" value={stats.appearences} />
+        <StatItem label="Lineups" value={stats.lineups} />
+        <StatItem label="MinutesPlayed" value={stats.minutes} />
+        <StatItem label="Captain" value={stats.captain} />
+        <StatItem label="Rating" value={stats.rating} />
       </div>
     </div>
   );
@@ -71,24 +63,18 @@ function GeneralCardGoalkeeper({ stats }: { stats: PlayerStatistics }) {
 
 // Carte Offensive
 function OffensiveCard({ stats }: { stats: PlayerStatistics }) {
-  const penaltyAccuracy = stats.penalties && stats.penalties > 0 && stats.penalties_scored !== null && stats.penalties_scored !== undefined
-    ? ((stats.penalties_scored || 0) / stats.penalties * 100) 
-    : null;
-    
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
-      <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">⚽ Offensif</h3>
+      <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">🔴 Offensif</h3>
       <div className="space-y-1">
-        <StatItem label="Buts marqués" value={stats.goals} />
-        <StatItem label="Expected Goals (xG)" value={stats.expected_goals} />
-        <StatItem label="Passes décisives" value={stats.assists} />
-        <StatItem label="Expected Assists (xA)" value={stats.expected_assists} />
-        <StatItem label="Total tirs" value={stats.shots} />
-        <StatItem label="Total penalties" value={stats.penalties} />
-        <StatItem label="Précision des penalties" value={penaltyAccuracy} suffix="%" />
-        <StatItem label="Poteaux+barres" value={stats.hit_woodwork} />
-        <StatItem label="Hors-jeux" value={stats.offsides} />
-        <StatItem label="Pertes de balle" value={stats.ball_losses} />
+        <StatItem label="Goals" value={stats.goals} />
+        <StatItem label="Assists" value={stats.assists} />
+        <StatItem label="ShotsTotal" value={stats.shots} />
+        <StatItem label="ShotsOnTarget" value={stats.shots_on_target} />
+        <StatItem label="HitWoodwork" value={stats.hit_woodwork} />
+        <StatItem label="Offsides" value={stats.offsides} />
+        <StatItem label="Hattricks" value={stats.hattricks} />
+        <StatItem label="BigChancesMissed" value={stats.big_chances_missed} />
       </div>
     </div>
   );
@@ -96,20 +82,21 @@ function OffensiveCard({ stats }: { stats: PlayerStatistics }) {
 
 // Carte Créative (passes & dribbles)
 function CreativeCard({ stats }: { stats: PlayerStatistics }) {
-  const dribbleAccuracy = stats.dribbles && stats.dribbles > 0 && stats.dribbles_succeeded !== null && stats.dribbles_succeeded !== undefined
-    ? ((stats.dribbles_succeeded || 0) / stats.dribbles * 100)
-    : null;
-    
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
-      <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">🎯 Créatif</h3>
+      <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">🟢 Créatif</h3>
       <div className="space-y-1">
-        <StatItem label="Total passes" value={stats.passes_total || stats.passes} />
-        <StatItem label="Passes clés" value={stats.key_passes} />
-        <StatItem label="Total centres" value={stats.crosses_total || stats.crosses} />
-        <StatItem label="Précision des centres" value={stats.crosses_accuracy} suffix="%" />
-        <StatItem label="Total dribbles" value={stats.dribbles} />
-        <StatItem label="Précision des dribbles" value={dribbleAccuracy} suffix="%" />
+        <StatItem label="Passes" value={stats.passes_total || stats.passes} />
+        <StatItem label="AccuratePassesPercentage" value={stats.passes_accuracy} suffix="%" />
+        <StatItem label="SuccessfulPassesPercentage" value={stats.passes_accuracy} suffix="%" />
+        <StatItem label="KeyPasses" value={stats.key_passes} />
+        <StatItem label="BigChancesCreated" value={stats.big_chances_created} />
+        <StatItem label="ThroughBalls" value={stats.through_balls} />
+        <StatItem label="ThroughBallsWon" value={stats.through_balls_won} />
+        <StatItem label="LongBalls" value={stats.long_balls} />
+        <StatItem label="LongBallsWon" value={stats.long_balls_won} />
+        <StatItem label="TotalCrosses" value={stats.crosses_total || stats.crosses} />
+        <StatItem label="AccurateCrosses" value={stats.accurate_crosses} />
       </div>
     </div>
   );
@@ -123,19 +110,18 @@ function DefensiveCard({ stats }: { stats: PlayerStatistics }) {
     <div className="bg-white rounded-lg shadow-md p-6">
       <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">🛡️ Défensif & Discipline</h3>
       <div className="space-y-1">
-        <StatItem label="Récupérations" value={stats.ball_recoveries} />
-        <StatItem label="Tacles" value={stats.tackles} />
-        <StatItem label="Interceptions" value={stats.interceptions} />
-        <StatItem label="Total duels" value={stats.duels} />
-        <StatItem label="Duels gagnés" value={stats.duels_won} />
-        <StatItem label="Total duels aériens" value={stats.aerial_duels} />
-        <StatItem label="Duels aériens gagnés" value={stats.aerial_duels_won} />
-        <StatItem label="Fautes commises" value={stats.fouls} />
-        <StatItem label="Fautes subies" value={stats.fouls_drawn} />
-        <StatItem label="Cartons jaunes" value={stats.yellow_cards} />
-        <StatItem label="Cartons rouges" value={totalRedCards} />
-        <StatItem label="Penalties concédés" value={stats.penalties_committed} />
-        <StatItem label="Erreurs entraînant un but" value={stats.mistakes_leading_to_goals} />
+        <StatItem label="TotalDuels" value={stats.duels} />
+        <StatItem label="DuelsWon" value={stats.duels_won} />
+        <StatItem label="AerialsWon" value={stats.aerial_duels_won} />
+        <StatItem label="Tackles" value={stats.tackles} />
+        <StatItem label="DribbledPast" value={stats.dribbled_past} />
+        <StatItem label="ErrorLeadToGoal" value={stats.mistakes_leading_to_goals} />
+        <StatItem label="Crosses Blocked" value={stats.crosses_blocked} />
+        <StatItem label="Fouls" value={stats.fouls} />
+        <StatItem label="FoulsDrawn" value={stats.fouls_drawn} />
+        <StatItem label="Yellowcards" value={stats.yellow_cards} />
+        <StatItem label="Redcards" value={totalRedCards} />
+        <StatItem label="OwnGoals" value={stats.own_goals} />
       </div>
     </div>
   );
@@ -145,15 +131,11 @@ function DefensiveCard({ stats }: { stats: PlayerStatistics }) {
 function GoalkeeperCard({ stats }: { stats: PlayerStatistics }) {
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
-      <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">🥅 Gardien</h3>
+      <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">🧤 Gardien</h3>
       <div className="space-y-1">
-        <StatItem label="Arrêts" value={stats.saves} />
-        <StatItem label="Arrêts dans la surface" value={stats.inside_box_saves} />
-        <StatItem label="Penalties arrêtés" value={stats.penalties_saved} />
-        <StatItem label="Clean sheets" value={stats.clean_sheets} />
-        <StatItem label="Buts encaissés" value={stats.goals_conceded} />
-        <StatItem label="Penalties concédés" value={stats.penalties_committed} />
-        <StatItem label="Erreurs entraînant un but" value={stats.mistakes_leading_to_goals} />
+        <StatItem label="GoalsConceded" value={stats.goals_conceded} />
+        <StatItem label="Saves" value={stats.saves} />
+        <StatItem label="SavesInsidebox" value={stats.inside_box_saves} />
       </div>
     </div>
   );
