@@ -37,34 +37,34 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState<'name' | 'position'>('position');
 
-  // Classement Premier League 2025/2026
+  // Classement Premier League 2024/2025 (saison dernière)
   const premierLeagueRanking: Record<string, number> = {
     'liverpool': 1,
     'arsenal': 2,
     'manchester-city': 3,
     'chelsea': 4,
-    'newcastle': 5,
+    'newcastle-united': 5,
     'aston-villa': 6,
     'nottingham-forest': 7,
-    'brighton': 8,
-    'bournemouth': 9,
+    'brighton-hove-albion': 8,
+    'afc-bournemouth': 9,
     'brentford': 10,
     'fulham': 11,
     'crystal-palace': 12,
     'everton': 13,
-    'west-ham': 14,
+    'west-ham-united': 14,
     'manchester-united': 15,
-    'wolves': 16,
-    'tottenham': 17,
-    // Clubs promus (n'étaient pas en Premier League 2025/2026)
+    'wolverhampton-wanderers': 16,
+    'tottenham-hotspur': 17,
+    // Clubs promus cette saison (remplacent Leicester, Ipswich, Southampton)
     'burnley': 18,
     'sunderland': 19,
-    'leeds': 20
+    'leeds-united': 20
   };
 
-  // Classement Ligue 1 2025/2026
+  // Classement Ligue 1 2024/2025 (saison dernière)
   const ligue1Ranking: Record<string, number> = {
-    'psg': 1,
+    'paris-saint-germain': 1,
     'marseille': 2,
     'monaco': 3,
     'nice': 4,
@@ -79,21 +79,21 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
     'nantes': 13,
     'angers': 14,
     'le-havre': 15,
-    // Clubs promus (Reims, Saint-Étienne, Montpellier ont été relégués)
-    'paris-fc': 16,
+    // Clubs promus cette saison (remplacent Reims, Saint-Étienne, Montpellier)
+    'lorient': 16,
     'metz': 17,
-    'lorient': 18
+    'paris': 18
   };
 
-  // Classement Liga 2025/2026
+  // Classement Liga 2024/2025 (saison dernière)
   const ligaRanking: Record<string, number> = {
     'barcelona': 1,
     'real-madrid': 2,
     'atletico-madrid': 3,
-    'athletic-bilbao': 4,
+    'athletic-club': 4,
     'villarreal': 5,
     'real-betis': 6,
-    'celta-vigo': 7,
+    'celta-de-vigo': 7,
     'rayo-vallecano': 8,
     'osasuna': 9,
     'mallorca': 10,
@@ -101,16 +101,16 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
     'valencia': 12,
     'getafe': 13,
     'espanyol': 14,
-    'alaves': 15,
+    'deportivo-alaves': 15,
     'girona': 16,
     'sevilla': 17,
-    // Clubs promus (Leganés, Las Palmas, Valladolid ne sont pas dans nos données)
+    // Clubs promus cette saison (remplacent Leganes, Las Palmas, Valladolid)
     'levante': 18,
     'elche': 19,
     'real-oviedo': 20
   };
 
-  // Classement Serie A 2025/2026
+  // Classement Serie A 2024/2025 (saison dernière)
   const serieARanking: Record<string, number> = {
     'napoli': 1,
     'inter': 2,
@@ -125,37 +125,37 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
     'torino': 11,
     'udinese': 12,
     'genoa': 13,
-    'verona': 14,
+    'hellas-verona': 14,
     'cagliari': 15,
-    'parme': 16,
+    'parma': 16,
     'lecce': 17,
-    // Clubs promus (Empoli, Venezia, Monza relégués)
+    // Clubs promus cette saison (remplacent Empoli, Venezia, Monza)
     'sassuolo': 18,
     'cremonese': 19,
-    'pise': 20
+    'pisa': 20
   };
 
-  // Classement Bundesliga 2025/2026
+  // Classement Bundesliga 2024/2025 (saison dernière)
   const bundesligaRanking: Record<string, number> = {
-    'bayern': 1,
+    'bayern-munich': 1,
     'bayer-leverkusen': 2,
     'eintracht-frankfurt': 3,
     'borussia-dortmund': 4,
     'freiburg': 5,
     'mainz': 6,
-    'leipzig': 7,
-    'werder': 8,
+    'rb-leipzig': 7,
+    'werder-bremen': 8,
     'stuttgart': 9,
     'borussia-monchengladbach': 10,
     'wolfsburg': 11,
     'augsburg': 12,
     'union-berlin': 13,
-    'sankt-pauli': 14,
+    'st-pauli': 14,
     'hoffenheim': 15,
     'heidenheim': 16,
-    // Clubs promus (Holstein Kiel et VfL Bochum relégués)
+    // Clubs promus cette saison (remplacent Holstein Kiel, VfL Bochum)
     'koln': 17,
-    'hambourg': 18
+    'hamburger-sv': 18
   };
 
   const filteredTeams = teams
@@ -165,15 +165,15 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
       
       // Pour la Premier League, utiliser le classement personnalisé
       if (leagueId === 'premier-league') {
-        const posA = premierLeagueRanking[String(a.id)] || 999;
-        const posB = premierLeagueRanking[String(b.id)] || 999;
+        const posA = premierLeagueRanking[a.slug] || 999;
+        const posB = premierLeagueRanking[b.slug] || 999;
         return posA - posB;
       }
       
       // Pour la Ligue 1, utiliser le classement personnalisé
       if (leagueId === 'ligue1') {
-        const posA = ligue1Ranking[String(a.id)] || 999;
-        const posB = ligue1Ranking[String(b.id)] || 999;
+        const posA = ligue1Ranking[a.slug] || 999;
+        const posB = ligue1Ranking[b.slug] || 999;
         return posA - posB;
       }
       
