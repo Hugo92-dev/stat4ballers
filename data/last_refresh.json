@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-08-27T13:03:02.104550",
+  "success_count": 0,
+  "error_count": 3,
+  "duration_minutes": 0.19,
+  "scripts_executed": [
+    "fetch_all_leagues_all_players_optimized.py",
+    "fetch_all_teams_stats.py",
+    "fetch_complete_all_teams_all_players.py"
+  ]
+}

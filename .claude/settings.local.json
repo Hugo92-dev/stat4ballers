@@ -52,7 +52,8 @@
       "Bash(if [ -f \"data/serie-a_2025_2026/milan.json\" ])",
       "Bash(pip install:*)",
       "Bash(git clean:*)",
-      "Bash(rg:*)"
+      "Bash(rg:*)",
+      "Bash(npm run refresh:test:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",
