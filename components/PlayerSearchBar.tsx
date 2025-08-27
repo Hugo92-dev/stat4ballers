@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { fullSearchDatabase as searchDatabase } from '@/data/searchDatabase';
 import { getClubLogoPath } from '@/data/clubLogosMapping';
+import { fuzzyMatch } from '@/utils/stringUtils';
 import Image from 'next/image';
 
 interface Player {
@@ -53,8 +54,8 @@ export default function PlayerSearchBar({ onPlayerSelect, placeholder = "Recherc
       const filtered = searchDatabase
         .filter(item => item.type === 'player')
         .filter(item => {
-          const inName = item.name.toLowerCase().includes(searchQuery);
-          const inTerms = item.searchTerms.some(term => term.toLowerCase().includes(searchQuery));
+          const inName = fuzzyMatch(searchQuery, item.name);
+          const inTerms = item.searchTerms.some(term => fuzzyMatch(searchQuery, term));
           return inName || inTerms;
         });
       

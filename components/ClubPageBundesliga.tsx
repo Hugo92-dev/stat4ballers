@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { getClubLogoPath } from '@/data/clubLogosMapping';
 import { bundesligaTeams } from '@/data/bundesligaTeams';
 import { slugifyPlayer } from '@/utils/slugify';
+import { fuzzyMatch } from '@/utils/stringUtils';
 
 interface ClubPageProps {
   clubId: string;
@@ -57,9 +58,9 @@ export default function ClubPageBundesliga({
   
   // Filtrer les joueurs selon la recherche
   const filteredPlayers = team.players.filter(player =>
-    player.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    player.position.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    (player.nationality && player.nationality.toLowerCase().includes(searchTerm.toLowerCase()))
+    fuzzyMatch(searchTerm, player.name) ||
+    fuzzyMatch(searchTerm, player.position) ||
+    (player.nationality && fuzzyMatch(searchTerm, player.nationality))
   );
   
   // Grouper les joueurs par position

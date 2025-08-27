@@ -5,6 +5,7 @@ import { getClubLogoPath } from '@/data/clubLogosMapping';
 import { slugifyPlayer } from '@/utils/slugify';
 import { teamDetails } from '@/data/teamDetailsFromAPI';
 import { getClubColors } from '@/data/clubColors';
+import { fuzzyMatch } from '@/utils/stringUtils';
 import MinimalistClubHeader from '@/components/MinimalistClubHeader';
 import MinimalistSearchBar from '@/components/MinimalistSearchBar';
 import MinimalistPlayerCard from '@/components/MinimalistPlayerCard';
@@ -98,12 +99,13 @@ export default function MinimalistClubPage({
   
   // Filtrer les joueurs selon la recherche
   const filteredPlayers = team.players.filter(player => {
-    const name = (player.nom || player.name || '').toLowerCase();
-    const position = (player.position || '').toLowerCase();
-    const nationality = (player.nationalite || player.nationality || '').toLowerCase();
-    const term = searchTerm.toLowerCase();
+    const name = player.nom || player.name || '';
+    const position = player.position || '';
+    const nationality = player.nationalite || player.nationality || '';
     
-    return name.includes(term) || position.includes(term) || nationality.includes(term);
+    return fuzzyMatch(searchTerm, name) || 
+           fuzzyMatch(searchTerm, position) || 
+           fuzzyMatch(searchTerm, nationality);
   });
   
   // Grouper les joueurs par position

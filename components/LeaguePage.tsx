@@ -6,6 +6,7 @@ import { useState } from 'react';
 import SearchBar from '@/components/SearchBar';
 import { leagueLogos } from '@/data/logos';
 import { getClubLogoPath } from '@/data/clubLogosMapping';
+import { fuzzyMatch } from '@/utils/stringUtils';
 
 interface Team {
   id: string | number;
@@ -154,7 +155,7 @@ export default function LeaguePage({ leagueId, leagueName, leagueFlag, teams, gr
   };
 
   const filteredTeams = teams
-    .filter(team => team && team.name && team.name.toLowerCase().includes(searchTerm.toLowerCase()))
+    .filter(team => team && team.name && fuzzyMatch(searchTerm, team.name))
     .sort((a, b) => {
       if (sortBy === 'name') return a.name.localeCompare(b.name);
       

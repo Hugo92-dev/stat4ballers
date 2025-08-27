@@ -1,6 +1,7 @@
 'use client';
 
 import { ClubColors } from '@/data/clubColors';
+import { normalizeSearchQuery } from '@/utils/stringUtils';
 
 interface MinimalistSearchBarProps {
   searchTerm: string;
