@@ -11,6 +11,7 @@ import ViewSelector from '@/components/stats/ViewSelector';
 import { getPlayerStatistics, PlayerStatsResponse, PlayerStatistics } from '@/services/sportmonks';
 import { slugifyPlayer } from '@/utils/slugify';
 import { getOMPlayerIds } from '@/services/sportmonks';
+import { translatePosition, translateNationality } from '@/utils/translations';
 
 interface PlayerPageWithStatsProps {
   player: Player;
@@ -33,7 +34,7 @@ export default function PlayerPageWithStats({
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Calculer l'âge à partir de la date de naissance
+  // Calculer l'âge à partir de la date de naissance ou utiliser l'âge stocké
   const calculateAge = (birthDate: string | undefined): number => {
     if (!birthDate) return 0;
     const today = new Date();
@@ -46,7 +47,14 @@ export default function PlayerPageWithStats({
     return age;
   };
 
-  const age = calculateAge(player.dateOfBirth);
+  const age = player.age || calculateAge(player.dateOfBirth);
+
+  // Obtenir la nationalité traduite
+  const nationality = player.nationalite || player.nationality;
+  const translatedNationality = nationality ? translateNationality(nationality) : null;
+
+  // Obtenir la position traduite
+  const translatedPosition = translatePosition(player.position);
 
   // Charger les statistiques du joueur
   useEffect(() => {
@@ -200,12 +208,12 @@ export default function PlayerPageWithStats({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div>
               <p className="text-gray-600 text-sm">Position</p>
-              <p className="text-lg font-semibold">{player.position}</p>
+              <p className="text-lg font-semibold">{translatedPosition}</p>
             </div>
             
             <div>
               <p className="text-gray-600 text-sm">Nationalité</p>
-              <p className="text-lg font-semibold">{player.nationality}</p>
+              <p className="text-lg font-semibold">{translatedNationality || 'N/A'}</p>
             </div>
             
             <div>
