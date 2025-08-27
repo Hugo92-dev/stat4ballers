@@ -49,8 +49,8 @@ const leagues = [
 
 const features = [
   {
-    title: 'Statistiques Générales',
-    description: 'Buts, passes décisives, temps de jeu, valeur marchande',
+    title: '⚽ Carte Générale',
+    description: 'Statistiques globales du joueur sur la saison',
     gradient: 'from-blue-500 to-indigo-600',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,8 +59,8 @@ const features = [
     )
   },
   {
-    title: 'Performance Offensive',
-    description: 'xG, xA, tirs cadrés, courses vers l\'avant',
+    title: '⚔️ Carte Offensive',
+    description: 'Performance et statistiques offensives détaillées',
     gradient: 'from-red-500 to-pink-600',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,8 +69,18 @@ const features = [
     )
   },
   {
-    title: 'Impact Défensif',
-    description: 'Tacles, interceptions, duels aériens, pressings',
+    title: '🧑‍🎨 Carte Créative',
+    description: 'Capacités de création, de vista et de passes',
+    gradient: 'from-purple-500 to-violet-600',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+      </svg>
+    )
+  },
+  {
+    title: '🛡️ Carte Défensive',
+    description: 'Impact défensif et nombre de cartons',
     gradient: 'from-green-500 to-emerald-600',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,12 +89,12 @@ const features = [
     )
   },
   {
-    title: 'Créativité',
-    description: 'Passes clés, dribbles, centres, passes vers l\'avant',
-    gradient: 'from-purple-500 to-violet-600',
+    title: '🧤 Carte Gardien',
+    description: 'Statistiques spécifiques pour les gardiens de but',
+    gradient: 'from-orange-500 to-amber-600',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
       </svg>
     )
   }
@@ -229,29 +239,29 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-black mb-4 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-              4 Dimensions d'Analyse
+              5 Dimensions d'Analyse
             </h2>
             <p className="text-gray-600 text-lg font-light max-w-2xl mx-auto">
               Une vision complète et détaillée des performances de chaque joueur
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group relative"
+                className="group relative h-full"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity transform scale-105"></div>
-                <div className="relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100">
-                  <div className={`inline-flex p-4 bg-gradient-to-br ${feature.gradient} rounded-2xl text-white mb-6 group-hover:scale-110 transition-transform`}>
+                <div className="relative bg-white rounded-3xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 h-full flex flex-col">
+                  <div className={`inline-flex p-4 bg-gradient-to-br ${feature.gradient} rounded-2xl text-white mb-4 group-hover:scale-110 transition-transform self-center`}>
                     {feature.icon}
                   </div>
                   
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">
+                  <h3 className="text-lg font-bold mb-2 text-gray-900 text-center min-h-[3rem] flex items-center justify-center">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 text-sm leading-relaxed text-center flex-1 flex items-center justify-center">
                     {feature.description}
                   </p>
                 </div>

@@ -49,7 +49,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Données</h3>
             <p className="text-sm">
-              Données automatiquement mises à jour depuis FBref, Transfermarkt et StatsBomb.
+              Données automatiquement mises à jour par notre système API. Garantissant des données à jour et fiables.
             </p>
           </div>
         </div>
