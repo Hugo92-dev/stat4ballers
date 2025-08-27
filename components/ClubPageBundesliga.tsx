@@ -7,6 +7,7 @@ import { getClubLogoPath } from '@/data/clubLogosMapping';
 import { bundesligaTeams } from '@/data/bundesligaTeams';
 import { slugifyPlayer } from '@/utils/slugify';
 import { fuzzyMatch } from '@/utils/stringUtils';
+import { translatePosition, translateNationality } from '@/utils/translations';
 
 interface ClubPageProps {
   clubId: string;
@@ -193,7 +194,7 @@ export default function ClubPageBundesliga({
                           </div>
                           <div>
                             <h3 className="text-white font-semibold text-lg">{playerDisplayName}</h3>
-                            <p className="text-gray-400 text-sm">{player.position}</p>
+                            <p className="text-gray-400 text-sm">{translatePosition(player.position)}</p>
                           </div>
                         </div>
                       </div>
@@ -206,7 +207,7 @@ export default function ClubPageBundesliga({
                         )}
                         {player.nationality && player.nationality !== 'Unknown' && (
                           <div className="text-gray-400">
-                            <span className="text-gray-500">Nationalité:</span> {player.nationality}
+                            <span className="text-gray-500">Nationalité:</span> {translateNationality(player.nationality)}
                           </div>
                         )}
                         {player.height && (

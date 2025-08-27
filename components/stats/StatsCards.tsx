@@ -32,11 +32,11 @@ function GeneralCard({ stats }: { stats: PlayerStatistics }) {
     <div className="bg-white rounded-lg shadow-md p-6">
       <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">⚽ Carte Générale</h3>
       <div className="space-y-1">
-        <StatItem label="Appearances" value={stats.appearences} />
-        <StatItem label="Lineups" value={stats.lineups} />
-        <StatItem label="Minutes Played" value={stats.minutes} />
-        <StatItem label="Captain" value={stats.captain} />
-        <StatItem label="Rating" value={stats.rating} />
+        <StatItem label="Matchs joués" value={stats.appearences} />
+        <StatItem label="Titularisations" value={stats.lineups} />
+        <StatItem label="Minutes jouées" value={stats.minutes} />
+        <StatItem label="Capitaine" value={stats.captain} />
+        <StatItem label="Note moyenne" value={stats.rating} />
       </div>
     </div>
   );
@@ -67,12 +67,12 @@ function OffensiveCard({ stats }: { stats: PlayerStatistics }) {
     <div className="bg-white rounded-lg shadow-md p-6">
       <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">⚔️ Carte Offensive</h3>
       <div className="space-y-1">
-        <StatItem label="Goals" value={stats.goals} />
-        <StatItem label="Assists" value={stats.assists} />
-        <StatItem label="Shots Total" value={stats.shots} />
-        <StatItem label="Shots On Target" value={stats.shots_on_target} />
-        <StatItem label="Hit Woodwork" value={stats.hit_woodwork} />
-        <StatItem label="Offsides" value={stats.offsides} />
+        <StatItem label="Buts" value={stats.goals} />
+        <StatItem label="Passes décisives" value={stats.assists} />
+        <StatItem label="Tirs tentés" value={stats.shots} />
+        <StatItem label="Tirs cadrés" value={stats.shots_on_target} />
+        <StatItem label="Tirs sur les montants" value={stats.hit_woodwork} />
+        <StatItem label="Hors-jeu" value={stats.offsides} />
       </div>
     </div>
   );
@@ -85,9 +85,9 @@ function CreativeCard({ stats }: { stats: PlayerStatistics }) {
       <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">🧑‍🎨 Carte Créative</h3>
       <div className="space-y-1">
         <StatItem label="Passes" value={stats.passes_total || stats.passes} />
-        <StatItem label="Accurate Passes %" value={stats.passes_accuracy} suffix="%" />
-        <StatItem label="Key Passes" value={stats.key_passes} />
-        <StatItem label="Total Crosses" value={stats.crosses_total || stats.crosses} />
+        <StatItem label="Précision des passes" value={stats.passes_accuracy} suffix="%" />
+        <StatItem label="Passes clés" value={stats.key_passes} />
+        <StatItem label="Centres" value={stats.crosses_total || stats.crosses} />
       </div>
     </div>
   );
@@ -101,14 +101,14 @@ function DefensiveCard({ stats }: { stats: PlayerStatistics }) {
     <div className="bg-white rounded-lg shadow-md p-6">
       <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">🛡️ Carte Défensive & Discipline</h3>
       <div className="space-y-1">
-        <StatItem label="Total Duels" value={stats.duels} />
-        <StatItem label="Duels Won" value={stats.duels_won} />
-        <StatItem label="Aerials Won" value={stats.aerial_duels_won} />
-        <StatItem label="Tackles" value={stats.tackles} />
-        <StatItem label="Fouls" value={stats.fouls} />
-        <StatItem label="Fouls Drawn" value={stats.fouls_drawn} />
-        <StatItem label="Yellow Cards" value={stats.yellow_cards} />
-        <StatItem label="Red Cards" value={totalRedCards} />
+        <StatItem label="Duels totaux" value={stats.duels} />
+        <StatItem label="Duels gagnés" value={stats.duels_won} />
+        <StatItem label="Duels aériens gagnés" value={stats.aerial_duels_won} />
+        <StatItem label="Tacles" value={stats.tackles} />
+        <StatItem label="Fautes commises" value={stats.fouls} />
+        <StatItem label="Fautes subies" value={stats.fouls_drawn} />
+        <StatItem label="Cartons jaunes" value={stats.yellow_cards} />
+        <StatItem label="Cartons rouges" value={totalRedCards} />
       </div>
     </div>
   );
@@ -120,9 +120,9 @@ function GoalkeeperCard({ stats }: { stats: PlayerStatistics }) {
     <div className="bg-white rounded-lg shadow-md p-6">
       <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">🧤 Carte Gardien</h3>
       <div className="space-y-1">
-        <StatItem label="Goals Conceded" value={stats.goals_conceded} />
-        <StatItem label="Saves" value={stats.saves} />
-        <StatItem label="Saves Inside Box" value={stats.inside_box_saves} />
+        <StatItem label="Buts encaissés" value={stats.goals_conceded} />
+        <StatItem label="Arrêts" value={stats.saves} />
+        <StatItem label="Arrêts dans la surface" value={stats.inside_box_saves} />
       </div>
     </div>
   );

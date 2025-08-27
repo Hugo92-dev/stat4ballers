@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ClubColors } from '@/data/clubColors';
+import { translateNationality, translatePosition } from '@/utils/translations';
 
 interface MinimalistPlayerCardProps {
   player: {
@@ -85,7 +86,7 @@ export default function MinimalistPlayerCard({
                     {jerseyNumber}
                   </span>
                 )}
-                <span className="text-xs text-gray-500 font-medium">{player.position}</span>
+                <span className="text-xs text-gray-500 font-medium">{translatePosition(player.position)}</span>
               </div>
             </div>
           </div>
@@ -95,7 +96,7 @@ export default function MinimalistPlayerCard({
             {nationality && (
               <div className="flex justify-between">
                 <span className="text-gray-400">Nationalité</span>
-                <span className="font-medium truncate ml-2">{nationality}</span>
+                <span className="font-medium truncate ml-2">{translateNationality(nationality)}</span>
               </div>
             )}
             

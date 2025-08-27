@@ -7,6 +7,7 @@ import { getClubLogoPath } from '@/data/clubLogosMapping';
 import { premierLeagueTeams } from '@/data/premierLeagueTeams';
 import { slugifyPlayer } from '@/utils/slugify';
 import { fuzzyMatch } from '@/utils/stringUtils';
+import { translatePosition } from '@/utils/translations';
 
 interface ClubPageProps {
   clubId: string;
@@ -193,7 +194,7 @@ export default function ClubPagePremierLeague({
                           </div>
                           <div>
                             <h3 className="text-white font-semibold text-lg">{playerDisplayName}</h3>
-                            <p className="text-gray-400 text-sm">{player.position}</p>
+                            <p className="text-gray-400 text-sm">{translatePosition(player.position)}</p>
                           </div>
                         </div>
                       </div>

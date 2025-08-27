@@ -53,7 +53,11 @@
       "Bash(pip install:*)",
       "Bash(git clean:*)",
       "Bash(rg:*)",
-      "Bash(npm run refresh:test:*)"
+      "Bash(npm run refresh:test:*)",
+      "Bash(do basename \"$file\" .json)",
+      "Bash(git log:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm cache clean:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",

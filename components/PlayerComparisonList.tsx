@@ -358,7 +358,7 @@ export default function PlayerComparisonList({ players }: PlayerComparisonListPr
               <ComparisonRow label="Arrêts" values={players.map(p => p.stats.saves)} />
               <ComparisonRow label="Arrêts dans la surface" values={players.map(p => p.stats.inside_box_saves)} />
               <ComparisonRow label="Penalties arrêtés" values={players.map(p => p.stats.penalties_saved)} />
-              <ComparisonRow label="Clean sheets" values={players.map(p => p.stats.clean_sheets)} />
+              <ComparisonRow label="Matchs sans encaisser" values={players.map(p => p.stats.clean_sheets)} />
               <ComparisonRow label="Buts encaissés" values={players.map(p => p.stats.goals_conceded)} isNegative />
               <ComparisonRow label="Penalties concédés" values={players.map(p => p.stats.penalties_committed)} isNegative />
               <ComparisonRow label="Erreurs→but" values={players.map(p => p.stats.mistakes_leading_to_goals)} isNegative />
