@@ -420,12 +420,27 @@ export async function getPlayerStatistics(
     
     // Calculer les stats cumulées
     const allSeasons = [current, prev1, prev2].filter(s => s !== null);
+    
+    // Calculer la moyenne du rating (seulement les saisons où le rating existe)
+    const ratingsWithValues = allSeasons.filter(s => s?.rating && s.rating > 0);
+    const averageRating = ratingsWithValues.length > 0 
+      ? ratingsWithValues.reduce((sum, s) => sum + (s?.rating ?? 0), 0) / ratingsWithValues.length 
+      : undefined;
+    
+    // Calculer la précision des passes moyenne pondérée par le nombre de passes
+    const totalPassesCompleted = allSeasons.reduce((sum, s) => sum + (s?.passes_completed ?? 0), 0);
+    const totalPasses = allSeasons.reduce((sum, s) => sum + (s?.passes ?? 0), 0);
+    const averagePassAccuracy = totalPasses > 0 
+      ? (totalPassesCompleted / totalPasses) * 100 
+      : undefined;
+    
     const cumulative: PlayerStatistics | null = allSeasons.length > 0 ? {
       season_name: 'Toutes saisons',
       minutes: allSeasons.reduce((sum, s) => sum + (s?.minutes ?? 0), 0),
       appearences: allSeasons.reduce((sum, s) => sum + (s?.appearences ?? 0), 0),
       lineups: allSeasons.reduce((sum, s) => sum + (s?.lineups ?? 0), 0),
       captain: allSeasons.reduce((sum, s) => sum + (s?.captain ?? 0), 0),
+      rating: averageRating,
       touches: allSeasons.reduce((sum, s) => sum + (s?.touches ?? 0), 0),
       goals: allSeasons.reduce((sum, s) => sum + (s?.goals ?? 0), 0),
       assists: allSeasons.reduce((sum, s) => sum + (s?.assists ?? 0), 0),
@@ -441,6 +456,7 @@ export async function getPlayerStatistics(
       passes: allSeasons.reduce((sum, s) => sum + (s?.passes ?? 0), 0),
       passes_total: allSeasons.reduce((sum, s) => sum + (s?.passes ?? 0), 0),
       passes_completed: allSeasons.reduce((sum, s) => sum + (s?.passes_completed ?? 0), 0),
+      passes_accuracy: averagePassAccuracy,
       key_passes: allSeasons.reduce((sum, s) => sum + (s?.key_passes ?? 0), 0),
       crosses: allSeasons.reduce((sum, s) => sum + (s?.crosses ?? 0), 0),
       crosses_total: allSeasons.reduce((sum, s) => sum + (s?.crosses ?? 0), 0),
@@ -484,6 +500,83 @@ export async function getPlayerStatistics(
   
   // Si pas de données locales, retourner les données simulées
   return generateMockStats(playerId, league);
+}
+
+/**
+ * Calcule les statistiques cumulatives pour plusieurs saisons
+ */
+export function calculateCumulativeStats(seasons: PlayerStatistics[]): PlayerStatistics | null {
+  if (!seasons || seasons.length === 0) return null;
+  
+  // Calculer la moyenne du rating (seulement les saisons où le rating existe)
+  const ratingsWithValues = seasons.filter(s => s?.rating && s.rating > 0);
+  const averageRating = ratingsWithValues.length > 0 
+    ? ratingsWithValues.reduce((sum, s) => sum + (s?.rating ?? 0), 0) / ratingsWithValues.length 
+    : undefined;
+  
+  // Calculer la précision des passes moyenne pondérée par le nombre de passes
+  const totalPassesCompleted = seasons.reduce((sum, s) => sum + (s?.passes_completed ?? 0), 0);
+  const totalPasses = seasons.reduce((sum, s) => sum + (s?.passes ?? 0), 0);
+  const averagePassAccuracy = totalPasses > 0 
+    ? (totalPassesCompleted / totalPasses) * 100 
+    : undefined;
+  
+  return {
+    season_name: 'Total des 3 dernières saisons',
+    minutes: seasons.reduce((sum, s) => sum + (s?.minutes ?? 0), 0),
+    appearences: seasons.reduce((sum, s) => sum + (s?.appearences ?? 0), 0),
+    lineups: seasons.reduce((sum, s) => sum + (s?.lineups ?? 0), 0),
+    captain: seasons.reduce((sum, s) => sum + (s?.captain ?? 0), 0),
+    rating: averageRating,
+    touches: seasons.reduce((sum, s) => sum + (s?.touches ?? 0), 0),
+    goals: seasons.reduce((sum, s) => sum + (s?.goals ?? 0), 0),
+    assists: seasons.reduce((sum, s) => sum + (s?.assists ?? 0), 0),
+    expected_goals: seasons.reduce((sum, s) => sum + (s?.expected_goals ?? 0), 0),
+    expected_assists: seasons.reduce((sum, s) => sum + (s?.expected_assists ?? 0), 0),
+    shots: seasons.reduce((sum, s) => sum + (s?.shots ?? 0), 0),
+    shots_on_target: seasons.reduce((sum, s) => sum + (s?.shots_on_target ?? 0), 0),
+    penalties: seasons.reduce((sum, s) => sum + (s?.penalties ?? 0), 0),
+    penalties_scored: seasons.reduce((sum, s) => sum + (s?.penalties_scored ?? 0), 0),
+    penalties_missed: seasons.reduce((sum, s) => sum + (s?.penalties_missed ?? 0), 0),
+    hit_woodwork: seasons.reduce((sum, s) => sum + (s?.hit_woodwork ?? 0), 0),
+    offsides: seasons.reduce((sum, s) => sum + (s?.offsides ?? 0), 0),
+    passes: seasons.reduce((sum, s) => sum + (s?.passes ?? 0), 0),
+    passes_total: seasons.reduce((sum, s) => sum + (s?.passes_total ?? 0), 0),
+    passes_completed: totalPassesCompleted,
+    passes_accuracy: averagePassAccuracy,
+    key_passes: seasons.reduce((sum, s) => sum + (s?.key_passes ?? 0), 0),
+    crosses: seasons.reduce((sum, s) => sum + (s?.crosses ?? 0), 0),
+    crosses_total: seasons.reduce((sum, s) => sum + (s?.crosses_total ?? 0), 0),
+    crosses_accurate: seasons.reduce((sum, s) => sum + (s?.crosses_accurate ?? 0), 0),
+    dribbles: seasons.reduce((sum, s) => sum + (s?.dribbles ?? 0), 0),
+    dribbles_succeeded: seasons.reduce((sum, s) => sum + (s?.dribbles_succeeded ?? 0), 0),
+    dribbles_successful: seasons.reduce((sum, s) => sum + (s?.dribbles_successful ?? 0), 0),
+    tackles: seasons.reduce((sum, s) => sum + (s?.tackles ?? 0), 0),
+    interceptions: seasons.reduce((sum, s) => sum + (s?.interceptions ?? 0), 0),
+    blocks: seasons.reduce((sum, s) => sum + (s?.blocks ?? 0), 0),
+    clearances: seasons.reduce((sum, s) => sum + (s?.clearances ?? 0), 0),
+    duels: seasons.reduce((sum, s) => sum + (s?.duels ?? 0), 0),
+    duels_won: seasons.reduce((sum, s) => sum + (s?.duels_won ?? 0), 0),
+    ground_duels: seasons.reduce((sum, s) => sum + (s?.ground_duels ?? 0), 0),
+    ground_duels_won: seasons.reduce((sum, s) => sum + (s?.ground_duels_won ?? 0), 0),
+    aerial_duels: seasons.reduce((sum, s) => sum + (s?.aerial_duels ?? 0), 0),
+    aerial_duels_won: seasons.reduce((sum, s) => sum + (s?.aerial_duels_won ?? 0), 0),
+    fouls: seasons.reduce((sum, s) => sum + (s?.fouls ?? 0), 0),
+    fouls_drawn: seasons.reduce((sum, s) => sum + (s?.fouls_drawn ?? 0), 0),
+    yellow_cards: seasons.reduce((sum, s) => sum + (s?.yellow_cards ?? 0), 0),
+    yellowred_cards: seasons.reduce((sum, s) => sum + (s?.yellowred_cards ?? 0), 0),
+    red_cards: seasons.reduce((sum, s) => sum + (s?.red_cards ?? 0), 0),
+    ball_losses: seasons.reduce((sum, s) => sum + (s?.ball_losses ?? 0), 0),
+    ball_recoveries: seasons.reduce((sum, s) => sum + (s?.ball_recoveries ?? 0), 0),
+    saves: seasons.reduce((sum, s) => sum + (s?.saves ?? 0), 0),
+    inside_box_saves: seasons.reduce((sum, s) => sum + (s?.inside_box_saves ?? 0), 0),
+    punches: seasons.reduce((sum, s) => sum + (s?.punches ?? 0), 0),
+    goals_conceded: seasons.reduce((sum, s) => sum + (s?.goals_conceded ?? 0), 0),
+    clean_sheets: seasons.reduce((sum, s) => sum + (s?.clean_sheets ?? 0), 0),
+    penalties_saved: seasons.reduce((sum, s) => sum + (s?.penalties_saved ?? 0), 0),
+    xg: seasons.reduce((sum, s) => sum + (s?.xg ?? 0), 0),
+    xa: seasons.reduce((sum, s) => sum + (s?.xa ?? 0), 0),
+  };
 }
 
 /**

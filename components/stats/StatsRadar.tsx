@@ -161,22 +161,10 @@ export default function StatsRadar({ stats, position }: StatsRadarProps) {
       value: displayMode === 'real' ? stats.offsides || 0 : Math.min(100, 100 - ((stats.offsides || 0) * 4)), 
       rawValue: stats.offsides || 0,
       percentile: Math.min(100, 100 - ((stats.offsides || 0) * 4))
-    },
-    { 
-      stat: displayMode === 'real' ? `Hattricks (${stats.hattricks || 0})` : 'Hattricks', 
-      value: displayMode === 'real' ? stats.hattricks || 0 : Math.min(100, (stats.hattricks || 0) * 50), 
-      rawValue: stats.hattricks || 0,
-      percentile: Math.min(100, (stats.hattricks || 0) * 50)
-    },
-    { 
-      stat: displayMode === 'real' ? `BigChancesMissed (${stats.big_chances_missed || 0})` : 'BigChancesMissed', 
-      value: displayMode === 'real' ? stats.big_chances_missed || 0 : Math.min(100, 100 - ((stats.big_chances_missed || 0) * 10)), 
-      rawValue: stats.big_chances_missed || 0,
-      percentile: Math.min(100, 100 - ((stats.big_chances_missed || 0) * 10))
     }
   ] : [];
 
-  // 3. CARTE CRÉATIVE - Passes et dribbles
+  // 3. CARTE CRÉATIVE
   const creativeData = !isGoalkeeper ? [
     { 
       stat: displayMode === 'real' ? `Passes (${stats.passes_total || stats.passes || 0})` : 'Passes', 
@@ -197,34 +185,10 @@ export default function StatsRadar({ stats, position }: StatsRadarProps) {
       percentile: Math.min(100, (stats.key_passes || 0) * 3)
     },
     { 
-      stat: displayMode === 'real' ? `BigChancesCreated (${stats.big_chances_created || 0})` : 'BigChancesCreated', 
-      value: displayMode === 'real' ? stats.big_chances_created || 0 : Math.min(100, (stats.big_chances_created || 0) * 10), 
-      rawValue: stats.big_chances_created || 0,
-      percentile: Math.min(100, (stats.big_chances_created || 0) * 10)
-    },
-    { 
-      stat: displayMode === 'real' ? `ThroughBalls (${stats.through_balls || 0})` : 'ThroughBalls', 
-      value: displayMode === 'real' ? stats.through_balls || 0 : Math.min(100, (stats.through_balls || 0) * 5), 
-      rawValue: stats.through_balls || 0,
-      percentile: Math.min(100, (stats.through_balls || 0) * 5)
-    },
-    { 
-      stat: displayMode === 'real' ? `LongBalls (${stats.long_balls || 0})` : 'LongBalls', 
-      value: displayMode === 'real' ? stats.long_balls || 0 : Math.min(100, (stats.long_balls || 0) * 2), 
-      rawValue: stats.long_balls || 0,
-      percentile: Math.min(100, (stats.long_balls || 0) * 2)
-    },
-    { 
       stat: displayMode === 'real' ? `TotalCrosses (${stats.crosses_total || stats.crosses || 0})` : 'TotalCrosses', 
       value: displayMode === 'real' ? stats.crosses_total || stats.crosses || 0 : Math.min(100, (stats.crosses_total || stats.crosses || 0) * 2), 
       rawValue: stats.crosses_total || stats.crosses || 0,
       percentile: Math.min(100, (stats.crosses_total || stats.crosses || 0) * 2)
-    },
-    { 
-      stat: displayMode === 'real' ? `AccurateCrosses (${stats.accurate_crosses || 0})` : 'AccurateCrosses', 
-      value: displayMode === 'real' ? stats.accurate_crosses || 0 : Math.min(100, (stats.accurate_crosses || 0) * 5), 
-      rawValue: stats.accurate_crosses || 0,
-      percentile: Math.min(100, (stats.accurate_crosses || 0) * 5)
     }
   ] : [];
 
@@ -256,24 +220,6 @@ export default function StatsRadar({ stats, position }: StatsRadarProps) {
       percentile: Math.min(100, (stats.tackles || 0) * 1.5)
     },
     { 
-      stat: displayMode === 'real' ? `DribbledPast (${stats.dribbled_past || 0})` : 'DribbledPast', 
-      value: displayMode === 'real' ? stats.dribbled_past || 0 : Math.min(100, 100 - ((stats.dribbled_past || 0) * 3)), 
-      rawValue: stats.dribbled_past || 0,
-      percentile: Math.min(100, 100 - ((stats.dribbled_past || 0) * 3))
-    },
-    { 
-      stat: displayMode === 'real' ? `ErrorLeadToGoal (${stats.mistakes_leading_to_goals || 0})` : 'ErrorLeadToGoal', 
-      value: displayMode === 'real' ? stats.mistakes_leading_to_goals || 0 : Math.min(100, 100 - ((stats.mistakes_leading_to_goals || 0) * 50)), 
-      rawValue: stats.mistakes_leading_to_goals || 0,
-      percentile: Math.min(100, 100 - ((stats.mistakes_leading_to_goals || 0) * 50))
-    },
-    { 
-      stat: displayMode === 'real' ? `CrossesBlocked (${stats.crosses_blocked || 0})` : 'CrossesBlocked', 
-      value: displayMode === 'real' ? stats.crosses_blocked || 0 : Math.min(100, (stats.crosses_blocked || 0) * 10), 
-      rawValue: stats.crosses_blocked || 0,
-      percentile: Math.min(100, (stats.crosses_blocked || 0) * 10)
-    },
-    { 
       stat: displayMode === 'real' ? `Fouls (${stats.fouls || 0})` : 'Fouls', 
       value: displayMode === 'real' ? stats.fouls || 0 : Math.min(100, 100 - ((stats.fouls || 0) * 2.5)), 
       rawValue: stats.fouls || 0,
@@ -296,12 +242,6 @@ export default function StatsRadar({ stats, position }: StatsRadarProps) {
       value: displayMode === 'real' ? totalRedCards || 0 : Math.min(100, 100 - ((totalRedCards || 0) * 50)), 
       rawValue: totalRedCards || 0,
       percentile: Math.min(100, 100 - ((totalRedCards || 0) * 50))
-    },
-    { 
-      stat: displayMode === 'real' ? `OwnGoals (${stats.own_goals || 0})` : 'OwnGoals', 
-      value: displayMode === 'real' ? stats.own_goals || 0 : Math.min(100, 100 - ((stats.own_goals || 0) * 25)), 
-      rawValue: stats.own_goals || 0,
-      percentile: Math.min(100, 100 - ((stats.own_goals || 0) * 25))
     }
   ] : [];
 
@@ -420,12 +360,12 @@ export default function StatsRadar({ stats, position }: StatsRadarProps) {
           <RadarChartComponent 
             data={generalDataGoalkeeper} 
             color="#3B82F6" 
-            title="🟦 Général"
+            title="⚽ Carte Générale"
           />
           <RadarChartComponent 
             data={goalkeeperData} 
             color="#10B981" 
-            title="🧤 Gardien"
+            title="🧤 Carte Gardien"
           />
         </div>
       </div>
@@ -474,22 +414,22 @@ export default function StatsRadar({ stats, position }: StatsRadarProps) {
         <RadarChartComponent 
           data={generalDataField} 
           color="#3B82F6" 
-          title="🟦 Général"
+          title="⚽ Carte Générale"
         />
         <RadarChartComponent 
           data={offensiveData} 
           color="#EF4444" 
-          title="🔴 Offensif"
+          title="⚔️ Carte Offensive"
         />
         <RadarChartComponent 
           data={creativeData} 
           color="#10B981" 
-          title="🟢 Créatif"
+          title="🧑‍🎨 Carte Créative"
         />
         <RadarChartComponent 
           data={defensiveData} 
           color="#F59E0B" 
-          title="🛡️ Défensif & Discipline"
+          title="🛡️ Carte Défensive & Discipline"
         />
       </div>
     </div>

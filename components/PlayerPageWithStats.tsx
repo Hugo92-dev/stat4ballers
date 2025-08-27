@@ -55,19 +55,20 @@ export default function PlayerPageWithStats({
         setLoading(true);
         setError(null);
         
-        // Obtenir le slug du joueur
-        const playerDisplayName = player.displayName || player.fullName || player.name;
-        const playerSlug = slugifyPlayer(playerDisplayName);
-        
         // Utiliser l'ID du joueur directement depuis les données
-        // Tous les joueurs ont maintenant des stats mock
         const playerId = player.id;
         
         // Déterminer la ligue
         const leagueKey = leagueSlug.replace('-', '') as 'ligue1' | 'premierLeague' | 'liga' | 'serieA' | 'bundesliga';
         
-        // Récupérer les statistiques
-        let stats = await getPlayerStatistics(playerId, leagueKey);
+        // Récupérer les statistiques via l'API
+        const response = await fetch(`/api/player-stats?playerId=${playerId}&league=${leagueKey}`);
+        
+        if (!response.ok) {
+          throw new Error(`Failed to fetch stats: ${response.status}`);
+        }
+        
+        const stats = await response.json();
         
         // Si pas de données réelles, utiliser des données simulées pour tester
         // Note: 0 est une vraie valeur (joueur n'a pas joué), null/undefined = pas de données
@@ -81,14 +82,14 @@ export default function PlayerPageWithStats({
           const allStats = [mockStats.current, ...mockStats.previous].filter(s => s !== null);
           const cumulative = calculateCumulativeStats(allStats as any);
           
-          stats = {
+          setStatsData({
             current: mockStats.current,
             previous: mockStats.previous,
             cumulative: cumulative
-          };
+          });
+        } else {
+          setStatsData(stats);
         }
-        
-        setStatsData(stats);
         
         // Sélectionner la meilleure vue par défaut
         // On affiche toujours les saisons même avec 0 match (c'est une info valide)
@@ -106,8 +107,10 @@ export default function PlayerPageWithStats({
           }
         }
       } catch (err) {
-        console.error('Erreur lors du chargement des statistiques:', err);
-        setError('Erreur lors du chargement des statistiques');
+        console.error('Erreur détaillée lors du chargement des statistiques:', err);
+        console.error('Player ID:', playerId);
+        console.error('League Key:', leagueKey);
+        setError('Erreur lors du chargement des statistiques: ' + (err as Error).message);
       } finally {
         setLoading(false);
       }
