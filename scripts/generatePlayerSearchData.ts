@@ -16,6 +16,7 @@ interface SearchItem {
   league?: string;
   club?: string;
   position?: string;
+  image?: string;
   searchTerms: string[];
 }
 
@@ -45,9 +46,13 @@ function generatePlayerSearchItems(): SearchItem[] {
       
       // Créer les termes de recherche
       const searchTerms: string[] = [
-        player.name.toLowerCase(),
         displayName.toLowerCase()
       ];
+      
+      // Ajouter player.name s'il existe et est différent du displayName
+      if (player.name && player.name !== displayName) {
+        searchTerms.push(player.name.toLowerCase());
+      }
       
       // Ajouter le nom complet s'il existe
       if (player.fullName && player.fullName !== player.name) {
@@ -73,6 +78,7 @@ function generatePlayerSearchItems(): SearchItem[] {
         league: leagueNames[team.leagueSlug],
         club: team.name,
         position: player.position,
+        image: player.image,
         searchTerms: uniqueTerms
       });
     });

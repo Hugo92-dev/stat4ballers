@@ -31,7 +31,6 @@ export default function PlayerSearchBar({ onPlayerSelect, placeholder = "Recherc
   const [results, setResults] = useState<any[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(0);
-  const [playerImages, setPlayerImages] = useState<{[key: number]: string}>({});
   const searchRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -78,33 +77,6 @@ export default function PlayerSearchBar({ onPlayerSelect, placeholder = "Recherc
       setResults(topResults);
       setIsOpen(true);
       setHighlightedIndex(0);
-      
-      // Charger les images des joueurs
-      topResults.forEach(async (result) => {
-        if (result.id && !playerImages[result.id]) {
-          try {
-            const pathParts = result.path.split('/');
-            const leagueSlug = pathParts[1];
-            const clubSlug = pathParts[2];
-            
-            // Importer dynamiquement les données de l'équipe
-            const leagueDataFile = leagueSlug.replace('-', '') + 'Teams';
-            const teamData = await import(`@/data/${leagueDataFile === 'ligaTeams' ? 'ligaTeams' : leagueDataFile === 'serieaTeams' ? 'serieATeams' : leagueDataFile}`);
-            const teams = teamData[leagueDataFile] || teamData.default;
-            
-            // Trouver l'équipe et le joueur
-            const team = teams.find((t: any) => t.slug === clubSlug);
-            if (team) {
-              const playerData = team.players.find((p: any) => p.id === result.id);
-              if (playerData && playerData.image) {
-                setPlayerImages(prev => ({ ...prev, [result.id]: playerData.image }));
-              }
-            }
-          } catch (err) {
-            console.warn(`Impossible de charger l'image pour le joueur ${result.id}`);
-          }
-        }
-      });
     } else {
       setResults([]);
       setIsOpen(false);
@@ -149,7 +121,7 @@ export default function PlayerSearchBar({ onPlayerSelect, placeholder = "Recherc
       clubSlug,
       leagueSlug,
       playerSlug,
-      image: playerImages[result.id] || undefined
+      image: result.image
     };
 
     onPlayerSelect(player);
@@ -224,9 +196,9 @@ export default function PlayerSearchBar({ onPlayerSelect, placeholder = "Recherc
               >
                 {/* Avatar joueur */}
                 <div className="mr-3">
-                  {playerImages[result.id] ? (
+                  {result.image ? (
                     <img
-                      src={playerImages[result.id]}
+                      src={result.image}
                       alt={result.name}
                       className="w-10 h-10 rounded-full object-cover border-2 border-gray-200"
                       onError={(e) => {
@@ -236,8 +208,8 @@ export default function PlayerSearchBar({ onPlayerSelect, placeholder = "Recherc
                       }}
                     />
                   ) : null}
-                  <div className={`w-10 h-10 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center ${playerImages[result.id] ? 'hidden' : ''}`}
-                    style={playerImages[result.id] ? { display: 'none' } : {}}>
+                  <div className={`w-10 h-10 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center ${result.image ? 'hidden' : ''}`}
+                    style={result.image ? { display: 'none' } : {}}>
                     <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>

@@ -8,6 +8,7 @@ export interface SearchItem {
   league?: string;
   club?: string;
   position?: string;
+  image?: string;
   searchTerms: string[];
 }
 
@@ -21,7 +22,7 @@ export const searchDatabase: SearchItem[] = [
   
   // Ligue 1 Clubs
   { type: 'club', name: 'Paris Saint-Germain', path: '/ligue1/psg', league: 'Ligue 1', searchTerms: ['psg', 'paris', 'paris saint germain', 'paris sg'] },
-  { type: 'club', name: 'Olympique de Marseille', path: '/ligue1/marseille', league: 'Ligue 1', searchTerms: ['om', 'marseille', 'olympique marseille', 'olympique de mar'] },
+  { type: 'club', name: 'Olympique de Marseille', path: '/ligue1/olympique-marseille', league: 'Ligue 1', searchTerms: ['om', 'marseille', 'olympique marseille', 'olympique de mar'] },
   { type: 'club', name: 'AS Monaco', path: '/ligue1/monaco', league: 'Ligue 1', searchTerms: ['monaco', 'as monaco', 'asm'] },
   { type: 'club', name: 'LOSC Lille', path: '/ligue1/lille', league: 'Ligue 1', searchTerms: ['lille', 'losc', 'losc lille'] },
   { type: 'club', name: 'Olympique Lyonnais', path: '/ligue1/lyon', league: 'Ligue 1', searchTerms: ['lyon', 'ol', 'olympique lyonnais'] },

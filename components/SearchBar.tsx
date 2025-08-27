@@ -14,7 +14,6 @@ export default function SearchBar() {
   const [results, setResults] = useState<typeof searchDatabase>([]);
   const [isOpen, setIsOpen] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(0);
-  const [playerImages, setPlayerImages] = useState<{[key: number]: string}>({});
   const searchRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
@@ -58,33 +57,6 @@ export default function SearchBar() {
       setResults(topResults);
       setIsOpen(true);
       setHighlightedIndex(0);
-      
-      // Charger les images des joueurs
-      topResults.forEach(async (result) => {
-        if (result.type === 'player' && result.id && !playerImages[result.id]) {
-          try {
-            const pathParts = result.path.split('/');
-            const leagueSlug = pathParts[1];
-            const clubSlug = pathParts[2];
-            
-            // Importer dynamiquement les données de l'équipe
-            const leagueDataFile = leagueSlug.replace('-', '') + 'Teams';
-            const teamData = await import(`@/data/${leagueDataFile === 'ligaTeams' ? 'ligaTeams' : leagueDataFile === 'serieaTeams' ? 'serieATeams' : leagueDataFile}`);
-            const teams = teamData[leagueDataFile] || teamData.default;
-            
-            // Trouver l'équipe et le joueur
-            const team = teams.find((t: any) => t.slug === clubSlug);
-            if (team) {
-              const playerData = team.players.find((p: any) => p.id === result.id);
-              if (playerData && playerData.image) {
-                setPlayerImages(prev => ({ ...prev, [result.id]: playerData.image }));
-              }
-            }
-          } catch (err) {
-            console.warn(`Impossible de charger l'image pour le joueur ${result.id}`);
-          }
-        }
-      });
     } else {
       setResults([]);
       setIsOpen(false);
@@ -156,12 +128,11 @@ export default function SearchBar() {
     
     // Pour les joueurs
     if (result.type === 'player') {
-      const playerId = result.id;
-      if (playerId && playerImages[playerId]) {
+      if (result.image) {
         return (
           <div className="w-10 h-10 relative">
             <img
-              src={playerImages[playerId]}
+              src={result.image}
               alt={result.name}
               className="w-10 h-10 rounded-full object-cover border-2 border-gray-200"
               onError={(e) => {
