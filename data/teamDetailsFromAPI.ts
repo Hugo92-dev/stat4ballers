@@ -7,12 +7,12 @@ export const teamDetails: Record<string, {
   capacity?: number;
   founded?: number;
 }> = {
-  'alaves': {
+  'deportivo-alaves': {
     stadium: 'Estadio de Mendizorroza',
     capacity: 19840,
     founded: 1921,
   },
-  'angers': {
+  'angers-sco': {
     stadium: 'Stade Raymond Kopa',
     capacity: 17835,
     founded: 1919,
@@ -32,7 +32,7 @@ export const teamDetails: Record<string, {
     capacity: 23439,
     founded: 1907,
   },
-  'athletic-bilbao': {
+  'athletic-club': {
     stadium: 'San Mamés Barria',
     capacity: 53289,
     founded: 1898,
@@ -42,7 +42,7 @@ export const teamDetails: Record<string, {
     capacity: 70460,
     founded: 1903,
   },
-  'augsburg': {
+  'fc-augsburg': {
     stadium: 'WWK Arena',
     capacity: 30660,
     founded: 1907,
@@ -52,7 +52,7 @@ export const teamDetails: Record<string, {
     capacity: 18541,
     founded: 1905,
   },
-  'barcelona': {
+  'fc-barcelona': {
     stadium: 'Estadi Olímpic Lluís Companys',
     capacity: 57619,
     founded: 1899,
@@ -62,12 +62,12 @@ export const teamDetails: Record<string, {
     capacity: 36532,
     founded: 1909,
   },
-  'monchengladbach': {
+  'borussia-monchengladbach': {
     stadium: 'Stadion im Borussia-Park',
     capacity: 54057,
     founded: 1900,
   },
-  'bournemouth': {
+  'afc-bournemouth': {
     stadium: 'Vitality Stadium',
     capacity: 11700,
     founded: 1899,
@@ -82,7 +82,7 @@ export const teamDetails: Record<string, {
     capacity: 15097,
     founded: 1950,
   },
-  'brighton': {
+  'brighton-hove-albion': {
     stadium: 'The American Express Community Stadium',
     capacity: 31876,
     founded: 1901,
@@ -97,7 +97,7 @@ export const teamDetails: Record<string, {
     capacity: 16416,
     founded: 1920,
   },
-  'celta-vigo': {
+  'celta-de-vigo': {
     stadium: 'Estadio de Balaídos',
     capacity: 25000,
     founded: 1923,
@@ -122,7 +122,7 @@ export const teamDetails: Record<string, {
     capacity: 25456,
     founded: 1905,
   },
-  'dortmund': {
+  'borussia-dortmund': {
     stadium: 'Signal Iduna Park',
     capacity: 81365,
     founded: 1909,
@@ -142,17 +142,17 @@ export const teamDetails: Record<string, {
     capacity: 52769,
     founded: 1878,
   },
-  'bayern-munich': {
+  'fc-bayern-munchen': {
     stadium: 'Allianz Arena',
     capacity: 75024,
     founded: 1900,
   },
-  'koln': {
+  'fc-koln': {
     stadium: 'RheinEnergieStadion',
     capacity: 50000,
     founded: 1948,
   },
-  'union-berlin': {
+  'fc-union-berlin': {
     stadium: 'Stadion An der Alten Försterei',
     capacity: 22012,
     founded: 1966,
@@ -162,17 +162,17 @@ export const teamDetails: Record<string, {
     capacity: 43147,
     founded: 1926,
   },
-  'frankfurt': {
+  'eintracht-frankfurt': {
     stadium: 'Commerzbank-Arena',
     capacity: 48000,
     founded: 1899,
   },
-  'freiburg': {
+  'sc-freiburg': {
     stadium: 'Europa-Park Stadion',
     capacity: 34700,
     founded: 1904,
   },
-  'mainz': {
+  'fsv-mainz-05': {
     stadium: 'Mewa Arena',
     capacity: 34000,
     founded: 1905,
@@ -197,7 +197,7 @@ export const teamDetails: Record<string, {
     capacity: 14624,
     founded: 1930,
   },
-  'hamburg': {
+  'hamburger-sv': {
     stadium: 'Volksparkstadion',
     capacity: 57000,
     founded: 1887,
@@ -207,7 +207,7 @@ export const teamDetails: Record<string, {
     capacity: 15000,
     founded: 1946,
   },
-  'verona': {
+  'hellas-verona': {
     stadium: 'Stadio Marc\'Antonio Bentegodi',
     capacity: 39045,
     founded: 1903,
@@ -237,12 +237,12 @@ export const teamDetails: Record<string, {
     capacity: 40800,
     founded: 1908,
   },
-  'leeds': {
+  'leeds-united': {
     stadium: 'Elland Road',
     capacity: 40242,
     founded: 1919,
   },
-  'leipzig': {
+  'rb-leipzig': {
     stadium: 'Red Bull Arena',
     capacity: 47069,
     founded: 2009,
@@ -257,12 +257,12 @@ export const teamDetails: Record<string, {
     capacity: 26354,
     founded: 1909,
   },
-  'leverkusen': {
+  'bayer-04-leverkusen': {
     stadium: 'BayArena',
     capacity: 30210,
     founded: 1904,
   },
-  'lille': {
+  'losc-lille': {
     stadium: 'Stade Pierre-Mauroy',
     capacity: 50186,
     founded: 1944,
@@ -277,7 +277,7 @@ export const teamDetails: Record<string, {
     capacity: 18110,
     founded: 1926,
   },
-  'lyon': {
+  'olympique-lyonnais': {
     stadium: 'Groupama Stadium',
     capacity: 59186,
     founded: 1950,
@@ -297,7 +297,7 @@ export const teamDetails: Record<string, {
     capacity: 74879,
     founded: 1878,
   },
-  'marseille': {
+  'olympique-marseille': {
     stadium: 'Stade Vélodrome',
     capacity: 67000,
     founded: 1899,
@@ -327,7 +327,7 @@ export const teamDetails: Record<string, {
     capacity: 54726,
     founded: 1926,
   },
-  'newcastle': {
+  'newcastle-united': {
     stadium: 'St. James\' Park',
     capacity: 52409,
     founded: 1892,
@@ -347,10 +347,10 @@ export const teamDetails: Record<string, {
     capacity: 23576,
     founded: 1920,
   },
-  'paris-fc': {
-    stadium: 'Stade Jean Bouin',
-    capacity: 15097,
-    founded: 1969,
+  'paris': {
+    stadium: 'Parc des Princes',
+    capacity: 48583,
+    founded: 1970,
   },
   'parma': {
     stadium: 'Stadio Ennio Tardini',
@@ -362,7 +362,7 @@ export const teamDetails: Record<string, {
     capacity: 10442,
     founded: 1909,
   },
-  'psg': {
+  'paris-saint-germain': {
     stadium: 'Parc des Princes',
     capacity: 48583,
     founded: 1970,
@@ -422,7 +422,7 @@ export const teamDetails: Record<string, {
     capacity: 29200,
     founded: 1906,
   },
-  'stuttgart': {
+  'vfb-stuttgart': {
     stadium: 'MHPArena',
     capacity: 60449,
     founded: 1893,
@@ -437,7 +437,7 @@ export const teamDetails: Record<string, {
     capacity: 36599,
     founded: 1906,
   },
-  'tottenham': {
+  'tottenham-hotspur': {
     stadium: 'Tottenham Hotspur Stadium',
     capacity: 62850,
     founded: 1882,
@@ -467,22 +467,22 @@ export const teamDetails: Record<string, {
     capacity: 23500,
     founded: 1923,
   },
-  'bremen': {
+  'werder-bremen': {
     stadium: 'Weserstadion',
     capacity: 5500,
     founded: 1899,
   },
-  'west-ham': {
+  'west-ham-united': {
     stadium: 'London Stadium',
     capacity: 59623,
     founded: 1895,
   },
-  'wolfsburg': {
+  'vfl-wolfsburg': {
     stadium: 'Volkswagen Arena',
     capacity: 30000,
     founded: 1945,
   },
-  'wolves': {
+  'wolverhampton-wanderers': {
     stadium: 'Molineux Stadium',
     capacity: 32050,
     founded: 1877,

@@ -4,8 +4,8 @@ import { ligaTeams } from '@/data/ligaTeams';
 export default function ClubPage({ params }: { params: { club: string } }) {
   // Gérer les alias d'URLs
   const slugAliases: Record<string, string> = {
-    'fc-barcelona': 'barcelona',
-    'barca': 'barcelona',
+    'barca': 'fc-barcelona',
+    'barcelona': 'fc-barcelona',
     'atletico': 'atletico-madrid',
     'atleti': 'atletico-madrid',
     'alaves': 'deportivo-alaves',
