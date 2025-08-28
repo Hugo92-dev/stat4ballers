@@ -25,40 +25,44 @@ interface PlayerStrengthsProps {
 }
 
 // Configuration des statistiques pour l'analyse
+// Uniquement les stats affichées sur les cartes joueurs
 const STATS_CONFIG = [
+  // Général
+  { label: 'Matchs joués', key: 'appearences' },
+  { label: 'Titularisations', key: 'lineups' },
   { label: 'Minutes jouées', key: 'minutes' },
-  { label: 'Apparitions', key: 'appearences' },
+  { label: 'Fois capitaine', key: 'captain' },
+  { label: 'Note moyenne', key: 'rating' },
+  
+  // Offensif
   { label: 'Buts', key: 'goals' },
   { label: 'Passes décisives', key: 'assists' },
-  { label: 'Buts attendus (xG)', key: 'expected_goals' },
-  { label: 'Passes décisives attendues (xA)', key: 'expected_assists' },
-  { label: 'Tirs', key: 'shots' },
+  { label: 'Tirs tentés', key: 'shots' },
   { label: 'Tirs cadrés', key: 'shots_on_target' },
-  { label: 'Penalties marqués', key: 'penalties_scored' },
-  { label: 'Passes réussies', key: 'passes' },
+  { label: 'Tirs sur les montants', key: 'hit_woodwork' },
+  
+  // Créatif
+  { label: 'Passes', key: 'passes', fallbackKey: 'passes_total' },
   { label: 'Précision passes (%)', key: 'passes_accuracy' },
   { label: 'Passes clés', key: 'key_passes' },
-  { label: 'Centres réussis', key: 'crosses' },
-  { label: 'Dribbles réussis', key: 'dribbles_succeeded' },
-  { label: 'Touches de balle', key: 'touches' },
-  { label: 'Ballons récupérés', key: 'ball_recoveries' },
-  { label: 'Tacles', key: 'tackles' },
-  { label: 'Interceptions', key: 'interceptions' },
-  { label: 'Dégagements', key: 'clearances' },
-  { label: 'Tirs bloqués', key: 'blocks' },
+  { label: 'Centres', key: 'crosses', fallbackKey: 'crosses_total' },
+  
+  // Défensif
+  { label: 'Duels totaux', key: 'duels' },
   { label: 'Duels gagnés', key: 'duels_won' },
   { label: 'Duels aériens gagnés', key: 'aerial_duels_won' },
+  { label: 'Tacles', key: 'tackles' },
+  { label: 'Fautes subies', key: 'fouls_drawn' },
+  
+  // Gardien
+  { label: 'Buts encaissés', key: 'goals_conceded', isNegative: true },
   { label: 'Arrêts', key: 'saves' },
   { label: 'Arrêts dans la surface', key: 'inside_box_saves' },
-  { label: 'Penalties arrêtés', key: 'penalties_saved' },
-  { label: 'Clean sheets', key: 'clean_sheets' },
 ];
 
 // Stats négatives (moins c'est mieux)
 const NEGATIVE_STATS = [
-  'yellow_cards', 'red_cards', 'fouls', 'penalties_missed', 
-  'dribbles_failed', 'ball_losses', 'goals_conceded', 'offsides',
-  'yellowred_cards', 'mistakes_leading_to_goals', 'penalties_committed'
+  'yellow_cards', 'red_cards', 'yellowred_cards', 'fouls', 'offsides', 'goals_conceded'
 ];
 
 export default function PlayerStrengths({ players }: PlayerStrengthsProps) {
@@ -68,8 +72,50 @@ export default function PlayerStrengths({ players }: PlayerStrengthsProps) {
     const strengths: string[] = [];
     
     STATS_CONFIG.forEach(stat => {
-      const playerValue = player.stats[stat.key as keyof PlayerStatistics] as number | undefined;
+      // Gérer les clés avec fallback (ex: passes ou passes_total)
+      let playerValue = player.stats[stat.key as keyof PlayerStatistics] as number | undefined;
+      if (playerValue === undefined && 'fallbackKey' in stat) {
+        playerValue = player.stats[stat.fallbackKey as keyof PlayerStatistics] as number | undefined;
+      }
+      
       if (playerValue === undefined || playerValue === null || playerValue === 0) return;
+      
+      const otherValues = players
+        .filter(p => p.id !== player.id)
+        .map(p => {
+          let value = p.stats[stat.key as keyof PlayerStatistics] as number | undefined;
+          if (value === undefined && 'fallbackKey' in stat) {
+            value = p.stats[stat.fallbackKey as keyof PlayerStatistics] as number | undefined;
+          }
+          return value;
+        })
+        .filter(v => v !== undefined && v !== null) as number[];
+      
+      if (otherValues.length === 0) return;
+      
+      // Utiliser le flag isNegative du STATS_CONFIG ou vérifier dans NEGATIVE_STATS
+      const isNegative = ('isNegative' in stat && stat.isNegative) || isNegativeStat(stat.key);
+      const maxOther = Math.max(...otherValues);
+      const minOther = Math.min(...otherValues);
+      
+      if (!isNegative && playerValue > maxOther) {
+        strengths.push(stat.label);
+      } else if (isNegative && playerValue < minOther) {
+        strengths.push(stat.label);
+      }
+    });
+    
+    // Ajouter aussi les stats négatives (cartons, fautes commises, hors-jeu)
+    const negativeStatsConfig = [
+      { label: 'Moins de cartons jaunes', key: 'yellow_cards' },
+      { label: 'Moins de cartons rouges', key: 'red_cards' },
+      { label: 'Moins de fautes commises', key: 'fouls' },
+      { label: 'Moins de hors-jeu', key: 'offsides' },
+    ];
+    
+    negativeStatsConfig.forEach(stat => {
+      const playerValue = player.stats[stat.key as keyof PlayerStatistics] as number | undefined;
+      if (playerValue === undefined || playerValue === null) return;
       
       const otherValues = players
         .filter(p => p.id !== player.id)
@@ -78,13 +124,9 @@ export default function PlayerStrengths({ players }: PlayerStrengthsProps) {
       
       if (otherValues.length === 0) return;
       
-      const isNegative = isNegativeStat(stat.key);
       const maxOther = Math.max(...otherValues);
-      const minOther = Math.min(...otherValues);
       
-      if (!isNegative && playerValue > maxOther) {
-        strengths.push(stat.label);
-      } else if (isNegative && playerValue < minOther) {
+      if (playerValue < maxOther) {
         strengths.push(stat.label);
       }
     });

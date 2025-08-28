@@ -70,24 +70,18 @@ export default function PlayerComparisonRadar({ players }: PlayerComparisonRadar
 
   // CARTE 1: GÉNÉRAL pour joueurs de champ
   const generalDataField = (stats: PlayerStatistics) => {
-    const shotsAccuracy = stats.shots && stats.shots > 0 
-      ? ((stats.shots_on_target || 0) / stats.shots * 100) 
-      : 0;
-
     return [
-      { stat: 'Note moyenne', value: (stats.rating || 0) * 10 },
-      { stat: 'Minutes', value: Math.min(100, (stats.minutes || 0) / 30) },
+      { stat: 'Matchs joués', value: Math.min(100, (stats.appearences || 0) * 3) },
       { stat: 'Titularisations', value: Math.min(100, (stats.lineups || 0) * 4) },
-      { stat: 'Matchs', value: Math.min(100, (stats.appearences || 0) * 3) },
+      { stat: 'Minutes', value: Math.min(100, (stats.minutes || 0) / 30) },
       { stat: 'Capitaine', value: Math.min(100, (stats.captain || 0) * 20) },
-      { stat: 'Touches', value: Math.min(100, (stats.touches || 0) / 20) },
-      { stat: 'Préc. tirs', value: shotsAccuracy },
-      { stat: 'Préc. passes', value: stats.passes_accuracy || 0 }
+      { stat: 'Note moyenne', value: (stats.rating || 0) * 10 }
     ];
   };
 
   // CARTE 1: GÉNÉRAL pour gardiens
   const generalDataGoalkeeper = (stats: PlayerStatistics) => {
+    const totalRedCards = (stats.red_cards || 0) + (stats.yellowred_cards || 0);
     return [
       { stat: 'Note moyenne', value: (stats.rating || 0) * 10 },
       { stat: 'Minutes', value: Math.min(100, (stats.minutes || 0) / 30) },
@@ -96,75 +90,53 @@ export default function PlayerComparisonRadar({ players }: PlayerComparisonRadar
       { stat: 'Capitaine', value: Math.min(100, (stats.captain || 0) * 20) },
       { stat: 'Préc. passes', value: stats.passes_accuracy || 0 },
       { stat: 'C. jaunes', value: Math.max(0, 100 - ((stats.yellow_cards || 0) * 12)) },
-      { stat: 'C. rouges', value: Math.max(0, 100 - ((stats.red_cards || 0) * 50)) }
+      { stat: 'C. rouges', value: Math.max(0, 100 - (totalRedCards * 50)) }
     ];
   };
 
   // CARTE 2: OFFENSIVE
   const offensiveData = (stats: PlayerStatistics) => {
-    const penaltyAccuracy = stats.penalties && stats.penalties > 0 
-      ? ((stats.penalties_scored || 0) / stats.penalties * 100) 
-      : 0;
-
     return [
       { stat: 'Buts', value: Math.min(100, (stats.goals || 0) * 5) },
-      { stat: 'xG', value: Math.min(100, (stats.expected_goals || 0) * 5) },
-      { stat: 'Passes déc.', value: Math.min(100, (stats.assists || 0) * 8) },
-      { stat: 'xA', value: Math.min(100, (stats.expected_assists || 0) * 8) },
-      { stat: 'Total tirs', value: Math.min(100, (stats.shots || 0) * 2) },
-      { stat: 'Penalties', value: Math.min(100, (stats.penalties || 0) * 20) },
-      { stat: 'Préc. pen.', value: penaltyAccuracy },
-      { stat: 'Poteaux', value: Math.min(100, (stats.hit_woodwork || 0) * 33) },
-      { stat: 'Hors-jeux', value: Math.max(0, 100 - ((stats.offsides || 0) * 4)) },
-      { stat: 'Pertes balle', value: Math.max(0, 100 - ((stats.ball_losses || 0) * 0.7)) }
+      { stat: 'Passes décisives', value: Math.min(100, (stats.assists || 0) * 8) },
+      { stat: 'Tirs tentés', value: Math.min(100, (stats.shots || 0) * 2) },
+      { stat: 'Tirs cadrés', value: Math.min(100, (stats.shots_on_target || 0) * 4) },
+      { stat: 'Tirs montants', value: Math.min(100, (stats.hit_woodwork || 0) * 33) },
+      { stat: 'Hors-jeu', value: Math.max(0, 100 - ((stats.offsides || 0) * 4)) }
     ];
   };
 
-  // CARTE 3: CRÉATIVE (passes & dribbles)
+  // CARTE 3: CRÉATIVE
   const creativeData = (stats: PlayerStatistics) => {
-    const dribbleAccuracy = stats.dribbles && stats.dribbles > 0
-      ? ((stats.dribbles_succeeded || 0) / stats.dribbles * 100)
-      : 0;
-
     return [
-      { stat: 'Total passes', value: Math.min(100, (stats.passes_total || 0) / 12) },
+      { stat: 'Passes', value: Math.min(100, ((stats.passes_total || stats.passes || 0)) / 12) },
+      { stat: 'Préc. passes', value: stats.passes_accuracy || 0 },
       { stat: 'Passes clés', value: Math.min(100, (stats.key_passes || 0) * 3) },
-      { stat: 'Total centres', value: Math.min(100, (stats.crosses_total || 0) * 2) },
-      { stat: 'Préc. centres', value: stats.crosses_accuracy || 0 },
-      { stat: 'Total dribbles', value: Math.min(100, (stats.dribbles || 0) * 2) },
-      { stat: 'Préc. dribbles', value: dribbleAccuracy }
+      { stat: 'Centres', value: Math.min(100, ((stats.crosses_total || stats.crosses || 0)) * 2) }
     ];
   };
 
   // CARTE 4: DÉFENSIVE & DISCIPLINE
   const defensiveData = (stats: PlayerStatistics) => {
+    const totalRedCards = (stats.red_cards || 0) + (stats.yellowred_cards || 0);
     return [
-      { stat: 'Récupérations', value: Math.min(100, (stats.ball_recoveries || 0) * 1.5) },
-      { stat: 'Tacles', value: Math.min(100, (stats.tackles || 0) * 1.5) },
-      { stat: 'Interceptions', value: Math.min(100, (stats.interceptions || 0) * 2) },
-      { stat: 'Total duels', value: Math.min(100, (stats.duels || 0) * 0.5) },
+      { stat: 'Duels totaux', value: Math.min(100, (stats.duels || 0) * 0.5) },
       { stat: 'Duels gagnés', value: Math.min(100, (stats.duels_won || 0) * 0.8) },
-      { stat: 'Duels aériens', value: Math.min(100, (stats.aerial_duels || 0) * 1) },
       { stat: 'Aériens gagnés', value: Math.min(100, (stats.aerial_duels_won || 0) * 2) },
+      { stat: 'Tacles', value: Math.min(100, (stats.tackles || 0) * 1.5) },
       { stat: 'Fautes comm.', value: Math.max(0, 100 - ((stats.fouls || 0) * 2.5)) },
       { stat: 'Fautes subies', value: Math.min(100, (stats.fouls_drawn || 0) * 3) },
       { stat: 'C. jaunes', value: Math.max(0, 100 - ((stats.yellow_cards || 0) * 12)) },
-      { stat: 'C. rouges', value: Math.max(0, 100 - ((stats.red_cards || 0) * 50)) },
-      { stat: 'Pen. conc.', value: Math.max(0, 100 - ((stats.penalties_committed || 0) * 25)) },
-      { stat: 'Erreurs→but', value: Math.max(0, 100 - ((stats.mistakes_leading_to_goals || 0) * 50)) }
+      { stat: 'C. rouges', value: Math.max(0, 100 - (totalRedCards * 50)) }
     ];
   };
 
   // CARTE GARDIEN: Stats spécifiques gardien
   const goalkeeperData = (stats: PlayerStatistics) => {
     return [
-      { stat: 'Arrêts', value: Math.min(100, (stats.saves || 0) / 1.5) },
-      { stat: 'Arrêts surface', value: Math.min(100, (stats.inside_box_saves || 0) / 1) },
-      { stat: 'Pen. arrêtés', value: Math.min(100, (stats.penalties_saved || 0) * 33) },
-      { stat: 'Clean sheets', value: Math.min(100, (stats.clean_sheets || 0) * 10) },
       { stat: 'Buts encaissés', value: Math.max(0, 100 - ((stats.goals_conceded || 0) * 2.5)) },
-      { stat: 'Pen. concédés', value: Math.max(0, 100 - ((stats.penalties_committed || 0) * 25)) },
-      { stat: 'Erreurs→but', value: Math.max(0, 100 - ((stats.mistakes_leading_to_goals || 0) * 50)) }
+      { stat: 'Arrêts', value: Math.min(100, (stats.saves || 0) / 1.5) },
+      { stat: 'Arrêts surface', value: Math.min(100, (stats.inside_box_saves || 0) / 1) }
     ];
   };
 
@@ -234,7 +206,7 @@ export default function PlayerComparisonRadar({ players }: PlayerComparisonRadar
           />
           <RadarChartComponent 
             data={prepareRadarData(goalkeeperData)} 
-            title="🥅 Gardien"
+            title="🧤 Carte Gardien"
           />
         </div>
 
@@ -264,19 +236,19 @@ export default function PlayerComparisonRadar({ players }: PlayerComparisonRadar
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <RadarChartComponent 
           data={prepareRadarData(generalDataField)} 
-          title="📊 Général"
+          title="⚽ Carte Générale"
         />
         <RadarChartComponent 
           data={prepareRadarData(offensiveData)} 
-          title="⚽ Offensif"
+          title="⚔️ Carte Offensive"
         />
         <RadarChartComponent 
           data={prepareRadarData(creativeData)} 
-          title="🎯 Créatif (passes & dribbles)"
+          title="🧑‍🎨 Carte Créative"
         />
         <RadarChartComponent 
           data={prepareRadarData(defensiveData)} 
-          title="🛡️ Défensif & Discipline"
+          title="🛡️ Carte Défensive & Discipline"
         />
       </div>
 
