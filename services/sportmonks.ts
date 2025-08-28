@@ -1,22 +1,22 @@
 // Service pour l'API SportMonks
 import { LIGUE1_PLAYER_IDS } from './allPlayerIds';
 import { LIGUE1_PLAYER_POSITIONS } from './playerPositions';
-import { ligue1PlayersCompleteStats } from '@/data/ligue1PlayersCompleteStats';
-import { premierleaguePlayersCompleteStats } from '@/data/premier-leaguePlayersCompleteStats';
-import { laligaPlayersCompleteStats } from '@/data/la-ligaPlayersCompleteStats';
-import { serieaPlayersCompleteStats } from '@/data/serie-aPlayersCompleteStats';
-import { bundesligaPlayersCompleteStats } from '@/data/bundesligaPlayersCompleteStats';
+import { ligue1PlayersRealStats } from '@/data/ligue1PlayersCompleteStats';
+import { premierleaguePlayersRealStats } from '@/data/premier-leaguePlayersCompleteStats';
+import { ligaPlayersRealStats } from '@/data/la-ligaPlayersCompleteStats';
+import { serieaPlayersRealStats } from '@/data/serie-aPlayersCompleteStats';
+import { bundesligaPlayersRealStats } from '@/data/bundesligaPlayersCompleteStats';
 
 const API_TOKEN = 'leBzDfKbRE5k9zEg3FuZE3Hh7XbukODNarOXLoVtPAiAtliDZ19wLu1Wnzi2';
 const BASE_URL = 'https://api.sportmonks.com/v3/football';
 
 // Mapping des championnats aux données
 const LEAGUE_DATA_MAP: { [key: string]: any } = {
-  'ligue1': ligue1PlayersCompleteStats,
-  'premier-league': premierleaguePlayersCompleteStats,
-  'la-liga': laligaPlayersCompleteStats,
-  'serie-a': serieaPlayersCompleteStats,
-  'bundesliga': bundesligaPlayersCompleteStats
+  'ligue1': ligue1PlayersRealStats,
+  'premier-league': premierleaguePlayersRealStats,
+  'la-liga': ligaPlayersRealStats,
+  'serie-a': serieaPlayersRealStats,
+  'bundesliga': bundesligaPlayersRealStats
 };
 
 // IDs des saisons actuelles (2025/2026)
