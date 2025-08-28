@@ -1,0 +1,107 @@
+2025-08-28 14:43:22,348 - INFO - ============================================================
+2025-08-28 14:43:22,348 - INFO - 🇪🇸 REFRESH LA LIGA - SAISON 2025/2026
+2025-08-28 14:43:22,348 - INFO - ============================================================
+2025-08-28 14:43:22,349 - INFO - ⏰ Début: 2025-08-28 14:43:22
+2025-08-28 14:43:22,349 - INFO - 📋 20 équipes à traiter
+2025-08-28 14:43:22,349 - INFO - 
+[1/20] Real Madrid
+2025-08-28 14:43:22,349 - INFO - 📊 Mise à jour de Real Madrid (ID: 3468)...
+2025-08-28 14:43:22,957 - WARNING - Erreur 404 pour Real Madrid
+2025-08-28 14:43:22,961 - WARNING -   ⚠️ Aucun joueur trouvé pour Real Madrid
+2025-08-28 14:43:27,961 - INFO - 
+[2/20] Barcelona
+2025-08-28 14:43:27,962 - INFO - 📊 Mise à jour de Barcelona (ID: 83)...
+2025-08-28 14:43:28,054 - WARNING - Erreur 404 pour Barcelona
+2025-08-28 14:43:28,054 - WARNING -   ⚠️ Aucun joueur trouvé pour Barcelona
+2025-08-28 14:43:33,055 - INFO - 
+[3/20] Atletico Madrid
+2025-08-28 14:43:33,055 - INFO - 📊 Mise à jour de Atletico Madrid (ID: 7980)...
+2025-08-28 14:43:33,181 - WARNING - Erreur 404 pour Atletico Madrid
+2025-08-28 14:43:33,181 - WARNING -   ⚠️ Aucun joueur trouvé pour Atletico Madrid
+2025-08-28 14:43:38,182 - INFO - 
+[4/20] Real Sociedad
+2025-08-28 14:43:38,182 - INFO - 📊 Mise à jour de Real Sociedad (ID: 594)...
+2025-08-28 14:43:38,275 - WARNING - Erreur 404 pour Real Sociedad
+2025-08-28 14:43:38,276 - WARNING -   ⚠️ Aucun joueur trouvé pour Real Sociedad
+2025-08-28 14:43:43,276 - INFO - 
+[5/20] Athletic Bilbao
+2025-08-28 14:43:43,277 - INFO - 📊 Mise à jour de Athletic Bilbao (ID: 13258)...
+2025-08-28 14:43:43,690 - WARNING - Erreur 404 pour Athletic Bilbao
+2025-08-28 14:43:43,691 - WARNING -   ⚠️ Aucun joueur trouvé pour Athletic Bilbao
+2025-08-28 14:43:48,691 - INFO - 
+[6/20] Real Betis
+2025-08-28 14:43:48,692 - INFO - 📊 Mise à jour de Real Betis (ID: 485)...
+2025-08-28 14:43:48,796 - WARNING - Erreur 404 pour Real Betis
+2025-08-28 14:43:48,796 - WARNING -   ⚠️ Aucun joueur trouvé pour Real Betis
+2025-08-28 14:43:53,797 - INFO - 
+[7/20] Sevilla
+2025-08-28 14:43:53,798 - INFO - 📊 Mise à jour de Sevilla (ID: 676)...
+2025-08-28 14:43:53,947 - WARNING - Erreur 404 pour Sevilla
+2025-08-28 14:43:53,948 - WARNING -   ⚠️ Aucun joueur trouvé pour Sevilla
+2025-08-28 14:43:58,948 - INFO - 
+[8/20] Villarreal
+2025-08-28 14:43:58,949 - INFO - 📊 Mise à jour de Villarreal (ID: 3477)...
+2025-08-28 14:43:59,116 - WARNING - Erreur 404 pour Villarreal
+2025-08-28 14:43:59,116 - WARNING -   ⚠️ Aucun joueur trouvé pour Villarreal
+2025-08-28 14:44:04,117 - INFO - 
+[9/20] Valencia
+2025-08-28 14:44:04,117 - INFO - 📊 Mise à jour de Valencia (ID: 214)...
+2025-08-28 14:44:04,650 - WARNING - Erreur 404 pour Valencia
+2025-08-28 14:44:04,651 - WARNING -   ⚠️ Aucun joueur trouvé pour Valencia
+2025-08-28 14:44:09,651 - INFO - 
+[10/20] Girona
+2025-08-28 14:44:09,652 - INFO - 📊 Mise à jour de Girona (ID: 231)...
+2025-08-28 14:44:09,739 - WARNING - Erreur 404 pour Girona
+2025-08-28 14:44:09,740 - WARNING -   ⚠️ Aucun joueur trouvé pour Girona
+2025-08-28 14:44:14,740 - INFO - 
+[11/20] Osasuna
+2025-08-28 14:44:14,741 - INFO - 📊 Mise à jour de Osasuna (ID: 459)...
+2025-08-28 14:44:14,856 - WARNING - Erreur 404 pour Osasuna
+2025-08-28 14:44:14,857 - WARNING -   ⚠️ Aucun joueur trouvé pour Osasuna
+2025-08-28 14:44:19,858 - INFO - 
+[12/20] Getafe
+2025-08-28 14:44:19,859 - INFO - 📊 Mise à jour de Getafe (ID: 106)...
+2025-08-28 14:44:20,010 - WARNING - Erreur 404 pour Getafe
+2025-08-28 14:44:20,011 - WARNING -   ⚠️ Aucun joueur trouvé pour Getafe
+2025-08-28 14:44:25,012 - INFO - 
+[13/20] Celta Vigo
+2025-08-28 14:44:25,012 - INFO - 📊 Mise à jour de Celta Vigo (ID: 36)...
+2025-08-28 14:44:25,204 - WARNING - Erreur 404 pour Celta Vigo
+2025-08-28 14:44:25,205 - WARNING -   ⚠️ Aucun joueur trouvé pour Celta Vigo
+2025-08-28 14:44:30,206 - INFO - 
+[14/20] Mallorca
+2025-08-28 14:44:30,206 - INFO - 📊 Mise à jour de Mallorca (ID: 645)...
+2025-08-28 14:44:30,320 - WARNING - Erreur 404 pour Mallorca
+2025-08-28 14:44:30,321 - WARNING -   ⚠️ Aucun joueur trouvé pour Mallorca
+2025-08-28 14:44:35,322 - INFO - 
+[15/20] Deportivo Alavés
+2025-08-28 14:44:35,322 - INFO - 📊 Mise à jour de Deportivo Alavés (ID: 2975)...
+2025-08-28 14:44:35,465 - WARNING - Erreur 404 pour Deportivo Alavés
+2025-08-28 14:44:35,466 - WARNING -   ⚠️ Aucun joueur trouvé pour Deportivo Alavés
+2025-08-28 14:44:40,466 - INFO - 
+[16/20] Rayo Vallecano
+2025-08-28 14:44:40,466 - INFO - 📊 Mise à jour de Rayo Vallecano (ID: 377)...
+2025-08-28 14:44:40,549 - WARNING - Erreur 404 pour Rayo Vallecano
+2025-08-28 14:44:40,550 - WARNING -   ⚠️ Aucun joueur trouvé pour Rayo Vallecano
+2025-08-28 14:44:45,550 - INFO - 
+[17/20] Las Palmas
+2025-08-28 14:44:45,550 - INFO - 📊 Mise à jour de Las Palmas (ID: 373)...
+2025-08-28 14:44:46,142 - WARNING - Erreur 404 pour Las Palmas
+2025-08-28 14:44:46,142 - WARNING -   ⚠️ Aucun joueur trouvé pour Las Palmas
+2025-08-28 14:44:51,143 - INFO - 
+[18/20] Real Valladolid
+2025-08-28 14:44:51,143 - INFO - 📊 Mise à jour de Real Valladolid (ID: 7978)...
+2025-08-28 14:44:51,265 - WARNING - Erreur 404 pour Real Valladolid
+2025-08-28 14:44:51,265 - WARNING -   ⚠️ Aucun joueur trouvé pour Real Valladolid
+2025-08-28 14:44:56,266 - INFO - 
+[19/20] Espanyol
+2025-08-28 14:44:56,266 - INFO - 📊 Mise à jour de Espanyol (ID: 3750)...
+2025-08-28 14:44:56,392 - WARNING - Erreur 404 pour Espanyol
+2025-08-28 14:44:56,392 - WARNING -   ⚠️ Aucun joueur trouvé pour Espanyol
+2025-08-28 14:45:01,393 - INFO - 
+[20/20] Leganés
+2025-08-28 14:45:01,393 - INFO - 📊 Mise à jour de Leganés (ID: 3751)...
+2025-08-28 14:45:01,579 - WARNING - Erreur 404 pour Leganés
+2025-08-28 14:45:01,580 - WARNING -   ⚠️ Aucun joueur trouvé pour Leganés
+2025-08-28 14:45:01,580 - INFO - 
+📝 Intégration avec les données existantes...

@@ -57,7 +57,8 @@
       "Bash(do basename \"$file\" .json)",
       "Bash(git log:*)",
       "Bash(npx tsc:*)",
-      "Bash(npm cache clean:*)"
+      "Bash(npm cache clean:*)",
+      "Bash(npx kill-port:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits",

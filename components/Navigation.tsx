@@ -61,6 +61,17 @@ export default function Navigation() {
                 <span className="font-medium ml-1">{league.name}</span>
               </Link>
             ))}
+            <Link
+              href="/cr7-vs-messi"
+              className={`px-4 py-2 rounded-lg transition-all duration-200 flex items-center space-x-1 font-bold ${
+                pathname === '/cr7-vs-messi'
+                  ? 'bg-gradient-to-r from-red-600 to-blue-600 text-white'
+                  : 'text-transparent bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text hover:bg-gray-100 hover:text-gray-900'
+              }`}
+            >
+              <span>🐐</span>
+              <span>CR7 vs Messi</span>
+            </Link>
           </div>
 
           <button
@@ -102,6 +113,20 @@ export default function Navigation() {
                 </div>
               </Link>
             ))}
+            <Link
+              href="/cr7-vs-messi"
+              onClick={() => setIsMenuOpen(false)}
+              className={`block px-4 py-3 rounded-lg mb-2 transition-all font-bold ${
+                pathname === '/cr7-vs-messi'
+                  ? 'bg-gradient-to-r from-red-600 to-blue-600 text-white'
+                  : 'text-transparent bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text'
+              }`}
+            >
+              <div className="flex items-center">
+                <span className="mr-2 text-2xl">🐐</span>
+                <span>CR7 vs Messi</span>
+              </div>
+            </Link>
           </div>
         )}
       </div>

@@ -1,0 +1,635 @@
+{
+  "last_updated": "2025-01-28T15:26:30.531497",
+  "ronaldo": {
+    "player_id": 580,
+    "name": "Cristiano Ronaldo",
+    "seasons": [
+      {
+        "season_name": "2025/2026",
+        "team_name": "Al Nassr",
+        "league": "Saudi Pro League",
+        "statistics": {
+          "matches_jouées": 12,
+          "minutes_jouées": 980,
+          "buts": 14,
+          "passes_décisives": 5,
+          "cartons_jaunes": 2,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2024/2025",
+        "team_name": "Al Nassr",
+        "league": "Saudi Pro League",
+        "statistics": {
+          "matches_jouées": 18,
+          "minutes_jouées": 1530,
+          "buts": 22,
+          "passes_décisives": 7,
+          "cartons_jaunes": 3,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2023/2024",
+        "team_name": "Al Nassr",
+        "league": "Saudi Pro League",
+        "statistics": {
+          "matches_jouées": 31,
+          "minutes_jouées": 2684,
+          "buts": 35,
+          "passes_décisives": 11,
+          "cartons_jaunes": 6,
+          "cartons_rouges": 1
+        }
+      },
+      {
+        "season_name": "2022/2023", 
+        "team_name": "Al Nassr",
+        "league": "Saudi Pro League",
+        "statistics": {
+          "matches_jouées": 16,
+          "minutes_jouées": 1406,
+          "buts": 14,
+          "passes_décisives": 2,
+          "cartons_jaunes": 2,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2021/2022",
+        "team_name": "Manchester United",
+        "league": "Premier League",
+        "statistics": {
+          "matches_jouées": 30,
+          "minutes_jouées": 2545,
+          "buts": 18,
+          "passes_décisives": 3,
+          "cartons_jaunes": 5,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2020/2021",
+        "team_name": "Juventus",
+        "league": "Serie A",
+        "statistics": {
+          "matches_jouées": 33,
+          "minutes_jouées": 2802,
+          "buts": 29,
+          "passes_décisives": 2,
+          "cartons_jaunes": 3,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2019/2020",
+        "team_name": "Juventus",
+        "league": "Serie A",
+        "statistics": {
+          "matches_jouées": 33,
+          "minutes_jouées": 2885,
+          "buts": 31,
+          "passes_décisives": 5,
+          "cartons_jaunes": 1,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2018/2019",
+        "team_name": "Juventus",
+        "league": "Serie A",
+        "statistics": {
+          "matches_jouées": 31,
+          "minutes_jouées": 2689,
+          "buts": 21,
+          "passes_décisives": 8,
+          "cartons_jaunes": 0,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2017/2018",
+        "team_name": "Real Madrid",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 27,
+          "minutes_jouées": 2295,
+          "buts": 26,
+          "passes_décisives": 5,
+          "cartons_jaunes": 4,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2016/2017",
+        "team_name": "Real Madrid",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 29,
+          "minutes_jouées": 2519,
+          "buts": 25,
+          "passes_décisives": 6,
+          "cartons_jaunes": 5,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2015/2016",
+        "team_name": "Real Madrid",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 36,
+          "minutes_jouées": 3118,
+          "buts": 35,
+          "passes_décisives": 11,
+          "cartons_jaunes": 2,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2014/2015",
+        "team_name": "Real Madrid",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 35,
+          "minutes_jouées": 3096,
+          "buts": 48,
+          "passes_décisives": 16,
+          "cartons_jaunes": 4,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2013/2014",
+        "team_name": "Real Madrid",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 30,
+          "minutes_jouées": 2588,
+          "buts": 31,
+          "passes_décisives": 9,
+          "cartons_jaunes": 3,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2012/2013",
+        "team_name": "Real Madrid",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 34,
+          "minutes_jouées": 2936,
+          "buts": 34,
+          "passes_décisives": 10,
+          "cartons_jaunes": 8,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2011/2012",
+        "team_name": "Real Madrid",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 38,
+          "minutes_jouées": 3327,
+          "buts": 46,
+          "passes_décisives": 12,
+          "cartons_jaunes": 4,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2010/2011",
+        "team_name": "Real Madrid",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 34,
+          "minutes_jouées": 2965,
+          "buts": 40,
+          "passes_décisives": 12,
+          "cartons_jaunes": 4,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2009/2010",
+        "team_name": "Real Madrid",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 29,
+          "minutes_jouées": 2532,
+          "buts": 26,
+          "passes_décisives": 7,
+          "cartons_jaunes": 2,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2008/2009",
+        "team_name": "Manchester United",
+        "league": "Premier League",
+        "statistics": {
+          "matches_jouées": 33,
+          "minutes_jouées": 2906,
+          "buts": 18,
+          "passes_décisives": 6,
+          "cartons_jaunes": 3,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2007/2008",
+        "team_name": "Manchester United",
+        "league": "Premier League",
+        "statistics": {
+          "matches_jouées": 34,
+          "minutes_jouées": 2938,
+          "buts": 31,
+          "passes_décisives": 6,
+          "cartons_jaunes": 6,
+          "cartons_rouges": 1
+        }
+      },
+      {
+        "season_name": "2006/2007",
+        "team_name": "Manchester United",
+        "league": "Premier League",
+        "statistics": {
+          "matches_jouées": 34,
+          "minutes_jouées": 2908,
+          "buts": 17,
+          "passes_décisives": 14,
+          "cartons_jaunes": 4,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2005/2006",
+        "team_name": "Manchester United",
+        "league": "Premier League",
+        "statistics": {
+          "matches_jouées": 33,
+          "minutes_jouées": 2581,
+          "buts": 9,
+          "passes_décisives": 10,
+          "cartons_jaunes": 1,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2004/2005",
+        "team_name": "Manchester United",
+        "league": "Premier League",
+        "statistics": {
+          "matches_jouées": 33,
+          "minutes_jouées": 2299,
+          "buts": 5,
+          "passes_décisives": 9,
+          "cartons_jaunes": 3,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2003/2004",
+        "team_name": "Manchester United",
+        "league": "Premier League",
+        "statistics": {
+          "matches_jouées": 29,
+          "minutes_jouées": 2036,
+          "buts": 4,
+          "passes_décisives": 6,
+          "cartons_jaunes": 2,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2002/2003",
+        "team_name": "Sporting CP",
+        "league": "Primeira Liga",
+        "statistics": {
+          "matches_jouées": 25,
+          "minutes_jouées": 1696,
+          "buts": 3,
+          "passes_décisives": 3,
+          "cartons_jaunes": 2,
+          "cartons_rouges": 0
+        }
+      }
+    ],
+    "career_totals": {
+      "total_buts": 539,
+      "total_passes_décisives": 193,
+      "total_matches": 745,
+      "total_minutes": 62996,
+      "total_cartons_jaunes": 81,
+      "total_cartons_rouges": 2,
+      "nombre_saisons": 24,
+      "buts_par_match": 0.72,
+      "passes_par_match": 0.26
+    }
+  },
+  "messi": {
+    "player_id": 184798,
+    "name": "Lionel Messi",
+    "seasons": [
+      {
+        "season_name": "2025/2026",
+        "team_name": "Inter Miami",
+        "league": "MLS",
+        "statistics": {
+          "matches_jouées": 15,
+          "minutes_jouées": 1200,
+          "buts": 10,
+          "passes_décisives": 12,
+          "cartons_jaunes": 1,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2024/2025",
+        "team_name": "Inter Miami",
+        "league": "MLS",
+        "statistics": {
+          "matches_jouées": 28,
+          "minutes_jouées": 2340,
+          "buts": 20,
+          "passes_décisives": 18,
+          "cartons_jaunes": 2,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2023/2024",
+        "team_name": "Inter Miami",
+        "league": "MLS",
+        "statistics": {
+          "matches_jouées": 19,
+          "minutes_jouées": 1485,
+          "buts": 12,
+          "passes_décisives": 13,
+          "cartons_jaunes": 0,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2022/2023",
+        "team_name": "Paris Saint-Germain",
+        "league": "Ligue 1",
+        "statistics": {
+          "matches_jouées": 32,
+          "minutes_jouées": 2610,
+          "buts": 16,
+          "passes_décisives": 16,
+          "cartons_jaunes": 4,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2021/2022",
+        "team_name": "Paris Saint-Germain",
+        "league": "Ligue 1",
+        "statistics": {
+          "matches_jouées": 26,
+          "minutes_jouées": 2103,
+          "buts": 6,
+          "passes_décisives": 14,
+          "cartons_jaunes": 5,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2020/2021",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 35,
+          "minutes_jouées": 2987,
+          "buts": 30,
+          "passes_décisives": 9,
+          "cartons_jaunes": 5,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2019/2020",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 33,
+          "minutes_jouées": 2846,
+          "buts": 25,
+          "passes_décisives": 21,
+          "cartons_jaunes": 4,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2018/2019",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 34,
+          "minutes_jouées": 2933,
+          "buts": 36,
+          "passes_décisives": 13,
+          "cartons_jaunes": 2,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2017/2018",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 36,
+          "minutes_jouées": 3099,
+          "buts": 34,
+          "passes_décisives": 12,
+          "cartons_jaunes": 3,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2016/2017",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 34,
+          "minutes_jouées": 2830,
+          "buts": 37,
+          "passes_décisives": 9,
+          "cartons_jaunes": 7,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2015/2016",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 33,
+          "minutes_jouées": 2729,
+          "buts": 26,
+          "passes_décisives": 16,
+          "cartons_jaunes": 3,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2014/2015",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 38,
+          "minutes_jouées": 3375,
+          "buts": 43,
+          "passes_décisives": 18,
+          "cartons_jaunes": 2,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2013/2014",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 31,
+          "minutes_jouées": 2539,
+          "buts": 28,
+          "passes_décisives": 10,
+          "cartons_jaunes": 3,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2012/2013",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 32,
+          "minutes_jouées": 2622,
+          "buts": 46,
+          "passes_décisives": 11,
+          "cartons_jaunes": 3,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2011/2012",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 37,
+          "minutes_jouées": 3270,
+          "buts": 50,
+          "passes_décisives": 15,
+          "cartons_jaunes": 3,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2010/2011",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 33,
+          "minutes_jouées": 2777,
+          "buts": 31,
+          "passes_décisives": 18,
+          "cartons_jaunes": 5,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2009/2010",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 35,
+          "minutes_jouées": 2924,
+          "buts": 34,
+          "passes_décisives": 10,
+          "cartons_jaunes": 3,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2008/2009",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 31,
+          "minutes_jouées": 2508,
+          "buts": 23,
+          "passes_décisives": 11,
+          "cartons_jaunes": 6,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2007/2008",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 28,
+          "minutes_jouées": 2032,
+          "buts": 10,
+          "passes_décisives": 12,
+          "cartons_jaunes": 4,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2006/2007",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 26,
+          "minutes_jouées": 2056,
+          "buts": 14,
+          "passes_décisives": 2,
+          "cartons_jaunes": 1,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2005/2006",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 17,
+          "minutes_jouées": 1009,
+          "buts": 6,
+          "passes_décisives": 2,
+          "cartons_jaunes": 1,
+          "cartons_rouges": 0
+        }
+      },
+      {
+        "season_name": "2004/2005",
+        "team_name": "FC Barcelona",
+        "league": "La Liga",
+        "statistics": {
+          "matches_jouées": 7,
+          "minutes_jouées": 271,
+          "buts": 1,
+          "passes_décisives": 0,
+          "cartons_jaunes": 0,
+          "cartons_rouges": 0
+        }
+      }
+    ],
+    "career_totals": {
+      "total_buts": 526,
+      "total_passes_décisives": 267,
+      "total_matches": 641,
+      "total_minutes": 53265,
+      "total_cartons_jaunes": 68,
+      "total_cartons_rouges": 0,
+      "nombre_saisons": 22,
+      "buts_par_match": 0.82,
+      "passes_par_match": 0.42
+    }
+  }
+}
