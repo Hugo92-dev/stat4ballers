@@ -135,29 +135,23 @@ export default function CR7VsMessiPage() {
                 </div>
               </div>
 
-              <div className="space-y-3">
-                <div>
-                  <p className="text-gray-400 text-sm mb-1">Minutes Jouées</p>
-                  <div className="bg-black/40 rounded-full h-8 overflow-hidden">
-                    <div 
-                      className="h-full bg-gradient-to-r from-red-600 to-red-400 flex items-center justify-end pr-3"
-                      style={{ width: '100%' }}
-                    >
-                      <span className="text-sm font-semibold">{ronaldoData.career_totals.total_minutes}</span>
-                    </div>
-                  </div>
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="bg-black/40 rounded-lg p-4">
+                  <p className="text-gray-400 text-sm">Minutes Jouées</p>
+                  <p className="text-2xl font-bold text-white">{ronaldoData.career_totals.total_minutes.toLocaleString()}</p>
                 </div>
-                <div>
-                  <p className="text-gray-400 text-sm mb-1">Saisons Analysées</p>
-                  <div className="bg-black/40 rounded-full h-8 overflow-hidden">
-                    <div 
-                      className="h-full bg-gradient-to-r from-red-600 to-red-400 flex items-center justify-end pr-3"
-                      style={{ width: `${(ronaldoData.career_totals.nombre_saisons / 20) * 100}%` }}
-                    >
-                      <span className="text-sm font-semibold">{ronaldoData.career_totals.nombre_saisons}</span>
-                    </div>
-                  </div>
+                <div className="bg-black/40 rounded-lg p-4">
+                  <p className="text-gray-400 text-sm">Nombre de Saisons</p>
+                  <p className="text-2xl font-bold text-white">{ronaldoData.career_totals.nombre_saisons}</p>
                 </div>
+              </div>
+
+              <div className="bg-black/40 rounded-lg p-4 text-center">
+                <p className="text-gray-400 text-xs">
+                  Statistiques de 2002/03 à 2025/26 - Championnats domestiques uniquement
+                  <br />
+                  (Hors coupes nationales, compétitions européennes et matchs internationaux)
+                </p>
               </div>
             </div>
 
@@ -187,29 +181,23 @@ export default function CR7VsMessiPage() {
                 </div>
               </div>
 
-              <div className="space-y-3">
-                <div>
-                  <p className="text-gray-400 text-sm mb-1">Minutes Jouées</p>
-                  <div className="bg-black/40 rounded-full h-8 overflow-hidden">
-                    <div 
-                      className="h-full bg-gradient-to-r from-blue-600 to-blue-400 flex items-center justify-end pr-3"
-                      style={{ width: '100%' }}
-                    >
-                      <span className="text-sm font-semibold">{messiData.career_totals.total_minutes}</span>
-                    </div>
-                  </div>
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="bg-black/40 rounded-lg p-4">
+                  <p className="text-gray-400 text-sm">Minutes Jouées</p>
+                  <p className="text-2xl font-bold text-white">{messiData.career_totals.total_minutes.toLocaleString()}</p>
                 </div>
-                <div>
-                  <p className="text-gray-400 text-sm mb-1">Saisons Analysées</p>
-                  <div className="bg-black/40 rounded-full h-8 overflow-hidden">
-                    <div 
-                      className="h-full bg-gradient-to-r from-blue-600 to-blue-400 flex items-center justify-end pr-3"
-                      style={{ width: `${(messiData.career_totals.nombre_saisons / 20) * 100}%` }}
-                    >
-                      <span className="text-sm font-semibold">{messiData.career_totals.nombre_saisons}</span>
-                    </div>
-                  </div>
+                <div className="bg-black/40 rounded-lg p-4">
+                  <p className="text-gray-400 text-sm">Nombre de Saisons</p>
+                  <p className="text-2xl font-bold text-white">{messiData.career_totals.nombre_saisons}</p>
                 </div>
+              </div>
+
+              <div className="bg-black/40 rounded-lg p-4 text-center">
+                <p className="text-gray-400 text-xs">
+                  Statistiques de 2004/05 à 2025/26 - Championnats domestiques uniquement
+                  <br />
+                  (Hors coupes nationales, compétitions européennes et matchs internationaux)
+                </p>
               </div>
             </div>
           </div>
