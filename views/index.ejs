@@ -96,7 +96,7 @@
                     <% leagues.forEach(league => { %>
                     <a href="/league/<%= league.id %>" class="league-card">
                         <div class="league-logo">
-                            <img src="/images/leagues/<%= league.id %>.png" alt="<%= league.name %>" onerror="this.src='/images/placeholder-league.png'">
+                            <img src="/images/leagues/<%= league.id %>.svg" alt="<%= league.name %>" onerror="this.src='/images/placeholder-league.png'">
                         </div>
                         <div class="league-info">
                             <h3><%= league.name %></h3>

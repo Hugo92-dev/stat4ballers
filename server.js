@@ -47,7 +47,7 @@ app.get('/', (req, res) => {
         leagues: [
             { id: 'ligue1', name: 'Ligue 1', country: 'France' },
             { id: 'premierleague', name: 'Premier League', country: 'England' },
-            { id: 'liga', name: 'La Liga', country: 'Spain' },
+            { id: 'laliga', name: 'La Liga', country: 'Spain' },
             { id: 'seriea', name: 'Serie A', country: 'Italy' },
             { id: 'bundesliga', name: 'Bundesliga', country: 'Germany' }
         ]

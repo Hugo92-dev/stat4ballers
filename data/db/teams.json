@@ -1,20 +1,938 @@
 [
   {
+    "sportmonksId": 1,
+    "name": "West Ham United",
+    "slug": "west-ham-united",
+    "shortName": "WHU",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/1/1.png",
+    "founded": 1895,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "London Stadium",
+      "capacity": 59623,
+      "city": ""
+    },
+    "id": "1757850258697917",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 3,
+    "name": "Sunderland",
+    "slug": "sunderland",
+    "shortName": "SUN",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/3/3.png",
+    "founded": 1879,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Stadium of Light",
+      "capacity": 48707,
+      "city": ""
+    },
+    "id": "1757850258697352",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 6,
+    "name": "Tottenham Hotspur",
+    "slug": "tottenham-hotspur",
+    "shortName": "TOT",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
+    "founded": 1882,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Tottenham Hotspur Stadium",
+      "capacity": 62850,
+      "city": ""
+    },
+    "id": "1757850258697813",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 8,
+    "name": "Liverpool",
+    "slug": "liverpool",
+    "shortName": "LIV",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
+    "founded": 1892,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Anfield",
+      "capacity": 61276,
+      "city": ""
+    },
+    "id": "175785025869760",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 9,
+    "name": "Manchester City",
+    "slug": "manchester-city",
+    "shortName": "MCI",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+    "founded": 1880,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Etihad Stadium",
+      "capacity": 55097,
+      "city": ""
+    },
+    "id": "1757850258697216",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 11,
+    "name": "Fulham",
+    "slug": "fulham",
+    "shortName": "FUL",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/11/11.png",
+    "founded": 1879,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Craven Cottage",
+      "capacity": 25700,
+      "city": ""
+    },
+    "id": "1757850258697717",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 13,
+    "name": "Everton",
+    "slug": "everton",
+    "shortName": "EVE",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png",
+    "founded": 1878,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Hill Dickinson Stadium",
+      "capacity": 52769,
+      "city": ""
+    },
+    "id": "1757850258697691",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 14,
+    "name": "Manchester United",
+    "slug": "manchester-united",
+    "shortName": "MUN",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+    "founded": 1878,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Old Trafford",
+      "capacity": 74879,
+      "city": ""
+    },
+    "id": "175785025869734",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 15,
+    "name": "Aston Villa",
+    "slug": "aston-villa",
+    "shortName": "AVL",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/15/15.png",
+    "founded": 1874,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Villa Park",
+      "capacity": 42640,
+      "city": ""
+    },
+    "id": "1757850258697508",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 18,
+    "name": "Chelsea",
+    "slug": "chelsea",
+    "shortName": "CHE",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
+    "founded": 1905,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Stamford Bridge",
+      "capacity": 41841,
+      "city": ""
+    },
+    "id": "1757850258697214",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 19,
+    "name": "Arsenal",
+    "slug": "arsenal",
+    "shortName": "ARS",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
+    "founded": 1886,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Emirates Stadium",
+      "capacity": 60383,
+      "city": ""
+    },
+    "id": "1757850258697904",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 20,
+    "name": "Newcastle United",
+    "slug": "newcastle-united",
+    "shortName": "NEW",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/20/20.png",
+    "founded": 1892,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "St. James' Park",
+      "capacity": 52409,
+      "city": ""
+    },
+    "id": "1757850258697629",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 27,
+    "name": "Burnley",
+    "slug": "burnley",
+    "shortName": "BUR",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/27/27.png",
+    "founded": 1882,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Turf Moor",
+      "capacity": 22546,
+      "city": ""
+    },
+    "id": "1757850258697716",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 29,
+    "name": "Wolverhampton Wanderers",
+    "slug": "wolverhampton-wanderers",
+    "shortName": "WOL",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/29/29.png",
+    "founded": 1877,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Molineux Stadium",
+      "capacity": 32050,
+      "city": ""
+    },
+    "id": "1757850258697781",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 36,
+    "name": "Celta de Vigo",
+    "slug": "celta-de-vigo",
+    "shortName": "CEL",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/4/36.png",
+    "founded": 1923,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "Estadio de Balaídos",
+      "capacity": 25000,
+      "city": ""
+    },
+    "id": "1757850259812282",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 37,
+    "name": "Roma",
+    "slug": "roma",
+    "shortName": "ROM",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/5/37.png",
+    "founded": 1927,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Stadio Olimpico",
+      "capacity": 16310,
+      "city": ""
+    },
+    "id": "1757850260912344",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
+    "sportmonksId": 43,
+    "name": "Lazio",
+    "slug": "lazio",
+    "shortName": "LAZ",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/11/43.png",
+    "founded": 1900,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Stadio Olimpico",
+      "capacity": 16310,
+      "city": ""
+    },
+    "id": "1757850260912215",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
+    "sportmonksId": 44,
+    "name": "Olympique Marseille",
+    "slug": "olympique-marseille",
+    "shortName": "OM",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/12/44.png",
+    "founded": 1899,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stade Vélodrome",
+      "capacity": 67394,
+      "city": ""
+    },
+    "id": "1757850257579991",
+    "lastUpdated": "2025-09-14T11:44:17.579Z"
+  },
+  {
+    "sportmonksId": 51,
+    "name": "Crystal Palace",
+    "slug": "crystal-palace",
+    "shortName": "CRY",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png",
+    "founded": 1905,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Selhurst Park",
+      "capacity": 25456,
+      "city": ""
+    },
+    "id": "1757850258697703",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 52,
+    "name": "AFC Bournemouth",
+    "slug": "afc-bournemouth",
+    "shortName": "BOU",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png",
+    "founded": 1899,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Vitality Stadium",
+      "capacity": 11700,
+      "city": ""
+    },
+    "id": "1757850258697393",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 59,
+    "name": "Nantes",
+    "slug": "nantes",
+    "shortName": "NAN",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/27/59.png",
+    "founded": 1943,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stade de la Beaujoire - Louis Fonteneau",
+      "capacity": 37473,
+      "city": ""
+    },
+    "id": "1757850257580910",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 63,
+    "name": "Nottingham Forest",
+    "slug": "nottingham-forest",
+    "shortName": "NFO",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/31/63.png",
+    "founded": 1865,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "The City Ground",
+      "capacity": 30445,
+      "city": ""
+    },
+    "id": "1757850258697449",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 68,
+    "name": "Borussia Dortmund",
+    "slug": "borussia-dortmund",
+    "shortName": "BVB",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png",
+    "founded": 1909,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "Signal Iduna Park",
+      "capacity": 81365,
+      "city": ""
+    },
+    "id": "1757850262028293",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 71,
+    "name": "Leeds United",
+    "slug": "leeds-united",
+    "shortName": "LEE",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png",
+    "founded": 1919,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Elland Road",
+      "capacity": 40242,
+      "city": ""
+    },
+    "id": "1757850258697634",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 78,
+    "name": "Brighton & Hove Albion",
+    "slug": "brighton-and-hove-albion",
+    "shortName": "BHA",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/14/78.png",
+    "founded": 1901,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "The American Express Community Stadium",
+      "capacity": 31876,
+      "city": ""
+    },
+    "id": "1757850258696672",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 79,
+    "name": "Olympique Lyonnais",
+    "slug": "olympique-lyonnais",
+    "shortName": "LYO",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/15/79.png",
+    "founded": 1950,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Groupama Stadium",
+      "capacity": 59186,
+      "city": ""
+    },
+    "id": "1757850257580342",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 82,
+    "name": "Werder Bremen",
+    "slug": "werder-bremen",
+    "shortName": "SVW",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png",
+    "founded": 1899,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "Weserstadion",
+      "capacity": 5500,
+      "city": ""
+    },
+    "id": "1757850262028437",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 83,
+    "name": "FC Barcelona",
+    "slug": "fc-barcelona",
+    "shortName": "BAR",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/19/83.png",
+    "founded": 1899,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "Estadi Olímpic Lluís Companys",
+      "capacity": 57619,
+      "city": ""
+    },
+    "id": "1757850259812775",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 90,
+    "name": "FC Augsburg",
+    "slug": "fc-augsburg",
+    "shortName": "FCA",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/26/90.png",
+    "founded": 1907,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "WWK Arena",
+      "capacity": 30660,
+      "city": ""
+    },
+    "id": "1757850262028824",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 93,
+    "name": "Real Oviedo",
+    "slug": "real-oviedo",
+    "shortName": "OVI",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/29/93.png",
+    "founded": 1926,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "Estadio Nuevo Carlos Tartiere",
+      "capacity": 5000,
+      "city": ""
+    },
+    "id": "175785025981277",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 102,
+    "name": "Genoa",
+    "slug": "genoa",
+    "shortName": "GEN",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/6/102.png",
+    "founded": 1893,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Stadio Comunale Luigi Ferraris",
+      "capacity": 33205,
+      "city": ""
+    },
+    "id": "1757850260912361",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
+    "sportmonksId": 106,
+    "name": "Getafe",
+    "slug": "getafe",
+    "shortName": "GET",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png",
+    "founded": 1983,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "Coliseum Alfonso Pérez",
+      "capacity": 17393,
+      "city": ""
+    },
+    "id": "1757850259812633",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 109,
+    "name": "Fiorentina",
+    "slug": "fiorentina",
+    "shortName": "FIO",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/13/109.png",
+    "founded": 1926,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Stadio Artemio Franchi",
+      "capacity": 43147,
+      "city": ""
+    },
+    "id": "1757850260912788",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
+    "sportmonksId": 113,
+    "name": "Milan",
+    "slug": "milan",
+    "shortName": "MIL",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/17/113.png",
+    "founded": 1899,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Stadio Giuseppe Meazza",
+      "capacity": 80018,
+      "city": ""
+    },
+    "id": "175785026091228",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
+    "sportmonksId": 214,
+    "name": "Valencia",
+    "slug": "valencia",
+    "shortName": "VAL",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png",
+    "founded": 1919,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "Estadio de Mestalla",
+      "capacity": 49430,
+      "city": ""
+    },
+    "id": "1757850259812911",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 231,
+    "name": "Girona",
+    "slug": "girona",
+    "shortName": "GIR",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/7/231.png",
+    "founded": 1930,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "Estadi Municipal de Montilivi",
+      "capacity": 14624,
+      "city": ""
+    },
+    "id": "1757850259812328",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 236,
+    "name": "Brentford",
+    "slug": "brentford",
+    "shortName": "BRE",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+    "founded": 1889,
+    "league": "premierleague",
+    "country": "England",
+    "venue": {
+      "name": "Brentford Community Stadium",
+      "capacity": 17250,
+      "city": ""
+    },
+    "id": "1757850258697286",
+    "lastUpdated": "2025-09-14T11:44:18.697Z"
+  },
+  {
+    "sportmonksId": 266,
+    "name": "Brest",
+    "slug": "brest",
+    "shortName": "B29",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/10/266.png",
+    "founded": 1950,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stade Francis-Le Ble",
+      "capacity": 15097,
+      "city": ""
+    },
+    "id": "1757850257580172",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 268,
+    "name": "Como",
+    "slug": "como",
+    "shortName": "COM",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/12/268.png",
+    "founded": 1907,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Stadio Giuseppe Sinigaglia",
+      "capacity": 13602,
+      "city": ""
+    },
+    "id": "1757850260912575",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
+    "sportmonksId": 271,
+    "name": "Lens",
+    "slug": "lens",
+    "shortName": "LEN",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/15/271.png",
+    "founded": 1906,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stade Bollaert-Delelis",
+      "capacity": 38223,
+      "city": ""
+    },
+    "id": "1757850257580440",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 277,
+    "name": "RB Leipzig",
+    "slug": "rb-leipzig",
+    "shortName": "RBL",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/21/277.png",
+    "founded": 2009,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "Red Bull Arena",
+      "capacity": 47800,
+      "city": ""
+    },
+    "id": "1757850262028337",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 289,
+    "name": "Toulouse",
+    "slug": "toulouse",
+    "shortName": "TOU",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/1/289.png",
+    "founded": 1937,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stadium de Toulouse",
+      "capacity": 33150,
+      "city": ""
+    },
+    "id": "1757850257580416",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 346,
+    "name": "Udinese",
+    "slug": "udinese",
+    "shortName": "UDI",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/26/346.png",
+    "founded": 1896,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Dacia Arena",
+      "capacity": 25132,
+      "city": ""
+    },
+    "id": "1757850260912337",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
+    "sportmonksId": 353,
+    "name": "St. Pauli",
+    "slug": "st-pauli",
+    "shortName": "PAU",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/1/353.png",
+    "founded": 1910,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "Millerntor-Stadion",
+      "capacity": 29546,
+      "city": ""
+    },
+    "id": "1757850262028666",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 366,
+    "name": "Eintracht Frankfurt",
+    "slug": "eintracht-frankfurt",
+    "shortName": "SGE",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/14/366.png",
+    "founded": 1899,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "Commerzbank-Arena",
+      "capacity": 48000,
+      "city": ""
+    },
+    "id": "1757850262028973",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 377,
+    "name": "Rayo Vallecano",
+    "slug": "rayo-vallecano",
+    "shortName": "RAY",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/25/377.png",
+    "founded": 1924,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "Estadio de Vallecas",
+      "capacity": 14708,
+      "city": ""
+    },
+    "id": "175785025981290",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 398,
+    "name": "Parma",
+    "slug": "parma",
+    "shortName": "PRM",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/14/398.png",
+    "founded": 1913,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Stadio Ennio Tardini",
+      "capacity": 27906,
+      "city": ""
+    },
+    "id": "175785026091274",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
+    "sportmonksId": 450,
+    "name": "Nice",
+    "slug": "nice",
+    "shortName": "NCE",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/2/450.png",
+    "founded": 1904,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Allianz Riviera",
+      "capacity": 36178,
+      "city": ""
+    },
+    "id": "1757850257580545",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 459,
+    "name": "Osasuna",
+    "slug": "osasuna",
+    "shortName": "OSA",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/11/459.png",
+    "founded": 1920,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "Estadio El Sadar",
+      "capacity": 23576,
+      "city": ""
+    },
+    "id": "1757850259812101",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 485,
+    "name": "Real Betis",
+    "slug": "real-betis",
+    "shortName": "BET",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/5/485.png",
+    "founded": 1907,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "Estadio de La Cartuja",
+      "capacity": 72000,
+      "city": ""
+    },
+    "id": "1757850259812697",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 503,
+    "name": "FC Bayern München",
+    "slug": "fc-bayern-munchen",
+    "shortName": "FCB",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png",
+    "founded": 1900,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "Allianz Arena",
+      "capacity": 75024,
+      "city": ""
+    },
+    "id": "1757850262028103",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 510,
+    "name": "VfL Wolfsburg",
+    "slug": "vfl-wolfsburg",
+    "shortName": "WOB",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/30/510.png",
+    "founded": 1945,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "Volkswagen Arena",
+      "capacity": 30000,
+      "city": ""
+    },
+    "id": "1757850262028249",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 528,
+    "name": "Espanyol",
+    "slug": "espanyol",
+    "shortName": "ESY",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png",
+    "founded": 1900,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "RCDE Stadium",
+      "capacity": 40000,
+      "city": ""
+    },
+    "id": "175785025981288",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 585,
+    "name": "Cagliari",
+    "slug": "cagliari",
+    "shortName": "CAG",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/9/585.png",
+    "founded": 1920,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Sardegna Arena",
+      "capacity": 16416,
+      "city": ""
+    },
+    "id": "1757850260912881",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
     "sportmonksId": 591,
     "name": "Paris Saint Germain",
     "slug": "paris-saint-germain",
     "shortName": "PSG",
     "logo": "https://cdn.sportmonks.com/images/soccer/teams/15/591.png",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "id": "1757841393036",
     "founded": 1970,
     "league": "ligue1",
     "country": "France",
-    "lastUpdated": "2025-09-14T09:42:10.528Z"
+    "venue": {
+      "name": "Parc des Princes",
+      "capacity": 48583,
+      "city": ""
+    },
+    "id": "1757850257580212",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
   },
   {
     "sportmonksId": 592,
@@ -48,16 +966,16 @@
     "slug": "real-sociedad",
     "shortName": "RSO",
     "logo": "https://cdn.sportmonks.com/images/soccer/teams/18/594.png",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "id": "1757841393038",
     "founded": 1909,
     "league": "laliga",
     "country": "Spain",
-    "lastUpdated": "2025-09-14T10:36:38.122Z"
+    "venue": {
+      "name": "Anoeta Stadium",
+      "capacity": 40000,
+      "city": ""
+    },
+    "id": "1757850259812343",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
   },
   {
     "sportmonksId": 595,
@@ -73,123 +991,21 @@
     "id": "1757841393039"
   },
   {
-    "sportmonksId": 44,
-    "name": "Olympique Marseille",
-    "slug": "olympique-marseille",
-    "shortName": "OM",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/12/44.png",
-    "founded": 1899,
-    "league": "ligue1",
-    "country": "France",
+    "sportmonksId": 597,
+    "name": "Napoli",
+    "slug": "napoli",
+    "shortName": "NAP",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/21/597.png",
+    "founded": 1926,
+    "league": "seriea",
+    "country": "Italy",
     "venue": {
-      "name": "",
-      "capacity": 0,
+      "name": "Stadio Diego Armando Maradona",
+      "capacity": 60240,
       "city": ""
     },
-    "lastUpdated": "2025-09-14T09:42:01.436Z",
-    "id": "1757842898373"
-  },
-  {
-    "sportmonksId": 59,
-    "name": "Nantes",
-    "slug": "nantes",
-    "shortName": "NAN",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/27/59.png",
-    "founded": 1943,
-    "league": "ligue1",
-    "country": "France",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T09:42:02.852Z",
-    "id": "1757842899585"
-  },
-  {
-    "sportmonksId": 79,
-    "name": "Olympique Lyonnais",
-    "slug": "olympique-lyonnais",
-    "shortName": "LYO",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/15/79.png",
-    "founded": 1950,
-    "league": "ligue1",
-    "country": "France",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T09:42:04.084Z",
-    "id": "1757842900866"
-  },
-  {
-    "sportmonksId": 266,
-    "name": "Brest",
-    "slug": "brest",
-    "shortName": "B29",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/10/266.png",
-    "founded": 1950,
-    "league": "ligue1",
-    "country": "France",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T09:42:05.464Z",
-    "id": "1757842902305"
-  },
-  {
-    "sportmonksId": 271,
-    "name": "Lens",
-    "slug": "lens",
-    "shortName": "LEN",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/15/271.png",
-    "founded": 1906,
-    "league": "ligue1",
-    "country": "France",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T09:42:06.753Z",
-    "id": "1757842903517"
-  },
-  {
-    "sportmonksId": 289,
-    "name": "Toulouse",
-    "slug": "toulouse",
-    "shortName": "TOU",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/1/289.png",
-    "founded": 1937,
-    "league": "ligue1",
-    "country": "France",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T09:42:08.055Z",
-    "id": "1757842904694"
-  },
-  {
-    "sportmonksId": 450,
-    "name": "Nice",
-    "slug": "nice",
-    "shortName": "NCE",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/2/450.png",
-    "founded": 1904,
-    "league": "ligue1",
-    "country": "France",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T09:42:09.307Z",
-    "id": "1757842905929"
+    "id": "1757850260912588",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
   },
   {
     "sportmonksId": 598,
@@ -201,199 +1017,46 @@
     "league": "ligue1",
     "country": "France",
     "venue": {
-      "name": "",
-      "capacity": 0,
+      "name": "Roazhon Park",
+      "capacity": 29778,
       "city": ""
     },
-    "lastUpdated": "2025-09-14T09:42:11.792Z",
-    "id": "1757842908357"
+    "id": "1757850257580235",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
   },
   {
-    "sportmonksId": 686,
-    "name": "Strasbourg",
-    "slug": "strasbourg",
-    "shortName": "STR",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/14/686.png",
+    "sportmonksId": 613,
+    "name": "Torino",
+    "slug": "torino",
+    "shortName": "TOR",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/5/613.png",
     "founded": 1906,
-    "league": "ligue1",
-    "country": "France",
+    "league": "seriea",
+    "country": "Italy",
     "venue": {
-      "name": "",
-      "capacity": 0,
+      "name": "Stadio Olimpico Grande Torino",
+      "capacity": 36599,
       "city": ""
     },
-    "lastUpdated": "2025-09-14T09:41:49.562Z",
-    "id": "1757842909562"
+    "id": "1757850260912740",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
   },
   {
-    "sportmonksId": 36,
-    "name": "Celta de Vigo",
-    "slug": "celta-de-vigo",
-    "shortName": "CEL",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/4/36.png",
-    "founded": 1923,
-    "league": "laliga",
-    "country": "Spain",
+    "sportmonksId": 625,
+    "name": "Juventus",
+    "slug": "juventus",
+    "shortName": "JUV",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/17/625.png",
+    "founded": 1897,
+    "league": "seriea",
+    "country": "Italy",
     "venue": {
-      "name": "",
-      "capacity": 0,
+      "name": "Allianz Stadium",
+      "capacity": 41507,
       "city": ""
     },
-    "lastUpdated": "2025-09-14T10:36:26.962Z",
-    "id": "1757846186963"
-  },
-  {
-    "sportmonksId": 83,
-    "name": "FC Barcelona",
-    "slug": "fc-barcelona",
-    "shortName": "BAR",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/19/83.png",
-    "founded": 1899,
-    "league": "laliga",
-    "country": "Spain",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T10:36:28.062Z",
-    "id": "1757846188062"
-  },
-  {
-    "sportmonksId": 93,
-    "name": "Real Oviedo",
-    "slug": "real-oviedo",
-    "shortName": "OVI",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/29/93.png",
-    "founded": 1926,
-    "league": "laliga",
-    "country": "Spain",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T10:36:29.190Z",
-    "id": "1757846189190"
-  },
-  {
-    "sportmonksId": 106,
-    "name": "Getafe",
-    "slug": "getafe",
-    "shortName": "GET",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png",
-    "founded": 1983,
-    "league": "laliga",
-    "country": "Spain",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T10:36:30.289Z",
-    "id": "1757846190289"
-  },
-  {
-    "sportmonksId": 214,
-    "name": "Valencia",
-    "slug": "valencia",
-    "shortName": "VAL",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png",
-    "founded": 1919,
-    "league": "laliga",
-    "country": "Spain",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T10:36:31.411Z",
-    "id": "1757846191412"
-  },
-  {
-    "sportmonksId": 231,
-    "name": "Girona",
-    "slug": "girona",
-    "shortName": "GIR",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/7/231.png",
-    "founded": 1930,
-    "league": "laliga",
-    "country": "Spain",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T10:36:32.517Z",
-    "id": "1757846192517"
-  },
-  {
-    "sportmonksId": 377,
-    "name": "Rayo Vallecano",
-    "slug": "rayo-vallecano",
-    "shortName": "RAY",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/25/377.png",
-    "founded": 1924,
-    "league": "laliga",
-    "country": "Spain",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T10:36:33.633Z",
-    "id": "1757846193633"
-  },
-  {
-    "sportmonksId": 459,
-    "name": "Osasuna",
-    "slug": "osasuna",
-    "shortName": "OSA",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/11/459.png",
-    "founded": 1920,
-    "league": "laliga",
-    "country": "Spain",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T10:36:34.795Z",
-    "id": "1757846194795"
-  },
-  {
-    "sportmonksId": 485,
-    "name": "Real Betis",
-    "slug": "real-betis",
-    "shortName": "BET",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/5/485.png",
-    "founded": 1907,
-    "league": "laliga",
-    "country": "Spain",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T10:36:35.902Z",
-    "id": "1757846195902"
-  },
-  {
-    "sportmonksId": 528,
-    "name": "Espanyol",
-    "slug": "espanyol",
-    "shortName": "ESY",
-    "logo": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png",
-    "founded": 1900,
-    "league": "laliga",
-    "country": "Spain",
-    "venue": {
-      "name": "",
-      "capacity": 0,
-      "city": ""
-    },
-    "lastUpdated": "2025-09-14T10:36:37.011Z",
-    "id": "1757846197011"
+    "id": "1757850260912220",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
   },
   {
     "sportmonksId": 645,
@@ -405,12 +1068,12 @@
     "league": "laliga",
     "country": "Spain",
     "venue": {
-      "name": "",
-      "capacity": 0,
+      "name": "Estadi Mallorca Son Moix",
+      "capacity": 24642,
       "city": ""
     },
-    "lastUpdated": "2025-09-14T10:36:39.273Z",
-    "id": "1757846199273"
+    "id": "1757850259812980",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
   },
   {
     "sportmonksId": 676,
@@ -422,12 +1085,165 @@
     "league": "laliga",
     "country": "Spain",
     "venue": {
-      "name": "",
-      "capacity": 0,
+      "name": "Estadio Ramón Sánchez Pizjuán",
+      "capacity": 42714,
       "city": ""
     },
-    "lastUpdated": "2025-09-14T10:36:40.381Z",
-    "id": "1757846200381"
+    "id": "1757850259812297",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 683,
+    "name": "Borussia Mönchengladbach",
+    "slug": "borussia-monchengladbach",
+    "shortName": "BMG",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/11/683.png",
+    "founded": 1900,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "Stadion im Borussia-Park",
+      "capacity": 54057,
+      "city": ""
+    },
+    "id": "1757850262028345",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 686,
+    "name": "Strasbourg",
+    "slug": "strasbourg",
+    "shortName": "STR",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/14/686.png",
+    "founded": 1906,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stade de la Meinau",
+      "capacity": 29200,
+      "city": ""
+    },
+    "id": "1757850257580160",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 690,
+    "name": "LOSC Lille",
+    "slug": "losc-lille",
+    "shortName": "LOSC",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/18/690.png",
+    "founded": 1944,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stade Pierre-Mauroy",
+      "capacity": 50186,
+      "city": ""
+    },
+    "id": "1757850257580825",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 708,
+    "name": "Atalanta",
+    "slug": "atalanta",
+    "shortName": "ATA",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/4/708.png",
+    "founded": 1907,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Gewiss Stadium",
+      "capacity": 24950,
+      "city": ""
+    },
+    "id": "175785026091219",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
+    "sportmonksId": 776,
+    "name": "Angers SCO",
+    "slug": "angers-sco",
+    "shortName": "ANG",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/8/776.png",
+    "founded": 1919,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stade Raymond Kopa",
+      "capacity": 17835,
+      "city": ""
+    },
+    "id": "1757850257580545",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 794,
+    "name": "FSV Mainz 05",
+    "slug": "fsv-mainz-05",
+    "shortName": "M05",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/26/794.png",
+    "founded": 1905,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "Mewa Arena",
+      "capacity": 34000,
+      "city": ""
+    },
+    "id": "1757850262028671",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 1055,
+    "name": "Le Havre",
+    "slug": "le-havre",
+    "shortName": "LEH",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/31/1055.png",
+    "founded": 1872,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stade Océane",
+      "capacity": 25181,
+      "city": ""
+    },
+    "id": "1757850257580760",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 1072,
+    "name": "Pisa",
+    "slug": "pisa",
+    "shortName": "PIS",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/16/1072.png",
+    "founded": 1909,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Arena Garibaldi - Stadio Romeo Anconetani",
+      "capacity": 10442,
+      "city": ""
+    },
+    "id": "175785026091252",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
+    "sportmonksId": 1079,
+    "name": "FC Union Berlin",
+    "slug": "fc-union-berlin",
+    "shortName": "FCU",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/23/1079.png",
+    "founded": 1966,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "Stadion An der Alten Försterei",
+      "capacity": 22012,
+      "city": ""
+    },
+    "id": "1757850262028808",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
   },
   {
     "sportmonksId": 1099,
@@ -439,12 +1255,114 @@
     "league": "laliga",
     "country": "Spain",
     "venue": {
-      "name": "",
-      "capacity": 0,
+      "name": "Estadio Manuel Martínez Valero",
+      "capacity": 36017,
       "city": ""
     },
-    "lastUpdated": "2025-09-14T10:36:41.494Z",
-    "id": "1757846201494"
+    "id": "1757850259812236",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 1123,
+    "name": "Hellas Verona",
+    "slug": "hellas-verona",
+    "shortName": "VER",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/3/1123.png",
+    "founded": 1903,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Stadio Marc'Antonio Bentegodi",
+      "capacity": 39045,
+      "city": ""
+    },
+    "id": "1757850260912746",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
+    "sportmonksId": 2708,
+    "name": "Hamburger SV",
+    "slug": "hamburger-sv",
+    "shortName": "HSV",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/20/2708.png",
+    "founded": 1887,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "Volksparkstadion",
+      "capacity": 57000,
+      "city": ""
+    },
+    "id": "1757850262028223",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 2714,
+    "name": "Sassuolo",
+    "slug": "sassuolo",
+    "shortName": "SAS",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+    "founded": 1922,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "MAPEI Stadium - Città del Tricolore",
+      "capacity": 21584,
+      "city": ""
+    },
+    "id": "1757850260912216",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
+    "sportmonksId": 2726,
+    "name": "TSG Hoffenheim",
+    "slug": "tsg-hoffenheim",
+    "shortName": "TSG",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/6/2726.png",
+    "founded": 1899,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "PreZero Arena",
+      "capacity": 30150,
+      "city": ""
+    },
+    "id": "1757850262028186",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 2831,
+    "name": "Heidenheim",
+    "slug": "heidenheim",
+    "shortName": "HDH",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/15/2831.png",
+    "founded": 1946,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "Voith-Arena",
+      "capacity": 15000,
+      "city": ""
+    },
+    "id": "1757850262028901",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 2930,
+    "name": "Inter",
+    "slug": "inter",
+    "shortName": "INT",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/18/2930.png",
+    "founded": 1908,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Stadio Giuseppe Meazza",
+      "capacity": 80018,
+      "city": ""
+    },
+    "id": "1757850260912624",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
   },
   {
     "sportmonksId": 2975,
@@ -456,12 +1374,63 @@
     "league": "laliga",
     "country": "Spain",
     "venue": {
-      "name": "",
-      "capacity": 0,
+      "name": "Estadio de Mendizorroza",
+      "capacity": 19840,
       "city": ""
     },
-    "lastUpdated": "2025-09-14T10:36:42.595Z",
-    "id": "1757846202595"
+    "id": "1757850259812949",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 3319,
+    "name": "VfB Stuttgart",
+    "slug": "vfb-stuttgart",
+    "shortName": "VFB",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/23/3319.png",
+    "founded": 1893,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "MHPArena",
+      "capacity": 60449,
+      "city": ""
+    },
+    "id": "1757850262028652",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 3320,
+    "name": "FC Köln",
+    "slug": "fc-koln",
+    "shortName": "KOE",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/24/3320.png",
+    "founded": 1948,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "RheinEnergieStadion",
+      "capacity": 50000,
+      "city": ""
+    },
+    "id": "1757850262028972",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 3321,
+    "name": "Bayer 04 Leverkusen",
+    "slug": "bayer-04-leverkusen",
+    "shortName": "B04",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/25/3321.png",
+    "founded": 1904,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "BayArena",
+      "capacity": 30210,
+      "city": ""
+    },
+    "id": "175785026202880",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
   },
   {
     "sportmonksId": 3457,
@@ -473,12 +1442,12 @@
     "league": "laliga",
     "country": "Spain",
     "venue": {
-      "name": "",
-      "capacity": 0,
+      "name": "Estadio Ciudad de Valencia",
+      "capacity": 26354,
       "city": ""
     },
-    "lastUpdated": "2025-09-14T10:36:43.707Z",
-    "id": "1757846203707"
+    "id": "1757850259812575",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
   },
   {
     "sportmonksId": 3468,
@@ -490,12 +1459,12 @@
     "league": "laliga",
     "country": "Spain",
     "venue": {
-      "name": "",
-      "capacity": 0,
+      "name": "Estadio Santiago Bernabéu",
+      "capacity": 85454,
       "city": ""
     },
-    "lastUpdated": "2025-09-14T10:36:44.821Z",
-    "id": "1757846204821"
+    "id": "1757850259812519",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
   },
   {
     "sportmonksId": 3477,
@@ -507,12 +1476,114 @@
     "league": "laliga",
     "country": "Spain",
     "venue": {
-      "name": "",
-      "capacity": 0,
+      "name": "Estadio de la Cerámica",
+      "capacity": 23500,
       "city": ""
     },
-    "lastUpdated": "2025-09-14T10:36:45.937Z",
-    "id": "1757846205937"
+    "id": "1757850259812575",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 3513,
+    "name": "Metz",
+    "slug": "metz",
+    "shortName": "MTZ",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/25/3513.png",
+    "founded": 1932,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stade Saint-Symphorien",
+      "capacity": 26661,
+      "city": ""
+    },
+    "id": "1757850257580573",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 3543,
+    "name": "SC Freiburg",
+    "slug": "sc-freiburg",
+    "shortName": "SCF",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/23/3543.png",
+    "founded": 1904,
+    "league": "bundesliga",
+    "country": "Germany",
+    "venue": {
+      "name": "Europa-Park Stadion",
+      "capacity": 34700,
+      "city": ""
+    },
+    "id": "1757850262028831",
+    "lastUpdated": "2025-09-14T11:44:22.028Z"
+  },
+  {
+    "sportmonksId": 3682,
+    "name": "Auxerre",
+    "slug": "auxerre",
+    "shortName": "AUX",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/2/3682.png",
+    "founded": 1905,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stade de l'Abbé Deschamps",
+      "capacity": 18541,
+      "city": ""
+    },
+    "id": "1757850257580274",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 4508,
+    "name": "Paris",
+    "slug": "paris",
+    "shortName": "PFC",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/28/4508.png",
+    "founded": 1969,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stade Jean Bouin",
+      "capacity": 15097,
+      "city": ""
+    },
+    "id": "1757850257580860",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 6789,
+    "name": "Monaco",
+    "slug": "monaco",
+    "shortName": "ASM",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/5/6789.png",
+    "founded": 1919,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stade Louis II.",
+      "capacity": 18523,
+      "city": ""
+    },
+    "id": "175785025758027",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 7790,
+    "name": "Lecce",
+    "slug": "lecce",
+    "shortName": "LEC",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/14/7790.png",
+    "founded": 1908,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Stadio Comunale Via del Mare",
+      "capacity": 40800,
+      "city": ""
+    },
+    "id": "175785026091219",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
   },
   {
     "sportmonksId": 7980,
@@ -524,12 +1595,63 @@
     "league": "laliga",
     "country": "Spain",
     "venue": {
-      "name": "",
-      "capacity": 0,
+      "name": "Riyadh Air Metropolitano",
+      "capacity": 70460,
       "city": ""
     },
-    "lastUpdated": "2025-09-14T10:36:47.086Z",
-    "id": "1757846207086"
+    "id": "1757850259812888",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
+  },
+  {
+    "sportmonksId": 8513,
+    "name": "Bologna",
+    "slug": "bologna",
+    "shortName": "BOL",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/1/8513.png",
+    "founded": 1909,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Stadio Renato Dall'Ara",
+      "capacity": 36532,
+      "city": ""
+    },
+    "id": "1757850260912915",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
+  },
+  {
+    "sportmonksId": 9257,
+    "name": "Lorient",
+    "slug": "lorient",
+    "shortName": "LOR",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/9/9257.png",
+    "founded": 1926,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "Stade Yves Allainmat - Le Moustoir",
+      "capacity": 18110,
+      "city": ""
+    },
+    "id": "1757850257580595",
+    "lastUpdated": "2025-09-14T11:44:17.580Z"
+  },
+  {
+    "sportmonksId": 10722,
+    "name": "Cremonese",
+    "slug": "cremonese",
+    "shortName": "USC",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/2/10722.png",
+    "founded": 1903,
+    "league": "seriea",
+    "country": "Italy",
+    "venue": {
+      "name": "Stadio Giovanni Zini",
+      "capacity": 20641,
+      "city": ""
+    },
+    "id": "1757850260912668",
+    "lastUpdated": "2025-09-14T11:44:20.912Z"
   },
   {
     "sportmonksId": 13258,
@@ -541,11 +1663,11 @@
     "league": "laliga",
     "country": "Spain",
     "venue": {
-      "name": "",
-      "capacity": 0,
+      "name": "San Mamés Barria",
+      "capacity": 53289,
       "city": ""
     },
-    "lastUpdated": "2025-09-14T10:36:48.201Z",
-    "id": "1757846208201"
+    "id": "1757850259812751",
+    "lastUpdated": "2025-09-14T11:44:19.812Z"
   }
 ]

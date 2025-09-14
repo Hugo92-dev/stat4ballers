@@ -17,7 +17,9 @@
       "Bash(start C:UsershugoOneDriveBureaustat4ballerstest-visuel.html)",
       "Bash(explorer:*)",
       "Bash(cmd /c:*)",
-      "Bash(powershell Stop-Process:*)"
+      "Bash(powershell Stop-Process:*)",
+      "Bash(git clean:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": [],
     "ask": []

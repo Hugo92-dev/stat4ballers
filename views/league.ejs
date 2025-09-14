@@ -119,10 +119,15 @@
                 <div class="logo">
                     <a href="/" style="text-decoration: none; color: inherit;">
                         <h1>Stat4Ballers</h1>
+                        <span class="tagline">Football Statistics Hub</span>
                     </a>
                 </div>
                 <nav class="nav-links">
-                    <a href="/">Home</a>
+                    <a href="/league/ligue1">Ligue 1</a>
+                    <a href="/league/premierleague">Premier League</a>
+                    <a href="/league/laliga">La Liga</a>
+                    <a href="/league/seriea">Serie A</a>
+                    <a href="/league/bundesliga">Bundesliga</a>
                 </nav>
             </div>
         </div>
@@ -130,20 +135,23 @@
 
     <div class="league-header">
         <div class="container">
-            <h1 class="league-title">
-                <% 
-                    let leagueTitle = '';
-                    switch(leagueId) {
-                        case 'ligue1': leagueTitle = 'Ligue 1'; break;
-                        case 'premierleague': leagueTitle = 'Premier League'; break;
-                        case 'laliga': leagueTitle = 'La Liga'; break;
-                        case 'seriea': leagueTitle = 'Serie A'; break;
-                        case 'bundesliga': leagueTitle = 'Bundesliga'; break;
-                        default: leagueTitle = leagueId.charAt(0).toUpperCase() + leagueId.slice(1);
-                    }
-                %>
-                <%= leagueTitle %>
-            </h1>
+            <%
+                let leagueTitle = '';
+                switch(leagueId) {
+                    case 'ligue1': leagueTitle = 'Ligue 1'; break;
+                    case 'premierleague': leagueTitle = 'Premier League'; break;
+                    case 'laliga': leagueTitle = 'La Liga'; break;
+                    case 'seriea': leagueTitle = 'Serie A'; break;
+                    case 'bundesliga': leagueTitle = 'Bundesliga'; break;
+                    default: leagueTitle = leagueId.charAt(0).toUpperCase() + leagueId.slice(1);
+                }
+            %>
+            <div style="display: flex; align-items: center; gap: 2rem;">
+                <img src="/images/leagues/<%= leagueId %>.svg" alt="<%= leagueTitle %>" style="width: 80px; height: 80px;">
+                <h1 class="league-title">
+                    <%= leagueTitle %>
+                </h1>
+            </div>
         </div>
     </div>
 
