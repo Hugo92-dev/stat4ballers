@@ -3,7 +3,21 @@
     "allow": [
       "Bash(git init:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(npm install)",
+      "Bash(winget install:*)",
+      "Bash(mongod:*)",
+      "Bash(npm start)",
+      "Bash(node:*)",
+      "Bash(taskkill:*)",
+      "Bash(curl:*)",
+      "Bash(start C:UsershugoOneDriveBureaustat4ballerstest-visuel.html)",
+      "Bash(explorer:*)",
+      "Bash(cmd /c:*)",
+      "Bash(powershell Stop-Process:*)"
     ],
     "deny": [],
     "ask": []

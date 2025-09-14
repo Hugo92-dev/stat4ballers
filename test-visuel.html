@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Visuel Stat4Ballers</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .test-section { margin: 30px 0; border: 1px solid #ddd; padding: 20px; }
+        .test-link { display: inline-block; margin: 10px; padding: 10px 20px; background: #2563eb; color: white; text-decoration: none; border-radius: 5px; }
+        .test-link:hover { background: #1d4ed8; }
+        h2 { color: #333; }
+        .status { padding: 5px 10px; border-radius: 3px; }
+        .ok { background: #10b981; color: white; }
+        .check { background: #f59e0b; color: white; }
+    </style>
+</head>
+<body>
+    <h1>🏆 Test Visuel - Stat4Ballers</h1>
+    
+    <div class="test-section">
+        <h2>1. Page Ligue 1 - Cartes des Clubs</h2>
+        <a href="http://localhost:3000/league/ligue1" target="_blank" class="test-link">
+            Ouvrir la page Ligue 1
+        </a>
+        <p><strong>À vérifier :</strong></p>
+        <ul>
+            <li>✅ Les clubs sont affichés sous forme de <strong>cartes</strong> (pas de tableau)</li>
+            <li>✅ Chaque carte montre le logo du club</li>
+            <li>✅ Le titre indique "Clubs - Saison 2025/2026"</li>
+            <li>✅ Au clic sur une carte, redirection vers la page du club</li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2>2. Page Club - PSG</h2>
+        <a href="http://localhost:3000/team/paris-saint-germain" target="_blank" class="test-link">
+            Ouvrir la page PSG
+        </a>
+        <p><strong>À vérifier :</strong></p>
+        <ul>
+            <li>✅ Le nom et logo du PSG s'affichent</li>
+            <li>✅ Section "Squad" avec l'effectif</li>
+            <li>✅ Les joueurs sont groupés par position (Gardiens, Défenseurs, Milieux, Attaquants)</li>
+            <li>✅ 3 joueurs de test visibles : Mbappé, Hakimi, Donnarumma</li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2>3. Test Navigation depuis la Recherche</h2>
+        <a href="http://localhost:3000" target="_blank" class="test-link">
+            Ouvrir la Homepage
+        </a>
+        <p><strong>À tester :</strong></p>
+        <ol>
+            <li>Tapez "Paris" dans la barre de recherche</li>
+            <li>Cliquez sur "Paris Saint Germain" dans les suggestions</li>
+            <li>✅ Vous devez être redirigé vers /team/paris-saint-germain</li>
+        </ol>
+    </div>
+    
+    <div class="test-section">
+        <h2>4. Test Navigation Header</h2>
+        <p><strong>À vérifier sur n'importe quelle page :</strong></p>
+        <ul>
+            <li>✅ Le header contient les liens des 5 championnats</li>
+            <li>✅ Clic sur "Ligue 1" → /league/ligue1</li>
+            <li>✅ Les drapeaux de langues sont dans le footer (pas le header)</li>
+        </ul>
+    </div>
+    
+    <hr>
+    
+    <div class="test-section">
+        <h2>État Actuel</h2>
+        <p><span class="status ok">✅ Implémenté</span> Pages des ligues avec cartes</p>
+        <p><span class="status ok">✅ Implémenté</span> Navigation par slugs (URLs user-friendly)</p>
+        <p><span class="status ok">✅ Implémenté</span> Affichage des effectifs</p>
+        <p><span class="status check">⏳ En attente</span> Données réelles des effectifs depuis l'API SportMonks</p>
+    </div>
+</body>
+</html>

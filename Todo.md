@@ -8,87 +8,67 @@
 - [x] Définir le contexte complet du projet avec System Prompt
 - [x] Créer le fichier Mémoire pour l'historique du projet
 
-## 🚀 Phase 2 : Architecture et setup technique [PROCHAINE ÉTAPE]
-- [ ] Initialiser le projet Node.js avec package.json
-- [ ] Configurer Git et connexion au repository GitHub
-- [ ] Installer les dépendances principales :
-  - [ ] Express.js pour le serveur
-  - [ ] Axios pour les appels API
-  - [ ] Dotenv pour les variables d'environnement
-  - [ ] Node-cron pour les tâches automatisées
-- [ ] Créer la structure de dossiers :
-  ```
-  /src
-    /api        (modules API SportMonks)
-    /controllers (logique métier)
-    /models     (modèles de données)
-    /routes     (endpoints)
-    /scripts    (scripts de rafraîchissement)
-    /utils      (fonctions utilitaires)
-  /public
-    /css        (styles)
-    /js         (scripts frontend)
-    /images     (logos, assets)
-  /views        (templates HTML)
-  /data         (cache et backup)
-  ```
-- [ ] Configurer le fichier .env avec la clé API
-- [ ] Créer le .gitignore
+## ✅ Phase 2 : Architecture et setup technique [COMPLÉTÉ]
+- [x] Initialiser le projet Node.js avec package.json
+- [x] Configurer Git et connexion au repository GitHub
+- [x] Installer les dépendances principales :
+  - [x] Express.js pour le serveur
+  - [x] Axios pour les appels API
+  - [x] Dotenv pour les variables d'environnement
+  - [x] Node-cron pour les tâches automatisées
+- [x] Créer la structure de dossiers complète
+- [x] Configurer le fichier .env avec la clé API
+- [x] Créer le .gitignore
 
-## 📡 Phase 3 : Connexion API SportMonks
-- [ ] Créer le module de connexion API de base
-- [ ] Implémenter la gestion des limites (3000 req/h)
-- [ ] Créer un système de queue pour les requêtes
-- [ ] Implémenter le retry automatique si limite atteinte
-- [ ] Créer les fonctions de récupération :
-  - [ ] getLeagueData(leagueId, seasonId)
-  - [ ] getTeamData(teamId, seasonId)
-  - [ ] getPlayerData(playerId, seasonId)
-  - [ ] getTeamSquad(teamId, seasonId)
-- [ ] Implémenter le système de cache local
-- [ ] **TEST : Récupérer les données de la Ligue 1 2025/2026**
+## ✅ Phase 3 : Connexion API SportMonks [COMPLÉTÉ]
+- [x] Créer le module de connexion API de base
+- [x] Implémenter la gestion des limites (3000 req/h)
+- [x] Créer un système de queue pour les requêtes
+- [x] Implémenter le retry automatique si limite atteinte
+- [x] Créer les fonctions de récupération :
+  - [x] getLeagueData(leagueId, seasonId)
+  - [x] getTeamData(teamId, seasonId)
+  - [x] getPlayerData(playerId, seasonId)
+  - [x] getTeamSquad(teamId, seasonId)
+- [x] Implémenter le système de cache local
+- [ ] **TEST : Récupérer les données de la Ligue 1 2025/2026** (À faire)
 
-## 💾 Phase 4 : Base de données et modèles
-- [ ] Choisir la base de données (MongoDB ou PostgreSQL)
-- [ ] Configurer la connexion à la BDD
-- [ ] Créer les schémas/modèles :
-  - [ ] League (id, name, country, logo, seasons)
-  - [ ] Team (id, name, leagueId, logo, venue, statistics)
-  - [ ] Player (id, name, teamId, position, nationality, statistics)
-  - [ ] Statistics (playerId/teamId, seasonId, data)
-- [ ] Implémenter le système de versioning pour rollback
-- [ ] Créer les fonctions CRUD pour chaque modèle
+## ✅ Phase 4 : Base de données et modèles [COMPLÉTÉ]
+- [x] Choisir la base de données (MongoDB)
+- [x] Configurer la connexion à la BDD
+- [x] Créer les schémas/modèles :
+  - [x] League (id, name, country, logo, seasons)
+  - [x] Team (id, name, leagueId, logo, venue, statistics)
+  - [x] Player (id, name, teamId, position, nationality, statistics)
+  - [x] Statistics intégrées dans les modèles Player et Team
+- [x] Implémenter le système de versioning pour rollback
+- [x] Créer les méthodes pour générer les données des radar charts
 
-## 🔄 Phase 5 : Scripts de récupération et rafraîchissement
-- [ ] Script de récupération initiale complète
-- [ ] Scripts de rafraîchissement manuel :
-  - [ ] refresh:ligue1
-  - [ ] refresh:premierleague
-  - [ ] refresh:liga
-  - [ ] refresh:seriea
-  - [ ] refresh:bundesliga
-- [ ] Système de backup avant rafraîchissement
-- [ ] Fonction de rollback en cas d'erreur
-- [ ] Scripts automatiques avec node-cron :
-  - [ ] Ligue 1 : lundi/vendredi 21h
-  - [ ] Premier League : lundi/vendredi 20h
-  - [ ] La Liga : lundi/vendredi 19h
-  - [ ] Serie A : lundi/vendredi 18h
-  - [ ] Bundesliga : lundi/vendredi 17h
+## ✅ Phase 5 : Scripts de récupération et rafraîchissement [COMPLÉTÉ]
+- [x] Script de récupération initiale complète
+- [x] Scripts de rafraîchissement manuel :
+  - [x] refresh:ligue1
+  - [x] refresh:premierleague
+  - [x] refresh:liga
+  - [x] refresh:seriea
+  - [x] refresh:bundesliga
+- [x] Système de backup avant rafraîchissement
+- [x] Fonction de rollback en cas d'erreur
+- [ ] Scripts automatiques avec node-cron (À configurer)
 
-## 🎨 Phase 6 : Frontend - Structure et design
-- [ ] Créer la structure HTML5 de base
-- [ ] Implémenter le design system :
-  - [ ] Variables CSS (couleurs, typographie)
-  - [ ] Grille responsive (mobile-first)
-  - [ ] Composants réutilisables
-- [ ] Créer la homepage minimaliste :
-  - [ ] Header avec logo et navigation
-  - [ ] Barre de recherche avec autocomplétion
-  - [ ] Module de comparaison (jusqu'à 4 joueurs)
-  - [ ] Menu des 5 championnats avec logos
-  - [ ] Footer avec liens utiles
-- [ ] Créer les templates de pages :
+## 🔄 Phase 6 : Frontend - Structure et design [EN COURS]
+- [x] Créer la structure HTML5 de base
+- [x] Implémenter le design system :
+  - [x] Variables CSS (couleurs, typographie)
+  - [x] Grille responsive (mobile-first)
+  - [x] Composants réutilisables
+- [x] Créer la homepage minimaliste :
+  - [x] Header avec logo et navigation
+  - [x] Barre de recherche avec autocomplétion
+  - [x] Module de comparaison (jusqu'à 4 joueurs)
+  - [x] Menu des 5 championnats avec logos
+  - [x] Footer avec liens utiles
+- [ ] Créer les templates de pages (À compléter) :
   - [ ] Page championnat
   - [ ] Page club
   - [ ] Page joueur

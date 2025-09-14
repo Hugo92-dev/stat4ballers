@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "ligue1",
+    "sportmonksId": 301,
+    "name": "Ligue 1",
+    "country": "France",
+    "currentSeasonId": 23643,
+    "lastUpdated": "2025-09-14T09:42:01.252Z",
+    "id": "1757841736943"
+  },
+  {
+    "slug": "laliga",
+    "sportmonksId": 564,
+    "name": "La Liga",
+    "country": "Spain",
+    "currentSeasonId": 25659,
+    "lastUpdated": "2025-09-14T10:40:19.828Z",
+    "id": "1757846186726"
+  }
+]

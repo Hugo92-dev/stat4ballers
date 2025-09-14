@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Navigation</title>
+</head>
+<body>
+    <h1>Test Navigation</h1>
+    
+    <h2>1. Test League Page</h2>
+    <a href="http://localhost:3000/league/ligue1" target="_blank">Go to Ligue 1 page</a>
+    <p>✅ Should display all Ligue 1 teams with logos</p>
+    
+    <h2>2. Test Team Page</h2>
+    <a href="http://localhost:3000/team/paris-saint-germain" target="_blank">Go to PSG page</a>
+    <p>✅ Should display PSG team page</p>
+    
+    <h2>3. Test Search</h2>
+    <p>Go to <a href="http://localhost:3000" target="_blank">Homepage</a></p>
+    <p>Type "Paris" in search box</p>
+    <p>✅ Should show "Paris Saint Germain" in suggestions</p>
+    <p>✅ Click should redirect to /team/paris-saint-germain</p>
+    
+    <hr>
+    
+    <h2>Quick API Tests</h2>
+    <button onclick="testSearch()">Test Search API</button>
+    <button onclick="testTeams()">Test Teams API</button>
+    
+    <pre id="result"></pre>
+    
+    <script>
+        async function testSearch() {
+            const response = await fetch('http://localhost:3000/api/search/suggestions?q=paris');
+            const data = await response.json();
+            document.getElementById('result').textContent = JSON.stringify(data, null, 2);
+        }
+        
+        async function testTeams() {
+            const response = await fetch('http://localhost:3000/api/leagues/ligue1/teams');
+            const data = await response.json();
+            document.getElementById('result').textContent = JSON.stringify(data, null, 2);
+        }
+    </script>
+</body>
+</html>

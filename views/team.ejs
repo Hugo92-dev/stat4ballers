@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .team-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        .team-info {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .team-logo-large {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 50%;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .team-logo-large img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .team-details h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .team-meta {
+            opacity: 0.9;
+        }
+        .stats-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            border-right: 1px solid var(--light-gray);
+        }
+        .stat-item:last-child {
+            border-right: none;
+        }
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--gray);
+            margin-bottom: 0.5rem;
+        }
+        .stat-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        .squad-section {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        .squad-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .player-card {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: var(--light-gray);
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+        .player-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        .player-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-right: 1rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        .player-info {
+            flex: 1;
+        }
+        .player-name {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        .player-position {
+            font-size: 0.875rem;
+            color: var(--gray);
+        }
+        .position-group {
+            margin-bottom: 2rem;
+        }
+        .position-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/" style="text-decoration: none; color: inherit;">
+                        <h1>Stat4Ballers</h1>
+                    </a>
+                </div>
+                <nav class="nav-links">
+                    <a href="/">Home</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="team-header">
+        <div class="container">
+            <div class="team-info">
+                <div class="team-logo-large">
+                    <img src="/images/placeholder-team.png" alt="Team Logo" id="team-logo">
+                </div>
+                <div class="team-details">
+                    <h1 id="team-name">Loading...</h1>
+                    <div class="team-meta">
+                        <span id="team-stadium">Stadium</span> • 
+                        <span id="team-founded">Founded</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="stats-overview">
+            <div class="stat-item">
+                <div class="stat-label">Rating</div>
+                <div class="stat-value" id="stat-rating">-</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Games</div>
+                <div class="stat-value" id="stat-games">-</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Wins</div>
+                <div class="stat-value" id="stat-wins">-</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Draws</div>
+                <div class="stat-value" id="stat-draws">-</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Losses</div>
+                <div class="stat-value" id="stat-losses">-</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Goals</div>
+                <div class="stat-value" id="stat-goals">-</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Clean Sheets</div>
+                <div class="stat-value" id="stat-cleansheets">-</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Avg Age</div>
+                <div class="stat-value" id="stat-avgage">-</div>
+            </div>
+        </div>
+
+        <div class="squad-section">
+            <h2>Squad</h2>
+            
+            <div class="position-group">
+                <h3 class="position-title">Goalkeepers</h3>
+                <div class="squad-grid" id="goalkeepers">
+                    <div class="player-card">
+                        <div class="player-number">-</div>
+                        <div class="player-info">
+                            <div class="player-name">Loading squad...</div>
+                            <div class="player-position">Goalkeeper</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-group">
+                <h3 class="position-title">Defenders</h3>
+                <div class="squad-grid" id="defenders"></div>
+            </div>
+
+            <div class="position-group">
+                <h3 class="position-title">Midfielders</h3>
+                <div class="squad-grid" id="midfielders"></div>
+            </div>
+
+            <div class="position-group">
+                <h3 class="position-title">Forwards</h3>
+                <div class="squad-grid" id="forwards"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const teamSlug = '<%= teamSlug %>';
+
+        // Load team data
+        async function loadTeamData() {
+            try {
+                const response = await fetch(`/api/teams/${teamSlug}`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    updateTeamInfo(data.data);
+                }
+
+                // Load statistics
+                const statsResponse = await fetch(`/api/teams/${teamSlug}/statistics`);
+                const statsData = await statsResponse.json();
+                
+                if (statsData.success) {
+                    updateStatistics(statsData.data);
+                }
+
+                // Load squad
+                const squadResponse = await fetch(`/api/teams/${teamSlug}/squad`);
+                const squadData = await squadResponse.json();
+                
+                if (squadData.success) {
+                    updateSquad(squadData.data);
+                }
+            } catch (error) {
+                console.error('Error loading team data:', error);
+            }
+        }
+
+        function updateTeamInfo(team) {
+            document.getElementById('team-name').textContent = team.name || 'Team Name';
+            document.getElementById('team-stadium').textContent = team.venue?.name || 'Stadium';
+            document.getElementById('team-founded').textContent = `Founded ${team.founded || 'N/A'}`;
+            
+            if (team.logo) {
+                document.getElementById('team-logo').src = team.logo;
+            }
+        }
+
+        function updateStatistics(stats) {
+            document.getElementById('stat-rating').textContent = stats.rating?.toFixed(1) || '-';
+            document.getElementById('stat-games').textContent = stats.gamesPlayed || '-';
+            document.getElementById('stat-wins').textContent = stats.teamWins || '-';
+            document.getElementById('stat-draws').textContent = stats.teamDraws || '-';
+            document.getElementById('stat-losses').textContent = stats.teamLost || '-';
+            document.getElementById('stat-goals').textContent = stats.goalsScored || '-';
+            document.getElementById('stat-cleansheets').textContent = stats.cleanSheets || '-';
+            document.getElementById('stat-avgage').textContent = stats.averagePlayerAge?.toFixed(1) || '-';
+        }
+
+        function updateSquad(players) {
+            // Group players by position
+            const positions = {
+                goalkeepers: [],
+                defenders: [],
+                midfielders: [],
+                forwards: []
+            };
+
+            // Group players by their position
+            if (Array.isArray(players)) {
+                players.forEach(player => {
+                    const pos = (player.position || '').toLowerCase();
+                    if (pos.includes('goalkeeper') || pos === 'goalkeeper' || player.isGoalkeeper) {
+                        positions.goalkeepers.push(player);
+                    } else if (pos.includes('defender') || pos === 'defender') {
+                        positions.defenders.push(player);
+                    } else if (pos.includes('midfielder')) {
+                        positions.midfielders.push(player);
+                    } else if (pos.includes('forward') || pos.includes('attacker')) {
+                        positions.forwards.push(player);
+                    } else {
+                        positions.midfielders.push(player);
+                    }
+                });
+            }
+
+            // Create player cards HTML
+            const createPlayerCard = (player) => `
+                <a href="/player/${player.sportmonksId || player.id}" class="player-card">
+                    <div class="player-number">${player.jerseyNumber || '-'}</div>
+                    <div class="player-info">
+                        <div class="player-name">${player.name || 'Unknown'}</div>
+                        <div class="player-position">${player.position || 'Unknown'}</div>
+                    </div>
+                </a>
+            `;
+
+            // Update each position section
+            document.getElementById('goalkeepers').innerHTML = positions.goalkeepers.length > 0 
+                ? positions.goalkeepers.map(createPlayerCard).join('') 
+                : '<p style="color: #999;">Aucun gardien</p>';
+                
+            document.getElementById('defenders').innerHTML = positions.defenders.length > 0 
+                ? positions.defenders.map(createPlayerCard).join('') 
+                : '<p style="color: #999;">Aucun défenseur</p>';
+                
+            document.getElementById('midfielders').innerHTML = positions.midfielders.length > 0 
+                ? positions.midfielders.map(createPlayerCard).join('') 
+                : '<p style="color: #999;">Aucun milieu</p>';
+                
+            document.getElementById('forwards').innerHTML = positions.forwards.length > 0 
+                ? positions.forwards.map(createPlayerCard).join('') 
+                : '<p style="color: #999;">Aucun attaquant</p>';
+        }
+
+        // Load data on page load
+        loadTeamData();
+    </script>
+</body>
+</html>

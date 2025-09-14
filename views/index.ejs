@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stat4Ballers - Comprehensive football statistics for the top 5 European leagues. Player stats, team analytics, and radar chart comparisons.">
+    <meta name="keywords" content="football statistics, soccer stats, Premier League, La Liga, Bundesliga, Serie A, Ligue 1, player comparison">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Stat4Ballers</h1>
+                    <span class="tagline">Football Statistics Hub</span>
+                </div>
+                <nav class="nav-links">
+                    <a href="/league/ligue1">Ligue 1</a>
+                    <a href="/league/premierleague">Premier League</a>
+                    <a href="/league/laliga">La Liga</a>
+                    <a href="/league/seriea">Serie A</a>
+                    <a href="/league/bundesliga">Bundesliga</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Search Section -->
+            <section class="search-section">
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="global-search" 
+                        class="search-input" 
+                        placeholder="Search for a league, team, or player..."
+                        autocomplete="off"
+                    >
+                    <div id="search-suggestions" class="search-suggestions"></div>
+                </div>
+            </section>
+
+            <!-- Player Comparison Module -->
+            <section class="comparison-section">
+                <h2>Player Comparison</h2>
+                <p class="section-subtitle">Select up to 4 players to compare their statistics</p>
+                <div class="comparison-container">
+                    <div class="player-selectors">
+                        <div class="player-selector">
+                            <input 
+                                type="text" 
+                                class="player-input" 
+                                placeholder="Select player 1..."
+                                data-player-index="1"
+                            >
+                        </div>
+                        <div class="player-selector">
+                            <input 
+                                type="text" 
+                                class="player-input" 
+                                placeholder="Select player 2..."
+                                data-player-index="2"
+                            >
+                        </div>
+                        <div class="player-selector">
+                            <input 
+                                type="text" 
+                                class="player-input" 
+                                placeholder="Select player 3 (optional)..."
+                                data-player-index="3"
+                            >
+                        </div>
+                        <div class="player-selector">
+                            <input 
+                                type="text" 
+                                class="player-input" 
+                                placeholder="Select player 4 (optional)..."
+                                data-player-index="4"
+                            >
+                        </div>
+                    </div>
+                    <button id="compare-btn" class="compare-btn" disabled>Compare Players</button>
+                </div>
+            </section>
+
+            <!-- Leagues Grid -->
+            <section class="leagues-section">
+                <h2>Top 5 European Leagues</h2>
+                <div class="leagues-grid">
+                    <% leagues.forEach(league => { %>
+                    <a href="/league/<%= league.id %>" class="league-card">
+                        <div class="league-logo">
+                            <img src="/images/leagues/<%= league.id %>.png" alt="<%= league.name %>" onerror="this.src='/images/placeholder-league.png'">
+                        </div>
+                        <div class="league-info">
+                            <h3><%= league.name %></h3>
+                            <span class="league-country"><%= league.country %></span>
+                        </div>
+                        <div class="league-stats">
+                            <span class="stat-label">Season 2025/2026</span>
+                        </div>
+                    </a>
+                    <% }) %>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Radar Charts</h3>
+                        <p>Visualize player statistics with interactive radar charts</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Live Updates</h3>
+                        <p>Automatically updated statistics twice weekly</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>3-Season View</h3>
+                        <p>Compare statistics across 2023-2026 seasons</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>59 Player Stats</h3>
+                        <p>Comprehensive statistics for in-depth analysis</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Stat4Ballers. Powered by SportMonks API.</p>
+                <div class="footer-links">
+                    <a href="/about">About</a>
+                    <a href="/api">API</a>
+                    <a href="/contact">Contact</a>
+                </div>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en">🇬🇧</button>
+                    <button class="lang-btn" data-lang="fr">🇫🇷</button>
+                    <button class="lang-btn" data-lang="es">🇪🇸</button>
+                    <button class="lang-btn" data-lang="pt">🇵🇹</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

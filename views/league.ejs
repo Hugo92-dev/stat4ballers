@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .league-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        .league-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .season-selector {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .season-btn {
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.2);
+            border: 2px solid white;
+            color: white;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .season-btn.active,
+        .season-btn:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+        .teams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .team-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        .team-card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+            text-align: center;
+        }
+        .team-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            background: white;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        .team-card-body {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .team-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+        .team-info {
+            color: var(--gray);
+            font-size: 0.875rem;
+        }
+        .position {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        .stat-title {
+            color: var(--gray);
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/" style="text-decoration: none; color: inherit;">
+                        <h1>Stat4Ballers</h1>
+                    </a>
+                </div>
+                <nav class="nav-links">
+                    <a href="/">Home</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="league-header">
+        <div class="container">
+            <h1 class="league-title">
+                <% 
+                    let leagueTitle = '';
+                    switch(leagueId) {
+                        case 'ligue1': leagueTitle = 'Ligue 1'; break;
+                        case 'premierleague': leagueTitle = 'Premier League'; break;
+                        case 'laliga': leagueTitle = 'La Liga'; break;
+                        case 'seriea': leagueTitle = 'Serie A'; break;
+                        case 'bundesliga': leagueTitle = 'Bundesliga'; break;
+                        default: leagueTitle = leagueId.charAt(0).toUpperCase() + leagueId.slice(1);
+                    }
+                %>
+                <%= leagueTitle %>
+            </h1>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="teams-section">
+            <h2 style="margin-bottom: 1rem;">Clubs - 2025/2026</h2>
+            <div class="teams-grid" id="teams-grid">
+                <!-- Team cards will be loaded here -->
+                <div style="grid-column: 1/-1; text-align: center; padding: 3rem;">
+                    <p>Chargement des équipes...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const leagueId = '<%= leagueId %>';
+        let currentSeason = '2025';
+
+        // Load league data
+        async function loadLeagueData(season) {
+            try {
+                // Fetch teams for this league
+                const teamsResponse = await fetch(`/api/leagues/${leagueId}/teams?season=${season}`);
+                const teamsData = await teamsResponse.json();
+                
+                if (teamsData.success) {
+                    // Handle both database teams and API teams
+                    let teams = [];
+                    if (Array.isArray(teamsData.data)) {
+                        // From database
+                        teams = teamsData.data;
+                    } else if (teamsData.data.data && teamsData.data.data.teams) {
+                        // From SportMonks API
+                        teams = teamsData.data.data.teams.map(t => ({
+                            sportmonksId: t.id,
+                            name: t.name,
+                            slug: t.name.toLowerCase().replace(/\s+/g, '-'),
+                            logo: t.image_path,
+                            shortName: t.short_code
+                        }));
+                    }
+                    
+                    if (teams.length > 0) {
+                        updateTeamsTable(teams);
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading league data:', error);
+            }
+        }
+
+        // Update teams grid with cards
+        function updateTeamsTable(teams) {
+            const teamsGrid = document.getElementById('teams-grid');
+            
+            // Sort teams by name
+            teams.sort((a, b) => a.name.localeCompare(b.name));
+            
+            // Create cards for each team
+            teamsGrid.innerHTML = teams.map(team => `
+                <a href="/team/${team.slug}" class="team-card">
+                    <div class="team-card-header">
+                        <img src="${team.logo || '/images/placeholder-team.png'}" 
+                             alt="${team.name}" 
+                             class="team-logo"
+                             onerror="this.src='/images/placeholder-team.png'">
+                    </div>
+                    <div class="team-card-body">
+                        <h3 class="team-name">${team.name}</h3>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        // Season selector
+        document.querySelectorAll('.season-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.season-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                currentSeason = e.target.dataset.season;
+                loadLeagueData(currentSeason);
+            });
+        });
+
+        // Load initial data
+        loadLeagueData(currentSeason);
+    </script>
+</body>
+</html>

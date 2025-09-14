@@ -1,0 +1,46 @@
+{
+  "name": "stat4ballers",
+  "version": "1.0.0",
+  "description": "Automated football statistics website for the top 5 European leagues",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "refresh:ligue1": "node src/scripts/refresh.js ligue1",
+    "refresh:premierleague": "node src/scripts/refresh.js premierleague",
+    "refresh:liga": "node src/scripts/refresh.js liga",
+    "refresh:seriea": "node src/scripts/refresh.js seriea",
+    "refresh:bundesliga": "node src/scripts/refresh.js bundesliga",
+    "refresh:all": "node src/scripts/refresh.js all",
+    "backup": "node src/scripts/backup.js",
+    "rollback": "node src/scripts/rollback.js"
+  },
+  "keywords": [
+    "football",
+    "statistics",
+    "sportmonks",
+    "soccer",
+    "stats"
+  ],
+  "author": "Hugo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.3",
+    "ejs": "^3.1.9",
+    "mongoose": "^8.0.3",
+    "compression": "^1.7.4",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.1.5",
+    "i18next": "^23.7.16",
+    "i18next-http-middleware": "^3.5.0",
+    "i18next-fs-backend": "^2.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0"
+  }
+}

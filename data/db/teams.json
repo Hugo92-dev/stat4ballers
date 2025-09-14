@@ -1,0 +1,551 @@
+[
+  {
+    "sportmonksId": 591,
+    "name": "Paris Saint Germain",
+    "slug": "paris-saint-germain",
+    "shortName": "PSG",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/15/591.png",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "id": "1757841393036",
+    "founded": 1970,
+    "league": "ligue1",
+    "country": "France",
+    "lastUpdated": "2025-09-14T09:42:10.528Z"
+  },
+  {
+    "sportmonksId": 592,
+    "name": "Olympique de Marseille",
+    "slug": "olympique-de-marseille",
+    "shortName": "OM",
+    "logo": "/images/teams/om.png",
+    "venue": {
+      "name": "Orange Vélodrome",
+      "capacity": 67394,
+      "city": "Marseille"
+    },
+    "id": "1757841393037"
+  },
+  {
+    "sportmonksId": 593,
+    "name": "Olympique Lyonnais",
+    "slug": "olympique-lyonnais",
+    "shortName": "OL",
+    "logo": "/images/teams/ol.png",
+    "venue": {
+      "name": "Groupama Stadium",
+      "capacity": 59186,
+      "city": "Lyon"
+    },
+    "id": "1757841393037"
+  },
+  {
+    "sportmonksId": 594,
+    "name": "Real Sociedad",
+    "slug": "real-sociedad",
+    "shortName": "RSO",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/18/594.png",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "id": "1757841393038",
+    "founded": 1909,
+    "league": "laliga",
+    "country": "Spain",
+    "lastUpdated": "2025-09-14T10:36:38.122Z"
+  },
+  {
+    "sportmonksId": 595,
+    "name": "LOSC Lille",
+    "slug": "losc-lille",
+    "shortName": "LOSC",
+    "logo": "/images/teams/lille.png",
+    "venue": {
+      "name": "Stade Pierre-Mauroy",
+      "capacity": 50157,
+      "city": "Lille"
+    },
+    "id": "1757841393039"
+  },
+  {
+    "sportmonksId": 44,
+    "name": "Olympique Marseille",
+    "slug": "olympique-marseille",
+    "shortName": "OM",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/12/44.png",
+    "founded": 1899,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T09:42:01.436Z",
+    "id": "1757842898373"
+  },
+  {
+    "sportmonksId": 59,
+    "name": "Nantes",
+    "slug": "nantes",
+    "shortName": "NAN",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/27/59.png",
+    "founded": 1943,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T09:42:02.852Z",
+    "id": "1757842899585"
+  },
+  {
+    "sportmonksId": 79,
+    "name": "Olympique Lyonnais",
+    "slug": "olympique-lyonnais",
+    "shortName": "LYO",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/15/79.png",
+    "founded": 1950,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T09:42:04.084Z",
+    "id": "1757842900866"
+  },
+  {
+    "sportmonksId": 266,
+    "name": "Brest",
+    "slug": "brest",
+    "shortName": "B29",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/10/266.png",
+    "founded": 1950,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T09:42:05.464Z",
+    "id": "1757842902305"
+  },
+  {
+    "sportmonksId": 271,
+    "name": "Lens",
+    "slug": "lens",
+    "shortName": "LEN",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/15/271.png",
+    "founded": 1906,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T09:42:06.753Z",
+    "id": "1757842903517"
+  },
+  {
+    "sportmonksId": 289,
+    "name": "Toulouse",
+    "slug": "toulouse",
+    "shortName": "TOU",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/1/289.png",
+    "founded": 1937,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T09:42:08.055Z",
+    "id": "1757842904694"
+  },
+  {
+    "sportmonksId": 450,
+    "name": "Nice",
+    "slug": "nice",
+    "shortName": "NCE",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/2/450.png",
+    "founded": 1904,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T09:42:09.307Z",
+    "id": "1757842905929"
+  },
+  {
+    "sportmonksId": 598,
+    "name": "Rennes",
+    "slug": "rennes",
+    "shortName": "REN",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/22/598.png",
+    "founded": 1901,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T09:42:11.792Z",
+    "id": "1757842908357"
+  },
+  {
+    "sportmonksId": 686,
+    "name": "Strasbourg",
+    "slug": "strasbourg",
+    "shortName": "STR",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/14/686.png",
+    "founded": 1906,
+    "league": "ligue1",
+    "country": "France",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T09:41:49.562Z",
+    "id": "1757842909562"
+  },
+  {
+    "sportmonksId": 36,
+    "name": "Celta de Vigo",
+    "slug": "celta-de-vigo",
+    "shortName": "CEL",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/4/36.png",
+    "founded": 1923,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:26.962Z",
+    "id": "1757846186963"
+  },
+  {
+    "sportmonksId": 83,
+    "name": "FC Barcelona",
+    "slug": "fc-barcelona",
+    "shortName": "BAR",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/19/83.png",
+    "founded": 1899,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:28.062Z",
+    "id": "1757846188062"
+  },
+  {
+    "sportmonksId": 93,
+    "name": "Real Oviedo",
+    "slug": "real-oviedo",
+    "shortName": "OVI",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/29/93.png",
+    "founded": 1926,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:29.190Z",
+    "id": "1757846189190"
+  },
+  {
+    "sportmonksId": 106,
+    "name": "Getafe",
+    "slug": "getafe",
+    "shortName": "GET",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png",
+    "founded": 1983,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:30.289Z",
+    "id": "1757846190289"
+  },
+  {
+    "sportmonksId": 214,
+    "name": "Valencia",
+    "slug": "valencia",
+    "shortName": "VAL",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png",
+    "founded": 1919,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:31.411Z",
+    "id": "1757846191412"
+  },
+  {
+    "sportmonksId": 231,
+    "name": "Girona",
+    "slug": "girona",
+    "shortName": "GIR",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/7/231.png",
+    "founded": 1930,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:32.517Z",
+    "id": "1757846192517"
+  },
+  {
+    "sportmonksId": 377,
+    "name": "Rayo Vallecano",
+    "slug": "rayo-vallecano",
+    "shortName": "RAY",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/25/377.png",
+    "founded": 1924,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:33.633Z",
+    "id": "1757846193633"
+  },
+  {
+    "sportmonksId": 459,
+    "name": "Osasuna",
+    "slug": "osasuna",
+    "shortName": "OSA",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/11/459.png",
+    "founded": 1920,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:34.795Z",
+    "id": "1757846194795"
+  },
+  {
+    "sportmonksId": 485,
+    "name": "Real Betis",
+    "slug": "real-betis",
+    "shortName": "BET",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/5/485.png",
+    "founded": 1907,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:35.902Z",
+    "id": "1757846195902"
+  },
+  {
+    "sportmonksId": 528,
+    "name": "Espanyol",
+    "slug": "espanyol",
+    "shortName": "ESY",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png",
+    "founded": 1900,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:37.011Z",
+    "id": "1757846197011"
+  },
+  {
+    "sportmonksId": 645,
+    "name": "Mallorca",
+    "slug": "mallorca",
+    "shortName": "MLL",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/5/645.png",
+    "founded": 1916,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:39.273Z",
+    "id": "1757846199273"
+  },
+  {
+    "sportmonksId": 676,
+    "name": "Sevilla",
+    "slug": "sevilla",
+    "shortName": "SEV",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/4/676.png",
+    "founded": 1890,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:40.381Z",
+    "id": "1757846200381"
+  },
+  {
+    "sportmonksId": 1099,
+    "name": "Elche",
+    "slug": "elche",
+    "shortName": "ELC",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/11/1099.png",
+    "founded": 1923,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:41.494Z",
+    "id": "1757846201494"
+  },
+  {
+    "sportmonksId": 2975,
+    "name": "Deportivo Alavés",
+    "slug": "deportivo-alaves",
+    "shortName": "ALA",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+    "founded": 1921,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:42.595Z",
+    "id": "1757846202595"
+  },
+  {
+    "sportmonksId": 3457,
+    "name": "Levante",
+    "slug": "levante",
+    "shortName": "LVT",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png",
+    "founded": 1909,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:43.707Z",
+    "id": "1757846203707"
+  },
+  {
+    "sportmonksId": 3468,
+    "name": "Real Madrid",
+    "slug": "real-madrid",
+    "shortName": "RMA",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/12/3468.png",
+    "founded": 1902,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:44.821Z",
+    "id": "1757846204821"
+  },
+  {
+    "sportmonksId": 3477,
+    "name": "Villarreal",
+    "slug": "villarreal",
+    "shortName": "VIL",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png",
+    "founded": 1923,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:45.937Z",
+    "id": "1757846205937"
+  },
+  {
+    "sportmonksId": 7980,
+    "name": "Atlético Madrid",
+    "slug": "atletico-madrid",
+    "shortName": "ATM",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png",
+    "founded": 1903,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:47.086Z",
+    "id": "1757846207086"
+  },
+  {
+    "sportmonksId": 13258,
+    "name": "Athletic Club",
+    "slug": "athletic-club",
+    "shortName": "ATH",
+    "logo": "https://cdn.sportmonks.com/images/soccer/teams/10/13258.png",
+    "founded": 1898,
+    "league": "laliga",
+    "country": "Spain",
+    "venue": {
+      "name": "",
+      "capacity": 0,
+      "city": ""
+    },
+    "lastUpdated": "2025-09-14T10:36:48.201Z",
+    "id": "1757846208201"
+  }
+]
