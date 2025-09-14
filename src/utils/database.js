@@ -52,9 +52,23 @@ class LocalDatabase {
         if (Object.keys(query).length === 0) {
             return data;
         }
-        
+
         return data.filter(item => {
             return Object.keys(query).every(key => {
+                // Handle nested properties like 'team.sportmonksId'
+                if (key.includes('.')) {
+                    const keys = key.split('.');
+                    let value = item;
+                    for (const k of keys) {
+                        value = value?.[k];
+                        if (value === undefined) break;
+                    }
+                    if (typeof query[key] === 'object' && query[key].$in) {
+                        return query[key].$in.includes(value);
+                    }
+                    return value === query[key];
+                }
+
                 if (typeof query[key] === 'object' && query[key].$in) {
                     return query[key].$in.includes(item[key]);
                 }
