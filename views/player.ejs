@@ -209,7 +209,7 @@
     </main>
 
     <script>
-        const playerId = '<%= playerId %>';
+        const playerSlug = '<%= playerSlug %>';
         let playerData = null;
         let currentSeason = '2025';
         let charts = {};
@@ -220,26 +220,26 @@
         // Load player data
         async function loadPlayerData() {
             try {
-                const response = await fetch(`/api/players/${playerId}`);
+                const response = await fetch(`/api/players/${playerSlug}`);
                 const data = await response.json();
-                
+
                 if (data.success) {
                     playerData = data.data;
                     updatePlayerInfo(playerData);
                 }
 
                 // Load statistics
-                const statsResponse = await fetch(`/api/players/${playerId}/statistics?season=${currentSeason}`);
+                const statsResponse = await fetch(`/api/players/${playerSlug}/statistics?season=${currentSeason}`);
                 const statsData = await statsResponse.json();
-                
+
                 if (statsData.success) {
                     updateStatistics(statsData.data);
                 }
 
                 // Load radar data
-                const radarResponse = await fetch(`/api/players/${playerId}/radar`);
+                const radarResponse = await fetch(`/api/players/${playerSlug}/radar`);
                 const radarData = await radarResponse.json();
-                
+
                 if (radarData.success) {
                     renderRadarCharts(radarData.data);
                 }

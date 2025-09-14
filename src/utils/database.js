@@ -207,9 +207,20 @@ class PlayerModel extends MockModel {
     }
 }
 
-// Export mock models
+// Utility functions for direct access
+async function find(collection, query = {}) {
+    return await database.find(collection, query);
+}
+
+async function findOne(collection, query = {}) {
+    return await database.findOne(collection, query);
+}
+
+// Export mock models and utility functions
 module.exports = {
     database,
+    find,
+    findOne,
     League: new LeagueModel(),
     Team: new TeamModel(),
     Player: new PlayerModel(),

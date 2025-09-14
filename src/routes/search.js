@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { League, Team, Player } = require('../utils/database');
+const { find } = require('../utils/database');
 
 // Global search with autocomplete
 router.get('/', async (req, res) => {
@@ -23,26 +23,26 @@ router.get('/', async (req, res) => {
         
         // Search leagues
         if (type === 'all' || type === 'league') {
-            const allLeagues = await League.find();
+            const allLeagues = await find('leagues');
             results.leagues = allLeagues
                 .filter(l => searchRegex.test(l.name) || searchRegex.test(l.country))
                 .slice(0, limit);
         }
-        
+
         // Search teams
         if (type === 'all' || type === 'team') {
-            const allTeams = await Team.find();
+            const allTeams = await find('teams');
             results.teams = allTeams
                 .filter(t => searchRegex.test(t.name) || (t.shortName && searchRegex.test(t.shortName)))
                 .slice(0, limit);
         }
-        
+
         // Search players
         if (type === 'all' || type === 'player') {
-            const allPlayers = await Player.find();
+            const allPlayers = await find('players');
             results.players = allPlayers
-                .filter(p => searchRegex.test(p.name) || 
-                            (p.firstName && searchRegex.test(p.firstName)) || 
+                .filter(p => searchRegex.test(p.name) ||
+                            (p.firstName && searchRegex.test(p.firstName)) ||
                             (p.lastName && searchRegex.test(p.lastName)))
                 .slice(0, limit);
         }
@@ -75,9 +75,9 @@ router.get('/suggestions', async (req, res) => {
         const suggestions = [];
         
         // Get top 3 from each category
-        const allLeagues = await League.find();
-        const allTeams = await Team.find();
-        const allPlayers = await Player.find();
+        const allLeagues = await find('leagues');
+        const allTeams = await find('teams');
+        const allPlayers = await find('players');
         
         const leagues = allLeagues
             .filter(l => searchRegex.test(l.name))
@@ -107,7 +107,7 @@ router.get('/suggestions', async (req, res) => {
             type: 'player',
             id: p.sportmonksId,
             name: p.name,
-            url: `/player/${p.sportmonksId}`
+            url: `/player/${p.slug}`
         }));
         
         res.json({

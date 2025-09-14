@@ -77,9 +77,9 @@ app.get('/team/:teamSlug', (req, res) => {
 });
 
 // Player pages
-app.get('/player/:playerId', (req, res) => {
-    res.render('player', { 
-        playerId: req.params.playerId,
+app.get('/player/:playerSlug', (req, res) => {
+    res.render('player', {
+        playerSlug: req.params.playerSlug,
         title: 'Player Stats - Stat4Ballers'
     });
 });

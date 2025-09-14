@@ -316,7 +316,7 @@
 
             // Create player cards HTML
             const createPlayerCard = (player) => `
-                <a href="/player/${player.sportmonksId || player.id}" class="player-card">
+                <a href="/player/${player.slug || 'unknown'}" class="player-card">
                     <div class="player-number">${player.jerseyNumber || '-'}</div>
                     ${player.image ? `<img src="${player.image}" alt="${player.name}" style="width: 40px; height: 40px; border-radius: 50%; margin: 0 0.5rem; object-fit: cover;">` : ''}
                     <div class="player-info">

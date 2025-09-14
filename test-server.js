@@ -65,7 +65,7 @@ async function testServer() {
     const views = [
         '/league/ligue1',
         '/team/paris-saint-germain',
-        '/player/1',
+        '/player/mason-greenwood',
         '/compare'
     ];
     
