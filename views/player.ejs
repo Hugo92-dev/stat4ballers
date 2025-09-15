@@ -6,7 +6,6 @@
     <title><%= title %></title>
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         .player-header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -72,27 +71,40 @@
             font-weight: 700;
             color: var(--primary-color);
         }
-        .charts-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        .chart-container {
+        .stats-list {
             background: white;
             padding: 2rem;
             border-radius: var(--radius);
             box-shadow: var(--shadow);
+            margin-top: 2rem;
         }
-        .chart-title {
+        .stats-category {
+            margin-bottom: 2rem;
+        }
+        .stats-category h3 {
             font-size: 1.25rem;
             font-weight: 600;
-            margin-bottom: 1.5rem;
-            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
         }
-        .chart-canvas {
-            max-width: 100%;
-            height: 300px;
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .stat-item:last-child {
+            border-bottom: none;
+        }
+        .stat-name {
+            font-weight: 500;
+            color: #333;
+        }
+        .stat-value {
+            font-weight: 700;
+            color: var(--primary-color);
         }
         .season-tabs {
             display: flex;
@@ -167,9 +179,6 @@
     <main class="container">
         <div class="season-tabs">
             <button class="season-tab active" data-season="2025">2025/2026</button>
-            <button class="season-tab" data-season="2024">2024/2025</button>
-            <button class="season-tab" data-season="2023">2023/2024</button>
-            <button class="season-tab" data-season="cumulative">3 Seasons Combined</button>
         </div>
 
         <div class="stats-summary">
@@ -203,8 +212,8 @@
             </div>
         </div>
 
-        <div class="charts-section" id="charts-section">
-            <!-- Charts will be dynamically inserted here -->
+        <div class="stats-list" id="stats-list">
+            <!-- Statistics will be dynamically inserted here -->
         </div>
     </main>
 
@@ -212,10 +221,6 @@
         const playerSlug = '<%= playerSlug %>';
         let playerData = null;
         let currentSeason = '2025';
-        let charts = {};
-
-        // Chart.js default options
-        Chart.defaults.font.family = 'Inter, sans-serif';
 
         // Load player data
         async function loadPlayerData() {
@@ -236,12 +241,12 @@
                     updateStatistics(statsData.data);
                 }
 
-                // Load radar data
-                const radarResponse = await fetch(`/api/players/${playerSlug}/radar`);
-                const radarData = await radarResponse.json();
+                // Load detailed statistics
+                const detailsResponse = await fetch(`/api/players/${playerSlug}/radar`);
+                const detailsData = await detailsResponse.json();
 
-                if (radarData.success) {
-                    renderRadarCharts(radarData.data);
+                if (detailsData.success) {
+                    renderStatsList(detailsData.data);
                 }
             } catch (error) {
                 console.error('Error loading player data:', error);
@@ -270,114 +275,122 @@
             document.getElementById('stat-red').textContent = stats.redCards || '-';
         }
 
-        function renderRadarCharts(radarData) {
-            const chartsSection = document.getElementById('charts-section');
-            chartsSection.innerHTML = '';
+        function renderStatsList(statsData) {
+            const statsListSection = document.getElementById('stats-list');
+            statsListSection.innerHTML = '';
 
-            // Destroy existing charts
-            Object.values(charts).forEach(chart => chart.destroy());
-            charts = {};
-
-            const isGoalkeeper = radarData.isGoalkeeper;
-            const chartData = radarData.charts;
+            const isGoalkeeper = statsData.isGoalkeeper;
+            const position = statsData.position;
+            const chartData = statsData.charts;
 
             if (isGoalkeeper) {
-                // Goalkeeper charts
+                // Goalkeeper statistics
                 if (chartData.general) {
-                    createRadarChart('general', 'General Statistics', chartData.general, chartsSection);
+                    createStatCategory('General Statistics', chartData.general, statsListSection);
                 }
                 if (chartData.goalkeeper) {
-                    createRadarChart('goalkeeper', 'Goalkeeper Specific', chartData.goalkeeper, chartsSection);
+                    createStatCategory('Goalkeeper Specific', chartData.goalkeeper, statsListSection);
                 }
             } else {
-                // Field player charts
+                // Field player statistics
+                const isDefender = position && (
+                    position.toLowerCase().includes('defender') ||
+                    position.toLowerCase().includes('back') ||
+                    position.toLowerCase() === 'cb' ||
+                    position.toLowerCase() === 'lb' ||
+                    position.toLowerCase() === 'rb' ||
+                    position.toLowerCase() === 'rwb' ||
+                    position.toLowerCase() === 'lwb'
+                );
+
                 if (chartData.general) {
-                    createRadarChart('general', 'General Statistics', chartData.general, chartsSection);
+                    createStatCategory('General Statistics', chartData.general, statsListSection);
                 }
-                if (chartData.offensive) {
-                    createRadarChart('offensive', 'Offensive Creativity', chartData.offensive, chartsSection);
-                }
-                if (chartData.defensive) {
-                    createRadarChart('defensive', 'Defensive Commitment', chartData.defensive, chartsSection);
+
+                if (isDefender) {
+                    // For defenders: Defensive first, then Offensive
+                    if (chartData.defensive) {
+                        createStatCategory('Defensive Commitment', chartData.defensive, statsListSection);
+                    }
+                    if (chartData.offensive) {
+                        createStatCategory('Offensive Creativity', chartData.offensive, statsListSection);
+                    }
+                } else {
+                    // For other players: Offensive first, then Defensive
+                    if (chartData.offensive) {
+                        createStatCategory('Offensive Creativity', chartData.offensive, statsListSection);
+                    }
+                    if (chartData.defensive) {
+                        createStatCategory('Defensive Commitment', chartData.defensive, statsListSection);
+                    }
                 }
             }
         }
 
-        function createRadarChart(id, title, data, container) {
-            const chartDiv = document.createElement('div');
-            chartDiv.className = 'chart-container';
-            chartDiv.innerHTML = `
-                <h3 class="chart-title">${title}</h3>
-                <canvas id="chart-${id}" class="chart-canvas"></canvas>
-            `;
-            container.appendChild(chartDiv);
+        function createStatCategory(title, data, container) {
+            const categoryDiv = document.createElement('div');
+            categoryDiv.className = 'stats-category';
 
-            const ctx = document.getElementById(`chart-${id}`).getContext('2d');
-            const labels = Object.keys(data).map(key => 
-                key.replace(/([A-Z])/g, ' $1').trim().charAt(0).toUpperCase() + 
-                key.replace(/([A-Z])/g, ' $1').trim().slice(1)
-            );
-            const values = Object.values(data);
+            // Map of stat keys to display names
+            const statLabels = {
+                // General statistics
+                rating: 'Rating',
+                appearances: 'Appearances',
+                minutesPlayed: 'Minutes played',
+                captain: 'Captain',
+                goals: 'Goals',
+                assists: 'Assists',
+                injuries: 'Injuries',
+                redCards: 'Red cards',
+                // Offensive creativity
+                shotsTotal: 'Shots total',
+                shotsOnTarget: 'Shots on target',
+                penalties: 'Penalties',
+                hitWoodwork: 'Hit woodwork',
+                keyPasses: 'Key passes',
+                bigChancesCreated: 'Big chances created',
+                expectedGoals: 'Expected goals',
+                throughBallsWon: 'Accurate through balls',
+                longBallsWon: 'Accurate long balls',
+                accurateCrosses: 'Accurate crosses',
+                successfulDribbles: 'Successful dribbles',
+                // Defensive commitment
+                yellowCards: 'Yellow cards',
+                tackles: 'Tackles',
+                ownGoals: 'Own goals',
+                interceptions: 'Interceptions',
+                duelsWon: 'Duels won',
+                aerialsWon: 'Aerials won',
+                dispossessed: 'Dispossessed',
+                dribbledPast: 'Dribbled past',
+                fouls: 'Fouls',
+                foulsDrawn: 'Fouls drawn',
+                errorLeadToGoal: 'Error lead to goal',
+                // Goalkeeper specific
+                saves: 'Saves',
+                savesInsideBox: 'Saves inside box',
+                goalsConceded: 'Goals conceded',
+                cleanSheets: 'Clean sheets'
+            };
 
-            // Normalize values to 0-100 scale for better visualization
-            const maxValue = Math.max(...values, 100);
-            const normalizedValues = values.map(v => (v / maxValue) * 100);
+            let statsHTML = `<h3>${title}</h3>`;
 
-            charts[id] = new Chart(ctx, {
-                type: 'radar',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: title,
-                        data: normalizedValues,
-                        backgroundColor: 'rgba(37, 99, 235, 0.2)',
-                        borderColor: 'rgba(37, 99, 235, 1)',
-                        pointBackgroundColor: 'rgba(37, 99, 235, 1)',
-                        pointBorderColor: '#fff',
-                        pointHoverBackgroundColor: '#fff',
-                        pointHoverBorderColor: 'rgba(37, 99, 235, 1)',
-                        borderWidth: 2
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            display: false
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    const originalValue = values[context.dataIndex];
-                                    return `${context.label}: ${originalValue}`;
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        r: {
-                            beginAtZero: true,
-                            max: 100,
-                            ticks: {
-                                stepSize: 20,
-                                display: false
-                            },
-                            grid: {
-                                color: 'rgba(0, 0, 0, 0.1)'
-                            },
-                            pointLabels: {
-                                font: {
-                                    size: 11
-                                }
-                            }
-                        }
-                    }
-                }
-            });
+            for (const [key, value] of Object.entries(data)) {
+                const statName = statLabels[key] || key;
+
+                statsHTML += `
+                    <div class="stat-item">
+                        <span class="stat-name">${statName}</span>
+                        <span class="stat-value">${value !== null && value !== undefined ? value : '-'}</span>
+                    </div>
+                `;
+            }
+
+            categoryDiv.innerHTML = statsHTML;
+            container.appendChild(categoryDiv);
         }
 
-        // Season selector
+        // Season selector (keeping for potential future use, but currently only one season)
         document.querySelectorAll('.season-tab').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 document.querySelectorAll('.season-tab').forEach(b => b.classList.remove('active'));

@@ -82,35 +82,70 @@ router.get('/:playerSlug/radar', async (req, res) => {
             });
         }
 
-        // Simple radar data based on player statistics
+        // Complete statistics based on player statistics
         const stats = player.statistics || {};
-        const isGoalkeeper = player.isGoalkeeper || false;
+        const isGoalkeeper = player.position === 'Goalkeeper' || player.isGoalkeeper || false;
 
-        const radarData = isGoalkeeper ? {
-            general: {
-                saves: stats.saves || 0,
-                cleanSheets: stats.cleanSheets || 0,
-                appearances: stats.appearances || 0,
-                rating: stats.rating || 0
-            }
-        } : {
-            general: {
-                goals: stats.goals || 0,
-                assists: stats.assists || 0,
-                appearances: stats.appearances || 0,
-                rating: stats.rating || 0
-            },
-            offensive: {
-                goals: stats.goals || 0,
-                assists: stats.assists || 0,
-                shots: stats.shots || 0
-            },
-            defensive: {
-                tackles: stats.tackles || 0,
-                blocks: stats.blocks || 0,
-                interceptions: stats.interceptions || 0
-            }
-        };
+        let radarData;
+
+        if (isGoalkeeper) {
+            // Goalkeeper: General (without goals, assists, injuries) + Specific goalkeeper stats
+            radarData = {
+                general: {
+                    rating: stats.rating || 0,
+                    appearances: stats.appearances || 0,
+                    minutesPlayed: stats.minutesPlayed || 0,
+                    captain: stats.captain || 0,
+                    redCards: stats.redCards || 0
+                },
+                goalkeeper: {
+                    saves: stats.saves || 0,
+                    savesInsideBox: stats.savesInsideBox || 0,
+                    goalsConceded: stats.goalsConceded || 0,
+                    cleanSheets: stats.cleanSheets || 0
+                }
+            };
+        } else {
+            // Field players: All 3 categories (General, Offensive, Defensive)
+            radarData = {
+                general: {
+                    rating: stats.rating || 0,
+                    appearances: stats.appearances || 0,
+                    minutesPlayed: stats.minutesPlayed || 0,
+                    captain: stats.captain || 0,
+                    goals: stats.goals || 0,
+                    assists: stats.assists || 0,
+                    injuries: stats.injuries || 0,
+                    redCards: stats.redCards || 0
+                },
+                offensive: {
+                    shotsTotal: stats.shotsTotal || 0,
+                    shotsOnTarget: stats.shotsOnTarget || 0,
+                    penalties: stats.penalties || 0,
+                    hitWoodwork: stats.hitWoodwork || 0,
+                    keyPasses: stats.keyPasses || 0,
+                    bigChancesCreated: stats.bigChancesCreated || 0,
+                    expectedGoals: stats.expectedGoals || 0,
+                    throughBallsWon: stats.throughBallsWon || 0,
+                    longBallsWon: stats.longBallsWon || 0,
+                    accurateCrosses: stats.accurateCrosses || 0,
+                    successfulDribbles: stats.successfulDribbles || 0
+                },
+                defensive: {
+                    yellowCards: stats.yellowCards || 0,
+                    tackles: stats.tackles || 0,
+                    ownGoals: stats.ownGoals || 0,
+                    interceptions: stats.interceptions || 0,
+                    duelsWon: stats.duelsWon || 0,
+                    aerialsWon: stats.aerialsWon || 0,
+                    dispossessed: stats.dispossessed || 0,
+                    dribbledPast: stats.dribbledPast || 0,
+                    fouls: stats.fouls || 0,
+                    foulsDrawn: stats.foulsDrawn || 0,
+                    errorLeadToGoal: stats.errorLeadToGoal || 0
+                }
+            };
+        }
 
         res.json({
             success: true,
