@@ -84,6 +84,13 @@ app.get('/player/:playerSlug', (req, res) => {
     });
 });
 
+// About page
+app.get('/about', (req, res) => {
+    res.render('about', {
+        title: 'About - Stat4Ballers'
+    });
+});
+
 // Comparison page
 app.get('/compare', async (req, res) => {
     const playerIds = req.query.player;
