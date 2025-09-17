@@ -132,16 +132,16 @@
             <div class="header-content">
                 <div class="logo">
                     <a href="/" style="text-decoration: none; color: inherit;">
-                        <h1>Stat4Ballers</h1>
-                        <span class="tagline">Football Statistics Hub</span>
+                        <h1 data-translate="Stat4Ballers">Stat4Ballers</h1>
+                        <span class="tagline" data-translate="Football Statistics Hub">Football Statistics Hub</span>
                     </a>
                 </div>
                 <nav class="nav-links">
-                    <a href="/league/ligue1">Ligue 1</a>
-                    <a href="/league/premierleague">Premier League</a>
-                    <a href="/league/laliga">La Liga</a>
-                    <a href="/league/seriea">Serie A</a>
-                    <a href="/league/bundesliga">Bundesliga</a>
+                    <a href="/league/ligue1" data-translate="Ligue 1">Ligue 1</a>
+                    <a href="/league/premierleague" data-translate="Premier League">Premier League</a>
+                    <a href="/league/laliga" data-translate="La Liga">La Liga</a>
+                    <a href="/league/seriea" data-translate="Serie A">Serie A</a>
+                    <a href="/league/bundesliga" data-translate="Bundesliga">Bundesliga</a>
                 </nav>
             </div>
         </div>
@@ -167,72 +167,90 @@
     <main class="container">
         <div class="stats-overview">
             <div class="stat-item">
-                <div class="stat-label">Rating</div>
+                <div class="stat-label" data-translate="Rating">Rating</div>
                 <div class="stat-value" id="stat-rating">-</div>
             </div>
             <div class="stat-item">
-                <div class="stat-label">Games</div>
+                <div class="stat-label" data-translate="Games">Games</div>
                 <div class="stat-value" id="stat-games">-</div>
             </div>
             <div class="stat-item">
-                <div class="stat-label">Wins</div>
+                <div class="stat-label" data-translate="Wins">Wins</div>
                 <div class="stat-value" id="stat-wins">-</div>
             </div>
             <div class="stat-item">
-                <div class="stat-label">Draws</div>
+                <div class="stat-label" data-translate="Draws">Draws</div>
                 <div class="stat-value" id="stat-draws">-</div>
             </div>
             <div class="stat-item">
-                <div class="stat-label">Losses</div>
+                <div class="stat-label" data-translate="Losses">Losses</div>
                 <div class="stat-value" id="stat-losses">-</div>
             </div>
             <div class="stat-item">
-                <div class="stat-label">Goals</div>
+                <div class="stat-label" data-translate="Goals">Goals</div>
                 <div class="stat-value" id="stat-goals">-</div>
             </div>
             <div class="stat-item">
-                <div class="stat-label">Clean Sheets</div>
+                <div class="stat-label" data-translate="Clean Sheets">Clean Sheets</div>
                 <div class="stat-value" id="stat-cleansheets">-</div>
             </div>
             <div class="stat-item">
-                <div class="stat-label">Avg Age</div>
+                <div class="stat-label" data-translate="Avg Age">Avg Age</div>
                 <div class="stat-value" id="stat-avgage">-</div>
             </div>
         </div>
 
         <div class="squad-section">
-            <h2>Squad</h2>
+            <h2 data-translate="Squad">Squad</h2>
             
             <div class="position-group">
-                <h3 class="position-title">Goalkeepers</h3>
+                <h3 class="position-title" data-translate="Goalkeepers">Goalkeepers</h3>
                 <div class="squad-grid" id="goalkeepers">
                     <div class="player-card">
                         <div class="player-number">-</div>
                         <div class="player-info">
-                            <div class="player-name">Loading squad...</div>
-                            <div class="player-position">Goalkeeper</div>
+                            <div class="player-name" data-translate="Loading squad...">Loading squad...</div>
+                            <div class="player-position" data-translate="Goalkeeper">Goalkeeper</div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="position-group">
-                <h3 class="position-title">Defenders</h3>
+                <h3 class="position-title" data-translate="Defenders">Defenders</h3>
                 <div class="squad-grid" id="defenders"></div>
             </div>
 
             <div class="position-group">
-                <h3 class="position-title">Midfielders</h3>
+                <h3 class="position-title" data-translate="Midfielders">Midfielders</h3>
                 <div class="squad-grid" id="midfielders"></div>
             </div>
 
             <div class="position-group">
-                <h3 class="position-title">Forwards</h3>
+                <h3 class="position-title" data-translate="Forwards">Forwards</h3>
                 <div class="squad-grid" id="forwards"></div>
             </div>
         </div>
     </main>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p data-translate="© 2025 Stat4Ballers. Powered by true soccer lovers. For the people, by the people.">&copy; 2025 Stat4Ballers. Powered by true soccer lovers. For the people, by the people.</p>
+                <div class="footer-links">
+                    <a href="/about" data-translate="About">About</a>
+                </div>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en">🇬🇧</button>
+                    <button class="lang-btn" data-lang="fr">🇫🇷</button>
+                    <button class="lang-btn" data-lang="es">🇪🇸</button>
+                    <button class="lang-btn" data-lang="pt">🇵🇹</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/translations.js"></script>
     <script>
         const teamSlug = '<%= teamSlug %>';
 
@@ -269,8 +287,13 @@
         function updateTeamInfo(team) {
             document.getElementById('team-name').textContent = team.name || 'Team Name';
             document.getElementById('team-stadium').textContent = team.venue?.name || 'Stadium';
-            document.getElementById('team-founded').textContent = `Founded ${team.founded || 'N/A'}`;
-            
+
+            // Get current language and translate "Founded"
+            const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+            const foundedText = window.translations && window.translations[currentLang] && window.translations[currentLang]['Founded'] ?
+                window.translations[currentLang]['Founded'] : 'Founded';
+            document.getElementById('team-founded').innerHTML = `<span data-translate="Founded">${foundedText}</span> ${team.founded || 'N/A'}`;
+
             if (team.logo) {
                 document.getElementById('team-logo').src = team.logo;
             }

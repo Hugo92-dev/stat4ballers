@@ -24,7 +24,8 @@
       "Bash(start http://localhost:3000)",
       "Read(//c/Users/hugo/OneDrive/Bureau/**)",
       "Bash(copy:*)",
-      "Bash(start http://localhost:3000/about)"
+      "Bash(start http://localhost:3000/about)",
+      "Bash(start http://localhost:3000/team/psg)"
     ],
     "deny": [],
     "ask": []

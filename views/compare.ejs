@@ -101,7 +101,7 @@
                                         </a>
                                     </h3>
                                     <p>
-                                        <%= player.position %> •
+                                        <span data-translate="<%= player.position %>"><%= player.position %></span> •
                                         <% if (player.team) { %>
                                             <a href="/team/<%= player.team.sportmonksId || player.teamId %>" class="team-link">
                                                 <%= player.team.name %>

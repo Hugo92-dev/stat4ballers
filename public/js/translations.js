@@ -99,6 +99,22 @@ const translations = {
         'Attacker': 'Attacker',
         'Forward': 'Forward',
 
+        // Team page
+        'Squad': 'Squad',
+        'Goalkeepers': 'Goalkeepers',
+        'Defenders': 'Defenders',
+        'Midfielders': 'Midfielders',
+        'Forwards': 'Forwards',
+        'Founded': 'Founded',
+        'Stadium': 'Stadium',
+        'Games': 'Games',
+        'Wins': 'Wins',
+        'Draws': 'Draws',
+        'Losses': 'Losses',
+        'Clean Sheets': 'Clean Sheets',
+        'Avg Age': 'Avg Age',
+        'Loading squad...': 'Loading squad...',
+
         // Comparison page
         'Comparison Summary': 'Comparison Summary',
         'Better than others in:': 'Better than others in:',
@@ -226,6 +242,22 @@ const translations = {
         'Attacker': 'Attaquant',
         'Forward': 'Attaquant',
 
+        // Team page
+        'Squad': 'Effectif',
+        'Goalkeepers': 'Gardiens',
+        'Defenders': 'Défenseurs',
+        'Midfielders': 'Milieux',
+        'Forwards': 'Attaquants',
+        'Founded': 'Fondé',
+        'Stadium': 'Stade',
+        'Games': 'Matchs',
+        'Wins': 'Victoires',
+        'Draws': 'Nuls',
+        'Losses': 'Défaites',
+        'Clean Sheets': 'Clean Sheets',
+        'Avg Age': 'Âge Moy',
+        'Loading squad...': 'Chargement de l\'effectif...',
+
         // Comparison page
         'Comparison Summary': 'Résumé de la Comparaison',
         'Better than others in:': 'Meilleur que les autres en :',
@@ -337,6 +369,22 @@ const translations = {
         'Attacker': 'Delantero',
         'Forward': 'Delantero',
 
+        // Team page
+        'Squad': 'Plantilla',
+        'Goalkeepers': 'Porteros',
+        'Defenders': 'Defensas',
+        'Midfielders': 'Centrocampistas',
+        'Forwards': 'Delanteros',
+        'Founded': 'Fundado',
+        'Stadium': 'Estadio',
+        'Games': 'Partidos',
+        'Wins': 'Victorias',
+        'Draws': 'Empates',
+        'Losses': 'Derrotas',
+        'Clean Sheets': 'Porterías imbatidas',
+        'Avg Age': 'Edad Media',
+        'Loading squad...': 'Cargando plantilla...',
+
         // Comparison page
         'Comparison Summary': 'Resumen de Comparación',
         'Better than others in:': 'Mejor que otros en:',
@@ -447,6 +495,22 @@ const translations = {
         'Midfielder': 'Médio',
         'Attacker': 'Avançado',
         'Forward': 'Avançado',
+
+        // Team page
+        'Squad': 'Plantel',
+        'Goalkeepers': 'Guarda-redes',
+        'Defenders': 'Defensores',
+        'Midfielders': 'Médios',
+        'Forwards': 'Avançados',
+        'Founded': 'Fundado',
+        'Stadium': 'Estádio',
+        'Games': 'Jogos',
+        'Wins': 'Vitórias',
+        'Draws': 'Empates',
+        'Losses': 'Derrotas',
+        'Clean Sheets': 'Jogos sem sofrer golos',
+        'Avg Age': 'Idade Média',
+        'Loading squad...': 'Carregando plantel...',
 
         // Comparison page
         'Comparison Summary': 'Resumo da Comparação',

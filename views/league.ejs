@@ -118,16 +118,16 @@
             <div class="header-content">
                 <div class="logo">
                     <a href="/" style="text-decoration: none; color: inherit;">
-                        <h1>Stat4Ballers</h1>
-                        <span class="tagline">Football Statistics Hub</span>
+                        <h1 data-translate="Stat4Ballers">Stat4Ballers</h1>
+                        <span class="tagline" data-translate="Football Statistics Hub">Football Statistics Hub</span>
                     </a>
                 </div>
                 <nav class="nav-links">
-                    <a href="/league/ligue1">Ligue 1</a>
-                    <a href="/league/premierleague">Premier League</a>
-                    <a href="/league/laliga">La Liga</a>
-                    <a href="/league/seriea">Serie A</a>
-                    <a href="/league/bundesliga">Bundesliga</a>
+                    <a href="/league/ligue1" data-translate="Ligue 1">Ligue 1</a>
+                    <a href="/league/premierleague" data-translate="Premier League">Premier League</a>
+                    <a href="/league/laliga" data-translate="La Liga">La Liga</a>
+                    <a href="/league/seriea" data-translate="Serie A">Serie A</a>
+                    <a href="/league/bundesliga" data-translate="Bundesliga">Bundesliga</a>
                 </nav>
             </div>
         </div>
@@ -240,5 +240,24 @@
         // Load initial data
         loadLeagueData(currentSeason);
     </script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p data-translate="© 2025 Stat4Ballers. Powered by true soccer lovers. For the people, by the people.">&copy; 2025 Stat4Ballers. Powered by true soccer lovers. For the people, by the people.</p>
+                <div class="footer-links">
+                    <a href="/about" data-translate="About">About</a>
+                </div>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en">🇬🇧</button>
+                    <button class="lang-btn" data-lang="fr">🇫🇷</button>
+                    <button class="lang-btn" data-lang="es">🇪🇸</button>
+                    <button class="lang-btn" data-lang="pt">🇵🇹</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/translations.js"></script>
 </body>
 </html>
