@@ -1,0 +1,63 @@
+// About page translations extension
+const aboutTranslations = {
+    fr: {
+        'Meeting with the Founder of Stat4Ballers': 'Rencontre avec le Fondateur de Stat4Ballers',
+        'An exclusive interview with the passionate creator behind Stat4Ballers, where statistics meet the beautiful game.': 'Une interview exclusive avec le créateur passionné derrière Stat4Ballers, où les statistiques rencontrent le beau jeu.',
+        'Journalist:': 'Journaliste :',
+        'Founder:': 'Fondateur :',
+        'What motivated you to create Stat4Ballers?': "Qu'est-ce qui vous a poussé à créer Stat4Ballers ?",
+        "Since my childhood, I've been passionate about football. I grew up following multiple leagues and discovering new players every week. For me, football is more than a sport: it's a celebration, a universal language that brings people together. This site was born from this passion, as a way to share this joy and offer a tool for everyone who loves to compare and analyze players.": "Depuis mon enfance, je suis passionné par le football. J'ai grandi en suivant plusieurs championnats et en découvrant chaque semaine de nouveaux joueurs. Pour moi, le football est plus qu'un sport : c'est une fête, un langage universel qui rassemble. Ce site est né de cette passion, comme une manière de partager ce plaisir et d'offrir un outil à tous ceux qui aiment comparer et analyser les joueurs.",
+        'Who are your main references in your vision of the game?': 'Quelles sont vos principales références dans votre vision du jeu ?',
+        'Marcelo Bielsa, for his demanding nature, his almost obsessive methodological knowledge of the game, and his vision of football in society. Also Didier Roustan, for his unique way of narrating the game with poetry and depth. Their approach reinforced my belief that football must remain a means of bringing people together, a spectacle, a moment of escape from daily life where everyone is equal.': "Marcelo Bielsa, pour son exigence, sa connaissance méthodologique presque névrosée du jeu et sa vision du football dans la société. Didier Roustan également, pour sa manière unique de raconter le jeu avec poésie et profondeur. Leur approche m'a conforté dans l'idée que le football doit rester un moyen de rassembler, un spectacle, un moment d'évasion du quotidien où chacun est égal.",
+        "What's the philosophy of Stat4Ballers?": 'Quelle est la philosophie de Stat4Ballers ?',
+        "Here, numbers serve the passion. Stat4Ballers allows you to compare players, but the idea isn't just to produce statistics: it's to give enthusiasts and professionals a simple, fun, and inspiring tool to fuel debates and celebrate the beauty of the game.": "Ici, les chiffres sont au service de la passion. Stat4Ballers permet de comparer les joueurs, mais l'idée n'est pas seulement de produire des statistiques : c'est de donner aux passionnés et aux professionnels un outil simple, ludique et inspirant, pour alimenter les débats et célébrer la beauté du jeu.",
+        'Who is your site for?': 'À qui s\'adresse votre site ?',
+        "Everyone. Supporters who want to defend their favorite player, curious minds who love discovering new talents, journalists, consultants, scouts, or coaches looking for clear and quick data to consult. Above all, it's a gift to the great football community.": "À tous. Aux supporters qui veulent défendre leur joueur favori, aux curieux qui aiment découvrir de nouveaux talents, aux journalistes, consultants, scouts ou aux entraîneurs qui cherchent des données claires et rapides à consulter. C'est avant tout un cadeau pour la grande communauté du football.",
+        'A final word for your visitors?': 'Un dernier mot pour vos visiteurs ?',
+        'Have fun, compare, debate, and above all... keep loving the game. Because football is here to bring us together, and I could spend my days talking about nothing else. This site is made for people like me, by a guy like you.': "Amusez-vous, comparez, débattez, et surtout… continuez à aimer le jeu. Parce que le football est là pour nous rassembler et que je pourrais passer mes journées à ne parler que de ça. Ce site est fait pour les gens comme moi, par un mec comme vous."
+    },
+
+    es: {
+        'Meeting with the Founder of Stat4Ballers': 'Encuentro con el Fundador de Stat4Ballers',
+        'An exclusive interview with the passionate creator behind Stat4Ballers, where statistics meet the beautiful game.': 'Una entrevista exclusiva con el apasionado creador detrás de Stat4Ballers, donde las estadísticas se encuentran con el juego bonito.',
+        'Journalist:': 'Periodista:',
+        'Founder:': 'Fundador:',
+        'What motivated you to create Stat4Ballers?': '¿Qué te motivó a crear Stat4Ballers?',
+        "Since my childhood, I've been passionate about football. I grew up following multiple leagues and discovering new players every week. For me, football is more than a sport: it's a celebration, a universal language that brings people together. This site was born from this passion, as a way to share this joy and offer a tool for everyone who loves to compare and analyze players.": "Desde mi infancia, he sido apasionado por el fútbol. Crecí siguiendo múltiples ligas y descubriendo nuevos jugadores cada semana. Para mí, el fútbol es más que un deporte: es una celebración, un lenguaje universal que une a las personas. Este sitio nació de esta pasión, como una forma de compartir esta alegría y ofrecer una herramienta para todos los que aman comparar y analizar jugadores.",
+        'Who are your main references in your vision of the game?': '¿Cuáles son tus principales referencias en tu visión del juego?',
+        'Marcelo Bielsa, for his demanding nature, his almost obsessive methodological knowledge of the game, and his vision of football in society. Also Didier Roustan, for his unique way of narrating the game with poetry and depth. Their approach reinforced my belief that football must remain a means of bringing people together, a spectacle, a moment of escape from daily life where everyone is equal.': 'Marcelo Bielsa, por su naturaleza exigente, su conocimiento metodológico casi obsesivo del juego y su visión del fútbol en la sociedad. También Didier Roustan, por su manera única de narrar el juego con poesía y profundidad. Su enfoque reforzó mi creencia de que el fútbol debe seguir siendo un medio para unir a las personas, un espectáculo, un momento de escape de la vida diaria donde todos son iguales.',
+        "What's the philosophy of Stat4Ballers?": '¿Cuál es la filosofía de Stat4Ballers?',
+        "Here, numbers serve the passion. Stat4Ballers allows you to compare players, but the idea isn't just to produce statistics: it's to give enthusiasts and professionals a simple, fun, and inspiring tool to fuel debates and celebrate the beauty of the game.": "Aquí, los números sirven a la pasión. Stat4Ballers permite comparar jugadores, pero la idea no es solo producir estadísticas: es dar a los entusiastas y profesionales una herramienta simple, divertida e inspiradora para alimentar debates y celebrar la belleza del juego.",
+        'Who is your site for?': '¿Para quién es tu sitio?',
+        "Everyone. Supporters who want to defend their favorite player, curious minds who love discovering new talents, journalists, consultants, scouts, or coaches looking for clear and quick data to consult. Above all, it's a gift to the great football community.": "Para todos. Aficionados que quieren defender a su jugador favorito, mentes curiosas que aman descubrir nuevos talentos, periodistas, consultores, ojeadores o entrenadores que buscan datos claros y rápidos para consultar. Sobre todo, es un regalo para la gran comunidad del fútbol.",
+        'A final word for your visitors?': '¿Una última palabra para tus visitantes?',
+        'Have fun, compare, debate, and above all... keep loving the game. Because football is here to bring us together, and I could spend my days talking about nothing else. This site is made for people like me, by a guy like you.': 'Diviértanse, comparen, debatan, y sobre todo... sigan amando el juego. Porque el fútbol está aquí para unirnos, y podría pasar mis días hablando de nada más. Este sitio está hecho para gente como yo, por un tipo como tú.'
+    },
+
+    pt: {
+        'Meeting with the Founder of Stat4Ballers': 'Encontro com o Fundador do Stat4Ballers',
+        'An exclusive interview with the passionate creator behind Stat4Ballers, where statistics meet the beautiful game.': 'Uma entrevista exclusiva com o criador apaixonado por trás do Stat4Ballers, onde as estatísticas encontram o jogo bonito.',
+        'Journalist:': 'Jornalista:',
+        'Founder:': 'Fundador:',
+        'What motivated you to create Stat4Ballers?': 'O que o motivou a criar o Stat4Ballers?',
+        "Since my childhood, I've been passionate about football. I grew up following multiple leagues and discovering new players every week. For me, football is more than a sport: it's a celebration, a universal language that brings people together. This site was born from this passion, as a way to share this joy and offer a tool for everyone who loves to compare and analyze players.": "Desde a minha infância, sou apaixonado por futebol. Cresci seguindo várias ligas e descobrindo novos jogadores toda semana. Para mim, o futebol é mais do que um desporto: é uma celebração, uma linguagem universal que une as pessoas. Este site nasceu desta paixão, como uma forma de partilhar esta alegria e oferecer uma ferramenta para todos os que adoram comparar e analisar jogadores.",
+        'Who are your main references in your vision of the game?': 'Quais são as suas principais referências na sua visão do jogo?',
+        'Marcelo Bielsa, for his demanding nature, his almost obsessive methodological knowledge of the game, and his vision of football in society. Also Didier Roustan, for his unique way of narrating the game with poetry and depth. Their approach reinforced my belief that football must remain a means of bringing people together, a spectacle, a moment of escape from daily life where everyone is equal.': 'Marcelo Bielsa, pela sua natureza exigente, o seu conhecimento metodológico quase obsessivo do jogo e a sua visão do futebol na sociedade. Também Didier Roustan, pela sua maneira única de narrar o jogo com poesia e profundidade. A sua abordagem reforçou a minha crença de que o futebol deve permanecer um meio de unir as pessoas, um espetáculo, um momento de fuga da vida quotidiana onde todos são iguais.',
+        "What's the philosophy of Stat4Ballers?": 'Qual é a filosofia do Stat4Ballers?',
+        "Here, numbers serve the passion. Stat4Ballers allows you to compare players, but the idea isn't just to produce statistics: it's to give enthusiasts and professionals a simple, fun, and inspiring tool to fuel debates and celebrate the beauty of the game.": "Aqui, os números servem a paixão. O Stat4Ballers permite comparar jogadores, mas a ideia não é apenas produzir estatísticas: é dar aos entusiastas e profissionais uma ferramenta simples, divertida e inspiradora para alimentar debates e celebrar a beleza do jogo.",
+        'Who is your site for?': 'Para quem é o seu site?',
+        "Everyone. Supporters who want to defend their favorite player, curious minds who love discovering new talents, journalists, consultants, scouts, or coaches looking for clear and quick data to consult. Above all, it's a gift to the great football community.": "Para todos. Adeptos que querem defender o seu jogador favorito, mentes curiosas que adoram descobrir novos talentos, jornalistas, consultores, olheiros ou treinadores que procuram dados claros e rápidos para consultar. Acima de tudo, é um presente para a grande comunidade do futebol.",
+        'A final word for your visitors?': 'Uma última palavra para os seus visitantes?',
+        'Have fun, compare, debate, and above all... keep loving the game. Because football is here to bring us together, and I could spend my days talking about nothing else. This site is made for people like me, by a guy like you.': 'Divirtam-se, comparem, debatam e, acima de tudo... continuem a amar o jogo. Porque o futebol está aqui para nos unir, e eu poderia passar os meus dias a falar apenas disso. Este site é feito para pessoas como eu, por um tipo como vocês.'
+    }
+};
+
+// Merge with main translations
+if (window.translations) {
+    Object.keys(aboutTranslations).forEach(lang => {
+        window.translations[lang] = {
+            ...window.translations[lang],
+            ...aboutTranslations[lang]
+        };
+    });
+}

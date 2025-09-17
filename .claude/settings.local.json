@@ -21,7 +21,10 @@
       "Bash(git clean:*)",
       "Bash(mkdir:*)",
       "Bash(start http://localhost:3000/joueur/bradley-barcola)",
-      "Bash(start http://localhost:3000)"
+      "Bash(start http://localhost:3000)",
+      "Read(//c/Users/hugo/OneDrive/Bureau/**)",
+      "Bash(copy:*)",
+      "Bash(start http://localhost:3000/about)"
     ],
     "deny": [],
     "ask": []

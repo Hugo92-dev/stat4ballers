@@ -142,16 +142,16 @@
             <div class="header-content">
                 <div class="logo">
                     <a href="/" style="text-decoration: none; color: inherit;">
-                        <h1>Stat4Ballers</h1>
-                        <span class="tagline">Football Statistics Hub</span>
+                        <h1 data-translate="Stat4Ballers">Stat4Ballers</h1>
+                        <span class="tagline" data-translate="Football Statistics Hub">Football Statistics Hub</span>
                     </a>
                 </div>
                 <nav class="nav-links">
-                    <a href="/league/ligue1">Ligue 1</a>
-                    <a href="/league/premierleague">Premier League</a>
-                    <a href="/league/laliga">La Liga</a>
-                    <a href="/league/seriea">Serie A</a>
-                    <a href="/league/bundesliga">Bundesliga</a>
+                    <a href="/league/ligue1" data-translate="Ligue 1">Ligue 1</a>
+                    <a href="/league/premierleague" data-translate="Premier League">Premier League</a>
+                    <a href="/league/laliga" data-translate="La Liga">La Liga</a>
+                    <a href="/league/seriea" data-translate="Serie A">Serie A</a>
+                    <a href="/league/bundesliga" data-translate="Bundesliga">Bundesliga</a>
                 </nav>
             </div>
         </div>
@@ -166,10 +166,10 @@
                 <div class="player-details">
                     <h1 id="player-name">Loading...</h1>
                     <div class="player-meta">
-                        <span class="badge" id="player-position">Position</span>
+                        <span class="badge" id="player-position" data-translate="Position">Position</span>
                         <span class="badge" id="player-number">#-</span>
-                        <span class="badge" id="player-team">Team</span>
-                        <span class="badge" id="player-nationality">Nationality</span>
+                        <span class="badge" id="player-team" data-translate="Team">Team</span>
+                        <span class="badge" id="player-nationality" data-translate="Nationality">Nationality</span>
                     </div>
                 </div>
             </div>
@@ -183,31 +183,31 @@
 
         <div class="stats-summary">
             <div class="summary-stat">
-                <div class="summary-label">Rating</div>
+                <div class="summary-label" data-translate="Rating">Rating</div>
                 <div class="summary-value" id="stat-rating">-</div>
             </div>
             <div class="summary-stat">
-                <div class="summary-label">Apps</div>
+                <div class="summary-label" data-translate="Apps">Apps</div>
                 <div class="summary-value" id="stat-appearances">-</div>
             </div>
             <div class="summary-stat">
-                <div class="summary-label">Goals</div>
+                <div class="summary-label" data-translate="Goals">Goals</div>
                 <div class="summary-value" id="stat-goals">-</div>
             </div>
             <div class="summary-stat">
-                <div class="summary-label">Assists</div>
+                <div class="summary-label" data-translate="Assists">Assists</div>
                 <div class="summary-value" id="stat-assists">-</div>
             </div>
             <div class="summary-stat">
-                <div class="summary-label">Minutes</div>
+                <div class="summary-label" data-translate="Minutes">Minutes</div>
                 <div class="summary-value" id="stat-minutes">-</div>
             </div>
             <div class="summary-stat">
-                <div class="summary-label">Yellow</div>
+                <div class="summary-label" data-translate="Yellow">Yellow</div>
                 <div class="summary-value" id="stat-yellow">-</div>
             </div>
             <div class="summary-stat">
-                <div class="summary-label">Red</div>
+                <div class="summary-label" data-translate="Red">Red</div>
                 <div class="summary-value" id="stat-red">-</div>
             </div>
         </div>
@@ -217,6 +217,7 @@
         </div>
     </main>
 
+    <script src="/js/translations.js"></script>
     <script>
         const playerSlug = '<%= playerSlug %>';
         let playerData = null;
@@ -369,14 +370,25 @@
                 cleanSheets: 'Clean sheets'
             };
 
-            let statsHTML = `<h3>${title}</h3>`;
+            // Get current language
+            const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+
+            // Translate title if needed
+            const translatedTitle = window.translations && window.translations[currentLang] && window.translations[currentLang][title] ?
+                window.translations[currentLang][title] : title;
+
+            let statsHTML = `<h3 data-translate="${title}">${translatedTitle}</h3>`;
 
             for (const [key, value] of Object.entries(data)) {
                 const statName = statLabels[key] || key;
 
+                // Translate stat name if needed
+                const translatedStatName = window.translations && window.translations[currentLang] && window.translations[currentLang][statName] ?
+                    window.translations[currentLang][statName] : statName;
+
                 statsHTML += `
                     <div class="stat-item">
-                        <span class="stat-name">${statName}</span>
+                        <span class="stat-name" data-translate="${statName}">${translatedStatName}</span>
                         <span class="stat-value">${value !== null && value !== undefined ? value : '-'}</span>
                     </div>
                 `;

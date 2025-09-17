@@ -16,16 +16,16 @@
             <div class="header-content">
                 <div class="logo">
                     <a href="/">
-                        <h1>Stat4Ballers</h1>
-                        <span class="tagline">Football Statistics Hub</span>
+                        <h1 data-translate="Stat4Ballers">Stat4Ballers</h1>
+                        <span class="tagline" data-translate="Football Statistics Hub">Football Statistics Hub</span>
                     </a>
                 </div>
                 <nav class="nav-links">
-                    <a href="/league/ligue1">Ligue 1</a>
-                    <a href="/league/premierleague">Premier League</a>
-                    <a href="/league/laliga">La Liga</a>
-                    <a href="/league/seriea">Serie A</a>
-                    <a href="/league/bundesliga">Bundesliga</a>
+                    <a href="/league/ligue1" data-translate="Ligue 1">Ligue 1</a>
+                    <a href="/league/premierleague" data-translate="Premier League">Premier League</a>
+                    <a href="/league/laliga" data-translate="La Liga">La Liga</a>
+                    <a href="/league/seriea" data-translate="Serie A">Serie A</a>
+                    <a href="/league/bundesliga" data-translate="Bundesliga">Bundesliga</a>
                 </nav>
             </div>
         </div>
@@ -34,14 +34,14 @@
     <main class="main-content">
         <div class="container">
             <div class="comparison-header">
-                <h1>Player Comparison</h1>
-                <a href="/" class="btn-back">← Back to Home</a>
+                <h1 data-translate="Player Comparison">Player Comparison</h1>
+                <a href="/" class="btn-back" data-translate="← Back to Home">← Back to Home</a>
             </div>
 
             <% if (typeof players !== 'undefined' && players && players.length > 0) { %>
                 <!-- Player Summary Section -->
                 <div class="comparison-summary">
-                    <h2>Comparison Summary</h2>
+                    <h2 data-translate="Comparison Summary">Comparison Summary</h2>
                     <div class="summary-grid">
                         <%
                         players.forEach(player => {
@@ -112,12 +112,12 @@
                             </div>
                             <div class="player-highlights">
                                 <% if (highlights.length > 0) { %>
-                                    <p class="highlight-label">Better than others in:</p>
+                                    <p class="highlight-label" data-translate="Better than others in:">Better than others in:</p>
                                     <% highlights.slice(0, 3).forEach(highlight => { %>
                                         <span class="highlight-stat"><%= highlight %></span>
                                     <% }) %>
                                 <% } else { %>
-                                    <p class="highlight-label">Balanced performance</p>
+                                    <p class="highlight-label" data-translate="Balanced performance">Balanced performance</p>
                                 <% } %>
                             </div>
                         </div>
@@ -127,13 +127,13 @@
 
                 <!-- Detailed Statistics Table -->
                 <div class="stats-container">
-                    <h2>Detailed Statistics</h2>
+                    <h2 data-translate="Detailed Statistics">Detailed Statistics</h2>
 
                     <div class="stats-table-wrapper">
                         <table class="stats-comparison-table">
                             <thead>
                                 <tr>
-                                    <th class="stat-category-header">Statistic</th>
+                                    <th class="stat-category-header" data-translate="Statistic">Statistic</th>
                                     <% players.forEach(player => { %>
                                     <%
                                     const playerSlugHeader = player.name.toLowerCase()
@@ -214,7 +214,7 @@
                                 statCategories.forEach(category => {
                                 %>
                                     <tr class="category-row">
-                                        <td colspan="<%= players.length + 1 %>" class="category-title">
+                                        <td colspan="<%= players.length + 1 %>" class="category-title" data-translate="<%= category.title %>">
                                             <%= category.title %>
                                         </td>
                                     </tr>
@@ -229,7 +229,7 @@
                                         const hasVariation = values.some(v => v !== values[0]);
                                     %>
                                     <tr class="stat-row">
-                                        <td class="stat-label"><%= stat.label %></td>
+                                        <td class="stat-label" data-translate="<%= stat.label %>"><%= stat.label %></td>
                                         <% players.forEach((player, idx) => {
                                             let value = values[idx];
                                             let className = '';
@@ -269,9 +269,9 @@
                 </div>
             <% } else { %>
                 <div class="no-players">
-                    <h2>No players selected</h2>
-                    <p>Please select at least 2 players from the home page to compare their statistics.</p>
-                    <a href="/" class="btn-primary">Go to Home</a>
+                    <h2 data-translate="No players selected">No players selected</h2>
+                    <p data-translate="Please select at least 2 players from the home page to compare their statistics.">Please select at least 2 players from the home page to compare their statistics.</p>
+                    <a href="/" class="btn-primary" data-translate="Go to Home">Go to Home</a>
                 </div>
             <% } %>
         </div>
@@ -280,9 +280,10 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Stat4Ballers. Powered by SportMonks API.</p>
+                <p data-translate="© 2025 Stat4Ballers. Powered by SportMonks API.">&copy; 2025 Stat4Ballers. Powered by SportMonks API.</p>
             </div>
         </div>
     </footer>
+    <script src="/js/translations.js"></script>
 </body>
 </html>
