@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         .error-page {
             min-height: 60vh;
@@ -47,19 +48,58 @@
     </style>
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/" style="text-decoration: none; color: inherit;">
+                        <h1 data-translate="Stat4Ballers">Stat4Ballers</h1>
+                        <span class="tagline" data-translate="Football Statistics Hub">Football Statistics Hub</span>
+                    </a>
+                </div>
+                <nav class="nav-links">
+                    <a href="/league/ligue1" data-translate="Ligue 1">Ligue 1</a>
+                    <a href="/league/premierleague" data-translate="Premier League">Premier League</a>
+                    <a href="/league/laliga" data-translate="La Liga">La Liga</a>
+                    <a href="/league/seriea" data-translate="Serie A">Serie A</a>
+                    <a href="/league/bundesliga" data-translate="Bundesliga">Bundesliga</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <div class="container">
         <div class="error-page">
             <div class="error-content">
-                <h1>Oops! Something went wrong</h1>
-                <p>We're sorry, but an error occurred while processing your request.</p>
+                <h1 data-translate="Oops! Something went wrong">Oops! Something went wrong</h1>
+                <p data-translate="We're sorry, but an error occurred while processing your request.">We're sorry, but an error occurred while processing your request.</p>
                 <% if (error && error.message) { %>
                 <div class="error-details">
-                    <strong>Error:</strong> <%= error.message %>
+                    <strong data-translate="Error:">Error:</strong> <%= error.message %>
                 </div>
                 <% } %>
-                <a href="/" class="back-home">Back to Home</a>
+                <a href="/" class="back-home" data-translate="Back to Home">Back to Home</a>
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p data-translate="© 2025 Stat4Ballers. Powered by true soccer lovers. For the people, by the people.">&copy; 2025 Stat4Ballers. Powered by true soccer lovers. For the people, by the people.</p>
+                <div class="footer-links">
+                    <a href="/about" data-translate="About">About</a>
+                </div>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en">🇬🇧</button>
+                    <button class="lang-btn" data-lang="fr">🇫🇷</button>
+                    <button class="lang-btn" data-lang="es">🇪🇸</button>
+                    <button class="lang-btn" data-lang="pt">🇵🇹</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/translations.js"></script>
 </body>
 </html>

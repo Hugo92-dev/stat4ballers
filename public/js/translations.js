@@ -126,6 +126,12 @@ const translations = {
         'Back to Home': 'Back to Home',
         '← Back to Home': '← Back to Home',
 
+        // Error pages
+        "Page not found. The page you're looking for doesn't exist.": "Page not found. The page you're looking for doesn't exist.",
+        "Oops! Something went wrong": "Oops! Something went wrong",
+        "We're sorry, but an error occurred while processing your request.": "We're sorry, but an error occurred while processing your request.",
+        "Error:": "Error:",
+
         // About page - Interview
         'Meeting with the Founder of Stat4Ballers': 'Meeting with the Founder of Stat4Ballers',
         'An exclusive interview with the passionate creator behind Stat4Ballers, where statistics meet the beautiful game.': 'An exclusive interview with the passionate creator behind Stat4Ballers, where statistics meet the beautiful game.',
@@ -267,7 +273,13 @@ const translations = {
         'Please select at least 2 players from the home page to compare their statistics.': 'Veuillez sélectionner au moins 2 joueurs depuis la page d\'accueil pour comparer leurs statistiques.',
         'Go to Home': 'Aller à l\'Accueil',
         'Back to Home': 'Retour à l\'Accueil',
-        '← Back to Home': '← Retour à l\'Accueil'
+        '← Back to Home': '← Retour à l\'Accueil',
+
+        // Error pages
+        "Page not found. The page you're looking for doesn't exist.": "Page introuvable. La page que vous recherchez n'existe pas.",
+        "Oops! Something went wrong": "Oups ! Quelque chose s'est mal passé",
+        "We're sorry, but an error occurred while processing your request.": "Nous sommes désolés, une erreur s'est produite lors du traitement de votre demande.",
+        "Error:": "Erreur :"
     },
 
     es: {
@@ -394,7 +406,13 @@ const translations = {
         'Please select at least 2 players from the home page to compare their statistics.': 'Por favor, selecciona al menos 2 jugadores desde la página de inicio para comparar sus estadísticas.',
         'Go to Home': 'Ir al Inicio',
         'Back to Home': 'Volver al Inicio',
-        '← Back to Home': '← Volver al Inicio'
+        '← Back to Home': '← Volver al Inicio',
+
+        // Error pages
+        "Page not found. The page you're looking for doesn't exist.": "Página no encontrada. La página que buscas no existe.",
+        "Oops! Something went wrong": "¡Ups! Algo salió mal",
+        "We're sorry, but an error occurred while processing your request.": "Lo sentimos, ocurrió un error al procesar tu solicitud.",
+        "Error:": "Error:"
     },
 
     pt: {
@@ -521,7 +539,13 @@ const translations = {
         'Please select at least 2 players from the home page to compare their statistics.': 'Por favor, selecione pelo menos 2 jogadores na página inicial para comparar suas estatísticas.',
         'Go to Home': 'Ir para o Início',
         'Back to Home': 'Voltar ao Início',
-        '← Back to Home': '← Voltar ao Início'
+        '← Back to Home': '← Voltar ao Início',
+
+        // Error pages
+        "Page not found. The page you're looking for doesn't exist.": "Página não encontrada. A página que procura não existe.",
+        "Oops! Something went wrong": "Ops! Algo deu errado",
+        "We're sorry, but an error occurred while processing your request.": "Pedimos desculpa, mas ocorreu um erro ao processar o seu pedido.",
+        "Error:": "Erro:"
     }
 };
 
