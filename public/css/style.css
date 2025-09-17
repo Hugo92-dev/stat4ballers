@@ -170,6 +170,61 @@ body {
     color: var(--white);
     border-radius: 4px;
     text-transform: uppercase;
+    min-width: 60px;
+    text-align: center;
+}
+
+.suggestion-name {
+    flex: 1;
+    font-weight: 500;
+}
+
+.suggestion-team {
+    font-size: 0.875rem;
+    color: var(--gray);
+}
+
+/* Player suggestions for comparison */
+.player-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    margin-top: 0.25rem;
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.player-suggestions .suggestion-item {
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.player-suggestions .suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.player-suggestions .suggestion-item:hover {
+    background: var(--light-gray);
+}
+
+.player-suggestions .suggestion-name {
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.player-suggestions .suggestion-team {
+    font-size: 0.75rem;
+    color: var(--gray);
 }
 
 /* Comparison Section */

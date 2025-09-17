@@ -175,7 +175,6 @@ class SportMonksAPI {
             captain: stats.find(s => s.type_id === 40)?.data?.value || 0,
             goals: stats.find(s => s.type_id === 52)?.data?.value || 0,
             assists: stats.find(s => s.type_id === 79)?.data?.value || 0,
-            injuries: stats.find(s => s.type_id === 87)?.data?.value || 0,
             redCards: stats.find(s => s.type_id === 83)?.data?.value || 0,
             
             // Offensive creativity
@@ -185,9 +184,6 @@ class SportMonksAPI {
             hitWoodwork: stats.find(s => s.type_id === 64)?.data?.value || 0,
             keyPasses: stats.find(s => s.type_id === 117)?.data?.value || 0,
             bigChancesCreated: stats.find(s => s.type_id === 580)?.data?.value || 0,
-            expectedGoals: stats.find(s => s.type_id === 5304)?.data?.value || 0,
-            accurateThroughBalls: stats.find(s => s.type_id === 125)?.data?.value || 0,
-            accurateLongBalls: stats.find(s => s.type_id === 123)?.data?.value || 0,
             accurateCrosses: stats.find(s => s.type_id === 99)?.data?.value || 0,
             successfulDribbles: stats.find(s => s.type_id === 109)?.data?.value || 0,
             

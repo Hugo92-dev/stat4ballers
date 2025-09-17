@@ -42,7 +42,6 @@ const playerSchema = new mongoose.Schema({
         captain: Number,
         goals: Number,
         assists: Number,
-        injuries: Number,
         redCards: Number,
         
         // Offensive creativity
@@ -52,9 +51,6 @@ const playerSchema = new mongoose.Schema({
         hitWoodwork: Number,
         keyPasses: Number,
         bigChancesCreated: Number,
-        expectedGoals: Number,
-        accurateThroughBalls: Number,
-        accurateLongBalls: Number,
         accurateCrosses: Number,
         successfulDribbles: Number,
         
@@ -133,7 +129,6 @@ playerSchema.methods.getRadarChartData = function() {
                 captain: this.statistics.captain || 0,
                 goals: this.statistics.goals || 0,
                 assists: this.statistics.assists || 0,
-                injuries: this.statistics.injuries || 0,
                 redCards: this.statistics.redCards || 0
             },
             offensive: {
@@ -143,9 +138,6 @@ playerSchema.methods.getRadarChartData = function() {
                 hitWoodwork: this.statistics.hitWoodwork || 0,
                 keyPasses: this.statistics.keyPasses || 0,
                 bigChancesCreated: this.statistics.bigChancesCreated || 0,
-                expectedGoals: this.statistics.expectedGoals || 0,
-                accurateThroughBalls: this.statistics.accurateThroughBalls || 0,
-                accurateLongBalls: this.statistics.accurateLongBalls || 0,
                 accurateCrosses: this.statistics.accurateCrosses || 0,
                 successfulDribbles: this.statistics.successfulDribbles || 0
             },

@@ -1,0 +1,360 @@
+/* Player Comparison Styles */
+
+.main-content {
+    min-height: calc(100vh - 200px);
+    padding: 2rem 0;
+}
+
+.comparison-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.comparison-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.btn-back {
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: all 0.2s;
+    backdrop-filter: blur(10px);
+}
+
+.btn-back:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(-4px);
+}
+
+/* Summary Section */
+.comparison-summary {
+    background: white;
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.comparison-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.player-summary-card {
+    background: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.player-summary-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.summary-player-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+}
+
+.player-summary-header h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    color: var(--dark);
+}
+
+.player-summary-header p {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+/* Links in summary cards */
+.player-link {
+    color: var(--dark);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.player-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.team-link {
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.team-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.player-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.highlight-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.25rem;
+}
+
+.highlight-stat {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-right: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Stats Table */
+.stats-container {
+    background: white;
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.stats-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+}
+
+.stats-table-wrapper {
+    overflow-x: auto;
+}
+
+.stats-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    table-layout: fixed;
+}
+
+.stats-comparison-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.stats-comparison-table thead tr {
+    background: #f9fafb;
+}
+
+.stats-comparison-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #4b5563;
+    border-bottom: 2px solid #e5e7eb;
+    background: #f9fafb;
+}
+
+.stat-category-header {
+    width: 200px;
+    min-width: 200px;
+}
+
+.player-column-header {
+    text-align: center;
+    width: calc((100% - 200px) / 4);
+    min-width: 120px;
+}
+
+/* Player links in table header */
+.player-header-link {
+    color: #4b5563;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.player-header-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Category rows */
+.category-row {
+    background: var(--primary-color);
+}
+
+.category-row td {
+    padding: 0.75rem 1rem;
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Stat rows */
+.stat-row {
+    transition: background-color 0.15s;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.stat-row:hover {
+    background: #fafbfc;
+}
+
+.stat-label {
+    width: 200px;
+    min-width: 200px;
+    padding: 0.625rem 1rem;
+    font-weight: 500;
+    color: #374151;
+    border-right: 1px solid #f3f4f6;
+}
+
+.stat-value {
+    padding: 0.625rem;
+    text-align: center;
+    font-weight: 500;
+    color: #1f2937;
+    width: calc((100% - 200px) / 4);
+    min-width: 120px;
+}
+
+/* Value highlighting */
+.best-value {
+    background-color: #d1fae5;
+    color: #065f46;
+    font-weight: 700;
+}
+
+.worst-value {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* No players state */
+.no-players {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.no-players h2 {
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.no-players p {
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .stats-comparison-table {
+        table-layout: auto;
+    }
+
+    .stat-category-header,
+    .stat-label {
+        width: 180px;
+        min-width: 180px;
+    }
+
+    .player-column-header,
+    .stat-value {
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .comparison-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-comparison-table {
+        font-size: 0.85rem;
+    }
+
+    .stat-category-header,
+    .stat-label {
+        width: 150px;
+        min-width: 150px;
+        padding: 0.5rem;
+    }
+
+    .player-column-header,
+    .stat-value {
+        min-width: 80px;
+        padding: 0.5rem 0.25rem;
+    }
+
+    .category-row td {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .btn-back {
+        display: none;
+    }
+
+    .stats-comparison-table {
+        font-size: 0.8rem;
+    }
+
+    .stat-row {
+        break-inside: avoid;
+    }
+}

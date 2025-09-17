@@ -68,6 +68,103 @@ router.get('/:playerSlug/statistics', async (req, res) => {
     }
 });
 
+// Compare multiple players
+router.post('/compare', async (req, res) => {
+    try {
+        const { playerIds } = req.body;
+
+        if (!playerIds || !Array.isArray(playerIds) || playerIds.length < 2) {
+            return res.status(400).json({
+                success: false,
+                error: 'At least 2 player IDs required'
+            });
+        }
+
+        // Récupérer les données des joueurs depuis la base
+        const allPlayers = await find('players');
+        const players = [];
+
+        for (const playerId of playerIds) {
+            const player = allPlayers.find(p =>
+                p.sportmonksId === parseInt(playerId) ||
+                p.sportmonksId === playerId
+            );
+
+            if (player) {
+                // Préparer les données pour la comparaison
+                const playerData = {
+                    id: player.sportmonksId,
+                    name: player.displayName || player.name,
+                    team: player.team?.name || '',
+                    position: player.position,
+                    age: player.age,
+                    height: player.height,
+                    imageUrl: player.imageUrl,
+                    statistics: player.statistics || {},
+                    isGoalkeeper: player.position === 'Goalkeeper'
+                };
+
+                // Ajouter les données pour les graphiques radar
+                const stats = player.statistics || {};
+                playerData.charts = {
+                    general: {
+                        rating: stats.rating || 0,
+                        goals: stats.goals || 0,
+                        assists: stats.assists || 0,
+                        minutesPlayed: stats.minutesPlayed || 0,
+                        appearances: stats.appearances || 0
+                    },
+                    offensive: {
+                        shots: stats.shots || 0,
+                        shotsOnTarget: stats.shotsOnTarget || 0,
+                        keyPasses: stats.keyPasses || 0,
+                        dribbles: stats.dribbles || 0,
+                        xG: stats.xG || 0
+                    },
+                    defensive: {
+                        tackles: stats.tackles || 0,
+                        interceptions: stats.interceptions || 0,
+                        blocks: stats.blocks || 0,
+                        clearances: stats.clearances || 0,
+                        duelsWon: stats.duelsWon || 0
+                    }
+                };
+
+                if (playerData.isGoalkeeper) {
+                    playerData.charts.goalkeeper = {
+                        saves: stats.saves || 0,
+                        cleanSheets: stats.cleanSheets || 0,
+                        goalsConceded: stats.goalsConceded || 0,
+                        savePercentage: stats.savePercentage || 0,
+                        penaltiesSaved: stats.penaltiesSaved || 0
+                    };
+                }
+
+                players.push(playerData);
+            }
+        }
+
+        if (players.length < 2) {
+            return res.status(404).json({
+                success: false,
+                error: 'Not enough valid players found'
+            });
+        }
+
+        res.json({
+            success: true,
+            data: players
+        });
+
+    } catch (error) {
+        console.error('Compare error:', error);
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
+});
+
 // Get player radar chart data
 router.get('/:playerSlug/radar', async (req, res) => {
     try {
@@ -89,7 +186,7 @@ router.get('/:playerSlug/radar', async (req, res) => {
         let radarData;
 
         if (isGoalkeeper) {
-            // Goalkeeper: General (without goals, assists, injuries) + Specific goalkeeper stats
+            // Goalkeeper: General (without goals, assists) + Specific goalkeeper stats
             radarData = {
                 general: {
                     rating: stats.rating || 0,
@@ -115,7 +212,6 @@ router.get('/:playerSlug/radar', async (req, res) => {
                     captain: stats.captain || 0,
                     goals: stats.goals || 0,
                     assists: stats.assists || 0,
-                    injuries: stats.injuries || 0,
                     redCards: stats.redCards || 0
                 },
                 offensive: {
@@ -125,9 +221,6 @@ router.get('/:playerSlug/radar', async (req, res) => {
                     hitWoodwork: stats.hitWoodwork || 0,
                     keyPasses: stats.keyPasses || 0,
                     bigChancesCreated: stats.bigChancesCreated || 0,
-                    expectedGoals: stats.expectedGoals || 0,
-                    throughBallsWon: stats.throughBallsWon || 0,
-                    longBallsWon: stats.longBallsWon || 0,
                     accurateCrosses: stats.accurateCrosses || 0,
                     successfulDribbles: stats.successfulDribbles || 0
                 },

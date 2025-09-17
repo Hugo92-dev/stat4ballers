@@ -132,9 +132,6 @@ function mapStatsToModel(playerData, detailedStats = null, seasonId) {
                 case 79: // Assists
                     stats.assists = value?.total || 0;
                     break;
-                case 87: // Injuries
-                    stats.injuries = value?.total || 0;
-                    break;
                 case 83: // Red Cards
                     stats.redCards = value?.total || 0;
                     break;
@@ -157,15 +154,6 @@ function mapStatsToModel(playerData, detailedStats = null, seasonId) {
                     break;
                 case 580: // Big Chances Created
                     stats.bigChancesCreated = value?.total || 0;
-                    break;
-                case 5304: // Expected Goals
-                    stats.expectedGoals = value?.total || value || 0;
-                    break;
-                case 125: // Accurate Through Balls
-                    stats.accurateThroughBalls = value?.total || 0;
-                    break;
-                case 123: // Accurate Long Balls
-                    stats.accurateLongBalls = value?.total || 0;
                     break;
                 case 99: // Accurate Crosses
                     stats.accurateCrosses = value?.total || 0;

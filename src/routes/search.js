@@ -59,60 +59,162 @@ router.get('/', async (req, res) => {
     }
 });
 
-// Autocomplete suggestions
+// Autocomplete suggestions pour la recherche globale
 router.get('/suggestions', async (req, res) => {
     try {
         const { q } = req.query;
-        
+
         if (!q || q.length < 2) {
             return res.json({
                 success: true,
                 data: []
             });
         }
-        
-        const searchRegex = new RegExp(`^${q}`, 'i');
+
+        // Normaliser la recherche pour gérer les caractères spéciaux
+        const normalizedQuery = q
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .toLowerCase();
+
+        // Fonction de normalisation pour comparaison
+        const normalizeText = (text) => {
+            return text
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .toLowerCase();
+        };
+
+        // Créer une regex pour la recherche
+        const searchRegex = new RegExp(normalizedQuery, 'i');
         const suggestions = [];
-        
-        // Get top 3 from each category
-        const allLeagues = await find('leagues');
+
+        // Championnats statiques
+        const leagues = [
+            { id: 'ligue1', name: 'Ligue 1', slug: 'ligue1' },
+            { id: 'premierleague', name: 'Premier League', slug: 'premierleague' },
+            { id: 'laliga', name: 'La Liga', slug: 'laliga' },
+            { id: 'seriea', name: 'Serie A', slug: 'seriea' },
+            { id: 'bundesliga', name: 'Bundesliga', slug: 'bundesliga' }
+        ];
+
+        // Filtrer les championnats
+        leagues
+            .filter(l => searchRegex.test(l.name))
+            .slice(0, 3)
+            .forEach(l => suggestions.push({
+                type: 'League',
+                id: l.id,
+                name: l.name,
+                url: `/league/${l.slug}`
+            }));
+
+        // Récupérer les équipes et joueurs depuis la base
         const allTeams = await find('teams');
         const allPlayers = await find('players');
-        
-        const leagues = allLeagues
-            .filter(l => searchRegex.test(l.name))
-            .slice(0, 3);
-        const teams = allTeams
-            .filter(t => searchRegex.test(t.name))
-            .slice(0, 3);
-        const players = allPlayers
-            .filter(p => searchRegex.test(p.name))
-            .slice(0, 4);
-        
-        leagues.forEach(l => suggestions.push({
-            type: 'league',
-            id: l.slug,
-            name: l.name,
-            url: `/league/${l.slug}`
-        }));
-        
-        teams.forEach(t => suggestions.push({
-            type: 'team',
-            id: t.sportmonksId,
-            name: t.name,
-            url: `/team/${t.slug}`
-        }));
-        
-        players.forEach(p => suggestions.push({
-            type: 'player',
-            id: p.sportmonksId,
-            name: p.name,
-            url: `/player/${p.slug}`
-        }));
-        
+
+        // Filtrer les équipes et supprimer les doublons
+        const teamIds = new Set();
+        const validTeams = [44, 247, 231, 496, 251, 77, 154, 263, 192, 223, 85, 65, 95, 100, 180]; // IDs valides des clubs principaux
+
+        allTeams
+            .filter(t => {
+                // Filtrer seulement les équipes valides ou principales
+                if (t.leagueId && ![301, 8, 462, 564, 384, 82].includes(t.leagueId)) return false;
+                // Vérifier si le nom correspond
+                return searchRegex.test(normalizeText(t.name));
+            })
+            .slice(0, 5)
+            .forEach(t => {
+                if (!teamIds.has(t.sportmonksId)) {
+                    teamIds.add(t.sportmonksId);
+                    suggestions.push({
+                        type: 'Team',
+                        id: t.sportmonksId,
+                        name: t.name,
+                        url: `/team/${t.sportmonksId}`
+                    });
+                }
+            });
+
+        // Filtrer les joueurs
+        allPlayers
+            .filter(p => {
+                const playerName = normalizeText(p.name);
+                const playerDisplayName = p.displayName ? normalizeText(p.displayName) : '';
+                return playerName.includes(normalizedQuery) || playerDisplayName.includes(normalizedQuery);
+            })
+            .slice(0, 7)
+            .forEach(p => {
+                const slug = p.name.toLowerCase()
+                    .normalize('NFD')
+                    .replace(/[\u0300-\u036f]/g, '')
+                    .replace(/\s+/g, '-')
+                    .replace(/[^a-z0-9\-]/g, '');
+                suggestions.push({
+                    type: 'Player',
+                    id: p.sportmonksId,
+                    name: p.displayName || p.name,
+                    url: `/player/${slug}` // Changé de /joueur/ à /player/
+                });
+            });
+
         res.json({
             success: true,
             data: suggestions
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            error: error.message
+        });
+    }
+});
+
+// Endpoint pour l'autocomplétion des joueurs (pour la comparaison)
+router.get('/players', async (req, res) => {
+    try {
+        const { q } = req.query;
+
+        if (!q || q.length < 2) {
+            return res.json({
+                success: true,
+                data: []
+            });
+        }
+
+        // Normaliser la recherche
+        const normalizedQuery = q
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .toLowerCase();
+
+        const normalizeText = (text) => {
+            return text
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .toLowerCase();
+        };
+
+        const allPlayers = await find('players');
+
+        const players = allPlayers
+            .filter(p => {
+                const playerName = normalizeText(p.name);
+                const playerDisplayName = p.displayName ? normalizeText(p.displayName) : '';
+                return playerName.includes(normalizedQuery) || playerDisplayName.includes(normalizedQuery);
+            })
+            .slice(0, 10)
+            .map(p => ({
+                id: p.sportmonksId,
+                name: p.displayName || p.name,
+                team: p.team ? p.team.name : '',
+                position: p.position
+            }));
+
+        res.json({
+            success: true,
+            data: players
         });
     } catch (error) {
         res.status(500).json({

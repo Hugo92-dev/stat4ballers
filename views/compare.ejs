@@ -3,150 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title>Player Comparison - Stat4Ballers</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/compare.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        .compare-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem 0;
-            margin-bottom: 2rem;
-        }
-        .compare-title {
-            font-size: 2rem;
-            text-align: center;
-        }
-        .players-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .player-comparison-card {
-            background: white;
-            border-radius: var(--radius);
-            padding: 1.5rem;
-            box-shadow: var(--shadow);
-            text-align: center;
-        }
-        .player-comp-image {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin: 0 auto 1rem;
-            object-fit: cover;
-        }
-        .player-comp-name {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        .player-comp-team {
-            color: var(--gray);
-            font-size: 0.875rem;
-            margin-bottom: 0.5rem;
-        }
-        .player-comp-position {
-            display: inline-block;
-            background: var(--primary-color);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-        }
-        .comparison-charts {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        .comparison-chart-container {
-            background: white;
-            padding: 2rem;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-        }
-        .chart-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-        .stats-table {
-            background: white;
-            border-radius: var(--radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            margin-top: 2rem;
-        }
-        .stats-table table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .stats-table th {
-            background: var(--light-gray);
-            padding: 1rem;
-            text-align: left;
-            font-weight: 600;
-        }
-        .stats-table td {
-            padding: 1rem;
-            border-bottom: 1px solid var(--light-gray);
-        }
-        .stat-best {
-            color: var(--secondary-color);
-            font-weight: 700;
-        }
-        .legend {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 1rem;
-        }
-        .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .legend-color {
-            width: 20px;
-            height: 20px;
-            border-radius: 4px;
-        }
-        .no-players {
-            text-align: center;
-            padding: 4rem 2rem;
-            background: white;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-        }
-        .no-players h2 {
-            color: var(--gray);
-            margin-bottom: 1rem;
-        }
-        .go-home-btn {
-            display: inline-block;
-            background: var(--primary-color);
-            color: white;
-            padding: 0.75rem 2rem;
-            border-radius: var(--radius);
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        .go-home-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-    </style>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="/" style="text-decoration: none; color: inherit;">
+                    <a href="/">
                         <h1>Stat4Ballers</h1>
                         <span class="tagline">Football Statistics Hub</span>
                     </a>
@@ -162,267 +31,258 @@
         </div>
     </header>
 
-    <div class="compare-header">
+    <main class="main-content">
         <div class="container">
-            <h1 class="compare-title">Player Comparison</h1>
-        </div>
-    </div>
+            <div class="comparison-header">
+                <h1>Player Comparison</h1>
+                <a href="/" class="btn-back">← Back to Home</a>
+            </div>
 
-    <main class="container">
-        <div id="comparison-content">
-            <!-- Content will be dynamically loaded -->
+            <% if (typeof players !== 'undefined' && players && players.length > 0) { %>
+                <!-- Player Summary Section -->
+                <div class="comparison-summary">
+                    <h2>Comparison Summary</h2>
+                    <div class="summary-grid">
+                        <%
+                        players.forEach(player => {
+                            const stats = player.statistics || {};
+                            const highlights = [];
+
+                            // Compare only General stats + Goals as requested
+                            players.forEach(otherPlayer => {
+                                if (otherPlayer.sportmonksId !== player.sportmonksId) {
+                                    const otherStats = otherPlayer.statistics || {};
+
+                                    // General stats comparison
+                                    if (stats.rating > otherStats.rating && stats.rating > 0) {
+                                        if (!highlights.find(h => h.includes('Rating'))) {
+                                            highlights.push(`Rating: ${stats.rating?.toFixed(2)}`);
+                                        }
+                                    }
+                                    if (stats.appearances > otherStats.appearances) {
+                                        if (!highlights.find(h => h.includes('Appearances'))) {
+                                            highlights.push(`Appearances: ${stats.appearances}`);
+                                        }
+                                    }
+                                    if (stats.minutesPlayed > otherStats.minutesPlayed) {
+                                        if (!highlights.find(h => h.includes('Minutes'))) {
+                                            highlights.push(`Minutes: ${stats.minutesPlayed}`);
+                                        }
+                                    }
+                                    if (stats.goals > otherStats.goals) {
+                                        if (!highlights.find(h => h.includes('Goals'))) {
+                                            highlights.push(`Goals: ${stats.goals}`);
+                                        }
+                                    }
+                                    if (stats.assists > otherStats.assists) {
+                                        if (!highlights.find(h => h.includes('Assists'))) {
+                                            highlights.push(`Assists: ${stats.assists}`);
+                                        }
+                                    }
+                                }
+                            });
+                        %>
+                        <div class="player-summary-card">
+                            <div class="player-summary-header">
+                                <% if (player.imageUrl) { %>
+                                <img src="<%= player.imageUrl %>" alt="<%= player.name %>" class="summary-player-img">
+                                <% } %>
+                                <div>
+                                    <%
+                                    const playerSlug = player.name.toLowerCase()
+                                        .normalize('NFD')
+                                        .replace(/[\u0300-\u036f]/g, '')
+                                        .replace(/\s+/g, '-')
+                                        .replace(/[^a-z0-9\-]/g, '');
+                                    %>
+                                    <h3>
+                                        <a href="/player/<%= playerSlug %>" class="player-link">
+                                            <%= player.displayName || player.name %>
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        <%= player.position %> •
+                                        <% if (player.team) { %>
+                                            <a href="/team/<%= player.team.sportmonksId || player.teamId %>" class="team-link">
+                                                <%= player.team.name %>
+                                            </a>
+                                        <% } %>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="player-highlights">
+                                <% if (highlights.length > 0) { %>
+                                    <p class="highlight-label">Better than others in:</p>
+                                    <% highlights.slice(0, 3).forEach(highlight => { %>
+                                        <span class="highlight-stat"><%= highlight %></span>
+                                    <% }) %>
+                                <% } else { %>
+                                    <p class="highlight-label">Balanced performance</p>
+                                <% } %>
+                            </div>
+                        </div>
+                        <% }) %>
+                    </div>
+                </div>
+
+                <!-- Detailed Statistics Table -->
+                <div class="stats-container">
+                    <h2>Detailed Statistics</h2>
+
+                    <div class="stats-table-wrapper">
+                        <table class="stats-comparison-table">
+                            <thead>
+                                <tr>
+                                    <th class="stat-category-header">Statistic</th>
+                                    <% players.forEach(player => { %>
+                                    <%
+                                    const playerSlugHeader = player.name.toLowerCase()
+                                        .normalize('NFD')
+                                        .replace(/[\u0300-\u036f]/g, '')
+                                        .replace(/\s+/g, '-')
+                                        .replace(/[^a-z0-9\-]/g, '');
+                                    %>
+                                    <th class="player-column-header">
+                                        <a href="/player/<%= playerSlugHeader %>" class="player-header-link">
+                                            <%= player.displayName || player.name %>
+                                        </a>
+                                    </th>
+                                    <% }) %>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <%
+                                // Use EXACT same stats as player pages
+                                const statCategories = [
+                                    {
+                                        title: 'General Statistics',
+                                        stats: [
+                                            { key: 'rating', label: 'Rating', format: 'decimal' },
+                                            { key: 'appearances', label: 'Appearances' },
+                                            { key: 'minutesPlayed', label: 'Minutes played' },
+                                            { key: 'captain', label: 'Captain' },
+                                            { key: 'goals', label: 'Goals' },
+                                            { key: 'assists', label: 'Assists' },
+                                            { key: 'redCards', label: 'Red cards' }
+                                        ]
+                                    },
+                                    {
+                                        title: 'Offensive Creativity',
+                                        stats: [
+                                            { key: 'shotsTotal', label: 'Shots total' },
+                                            { key: 'shotsOnTarget', label: 'Shots on target' },
+                                            { key: 'penalties', label: 'Penalties' },
+                                            { key: 'hitWoodwork', label: 'Hit woodwork' },
+                                            { key: 'keyPasses', label: 'Key passes' },
+                                            { key: 'bigChancesCreated', label: 'Big chances created' },
+                                            { key: 'accurateCrosses', label: 'Accurate crosses' },
+                                            { key: 'successfulDribbles', label: 'Successful dribbles' }
+                                        ]
+                                    },
+                                    {
+                                        title: 'Defensive Commitment',
+                                        stats: [
+                                            { key: 'yellowCards', label: 'Yellow cards' },
+                                            { key: 'tackles', label: 'Tackles' },
+                                            { key: 'ownGoals', label: 'Own goals' },
+                                            { key: 'interceptions', label: 'Interceptions' },
+                                            { key: 'duelsWon', label: 'Duels won' },
+                                            { key: 'aerialsWon', label: 'Aerials won' },
+                                            { key: 'dispossessed', label: 'Dispossessed' },
+                                            { key: 'dribbledPast', label: 'Dribbled past' },
+                                            { key: 'fouls', label: 'Fouls' },
+                                            { key: 'foulsDrawn', label: 'Fouls drawn' },
+                                            { key: 'errorLeadToGoal', label: 'Error lead to goal' }
+                                        ]
+                                    }
+                                ];
+
+                                // Add goalkeeper stats if any player is a goalkeeper
+                                const hasGoalkeeper = players.some(p => p.position === 'Goalkeeper');
+                                if (hasGoalkeeper) {
+                                    statCategories.push({
+                                        title: 'Goalkeeper Specific',
+                                        stats: [
+                                            { key: 'saves', label: 'Saves' },
+                                            { key: 'savesInsideBox', label: 'Saves inside box' },
+                                            { key: 'goalsConceded', label: 'Goals conceded' },
+                                            { key: 'cleanSheets', label: 'Clean sheets' }
+                                        ]
+                                    });
+                                }
+
+                                statCategories.forEach(category => {
+                                %>
+                                    <tr class="category-row">
+                                        <td colspan="<%= players.length + 1 %>" class="category-title">
+                                            <%= category.title %>
+                                        </td>
+                                    </tr>
+                                    <%
+                                    category.stats.forEach(stat => {
+                                        const values = players.map(p => {
+                                            let value = p.statistics?.[stat.key] || 0;
+                                            return value;
+                                        });
+                                        const maxValue = Math.max(...values);
+                                        const minValue = Math.min(...values.filter(v => v > 0));
+                                        const hasVariation = values.some(v => v !== values[0]);
+                                    %>
+                                    <tr class="stat-row">
+                                        <td class="stat-label"><%= stat.label %></td>
+                                        <% players.forEach((player, idx) => {
+                                            let value = values[idx];
+                                            let className = '';
+
+                                            // Highlight best/worst values
+                                            if (hasVariation && value > 0 && players.length > 1) {
+                                                // For negative stats, lower is better
+                                                const negativeStats = ['yellowCards', 'redCards', 'fouls', 'dispossessed', 'dribbledPast', 'ownGoals', 'errorLeadToGoal', 'goalsConceded'];
+
+                                                if (negativeStats.includes(stat.key)) {
+                                                    if (value === minValue) className = 'best-value';
+                                                    else if (value === maxValue) className = 'worst-value';
+                                                } else {
+                                                    if (value === maxValue) className = 'best-value';
+                                                    else if (value === minValue && value > 0) className = 'worst-value';
+                                                }
+                                            }
+
+                                            // Format display value
+                                            let displayValue = value;
+                                            if (stat.format === 'decimal' && value > 0) {
+                                                displayValue = value.toFixed(2);
+                                            } else {
+                                                displayValue = Math.floor(value);
+                                            }
+                                        %>
+                                        <td class="stat-value <%= className %>">
+                                            <%= displayValue || '-' %>
+                                        </td>
+                                        <% }) %>
+                                    </tr>
+                                    <% }) %>
+                                <% }) %>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            <% } else { %>
+                <div class="no-players">
+                    <h2>No players selected</h2>
+                    <p>Please select at least 2 players from the home page to compare their statistics.</p>
+                    <a href="/" class="btn-primary">Go to Home</a>
+                </div>
+            <% } %>
         </div>
     </main>
 
-    <script>
-        // Chart.js default options
-        Chart.defaults.font.family = 'Inter, sans-serif';
-        
-        // Colors for different players
-        const playerColors = [
-            { bg: 'rgba(37, 99, 235, 0.2)', border: 'rgba(37, 99, 235, 1)' },
-            { bg: 'rgba(16, 185, 129, 0.2)', border: 'rgba(16, 185, 129, 1)' },
-            { bg: 'rgba(245, 158, 11, 0.2)', border: 'rgba(245, 158, 11, 1)' },
-            { bg: 'rgba(239, 68, 68, 0.2)', border: 'rgba(239, 68, 68, 1)' }
-        ];
-
-        let charts = {};
-        let playersData = [];
-
-        // Get player IDs from URL
-        function getPlayerIdsFromUrl() {
-            const params = new URLSearchParams(window.location.search);
-            return params.getAll('player');
-        }
-
-        // Load comparison data
-        async function loadComparisonData() {
-            const playerIds = getPlayerIdsFromUrl();
-            
-            if (playerIds.length < 2) {
-                showNoPlayersMessage();
-                return;
-            }
-
-            try {
-                const response = await fetch('/api/players/compare', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ playerIds })
-                });
-
-                const data = await response.json();
-                
-                if (data.success) {
-                    playersData = data.data;
-                    renderComparison();
-                } else {
-                    showError();
-                }
-            } catch (error) {
-                console.error('Error loading comparison data:', error);
-                showError();
-            }
-        }
-
-        function showNoPlayersMessage() {
-            const content = document.getElementById('comparison-content');
-            content.innerHTML = `
-                <div class="no-players">
-                    <h2>No players selected for comparison</h2>
-                    <p>Please select at least 2 players from the home page to compare their statistics.</p>
-                    <a href="/" class="go-home-btn">Go to Home Page</a>
-                </div>
-            `;
-        }
-
-        function showError() {
-            const content = document.getElementById('comparison-content');
-            content.innerHTML = `
-                <div class="no-players">
-                    <h2>Error loading comparison</h2>
-                    <p>There was an error loading the player comparison. Please try again.</p>
-                    <a href="/" class="go-home-btn">Go to Home Page</a>
-                </div>
-            `;
-        }
-
-        function renderComparison() {
-            const content = document.getElementById('comparison-content');
-            
-            // Players cards
-            let playersHtml = '<div class="players-grid">';
-            playersData.forEach((player, index) => {
-                playersHtml += `
-                    <div class="player-comparison-card">
-                        <img src="${player.image || '/images/placeholder-player.png'}" alt="${player.name}" class="player-comp-image">
-                        <div class="player-comp-name">${player.name}</div>
-                        <div class="player-comp-team">${player.team || 'Unknown Team'}</div>
-                        <span class="player-comp-position">${player.position}</span>
-                    </div>
-                `;
-            });
-            playersHtml += '</div>';
-
-            // Charts section
-            let chartsHtml = '<div class="comparison-charts">';
-            
-            // Determine which charts to show
-            const hasGoalkeeper = playersData.some(p => p.isGoalkeeper);
-            const allGoalkeepers = playersData.every(p => p.isGoalkeeper);
-            
-            if (!allGoalkeepers) {
-                // Show general and offensive/defensive for field players
-                chartsHtml += `
-                    <div class="comparison-chart-container">
-                        <h3 class="chart-title">General Statistics</h3>
-                        <canvas id="chart-general" style="max-height: 400px;"></canvas>
-                    </div>
-                    <div class="comparison-chart-container">
-                        <h3 class="chart-title">Offensive Creativity</h3>
-                        <canvas id="chart-offensive" style="max-height: 400px;"></canvas>
-                    </div>
-                    <div class="comparison-chart-container">
-                        <h3 class="chart-title">Defensive Commitment</h3>
-                        <canvas id="chart-defensive" style="max-height: 400px;"></canvas>
-                    </div>
-                `;
-            }
-            
-            if (hasGoalkeeper) {
-                chartsHtml += `
-                    <div class="comparison-chart-container">
-                        <h3 class="chart-title">Goalkeeper Statistics</h3>
-                        <canvas id="chart-goalkeeper" style="max-height: 400px;"></canvas>
-                    </div>
-                `;
-            }
-            
-            chartsHtml += '</div>';
-
-            // Legend
-            let legendHtml = '<div class="legend">';
-            playersData.forEach((player, index) => {
-                legendHtml += `
-                    <div class="legend-item">
-                        <div class="legend-color" style="background: ${playerColors[index].border}"></div>
-                        <span>${player.name}</span>
-                    </div>
-                `;
-            });
-            legendHtml += '</div>';
-
-            content.innerHTML = playersHtml + chartsHtml + legendHtml;
-
-            // Create charts
-            createComparisonCharts();
-        }
-
-        function createComparisonCharts() {
-            const allGoalkeepers = playersData.every(p => p.isGoalkeeper);
-            
-            if (!allGoalkeepers) {
-                createMultiPlayerRadarChart('general', 'general');
-                createMultiPlayerRadarChart('offensive', 'offensive');
-                createMultiPlayerRadarChart('defensive', 'defensive');
-            }
-            
-            const hasGoalkeeper = playersData.some(p => p.isGoalkeeper);
-            if (hasGoalkeeper) {
-                createMultiPlayerRadarChart('goalkeeper', 'goalkeeper');
-            }
-        }
-
-        function createMultiPlayerRadarChart(chartId, dataKey) {
-            const canvas = document.getElementById(`chart-${chartId}`);
-            if (!canvas) return;
-            
-            const ctx = canvas.getContext('2d');
-            
-            // Get labels from first player's data
-            const firstPlayerData = playersData[0].charts[dataKey];
-            if (!firstPlayerData) return;
-            
-            const labels = Object.keys(firstPlayerData).map(key => 
-                key.replace(/([A-Z])/g, ' $1').trim().charAt(0).toUpperCase() + 
-                key.replace(/([A-Z])/g, ' $1').trim().slice(1)
-            );
-
-            // Create datasets for each player
-            const datasets = playersData.map((player, index) => {
-                const data = player.charts[dataKey];
-                if (!data) return null;
-                
-                const values = Object.values(data);
-                const maxValue = Math.max(...values, 100);
-                const normalizedValues = values.map(v => (v / maxValue) * 100);
-                
-                return {
-                    label: player.name,
-                    data: normalizedValues,
-                    backgroundColor: playerColors[index].bg,
-                    borderColor: playerColors[index].border,
-                    pointBackgroundColor: playerColors[index].border,
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: playerColors[index].border,
-                    borderWidth: 2
-                };
-            }).filter(d => d !== null);
-
-            charts[chartId] = new Chart(ctx, {
-                type: 'radar',
-                data: {
-                    labels: labels,
-                    datasets: datasets
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            display: false
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    const player = playersData[context.datasetIndex];
-                                    const dataKey = chartId === 'general' ? 'general' : 
-                                                  chartId === 'offensive' ? 'offensive' :
-                                                  chartId === 'defensive' ? 'defensive' : 'goalkeeper';
-                                    const values = Object.values(player.charts[dataKey]);
-                                    const originalValue = values[context.dataIndex];
-                                    return `${context.dataset.label}: ${originalValue}`;
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        r: {
-                            beginAtZero: true,
-                            max: 100,
-                            ticks: {
-                                stepSize: 20,
-                                display: false
-                            },
-                            grid: {
-                                color: 'rgba(0, 0, 0, 0.1)'
-                            },
-                            pointLabels: {
-                                font: {
-                                    size: 10
-                                }
-                            }
-                        }
-                    }
-                }
-            });
-        }
-
-        // Load data on page load
-        loadComparisonData();
-    </script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Stat4Ballers. Powered by SportMonks API.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

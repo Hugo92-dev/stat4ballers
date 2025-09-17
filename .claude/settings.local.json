@@ -19,7 +19,9 @@
       "Bash(cmd /c:*)",
       "Bash(powershell Stop-Process:*)",
       "Bash(git clean:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(start http://localhost:3000/joueur/bradley-barcola)",
+      "Bash(start http://localhost:3000)"
     ],
     "deny": [],
     "ask": []

@@ -85,10 +85,47 @@ app.get('/player/:playerSlug', (req, res) => {
 });
 
 // Comparison page
-app.get('/compare', (req, res) => {
-    res.render('compare', { 
-        title: 'Player Comparison - Stat4Ballers'
-    });
+app.get('/compare', async (req, res) => {
+    const playerIds = req.query.player;
+
+    if (!playerIds) {
+        return res.render('compare', {
+            title: 'Player Comparison - Stat4Ballers',
+            players: null
+        });
+    }
+
+    // Convertir en tableau si c'est un seul ID
+    const ids = Array.isArray(playerIds) ? playerIds : [playerIds];
+
+    try {
+        // Récupérer les données des joueurs
+        const { find } = require('./src/utils/database');
+        const allPlayers = await find('players');
+        const players = [];
+
+        for (const playerId of ids) {
+            const player = allPlayers.find(p =>
+                p.sportmonksId === parseInt(playerId) ||
+                p.sportmonksId === playerId
+            );
+
+            if (player) {
+                players.push(player);
+            }
+        }
+
+        res.render('compare', {
+            title: 'Player Comparison - Stat4Ballers',
+            players: players
+        });
+    } catch (error) {
+        console.error('Error loading comparison:', error);
+        res.render('compare', {
+            title: 'Player Comparison - Stat4Ballers',
+            players: null
+        });
+    }
 });
 
 // 404 handler

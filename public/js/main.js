@@ -67,13 +67,22 @@ async function fetchSuggestions(query) {
 
 function displaySuggestions(suggestions) {
     searchSuggestions.innerHTML = suggestions.map(item => `
-        <div class="suggestion-item" onclick="navigateTo('${item.url}')">
+        <div class="suggestion-item" data-url="${item.url}">
             <span class="suggestion-type">${item.type}</span>
             <span class="suggestion-name">${item.name}</span>
         </div>
     `).join('');
-    
+
     searchSuggestions.classList.add('active');
+
+    // Ajouter les event listeners aux suggestions
+    const items = searchSuggestions.querySelectorAll('.suggestion-item');
+    items.forEach(item => {
+        item.addEventListener('click', function() {
+            const url = this.dataset.url;
+            window.location.href = url;
+        });
+    });
 }
 
 function hideSuggestions() {
@@ -88,24 +97,45 @@ window.navigateTo = function(url) {
 // Player comparison functionality
 function initializePlayerComparison() {
     if (!playerInputs.length) return;
-    
+
     playerInputs.forEach(input => {
+        // Créer le conteneur de suggestions pour chaque input
+        const suggestionsContainer = document.createElement('div');
+        suggestionsContainer.className = 'player-suggestions';
+        suggestionsContainer.style.display = 'none';
+        input.parentElement.style.position = 'relative';
+        input.parentElement.appendChild(suggestionsContainer);
+
         input.addEventListener('input', (e) => {
-            const index = parseInt(e.target.dataset.playerIndex) - 1;
             clearTimeout(state.searchTimeout);
             const query = e.target.value.trim();
-            
+
             if (query.length < 2) {
                 hidePlayerSuggestions(e.target);
+                e.target.dataset.playerId = '';
+                updateCompareButton();
                 return;
             }
-            
+
             state.searchTimeout = setTimeout(() => {
                 fetchPlayerSuggestions(query, e.target);
             }, 300);
         });
+
+        // Fermer les suggestions lors du clic en dehors
+        input.addEventListener('blur', (e) => {
+            setTimeout(() => hidePlayerSuggestions(e.target), 200);
+        });
+
+        // Afficher les suggestions au focus si présentes
+        input.addEventListener('focus', (e) => {
+            const suggestions = e.target.parentElement.querySelector('.player-suggestions');
+            if (suggestions && suggestions.innerHTML) {
+                suggestions.style.display = 'block';
+            }
+        });
     });
-    
+
     if (compareBtn) {
         compareBtn.addEventListener('click', comparePlayersI);
     }
@@ -113,11 +143,13 @@ function initializePlayerComparison() {
 
 async function fetchPlayerSuggestions(query, inputElement) {
     try {
-        const response = await fetch(`/api/search?q=${encodeURIComponent(query)}&type=player&limit=5`);
+        const response = await fetch(`/api/search/players?q=${encodeURIComponent(query)}`);
         const data = await response.json();
-        
-        if (data.success && data.data.players.length > 0) {
-            displayPlayerSuggestions(data.data.players, inputElement);
+
+        if (data.success && data.data.length > 0) {
+            displayPlayerSuggestions(data.data, inputElement);
+        } else {
+            hidePlayerSuggestions(inputElement);
         }
     } catch (error) {
         console.error('Error fetching player suggestions:', error);
@@ -125,36 +157,39 @@ async function fetchPlayerSuggestions(query, inputElement) {
 }
 
 function displayPlayerSuggestions(players, inputElement) {
-    // Remove existing suggestions
-    const existingSuggestions = inputElement.parentElement.querySelector('.player-suggestions');
-    if (existingSuggestions) {
-        existingSuggestions.remove();
-    }
-    
-    // Create new suggestions dropdown
-    const suggestionsDiv = document.createElement('div');
-    suggestionsDiv.className = 'player-suggestions search-suggestions active';
-    suggestionsDiv.style.position = 'absolute';
-    suggestionsDiv.style.top = '100%';
-    suggestionsDiv.style.left = '0';
-    suggestionsDiv.style.right = '0';
-    suggestionsDiv.style.zIndex = '1000';
-    
+    const suggestionsDiv = inputElement.parentElement.querySelector('.player-suggestions');
+
+    if (!suggestionsDiv) return;
+
     suggestionsDiv.innerHTML = players.map(player => `
-        <div class="suggestion-item" onclick="selectPlayer('${player.sportmonksId}', '${player.name}', '${inputElement.dataset.playerIndex}')">
+        <div class="suggestion-item"
+             data-player-id="${player.id}"
+             data-player-name="${player.name.replace(/"/g, '&quot;')}"
+             data-input-index="${inputElement.dataset.playerIndex}">
             <span class="suggestion-name">${player.name}</span>
-            <span class="suggestion-team">${player.team ? player.team.name : ''}</span>
+            ${player.team ? `<span class="suggestion-team">${player.team}</span>` : ''}
         </div>
     `).join('');
-    
-    inputElement.parentElement.style.position = 'relative';
-    inputElement.parentElement.appendChild(suggestionsDiv);
+
+    suggestionsDiv.style.display = 'block';
+
+    // Ajouter les event listeners
+    const items = suggestionsDiv.querySelectorAll('.suggestion-item');
+    items.forEach(item => {
+        item.addEventListener('mousedown', function(e) {
+            e.preventDefault(); // Empêcher le blur de l'input
+            const playerId = this.dataset.playerId;
+            const playerName = this.dataset.playerName;
+            const inputIndex = this.dataset.inputIndex;
+            selectPlayer(playerId, playerName, inputIndex);
+        });
+    });
 }
 
 function hidePlayerSuggestions(inputElement) {
     const suggestions = inputElement.parentElement.querySelector('.player-suggestions');
     if (suggestions) {
-        suggestions.remove();
+        suggestions.style.display = 'none';
     }
 }
 
@@ -162,16 +197,21 @@ function selectPlayer(playerId, playerName, inputIndex) {
     const input = document.querySelector(`[data-player-index="${inputIndex}"]`);
     input.value = playerName;
     input.dataset.playerId = playerId;
-    
+
     hidePlayerSuggestions(input);
     updateCompareButton();
 }
 
+// Export pour compatibilité
+window.selectPlayer = selectPlayer;
+
 function updateCompareButton() {
     const selectedCount = Array.from(playerInputs).filter(input => input.dataset.playerId).length;
-    
+
     if (compareBtn) {
         compareBtn.disabled = selectedCount < 2;
+        compareBtn.textContent = selectedCount >= 2 ?
+            `Compare ${selectedCount} Players` : 'Select at least 2 players';
     }
 }
 
@@ -179,7 +219,7 @@ function comparePlayersI() {
     const playerIds = Array.from(playerInputs)
         .filter(input => input.dataset.playerId)
         .map(input => input.dataset.playerId);
-    
+
     if (playerIds.length >= 2) {
         const params = new URLSearchParams();
         playerIds.forEach(id => params.append('player', id));
