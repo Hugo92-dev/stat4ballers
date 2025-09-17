@@ -255,12 +255,24 @@
         }
 
         function updatePlayerInfo(player) {
+            // Get current language
+            const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+
             document.getElementById('player-name').textContent = player.name || 'Player Name';
-            document.getElementById('player-position').textContent = player.position || 'Position';
+
+            // Translate position if translations are available
+            let translatedPosition = player.position || 'Position';
+            if (window.translations && window.translations[currentLang] && window.translations[currentLang][player.position]) {
+                translatedPosition = window.translations[currentLang][player.position];
+            }
+            const positionElement = document.getElementById('player-position');
+            positionElement.textContent = translatedPosition;
+            positionElement.setAttribute('data-translate', player.position || 'Position');
+
             document.getElementById('player-number').textContent = `#${player.jerseyNumber || '-'}`;
             document.getElementById('player-team').textContent = player.team?.name || 'Team';
             document.getElementById('player-nationality').textContent = player.nationality || 'Nationality';
-            
+
             if (player.image) {
                 document.getElementById('player-image').src = player.image;
             }
@@ -408,8 +420,13 @@
             });
         });
 
-        // Load initial data
-        loadPlayerData();
+        // Load initial data after translations are ready
+        document.addEventListener('DOMContentLoaded', () => {
+            // Wait a brief moment for translations to initialize
+            setTimeout(() => {
+                loadPlayerData();
+            }, 100);
+        });
     </script>
 </body>
 </html>

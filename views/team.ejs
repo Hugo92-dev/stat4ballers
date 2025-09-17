@@ -337,17 +337,28 @@
                 });
             }
 
-            // Create player cards HTML
-            const createPlayerCard = (player) => `
-                <a href="/player/${player.slug || 'unknown'}" class="player-card">
-                    <div class="player-number">${player.jerseyNumber || '-'}</div>
-                    ${player.image ? `<img src="${player.image}" alt="${player.name}" style="width: 40px; height: 40px; border-radius: 50%; margin: 0 0.5rem; object-fit: cover;">` : ''}
-                    <div class="player-info">
-                        <div class="player-name">${player.name || 'Unknown'}</div>
-                        <div class="player-position">${player.position || 'Unknown'}</div>
-                    </div>
-                </a>
-            `;
+            // Create player cards HTML with translations
+            const createPlayerCard = (player) => {
+                // Get current language
+                const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+
+                // Translate position if translations are available
+                let translatedPosition = player.position || 'Unknown';
+                if (window.translations && window.translations[currentLang] && window.translations[currentLang][player.position]) {
+                    translatedPosition = window.translations[currentLang][player.position];
+                }
+
+                return `
+                    <a href="/player/${player.slug || 'unknown'}" class="player-card">
+                        <div class="player-number">${player.jerseyNumber || '-'}</div>
+                        ${player.image ? `<img src="${player.image}" alt="${player.name}" style="width: 40px; height: 40px; border-radius: 50%; margin: 0 0.5rem; object-fit: cover;">` : ''}
+                        <div class="player-info">
+                            <div class="player-name">${player.name || 'Unknown'}</div>
+                            <div class="player-position" data-translate="${player.position}">${translatedPosition}</div>
+                        </div>
+                    </a>
+                `;
+            };
 
             // Update each position section
             document.getElementById('goalkeepers').innerHTML = positions.goalkeepers.length > 0 
@@ -367,8 +378,13 @@
                 : '<p style="color: #999;">Aucun attaquant</p>';
         }
 
-        // Load data on page load
-        loadTeamData();
+        // Load data on page load after translations are ready
+        document.addEventListener('DOMContentLoaded', () => {
+            // Wait a brief moment for translations to initialize
+            setTimeout(() => {
+                loadTeamData();
+            }, 100);
+        });
     </script>
 </body>
 </html>
