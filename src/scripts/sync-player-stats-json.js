@@ -4,39 +4,151 @@ const axios = require('axios');
 require('dotenv').config();
 
 // Configuration
-const API_KEY = process.env.SPORTMONKS_API_KEY;
-const BASE_URL = process.env.SPORTMONKS_BASE_URL;
-const SEASON_ID = 25651; // Saison 2025/2026
+const API_KEY = 'KCKLQvVx687XrO9EBMLbZYEf8lQ7frEfZ9dvSqHt9PSIYMplUiVI3s3g34qZ';
+const BASE_URL = 'https://api.sportmonks.com/v3/football';
 
-// IDs des équipes de Ligue 1
-const LIGUE1_TEAMS = [
-    { name: 'Olympique Marseille', id: 44 },
-    { name: 'Nantes', id: 59 },
-    { name: 'Olympique Lyonnais', id: 79 },
-    { name: 'Brest', id: 266 },
-    { name: 'Lens', id: 271 },
-    { name: 'Toulouse', id: 289 },
-    { name: 'Nice', id: 450 },
-    { name: 'Paris Saint Germain', id: 591 },
-    { name: 'Rennes', id: 598 },
-    { name: 'Strasbourg', id: 686 },
-    { name: 'LOSC Lille', id: 690 },
-    { name: 'Angers SCO', id: 776 },
-    { name: 'Le Havre', id: 1055 },
-    { name: 'Metz', id: 3513 },
-    { name: 'Auxerre', id: 3682 },
-    { name: 'Paris', id: 4508 },
-    { name: 'Monaco', id: 6789 },
-    { name: 'Lorient', id: 9257 }
+// League configurations with season IDs and club IDs for 2025/2026
+const LEAGUES = [
+    {
+        name: 'Ligue 1',
+        slug: 'ligue1',
+        seasonId: 25651,
+        teams: [
+            { name: 'Olympique Marseille', id: 44 },
+            { name: 'Nantes', id: 59 },
+            { name: 'Olympique Lyonnais', id: 79 },
+            { name: 'Brest', id: 266 },
+            { name: 'Lens', id: 271 },
+            { name: 'Toulouse', id: 289 },
+            { name: 'Nice', id: 450 },
+            { name: 'Paris Saint Germain', id: 591 },
+            { name: 'Rennes', id: 598 },
+            { name: 'Strasbourg', id: 686 },
+            { name: 'LOSC Lille', id: 690 },
+            { name: 'Angers SCO', id: 776 },
+            { name: 'Le Havre', id: 1055 },
+            { name: 'Metz', id: 3513 },
+            { name: 'Auxerre', id: 3682 },
+            { name: 'Paris', id: 4508 },
+            { name: 'Monaco', id: 6789 },
+            { name: 'Lorient', id: 9257 }
+        ]
+    },
+    {
+        name: 'Premier League',
+        slug: 'premierleague',
+        seasonId: 25583,
+        teams: [
+            { name: 'West Ham United', id: 1 },
+            { name: 'Sunderland', id: 3 },
+            { name: 'Tottenham Hotspur', id: 6 },
+            { name: 'Liverpool', id: 8 },
+            { name: 'Manchester City', id: 9 },
+            { name: 'Fulham', id: 11 },
+            { name: 'Everton', id: 13 },
+            { name: 'Manchester United', id: 14 },
+            { name: 'Aston Villa', id: 15 },
+            { name: 'Chelsea', id: 18 },
+            { name: 'Arsenal', id: 19 },
+            { name: 'Newcastle United', id: 20 },
+            { name: 'Burnley', id: 27 },
+            { name: 'Wolverhampton Wanderers', id: 29 },
+            { name: 'Crystal Palace', id: 51 },
+            { name: 'AFC Bournemouth', id: 52 },
+            { name: 'Nottingham Forest', id: 63 },
+            { name: 'Leeds United', id: 71 },
+            { name: 'Brighton & Hove Albion', id: 78 },
+            { name: 'Brentford', id: 236 }
+        ]
+    },
+    {
+        name: 'La Liga',
+        slug: 'laliga',
+        seasonId: 25659,
+        teams: [
+            { name: 'Celta Vigo', id: 36 },
+            { name: 'FC Barcelona', id: 83 },
+            { name: 'Real Oviedo', id: 93 },
+            { name: 'Getafe', id: 106 },
+            { name: 'Valencia', id: 214 },
+            { name: 'Girona', id: 231 },
+            { name: 'Rayo Vallecano', id: 377 },
+            { name: 'Osasuna', id: 459 },
+            { name: 'Real Betis', id: 485 },
+            { name: 'Espanyol', id: 528 },
+            { name: 'Real Sociedad', id: 594 },
+            { name: 'Mallorca', id: 645 },
+            { name: 'Sevilla', id: 676 },
+            { name: 'Elche', id: 1099 },
+            { name: 'Deportivo Alavés', id: 2975 },
+            { name: 'Levante', id: 3457 },
+            { name: 'Real Madrid', id: 3468 },
+            { name: 'Villarreal', id: 3477 },
+            { name: 'Atlético Madrid', id: 7980 },
+            { name: 'Athletic Club', id: 13258 }
+        ]
+    },
+    {
+        name: 'Serie A',
+        slug: 'seriea',
+        seasonId: 25533,
+        teams: [
+            { name: 'Roma', id: 37 },
+            { name: 'Lazio', id: 43 },
+            { name: 'Genoa', id: 102 },
+            { name: 'Fiorentina', id: 109 },
+            { name: 'Milan', id: 113 },
+            { name: 'Como', id: 268 },
+            { name: 'Udinese', id: 346 },
+            { name: 'Parma', id: 398 },
+            { name: 'Cagliari', id: 585 },
+            { name: 'Napoli', id: 597 },
+            { name: 'Torino', id: 613 },
+            { name: 'Juventus', id: 625 },
+            { name: 'Atalanta', id: 708 },
+            { name: 'Pisa', id: 1072 },
+            { name: 'Hellas Verona', id: 1123 },
+            { name: 'Sassuolo', id: 2714 },
+            { name: 'Inter', id: 2930 },
+            { name: 'Lecce', id: 7790 },
+            { name: 'Bologna', id: 8513 },
+            { name: 'Cremonese', id: 10722 }
+        ]
+    },
+    {
+        name: 'Bundesliga',
+        slug: 'bundesliga',
+        seasonId: 25646,
+        teams: [
+            { name: 'Borussia Dortmund', id: 68 },
+            { name: 'Werder Bremen', id: 82 },
+            { name: 'FC Augsburg', id: 90 },
+            { name: 'RB Leipzig', id: 277 },
+            { name: 'St. Pauli', id: 353 },
+            { name: 'Eintracht Frankfurt', id: 366 },
+            { name: 'FC Bayern München', id: 503 },
+            { name: 'VfL Wolfsburg', id: 510 },
+            { name: 'Borussia Mönchengladbach', id: 683 },
+            { name: 'FSV Mainz 05', id: 794 },
+            { name: 'FC Union Berlin', id: 1079 },
+            { name: 'Hamburger SV', id: 2708 },
+            { name: 'TSG Hoffenheim', id: 2726 },
+            { name: 'Heidenheim', id: 2831 },
+            { name: 'VfB Stuttgart', id: 3319 },
+            { name: 'FC Köln', id: 3320 },
+            { name: 'Bayer 04 Leverkusen', id: 3321 },
+            { name: 'SC Freiburg', id: 3543 }
+        ]
+    }
 ];
 
 // Fonction pour récupérer les statistiques d'une équipe
-async function fetchTeamStats(teamId, teamName) {
+async function fetchTeamStats(teamId, teamName, seasonId) {
     try {
-        console.log(`📊 Récupération des stats pour ${teamName}...`);
+        console.log(`   📊 Récupération des stats pour ${teamName}...`);
 
         // Utiliser l'endpoint exact fourni
-        const url = `${BASE_URL}/squads/seasons/${SEASON_ID}/teams/${teamId}`;
+        const url = `${BASE_URL}/squads/seasons/${seasonId}/teams/${teamId}`;
         const response = await axios.get(url, {
             params: {
                 api_token: API_KEY,
@@ -49,20 +161,20 @@ async function fetchTeamStats(teamId, teamName) {
         }
         return [];
     } catch (error) {
-        console.error(`❌ Erreur pour ${teamName}:`, error.response?.data?.message || error.message);
+        console.error(`   ❌ Erreur pour ${teamName}:`, error.response?.data?.message || error.message);
         return [];
     }
 }
 
 // Fonction pour récupérer les stats détaillées d'un joueur
-async function fetchPlayerDetailedStats(playerId) {
+async function fetchPlayerDetailedStats(playerId, seasonId) {
     try {
         const url = `${BASE_URL}/players/${playerId}`;
         const response = await axios.get(url, {
             params: {
                 api_token: API_KEY,
                 include: 'statistics.details',
-                seasons: SEASON_ID
+                seasons: seasonId
             }
         });
 
@@ -191,7 +303,7 @@ function mapStatsToModel(playerData, detailedStats = null) {
 
     // Si on a des stats détaillées supplémentaires
     if (detailedStats && detailedStats.statistics && detailedStats.statistics.data) {
-        const seasonStats = detailedStats.statistics.data.find(s => s.season_id === SEASON_ID);
+        const seasonStats = detailedStats.statistics.data[0]; // Prendre les stats de la première saison disponible
 
         if (seasonStats && seasonStats.details && seasonStats.details.data && seasonStats.details.data[0]) {
             const details = seasonStats.details.data[0];
@@ -264,97 +376,150 @@ async function syncPlayerStats() {
         let totalSkipped = 0;
         let totalFailed = 0;
 
-        // Traiter chaque équipe
-        for (const team of LIGUE1_TEAMS) {
-            console.log(`\n🏟️  Traitement de ${team.name} (ID: ${team.id})`);
+        // Traiter chaque championnat
+        for (const league of LEAGUES) {
+            console.log(`\n🏆 Traitement de ${league.name} (${league.teams.length} équipes)`);
+            console.log('='.repeat(50));
 
-            const squadData = await fetchTeamStats(team.id, team.name);
+            let leagueUpdated = 0;
+            let leagueSkipped = 0;
 
-            if (!squadData || squadData.length === 0) {
-                console.log(`⚠️ Aucune donnée trouvée pour ${team.name}`);
-                totalFailed++;
-                continue;
-            }
+            // Traiter chaque équipe du championnat
+            for (const team of league.teams) {
+                const squadData = await fetchTeamStats(team.id, team.name, league.seasonId);
 
-            console.log(`📋 ${squadData.length} joueurs trouvés dans l'API`);
-
-            // Traiter chaque joueur de l'équipe
-            for (const playerData of squadData) {
-                if (!playerData.player) {
-                    totalSkipped++;
+                if (!squadData || squadData.length === 0) {
+                    console.log(`   ⚠️ Aucune donnée trouvée pour ${team.name}`);
+                    totalFailed++;
                     continue;
                 }
 
-                const apiPlayer = playerData.player;
+                let teamUpdated = 0;
+                let teamSkipped = 0;
 
-                try {
-                    // Trouver le joueur dans notre base JSON par son ID SportMonks
-                    let playerIndex = players.findIndex(p => p.sportmonksId === apiPlayer.id);
-
-                    if (playerIndex === -1) {
-                        console.log(`⚠️ Joueur non trouvé: ${apiPlayer.display_name || apiPlayer.name} (ID: ${apiPlayer.id})`);
-                        totalSkipped++;
+                // Traiter chaque joueur de l'équipe
+                for (const playerData of squadData) {
+                    if (!playerData.player) {
+                        teamSkipped++;
                         continue;
                     }
 
-                    // Récupérer les stats détaillées si possible
-                    const detailedStats = await fetchPlayerDetailedStats(apiPlayer.id);
+                    const apiPlayer = playerData.player;
 
-                    // Mapper les stats
-                    const mappedStats = mapStatsToModel(playerData, detailedStats);
+                    try {
+                        // Trouver le joueur dans notre base JSON par son ID SportMonks
+                        let playerIndex = players.findIndex(p => p.sportmonksId === apiPlayer.id);
 
-                    // Mettre à jour seulement si on a des stats
-                    if (Object.keys(mappedStats).length > 0) {
-                        // Mettre à jour les statistiques du joueur
-                        players[playerIndex].statistics = {
-                            ...players[playerIndex].statistics,
+                        if (playerIndex === -1) {
+                            teamSkipped++;
+                            continue;
+                        }
+
+                        // Récupérer les stats détaillées si possible
+                        const detailedStats = await fetchPlayerDetailedStats(apiPlayer.id, league.seasonId);
+
+                        // Mapper les stats
+                        const mappedStats = mapStatsToModel(playerData, detailedStats);
+
+                        // TOUJOURS mettre à jour les stats, même si elles sont vides ou à 0
+                        // Initialiser avec des valeurs par défaut si pas de stats
+                        const defaultStats = {
+                            rating: 0,
+                            appearances: 0,
+                            minutesPlayed: 0,
+                            goals: 0,
+                            assists: 0,
+                            yellowCards: 0,
+                            redCards: 0,
+                            shotsTotal: 0,
+                            shotsOnTarget: 0,
+                            tackles: 0,
+                            interceptions: 0,
+                            saves: 0,
+                            cleanSheets: 0,
+                            goalsConceded: 0,
+                            penalties: 0,
+                            keyPasses: 0,
+                            duelsWon: 0,
+                            aerialsWon: 0,
+                            successfulDribbles: 0,
+                            dispossessed: 0,
+                            fouls: 0,
+                            foulsDrawn: 0
+                        };
+
+                        // Fusionner les stats par défaut avec les stats récupérées
+                        const finalStats = {
+                            ...defaultStats,
                             ...mappedStats
                         };
 
+                        // Mettre à jour les statistiques du joueur
+                        players[playerIndex].statistics = {
+                            ...players[playerIndex].statistics,
+                            ...finalStats
+                        };
+
                         players[playerIndex].lastUpdated = new Date().toISOString();
-
-                        const statsCount = mappedStats.appearances || 0;
-                        const statsDetails = [];
-                        if (mappedStats.goals > 0) statsDetails.push(`${mappedStats.goals} buts`);
-                        if (mappedStats.assists > 0) statsDetails.push(`${mappedStats.assists} passes`);
-                        if (mappedStats.cleanSheets > 0) statsDetails.push(`${mappedStats.cleanSheets} CS`);
-                        if (mappedStats.saves > 0) statsDetails.push(`${mappedStats.saves} arrêts`);
-
-                        const detailsStr = statsDetails.length > 0 ? `, ${statsDetails.join(', ')}` : '';
-                        console.log(`✅ ${players[playerIndex].displayName || players[playerIndex].name}: ${statsCount} matchs${detailsStr}, note: ${(mappedStats.rating || 0).toFixed(2)}`);
+                        teamUpdated++;
                         totalUpdated++;
-                    } else {
-                        console.log(`⏭️ ${players[playerIndex].displayName || players[playerIndex].name}: Pas de stats disponibles`);
-                        totalSkipped++;
-                    }
 
-                } catch (error) {
-                    console.error(`❌ Erreur pour ${apiPlayer.display_name}:`, error.message);
-                    totalFailed++;
+                    } catch (error) {
+                        console.error(`      ❌ Erreur pour ${apiPlayer.display_name}:`, error.message);
+                        totalFailed++;
+                    }
                 }
+
+                if (teamUpdated > 0) {
+                    console.log(`      ✅ ${team.name}: ${teamUpdated} joueurs mis à jour`);
+                } else if (teamSkipped > 0) {
+                    console.log(`      ⚠️ ${team.name}: ${teamSkipped} joueurs non trouvés dans la base`);
+                } else {
+                    console.log(`      ⏭️ ${team.name}: Aucune mise à jour`);
+                }
+
+                leagueUpdated += teamUpdated;
+                leagueSkipped += teamSkipped;
+
+                // Pause entre les équipes pour éviter de surcharger l'API
+                await new Promise(resolve => setTimeout(resolve, 300));
             }
 
-            // Pause entre les équipes pour éviter de surcharger l'API
-            await new Promise(resolve => setTimeout(resolve, 1000));
+            console.log(`   📊 ${league.name} - Total: ${leagueUpdated} mis à jour, ${leagueSkipped} ignorés`);
+
+            // Pause entre les championnats
+            if (LEAGUES.indexOf(league) < LEAGUES.length - 1) {
+                console.log('   ⏳ Pause de 2 secondes avant le prochain championnat...');
+                await new Promise(resolve => setTimeout(resolve, 2000));
+            }
         }
 
         // Sauvegarder les joueurs mis à jour dans le fichier JSON
         fs.writeFileSync(playersPath, JSON.stringify(players, null, 2));
 
-        console.log('\n' + '='.repeat(50));
-        console.log('📊 RÉSUMÉ DE LA SYNCHRONISATION');
-        console.log('='.repeat(50));
-        console.log(`✅ Joueurs mis à jour: ${totalUpdated}`);
-        console.log(`⏭️ Joueurs ignorés: ${totalSkipped}`);
-        console.log(`❌ Erreurs: ${totalFailed}`);
+        console.log('\n' + '='.repeat(60));
+        console.log('📊 RÉSUMÉ DE LA SYNCHRONISATION DES STATISTIQUES');
+        console.log('='.repeat(60));
+        console.log(`✅ Total joueurs mis à jour: ${totalUpdated}`);
+        console.log(`⏭️ Total joueurs ignorés: ${totalSkipped}`);
+        console.log(`❌ Total erreurs: ${totalFailed}`);
 
-        // Afficher quelques exemples de joueurs avec des stats
-        console.log('\n🌟 Top 5 buteurs de Ligue 1:');
-        const ligue1Players = players.filter(p => p.league === 'ligue1' && p.statistics?.goals > 0);
-        ligue1Players.sort((a, b) => (b.statistics?.goals || 0) - (a.statistics?.goals || 0));
+        // Stats par championnat
+        console.log('\n📈 Détails par championnat:');
+        for (const league of LEAGUES) {
+            const leaguePlayers = players.filter(p => p.league === league.slug);
+            const withStats = leaguePlayers.filter(p => p.statistics?.appearances > 0);
+            console.log(`   ${league.name}: ${withStats.length}/${leaguePlayers.length} joueurs avec des statistiques`);
+        }
 
-        ligue1Players.slice(0, 5).forEach((player, index) => {
-            console.log(`${index + 1}. ${player.displayName || player.name} (${player.team?.name}): ${player.statistics.goals} buts en ${player.statistics.appearances} matchs`);
+        // Top buteurs tous championnats confondus
+        console.log('\n🌟 Top 10 buteurs tous championnats confondus:');
+        const scorers = players.filter(p => p.statistics?.goals > 0);
+        scorers.sort((a, b) => (b.statistics?.goals || 0) - (a.statistics?.goals || 0));
+
+        scorers.slice(0, 10).forEach((player, index) => {
+            const leagueName = LEAGUES.find(l => l.slug === player.league)?.name || player.league;
+            console.log(`${(index + 1).toString().padStart(2)}. ${player.displayName || player.name} (${player.team?.name}, ${leagueName}): ${player.statistics.goals} buts en ${player.statistics.appearances} matchs`);
         });
 
     } catch (error) {
@@ -364,9 +529,12 @@ async function syncPlayerStats() {
 
 // Lancer le script
 if (require.main === module) {
-    console.log('🚀 Démarrage de la synchronisation des statistiques des joueurs de Ligue 1');
-    console.log(`📅 Saison 2025/2026 (ID: ${SEASON_ID})`);
-    console.log('⏳ Cette opération peut prendre quelques minutes...\n');
+    console.log('========================================');
+    console.log('  SYNCHRONISATION DES STATISTIQUES  ');
+    console.log('========================================');
+    console.log('🚀 Démarrage de la synchronisation des statistiques');
+    console.log('📅 Saison 2025/2026 pour les 5 grands championnats');
+    console.log('⏳ Cette opération peut prendre 15-20 minutes...\n');
 
     syncPlayerStats()
         .then(() => {
