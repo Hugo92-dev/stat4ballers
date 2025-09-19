@@ -37,7 +37,10 @@
       "Bash(done)",
       "Bash(do echo \"=== Checking $file for main.js ===\")",
       "Bash(do echo \"Adding main.js to $file\")",
-      "Bash(do echo \"=== $file ===\")"
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(start http://localhost:3000/league/ligue1)",
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)"
     ],
     "deny": [],
     "ask": []

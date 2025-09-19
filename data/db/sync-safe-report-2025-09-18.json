@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-09-18T12:10:53.973Z",
+  "stats": {
+    "totalPlayers": 0,
+    "apiCalls": 95,
+    "apiFailures": 6,
+    "playersAdded": 0
+  },
+  "leagues": [
+    {
+      "league": "ligue1",
+      "playerCount": 0,
+      "teams": []
+    },
+    {
+      "league": "premierleague",
+      "playerCount": 0,
+      "teams": []
+    },
+    {
+      "league": "laliga",
+      "playerCount": 0,
+      "teams": []
+    },
+    {
+      "league": "seriea",
+      "playerCount": 0,
+      "teams": []
+    },
+    {
+      "league": "bundesliga",
+      "playerCount": 0,
+      "teams": []
+    }
+  ]
+}

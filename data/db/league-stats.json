@@ -1,0 +1,128 @@
+{
+  "ligue1": {
+    "name": "Ligue 1",
+    "topScorers": [
+      {
+        "name": "Frank Magri",
+        "goals": 3,
+        "penalties": 0,
+        "team": "Toulouse",
+        "appearances": 4
+      },
+      {
+        "name": "Bradley Barcola",
+        "goals": 3,
+        "penalties": 0,
+        "team": "Paris Saint Germain",
+        "appearances": 4
+      },
+      {
+        "name": "João Neves",
+        "goals": 3,
+        "penalties": 0,
+        "team": "Paris Saint Germain",
+        "appearances": 3
+      }
+    ],
+    "topAssisters": [
+      {
+        "name": "Mason Greenwood",
+        "assists": 3,
+        "team": "Olympique Marseille",
+        "appearances": 4
+      },
+      {
+        "name": "Félix Correia",
+        "assists": 3,
+        "team": "LOSC Lille",
+        "appearances": 4
+      }
+    ]
+  },
+  "premierleague": {
+    "name": "Premier League",
+    "topScorers": [
+      {
+        "name": "Erling Haaland",
+        "goals": 5,
+        "penalties": 0,
+        "team": "Manchester City",
+        "appearances": 4
+      }
+    ],
+    "topAssisters": [
+      {
+        "name": "Jack Grealish",
+        "assists": 4,
+        "team": "Everton",
+        "appearances": 4
+      }
+    ]
+  },
+  "laliga": {
+    "name": "La Liga",
+    "topScorers": [
+      {
+        "name": "Kylian Mbappé ",
+        "goals": 4,
+        "penalties": 1,
+        "team": "Real Madrid",
+        "appearances": 4
+      }
+    ],
+    "topAssisters": [
+      {
+        "name": "Luis Milla",
+        "assists": 4,
+        "team": "Getafe",
+        "appearances": 4
+      }
+    ]
+  },
+  "seriea": {
+    "name": "Serie A",
+    "topScorers": [
+      {
+        "name": "Marcus Thuram",
+        "goals": 3,
+        "penalties": 0,
+        "team": "Inter",
+        "appearances": 3
+      }
+    ],
+    "topAssisters": [
+      {
+        "name": "Nikola Krstović",
+        "assists": 3,
+        "team": "Atalanta",
+        "appearances": 3
+      },
+      {
+        "name": "Kenan Yıldız",
+        "assists": 3,
+        "team": "Juventus",
+        "appearances": 3
+      }
+    ]
+  },
+  "bundesliga": {
+    "name": "Bundesliga",
+    "topScorers": [
+      {
+        "name": "Harry Kane ",
+        "goals": 5,
+        "penalties": 1,
+        "team": "FC Bayern München",
+        "appearances": 3
+      }
+    ],
+    "topAssisters": [
+      {
+        "name": "Harry Kane ",
+        "assists": 3,
+        "team": "FC Bayern München",
+        "appearances": 3
+      }
+    ]
+  }
+}

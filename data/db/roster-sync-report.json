@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-09-18T09:14:15.768Z",
+  "leagues": {
+    "ligue1": {
+      "name": "Ligue 1",
+      "teams": {},
+      "playersAdded": [],
+      "playersRemoved": [],
+      "playersUpdated": []
+    },
+    "premierleague": {
+      "name": "Premier League",
+      "teams": {},
+      "playersAdded": [],
+      "playersRemoved": [],
+      "playersUpdated": []
+    },
+    "laliga": {
+      "name": "La Liga",
+      "teams": {},
+      "playersAdded": [],
+      "playersRemoved": [],
+      "playersUpdated": []
+    },
+    "seriea": {
+      "name": "Serie A",
+      "teams": {},
+      "playersAdded": [],
+      "playersRemoved": [],
+      "playersUpdated": []
+    },
+    "bundesliga": {
+      "name": "Bundesliga",
+      "teams": {},
+      "playersAdded": [],
+      "playersRemoved": [],
+      "playersUpdated": []
+    }
+  },
+  "summary": {
+    "playersAdded": 0,
+    "playersRemoved": 0,
+    "playersUpdated": 0,
+    "totalPlayers": 0
+  },
+  "removedPlayers": [],
+  "addedPlayers": [],
+  "updatedPlayers": []
+}

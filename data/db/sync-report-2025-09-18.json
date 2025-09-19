@@ -1,0 +1,417 @@
+{
+  "timestamp": "2025-09-18T09:36:48.646Z",
+  "leagues": {
+    "ligue1": {
+      "name": "Ligue 1",
+      "teamsProcessed": 18,
+      "totalPlayers": 528,
+      "playersAdded": [],
+      "playersRemoved": [],
+      "errors": []
+    },
+    "premierleague": {
+      "name": "Premier League",
+      "teamsProcessed": 16,
+      "totalPlayers": 479,
+      "playersAdded": [],
+      "playersRemoved": [],
+      "errors": []
+    },
+    "laliga": {
+      "name": "La Liga",
+      "teamsProcessed": 20,
+      "totalPlayers": 586,
+      "playersAdded": [],
+      "playersRemoved": [],
+      "errors": []
+    },
+    "seriea": {
+      "name": "Serie A",
+      "teamsProcessed": 20,
+      "totalPlayers": 618,
+      "playersAdded": [],
+      "playersRemoved": [],
+      "errors": []
+    },
+    "bundesliga": {
+      "name": "Bundesliga",
+      "teamsProcessed": 18,
+      "totalPlayers": 538,
+      "playersAdded": [],
+      "playersRemoved": [],
+      "errors": []
+    }
+  },
+  "summary": {
+    "playersAdded": 0,
+    "playersRemoved": 0,
+    "playersUpdated": 60,
+    "totalPlayers": 2749,
+    "errors": []
+  },
+  "removedPlayers": [],
+  "addedPlayers": [],
+  "updatedPlayers": [
+    {
+      "name": "Adrien Rabiot",
+      "oldTeam": "Milan",
+      "newTeam": "Olympique Marseille",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Nayef Aguerd",
+      "oldTeam": "West Ham United",
+      "newTeam": "Olympique Marseille",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Benjamin Pavard",
+      "oldTeam": "Inter",
+      "newTeam": "Olympique Marseille",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Jonathan Rowe",
+      "oldTeam": "Bologna",
+      "newTeam": "Olympique Marseille",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Hamed Junior Traoré",
+      "oldTeam": "AFC Bournemouth",
+      "newTeam": "Olympique Marseille",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Junior Mwanga",
+      "oldTeam": "Strasbourg",
+      "newTeam": "Nantes",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Saël Kumbedi",
+      "oldTeam": "VfL Wolfsburg",
+      "newTeam": "Olympique Lyonnais",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Georges Mikautadze",
+      "oldTeam": "Villarreal",
+      "newTeam": "Olympique Lyonnais",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Pierre Lees-Melou",
+      "oldTeam": "Paris",
+      "newTeam": "Brest",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Odsonne Édouard",
+      "oldTeam": "Crystal Palace",
+      "newTeam": "Lens",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Andy Diouf",
+      "oldTeam": "Inter",
+      "newTeam": "Lens",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Jaydee Canvot",
+      "oldTeam": "Crystal Palace",
+      "newTeam": "Toulouse",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Badredine Bouanani",
+      "oldTeam": "VfB Stuttgart",
+      "newTeam": "Nice",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Mikayil Faye",
+      "oldTeam": "Cremonese",
+      "newTeam": "Rennes",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Fabian Rieder",
+      "oldTeam": "FC Augsburg",
+      "newTeam": "Rennes",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Estéban Lepaul",
+      "oldTeam": "Angers SCO",
+      "newTeam": "Rennes",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Sékou Mara",
+      "oldTeam": "Auxerre",
+      "newTeam": "Strasbourg",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Edon Zhegrova ",
+      "oldTeam": "Juventus",
+      "newTeam": "LOSC Lille",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Idrissa Gueye",
+      "oldTeam": "Udinese",
+      "newTeam": "Metz",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Hamari Traoré",
+      "oldTeam": "Real Sociedad",
+      "newTeam": "Paris",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Stanis Idumbo ",
+      "oldTeam": "Sevilla",
+      "newTeam": "Monaco",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Eliesse Ben Seghir",
+      "oldTeam": "Bayer 04 Leverkusen",
+      "newTeam": "Monaco",
+      "league": "Ligue 1"
+    },
+    {
+      "name": "Jenson Seelt",
+      "oldTeam": "VfL Wolfsburg",
+      "newTeam": "Sunderland",
+      "league": "Premier League"
+    },
+    {
+      "name": "Lutsharel Geertruida",
+      "oldTeam": "RB Leipzig",
+      "newTeam": "Sunderland",
+      "league": "Premier League"
+    },
+    {
+      "name": "Marc Guiu",
+      "oldTeam": "Chelsea",
+      "newTeam": "Sunderland",
+      "league": "Premier League"
+    },
+    {
+      "name": "Xavi Simons",
+      "oldTeam": "RB Leipzig",
+      "newTeam": "Tottenham Hotspur",
+      "league": "Premier League"
+    },
+    {
+      "name": "Manor Solomon",
+      "oldTeam": "Villarreal",
+      "newTeam": "Tottenham Hotspur",
+      "league": "Premier League"
+    },
+    {
+      "name": "Luka Vuskovic",
+      "oldTeam": "Hamburger SV",
+      "newTeam": "Tottenham Hotspur",
+      "league": "Premier League"
+    },
+    {
+      "name": "Harvey Elliott",
+      "oldTeam": "Aston Villa",
+      "newTeam": "Liverpool",
+      "league": "Premier League"
+    },
+    {
+      "name": "Manuel Akanji",
+      "oldTeam": "Inter",
+      "newTeam": "Manchester City",
+      "league": "Premier League"
+    },
+    {
+      "name": "Samuel Chukwueze",
+      "oldTeam": "Milan",
+      "newTeam": "Fulham",
+      "league": "Premier League"
+    },
+    {
+      "name": "Jonah Kusi-Asare",
+      "oldTeam": "FC Bayern München",
+      "newTeam": "Fulham",
+      "league": "Premier League"
+    },
+    {
+      "name": "Merlin Röhl",
+      "oldTeam": "SC Freiburg",
+      "newTeam": "Everton",
+      "league": "Premier League"
+    },
+    {
+      "name": "Eberechi Eze",
+      "oldTeam": "Crystal Palace",
+      "newTeam": "Arsenal",
+      "league": "Premier League"
+    },
+    {
+      "name": "Piero Hincapié",
+      "oldTeam": "Bayer 04 Leverkusen",
+      "newTeam": "Arsenal",
+      "league": "Premier League"
+    },
+    {
+      "name": "Nick Woltemade",
+      "oldTeam": "VfB Stuttgart",
+      "newTeam": "Newcastle United",
+      "league": "Premier League"
+    },
+    {
+      "name": "Ladislav Krejci",
+      "oldTeam": "Girona",
+      "newTeam": "Wolverhampton Wanderers",
+      "league": "Premier League"
+    },
+    {
+      "name": "Yéremy Pino",
+      "oldTeam": "Villarreal",
+      "newTeam": "Crystal Palace",
+      "league": "Premier League"
+    },
+    {
+      "name": "Christantus Uche",
+      "oldTeam": "Getafe",
+      "newTeam": "Crystal Palace",
+      "league": "Premier League"
+    },
+    {
+      "name": "Álex Jiménez",
+      "oldTeam": "Milan",
+      "newTeam": "AFC Bournemouth",
+      "league": "Premier League"
+    },
+    {
+      "name": "Iñaki Peña",
+      "oldTeam": "Elche",
+      "newTeam": "FC Barcelona",
+      "league": "La Liga"
+    },
+    {
+      "name": "Yangel Herrera",
+      "oldTeam": "Real Sociedad",
+      "newTeam": "Girona",
+      "league": "La Liga"
+    },
+    {
+      "name": "Iker Losada",
+      "oldTeam": "Levante",
+      "newTeam": "Real Betis",
+      "league": "La Liga"
+    },
+    {
+      "name": "Urko González de Zárate",
+      "oldTeam": "Real Sociedad",
+      "newTeam": "Espanyol",
+      "league": "La Liga"
+    },
+    {
+      "name": "Jon Pacheco",
+      "oldTeam": "Deportivo Alavés",
+      "newTeam": "Real Sociedad",
+      "league": "La Liga"
+    },
+    {
+      "name": "Adrià Pedrosa",
+      "oldTeam": "Elche",
+      "newTeam": "Sevilla",
+      "league": "La Liga"
+    },
+    {
+      "name": "Denis Suárez",
+      "oldTeam": "Villarreal",
+      "newTeam": "Deportivo Alavés",
+      "league": "La Liga"
+    },
+    {
+      "name": "Karl Etta Eyong",
+      "oldTeam": "Villarreal",
+      "newTeam": "Levante",
+      "league": "La Liga"
+    },
+    {
+      "name": "Unai Vencedor",
+      "oldTeam": "Athletic Club",
+      "newTeam": "Levante",
+      "league": "La Liga"
+    },
+    {
+      "name": "Nico González",
+      "oldTeam": "Juventus",
+      "newTeam": "Atlético Madrid",
+      "league": "La Liga"
+    },
+    {
+      "name": "David Odogu",
+      "oldTeam": "VfL Wolfsburg",
+      "newTeam": "Milan",
+      "league": "Serie A"
+    },
+    {
+      "name": "Yunus Musah",
+      "oldTeam": "Atalanta",
+      "newTeam": "Milan",
+      "league": "Serie A"
+    },
+    {
+      "name": "Stefan Posch",
+      "oldTeam": "Bologna",
+      "newTeam": "Como",
+      "league": "Serie A"
+    },
+    {
+      "name": "Patrick Cutrone",
+      "oldTeam": "Parma",
+      "newTeam": "Como",
+      "league": "Serie A"
+    },
+    {
+      "name": "Alessandro Zanoli",
+      "oldTeam": "Napoli",
+      "newTeam": "Udinese",
+      "league": "Serie A"
+    },
+    {
+      "name": "Walid Cheddira",
+      "oldTeam": "Sassuolo",
+      "newTeam": "Napoli",
+      "league": "Serie A"
+    },
+    {
+      "name": "Niels Nkounkou",
+      "oldTeam": "Eintracht Frankfurt",
+      "newTeam": "Torino",
+      "league": "Serie A"
+    },
+    {
+      "name": "Loïs Openda",
+      "oldTeam": "RB Leipzig",
+      "newTeam": "Juventus",
+      "league": "Serie A"
+    },
+    {
+      "name": "Ibrahim Sulemana",
+      "oldTeam": "Bologna",
+      "newTeam": "Atalanta",
+      "league": "Serie A"
+    },
+    {
+      "name": "Giovanni Bonfanti",
+      "oldTeam": "Pisa",
+      "newTeam": "Atalanta",
+      "league": "Serie A"
+    }
+  ],
+  "failedTeams": []
+}

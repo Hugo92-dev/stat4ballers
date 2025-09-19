@@ -1,0 +1,546 @@
+{
+  "timestamp": "2025-09-18T09:24:17.544Z",
+  "leagues": {
+    "ligue1": {
+      "name": "Ligue 1",
+      "teamsProcessed": 18,
+      "totalPlayers": 0,
+      "playersAdded": [],
+      "playersRemoved": [],
+      "loanedPlayersExcluded": [],
+      "errors": []
+    },
+    "premierleague": {
+      "name": "Premier League",
+      "teamsProcessed": 16,
+      "totalPlayers": 0,
+      "playersAdded": [],
+      "playersRemoved": [],
+      "loanedPlayersExcluded": [],
+      "errors": []
+    },
+    "laliga": {
+      "name": "La Liga",
+      "teamsProcessed": 20,
+      "totalPlayers": 0,
+      "playersAdded": [],
+      "playersRemoved": [],
+      "loanedPlayersExcluded": [],
+      "errors": []
+    },
+    "seriea": {
+      "name": "Serie A",
+      "teamsProcessed": 20,
+      "totalPlayers": 0,
+      "playersAdded": [],
+      "playersRemoved": [],
+      "loanedPlayersExcluded": [],
+      "errors": []
+    },
+    "bundesliga": {
+      "name": "Bundesliga",
+      "teamsProcessed": 18,
+      "totalPlayers": 0,
+      "playersAdded": [],
+      "playersRemoved": [],
+      "loanedPlayersExcluded": [],
+      "errors": []
+    }
+  },
+  "summary": {
+    "playersAdded": 0,
+    "playersRemoved": 0,
+    "playersUpdated": 0,
+    "loanedPlayersExcluded": 0,
+    "duplicatesResolved": 60,
+    "totalPlayers": 2689,
+    "errors": []
+  },
+  "removedPlayers": [],
+  "addedPlayers": [],
+  "updatedPlayers": [],
+  "loanedPlayers": [],
+  "duplicatesFound": [
+    {
+      "playerName": "Adrien Rabiot",
+      "playerId": 95694,
+      "keptIn": "Milan",
+      "removedFrom": [
+        "Olympique Marseille"
+      ]
+    },
+    {
+      "playerName": "Nayef Aguerd",
+      "playerId": 516291,
+      "keptIn": "West Ham United",
+      "removedFrom": [
+        "Olympique Marseille"
+      ]
+    },
+    {
+      "playerName": "Benjamin Pavard",
+      "playerId": 35574,
+      "keptIn": "Inter",
+      "removedFrom": [
+        "Olympique Marseille"
+      ]
+    },
+    {
+      "playerName": "Jonathan Rowe",
+      "playerId": 34455209,
+      "keptIn": "Bologna",
+      "removedFrom": [
+        "Olympique Marseille"
+      ]
+    },
+    {
+      "playerName": "Hamed Junior Traoré",
+      "playerId": 2511082,
+      "keptIn": "AFC Bournemouth",
+      "removedFrom": [
+        "Olympique Marseille"
+      ]
+    },
+    {
+      "playerName": "Junior Mwanga",
+      "playerId": 37540396,
+      "keptIn": "Strasbourg",
+      "removedFrom": [
+        "Nantes"
+      ]
+    },
+    {
+      "playerName": "Saël Kumbedi",
+      "playerId": 37591826,
+      "keptIn": "VfL Wolfsburg",
+      "removedFrom": [
+        "Olympique Lyonnais"
+      ]
+    },
+    {
+      "playerName": "Georges Mikautadze",
+      "playerId": 13963088,
+      "keptIn": "Villarreal",
+      "removedFrom": [
+        "Olympique Lyonnais"
+      ]
+    },
+    {
+      "playerName": "Pierre Lees-Melou",
+      "playerId": 96826,
+      "keptIn": "Paris",
+      "removedFrom": [
+        "Brest"
+      ]
+    },
+    {
+      "playerName": "Odsonne Édouard",
+      "playerId": 96792,
+      "keptIn": "Crystal Palace",
+      "removedFrom": [
+        "Lens"
+      ]
+    },
+    {
+      "playerName": "Andy Diouf",
+      "playerId": 37423138,
+      "keptIn": "Inter",
+      "removedFrom": [
+        "Lens"
+      ]
+    },
+    {
+      "playerName": "Jaydee Canvot",
+      "playerId": 37688184,
+      "keptIn": "Crystal Palace",
+      "removedFrom": [
+        "Toulouse"
+      ]
+    },
+    {
+      "playerName": "Badredine Bouanani",
+      "playerId": 37423036,
+      "keptIn": "VfB Stuttgart",
+      "removedFrom": [
+        "Nice"
+      ]
+    },
+    {
+      "playerName": "Mikayil Faye",
+      "playerId": 37342686,
+      "keptIn": "Cremonese",
+      "removedFrom": [
+        "Rennes"
+      ]
+    },
+    {
+      "playerName": "Fabian Rieder",
+      "playerId": 24817439,
+      "keptIn": "FC Augsburg",
+      "removedFrom": [
+        "Rennes"
+      ]
+    },
+    {
+      "playerName": "Estéban Lepaul",
+      "playerId": 13187047,
+      "keptIn": "Angers SCO",
+      "removedFrom": [
+        "Rennes"
+      ]
+    },
+    {
+      "playerName": "Sékou Mara",
+      "playerId": 37289022,
+      "keptIn": "Auxerre",
+      "removedFrom": [
+        "Strasbourg"
+      ]
+    },
+    {
+      "playerName": "Edon Zhegrova ",
+      "playerId": 2158213,
+      "keptIn": "Juventus",
+      "removedFrom": [
+        "LOSC Lille"
+      ]
+    },
+    {
+      "playerName": "Idrissa Gueye",
+      "playerId": 37712530,
+      "keptIn": "Udinese",
+      "removedFrom": [
+        "Metz"
+      ]
+    },
+    {
+      "playerName": "Hamari Traoré",
+      "playerId": 62181,
+      "keptIn": "Real Sociedad",
+      "removedFrom": [
+        "Paris"
+      ]
+    },
+    {
+      "playerName": "Stanis Idumbo ",
+      "playerId": 37590629,
+      "keptIn": "Sevilla",
+      "removedFrom": [
+        "Monaco"
+      ]
+    },
+    {
+      "playerName": "Eliesse Ben Seghir",
+      "playerId": 37601342,
+      "keptIn": "Bayer 04 Leverkusen",
+      "removedFrom": [
+        "Monaco"
+      ]
+    },
+    {
+      "playerName": "Jenson Seelt",
+      "playerId": 37546753,
+      "keptIn": "VfL Wolfsburg",
+      "removedFrom": [
+        "Sunderland"
+      ]
+    },
+    {
+      "playerName": "Lutsharel Geertruida",
+      "playerId": 4598752,
+      "keptIn": "RB Leipzig",
+      "removedFrom": [
+        "Sunderland"
+      ]
+    },
+    {
+      "playerName": "Marc Guiu",
+      "playerId": 37664041,
+      "keptIn": "Chelsea",
+      "removedFrom": [
+        "Sunderland"
+      ]
+    },
+    {
+      "playerName": "Xavi Simons",
+      "playerId": 37317392,
+      "keptIn": "RB Leipzig",
+      "removedFrom": [
+        "Tottenham Hotspur"
+      ]
+    },
+    {
+      "playerName": "Manor Solomon",
+      "playerId": 125482,
+      "keptIn": "Villarreal",
+      "removedFrom": [
+        "Tottenham Hotspur"
+      ]
+    },
+    {
+      "playerName": "Luka Vuskovic",
+      "playerId": 37657587,
+      "keptIn": "Hamburger SV",
+      "removedFrom": [
+        "Tottenham Hotspur"
+      ]
+    },
+    {
+      "playerName": "Harvey Elliott",
+      "playerId": 23269836,
+      "keptIn": "Aston Villa",
+      "removedFrom": [
+        "Liverpool"
+      ]
+    },
+    {
+      "playerName": "Manuel Akanji",
+      "playerId": 198062,
+      "keptIn": "Inter",
+      "removedFrom": [
+        "Manchester City"
+      ]
+    },
+    {
+      "playerName": "Samuel Chukwueze",
+      "playerId": 15434627,
+      "keptIn": "Milan",
+      "removedFrom": [
+        "Fulham"
+      ]
+    },
+    {
+      "playerName": "Jonah Kusi-Asare",
+      "playerId": 37714583,
+      "keptIn": "FC Bayern München",
+      "removedFrom": [
+        "Fulham"
+      ]
+    },
+    {
+      "playerName": "Merlin Röhl",
+      "playerId": 37266009,
+      "keptIn": "SC Freiburg",
+      "removedFrom": [
+        "Everton"
+      ]
+    },
+    {
+      "playerName": "Eberechi Eze",
+      "playerId": 7643,
+      "keptIn": "Crystal Palace",
+      "removedFrom": [
+        "Arsenal"
+      ]
+    },
+    {
+      "playerName": "Piero Hincapié",
+      "playerId": 37261496,
+      "keptIn": "Bayer 04 Leverkusen",
+      "removedFrom": [
+        "Arsenal"
+      ]
+    },
+    {
+      "playerName": "Nick Woltemade",
+      "playerId": 32777430,
+      "keptIn": "VfB Stuttgart",
+      "removedFrom": [
+        "Newcastle United"
+      ]
+    },
+    {
+      "playerName": "Ladislav Krejci",
+      "playerId": 80902,
+      "keptIn": "Girona",
+      "removedFrom": [
+        "Wolverhampton Wanderers"
+      ]
+    },
+    {
+      "playerName": "Yéremy Pino",
+      "playerId": 24468970,
+      "keptIn": "Villarreal",
+      "removedFrom": [
+        "Crystal Palace"
+      ]
+    },
+    {
+      "playerName": "Christantus Uche",
+      "playerId": 37678216,
+      "keptIn": "Getafe",
+      "removedFrom": [
+        "Crystal Palace"
+      ]
+    },
+    {
+      "playerName": "Álex Jiménez",
+      "playerId": 37584705,
+      "keptIn": "Milan",
+      "removedFrom": [
+        "AFC Bournemouth"
+      ]
+    },
+    {
+      "playerName": "Iñaki Peña",
+      "playerId": 529415,
+      "keptIn": "Elche",
+      "removedFrom": [
+        "FC Barcelona"
+      ]
+    },
+    {
+      "playerName": "Yangel Herrera",
+      "playerId": 411876,
+      "keptIn": "Real Sociedad",
+      "removedFrom": [
+        "Girona"
+      ]
+    },
+    {
+      "playerName": "Iker Losada",
+      "playerId": 27048372,
+      "keptIn": "Levante",
+      "removedFrom": [
+        "Real Betis"
+      ]
+    },
+    {
+      "playerName": "Urko González de Zárate",
+      "playerId": 30446852,
+      "keptIn": "Real Sociedad",
+      "removedFrom": [
+        "Espanyol"
+      ]
+    },
+    {
+      "playerName": "Jon Pacheco",
+      "playerId": 16837815,
+      "keptIn": "Deportivo Alavés",
+      "removedFrom": [
+        "Real Sociedad"
+      ]
+    },
+    {
+      "playerName": "Adrià Pedrosa",
+      "playerId": 532358,
+      "keptIn": "Elche",
+      "removedFrom": [
+        "Sevilla"
+      ]
+    },
+    {
+      "playerName": "Denis Suárez",
+      "playerId": 4439,
+      "keptIn": "Villarreal",
+      "removedFrom": [
+        "Deportivo Alavés"
+      ]
+    },
+    {
+      "playerName": "Karl Etta Eyong",
+      "playerId": 37646866,
+      "keptIn": "Villarreal",
+      "removedFrom": [
+        "Levante"
+      ]
+    },
+    {
+      "playerName": "Unai Vencedor",
+      "playerId": 22158926,
+      "keptIn": "Athletic Club",
+      "removedFrom": [
+        "Levante"
+      ]
+    },
+    {
+      "playerName": "Nico González",
+      "playerId": 215532,
+      "keptIn": "Juventus",
+      "removedFrom": [
+        "Atlético Madrid"
+      ]
+    },
+    {
+      "playerName": "David Odogu",
+      "playerId": 37650933,
+      "keptIn": "VfL Wolfsburg",
+      "removedFrom": [
+        "Milan"
+      ]
+    },
+    {
+      "playerName": "Yunus Musah",
+      "playerId": 28575698,
+      "keptIn": "Atalanta",
+      "removedFrom": [
+        "Milan"
+      ]
+    },
+    {
+      "playerName": "Stefan Posch",
+      "playerId": 33770,
+      "keptIn": "Bologna",
+      "removedFrom": [
+        "Como"
+      ]
+    },
+    {
+      "playerName": "Patrick Cutrone",
+      "playerId": 133805,
+      "keptIn": "Parma",
+      "removedFrom": [
+        "Como"
+      ]
+    },
+    {
+      "playerName": "Alessandro Zanoli",
+      "playerId": 10967415,
+      "keptIn": "Napoli",
+      "removedFrom": [
+        "Udinese"
+      ]
+    },
+    {
+      "playerName": "Walid Cheddira",
+      "playerId": 37260212,
+      "keptIn": "Sassuolo",
+      "removedFrom": [
+        "Napoli"
+      ]
+    },
+    {
+      "playerName": "Niels Nkounkou",
+      "playerId": 10275430,
+      "keptIn": "Eintracht Frankfurt",
+      "removedFrom": [
+        "Torino"
+      ]
+    },
+    {
+      "playerName": "Loïs Openda",
+      "playerId": 539993,
+      "keptIn": "RB Leipzig",
+      "removedFrom": [
+        "Juventus"
+      ]
+    },
+    {
+      "playerName": "Ibrahim Sulemana",
+      "playerId": 37616125,
+      "keptIn": "Bologna",
+      "removedFrom": [
+        "Atalanta"
+      ]
+    },
+    {
+      "playerName": "Giovanni Bonfanti",
+      "playerId": 37601270,
+      "keptIn": "Pisa",
+      "removedFrom": [
+        "Atalanta"
+      ]
+    }
+  ],
+  "failedTeams": []
+}
