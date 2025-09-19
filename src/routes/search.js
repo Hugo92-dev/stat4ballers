@@ -2,6 +2,31 @@ const express = require('express');
 const router = express.Router();
 const { find } = require('../utils/database');
 
+// Fonction utilitaire pour normaliser les textes avec caractères spéciaux
+function normalizeText(text) {
+    if (!text) return '';
+    return text
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        // Caractères scandinaves spécifiques
+        .replace(/[øØ]/g, 'o')
+        .replace(/[æÆ]/g, 'ae')
+        .replace(/[åÅ]/g, 'a')
+        // Caractères allemands
+        .replace(/[ßẞ]/g, 'ss')
+        .replace(/[üÜ]/g, 'u')
+        .replace(/[öÖ]/g, 'o')
+        .replace(/[äÄ]/g, 'a')
+        // Caractères slaves
+        .replace(/[čČ]/g, 'c')
+        .replace(/[šŠ]/g, 's')
+        .replace(/[žŽ]/g, 'z')
+        .replace(/[đĐ]/g, 'd')
+        .replace(/[ćĆ]/g, 'c')
+        .replace(/[ñÑ]/g, 'n')
+        .toLowerCase();
+}
+
 // Global search with autocomplete
 router.get('/', async (req, res) => {
     try {
@@ -71,19 +96,8 @@ router.get('/suggestions', async (req, res) => {
             });
         }
 
-        // Normaliser la recherche pour gérer les caractères spéciaux
-        const normalizedQuery = q
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .toLowerCase();
-
-        // Fonction de normalisation pour comparaison
-        const normalizeText = (text) => {
-            return text
-                .normalize('NFD')
-                .replace(/[\u0300-\u036f]/g, '')
-                .toLowerCase();
-        };
+        // Normaliser la recherche pour gérer les caractères spéciaux et scandinaves
+        const normalizedQuery = normalizeText(q);
 
         // Créer une regex pour la recherche
         const searchRegex = new RegExp(normalizedQuery, 'i');
@@ -184,17 +198,7 @@ router.get('/players', async (req, res) => {
         }
 
         // Normaliser la recherche
-        const normalizedQuery = q
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .toLowerCase();
-
-        const normalizeText = (text) => {
-            return text
-                .normalize('NFD')
-                .replace(/[\u0300-\u036f]/g, '')
-                .toLowerCase();
-        };
+        const normalizedQuery = normalizeText(q);
 
         const allPlayers = await find('players');
 

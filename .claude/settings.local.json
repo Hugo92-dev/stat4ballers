@@ -26,7 +26,18 @@
       "Bash(copy:*)",
       "Bash(start http://localhost:3000/about)",
       "Bash(start http://localhost:3000/team/psg)",
-      "Bash(start http://localhost:3000/player/kylian-mbappe)"
+      "Bash(start http://localhost:3000/player/kylian-mbappe)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(sort:*)",
+      "Bash(git checkout:*)",
+      "Bash(for:*)",
+      "Bash(do echo \"=== Checking $file ===\")",
+      "Bash(grep:*)",
+      "Bash(done)",
+      "Bash(do echo \"=== Checking $file for main.js ===\")",
+      "Bash(do echo \"Adding main.js to $file\")",
+      "Bash(do echo \"=== $file ===\")"
     ],
     "deny": [],
     "ask": []
