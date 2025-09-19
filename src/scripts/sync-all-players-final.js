@@ -3,39 +3,45 @@ const path = require('path');
 const axios = require('axios');
 require('dotenv').config();
 
-const API_TOKEN = process.env.SPORTMONKS_API_KEY;
+// Use the provided API key directly
+const API_TOKEN = 'KCKLQvVx687XrO9EBMLbZYEf8lQ7frEfZ9dvSqHt9PSIYMplUiVI3s3g34qZ';
 
-// League configurations with season IDs for 2025/2026
+// League configurations with season IDs and specific club IDs for 2025/2026
 const LEAGUES = [
     {
         name: 'Ligue 1',
         slug: 'ligue1',
         seasonId: 25651,
-        country: 'France'
+        country: 'France',
+        clubIds: [44, 59, 79, 266, 271, 289, 450, 591, 598, 686, 690, 776, 1055, 3513, 3682, 4508, 6789, 9257]
     },
     {
         name: 'Premier League',
         slug: 'premierleague',
         seasonId: 25583,
-        country: 'England'
+        country: 'England',
+        clubIds: [1, 3, 6, 8, 9, 11, 13, 14, 15, 18, 19, 20, 27, 29, 51, 52, 63, 71, 78, 236]
     },
     {
         name: 'La Liga',
         slug: 'laliga',
         seasonId: 25659,
-        country: 'Spain'
+        country: 'Spain',
+        clubIds: [36, 83, 93, 106, 214, 231, 377, 459, 485, 528, 594, 645, 676, 1099, 2975, 3457, 3468, 3477, 7980, 13258]
     },
     {
         name: 'Serie A',
         slug: 'seriea',
         seasonId: 25533,
-        country: 'Italy'
+        country: 'Italy',
+        clubIds: [37, 43, 102, 109, 113, 268, 346, 398, 585, 597, 613, 625, 708, 1072, 1123, 2714, 2930, 7790, 8513, 10722]
     },
     {
         name: 'Bundesliga',
         slug: 'bundesliga',
         seasonId: 25646,
-        country: 'Germany'
+        country: 'Germany',
+        clubIds: [68, 82, 90, 277, 353, 366, 503, 510, 683, 794, 1079, 2708, 2726, 2831, 3319, 3320, 3321, 3543]
     }
 ];
 
@@ -51,22 +57,32 @@ const POSITION_MAP = {
 async function syncLeaguePlayersWithDetails(league) {
     try {
         console.log(`\n🔄 Fetching ${league.name} teams and players with full details...`);
-
-        // Get teams for the season
-        const teamsResponse = await axios.get(
-            `https://api.sportmonks.com/v3/football/teams/seasons/${league.seasonId}`,
-            {
-                params: {
-                    api_token: API_TOKEN
-                }
-            }
-        );
-
-        const teams = teamsResponse.data.data;
-        console.log(`✅ Found ${teams.length} teams for ${league.name}`);
+        console.log(`   📋 Targeting ${league.clubIds.length} specific clubs`);
 
         const allPlayers = [];
         let teamCount = 0;
+        const teams = [];
+
+        // Fetch team info for each specific club ID
+        for (const clubId of league.clubIds) {
+            try {
+                const teamResponse = await axios.get(
+                    `https://api.sportmonks.com/v3/football/teams/${clubId}`,
+                    {
+                        params: {
+                            api_token: API_TOKEN
+                        }
+                    }
+                );
+                if (teamResponse.data.data) {
+                    teams.push(teamResponse.data.data);
+                }
+            } catch (error) {
+                console.log(`   ⚠️ Could not fetch team with ID ${clubId}`);
+            }
+        }
+
+        console.log(`✅ Successfully fetched ${teams.length}/${league.clubIds.length} teams for ${league.name}`);
 
         // Process each team to get squad with player details
         for (const team of teams) {
@@ -179,7 +195,8 @@ async function syncLeaguePlayersWithDetails(league) {
 
 async function syncAllPlayersWithDetails() {
     try {
-        console.log('🚀 Starting FINAL synchronization with player names and photos...\n');
+        console.log('🚀 Starting synchronization for 2025/2026 season with player names and photos...\n');
+        console.log('📅 Season: 2025/2026\n');
         console.log('⚠️  This will take 10-15 minutes to fetch all details...\n');
 
         // Read existing players (if any)
@@ -200,11 +217,10 @@ async function syncAllPlayersWithDetails() {
         console.log(`🗑️  Removed old players from main leagues, keeping ${existingPlayers.length} other players\n`);
 
         // Fetch and add players for each league
-        let totalNewPlayers = 0;
+        let allNewPlayers = [];
         for (const league of LEAGUES) {
             const leaguePlayers = await syncLeaguePlayersWithDetails(league);
-            existingPlayers = existingPlayers.concat(leaguePlayers);
-            totalNewPlayers += leaguePlayers.length;
+            allNewPlayers = allNewPlayers.concat(leaguePlayers);
 
             // Longer delay between leagues
             if (LEAGUES.indexOf(league) < LEAGUES.length - 1) {
@@ -212,6 +228,52 @@ async function syncAllPlayersWithDetails() {
                 await new Promise(resolve => setTimeout(resolve, 3000));
             }
         }
+
+        // DEDUPLICATION: Keep only the last occurrence of each player (by sportmonksId)
+        console.log('\n🔍 Checking for transferred players (duplicates)...');
+        const playerMap = new Map();
+        const duplicates = new Map();
+
+        // Process in reverse order to keep the last occurrence
+        for (let i = allNewPlayers.length - 1; i >= 0; i--) {
+            const player = allNewPlayers[i];
+            if (!playerMap.has(player.sportmonksId)) {
+                playerMap.set(player.sportmonksId, player);
+            } else {
+                // Track duplicates for logging
+                if (!duplicates.has(player.sportmonksId)) {
+                    duplicates.set(player.sportmonksId, {
+                        name: player.name,
+                        clubs: [playerMap.get(player.sportmonksId).team.name, player.team.name]
+                    });
+                } else {
+                    duplicates.get(player.sportmonksId).clubs.push(player.team.name);
+                }
+            }
+        }
+
+        // Convert Map back to array
+        const deduplicatedPlayers = Array.from(playerMap.values());
+
+        // Log transferred players
+        if (duplicates.size > 0) {
+            console.log(`\n📋 Found ${duplicates.size} transferred players:`);
+            let count = 0;
+            for (const [id, info] of duplicates) {
+                count++;
+                if (count <= 10) {  // Show first 10 transfers
+                    console.log(`   • ${info.name}: ${info.clubs.reverse().join(' → ')} (keeping ${info.clubs[info.clubs.length - 1]})`);
+                }
+            }
+            if (duplicates.size > 10) {
+                console.log(`   ... and ${duplicates.size - 10} more transfers`);
+            }
+        } else {
+            console.log('   ✅ No transferred players found');
+        }
+
+        // Add deduplicated players to existing ones
+        existingPlayers = existingPlayers.concat(deduplicatedPlayers);
 
         // Sort players by sportmonksId
         existingPlayers.sort((a, b) => a.sportmonksId - b.sportmonksId);
@@ -226,7 +288,7 @@ async function syncAllPlayersWithDetails() {
             const count = existingPlayers.filter(p => p.league === league.slug).length;
             console.log(`   ${league.name}: ${count} players`);
         }
-        console.log(`   Total new players: ${totalNewPlayers}`);
+        console.log(`   Total new players (after deduplication): ${deduplicatedPlayers.length}`);
         console.log(`   Total in database: ${existingPlayers.length} players`);
 
         // Show sample players to verify
@@ -245,7 +307,7 @@ async function syncAllPlayersWithDetails() {
 }
 
 // Run the sync
-console.log('====================================');
-console.log('  FINAL PLAYERS SYNC WITH DETAILS  ');
-console.log('====================================\n');
+console.log('========================================');
+console.log('  PLAYERS SYNC 2025/2026 WITH DETAILS  ');
+console.log('========================================\n');
 syncAllPlayersWithDetails();
