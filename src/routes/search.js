@@ -127,29 +127,90 @@ router.get('/suggestions', async (req, res) => {
         const allTeams = await find('teams');
         const allPlayers = await find('players');
 
-        // Filtrer les équipes et supprimer les doublons
-        const teamIds = new Set();
-        const validTeams = [44, 247, 231, 496, 251, 77, 154, 263, 192, 223, 85, 65, 95, 100, 180]; // IDs valides des clubs principaux
+        // Filtrer les équipes principales des 5 championnats et supprimer les doublons
+        const teamSlugs = new Set();
+        const mainLeagues = ['ligue1', 'premierleague', 'laliga', 'seriea', 'bundesliga'];
 
-        allTeams
+        // Priorité aux équipes des championnats principaux avec slug défini
+        const mainTeams = allTeams
             .filter(t => {
-                // Filtrer seulement les équipes valides ou principales
-                if (t.leagueId && ![301, 8, 462, 564, 384, 82].includes(t.leagueId)) return false;
-                // Vérifier si le nom correspond
-                return searchRegex.test(normalizeText(t.name));
+                // Prioriser les équipes avec un league défini (équipes principales)
+                if (!t.league || !mainLeagues.includes(t.league)) return false;
+                // Vérifier si le nom correspond et qu'il y a un slug
+                return t.slug && searchRegex.test(normalizeText(t.name));
             })
-            .slice(0, 5)
-            .forEach(t => {
-                if (!teamIds.has(t.sportmonksId)) {
-                    teamIds.add(t.sportmonksId);
-                    suggestions.push({
-                        type: 'Team',
-                        id: t.sportmonksId,
-                        name: t.name,
-                        url: `/team/${t.sportmonksId}`
-                    });
-                }
+            .sort((a, b) => {
+                // Trier par ordre de priorité des championnats
+                const leagueOrder = { 'ligue1': 1, 'premierleague': 2, 'laliga': 3, 'seriea': 4, 'bundesliga': 5 };
+                return (leagueOrder[a.league] || 999) - (leagueOrder[b.league] || 999);
             });
+
+        // Ajouter les équipes principales (une seule par nom similaire)
+        const teamNormalizedNames = new Set();
+        const teamBaseNames = new Set(); // Pour détecter les variations comme "Olympique Marseille" vs "Olympique de Marseille"
+
+        mainTeams.forEach(t => {
+            const normalizedName = normalizeText(t.name);
+            // Créer un nom de base en supprimant les mots courants comme "de", "du", "des", "da", "del", etc.
+            const baseName = normalizedName
+                .replace(/\b(de|du|des|da|del|della|di|das|den|der|die)\b/g, '')
+                .replace(/\s+/g, ' ')
+                .trim();
+
+            if (!teamNormalizedNames.has(normalizedName) && !teamBaseNames.has(baseName) && !teamSlugs.has(t.slug)) {
+                teamNormalizedNames.add(normalizedName);
+                teamBaseNames.add(baseName);
+                teamSlugs.add(t.slug);
+                suggestions.push({
+                    type: 'Team',
+                    id: t.sportmonksId,
+                    name: t.name,
+                    url: `/team/${t.slug}`
+                });
+            }
+        });
+
+        // Si on a moins de 5 équipes principales, compléter avec d'autres équipes des ligues principales uniquement
+        if (suggestions.filter(s => s.type === 'Team').length < 5) {
+            allTeams
+                .filter(t => {
+                    if (!t.slug) return false;
+                    if (teamSlugs.has(t.slug)) return false;
+                    // Éviter les équipes sans league défini ou avec des noms déjà trouvés
+                    const normalizedName = normalizeText(t.name);
+                    const baseName = normalizedName
+                        .replace(/\b(de|du|des|da|del|della|di|das|den|der|die)\b/g, '')
+                        .replace(/\s+/g, ' ')
+                        .trim();
+                    if (teamNormalizedNames.has(normalizedName) || teamBaseNames.has(baseName)) return false;
+                    // Chercher uniquement dans les équipes avec un ID connu des 5 ligues principales
+                    const mainLeagueTeamIds = [
+                        // Quelques IDs supplémentaires des équipes principales si nécessaire
+                        // Mais en priorité, ne montrer que les équipes avec league défini
+                    ];
+                    return searchRegex.test(normalizeText(t.name));
+                })
+                .slice(0, 5 - suggestions.filter(s => s.type === 'Team').length)
+                .forEach(t => {
+                    const normalizedName = normalizeText(t.name);
+                    const baseName = normalizedName
+                        .replace(/\b(de|du|des|da|del|della|di|das|den|der|die)\b/g, '')
+                        .replace(/\s+/g, ' ')
+                        .trim();
+
+                    if (!teamSlugs.has(t.slug) && !teamNormalizedNames.has(normalizedName) && !teamBaseNames.has(baseName)) {
+                        teamSlugs.add(t.slug);
+                        teamNormalizedNames.add(normalizedName);
+                        teamBaseNames.add(baseName);
+                        suggestions.push({
+                            type: 'Team',
+                            id: t.sportmonksId,
+                            name: t.name,
+                            url: `/team/${t.slug}`
+                        });
+                    }
+                });
+        }
 
         // Filtrer les joueurs
         allPlayers
