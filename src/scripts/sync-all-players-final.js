@@ -102,15 +102,75 @@ async function syncLeaguePlayersWithDetails(league) {
                 );
 
                 const squadPlayers = squadResponse.data.data;
-                console.log(`      Found ${squadPlayers.length} players`);
+                console.log(`      Found ${squadPlayers.length} players in squad endpoint`);
 
-                // Process each player with full details
-                squadPlayers.forEach(squadEntry => {
+                // Process each player and verify they're really in this team
+                let verifiedCount = 0;
+                let removedCount = 0;
+                const removedPlayers = [];
+
+                for (const squadEntry of squadPlayers) {
                     const player = squadEntry.player;
 
                     if (player) {
-                        // Get position info
-                        const positionInfo = POSITION_MAP[squadEntry.position_id] || { name: 'Unknown', short: 'UNK' };
+                        // Quick verification: check if player has active relationship with this team
+                        let shouldKeep = true;
+
+                        try {
+                            const playerResponse = await axios.get(
+                                `https://api.sportmonks.com/v3/football/players/${player.id}`,
+                                {
+                                    params: {
+                                        api_token: API_TOKEN,
+                                        include: 'teams'
+                                    }
+                                }
+                            );
+
+                            const playerData = playerResponse.data.data;
+                            const teams = playerData.teams || [];
+
+                            // Check if player has an active relationship with the current team
+                            // Look specifically for this team in the player's teams list
+                            const teamRelationship = teams.find(t => t.team_id === team.id);
+
+                            if (teamRelationship) {
+                                // Player has a relationship with this team
+                                // Check if it's active (no end date or future end date)
+                                if (!teamRelationship.end || new Date(teamRelationship.end) > new Date()) {
+                                    // Active relationship - keep the player
+                                    shouldKeep = true;
+                                    verifiedCount++;
+                                } else {
+                                    // Expired relationship - remove the player
+                                    shouldKeep = false;
+                                    removedCount++;
+                                    if (removedCount <= 3) {
+                                        removedPlayers.push(player.display_name || player.name);
+                                    }
+                                }
+                            } else {
+                                // No relationship with this team found - remove the player
+                                shouldKeep = false;
+                                removedCount++;
+                                if (removedCount <= 3) {
+                                    removedPlayers.push(player.display_name || player.name);
+                                }
+                            }
+
+                            // Delay to avoid rate limit (API allows 3600 requests per hour = 1 per second)
+                            await new Promise(resolve => setTimeout(resolve, 1000));
+
+                        } catch (error) {
+                            // If we can't verify, keep the player to be safe
+                            console.log(`         ⚠️ Could not verify ${player.display_name || player.name}: ${error.message}`);
+                            shouldKeep = true;
+                            verifiedCount++;
+                        }
+
+                        if (shouldKeep) {
+                            // Get position info
+                            const positionInfo = POSITION_MAP[squadEntry.position_id] || { name: 'Unknown', short: 'UNK' };
 
                         // Build player data with all details
                         const playerData = {
@@ -170,9 +230,16 @@ async function syncLeaguePlayersWithDetails(league) {
                             lastUpdated: new Date().toISOString()
                         };
 
-                        allPlayers.push(playerData);
+                            allPlayers.push(playerData);
+                        }
                     }
-                });
+                }
+
+                // Report removed players
+                if (removedPlayers.length > 0) {
+                    console.log(`      ❌ Removed: ${removedPlayers.join(', ')}${removedCount > 3 ? ` and ${removedCount - 3} others` : ''}`);
+                }
+                console.log(`      ✅ Verified: ${verifiedCount} kept, ${removedCount} removed`);
 
                 // Small delay to avoid rate limiting
                 await new Promise(resolve => setTimeout(resolve, 300));
