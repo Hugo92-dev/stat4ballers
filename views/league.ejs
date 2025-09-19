@@ -110,6 +110,78 @@
             font-weight: 700;
             color: var(--primary-color);
         }
+        .top-performers {
+            background: rgba(255,255,255,0.1);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .performer-section {
+            text-align: center;
+        }
+        .performer-title {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .performer-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .performer-item {
+            background: rgba(255,255,255,0.2);
+            padding: 0.75rem;
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s;
+        }
+        .performer-item:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateX(5px);
+        }
+        .performer-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: white;
+        }
+        .performer-info {
+            flex: 1;
+            text-align: left;
+        }
+        .performer-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .performer-team {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        .performer-stat {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #FFD700;
+        }
+        @media (max-width: 768px) {
+            .top-performers {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -152,6 +224,26 @@
                     <%= leagueTitle %>
                 </h1>
             </div>
+
+            <!-- Top Performers Section -->
+            <div class="top-performers" id="top-performers" style="display: none;">
+                <div class="performer-section">
+                    <div class="performer-title">
+                        ⚽ Top Scorers
+                    </div>
+                    <div class="performer-list" id="top-scorers-list">
+                        <!-- Top scorers will be loaded here -->
+                    </div>
+                </div>
+                <div class="performer-section">
+                    <div class="performer-title">
+                        🎯 Top Assists
+                    </div>
+                    <div class="performer-list" id="top-assists-list">
+                        <!-- Top assists will be loaded here -->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -177,6 +269,10 @@
                 // Fetch teams for this league
                 const teamsResponse = await fetch(`/api/leagues/${leagueId}/teams?season=${season}`);
                 const teamsData = await teamsResponse.json();
+
+                // Fetch top performers
+                const performersResponse = await fetch(`/api/leagues/${leagueId}/top-performers`);
+                const performersData = await performersResponse.json();
                 
                 if (teamsData.success) {
                     // Handle both database teams and API teams
@@ -198,6 +294,11 @@
                     if (teams.length > 0) {
                         updateTeamsTable(teams);
                     }
+                }
+
+                // Update top performers
+                if (performersData.success) {
+                    updateTopPerformers(performersData.data);
                 }
             } catch (error) {
                 console.error('Error loading league data:', error);
@@ -225,6 +326,54 @@
                     </div>
                 </a>
             `).join('');
+        }
+
+        // Update top performers section
+        function updateTopPerformers(data) {
+            const topPerformersSection = document.getElementById('top-performers');
+            const topScorersList = document.getElementById('top-scorers-list');
+            const topAssistsList = document.getElementById('top-assists-list');
+
+            // Update top scorers
+            if (data.topScorers && data.topScorers.length > 0) {
+                topScorersList.innerHTML = data.topScorers.map(player => `
+                    <a href="/player/${player.slug}" class="performer-item">
+                        <img src="${player.image || '/images/placeholder-player.png'}"
+                             alt="${player.name}"
+                             class="performer-avatar"
+                             onerror="this.src='/images/placeholder-player.png'">
+                        <div class="performer-info">
+                            <div class="performer-name">${player.name}</div>
+                            <div class="performer-team">${player.team}</div>
+                        </div>
+                        <div class="performer-stat">${player.goals}</div>
+                    </a>
+                `).join('');
+            } else {
+                topScorersList.innerHTML = '<div style="text-align: center; padding: 1rem; opacity: 0.7;">No goals scored yet</div>';
+            }
+
+            // Update top assists
+            if (data.topAssists && data.topAssists.length > 0) {
+                topAssistsList.innerHTML = data.topAssists.map(player => `
+                    <a href="/player/${player.slug}" class="performer-item">
+                        <img src="${player.image || '/images/placeholder-player.png'}"
+                             alt="${player.name}"
+                             class="performer-avatar"
+                             onerror="this.src='/images/placeholder-player.png'">
+                        <div class="performer-info">
+                            <div class="performer-name">${player.name}</div>
+                            <div class="performer-team">${player.team}</div>
+                        </div>
+                        <div class="performer-stat">${player.assists}</div>
+                    </a>
+                `).join('');
+            } else {
+                topAssistsList.innerHTML = '<div style="text-align: center; padding: 1rem; opacity: 0.7;">No assists yet</div>';
+            }
+
+            // Show the top performers section
+            topPerformersSection.style.display = 'grid';
         }
 
         // Season selector
